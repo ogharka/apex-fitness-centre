@@ -246,3 +246,6 @@ s{color:var(--dim);margin-left:6px;font-weight:400}
 @media(min-width:1021px){.hgrid{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}}
 @media(max-width:1020px){.hgrid{grid-template-columns:1fr}}
 @media(max-width:820px){.hero h1{font-size:clamp(40px,11.5vw,56px)}}
+.trq .trqn{margin-top:10px;color:var(--muted);font-size:14px;max-width:none}
+.stack{display:flex;flex-direction:column;gap:12px}.stack ul{flex:1;align-content:start}.stack .btn{margin-top:auto}
+.stacks{align-items:stretch}
