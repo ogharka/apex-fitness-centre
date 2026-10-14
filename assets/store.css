@@ -251,3 +251,10 @@ s{color:var(--dim);margin-left:6px;font-weight:400}
 .stacks{align-items:stretch}
 
 .rv1 .stars{color:#f5c542;letter-spacing:2px;font-size:1.05rem;margin:.2rem 0 .1rem}.rv1 .stars span{color:#555}.rv1 .stars b{color:#cfcfcf;font-size:.8rem;letter-spacing:0;margin-left:.3rem}
+
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}.ggrid.big{grid-template-columns:repeat(2,1fr)}
+.gcard{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.03);color:inherit;text-decoration:none;transition:transform .2s,border-color .2s}
+.gcard:hover{transform:translateY(-3px);border-color:#e2b023}.gcard b{font-size:1.05rem}.gcard span{font-size:.88rem;color:#a9a9a9}
+.gl{margin:2.4rem 0}.guide .prose{margin:1.8rem 0}.guide .prose ul{padding-left:1.2rem;line-height:1.7}.guide .prose li{margin:.35rem 0}
+@media(max-width:760px){.ggrid,.ggrid.big{grid-template-columns:1fr}}
+.guide .cmp td:nth-child(2),.guide .cmp td:nth-child(3){white-space:nowrap}
