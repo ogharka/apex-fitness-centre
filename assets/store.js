@@ -43,3 +43,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&drawer&&dra
 var y=$('#yr');if(y)y.textContent=new Date().getFullYear();
 render();
 })();
+
+/* Analytics: report WhatsApp order clicks once Google Analytics (gtag) is installed. Does nothing until then. */
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href*="wa.me/"]');
+  if(!a||typeof window.gtag!=='function')return;
+  window.gtag('event','whatsapp_click',{link_text:(a.textContent||'').trim().slice(0,60),page_path:location.pathname});
+},true);
