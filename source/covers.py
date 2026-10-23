@@ -110,8 +110,46 @@ def art_scale(im, d):
     d.ellipse(_sc((850, 420, 990, 560)), fill=RED); d.ellipse(_sc((895, 465, 945, 515)), fill=(250, 250, 250))  # tape roll
     d.rounded_rectangle(_sc((900, 535, 1080, 560)), radius=6 * S, fill=(240, 90, 100))
 
+def art_tape(im, d):
+    """Measuring tape loop (belly fat / waist)."""
+    import math
+    _shadow(im, (330, 540, 880, 630))
+    cx, cy, rx, ry = 560, 330, 250, 150
+    d.ellipse(_sc((cx - rx, cy - ry, cx + rx, cy + ry)), outline=(244, 206, 96), width=46 * S)       # tape loop
+    for k in range(0, 360, 9):                                                                       # ticks on the tape
+        a = math.radians(k); x, y = cx + (rx - 23) * math.cos(a), cy + (ry - 23) * math.sin(a)
+        L = 14 if k % 45 else 22
+        x2, y2 = cx + (rx - 23 - L) * math.cos(a), cy + (ry - 23 - L * .6) * math.sin(a)
+        d.line(_sc((x, y, x2, y2)), fill=INK, width=3 * S)
+    d.rounded_rectangle(_sc((cx + 180, cy + 70, cx + 340, cy + 200)), radius=30 * S, fill=RED)       # tape case
+    d.ellipse(_sc((cx + 230, cy + 105, cx + 290, cy + 165)), fill=(250, 250, 250))
+    d.rounded_rectangle(_sc((cx + 320, cy + 160, cx + 500, cy + 196)), radius=8 * S, fill=(244, 206, 96))
+
+def art_gain(im, d):
+    """Banana, milk and oats (healthy weight gain)."""
+    _shadow(im, (230, 540, 1000, 640), alpha=60)
+    d.rounded_rectangle(_sc((300, 170, 430, 560)), radius=30 * S, fill=(250, 250, 250), outline=(214, 220, 228), width=6 * S)
+    d.rounded_rectangle(_sc((312, 240, 418, 548)), radius=22 * S, fill=(255, 255, 255))
+    _bowl(d, 620, 450, 125, (222, 196, 150))                                       # oats bowl
+    for x, y in [(580, 430), (620, 460), (660, 435), (600, 480), (645, 490)]:
+        d.ellipse(_sc((x - 16, y - 10, x + 16, y + 10)), fill=(200, 168, 120))
+    for x, y in [(590, 405), (640, 410)]: d.ellipse(_sc((x - 12, y - 12, x + 12, y + 12)), fill=(196, 140, 84))
+    # banana lying on the table: crescent = big ellipse minus offset ellipse
+    ban = Image.new("L", im.size, 0); bd = ImageDraw.Draw(ban)
+    bd.ellipse(_sc((760, 300, 1060, 580)), fill=255); bd.ellipse(_sc((760, 250, 1060, 520)), fill=0)
+    im.paste((246, 206, 66), (0, 0), ban)
+    d.ellipse(_sc((762, 425, 786, 449)), fill=(110, 86, 36)); d.ellipse(_sc((1036, 425, 1058, 447)), fill=(110, 86, 36))
+
+def art_tubs(im, d):
+    """Three protein tubs (whey buying guide)."""
+    _shadow(im, (200, 560, 1000, 650))
+    _tub(d, 250, 230, w=220, h=320)
+    _tub(d, 490, 150, w=260, h=400)
+    _tub(d, 770, 250, w=200, h=300)
+
 ARTS = {"thali": art_thali, "protein": art_protein, "tub": art_tub, "check": art_check,
-        "dumbbell": art_dumbbell, "medal": art_medal, "scale": art_scale}
+        "dumbbell": art_dumbbell, "medal": art_medal, "scale": art_scale,
+        "tape": art_tape, "gain": art_gain, "tubs": art_tubs}
 CATEGORY_DEFAULT = {"Supplements": ("art", "tub"), "Diet": ("art", "thali"), "Training": ("art", "dumbbell"),
                     "Weight loss": ("art", "scale"), "Competitions": ("art", "medal"),
                     "Gyms in Nepal": ("photo", "assets/gym-hero.jpg"), "Fitness careers": ("photo", "assets/gym-machines.jpg"),
