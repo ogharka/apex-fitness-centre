@@ -8,10 +8,10 @@
 import datetime as _dt, glob as _glob, markdown as _md
 
 NPT = _dt.timezone(_dt.timedelta(hours=5, minutes=45))
-TODAY = _dt.datetime.now(NPT).date()
+TODAY = _dt.date.fromisoformat(os.environ["BLOG_TODAY"]) if os.environ.get("BLOG_TODAY") else _dt.datetime.now(NPT).date()  # BLOG_TODAY only for testing schedules
 REQUIRED = ("title", "description", "date")
 # Topics shown as chips on the blog. A post's "category:" should be one of these (any other name still works and gets its own page).
-TOPICS = ["Supplements", "Training", "Diet", "Weight loss", "Gyms in Nepal", "Fitness careers", "Influencers and athletes", "Competitions"]
+TOPICS = ["Training", "Diet", "Weight loss", "Supplements", "Trekking", "Gyms in Nepal", "Fitness careers", "Competitions", "Influencers and athletes"]
 TOPIC_INTRO = {
  "Supplements": "Prices, real vs fake products, what works and what is a waste of money, for buyers in Nepal.",
  "Training": "Workout plans, technique and programming for beginners and experienced lifters.",
@@ -21,6 +21,7 @@ TOPIC_INTRO = {
  "Fitness careers": "How to become a trainer in Nepal: courses, certifications, academies and salaries.",
  "Influencers and athletes": "Nepali fitness creators, bodybuilders and powerlifters worth following.",
  "Competitions": "Bodybuilding and powerlifting championships, results and how to compete from Nepal.",
+ "Trekking": "Fitness for treks in Nepal: training plans for Everest Base Camp, Annapurna and other Himalayan routes.",
 }
 def slugify(t): return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
 

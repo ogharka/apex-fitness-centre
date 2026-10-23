@@ -147,13 +147,63 @@ def art_tubs(im, d):
     _tub(d, 490, 150, w=260, h=400)
     _tub(d, 770, 250, w=200, h=300)
 
+def art_mountain(im, d):
+    """Himalayan peaks (trekking)."""
+    d.polygon(_sc((120, 600, 470, 210, 820, 600)), fill=(120, 132, 150))
+    d.polygon(_sc((400, 600, 780, 120, 1160, 600)), fill=(84, 96, 116))
+    d.polygon(_sc((675, 252, 780, 120, 885, 252, 840, 236, 800, 270, 760, 232, 720, 262)), fill=(250, 250, 250))  # snow
+    d.polygon(_sc((392, 296, 470, 210, 548, 296, 515, 285, 480, 310, 450, 282, 420, 300)), fill=(250, 250, 250))
+    d.rectangle(_sc((0, 590, 1200, 675)), fill=(232, 224, 210))
+    d.line(_sc((300, 675, 520, 600, 640, 560)), fill=(214, 200, 176), width=18 * S)                   # trail
+    d.line(_sc((780, 120, 780, 60)), fill=INK, width=5 * S); d.polygon(_sc((782, 60, 840, 76, 782, 92)), fill=RED)  # flag
+
+def art_shoe(im, d):
+    """Running shoe (walking, running, cardio)."""
+    _shadow(im, (300, 520, 920, 610))
+    d.rounded_rectangle(_sc((300, 470, 920, 540)), radius=30 * S, fill=(250, 250, 250), outline=(220, 220, 220), width=4 * S)  # sole
+    d.polygon(_sc((330, 470, 360, 300, 520, 270, 620, 380, 900, 420, 910, 470)), fill=RED)            # upper
+    d.polygon(_sc((360, 300, 520, 270, 560, 320, 400, 345)), fill=(170, 14, 34))                     # collar
+    for i in range(4):
+        x = 560 + i * 55; d.line(_sc((x, 340 + i * 12, x + 40, 380 + i * 10)), fill=(250, 250, 250), width=8 * S)  # laces
+
+def art_bottle(im, d):
+    """Water bottle (hydration)."""
+    _shadow(im, (470, 560, 760, 640))
+    d.rounded_rectangle(_sc((520, 70, 680, 130)), radius=14 * S, fill=INK)                           # cap
+    d.rounded_rectangle(_sc((480, 120, 720, 600)), radius=60 * S, fill=(214, 236, 248), outline=(180, 206, 222), width=6 * S)
+    d.rounded_rectangle(_sc((492, 300, 708, 588)), radius=52 * S, fill=(120, 190, 232))              # water
+    d.rectangle(_sc((480, 380, 720, 440)), fill=RED)                                                 # label band
+    for x, y, r in [(850, 240, 26), (900, 330, 18), (330, 280, 22)]:
+        d.ellipse(_sc((x - r, y - r, x + r, y + r)), fill=(120, 190, 232))
+
+def art_clock(im, d):
+    """Clock with sun and moon (best time to train, sleep, rest)."""
+    _shadow(im, (430, 540, 770, 620))
+    d.ellipse(_sc((420, 140, 780, 500)), fill=(250, 250, 250), outline=INK, width=16 * S)
+    for k in range(12):
+        import math
+        a = math.radians(k * 30); d.line(_sc((600 + 150 * math.cos(a), 320 + 150 * math.sin(a), 600 + 132 * math.cos(a), 320 + 132 * math.sin(a))), fill=INK, width=6 * S)
+    d.line(_sc((600, 320, 600, 220)), fill=INK, width=12 * S); d.line(_sc((600, 320, 670, 360)), fill=RED, width=10 * S)
+    d.ellipse(_sc((588, 308, 612, 332)), fill=RED)
+    d.ellipse(_sc((880, 170, 1000, 290)), fill=(246, 196, 60))                                        # sun
+    d.ellipse(_sc((200, 170, 320, 290)), fill=(84, 96, 116)); d.ellipse(_sc((232, 150, 342, 260)), fill=BG)  # moon
+
+def art_rope(im, d):
+    """Skipping rope (HIIT, home cardio)."""
+    _shadow(im, (300, 540, 900, 620))
+    d.arc(_sc((330, 130, 870, 640)), 20, 160, fill=INK, width=12 * S)
+    for x in (300, 840):
+        d.rounded_rectangle(_sc((x, 380, x + 60, 560)), radius=26 * S, fill=RED)
+        d.rounded_rectangle(_sc((x + 18, 360, x + 42, 392)), radius=8 * S, fill=INK)
+
 ARTS = {"thali": art_thali, "protein": art_protein, "tub": art_tub, "check": art_check,
         "dumbbell": art_dumbbell, "medal": art_medal, "scale": art_scale,
-        "tape": art_tape, "gain": art_gain, "tubs": art_tubs}
+        "tape": art_tape, "gain": art_gain, "tubs": art_tubs,
+        "mountain": art_mountain, "shoe": art_shoe, "bottle": art_bottle, "clock": art_clock, "rope": art_rope}
 CATEGORY_DEFAULT = {"Supplements": ("art", "tub"), "Diet": ("art", "thali"), "Training": ("art", "dumbbell"),
                     "Weight loss": ("art", "scale"), "Competitions": ("art", "medal"),
                     "Gyms in Nepal": ("photo", "assets/gym-hero.jpg"), "Fitness careers": ("photo", "assets/gym-machines.jpg"),
-                    "Influencers and athletes": ("photo", "assets/gym-free-weights.jpg")}
+                    "Influencers and athletes": ("photo", "assets/gym-free-weights.jpg"), "Trekking": ("art", "mountain")}
 
 def make_cover(path_out, category="", art=None, photo=None, **_):
     if not art and not photo:
