@@ -40,7 +40,7 @@ jobs:
 
       - name: Install tools
         if: steps.due.outputs.run == 'yes'
-        run: pip install "pillow>=10,<12" "markdown>=3.5,<4"
+        run: pip install "pillow>=10,<12" "markdown>=3.5,<4" "fonttools>=4.40,<5"
 
       - name: Build the site
         if: steps.due.outputs.run == 'yes'
