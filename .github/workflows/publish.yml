@@ -23,7 +23,7 @@ jobs:
     env:
       TZ: Asia/Kathmandu
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Check for a post scheduled for today
         id: due
@@ -32,7 +32,7 @@ jobs:
           today=$(date +%F)
           if grep -lsq "^date: *$today" source/content/blog/*.md; then echo "run=yes" >> "$GITHUB_OUTPUT"; else echo "run=no" >> "$GITHUB_OUTPUT"; echo "No post scheduled for $today"; fi
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         if: steps.due.outputs.run == 'yes'
         with:
           python-version: "3.12"
