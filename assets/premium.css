@@ -220,3 +220,10 @@ footer h3{font:600 14px/1 var(--body);letter-spacing:0;text-transform:none;color
 .pask{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;background:var(--bg2);border-radius:var(--r-card);padding:18px 20px;margin:32px 0 18px}
 .pask p{margin:0}
 @media(max-width:560px){.pbody{font-size:17px}.phead .lead{font-size:17px}.pask .btn{width:100%}}
+.ptoc{background:var(--bg2);border-radius:var(--r-card);padding:18px 22px;margin:0 0 28px}
+.ptoc b{display:block;margin-bottom:8px}
+.ptoc ol{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.ptoc a{color:var(--fg);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line2)}
+.phead a.label{text-decoration:none}
+.pbody h2,.pbody h3{scroll-margin-top:90px}
+.chip.on{background:var(--fg);color:#fff;border-color:var(--fg)}
