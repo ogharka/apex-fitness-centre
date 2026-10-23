@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+gtag('event','whatsapp_order',{product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'})},true);</script>
 <title>Gym in Urlabari, Morang | Memberships and Trainers | Apex Fitness Centre</title>
 <meta name="description" content="Apex Fitness Centre, gym in Urlabari-9, Durgapuri, Morang. Open 4:30 AM to 8:30 PM daily. Memberships from Rs. 1,500 a month, trainers on both shifts.">
 <link rel="canonical" href="https://apexfitnesscentre.shop/gym/">
@@ -311,7 +316,7 @@ footer .logo{font-size:24px}
 .sbtn:hover{border-color:var(--red)}
 
 /* gym photos */
-.hero-photo{position:absolute;inset:0;z-index:-2;background:url("../assets/gym-hero.jpg") 60% 40%/cover no-repeat;opacity:.55}
+.hero-photo{position:absolute;inset:0;z-index:-2;background:url("../assets/gym-hero.webp") 60% 40%/cover no-repeat;opacity:.55}
 .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(14,15,17,.88) 38%,rgba(14,15,17,.42) 100%),linear-gradient(180deg,rgba(14,15,17,.5) 0%,transparent 30%,transparent 62%,var(--bg) 100%)}
 .gal{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
 .gal figure{position:relative;margin:0;overflow:hidden;border-radius:16px;border:1px solid var(--line);min-height:300px;background:var(--panel)}
@@ -435,11 +440,12 @@ html,body{overflow-x:clip}
 </style>
 
 <link rel="stylesheet" href="../assets/gym-premium.css">
+<link rel="preload" as="image" href="../assets/gym-hero.webp" fetchpriority="high">
 </head>
 <body>
 <nav id="nav">
   <div class="wrap">
-    <a class="logo" href="../" aria-label="Apex Fitness Centre home"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>
+    <a class="logo" href="/" aria-label="Apex Fitness Centre home"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>
     <ul>
       <li><a href="#team">Team</a></li>
       <li><a href="#gym">Gym</a></li>
@@ -457,7 +463,7 @@ html,body{overflow-x:clip}
   <div class="wrap hero-grid">
     <div>
       <div class="status" id="status"><span class="dot"></span><span id="statusText">Open daily 4:30 AM – 8:30 PM</span></div>
-      <h1><span class="l"><span>Earn your</span></span><span class="l"><span><span class="r">peak.</span></span></span></h1>
+      <h1><span class="l"><span>Earn your</span></span> <span class="l"><span><span class="r">peak.</span></span></span></h1>
       <p class="lead">Open from 4:30 AM to 8:30 PM, with a trainer on duty in every shift and one clear price to start.</p>
       <div class="cta">
         <a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20join.%20Please%20share%20the%20details." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.2c-.25.7-1.4 1.3-1.95 1.35-.5.05-1.1.07-1.8-.12a14 14 0 0 1-3.6-1.9 8.6 8.6 0 0 1-3.3-4c-.35-.9-.1-2 .6-2.6.2-.2.5-.3.7-.3h.5c.17 0 .4-.05.6.45l.8 1.95c.07.15.1.3 0 .5l-.3.45-.4.45c-.13.13-.27.28-.1.55.15.27.7 1.15 1.5 1.85 1 .9 1.9 1.2 2.15 1.33.27.13.4.1.55-.07.17-.2.7-.8.88-1.07.18-.27.37-.22.6-.13l1.85.9c.25.13.4.18.47.3.07.1.07.65-.18 1.3Z"/></svg>Start today on WhatsApp</a>
@@ -504,10 +510,10 @@ html,body{overflow-x:clip}
   <div class="wrap">
     <div class="head"><span class="label">Inside Apex</span><h2>The <em>floor</em></h2><p>Free weights, plate-loaded and cable machines, and a cardio zone. Real photos from our gym in Urlabari.</p></div>
     <div class="gal">
-      <figure class="g1"><img src="../assets/gym-free-weights.jpg" alt="Dumbbell rack and barbells at Apex Fitness Centre"><figcaption>Free weights</figcaption></figure>
-      <figure class="g2"><img src="../assets/gym-machines.jpg" alt="Multi press machine and adjustable bench"><figcaption>Machines and benches</figcaption></figure>
-      <figure class="g3"><img src="../assets/gym-plate-loaded.jpg" alt="Plate-loaded leg machine"><figcaption>Plate-loaded</figcaption></figure>
-      <figure class="g4"><img src="../assets/gym-cardio.jpg" alt="Spin bike, elliptical and treadmill"><figcaption>Cardio zone</figcaption></figure>
+      <figure class="g1"><img decoding="async" loading="lazy" width="800" height="600" src="../assets/gym-free-weights.webp" alt="Dumbbell rack and barbells at Apex Fitness Centre"><figcaption>Free weights</figcaption></figure>
+      <figure class="g2"><img decoding="async" loading="lazy" width="800" height="600" src="../assets/gym-machines.webp" alt="Multi press machine and adjustable bench"><figcaption>Machines and benches</figcaption></figure>
+      <figure class="g3"><img decoding="async" loading="lazy" width="765" height="1020" src="../assets/gym-plate-loaded.webp" alt="Plate-loaded leg machine"><figcaption>Plate-loaded</figcaption></figure>
+      <figure class="g4"><img decoding="async" loading="lazy" width="800" height="600" src="../assets/gym-cardio.webp" alt="Spin bike, elliptical and treadmill"><figcaption>Cardio zone</figcaption></figure>
     </div>
   </div>
 </section>
@@ -534,11 +540,11 @@ html,body{overflow-x:clip}
     <div class="team">
       <div class="person shift">
         <div class="big"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg></div>
-        <div class="cap"><span class="sub">Trainer</span><div class="role">Morning shift</div><div class="time">4:30 AM – 12:30 PM</div><p>2+ years of deep study in the fitness field.</p></div>
+        <div class="cap"><span class="sub">Trainer</span><div class="role">Morning trainer<!-- TODO(owner): replace "Morning trainer" with this trainer's real name --></div><div class="meta">Morning shift · 4:30 AM – 12:30 PM</div><div class="meta">2+ years of study in the fitness field</div></div>
       </div>
-      <div class="person"><img src="../assets/team-sanju-phombo-limbu.jpg" alt="Sanju Phombo Limbu, trainer at Apex Fitness Centre"><div class="cap"><span class="sub">Trainer</span><div class="role">Sanju Phombo Limbu</div><div class="meta">Day shift · 30 years of experience</div></div></div>
-      <div class="person"><img src="../assets/team-manita-yongya.jpg" alt="Manita Yongya, front desk at Apex Fitness Centre"><div class="cap"><span class="sub">Front desk</span><div class="role">Manita Yongya</div><div class="meta">Bachelor’s in Management</div></div></div>
-      <div class="person"><img src="../assets/team-dipika-phyak.jpg" alt="Dipika Phyak, front desk at Apex Fitness Centre"><div class="cap"><span class="sub">Front desk</span><div class="role">Dipika Phyak</div><div class="meta">+2 pass · Computer technician</div></div></div>
+      <div class="person"><img decoding="async" loading="lazy" width="720" height="900" src="../assets/team-sanju-phombo-limbu.webp" alt="Sanju Phombo Limbu, trainer at Apex Fitness Centre"><div class="cap"><span class="sub">Trainer</span><div class="role">Sanju Phombo Limbu</div><div class="meta">Day shift · hours: ask on WhatsApp<!-- TODO(owner): replace "hours: ask on WhatsApp" with Sanju's real shift time, e.g. 12:30 PM – 8:30 PM --></div><div class="meta">30 years of experience</div></div></div>
+      <div class="person"><img decoding="async" loading="lazy" width="720" height="900" src="../assets/team-manita-yongya.webp" alt="Manita Yongya, front desk at Apex Fitness Centre"><div class="cap"><span class="sub">Front desk</span><div class="role">Manita Yongya</div><div class="meta">Bachelor’s in Management</div></div></div>
+      <div class="person"><img decoding="async" loading="lazy" width="720" height="900" src="../assets/team-dipika-phyak.webp" alt="Dipika Phyak, front desk at Apex Fitness Centre"><div class="cap"><span class="sub">Front desk</span><div class="role">Dipika Phyak</div><div class="meta">+2 pass · Computer technician</div></div></div>
     </div>
   </div>
 </section>
@@ -555,6 +561,7 @@ html,body{overflow-x:clip}
       <div class="plan" data-months="1" data-first="2500" data-renew="1500"><div class="dur">1 Month<small>Try us out</small></div><div class="price"><span>Rs.</span><b>2,500</b></div><div class="per"></div><ul class="feat"></ul><a class="btn pc" target="_blank" rel="noopener" href="#">Join this plan</a></div>
       <div class="plan" data-months="3" data-first="5000" data-renew="4000"><div class="dur">3 Months<small>Build the habit</small></div><div class="price"><span>Rs.</span><b>5,000</b></div><div class="per"></div><ul class="feat"></ul><a class="btn pc" target="_blank" rel="noopener" href="#">Join this plan</a></div>
       <div class="plan best" data-months="6" data-first="8000" data-renew="7000"><span class="badge">Recommended</span><div class="dur">6 Months<small>See real results</small></div><div class="price"><span>Rs.</span><b>8,000</b></div><div class="per"></div><ul class="feat"></ul><a class="btn pc" target="_blank" rel="noopener" href="#">Join this plan</a></div>
+      <!-- OWNER TO CONFIRM: 12-month first-time price is Rs. 12,500, but every other plan is renewal + Rs. 1,000 (Rs. 500 admission + Rs. 500 T-shirt/card). By that rule it would be Rs. 13,000 (renewal Rs. 12,000). Change data-first and the Rs. figure below only if the owner confirms. -->
       <div class="plan" data-months="12" data-first="12500" data-renew="12000"><div class="dur">12 Months<small>Lowest cost per month</small></div><div class="price"><span>Rs.</span><b>12,500</b></div><div class="per"></div><ul class="feat"></ul><a class="btn pc" target="_blank" rel="noopener" href="#">Join this plan</a></div>
     </div>
     <div class="incl">
