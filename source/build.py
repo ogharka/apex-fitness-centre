@@ -10,7 +10,7 @@ WA = "9779708819605"
 SITE = "Apex Fitness Centre"
 # GOOGLE ANALYTICS 4: paste your real Measurement ID here (GA4 > Admin > Data streams > your web stream),
 # then rebuild. Every page reads it from this one line.
-GA_ID = "G-XXXXXXXXXX"
+GA_ID = "G-F70PH8VMHW"
 # GOOGLE ADSENSE: paste your publisher ID when AdSense gives it to you, e.g. "ca-pub-1234567890123456".
 # Leave it empty until then. When set, every page gets the AdSense Auto ads code and /ads.txt is created.
 ADSENSE_CLIENT = ""
