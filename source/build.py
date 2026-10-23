@@ -28,8 +28,8 @@ PRODUCTS = [
  dict(slug="muscleblaze-creatine-monohydrate-320g-citrus-blast", brand="MuscleBlaze", name="MuscleBlaze Creatine Monohydrate", size="320 g", flavour="Citrus Blast",
       cat="creatine", price=2000, img="muscleblaze-creatine-320g.jpg",
       short="Creatine monohydrate, 320 g tub in Citrus Blast flavour.",
-      title="MuscleBlaze Creatine Monohydrate 320 g Citrus Blast Price in Nepal",
-      desc="Buy MuscleBlaze Creatine Monohydrate 320 g (Citrus Blast) in Nepal for Rs. 2,000. Free delivery all over Nepal, order on WhatsApp from Apex Fitness Centre, Urlabari.",
+      title="MuscleBlaze Creatine Price in Nepal: {price} (320 g)",
+      desc="MuscleBlaze creatine price in Nepal: {price} for Creatine Monohydrate 320 g (Citrus Blast). Authentic, free delivery all over Nepal. Order on WhatsApp.",
       about=["Creatine monohydrate is one of the most widely studied supplements for strength and power in high-intensity training such as lifting and sprinting.",
              "This 320 g tub comes in a Citrus Blast flavour, so it mixes into water or a shake without an unflavoured taste.",
              "Stocked and sold by Apex Fitness Centre, the gym in Urlabari-9, Morang. Delivery is free all over Nepal."],
@@ -38,8 +38,8 @@ PRODUCTS = [
  dict(slug="muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme", brand="MuscleBlaze", name="MuscleBlaze Biozyme Performance Whey", size="2 kg", flavour="French Vanilla Crème",
       cat="protein", price=15000, img="muscleblaze-biozyme-whey-2kg.jpg",
       short="Whey protein, 2 kg tub in French Vanilla Crème flavour.",
-      title="MuscleBlaze Biozyme Performance Whey 2 kg Price in Nepal",
-      desc="Buy MuscleBlaze Biozyme Performance Whey Protein 2 kg (French Vanilla Crème) in Nepal for Rs. 15,000. Free delivery all over Nepal, order on WhatsApp from Apex Fitness Centre.",
+      title="MuscleBlaze Protein Price in Nepal: Biozyme Whey {price}",
+      desc="MuscleBlaze protein price in Nepal: {price} for Biozyme Performance Whey 2 kg (French Vanilla Crème). Authentic, free delivery all over Nepal.",
       about=["Whey protein is a convenient way to add protein to your day, especially after training or when meals are short on protein.",
              "The 2 kg tub is the value size for regular lifters. Flavour is French Vanilla Crème, which mixes well with water or milk.",
              "Stocked and sold by Apex Fitness Centre, the gym in Urlabari-9, Morang. Delivery is free all over Nepal."],
@@ -65,6 +65,7 @@ PAIR={"muscleblaze-creatine-monohydrate-320g-citrus-blast":"muscleblaze-biozyme-
 for p in PRODUCTS:
     p.setdefault("who", WHO.get(p["slug"])); p.setdefault("pair", PAIR.get(p["slug"]))
 for p in PRODUCTS:
+    for _k in ("title", "desc"): p[_k] = p[_k].replace("{price}", "Rs. {:,}".format(p["price"])) if "{price}" in p[_k] else p[_k]
     p["url"] = f"products/{p['slug']}/"
     p["full"] = " ".join(x for x in [p["name"], p["size"], ("(%s)" % p["flavour"]) if p["flavour"] else ""] if x)
     p["label"] = " ".join(x for x in [p["size"], p["flavour"]] if x)

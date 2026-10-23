@@ -26,7 +26,7 @@ NEWCATS = [
       faq=[("What is the price of Pole Omega-3 Fish Oil in Nepal?","At Apex Fitness Centre it is Rs. 5,000."),
            ("Do you deliver all over Nepal?","Yes, delivery is free all over Nepal. Order on WhatsApp and we confirm your address.")]),
  dict(slug="protein-oats", name="Protein oats", h1="Buy High Protein Oats in Nepal",
-      title="Buy High Protein Oats in Nepal | Pintola 1 kg | Apex Fitness",
+      title="Pintola Oats Price in Nepal | High Protein Oats Rs. 1,300",
       desc="Buy Pintola High Protein Oats (Chocolate, 1 kg) in Nepal for Rs. 1,300. Free delivery all over Nepal, order on WhatsApp from Apex Fitness Centre.",
       intro="A quick, high-protein breakfast for gym members. We stock Pintola High Protein Oats in Chocolate, 1 kg, at Rs. 1,300.",
       body=["According to the pack, these oats have 26 g of protein per 100 g, no refined sugar, and need no cooking. Stir them into milk, curd or hot water.",
