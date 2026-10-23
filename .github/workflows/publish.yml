@@ -1,0 +1,61 @@
+name: Build and publish the website
+
+# Runs when anything in source/ changes (a new blog post, a price, a photo),
+# every morning (to publish scheduled posts), or by hand from the Actions tab.
+on:
+  push:
+    branches: [main]
+    paths: ["source/**", ".github/workflows/publish.yml"]
+  schedule:
+    - cron: "20 0 * * *"   # 6:05 AM Nepal time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Kathmandu
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for a post scheduled for today
+        id: due
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "run=yes" >> "$GITHUB_OUTPUT"; exit 0; fi
+          today=$(date +%F)
+          if grep -lsq "^date: *$today" source/content/blog/*.md; then echo "run=yes" >> "$GITHUB_OUTPUT"; else echo "run=no" >> "$GITHUB_OUTPUT"; echo "No post scheduled for $today"; fi
+
+      - uses: actions/setup-python@v5
+        if: steps.due.outputs.run == 'yes'
+        with:
+          python-version: "3.12"
+
+      - name: Install tools
+        if: steps.due.outputs.run == 'yes'
+        run: pip install "pillow>=10,<12" "markdown>=3.5,<4"
+
+      - name: Build the site
+        if: steps.due.outputs.run == 'yes'
+        run: OUT=_site python source/build.py
+
+      - name: Publish (copy the built site to the top of the repo)
+        if: steps.due.outputs.run == 'yes'
+        run: |
+          rsync -a --delete \
+            --exclude '.git/' --exclude 'source/' --exclude '.github/' \
+            --exclude 'README.md' --exclude 'CNAME' --exclude '_site/' \
+            _site/ ./
+          rm -rf _site
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git commit -m "Publish website ($(date '+%Y-%m-%d %H:%M'))"
+          git push

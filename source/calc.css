@@ -1,0 +1,144 @@
+/* Fitness Calculators page only. Loaded by /calculators/ and nothing else, so it cannot affect the shop. */
+body.calcs main{--rd:#d3132b;--rd2:#c8102e;--ink:#141416;--mut:#5b5e66;--card:#ffffff;--card2:#f7f7f5;--ln:#e6e5e1;--ok:#13803f;--warn:#a85f00}
+.calcs .cx-hero,.calcs .chero{position:relative;overflow:hidden;padding:56px 0 40px;background:#fff;border-bottom:1px solid var(--ln)}
+.calcs .chero h1{font:800 clamp(40px,7vw,84px)/.98 var(--display);text-transform:uppercase;letter-spacing:.005em;margin:14px 0 16px}
+.calcs .chero h1 em{font-style:normal;color:var(--rd2)}
+.calcs .chero .lead{max-width:62ch;color:var(--mut);font-size:clamp(16px,1.5vw,19px)}
+.calcs .eyebrow{font:600 13px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--rd2)}
+.calcs .toolbar{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;margin-top:26px}
+.calcs .seg{display:inline-flex;border:1px solid var(--ln);background:var(--card);padding:4px;gap:4px}
+.calcs .seg label{position:relative;cursor:pointer}
+.calcs .seg input{position:absolute;opacity:0;inset:0;width:100%;height:100%;cursor:pointer;margin:0}
+.calcs .seg span{display:block;padding:11px 20px;font:600 15px/1 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--mut);min-width:128px;text-align:center}
+.calcs .seg input:checked+span{background:var(--rd);color:#fff}
+.calcs .seg input:focus-visible+span{outline:3px solid #141416;outline-offset:2px}
+.calcs .jump{display:flex;flex-wrap:wrap;gap:8px}
+.calcs .jump a{padding:11px 16px;border:1px solid var(--ln);background:var(--card);font:600 14px/1 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.calcs .jump a:hover{border-color:var(--rd);color:var(--ink)}
+.calcs .notice{margin:28px 0 0;padding:18px 20px;border:1px solid rgba(225,31,55,.5);border-left:4px solid var(--rd);background:rgba(225,31,55,.07);font-size:15px;color:var(--ink)}
+.calcs .notice b{color:var(--ink)}
+.calcs .notice ul{margin:8px 0 0 20px;color:var(--mut)}
+.calcs .cwrap{display:grid;gap:28px;padding:40px 0 20px}
+.calcs .cx-card{background:var(--card);border:1px solid var(--ln);border-top:3px solid var(--rd);padding:clamp(20px,3.4vw,36px);scroll-margin-top:90px}
+.calcs .cx-card h2{font:800 clamp(28px,4vw,40px)/1.05 var(--display);text-transform:uppercase;letter-spacing:.01em;margin-bottom:8px}
+.calcs .cx-card .sub{color:var(--mut);max-width:70ch;margin-bottom:22px}
+.calcs .cgrid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,40px);align-items:start}
+.calcs form{display:grid;gap:16px}
+.calcs .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.calcs .f{display:grid;gap:6px;min-width:0}
+.calcs label.l,.calcs legend.l{font:600 14px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.calcs .opt{color:var(--mut);text-transform:none;letter-spacing:0;font:500 13px/1 var(--body)}
+.calcs input[type=text],.calcs input[type=number],.calcs select{width:100%;min-height:50px;padding:12px 14px;background:#ffffff;color:var(--ink);border:1px solid #d4d3cf;border-radius:0;font:500 17px/1.2 var(--body);-webkit-appearance:none;appearance:none}
+.calcs select{background-image:linear-gradient(45deg,transparent 50%,#141416 50%),linear-gradient(135deg,#141416 50%,transparent 50%);background-position:calc(100% - 20px) 21px,calc(100% - 14px) 21px;background-size:6px 6px;background-repeat:no-repeat;padding-right:38px}
+.calcs input::placeholder{color:#7d7c78}
+.calcs input:focus-visible,.calcs select:focus-visible,.calcs button:focus-visible,.calcs summary:focus-visible,.calcs a:focus-visible{outline:3px solid #141416;outline-offset:2px;box-shadow:0 0 0 5px var(--rd)}
+.calcs input[aria-invalid=true],.calcs select[aria-invalid=true]{border-color:var(--rd2);box-shadow:inset 0 0 0 1px var(--rd2)}
+.calcs .inwrap{position:relative}
+.calcs .inwrap input{padding-right:58px}
+.calcs .inwrap .u{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--mut);font:600 14px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;pointer-events:none}
+.calcs .hint{font-size:13.5px;color:var(--mut)}
+.calcs .err{color:#b3101f;font-size:14px;font-weight:600;display:flex;gap:6px}
+.calcs .err[hidden]{display:none}
+.calcs .err::before{content:"!";display:inline-grid;place-items:center;flex:none;width:18px;height:18px;border-radius:50%;background:var(--rd);color:#fff;font-size:12px;font-weight:800;margin-top:1px}
+.calcs fieldset{border:0;padding:0;margin:0;min-width:0;display:grid;gap:8px}
+.calcs .choices{display:flex;flex-wrap:wrap;gap:8px}
+.calcs .choice{position:relative}
+.calcs .choice input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.calcs .choice span{display:block;padding:13px 16px;min-height:48px;border:1px solid #d4d3cf;background:#ffffff;font:600 15px/1.2 var(--body);color:var(--ink)}
+.calcs .choice input:checked+span{border-color:var(--rd2);background:rgba(225,31,55,.18);box-shadow:inset 0 0 0 1px var(--rd2)}
+.calcs .choice input:focus-visible+span{outline:3px solid #141416;outline-offset:2px}
+.calcs .check{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--ln);background:var(--card2);cursor:pointer;font-size:15px}
+.calcs .check input{width:22px;height:22px;flex:none;margin:1px 0 0;accent-color:var(--rd)}
+.calcs .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.calcs .cbtn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:13px 24px;border:1px solid var(--rd);background:var(--rd);color:#fff;font:600 15.5px/1.1 var(--body);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .2s,transform .2s}
+.calcs .cbtn:hover{background:#f12c45;transform:translateY(-1px)}
+.calcs .cbtn.ghost{background:transparent;border-color:#d4d3cf;color:var(--ink)}
+.calcs .cbtn.ghost:hover{border-color:var(--ink);background:#f5f5f3}
+.calcs .cbtn.small{min-height:44px;padding:10px 16px;font-size:13px}
+.calcs .res{background:var(--card2);border:1px solid var(--ln);padding:clamp(18px,2.6vw,28px);min-height:240px;display:grid;gap:14px;align-content:start}
+.calcs .res .cx-empty{color:var(--mut)}
+.calcs .res .rlabel{font:600 13px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--rd2)}
+.calcs .cx-big{font:800 clamp(52px,9vw,84px)/.95 var(--display);color:var(--ink);letter-spacing:.005em}
+.calcs .cx-big small{font:600 20px/1 var(--cond);letter-spacing:.12em;color:var(--mut);text-transform:uppercase;margin-left:8px}
+.calcs .badge2{display:inline-block;padding:8px 14px;font:700 14px/1 var(--cond);letter-spacing:.12em;text-transform:uppercase;border:1px solid currentColor}
+.calcs .b-healthy{color:var(--ok)}.calcs .b-under,.calcs .b-over{color:var(--warn)}.calcs .b-obese{color:#b3101f}.calcs .b-na{color:#5b5e66}
+.calcs .meter{position:relative;height:12px;background:linear-gradient(90deg,#f0b429 0 23.2%,#38c172 23.2% 46.4%,#f0b429 46.4% 64.3%,#ff5468 64.3% 100%);margin:6px 0 2px}
+.calcs .meter i{position:absolute;top:-6px;width:4px;height:24px;background:#141416;box-shadow:0 0 0 2px #ffffff;transform:translateX(-2px)}
+.calcs .scale{display:flex;justify-content:space-between;font-size:12px;color:var(--mut)}
+.calcs .res p{color:#141416}
+.calcs .res .muted{color:var(--mut);font-size:14.5px}
+.calcs .res ul.notes{margin:0 0 0 18px;color:#141416;display:grid;gap:8px;font-size:14.5px}
+.calcs .callout{padding:14px 16px;border:1px solid rgba(225,31,55,.55);border-left:4px solid var(--rd);background:rgba(225,31,55,.09);font-size:15px;color:var(--ink)}
+.calcs .cx-card details{border-top:1px solid var(--ln);padding-top:10px}
+.calcs .cx-card summary{cursor:pointer;font:600 14px/1.3 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);padding:6px 0}
+.calcs .cx-card details p,.calcs .cx-card details li{font-size:14.5px;color:var(--mut)}
+.calcs .cx-card details ul,.calcs .cx-card details ol{margin:8px 0 0 20px;display:grid;gap:6px}
+.calcs .cx-card details code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--ink);background:#ffffff;padding:2px 5px}
+.calcs table.t{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:8px}
+.calcs table.t th,.calcs table.t td{padding:9px 8px;border-bottom:1px solid var(--ln);text-align:left;color:#141416}
+.calcs table.t th{font:600 12.5px/1.2 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.calcs table.t tr.cx-on td{color:var(--ink);font-weight:700;background:rgba(225,31,55,.12)}
+.calcs .mgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.calcs .mcell{padding:14px 12px;border:1px solid var(--ln);background:#ffffff;display:grid;gap:4px}
+.calcs .mcell b{font:800 clamp(26px,2.6vw,34px)/1 var(--display);color:var(--ink);white-space:nowrap}
+.calcs .mcell span{font:600 13px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.calcs .mcell em{font-style:normal;font-size:13px;color:var(--mut)}
+.calcs .cx-bar{display:flex;height:14px;overflow:hidden;border:1px solid var(--ln)}
+.calcs .cx-bar i{display:block;height:100%}
+.calcs .cx-bar i:nth-child(1){background:#ff5468}.calcs .cx-bar i:nth-child(2){background:#141416}.calcs .cx-bar i:nth-child(3){background:#a6a8ae}
+.calcs .cx-tot{font:600 15px/1.3 var(--body);padding:10px 12px;border:1px solid var(--ln);background:#ffffff}
+.calcs .cx-tot.good{border-color:var(--ok);color:#13803f}
+.calcs .cx-tot.bad{border-color:var(--rd2);color:#b3101f}
+.calcs .presets{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.calcs .presets span.l{width:100%}
+.calcs .p3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.calcs .links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.calcs .links a{display:grid;gap:4px;padding:18px;border:1px solid var(--ln);background:var(--card);color:var(--ink)}
+.calcs .links a b{font:700 18px/1.2 var(--serif)}
+.calcs .links a span{font-size:14px;color:var(--mut)}
+.calcs .links a:hover{border-color:var(--rd)}
+.calcs .csec{padding:44px 0}
+.calcs .csec h2.h2c{font:800 clamp(26px,3.6vw,38px)/1.05 var(--display);text-transform:uppercase;margin-bottom:16px}
+.calcs .crumbs{padding-top:18px}
+body[data-units="imperial"] [data-metric]{display:none}
+body[data-units="metric"] [data-imperial]{display:none}
+@media(max-width:900px){.calcs .cgrid2{grid-template-columns:1fr}.calcs .links{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.calcs .row2{grid-template-columns:1fr 1fr}.calcs .mgrid{grid-template-columns:1fr}.calcs .links{grid-template-columns:1fr}.calcs .seg{width:100%}.calcs .seg label{flex:1}.calcs .seg span{min-width:0}.calcs .p3{grid-template-columns:1fr}.calcs .actions .cbtn{flex:1 1 100%}.calcs .chero{padding:36px 0 28px}}
+@media(prefers-reduced-motion:reduce){.calcs .cbtn{transition:none}.calcs .cbtn:hover{transform:none}}
+.calcs .res{scroll-margin-top:92px;scroll-margin-bottom:16px}
+.calcs .presets .l{font:600 14px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.calcs .p3 .cbtn{letter-spacing:.08em;font-size:12.5px;text-align:center}
+.calcs .scale{position:relative;height:16px;display:block}
+.calcs .scale span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
+.calcs .scale span:first-child{transform:none}
+.calcs .scale span:last-child{transform:translateX(-100%)}
+.calcs .res.stale>*:not(.callout.stale){opacity:.45}
+.calcs .callout.stale{border-color:var(--warn);border-left-color:var(--warn);background:rgba(240,180,41,.08)}
+
+/* premium type pass: sentence case, Archivo headings, Instrument Sans text */
+.calcs .chero h1,.calcs .cx-hero h1{font-family:'Archivo',sans-serif;font-weight:850;font-stretch:118%;font-variation-settings:"wdth" 118;letter-spacing:-.03em;text-transform:none;color:var(--ink)}
+.calcs .chero h1 em{color:var(--ink)}
+.calcs .chero h1::before{content:"";display:block;width:56px;height:5px;background:var(--rd);border-radius:3px;margin-bottom:24px}
+.calcs .eyebrow{display:none}
+.calcs .cx-card h2,.calcs .csec h2.h2c{font-family:'Archivo',sans-serif;font-weight:800;font-stretch:112%;font-variation-settings:"wdth" 112;text-transform:none;letter-spacing:-.015em}
+.calcs .cx-card{border-radius:16px;border-top:3px solid var(--rd)}
+.calcs label.l,.calcs legend.l,.calcs .presets .l{font:600 14px/1.2 'Instrument Sans',sans-serif;letter-spacing:0;text-transform:none;color:var(--ink)}
+.calcs .seg{border-radius:12px}.calcs .seg span{border-radius:9px;text-transform:none;letter-spacing:0;font:600 15px/1 'Instrument Sans',sans-serif;color:var(--mut)}
+.calcs .jump a{border-radius:999px;text-transform:none;letter-spacing:0;font:500 14.5px/1 'Instrument Sans',sans-serif;background:#fff}
+.calcs .cbtn{border-radius:10px;text-transform:none;letter-spacing:0}
+.calcs .cbtn.ghost{color:var(--ink);border-color:#d4d3cf;background:#fff}
+.calcs .cbtn.ghost:hover{border-color:var(--ink);background:#f5f5f3}
+.calcs input[type=text],.calcs input[type=number],.calcs select,.calcs .choice span{border-radius:10px}
+.calcs .inwrap .u,.calcs .rlabel,.calcs summary,.calcs .badge2,.calcs .mcell span,.calcs .big small,.calcs table.t th{text-transform:none;letter-spacing:0;font-family:'Instrument Sans',sans-serif}
+.calcs .res{border-radius:14px}
+.calcs .big,.calcs .mcell b{font-family:'Archivo',sans-serif;font-stretch:108%;font-variation-settings:"wdth" 108;letter-spacing:-.02em}
+.calcs .notice{border-radius:12px;background:#fdf0f2;border-color:#f1b7c0;color:var(--ink)}
+.calcs .notice b{color:var(--ink)}
+.calcs .callout{border-radius:10px;background:#fdf0f2;border-color:#f1b7c0;color:var(--ink)}
+.calcs .callout.stale{background:#fff6e5;border-color:#f0c97a}
+.calcs .links a{border-radius:14px}.calcs .links a b{font-family:'Archivo',sans-serif;font-weight:700}
+.calcs .badge2{border-radius:999px;font-weight:600}
+.calcs .meter{border-radius:999px;overflow:visible}
+.calcs main *{text-transform:none!important}
+.calcs .rlabel,.calcs .cx-card summary,.calcs .inwrap .u,.calcs .big small,.calcs .p3 .cbtn,.calcs table.t th,.calcs .mcell span,.calcs .badge2{letter-spacing:0!important;font-family:'Instrument Sans',sans-serif!important}
+.calcs .rlabel{font-size:14px!important;font-weight:600!important}

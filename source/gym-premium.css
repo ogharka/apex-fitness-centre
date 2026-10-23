@@ -1,0 +1,52 @@
+/* Gym page: same premium system as the store (white, ink, Apex red, Archivo + Instrument Sans). */
+:root{--bg:#ffffff;--bg2:#f5f5f3;--panel:#ffffff;--panel2:#f5f5f3;--line:#e6e5e1;--line2:#d4d3cf;--fg:#141416;--muted:#5b5e66;--dim:#878a91;
+  --red:#d3132b;--red2:#c8102e;--red-d:#a80f22;
+  --display:'Archivo','Helvetica Neue',Arial,sans-serif;--serif:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --body:'Instrument Sans',system-ui,-apple-system,sans-serif;--label:'Instrument Sans',system-ui,sans-serif}
+body{background:#fff;color:var(--fg);font-family:var(--body)}
+h1,h2,h3{font-family:var(--display);font-weight:800;font-stretch:112%;font-variation-settings:"wdth" 112;letter-spacing:-.015em;text-transform:none}
+.label{text-transform:none;letter-spacing:.01em;font:600 13.5px/1.2 var(--body);color:var(--red2)}
+.label::before{display:none}
+.btn{border-radius:10px;text-transform:none;letter-spacing:0;font:600 15.5px/1.1 var(--body)}
+.btn::after{display:none}
+.wm{font-family:var(--display);font-weight:900;font-stretch:125%;font-variation-settings:"wdth" 125;font-size:27px;line-height:1;letter-spacing:.01em;color:var(--red)}
+.wm2{font:600 13px/1.15 var(--body);padding-left:12px;border-left:1px solid currentColor;opacity:.9}
+.logo{display:inline-flex;align-items:center;gap:12px}
+/* the photo hero stays dark and cinematic, so text on it stays white */
+.hero{background:#141416;color:#fff}
+.hero h1{color:#fff;font-weight:850;font-stretch:118%;font-variation-settings:"wdth" 118;letter-spacing:-.03em;text-transform:none}
+.hero h1 .r,.hero h1 .o{-webkit-text-fill-color:currentColor;background:none;color:#fff}
+.hero .lead,.hero-meta,.hero-meta small,.hero p{color:rgba(255,255,255,.82)}
+.hero .btn.line{color:#fff;border-color:rgba(255,255,255,.5)}
+nav:not(.solid) ul a,nav:not(.solid) .logo{color:#fff}
+nav.solid{background:rgba(255,255,255,.94)!important;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+nav.solid ul a,nav.solid .logo{color:var(--fg)}
+nav ul a{text-transform:none;letter-spacing:0;font:500 15px/1 var(--body)}
+footer{background:#141416;color:#fff}
+footer .wm2{color:#fff}
+/* fixes for elements that assumed a dark page */
+.logo .wm{all:revert;font-family:var(--display)!important;font-weight:900!important;font-stretch:125%;font-variation-settings:"wdth" 125;font-size:27px!important;line-height:1!important;letter-spacing:.01em!important;color:var(--red)!important;text-transform:none!important}
+.logo .wm2{all:revert;font:600 13px/1.15 var(--body)!important;padding-left:12px!important;border-left:1px solid currentColor!important;letter-spacing:0!important;text-transform:none!important}
+.hero-meta b,.hero p b,.hero .offer b,.hero .per b{color:#fff!important}
+.hero-meta small{color:rgba(255,255,255,.6);letter-spacing:0;text-transform:none;font:600 13px var(--body)}
+.hero-meta,.hero-meta div{border-color:rgba(255,255,255,.18)}
+.stat b{background:none!important;-webkit-text-fill-color:var(--fg)!important;color:var(--fg)!important;text-transform:none;font-family:var(--display);font-stretch:112%}
+.stat>span{letter-spacing:0;text-transform:none;font:600 15px var(--body)}
+.plan{background:#fff}
+.plan ul{color:var(--fg)}
+.plan.best{background:#fff!important;border:1.5px solid var(--red)!important;box-shadow:none!important}
+.plan .badge{letter-spacing:0;text-transform:none;font:600 13px var(--body)}
+.incl div{color:var(--fg);background:#fff}
+.incl b{text-transform:none}
+.person .cap{background:#fff}
+.person .sub{letter-spacing:0;text-transform:none}
+.person.shift .big{background:var(--bg2)!important}
+.marquee span,.track span{letter-spacing:.02em;text-transform:none}
+.f-name{letter-spacing:.02em;text-transform:none}
+footer .f-links a{letter-spacing:0;text-transform:none}
+.seg b{text-transform:none}
+.dur small{letter-spacing:0;text-transform:none}
+.status{letter-spacing:0;text-transform:none}
+.logo{display:inline-flex!important;flex-direction:row!important;align-items:center!important;gap:12px!important}
+.price{font-stretch:100%;font-variation-settings:"wdth" 100;font-size:clamp(38px,3.6vw,50px)!important;letter-spacing:-.02em}
+.switch button{text-transform:none;letter-spacing:0;font:600 14.5px var(--body)}

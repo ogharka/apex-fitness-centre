@@ -1,0 +1,196 @@
+# Blog + AdSense-required pages. Loaded by build.py with exec(), so it shares its helpers
+# (head, nav, footer, drawer, tail, crumbs, crumb_html, ld, e, money, card, PRODUCTS, pages, sitemap, BASE, WA).
+#
+# HOW POSTS WORK: every .md file in source/content/blog/ becomes /blog/<slug>/.
+#   - Files starting with "_" are ignored (templates, notes).
+#   - "draft: true" keeps a post off the site.
+#   - A date in the future keeps it hidden until that day (the site rebuilds every morning).
+import datetime as _dt, glob as _glob, markdown as _md
+
+NPT = _dt.timezone(_dt.timedelta(hours=5, minutes=45))
+TODAY = _dt.datetime.now(NPT).date()
+REQUIRED = ("title", "description", "date")
+
+def _front(path):
+    raw = open(path, encoding="utf-8").read().replace("\r\n", "\n")
+    if not raw.startswith("---\n"):
+        raise SystemExit(f"\n[blog] {os.path.basename(path)}: the file must start with a --- line (see _TEMPLATE.md)\n")
+    top, body = raw[4:].split("\n---", 1)
+    meta = {}
+    for line in top.split("\n"):
+        if ":" in line and not line.strip().startswith("#"):
+            k, v = line.split(":", 1); meta[k.strip().lower()] = v.strip().strip('"').strip("'")
+    return meta, body.lstrip("-").lstrip("\n")
+
+from PIL import Image as _BIm
+BLOG_IMG = {}  # original file name -> (base name, width, height) after resizing to max 1200 px
+
+def _bimg(name, post):
+    """Check an image exists in content/blog/images and return (web name, w, h)."""
+    if name in BLOG_IMG: return BLOG_IMG[name]
+    f = os.path.join(BLOG_DIR, "images", name)
+    if not os.path.exists(f):
+        raise SystemExit(f"\n[blog] {post}: image '{name}' not found. Upload it to source/content/blog/images/ (names are case-sensitive)\n")
+    im = _BIm.open(f); w, h = im.size
+    if w > 1200: w, h = 1200, round(h * 1200 / w)
+    BLOG_IMG[name] = (os.path.splitext(name)[0], w, h)
+    return BLOG_IMG[name]
+
+def copy_blog_images():
+    od = os.path.join(OUT, "blog", "images"); os.makedirs(od, exist_ok=True)
+    for name, (base, w, h) in BLOG_IMG.items():
+        im = _BIm.open(os.path.join(BLOG_DIR, "images", name)).convert("RGB")
+        if im.width > 1200: im = im.resize((w, h), _BIm.LANCZOS)
+        im.save(os.path.join(od, base + ".webp"), "WEBP", quality=80, method=6)
+        im.save(os.path.join(od, base + ".jpg"), "JPEG", quality=82, optimize=True, progressive=True)
+
+def load_posts():
+    posts = []
+    for f in sorted(_glob.glob(os.path.join(BLOG_DIR, "*.md"))):
+        name = os.path.basename(f)
+        if name.startswith("_"): continue
+        m, body = _front(f)
+        miss = [k for k in REQUIRED if not m.get(k)]
+        if miss: raise SystemExit(f"\n[blog] {name}: missing {', '.join(miss)} at the top of the file (see _TEMPLATE.md)\n")
+        try: d = _dt.date.fromisoformat(m["date"])
+        except ValueError: raise SystemExit(f"\n[blog] {name}: date must look like 2026-10-23, got '{m['date']}'\n")
+        if m.get("draft", "").lower() in ("true", "yes", "1") or d > TODAY: continue
+        slug = m.get("slug") or re.sub(r"^\d{4}-\d{2}-\d{2}-", "", name[:-3])
+        slug = re.sub(r"[^a-z0-9-]+", "-", slug.lower()).strip("-")
+        if len(m["description"]) > 160:
+            print(f"[blog] note: {name} description is {len(m['description'])} characters; Google shows about 155.")
+        html_ = _md.markdown(body, extensions=["extra", "sane_lists", "smarty"], output_format="html5")
+        def _swap(mm):
+            base, w, h = _bimg(mm.group(1), name)
+            return f'src="../images/{base}.webp" width="{w}" height="{h}"'
+        html_ = re.sub(r'src="images/([^"]+)"', _swap, html_)
+        if m.get("image"): _bimg(m["image"], name)
+        words = len(re.sub(r"<[^>]+>", " ", html_).split())
+        prods = [p for s in (m.get("products") or "").split(",") for p in PRODUCTS if p["slug"] == s.strip()]
+        upd = m.get("updated")
+        posts.append(dict(m, slug=slug, d=d, updated=_dt.date.fromisoformat(upd) if upd else d, html=html_, words=words,
+                          mins=max(1, round(words / 200)), category=m.get("category") or "Training", prods=prods, file=name))
+    slugs = [p["slug"] for p in posts]
+    dup = {s for s in slugs if slugs.count(s) > 1}
+    if dup: raise SystemExit(f"\n[blog] two posts use the same slug: {', '.join(dup)}\n")
+    return sorted(posts, key=lambda p: p["d"], reverse=True)
+
+def _date(d): return f"{d.day} {d.strftime('%B %Y')}"
+
+def _postcard(p, r):
+    img = ""
+    if p.get("image"):
+        base, w, h = BLOG_IMG[p["image"]]
+        img = f'<span class="bimg"><img src="{r}images/{base}.webp" alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}"></span>'
+    return (f'<a class="bcard" href="{r}{p["slug"]}/">{img}<span class="bmeta">{e(p["category"])} &middot; {_date(p["d"])} &middot; {p["mins"]} min read</span>'
+            f'<b>{e(p["title"])}</b><span class="bdesc">{e(p["description"])}</span></a>')
+
+def build_blog():
+    posts = load_posts()
+    for i, p in enumerate(posts):
+        d = 2; path = f"blog/{p['slug']}/"
+        cr = [("Home", ""), ("Blog", "blog/"), (p["title"], path)]
+        img_abs = BASE + "/blog/images/" + BLOG_IMG[p["image"]][0] + ".jpg" if p.get("image") else BASE + "/assets/og-image.jpg"
+        art = {"@type": "BlogPosting", "headline": p["title"], "description": p["description"], "datePublished": p["d"].isoformat(),
+               "dateModified": p["updated"].isoformat(), "author": {"@type": "Organization", "name": p.get("author") or SITE, "url": BASE + "/about/"},
+               "publisher": {"@id": BASE + "/#org"}, "mainEntityOfPage": BASE + "/" + path, "image": img_abs, "wordCount": p["words"],
+               "articleSection": p["category"]}
+        j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), art]})
+        hero = ""
+        if p.get("image"):
+            base, w, h = BLOG_IMG[p["image"]]
+            hero = f'<figure class="phero"><img src="../images/{base}.webp" alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}" fetchpriority="high"></figure>'
+        shop = ""
+        if p["prods"]:
+            shop = f'<section><h2 class="h2s">Products in this post</h2><div class="pgrid">{"".join(card(x, d) for x in p["prods"])}</div></section>'
+        more = [x for x in posts if x is not p][:3]
+        more_html = f'<section class="gl"><h2 class="h2s">More from the blog</h2><div class="bgrid">{"".join(_postcard(x, "../") for x in more)}</div></section>' if more else ""
+        upd = f' &middot; Updated {_date(p["updated"])}' if p["updated"] != p["d"] else ""
+        ask = wa(f"Hi Apex Fitness Centre, I read your post \"{p['title']}\" and I have a question: ")
+        body = f"""<body data-root="../../">
+{nav(d, "blog")}
+<main><div class="wrap">
+{crumb_html(cr, d)}
+<article class="post">
+<header class="phead"><span class="label">{e(p['category'])}</span><h1>{e(p['title'])}</h1><p class="lead">{e(p['description'])}</p>
+<p class="byline">By {e(p.get('author') or SITE)} &middot; {_date(p['d'])}{upd} &middot; {p['mins']} min read</p></header>
+{hero}
+<div class="pbody">{p['html']}</div>
+<aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
+<p class="fine" style="text-align:left">General information, not medical advice. Ask a doctor if you have a health condition. Results vary from person to person.</p>
+</article>
+{shop}
+{more_html}
+</div></main>
+{footer(d)}{drawer()}{tail(d)}"""
+        pages[path] = head(p["title"] + " | Apex Fitness Blog", p["description"], path, d, image=("blog/images/" + BLOG_IMG[p["image"]][0] + ".jpg") if p.get("image") else None,
+                           extra=j, ptype="article") + body
+        sitemap.append((path, "0.7"))
+    # index
+    d = 1; cr = [("Home", ""), ("Blog", "blog/")]
+    cards = "".join(_postcard(p, "") for p in posts) or '<p class="fine">First posts coming soon.</p>'
+    gcards = "".join(f'<a class="gcard" href="../guides/{x["slug"]}/"><b>{e(x["h1"])}</b><span>{e(x["desc"])}</span></a>' for x in GUIDES)
+    j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "Blog", "name": "Apex Fitness Blog", "url": BASE + "/blog/",
+            "publisher": {"@id": BASE + "/#org"}, "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": BASE + f"/blog/{p['slug']}/", "datePublished": p["d"].isoformat()} for p in posts[:20]]}]})
+    body = f"""<body data-root="../">
+{nav(d, "blog")}
+<main><div class="wrap">
+{crumb_html(cr, d)}
+<div class="shead left"><h1>Apex Fitness Blog</h1><p>Training, food and supplement advice from the floor of a real gym in Urlabari, Morang. Honest, simple and written for Nepal.</p></div>
+<div class="bgrid">{cards}</div>
+<section class="gl"><h2 class="h2s">Supplement buying guides</h2><div class="ggrid">{gcards}</div></section>
+<p class="fine" style="text-align:left"><a class="tl" href="feed.xml">RSS feed</a></p>
+</div></main>
+{footer(d)}{drawer()}{tail(d)}"""
+    pages["blog/"] = head("Fitness and Supplement Blog for Nepal | Apex Fitness Centre",
+                          "Training, diet and supplement advice for Nepal from Apex Fitness Centre, a real gym in Urlabari, Morang.", "blog/", d, extra=j) + body
+    sitemap.append(("blog/", "0.8"))
+    # RSS
+    items = "".join(f"<item><title>{e(p['title'])}</title><link>{BASE}/blog/{p['slug']}/</link><guid>{BASE}/blog/{p['slug']}/</guid>"
+                    f"<pubDate>{_dt.datetime.combine(p['d'], _dt.time(6, 0), NPT).strftime('%a, %d %b %Y %H:%M:%S %z')}</pubDate><description>{e(p['description'])}</description></item>" for p in posts[:30])
+    BLOG_RSS[0] = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Apex Fitness Blog</title><link>{BASE}/blog/</link>'
+                   f'<description>Training, diet and supplement advice for Nepal</description><language>en</language>{items}</channel></rss>\n')
+    return posts
+BLOG_RSS = [""]
+
+def _simple(path, title, desc, h1, inner, prio="0.3"):
+    d = path.count("/"); cr = [("Home", ""), (h1, path)]
+    body = f"""<body data-root="{'../'*d}">
+{nav(d)}
+<main><div class="wrap">
+{crumb_html(cr, d)}
+<article class="post"><header class="phead"><h1>{e(h1)}</h1></header><div class="pbody">{inner}</div></article>
+</div></main>
+{footer(d)}{drawer()}{tail(d)}"""
+    pages[path] = head(title, desc, path, d, extra=ld({"@context": "https://schema.org", "@graph": [crumbs(cr)]})) + body
+    sitemap.append((path, prio))
+
+def build_info_pages():
+    _simple("about/", "About Apex Fitness Centre | Gym and Supplement Store, Urlabari", "Who we are: Apex Fitness Centre, a gym and supplement store in Urlabari-9, Durgapuri, Morang, Nepal.", "About Apex Fitness Centre", f"""
+<p>Apex Fitness Centre is a gym in Urlabari-9, Durgapuri, Morang, Nepal. We are open 4:30 AM to 8:30 PM every day, with trainers on the floor and a front desk to help members.</p>
+<p>Next to the gym we run this online store. We sell authentic supplements bought from authorised sellers, with free delivery all over Nepal. Orders come to us on WhatsApp, and a real person from the gym confirms stock, payment and delivery.</p>
+<p>The <a href="../blog/">blog</a> and <a href="../guides/">guides</a> are written by our team from what members ask us every day: how to start training, how much protein you need, which supplements are worth the money and how to avoid fakes. We keep advice simple and honest, and we do not make medical claims.</p>
+<h2>Visit or contact us</h2>
+<p>Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal<br>WhatsApp and phone: <a href="https://wa.me/{WA}" target="_blank" rel="noopener">9708819605</a><br>Facebook: <a href="https://www.facebook.com/apexfitcentre" target="_blank" rel="noopener">apexfitcentre</a></p>
+<p>See <a href="../gym/">the gym, plans and team</a>.</p>""")
+    _simple("contact/", "Contact Apex Fitness Centre | WhatsApp 9708819605", "Contact Apex Fitness Centre in Urlabari, Morang: WhatsApp or call 9708819605. Open 4:30 AM to 8:30 PM every day.", "Contact us", f"""
+<p>The fastest way to reach us is WhatsApp. We reply from the gym during opening hours.</p>
+<p><a class="btn wa" href="https://wa.me/{WA}?text=Hi%20Apex%20Fitness%20Centre%2C%20" target="_blank" rel="noopener">Message us on WhatsApp</a></p>
+<ul><li><b>WhatsApp and phone:</b> <a href="tel:+9779708819605">9708819605</a></li>
+<li><b>Address:</b> Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal</li>
+<li><b>Opening hours:</b> 4:30 AM to 8:30 PM, every day</li>
+<li><b>Facebook:</b> <a href="https://www.facebook.com/apexfitcentre" target="_blank" rel="noopener">facebook.com/apexfitcentre</a></li></ul>
+<p>For orders, delivery, returns of sealed items, gym memberships, gym software demos, or questions about anything on the blog, send us a message.</p>""")
+    ads = ("<h2>Advertising</h2><p>We show ads from Google AdSense. Google and its partners use cookies to show ads based on your visits to this and other websites. "
+           "You can turn off personalised ads at <a href=\"https://adssettings.google.com\" target=\"_blank\" rel=\"noopener\">Google Ad Settings</a>, and read how Google uses data at "
+           "<a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener\">policies.google.com/technologies/partner-sites</a>.</p>")
+    _simple("privacy/", "Privacy Policy | Apex Fitness Centre", "How apexfitnesscentre.shop uses cookies, analytics, ads and the details you send us on WhatsApp.", "Privacy policy", f"""
+<p>Last updated: {TODAY.isoformat()}. This policy covers apexfitnesscentre.shop, run by Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal.</p>
+<h2>What we collect</h2>
+<p>We do not have accounts or sign-ups on this website. When you order or ask a question, you send us a message on WhatsApp. That message, with your name, phone number and delivery address if you give them, is used only to answer you, deliver your order and keep simple sales records. We do not sell it to anyone.</p>
+<h2>Your cart</h2><p>Your cart is saved in your own browser (local storage) so it is still there when you come back. It is not sent to us until you send the WhatsApp message yourself.</p>
+<h2>Analytics</h2><p>We use Google Analytics to count visits and see which pages and buttons are used, for example how many people tap Order on WhatsApp. Google Analytics uses cookies and collects information such as your device, browser, approximate location and the pages you view. It does not give us your name or phone number.</p>
+{ads}
+<h2>Your choices</h2><p>You can block or delete cookies in your browser settings, and the site still works. To ask us to delete messages or details you sent us, message us on WhatsApp at 9708819605.</p>
+<h2>Health information</h2><p>Articles on this site are general information, not medical advice. Ask a doctor if you have a health condition.</p>
+<h2>Changes</h2><p>If we change this policy we will update the date at the top of this page.</p>""")
