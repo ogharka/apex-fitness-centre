@@ -2,6 +2,7 @@
 title: How Much Protein Do You Need? A Simple Guide for Nepal
 description: How much protein to eat if you train, how to get it from dal, eggs, chicken and milk, and when a whey shake actually makes sense.
 date: 2026-10-23
+seo_title: How Much Protein Do You Need? Guide for Nepal
 category: Diet
 products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, pintola-high-protein-oats-chocolate-1kg
 ---

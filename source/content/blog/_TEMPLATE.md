@@ -21,7 +21,9 @@ HOW TO USE THIS TEMPLATE (this file is never published because its name starts w
 THE LINES AT THE TOP
 - title, description, date: required. Date format is YYYY-MM-DD.
   A future date schedules the post: it goes live by itself on that morning.
-- category: one word or two, e.g. Training, Diet, Supplements, Weight loss, Gym life
+- category: use one of: Supplements, Training, Diet, Weight loss, Gyms in Nepal, Fitness careers, Influencers and athletes, Competitions
+- seo_title: optional shorter title for Google (under 60 characters) if your title is long
+- FAQ: end the post with a section called  ## Frequently asked questions  and put each question as  ### Question?  with the answer under it. Google reads these automatically.
 - image: optional cover photo. Upload it to source/content/blog/images/ first, then write just the name, e.g. image: squat-form.jpg
 - image_alt: describe the photo in a few words, e.g. Member doing a barbell squat at Apex
 - products: optional. Product web names separated by commas, shown as shop cards under the post, e.g.
