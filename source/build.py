@@ -1182,6 +1182,17 @@ def _fix_imgs(html_):
     html_ = re.sub(r'url\((["\']?)([^)"\']*?)assets/([^)"\']+\.jpg)\1\)', lambda m: f'url({m.group(1)}{m.group(2)}assets/{WEBP[m.group(3)][0] if m.group(3) in WEBP else m.group(3)}{m.group(1)})', html_)
     return html_
 
+# Guides replaced by fuller blog posts on the same topic: one page per topic, so they don't compete in Google.
+MERGED = {"guides/how-much-protein-do-you-need/": "blog/how-much-protein-do-you-need/",
+          "guides/how-to-spot-fake-supplements-in-nepal/": "blog/fake-supplements-in-nepal-how-to-spot-them/"}
+for old, new in MERGED.items():
+    for k in list(pages):
+        pages[k] = pages[k].replace(old, new)
+    pages[old] = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>'
+                  f'<link rel="canonical" href="{BASE}/{new}">
+                  f'<meta http-equiv="refresh" content="0; url=/{new}"></head><body><p>This guide has moved: '
+                  f'<a href="/{new}">{BASE}/{new}</a></p></body></html>')
+sitemap[:] = [x for x in sitemap if x[0] not in MERGED]
 for k in list(pages):
     pages[k] = _fix_imgs(pages[k])
 # gym hero is a CSS background above the fold: preload it with high priority
