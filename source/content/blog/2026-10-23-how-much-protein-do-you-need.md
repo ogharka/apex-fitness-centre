@@ -5,6 +5,8 @@ date: 2026-10-23
 seo_title: How Much Protein Do You Need? Guide for Nepal
 category: Diet
 products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, pintola-high-protein-oats-chocolate-1kg
+cover_stat: 1.6–2.2 g
+cover_label: protein per kg of body weight a day
 ---
 
 If you lift weights, a common target is **about 1.6 to 2.2 grams of protein per kilogram of body weight per day**. For a 65 kg member that is roughly 105 to 140 grams a day. If you are not training, much less is enough.
@@ -42,6 +44,9 @@ Write down one normal day. Use these rough numbers (they change by brand, recipe
 - **1 plate of rice:** about 5 to 6 g
 
 A typical day of tea, two plates of dal bhat with tarkari and a snack often comes to only 40 to 60 g. That is the gap.
+
+![Bar chart of protein in common Nepali foods: chicken breast 30 g per 100 g, soybean chunks 25 g, paneer 18 g, chana or rajma 12 to 15 g, dal 8 to 10 g, milk 8 g, curd 7 g, peanuts 7 g, egg 6 g, rice 5 to 6 g](images/protein-in-nepali-foods-chart.jpg)
+*Approximate protein per portion of everyday Nepali foods.*
 
 ## Step 3: Close the gap with food first
 

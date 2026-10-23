@@ -37,6 +37,8 @@ def _front(path):
 
 from PIL import Image as _BIm
 BLOG_IMG = {}  # original file name -> (base name, width, height) after resizing to max 1200 px
+COVERS = {}    # key -> arguments for covers.make_cover (auto covers for posts without their own image)
+import covers as _covers
 
 def _bimg(name, post):
     """Check an image exists in content/blog/images and return (web name, w, h)."""
@@ -51,7 +53,10 @@ def _bimg(name, post):
 
 def copy_blog_images():
     od = os.path.join(OUT, "blog", "images"); os.makedirs(od, exist_ok=True)
+    for key, args in COVERS.items():
+        _covers.make_cover(os.path.join(od, BLOG_IMG[key][0]), **args)
     for name, (base, w, h) in BLOG_IMG.items():
+        if name in COVERS: continue
         im = _BIm.open(os.path.join(BLOG_DIR, "images", name)).convert("RGB")
         if im.width > 1200: im = im.resize((w, h), _BIm.LANCZOS)
         im.save(os.path.join(od, base + ".webp"), "WEBP", quality=80, method=6)
@@ -92,6 +97,18 @@ def load_posts():
         posts.append(dict(m, slug=slug, d=d, updated=_dt.date.fromisoformat(upd) if upd else d, html=html_, words=words,
                           mins=max(1, round(words / 200)), category=m.get("category") or "Training", prods=prods, file=name, toc=toc, faq=faq))
         posts[-1]["cat_slug"] = slugify(posts[-1]["category"])
+        if not m.get("image"):
+            # automatic branded cover, so every post has an image (Google Discover, social shares, AdSense quality)
+            key = f"__cover__{slug}"
+            ph = m.get("cover_photo")
+            if ph:
+                ph = os.path.join(HERE, ph) if ph.startswith("assets/") else os.path.join(BLOG_DIR, "images", ph)
+                if not os.path.exists(ph): raise SystemExit(f"\n[blog] {name}: cover_photo '{m.get('cover_photo')}' not found\n")
+            COVERS[key] = dict(title=m.get("cover_title") or m["title"], category=posts[-1]["category"],
+                               stat=m.get("cover_stat"), label=m.get("cover_label"), photo=ph)
+            BLOG_IMG[key] = (f"cover-{slug}", 1200, 675)
+            posts[-1]["image"] = key
+            posts[-1]["image_alt"] = m.get("image_alt") or m["title"]
     slugs = [p["slug"] for p in posts]
     dup = {s for s in slugs if slugs.count(s) > 1}
     if dup: raise SystemExit(f"\n[blog] two posts use the same slug: {', '.join(dup)}\n")
@@ -145,6 +162,7 @@ def build_blog():
 {hero}
 {tocb}
 <div class="pbody">{p['html']}</div>
+<aside class="author"><b>About this article</b><p>Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>.</p></aside>
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
 <p class="fine" style="text-align:left">General information, not medical advice. Ask a doctor if you have a health condition. Results vary from person to person.</p>
 </article>
@@ -236,6 +254,14 @@ def build_info_pages():
 <li><b>Opening hours:</b> 4:30 AM to 8:30 PM, every day</li>
 <li><b>Facebook:</b> <a href="https://www.facebook.com/apexfitcentre" target="_blank" rel="noopener">facebook.com/apexfitcentre</a></li></ul>
 <p>For orders, delivery, returns of sealed items, gym memberships, gym software demos, or questions about anything on the blog, send us a message.</p>""")
+    _simple("editorial-policy/", "Editorial Policy | Apex Fitness Centre", "How the Apex Fitness Centre blog researches, writes, fact-checks and updates articles about fitness, supplements and gyms in Nepal.", "Editorial policy", """
+<p>The Apex Fitness Centre blog publishes practical articles about fitness in Nepal: training, diet, supplements, gyms, fitness careers and the people in Nepal's fitness scene. This page explains how we work.</p>
+<h2>Who writes the articles</h2><p>Articles are written and checked by the team at Apex Fitness Centre, a gym and supplement store in Urlabari-9, Durgapuri, Morang. We write from what members ask us every day and from published research.</p>
+<h2>How we research</h2><ul><li>Facts about health and nutrition are based on published research and reviews, and we link to our main sources in the article.</li><li>Prices, fees, salaries and rules are checked from official or primary sources where possible, and every article shows the date it was checked.</li><li>Information about real people, gyms and businesses comes only from public sources such as news reports and their own public profiles. We do not publish rumours or negative claims.</li></ul>
+<h2>Health information</h2><p>Our articles are general information, not medical advice. We avoid promises about results and we tell readers to speak to a doctor when a topic needs it, for example for medical conditions, pregnancy or young people.</p>
+<h2>Our products and independence</h2><p>We sell supplements in our store. When an article mentions products we sell, we say so, and we apply the same honest checks to our own products as to anyone else's. Nobody pays to be included in our lists or articles.</p>
+<h2>Advertising</h2><p>Some pages show ads from Google AdSense. Ads are kept separate from our writing, and advertisers have no say in what we publish.</p>
+<h2>Corrections</h2><p>If you find a mistake, or you are mentioned in an article and something is wrong, message us on WhatsApp at 9708819605. We check every report and correct mistakes quickly, and we update the date on the article.</p>""")
     ads = ("<h2>Advertising</h2><p>We show ads from Google AdSense. Google and its partners use cookies to show ads based on your visits to this and other websites. "
            "You can turn off personalised ads at <a href=\"https://adssettings.google.com\" target=\"_blank\" rel=\"noopener\">Google Ad Settings</a>, and read how Google uses data at "
            "<a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener\">policies.google.com/technologies/partner-sites</a>.</p>")

@@ -4,6 +4,8 @@ description: Step-by-step guide to becoming a certified gym trainer in Nepal: wh
 date: 2026-10-23
 seo_title: Become a Gym Trainer in Nepal: Courses, Fees, Salary
 category: Fitness careers
+cover_photo: apex-machines.jpg
+image_alt: Weight machines on the training floor at Apex Fitness Centre, Urlabari
 ---
 
 To become a gym trainer in Nepal you need three things: **a recognised certification, real hours on a gym floor, and a way to find clients.** Most people can do it in **3 to 6 months**. A good certification course in Nepal costs roughly **NPR 15,000 to NPR 110,000**, and you need to be **18 or older** with **SEE or equivalent** education.
@@ -75,6 +77,9 @@ A certificate gets you an interview. Experience gets you the job.
 - **Learn to coach the big lifts:** squat, bench press, deadlift, overhead press, rows and pull-ups. You should be able to spot and fix common mistakes quickly.
 - **Get First Aid and CPR training.** Injuries and fainting happen in gyms. Major international certifications such as NASM and ACE require a valid CPR/AED certificate before you are certified.
 - **Track a few people's progress** (with permission): before and after photos, weights lifted, waist measurements. This becomes your first portfolio.
+
+![Dumbbell rack and barbells on the gym floor at Apex Fitness Centre in Urlabari](images/apex-free-weights.jpg)
+*Real floor hours teach you to coach the main lifts with free weights. Photo: Apex Fitness Centre, Urlabari.*
 
 ## Step 4: Specialise
 

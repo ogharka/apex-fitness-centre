@@ -4,6 +4,8 @@ description: Nepali fitness creators, coaches, bodybuilders and powerlifters wor
 date: 2026-10-23
 seo_title: Nepali Fitness Influencers to Follow in 2026
 category: Influencers and athletes
+cover_stat: 12
+cover_label: Nepali creators and athletes worth following
 ---
 
 Nepal's fitness scene has grown fast. There are now Nepali coaches teaching science-based training online, female creators making the gym feel welcoming for women, and athletes winning medals at South Asian and world championships. Here are **Nepali fitness influencers and athletes worth following in 2026**, grouped by what they are best for.
@@ -101,6 +103,9 @@ At the **16th South Asian Bodybuilding and Physique Sports Championship** in Thi
 ### Nepal's powerlifting team
 
 Nepal regularly sends lifters to international powerlifting competitions. At the World Powerlifting Championship held in Amravati, India, in December 2020, Nepal won [three gold medals and one silver](https://thehimalayantimes.com/kathmandu/nepal-bags-three-gold-one-silver-in-world-power-lifting-championship/), through Hasan Gurung, Ashish Ale Magar, Shruti Karki and Rajesh Suwal.
+
+![Training floor with machines and free weights at Apex Fitness Centre](images/apex-gym-floor.jpg)
+*Online content inspires, but progress happens on the gym floor. Photo: Apex Fitness Centre, Urlabari.*
 
 ## How to get the most out of fitness influencers
 

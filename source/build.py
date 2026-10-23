@@ -248,7 +248,7 @@ def footer(depth, pdp=None):
 <div><div class="fname brand"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></div><p>Authentic supplements with free delivery all over Nepal. Gym in Urlabari-9, Durgapuri, Morang, open 4:30 AM to 8:30 PM every day.</p></div>
 <div><h3>Shop</h3><a href="{r}shop/">All products</a>{cat_links}</div>
 <div><h3>Apex</h3><a href="{r}blog/">Blog</a><a href="{r}guides/">Supplement guides</a><a href="{r}gym/">The gym and membership</a><a href="{r}gym/#team">Team</a><a href="{r}gym/#plans">Plans</a><a href="{r}calculators/">Fitness calculators</a><a href="{r}software/">Gym management software Nepal</a><a href="{r}software/#pricing">Gym software price</a></div>
-<div><h3>Contact</h3><a href="https://wa.me/{WA}" rel="noopener" target="_blank">WhatsApp 9708819605</a><a href="tel:+9779708819605">Call 9708819605</a><a href="https://www.facebook.com/apexfitcentre" rel="noopener" target="_blank">Facebook</a><a href="{r}about/">About us</a><a href="{r}contact/">Contact</a><a href="{r}privacy/">Privacy policy</a></div>
+<div><h3>Contact</h3><a href="https://wa.me/{WA}" rel="noopener" target="_blank">WhatsApp 9708819605</a><a href="tel:+9779708819605">Call 9708819605</a><a href="https://www.facebook.com/apexfitcentre" rel="noopener" target="_blank">Facebook</a><a href="{r}about/">About us</a><a href="{r}contact/">Contact</a><a href="{r}privacy/">Privacy policy</a><a href="{r}editorial-policy/">Editorial policy</a></div>
 </div>
 <div class="fcopy"><span>© <span id="yr">2026</span> Apex Fitness Centre. All rights reserved.</span><span>Free delivery all over Nepal</span></div>
 </div></footer>

@@ -4,6 +4,8 @@ seo_title: Gym Trainer Jobs in Dubai & Gulf for Nepalis (2026)
 description: How Nepalis get gym trainer jobs in Dubai, Qatar and Saudi Arabia: certificates, real salaries, labour permit steps, costs and avoiding scams.
 date: 2026-10-23
 category: Fitness careers
+cover_photo: apex-cardio.jpg
+image_alt: Cardio machines at a gym
 ---
 
 Many Nepali trainers work in gyms in the UAE, Qatar, Saudi Arabia and other Gulf countries. To get a **real trainer job** (not just a cleaning or "gym attendant" role), you need **an internationally recognised personal trainer certificate, First Aid and CPR, some gym experience in Nepal, and a job offer through a licensed agency with a valid labour permit.**
@@ -41,6 +43,9 @@ A valid **First Aid/CPR certificate** is commonly required, both for certificati
 ### 4. Proof of experience
 
 A letter from your gym in Nepal, before and after photos of clients (with their permission), and a short video of you coaching a session make your CV much stronger.
+
+![Plate-loaded leg machine on a gym floor](images/apex-plate-loaded.jpg)
+*Coaching experience on a real gym floor in Nepal makes your CV much stronger. Photo: Apex Fitness Centre.*
 
 ## How much do gym trainers earn in the Gulf?
 
