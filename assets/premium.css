@@ -227,3 +227,6 @@ footer h3{font:600 14px/1 var(--body);letter-spacing:0;text-transform:none;color
 .phead a.label{text-decoration:none}
 .pbody h2,.pbody h3{scroll-margin-top:90px}
 .chip.on{background:var(--fg);color:#fff;border-color:var(--fg)}
+.author{border:1px solid var(--line);border-radius:var(--r-card);padding:18px 20px;margin:32px 0 0;font-size:15px;color:var(--muted)}
+.author b{color:var(--fg);display:block;margin-bottom:6px}.author p{margin:0}.author a{color:var(--gold)}
+.pbody figure{margin:0 0 1.2em}.pbody figcaption,.pbody img+em{display:block;font-size:14px;color:var(--muted);margin-top:8px}
