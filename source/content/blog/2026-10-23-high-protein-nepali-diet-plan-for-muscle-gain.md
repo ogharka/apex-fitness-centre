@@ -5,8 +5,7 @@ description: A simple Nepali diet plan for muscle gain with dal bhat, eggs, chic
 date: 2026-10-23
 category: Diet
 products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, pintola-high-protein-oats-chocolate-1kg
-cover_stat: 140 g
-cover_label: protein a day from normal Nepali food
+cover_art: thali
 ---
 
 You can build muscle on normal Nepali food. You do not need expensive imported meals or six shakes a day. The secret is simple: **keep your dal bhat, but make the protein bigger, eat a little more overall, and train hard and regularly.**
@@ -77,9 +76,6 @@ If money is tight, these give the most protein per rupee in Nepal:
 - **Milk and curd:** easy to add to any meal
 
 Whey protein is convenient, but it is not essential. Use it only when food alone does not get you to your number.
-
-![Plate-loaded leg machine at Apex Fitness Centre](images/apex-plate-loaded.jpg)
-*Food builds muscle only when you train hard and regularly. Photo: Apex Fitness Centre, Urlabari.*
 
 ## Common mistakes
 

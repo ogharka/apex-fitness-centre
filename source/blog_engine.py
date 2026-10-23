@@ -104,8 +104,10 @@ def load_posts():
             if ph:
                 ph = os.path.join(HERE, ph) if ph.startswith("assets/") else os.path.join(BLOG_DIR, "images", ph)
                 if not os.path.exists(ph): raise SystemExit(f"\n[blog] {name}: cover_photo '{m.get('cover_photo')}' not found\n")
-            COVERS[key] = dict(title=m.get("cover_title") or m["title"], category=posts[-1]["category"],
-                               stat=m.get("cover_stat"), label=m.get("cover_label"), photo=ph)
+            art = m.get("cover_art")
+            if art and art not in _covers.ARTS:
+                raise SystemExit(f"\n[blog] {name}: cover_art must be one of: {', '.join(_covers.ARTS)}\n")
+            COVERS[key] = dict(category=posts[-1]["category"], art=art, photo=ph)
             BLOG_IMG[key] = (f"cover-{slug}", 1200, 675)
             posts[-1]["image"] = key
             posts[-1]["image_alt"] = m.get("image_alt") or m["title"]
@@ -122,7 +124,7 @@ def _postcard(p, r):
     if p.get("image"):
         base, w, h = BLOG_IMG[p["image"]]
         img = f'<span class="bimg"><img src="{r}images/{base}.webp" alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}"></span>'
-    return (f'<a class="bcard" href="{r}{p["slug"]}/">{img}<span class="bmeta">{e(p["category"])} &middot; {_date(p["d"])} &middot; {p["mins"]} min read</span>'
+    return (f'<a class="bcard" href="{r}{p["slug"]}/">{img}<span class="bmeta"><span>{e(p["category"])}</span><span>{p["mins"]} min read</span></span>'
             f'<b>{e(p["title"])}</b><span class="bdesc">{e(p["description"])}</span></a>')
 
 def build_blog():
@@ -161,7 +163,7 @@ def build_blog():
 <p class="byline">By {e(p.get('author') or "the Apex Fitness Centre team")} &middot; {_date(p['d'])}{upd} &middot; {p['mins']} min read</p></header>
 {hero}
 {tocb}
-<div class="pbody">{p['html']}</div>
+<div class="abody">{p['html']}</div>
 <aside class="author"><b>About this article</b><p>Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>.</p></aside>
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
 <p class="fine" style="text-align:left">General information, not medical advice. Ask a doctor if you have a health condition. Results vary from person to person.</p>
@@ -201,7 +203,7 @@ def build_blog():
     # index
     d = 1; cr = [("Home", ""), ("Blog", "blog/")]
     cards = "".join(_postcard(p, "") for p in posts) or '<p class="fine">First posts coming soon.</p>'
-    gcards = "".join(f'<a class="gcard" href="../guides/{x["slug"]}/"><b>{e(x["h1"])}</b><span>{e(x["desc"])}</span></a>' for x in GUIDES)
+    gcards = "".join(f'<a class="gcard" href="../guides/{x["slug"]}/"><b>{e(x["h1"])}</b><span>{e(x["desc"])}</span></a>' for x in GUIDES if x["slug"] not in MERGED_GUIDE_SLUGS)
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "Blog", "name": "Apex Fitness Blog", "url": BASE + "/blog/",
             "publisher": {"@id": BASE + "/#org"}, "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": BASE + f"/blog/{p['slug']}/", "datePublished": p["d"].isoformat()} for p in posts[:20]]}]})
     body = f"""<body data-root="../">
@@ -232,7 +234,7 @@ def _simple(path, title, desc, h1, inner, prio="0.3"):
 {nav(d)}
 <main><div class="wrap">
 {crumb_html(cr, d)}
-<article class="post"><header class="phead"><h1>{e(h1)}</h1></header><div class="pbody">{inner}</div></article>
+<article class="post"><header class="phead"><h1>{e(h1)}</h1></header><div class="abody">{inner}</div></article>
 </div></main>
 {footer(d)}{drawer()}{tail(d)}"""
     pages[path] = head(title, desc, path, d, extra=ld({"@context": "https://schema.org", "@graph": [crumbs(cr)]})) + body

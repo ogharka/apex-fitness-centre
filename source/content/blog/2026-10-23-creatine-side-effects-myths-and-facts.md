@@ -5,8 +5,7 @@ description: Does creatine cause hair loss, kidney damage or bloating? What the 
 date: 2026-10-23
 category: Supplements
 products: muscleblaze-creatine-monohydrate-320g-citrus-blast, wellcore-micronised-creatine-monohydrate-307g-fruit-fusion, bpi-sports-micronized-creatine-300g-unflavored
-cover_stat: 3–5 g
-cover_label: of creatine a day is all you need
+cover_art: tub
 ---
 
 For healthy adults, **creatine monohydrate at 3 to 5 grams a day is one of the most researched and safest supplements available.** The most common "side effects" people worry about, such as hair loss, kidney damage, dehydration and cramps, are **not supported by the research**. The real side effects are small: a little weight gain from water in the muscles, and an upset stomach if you take a big dose at once.
@@ -65,9 +64,6 @@ Many people gain around **1 to 2 kg in the first week or two**, especially if th
 ### Upset stomach with big doses
 
 Taking a large amount in one go (for example 10 g or more at once) can cause stomach discomfort or loose motions in some people. Fix: take **3 to 5 g at a time**, with food or a drink.
-
-![A tub of creatine monohydrate powder](images/creatine-monohydrate-tub.jpg)
-*Plain creatine monohydrate is the most researched form, and usually the cheapest.*
 
 ## How to take creatine safely
 

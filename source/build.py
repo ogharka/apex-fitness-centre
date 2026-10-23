@@ -1064,6 +1064,8 @@ def build_calculators():
 build_home(); build_shop()
 
 from guides import GUIDES
+# Guides whose topic now lives in a fuller blog post (see MERGED near the end); hidden from guide lists.
+MERGED_GUIDE_SLUGS = {"how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"}
 _GBY = {g["slug"]: g for g in GUIDES}
 GUIDE_FOR_CAT = {"creatine": ["creatine-price-in-nepal", "how-to-take-creatine", "how-to-spot-fake-supplements-in-nepal"],
                  "protein": ["whey-protein-price-in-nepal", "how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"],
@@ -1122,7 +1124,7 @@ def build_guides():
         pages[path] = head(g["title"], g["desc"], path, d, extra=j, ptype="article") + body
         sitemap.append((path, "0.8"))
     d = 1; cr = [("Home", ""), ("Guides", "guides/")]
-    cards = "".join(f'<a class="gcard" href="{x["slug"]}/"><b>{e(x["h1"])}</b><span>{e(x["desc"])}</span></a>' for x in GUIDES)
+    cards = "".join(f'<a class="gcard" href="{x["slug"]}/"><b>{e(x["h1"])}</b><span>{e(x["desc"])}</span></a>' for x in GUIDES if x["slug"] not in MERGED_GUIDE_SLUGS)
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "CollectionPage", "name": "Supplement guides for Nepal", "url": BASE + "/guides/"}]})
     body = f"""<body data-root="../">
 {nav(d)}

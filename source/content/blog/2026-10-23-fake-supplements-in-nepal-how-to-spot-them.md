@@ -5,8 +5,7 @@ date: 2026-10-23
 seo_title: Fake Supplements in Nepal: How to Spot Fake Whey
 category: Supplements
 products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, muscleblaze-creatine-monohydrate-320g-citrus-blast
-cover_stat: 10 checks
-cover_label: before you buy whey or creatine
+cover_art: check
 ---
 
 The quickest way to avoid fake supplements in Nepal is to **buy only from sellers who can show where the product came from**, check the **seal, batch number and expiry date**, verify the brand's **authenticity code** if it has one, and walk away from **prices that are far below everyone else's**. No single check is perfect, but together they catch most fakes.
@@ -35,9 +34,6 @@ Fake protein usually looks real on the outside and is cheap on the inside. Commo
 - **Expired stock:** old products with new expiry stickers
 
 For sellers, the money is the motive. An industry executive quoted by [NutraIngredients](https://www.nutraingredients.com/Article/2022/08/16/MuscleBlaze-develops-test-kit-for-consumers-to-verify-protein-powder-authenticity/) said retailers in India could make about **₹1,500 on a fake sale versus about ₹400 on a genuine one**.
-
-![Checklist graphic: who imported it, seal intact, batch number and expiry, brand authenticity code](images/whey-authenticity-checklist.jpg)
-*The four quickest checks before you open a new tub.*
 
 ## 10 checks before you buy
 

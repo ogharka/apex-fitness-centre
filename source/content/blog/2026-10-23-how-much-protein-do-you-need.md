@@ -5,8 +5,7 @@ date: 2026-10-23
 seo_title: How Much Protein Do You Need? Guide for Nepal
 category: Diet
 products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, pintola-high-protein-oats-chocolate-1kg
-cover_stat: 1.6–2.2 g
-cover_label: protein per kg of body weight a day
+cover_art: protein
 ---
 
 If you lift weights, a common target is **about 1.6 to 2.2 grams of protein per kilogram of body weight per day**. For a 65 kg member that is roughly 105 to 140 grams a day. If you are not training, much less is enough.
