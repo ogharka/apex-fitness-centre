@@ -26,8 +26,10 @@ About 2 minutes later it is live at `apexfitnesscentre.shop/blog/your-post-name/
 |---|---|
 | Product price, name, text | `source/build.py` (first products) and `source/newprods.py` |
 | Out of stock | `STOCK = {...}` near the top of `source/build.py` |
-| Google Analytics ID | `GA_ID` near the top of `source/build.py` |
+| Google Analytics ID | `GA_ID` near the top of `source/build.py` (tracking stays off until a real ID is set) |
 | Google AdSense ID | `ADSENSE_CLIENT` near the top of `source/build.py` (also creates ads.txt) |
+| Which pages show ads | `ADS_ON` in `source/build.py` (blog, guides, calculators only; shop pages stay ad-free) |
+| Google Search Console verification | `GSC_VERIFY` in `source/build.py` (paste only the content="..." value) |
 | Customer reviews | `REVIEWS` in `source/build.py`, photos in `source/assets/reviews/` |
 | Colours and design | `source/premium.css` |
 

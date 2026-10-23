@@ -22,11 +22,11 @@ function render(){
   var msg='Hi Apex Fitness Centre, I want to order:\n'+lines.join('\n')+(saved?'\nStack saving: -'+fmt(saved)+' ('+sl.join(', ')+')':'')+'\nTotal: '+fmt(total)+'\nPlease confirm stock and send Khalti/bank payment details. My delivery address: ';
   var xs='',pairs=window.APEX_PAIRS||{};
   for(var i=0;i<keys.length&&!xs;i++){var ps=pairs[keys[i]],q=ps&&bySlug(ps);if(q&&!cart[ps])xs='<div class="xs"><b>Often bought together</b><div class="r2"><img src="'+root+'assets/'+q.img+'" alt="" width="48" height="48"><span>'+q.name+' &middot; '+fmt(q.price)+'</span></div><button class="add" type="button" data-add="'+ps+'">Add to cart</button></div>'}
-  foot.innerHTML=xs+'<div class="free">Free delivery all over Nepal on this order.</div>'+(saved?'<div class="free">You saved '+fmt(saved)+' with stack pricing.</div>':'')+'<div class="tot"><span>Total</span><span>'+fmt(total)+'</span></div><a class="btn wa full" target="_blank" rel="noopener" href="https://wa.me/'+WA+'?text='+encodeURIComponent(msg)+'">Order on WhatsApp</a><small>Free delivery all over Nepal. Pay by Khalti or bank transfer, confirmed on WhatsApp.</small>';
+  foot.innerHTML=xs+'<div class="free">Free delivery all over Nepal on this order.</div>'+(saved?'<div class="free">You saved '+fmt(saved)+' with stack pricing.</div>':'')+'<div class="tot"><span>Total</span><span>'+fmt(total)+'</span></div><a class="btn wa full" target="_blank" rel="noopener" data-product="Cart: '+keys.map(function(k){return bySlug(k).full}).join(' + ').replace(/"/g,'')+'" data-value="'+total+'" href="https://wa.me/'+WA+'?text='+encodeURIComponent(msg)+'">Order on WhatsApp</a><small>Free delivery all over Nepal. Pay by Khalti or bank transfer, confirmed on WhatsApp.</small>';
 }
-function open(){lastFocus=document.activeElement;render();drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');scrim.hidden=false;var c=$('#cartClose');if(c)c.focus()}
+function open(){lastFocus=document.activeElement;render();if(window.gtag&&count())gtag('event','view_cart',{currency:'NPR'});drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');scrim.hidden=false;var c=$('#cartClose');if(c)c.focus()}
 function close(){drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');scrim.hidden=true;if(lastFocus)lastFocus.focus()}
-function add(s,q){cart[s]=Math.min(99,(cart[s]||0)+q);save();render()}
+function add(s,q){cart[s]=Math.min(99,(cart[s]||0)+q);save();render();var p=bySlug(s);if(p&&window.gtag)gtag('event','add_to_cart',{currency:'NPR',value:p.price*q,items:[{item_id:s,item_name:p.full,item_brand:p.brand,price:p.price,quantity:q}]})}
 document.addEventListener('click',function(ev){
   var t=ev.target.closest('button,a');if(!t)return;
   if(t.id==='cartOpen'||t.id==='cartOpen2'){open();return}

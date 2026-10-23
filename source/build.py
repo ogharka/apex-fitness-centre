@@ -14,6 +14,11 @@ GA_ID = "G-XXXXXXXXXX"
 # GOOGLE ADSENSE: paste your publisher ID when AdSense gives it to you, e.g. "ca-pub-1234567890123456".
 # Leave it empty until then. When set, every page gets the AdSense Auto ads code and /ads.txt is created.
 ADSENSE_CLIENT = ""
+# Ads only on content pages, so they never distract buyers on shop and product pages.
+ADS_ON = ("blog/", "guides/", "calculators/")
+# GOOGLE SEARCH CONSOLE: when Search Console asks you to verify with an "HTML tag", paste only the
+# content="..." value here, e.g. "abc123XYZ". Leave empty if you verify another way.
+GSC_VERIFY = ""
 # STOCK per product. Default is in stock. To mark one product out of stock, add its slug here:
 #   STOCK = {"scitron-volcano-pre-workout": "out"}
 STOCK = {}
@@ -159,7 +164,7 @@ def head(title, desc, path, depth, image=None, extra="", ptype="website"):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-{ga_tag()}{adsense_tag()}<title>{e(title)}</title>
+{ga_tag()}{adsense_tag(path)}{gsc_tag()}<title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{canon}">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -186,18 +191,24 @@ def head(title, desc, path, depth, image=None, extra="", ptype="website"):
 </head>
 """
 
-def adsense_tag():
-    if not ADSENSE_CLIENT: return ""
+def gsc_tag():
+    return f'<meta name="google-site-verification" content="{GSC_VERIFY}">\n' if GSC_VERIFY else ""
+
+def adsense_tag(path=""):
+    if not ADSENSE_CLIENT or not path.startswith(ADS_ON): return ""
     return f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>\n<meta name="google-adsense-account" content="{ADSENSE_CLIENT}">\n'
 
 def ga_tag():
     """GA4 tag plus a 'whatsapp_order' event on every click of a wa.me link.
-    The product name comes from data-product on the link (or its nearest parent), else the page H1."""
+    The product name comes from data-product on the link (or its nearest parent), else the page H1.
+    Nothing is added until a real ID is set, so no wasted requests with the placeholder."""
+    if not re.fullmatch(r"G-[A-Z0-9]{6,12}", GA_ID) or GA_ID == "G-XXXXXXXXXX": return ""
     return f"""<!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','{GA_ID}');
 document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href*="wa.me/"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
-gtag('event','whatsapp_order',{{product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'}})}},true);</script>
+var v=s&&parseFloat(s.getAttribute('data-value'));var p={{product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'}};if(v){{p.value=v;p.currency='NPR'}}
+gtag('event','whatsapp_order',p)}},true);</script>
 """
 
 def nav(depth, active=""):
@@ -227,7 +238,7 @@ def footer(depth, pdp=None):
     r = "../" * depth
     if pdp:
         pm = f"Hi Apex Fitness Centre, I want to order: {pdp['full']} for {money(pdp['price'])}. Please confirm stock and send payment details."
-        mbar = f'<div class="mbar pdpbar" data-product="{e(pdp["full"])}"><a class="btn wa" href="{wa(pm)}" target="_blank" rel="noopener">Order on WhatsApp</a><button class="btn line" type="button" data-add="{pdp["slug"]}">Add &middot; {money(pdp["price"])}</button><button class="btn" type="button" id="cartOpen2" aria-label="Cart">Cart <b id="cartCount2">0</b></button></div>'
+        mbar = f'<div class="mbar pdpbar" data-product="{e(pdp["full"])}" data-value="{pdp["price"]}"><a class="btn wa" href="{wa(pm)}" target="_blank" rel="noopener">Order on WhatsApp</a><button class="btn line" type="button" data-add="{pdp["slug"]}">Add &middot; {money(pdp["price"])}</button><button class="btn" type="button" id="cartOpen2" aria-label="Cart">Cart <b id="cartCount2">0</b></button></div>'
     else:
         mbar = f'<div class="mbar"><a class="btn wa" href="https://wa.me/{WA}?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20have%20a%20question%20about%20supplements." target="_blank" rel="noopener">WhatsApp</a><button class="btn" type="button" id="cartOpen2">Cart <b id="cartCount2">0</b></button></div>'
     cat_links = "".join(f'<a href="{r}{c["url"]}">{c["name"]}</a>' for c in CATS)
@@ -525,7 +536,7 @@ def together(p):
     return f'''<section class="tog"><h2 class="h2s">Frequently bought together</h2><div class="togr">
 <div class="ti"><img src="../../assets/{p['img']}" alt="{e(p['full'])}" width="640" height="640" loading="lazy"><span>{e(p['name'])}</span></div><b class="plus">+</b>
 <div class="ti"><a href="../../{q['url']}"><img src="../../assets/{q['img']}" alt="{e(q['full'])}" width="640" height="640" loading="lazy"></a><span>{e(q['name'])}</span></div>
-<div class="tbuy" data-product="{e(p['full'])} + {e(q['full'])}"><span class="was">Both for <s>{money(full)}</s></span><b class="price">{money(tot)}</b><span class="save">You save {money(off)}</span><a class="btn wa" href="{wa(f"Hi Apex Fitness Centre, I want to order this bundle: {p['full']} ({money(p['price'])}) + {q['full']} ({money(q['price'])}). Bundle price {money(tot)} (was {money(full)}, I save {money(off)}). Please confirm stock and send payment details.")}" target="_blank" rel="noopener">Order both on WhatsApp</a><button class="btn line" type="button" data-bundle="{p['slug']},{q['slug']}">Add both to cart</button></div>
+<div class="tbuy" data-product="{e(p['full'])} + {e(q['full'])}" data-value="{tot}"><span class="was">Both for <s>{money(full)}</s></span><b class="price">{money(tot)}</b><span class="save">You save {money(off)}</span><a class="btn wa" href="{wa(f"Hi Apex Fitness Centre, I want to order this bundle: {p['full']} ({money(p['price'])}) + {q['full']} ({money(q['price'])}). Bundle price {money(tot)} (was {money(full)}, I save {money(off)}). Please confirm stock and send payment details.")}" target="_blank" rel="noopener">Order both on WhatsApp</a><button class="btn line" type="button" data-bundle="{p['slug']},{q['slug']}">Add both to cart</button></div>
 </div></section>'''
 
 def stock_line(p):
@@ -567,7 +578,7 @@ def build_product(p):
 <div class="pprice"><span class="price big">{money(p['price'])}</span><span class="tag">Free delivery all over Nepal</span></div>
 {stock_line(p)}
 <p class="lead">{e(p['short'])}</p>
-<a class="btn wa full order-main" href="{wa(msg)}" target="_blank" rel="noopener" data-product="{e(p['full'])}">Order on WhatsApp &ndash; {money(p['price'])}</a>
+<a class="btn wa full order-main" href="{wa(msg)}" target="_blank" rel="noopener" data-product="{e(p['full'])}" data-value="{p['price']}">Order on WhatsApp &ndash; {money(p['price'])}</a>
 <div class="buy">
 <div class="qty" role="group" aria-label="Quantity"><button type="button" id="qm" aria-label="Decrease">-</button><input id="qv" value="1" inputmode="numeric" aria-label="Quantity"><button type="button" id="qp" aria-label="Increase">+</button></div>
 <button class="btn line" type="button" id="addBtn" data-add="{p['slug']}">Add to cart</button>
