@@ -38,6 +38,9 @@ Eat a meal or snack **within a couple of hours** after training. The old idea of
 11. **Whey shake + a fruit**
 12. **Chana chatpate** with onion and lemon
 
+![Member resting with a shaker bottle between sets at Apex Fitness Centre](images/apex-member-post-workout-shaker.jpg)
+*A shake is handy between sets or straight after training, but a proper meal later matters just as much. Photo: Apex Fitness Centre.*
+
 ## For muscle gain vs fat loss
 
 | Goal | Post-workout approach |

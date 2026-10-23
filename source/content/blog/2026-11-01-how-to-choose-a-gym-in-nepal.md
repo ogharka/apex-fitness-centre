@@ -55,6 +55,9 @@ Are heavy weights stored properly? Is the flooring rubber? Are there mirrors, en
 
 Ask about a **women's changing room and washroom**, and whether women trainers or front desk staff are available. Notice if women members train comfortably there. See our [gym guide for women](../gym-guide-for-women-first-visit/).
 
+![Smiling front desk staff member at a laptop under the Apex Fitness Centre sign](images/apex-front-desk-staff.jpg)
+*A staffed front desk makes joining, renewing and asking questions easy. Front desk at Apex Fitness Centre, Urlabari.*
+
 ### 9. The atmosphere
 
 Do members look relaxed and friendly? Loud music and a serious crowd suit some people; others prefer a calm, welcoming place. Trust your feeling.

@@ -1,7 +1,7 @@
 ---
 title: Gym Guide for Women: Your First Visit, What to Train and Common Fears
 seo_title: Gym Guide for Women: First Visit & What to Train
-description: Nervous about joining a gym as a woman? What to wear, what to do on your first day, a simple workout plan, and honest answers to the fears that stop most women.
+description: Nervous about joining a gym as a woman? What to wear, your first day, a simple workout plan, and honest answers to common fears.
 date: 2026-10-26
 category: Training
 cover_photo: apex-gym-floor.jpg

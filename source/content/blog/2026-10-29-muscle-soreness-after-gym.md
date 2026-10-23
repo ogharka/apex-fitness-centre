@@ -31,6 +31,9 @@ The good news: soreness **reduces quickly** once your body gets used to an exerc
 
 **See a doctor urgently** if you have very severe muscle pain with weakness, swelling, or **dark (cola-coloured) urine** after an extreme workout. That can be a sign of a rare but serious condition called rhabdomyolysis.
 
+![Member resting on the gym floor with a towel after a workout at Apex Fitness Centre](images/apex-member-resting-floor.jpg)
+*Rest, food and sleep are when your muscles actually recover. Photo: Apex Fitness Centre, Urlabari.*
+
 ## How to recover faster
 
 - **Keep moving.** Light walking, cycling or an easy workout of the same muscles increases blood flow and often helps more than rest.
