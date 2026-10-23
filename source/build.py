@@ -1189,7 +1189,7 @@ for old, new in MERGED.items():
     for k in list(pages):
         pages[k] = pages[k].replace(old, new)
     pages[old] = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>'
-                  f'<link rel="canonical" href="{BASE}/{new}">
+                  f'<link rel="canonical" href="{BASE}/{new}">'
                   f'<meta http-equiv="refresh" content="0; url=/{new}"></head><body><p>This guide has moved: '
                   f'<a href="/{new}">{BASE}/{new}</a></p></body></html>')
 sitemap[:] = [x for x in sitemap if x[0] not in MERGED]
