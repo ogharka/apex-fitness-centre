@@ -109,4 +109,4 @@ Helpful trainers, convenient hours, basic equipment that works, a clean space, a
 
 Not always. A good gym should give you basic guidance. A personal trainer helps if you want faster progress, have an injury, or need motivation.
 
-*In Urlabari or nearby? Visit [Apex Fitness Centre](../../gym/) for a look around. Open 4:30 AM to 8:30 PM, with trainers on both shifts.*
+*In Urlabari or nearby? Visit [Apex Fitness Centre](../../gym/) for a look around. Open 4:30 AM to 8:30 PM, Sunday to Friday, with trainers on both shifts.*

@@ -67,4 +67,4 @@ A light snack 30 to 60 minutes before, or a meal 2 to 3 hours before. See [what 
 
 Some lifters deadlift in socks or barefoot, but most gyms require shoes for safety and hygiene. Follow your gym's rules.
 
-*Packing for Apex? We're open 4:30 AM to 8:30 PM. See [timings and plans](../../gym/).*
+*Packing for Apex? We're open 4:30 AM to 8:30 PM, Sunday to Friday. See [timings and plans](../../gym/).*

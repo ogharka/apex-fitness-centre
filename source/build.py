@@ -118,7 +118,7 @@ HOME_FAQ = [
  ("How do I order?","Add products to your cart and tap Order on WhatsApp. Your cart arrives in our WhatsApp chat as a ready message. We confirm stock and delivery with you."),
  ("How do I pay?","We accept Khalti and bank transfer. We send you the payment details on WhatsApp when you order."),
  ("What brands do you sell?","MuscleBlaze, Wellcore, BPI Sports, BigMan, Scitron, Pole Nutrition, Pintola and Valeo: creatine, protein, pre-workout, BCAA, L-carnitine, omega-3, protein oats and lifting belts. All products are authentic, bought from authorised sellers."),
- ("Where are you based?","Apex Fitness Centre, Urlabari-9, Durgapuri, Morang. We are a gym first, open 4:30 AM to 8:30 PM every day, and you can also pick up supplements in person."),
+ ("Where are you based?","Apex Fitness Centre, Urlabari-9, Durgapuri, Morang. We are a gym first, open 4:30 AM to 8:30 PM Sunday to Friday, and you can also pick up supplements in person."),
  ("Can I check stock before ordering?","Yes. Message us on WhatsApp at 9708819605 and we will tell you what is in stock today."),
 ]
 
@@ -153,7 +153,7 @@ ORG = {"@type": "Organization", "@id": BASE + "/#org", "name": SITE, "url": BASE
 STORE = {"@type": ["SportsActivityLocation", "Store"], "@id": BASE + "/#store", "name": SITE, "url": BASE + "/",
          "image": BASE + "/assets/og-image.jpg", "telephone": "+977-9708819605", "priceRange": "Rs. 1,500 - Rs. 15,000",
          "address": {"@type": "PostalAddress", "streetAddress": "Urlabari-9, Durgapuri", "addressLocality": "Urlabari", "addressRegion": "Morang", "addressCountry": "NP"},
-         "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "04:30", "closes": "20:30"}],
+         "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "04:30", "closes": "20:30"}],
          "areaServed": {"@type": "Country", "name": "Nepal"}, "sameAs": ["https://www.facebook.com/apexfitcentre"]}
 
 def head(title, desc, path, depth, image=None, extra="", ptype="website"):
@@ -245,7 +245,7 @@ def footer(depth, pdp=None):
     cat_links = "".join(f'<a href="{r}{c["url"]}">{c["name"]}</a>' for c in CATS)
     return f"""<footer><div class="wrap">
 <div class="fgrid">
-<div><div class="fname brand"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></div><p>Authentic supplements with free delivery all over Nepal. Gym in Urlabari-9, Durgapuri, Morang, open 4:30 AM to 8:30 PM every day.</p></div>
+<div><div class="fname brand"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></div><p>Authentic supplements with free delivery all over Nepal. Gym in Urlabari-9, Durgapuri, Morang, open 4:30 AM to 8:30 PM, Sunday to Friday.</p></div>
 <div><h3>Shop</h3><a href="{r}shop/">All products</a>{cat_links}</div>
 <div><h3>Apex</h3><a href="{r}blog/">Blog</a><a href="{r}guides/">Supplement guides</a><a href="{r}gym/">The gym and membership</a><a href="{r}gym/#team">Team</a><a href="{r}gym/#plans">Plans</a><a href="{r}calculators/">Fitness calculators</a><a href="{r}software/">Gym management software Nepal</a><a href="{r}software/#pricing">Gym software price</a></div>
 <div><h3>Contact</h3><a href="https://wa.me/{WA}" rel="noopener" target="_blank">WhatsApp 9708819605</a><a href="tel:+9779708819605">Call 9708819605</a><a href="https://www.facebook.com/apexfitcentre" rel="noopener" target="_blank">Facebook</a><a href="{r}about/">About us</a><a href="{r}contact/">Contact</a><a href="{r}privacy/">Privacy policy</a><a href="{r}editorial-policy/">Editorial policy</a></div>
@@ -344,7 +344,7 @@ def build_home():
 <li><b>100% authentic</b><span>Bought from authorised sellers</span></li>
 <li><b>Free delivery</b><span>All over Nepal, no minimum</span></li>
 <li><b>Khalti and bank</b><span>Easy, safe payment</span></li>
-<li><b>A real gym</b><span>Urlabari-9, Morang, open daily</span></li>
+<li><b>A real gym</b><span>Urlabari-9, Morang, open Sun to Fri</span></li>
 </ul></div></section>
 <section class="sec"><div class="wrap">
 <div class="shead"><span class="label">What is your goal?</span><h2>Start with what you want</h2><p>Not sure what to buy? Pick your goal and we will point you to the right product.</p></div>
@@ -637,25 +637,20 @@ def build_gym():
         assert a in s, ("gym source changed, fix not applied:", a[:70]); s = s.replace(a, b)
     # H1: the two lines are separate spans, so text readers saw "Earn yourpeak". Add a real space.
     must('<span class="l"><span>Earn your</span></span><span class="l">', '<span class="l"><span>Earn your</span></span> <span class="l">')
-    # 12-month first-time price: flag for the owner, do not change
-    must('<div class="plan" data-months="12" data-first="12500"',
-         '<!-- OWNER TO CONFIRM: 12-month first-time price is Rs. 12,500, but every other plan is renewal + Rs. 1,000 '
-         '(Rs. 500 admission + Rs. 500 T-shirt/card). By that rule it would be Rs. 13,000 (renewal Rs. 12,000). '
-         'Change data-first and the Rs. figure below only if the owner confirms. -->\n      '
-         '<div class="plan" data-months="12" data-first="12500"')
+    # 12-month first-time price Rs. 12,500 confirmed by the owner (23 Oct 2026).
     # Trainer cards: same layout for both (name, shift and time, experience)
     must('<div class="cap"><span class="sub">Trainer</span><div class="role">Morning shift</div><div class="time">4:30 AM – 12:30 PM</div><p>2+ years of deep study in the fitness field.</p></div>',
          '<div class="cap"><span class="sub">Trainer</span>'
-         '<div class="role">Morning trainer<!-- TODO(owner): replace "Morning trainer" with this trainer\'s real name --></div>'
+         '<div class="role">Suman Limbu</div>'
          '<div class="meta">Morning shift · 4:30 AM – 12:30 PM</div><div class="meta">2+ years of study in the fitness field</div></div>')
     must('<div class="role">Sanju Phombo Limbu</div><div class="meta">Day shift · 30 years of experience</div>',
          '<div class="role">Sanju Phombo Limbu</div>'
-         '<div class="meta">Day shift · hours: ask on WhatsApp<!-- TODO(owner): replace "hours: ask on WhatsApp" with Sanju\'s real shift time, e.g. 12:30 PM – 8:30 PM --></div>'
+         '<div class="meta">Evening shift · 4:30 PM – 8:30 PM</div>'
          '<div class="meta">30 years of experience</div>')
     for anchor in ('id="plans"', 'id="connect"', 'id="team"'):
         assert anchor in s, anchor
     title = "Gym in Urlabari, Morang | Memberships and Trainers | Apex Fitness Centre"
-    desc = "Apex Fitness Centre, gym in Urlabari-9, Durgapuri, Morang. Open 4:30 AM to 8:30 PM daily. Memberships from Rs. 1,500 a month, trainers on both shifts."
+    desc = "Apex Fitness Centre, gym in Urlabari-9, Durgapuri, Morang. Open 4:30 AM to 8:30 PM, Sunday to Friday. Memberships from Rs. 1,500 a month, trainers on both shifts."
     cr = [("Home", ""), ("The gym", "gym/")]
     gj = dict(STORE); gj["@context"] = "https://schema.org"; gj["@type"] = ["HealthClub", "SportsActivityLocation"]
     gj["@id"] = BASE + "/gym/#gym"; gj["url"] = BASE + "/gym/"

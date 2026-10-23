@@ -243,18 +243,18 @@ def _simple(path, title, desc, h1, inner, prio="0.3"):
 
 def build_info_pages():
     _simple("about/", "About Apex Fitness Centre | Gym and Supplement Store, Urlabari", "Who we are: Apex Fitness Centre, a gym and supplement store in Urlabari-9, Durgapuri, Morang, Nepal.", "About Apex Fitness Centre", f"""
-<p>Apex Fitness Centre is a gym in Urlabari-9, Durgapuri, Morang, Nepal. We are open 4:30 AM to 8:30 PM every day, with trainers on the floor and a front desk to help members.</p>
+<p>Apex Fitness Centre is a gym in Urlabari-9, Durgapuri, Morang, Nepal. We are open 4:30 AM to 8:30 PM, Sunday to Friday (closed on Saturday), with trainers on the floor and a front desk to help members.</p>
 <p>Next to the gym we run this online store. We sell authentic supplements bought from authorised sellers, with free delivery all over Nepal. Orders come to us on WhatsApp, and a real person from the gym confirms stock, payment and delivery.</p>
 <p>The <a href="../blog/">blog</a> and <a href="../guides/">guides</a> are written by our team from what members ask us every day: how to start training, how much protein you need, which supplements are worth the money and how to avoid fakes. We keep advice simple and honest, and we do not make medical claims.</p>
 <h2>Visit or contact us</h2>
 <p>Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal<br>WhatsApp and phone: <a href="https://wa.me/{WA}" target="_blank" rel="noopener">9708819605</a><br>Facebook: <a href="https://www.facebook.com/apexfitcentre" target="_blank" rel="noopener">apexfitcentre</a></p>
 <p>See <a href="../gym/">the gym, plans and team</a>.</p>""")
-    _simple("contact/", "Contact Apex Fitness Centre | WhatsApp 9708819605", "Contact Apex Fitness Centre in Urlabari, Morang: WhatsApp or call 9708819605. Open 4:30 AM to 8:30 PM every day.", "Contact us", f"""
+    _simple("contact/", "Contact Apex Fitness Centre | WhatsApp 9708819605", "Contact Apex Fitness Centre in Urlabari, Morang: WhatsApp or call 9708819605. Open 4:30 AM to 8:30 PM, Sunday to Friday.", "Contact us", f"""
 <p>The fastest way to reach us is WhatsApp. We reply from the gym during opening hours.</p>
 <p><a class="btn wa" href="https://wa.me/{WA}?text=Hi%20Apex%20Fitness%20Centre%2C%20" target="_blank" rel="noopener">Message us on WhatsApp</a></p>
 <ul><li><b>WhatsApp and phone:</b> <a href="tel:+9779708819605">9708819605</a></li>
 <li><b>Address:</b> Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal</li>
-<li><b>Opening hours:</b> 4:30 AM to 8:30 PM, every day</li>
+<li><b>Opening hours:</b> 4:30 AM to 8:30 PM, Sunday to Friday. Closed on Saturday.</li>
 <li><b>Facebook:</b> <a href="https://www.facebook.com/apexfitcentre" target="_blank" rel="noopener">facebook.com/apexfitcentre</a></li></ul>
 <p>For orders, delivery, returns of sealed items, gym memberships, gym software demos, or questions about anything on the blog, send us a message.</p>""")
     _simple("editorial-policy/", "Editorial Policy | Apex Fitness Centre", "How the Apex Fitness Centre blog researches, writes, fact-checks and updates articles about fitness, supplements and gyms in Nepal.", "Editorial policy", """
