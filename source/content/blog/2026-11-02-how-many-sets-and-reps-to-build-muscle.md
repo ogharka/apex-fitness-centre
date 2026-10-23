@@ -1,7 +1,7 @@
 ---
 title: How Many Sets and Reps to Build Muscle? A Simple Guide
 seo_title: How Many Sets and Reps to Build Muscle?
-description: How many sets, reps and how much rest to build muscle and strength, explained simply: weekly sets per muscle, rep ranges, effort, and sample beginner numbers.
+description: How many sets, reps and how much rest to build muscle and strength: weekly sets per muscle, rep ranges, effort, and sample beginner numbers.
 date: 2026-11-02
 category: Training
 cover_photo: apex-dumbbell-press-bench.jpg
