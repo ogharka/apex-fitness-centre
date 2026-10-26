@@ -6,13 +6,14 @@ on:
   push:
     branches: [main]
     paths: ["source/**", ".github/workflows/publish.yml"]
-  # GitHub can delay or skip scheduled runs when it is busy, so there are backup
-  # times. A run that finds nothing new makes no commit, so extra runs are harmless.
+  # GitHub delays scheduled runs at busy times (00:00 UTC by hours), so these avoid
+  # the top of the hour and midnight UTC. Times are UTC; the build uses Nepal time,
+  # so 23:37 UTC is already the next day in Nepal. Extra runs make no commit.
   schedule:
-    - cron: "20 0 * * *"    # 6:05 AM Nepal time
-    - cron: "47 1 * * *"    # 7:32 AM backup
-    - cron: "13 3 * * *"    # 8:58 AM backup
-    - cron: "41 5 * * *"    # 11:26 AM backup
+    - cron: "37 23 * * *"   # 5:22 AM Nepal time
+    - cron: "11 1 * * *"    # 6:56 AM backup
+    - cron: "43 2 * * *"    # 8:28 AM backup
+    - cron: "19 5 * * *"    # 11:04 AM backup
     - cron: "17 9 * * *"    # 3:02 PM backup
   workflow_dispatch:
 
