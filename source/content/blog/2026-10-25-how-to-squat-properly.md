@@ -84,4 +84,8 @@ Not as a beginner. Learn to brace without a belt first. A belt can help later fo
 
 Usually because the back rounds at the bottom or you lean too far forward. Reduce the weight, squat a little higher, and practise bracing.
 
+## Sources
+
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+
 *Want someone to check your squat? Ask a trainer at [Apex Fitness Centre](../../gym/), it takes two minutes and saves months of bad habits.*

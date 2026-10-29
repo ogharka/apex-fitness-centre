@@ -148,7 +148,7 @@ def money(n): return "Rs. {:,}".format(n)
 def wa(msg): return f"https://wa.me/{WA}?text=" + __import__("urllib.parse").parse.quote(msg)
 def ld(o): return '<script type="application/ld+json">' + json.dumps(o, ensure_ascii=False, separators=(",", ":")) + "</script>"
 
-ORG = {"@type": "Organization", "@id": BASE + "/#org", "name": SITE, "url": BASE + "/", "logo": BASE + "/assets/apex-icon-512.png",
+ORG = {"@type": "Organization", "@id": BASE + "/#org", "name": SITE, "url": BASE + "/", "publishingPrinciples": BASE + "/editorial-policy/", "logo": BASE + "/assets/apex-icon-512.png",
        "telephone": "+977-9708819605", "sameAs": ["https://www.facebook.com/apexfitcentre"]}
 STORE = {"@type": ["SportsActivityLocation", "Store"], "@id": BASE + "/#store", "name": SITE, "url": BASE + "/",
          "image": BASE + "/assets/og-image.jpg", "telephone": "+977-9708819605", "priceRange": "Rs. 1,500 - Rs. 15,000",

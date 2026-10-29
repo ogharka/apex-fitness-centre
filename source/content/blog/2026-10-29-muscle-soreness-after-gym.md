@@ -78,4 +78,9 @@ They can reduce discomfort, but regular use just to train through soreness is no
 
 That is typical of DOMS. Soreness usually peaks 24 to 72 hours after exercise.
 
+## Sources
+
+- [Delayed onset muscle soreness: treatment strategies and performance factors](https://pubmed.ncbi.nlm.nih.gov/12617692/) (Cheung et al., *Sports Medicine*, 2003)
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+
 *General information, not medical advice. If pain is severe, sharp or lasts more than a week, see a doctor or physiotherapist.*

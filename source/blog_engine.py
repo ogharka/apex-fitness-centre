@@ -128,6 +128,20 @@ def _postcard(p, r):
     return (f'<a class="bcard" href="{r}{p["slug"]}/">{img}<span class="bmeta"><span>{e(p["category"])}</span><span>{p["mins"]} min read</span></span>'
             f'<b>{e(p["title"])}</b><span class="bdesc">{e(p["description"])}</span></a>')
 
+# Named authors. Fill in real details (only facts the person has confirmed), then put
+# `author: suman-limbu` (the key) in a post's front matter, and optionally `reviewed_by: <key>`.
+AUTHORS = {
+    # "suman-limbu": {"name": "Suman Limbu", "job": "Morning trainer, Apex Fitness Centre",
+    #                 "bio": "…years training members, certifications…", "photo": "team-suman-limbu.jpg"},
+}
+def _author_ld(key):
+    a = AUTHORS.get(key)
+    if not a: return {"@type": "Organization", "name": SITE, "url": BASE + "/about/"}
+    o = {"@type": "Person", "name": a["name"], "jobTitle": a["job"], "url": BASE + "/about/#" + key, "worksFor": {"@id": BASE + "/#org"}}
+    if a.get("photo"): o["image"] = BASE + "/assets/" + a["photo"]
+    return o
+def _author_name(key): return AUTHORS[key]["name"] if key in AUTHORS else "the Apex Fitness Centre team"
+
 def build_blog():
     posts = load_posts()
     for i, p in enumerate(posts):
@@ -135,7 +149,7 @@ def build_blog():
         cr = [("Home", ""), ("Blog", "blog/"), (p["category"], f"blog/{p['cat_slug']}/"), (p["title"], path)]
         img_abs = BASE + "/blog/images/" + BLOG_IMG[p["image"]][0] + ".jpg" if p.get("image") else BASE + "/assets/og-image.jpg"
         art = {"@type": "BlogPosting", "headline": p["title"], "description": p["description"], "datePublished": p["d"].isoformat(),
-               "dateModified": p["updated"].isoformat(), "author": {"@type": "Organization", "name": p.get("author") or SITE, "url": BASE + "/about/"},
+               "dateModified": p["updated"].isoformat(), "author": _author_ld(p.get("author")),
                "publisher": {"@id": BASE + "/#org"}, "mainEntityOfPage": BASE + "/" + path, "image": img_abs, "wordCount": p["words"],
                "articleSection": p["category"]}
         graph = [crumbs(cr), art]
@@ -161,11 +175,11 @@ def build_blog():
 {crumb_html(cr, d)}
 <article class="post">
 <header class="phead"><a class="label" href="../{p['cat_slug']}/">{e(p['category'])}</a><h1>{e(p['title'])}</h1><p class="lead">{e(p['description'])}</p>
-<p class="byline">By {e(p.get('author') or "the Apex Fitness Centre team")} &middot; {_date(p['d'])}{upd} &middot; {p['mins']} min read</p></header>
+<p class="byline">By {e(_author_name(p.get('author')))}{(' &middot; Reviewed by ' + e(_author_name(p['reviewed_by']))) if p.get('reviewed_by') in AUTHORS else ''} &middot; {_date(p['d'])}{upd} &middot; {p['mins']} min read</p></header>
 {hero}
 {tocb}
 <div class="abody">{p['html']}</div>
-<aside class="author"><b>About this article</b><p>Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>.</p></aside>
+<aside class="author"><b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>.</p></aside>
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
 <p class="fine" style="text-align:left">General information, not medical advice. Ask a doctor if you have a health condition. Results vary from person to person.</p>
 </article>
@@ -207,7 +221,7 @@ def build_blog():
     gcards = "".join(f'<a class="gcard" href="../guides/{x["slug"]}/"><b>{e(x["h1"])}</b><span>{e(x["desc"])}</span></a>' for x in GUIDES if x["slug"] not in MERGED_GUIDE_SLUGS)
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "Blog", "name": "Apex Fitness Blog", "url": BASE + "/blog/",
             "publisher": {"@id": BASE + "/#org"}, "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": BASE + f"/blog/{p['slug']}/", "datePublished": p["d"].isoformat(),
-            "dateModified": p["updated"].isoformat(), "author": {"@type": "Organization", "name": p.get("author") or SITE, "url": BASE + "/about/"},
+            "dateModified": p["updated"].isoformat(), "author": _author_ld(p.get("author")),
             "image": BASE + "/blog/images/" + BLOG_IMG[p["image"]][0] + ".jpg" if p.get("image") else BASE + "/assets/og-image.jpg"} for p in posts[:20]]}]})
     body = f"""<body data-root="../">
 {nav(d, "blog")}
@@ -261,7 +275,7 @@ def build_info_pages():
 <p>For orders, delivery, returns of sealed items, gym memberships, gym software demos, or questions about anything on the blog, send us a message.</p>""")
     _simple("editorial-policy/", "Editorial Policy | Apex Fitness Centre", "How the Apex Fitness Centre blog researches, writes, fact-checks and updates articles about fitness, supplements and gyms in Nepal.", "Editorial policy", """
 <p>The Apex Fitness Centre blog publishes practical articles about fitness in Nepal: training, diet, supplements, gyms, fitness careers and the people in Nepal's fitness scene. This page explains how we work.</p>
-<h2>Who writes the articles</h2><p>Articles are written and checked by the team at Apex Fitness Centre, a gym and supplement store in Urlabari-9, Durgapuri, Morang. We write from what members ask us every day and from published research.</p>
+<h2>Who writes the articles</h2><p>Articles are produced by the team at Apex Fitness Centre, a gym and supplement store in Urlabari-9, Durgapuri, Morang. Topics come from what members ask us every day. When an article is written or reviewed by a named trainer, their name appears at the top of the article.</p><h2>How articles are made</h2><p>We use research and writing tools, including AI, to help gather research and draft articles. Before publishing, every article is checked against the sources linked in it, edited for Nepal (local foods, prices, weather and gyms), and given its sources section. We do not publish made-up quotes, reviews or personal stories, and real member stories are shared only with the member's consent.</p>
 <h2>How we research</h2><ul><li>Facts about health and nutrition are based on published research and reviews, and we link to our main sources in the article.</li><li>Prices, fees, salaries and rules are checked from official or primary sources where possible, and every article shows the date it was checked.</li><li>Information about real people, gyms and businesses comes only from public sources such as news reports and their own public profiles. We do not publish rumours or negative claims.</li></ul>
 <h2>Health information</h2><p>Our articles are general information, not medical advice. We avoid promises about results and we tell readers to speak to a doctor when a topic needs it, for example for medical conditions, pregnancy or young people.</p>
 <h2>Our products and independence</h2><p>We sell supplements in our store. When an article mentions products we sell, we say so, and we apply the same honest checks to our own products as to anyone else's. Nobody pays to be included in our lists or articles.</p>

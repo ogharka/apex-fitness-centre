@@ -92,4 +92,8 @@ For heavy sets, yes, or use a rack with safety bars. For light warm-up sets, you
 
 Incline pressing puts more emphasis on the upper chest and shoulders. Both flat and incline are useful.
 
+## Sources
+
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+
 *Want a trainer to check your setup? Ask the team at [Apex Fitness Centre](../../gym/).*

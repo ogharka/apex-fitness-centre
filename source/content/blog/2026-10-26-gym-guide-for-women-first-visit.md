@@ -91,4 +91,9 @@ Yes, if you feel well. Many women find light exercise eases cramps. Listen to yo
 
 Three days a week of strength training plus some walking is an excellent start.
 
+## Sources
+
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+
 *Thinking about joining? See plans and timings at [Apex Fitness Centre](../../gym/), with a friendly front desk team to help you get started.*

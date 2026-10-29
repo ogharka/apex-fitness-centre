@@ -107,4 +107,9 @@ Normal food amounts of soy, like soybean chunks a few times a week, are consider
 
 Any meal or snack with protein and some carbohydrate: milk and banana, curd and chiura, eggs and roti, or a whey shake.
 
+## Sources
+
+- [International Society of Sports Nutrition position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [Protein supplementation and resistance training gains: systematic review and meta-analysis](https://bjsm.bmj.com/content/52/6/376) (Morton et al., *British Journal of Sports Medicine*, 2018)
+
 *General information, not medical advice. If you have diabetes, kidney disease or another condition, ask your doctor before changing your diet.*

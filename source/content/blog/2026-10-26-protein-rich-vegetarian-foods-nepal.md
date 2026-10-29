@@ -112,4 +112,9 @@ Normal food amounts of soy, such as soybean chunks a few times a week, are consi
 
 Not necessarily. Whey is a dairy product and suits lacto-vegetarians if food alone is not enough. Many reach their target with food alone.
 
+## Sources
+
+- [International Society of Sports Nutrition position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [Protein supplementation and resistance training gains: systematic review and meta-analysis](https://bjsm.bmj.com/content/52/6/376) (Morton et al., *British Journal of Sports Medicine*, 2018)
+
 *General information, not medical advice.*

@@ -91,4 +91,8 @@ Yes, but a regular time makes it easier to build a habit and your body adapts be
 
 Apex is open from 4:30 AM to 8:30 PM, Sunday to Friday. See [plans and timings](../../gym/).
 
+## Sources
+
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+
 *General information, not medical advice.*

@@ -92,4 +92,9 @@ Whey is mainly protein. Mass gainers add lots of carbohydrate (often sugar) for 
 
 There is no good evidence that whey causes hair loss. Some people notice acne with dairy products. If that happens, try reducing it or switching to an isolate.
 
+## Sources
+
+- [International Society of Sports Nutrition position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [Protein supplementation and resistance training gains: systematic review and meta-analysis](https://bjsm.bmj.com/content/52/6/376) (Morton et al., *British Journal of Sports Medicine*, 2018)
+
 *Prices checked on 23 October 2026. General information, not medical advice.*

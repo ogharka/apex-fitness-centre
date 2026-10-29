@@ -85,3 +85,9 @@ One scoop usually gives about 20 to 25 g of protein. Check the label of your tub
 4. Train regularly and sleep well. Protein only helps if you give your muscles a reason to grow.
 
 Not sure what your gap is? Send us one day of your meals on WhatsApp and we will tell you roughly where you are.
+
+## Sources
+
+- [International Society of Sports Nutrition position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [Protein supplementation and resistance training gains: systematic review and meta-analysis](https://bjsm.bmj.com/content/52/6/376) (Morton et al., *British Journal of Sports Medicine*, 2018)
+

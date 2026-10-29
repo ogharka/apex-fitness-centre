@@ -95,4 +95,10 @@ With a steady calorie deficit, most people see the scale trend down within 2 to 
 
 First check the basics above. If you are truly consistent for 3 weeks with no change, reduce your portions slightly, for example a little less rice, rather than cutting drastically.
 
+## Sources
+
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [A new predictive equation for resting energy expenditure in healthy individuals](https://pubmed.ncbi.nlm.nih.gov/2305711/) (Mifflin et al., *American Journal of Clinical Nutrition*, 1990)
+- [Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults](https://pubmed.ncbi.nlm.nih.gov/23019316/) (Willis et al., *Journal of Applied Physiology*, 2012)
+
 *General information, not medical advice.*

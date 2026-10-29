@@ -76,4 +76,9 @@ Timing matters little. Many people take both after training. Consistency every d
 
 Yes. Both are suitable for women and do not cause "bulkiness" on their own.
 
+## Sources
+
+- [International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/) (Kreider et al., 2017)
+- [International Society of Sports Nutrition position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+
 *General information, not medical advice.*
