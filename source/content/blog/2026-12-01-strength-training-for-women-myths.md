@@ -14,6 +14,8 @@ Strength training is one of the best things a woman can do for her body at **any
 
 **Fact:** Women have much lower testosterone than men and build muscle slowly. Lifting regularly gives most women a **toned, athletic shape**, not a bodybuilder's physique. The very muscular women you see in competitions train and diet specifically for that for many years.
 
+![A woman training on the cable machine while other women work out in the background at Apex Fitness Centre](images/apex-woman-cable-training.jpg)
+
 ## Myth 2: "Cardio is for women, weights are for men"
 
 **Fact:** Both are for everyone. Cardio is good for your heart; strength training is what changes your **shape** and protects **muscle and bone**. The best results come from combining them. See [cardio vs weights for fat loss](../cardio-vs-weights-for-fat-loss/).

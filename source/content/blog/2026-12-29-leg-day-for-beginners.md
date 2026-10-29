@@ -26,6 +26,8 @@ Do this **once or twice a week**, or as part of full-body sessions.
 
 Rest **90 seconds to 2 minutes** between sets of the big lifts and about a minute for the smaller ones.
 
+![A member on the leg extension and leg curl machine at Apex Fitness Centre, Urlabari](images/apex-leg-extension-machine.jpg)
+
 ## Exercise tips
 
 ### Squat

@@ -24,6 +24,8 @@ It's the single most important principle in strength training, and the reason pe
 
 For beginners, **adding weight and reps** is usually enough for many months.
 
+![A member pressing heavy dumbbells overhead while training partners watch at Apex Fitness Centre](images/apex-heavy-dumbbell-shoulder-press.jpg)
+
 ## The "double progression" method (easy and effective)
 
 Pick a rep range, for example **8 to 12 reps**.

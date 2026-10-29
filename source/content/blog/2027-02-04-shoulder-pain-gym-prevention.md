@@ -22,6 +22,8 @@ Shoulder pain is one of the most common gym complaints. The shoulder is a very m
 5. **Skipping warm-ups,** especially on cold mornings.
 6. **Poor posture** from long hours of sitting.
 
+![A member doing a seated dumbbell shoulder press with controlled form in front of the mirror at Apex Fitness Centre, Urlabari](images/apex-seated-dumbbell-shoulder-press-mirror.jpg)
+
 ## Prevention: 6 habits
 
 ### 1. Balance push and pull

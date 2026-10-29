@@ -18,6 +18,8 @@ If you are a woman thinking about joining a gym, you are not alone in feeling ne
 - **Bring:** water bottle, small towel, indoor shoes, a hair tie, and your phone with music.
 - **Wear:** comfortable leggings or track pants and a T-shirt you can move in. Clean sports shoes with a flat sole are best for lifting.
 
+![Two women members smiling in their gym gloves after a workout at Apex Fitness Centre, Urlabari](images/apex-women-members-after-workout.jpg)
+
 ## What to do on day one
 
 1. **Tour the gym** and ask a trainer to show you 4 or 5 machines and where the dumbbells are.

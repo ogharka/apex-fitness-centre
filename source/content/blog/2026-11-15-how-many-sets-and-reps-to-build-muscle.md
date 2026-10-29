@@ -27,6 +27,8 @@ Research on training volume suggests that more weekly sets generally lead to mor
 
 Beginners grow well on less, because everything is new. More is not always better: if you are always sore, tired or your strength is going down, cut back.
 
+![A member doing a cable overhead triceps extension at Apex Fitness Centre](images/apex-cable-overhead-triceps-extension.jpg)
+
 ## Reps: a wide range works
 
 Studies show muscle grows across a wide range of reps, **as long as sets are hard**. Practically:

@@ -18,6 +18,8 @@ Below are **two full-day meal plans**, one non-veg and one vegetarian, each with
 2. **Eat a little more than you burn.** Muscle needs extra energy to grow. If your weight does not move for 2 to 3 weeks, add a little more food, such as an extra half plate of rice or a glass of milk.
 3. **Spread protein across the day.** Three or four meals with protein work better than one huge meal.
 
+![Two muscular members of Apex Fitness Centre standing by the cable machine, in black and white](images/apex-members-muscle-gain-black-white.jpg)
+
 ## Plan 1: Non-veg (about 140 g protein)
 
 | Time | Meal | Protein (approx.) |

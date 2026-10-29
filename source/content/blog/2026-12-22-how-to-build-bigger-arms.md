@@ -17,6 +17,8 @@ Want bigger arms? Train **triceps as much as biceps**, because triceps make up r
 - **Triceps:** back of the arm, straighten the elbow. Three heads, including the long head that also crosses the shoulder.
 - **Brachialis and brachioradialis:** under and beside the biceps, trained well by hammer curls. They add thickness.
 
+![A member doing EZ-bar skull crushers for the triceps on a flat bench at Apex Fitness Centre](images/apex-ez-bar-skull-crusher.jpg)
+
 ## Best biceps exercises
 
 | Exercise | Why |
@@ -34,6 +36,8 @@ Want bigger arms? Train **triceps as much as biceps**, because triceps make up r
 | **Overhead dumbbell or cable extension** | Stretches the long head |
 | **Cable pushdown** (rope or bar) | Easy to learn, great pump |
 | **Dips** (or bench dips for beginners) | Bodyweight strength |
+
+![A smiling member doing cable biceps curls beside the window at Apex Fitness Centre, Urlabari](images/apex-cable-biceps-curl.jpg)
 
 ## A twice-a-week arm plan
 

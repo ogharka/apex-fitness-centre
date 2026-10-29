@@ -16,6 +16,8 @@ If you are naturally thin, gaining weight comes down to one rule: **eat more ene
 
 See a doctor before you start if you have **lost weight suddenly without trying**, have stomach problems, or your appetite has changed. Thyroid problems, worms, diabetes and other conditions can stop you gaining weight, and they need treatment, not more food.
 
+![Two members flexing after training at Apex Fitness Centre, in black and white](images/apex-members-posing-black-white.jpg)
+
 ## How fast should you gain?
 
 Aim for about **0.25 to 0.5 kg per week**. That is 1 to 2 kg a month. Faster than that is mostly fat. Weigh yourself once a week, same day, same time.

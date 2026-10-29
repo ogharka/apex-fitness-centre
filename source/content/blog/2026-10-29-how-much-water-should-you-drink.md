@@ -17,6 +17,8 @@ EFSA advises a total water intake of **2.5 litres a day for men and 2.0 litres f
 
 These are averages. You need more if you are larger, very active, sweating a lot, or in hot weather.
 
+![A member taking a water break between sets by the dumbbell rack at Apex Fitness Centre](images/apex-member-water-break.jpg)
+
 ## Water when you exercise
 
 - **Before training:** a glass of water in the hour before.

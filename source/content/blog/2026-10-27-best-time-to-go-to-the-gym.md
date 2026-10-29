@@ -28,6 +28,8 @@ That said, each time has real pros and cons. Here is how to choose.
 - **Cold winter mornings** in Nepal make getting out of bed harder.
 - You need to **sleep earlier** to get enough rest.
 
+![A member resting between sets next to the dumbbell rack during a quieter session at Apex Fitness Centre](images/apex-member-resting-dumbbell-rack.jpg)
+
 ## Evening training (4 to 8 PM)
 
 **Pros**

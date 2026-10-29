@@ -18,6 +18,8 @@ When you challenge your muscles in a new way, especially with the **lowering par
 
 The good news: soreness **reduces quickly** once your body gets used to an exercise. After 2 to 3 weeks of regular training, most beginners are barely sore anymore.
 
+![A member resting with a towel over her shoulder after a session at Apex Fitness Centre, Urlabari](images/apex-member-after-session-towel.jpg)
+
 ## Normal soreness vs injury
 
 | Normal soreness (DOMS) | Possible injury |

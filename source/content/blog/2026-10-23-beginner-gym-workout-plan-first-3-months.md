@@ -20,6 +20,8 @@ This is the plan we give new members at Apex. It works for **men and women**, fo
 - **Start light.** You should be able to do every set with good form, finishing with 2 or 3 reps "in the tank".
 - If you have heart problems, high blood pressure, an injury or are pregnant, check with your doctor first.
 
+![A member pressing on the chest press machine at Apex Fitness Centre, Urlabari, a good beginner alternative to the barbell bench press](images/apex-member-chest-press-machine.jpg)
+
 ## The plan: 3 full-body days a week
 
 Train on three non-consecutive days, for example **Sunday, Tuesday, Thursday**. Alternate Workout A and Workout B.

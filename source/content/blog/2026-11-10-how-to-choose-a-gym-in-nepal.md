@@ -74,6 +74,8 @@ What happens if you get sick, travel for Dashain, or go abroad for a few weeks? 
 
 A confident gym will let you try one session. Use it to check everything above.
 
+![Two members smiling on the gym floor at Apex Fitness Centre, Urlabari, with others training behind them](images/apex-members-smiling-gym-floor.jpg)
+
 ## Red flags
 
 - Pressure to pay for a full year **today** with a "special offer".

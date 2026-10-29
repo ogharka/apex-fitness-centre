@@ -24,6 +24,8 @@ In Nepal, food and dietary supplements are regulated by the **Department of Food
 
 In simple terms: a legitimate product in Nepal has a clear import trail. A seller who cannot tell you who imported it is a warning sign.
 
+![A MuscleBlaze creatine tub held in hand, showing the holographic authenticity sticker and the scan-and-verify QR code on the lid](images/apex-muscleblaze-creatine-authenticity-label.jpg)
+
 ## Why fakes exist
 
 Fake protein usually looks real on the outside and is cheap on the inside. Common tricks include:
