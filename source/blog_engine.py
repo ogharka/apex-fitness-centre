@@ -16,7 +16,7 @@ TOPIC_INTRO = {
  "Supplements": "Prices, real vs fake products, what works and what is a waste of money, for buyers in Nepal.",
  "Training": "Workout plans, technique and programming for beginners and experienced lifters.",
  "Diet": "High-protein eating with Nepali food: dal bhat, eggs, chicken, paneer and more.",
- "Weight loss": "Realistic fat loss for Nepali lifestyles, without crash diets.",
+ "Weight loss": "Realistic fat loss for Nepali lifestyles, without crash diets: diet plans with Nepali food, walking, training and why the scale stalls.",
  "Gyms in Nepal": "Gym fees, what to look for, and guides to training in cities across Nepal.",
  "Fitness careers": "How to become a trainer in Nepal: courses, certifications, academies and salaries.",
  "Influencers and athletes": "Nepali fitness creators, bodybuilders and powerlifters worth following.",
@@ -206,7 +206,9 @@ def build_blog():
     cards = "".join(_postcard(p, "") for p in posts) or '<p class="fine">First posts coming soon.</p>'
     gcards = "".join(f'<a class="gcard" href="../guides/{x["slug"]}/"><b>{e(x["h1"])}</b><span>{e(x["desc"])}</span></a>' for x in GUIDES if x["slug"] not in MERGED_GUIDE_SLUGS)
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "Blog", "name": "Apex Fitness Blog", "url": BASE + "/blog/",
-            "publisher": {"@id": BASE + "/#org"}, "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": BASE + f"/blog/{p['slug']}/", "datePublished": p["d"].isoformat()} for p in posts[:20]]}]})
+            "publisher": {"@id": BASE + "/#org"}, "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": BASE + f"/blog/{p['slug']}/", "datePublished": p["d"].isoformat(),
+            "dateModified": p["updated"].isoformat(), "author": {"@type": "Organization", "name": p.get("author") or SITE, "url": BASE + "/about/"},
+            "image": BASE + "/blog/images/" + BLOG_IMG[p["image"]][0] + ".jpg" if p.get("image") else BASE + "/assets/og-image.jpg"} for p in posts[:20]]}]})
     body = f"""<body data-root="../">
 {nav(d, "blog")}
 <main><div class="wrap">

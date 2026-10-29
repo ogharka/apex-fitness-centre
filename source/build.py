@@ -49,7 +49,7 @@ PRODUCTS = [
       cat="pre-workout", price=5000, img="scitron-volcano-pre-workout.jpg",
       short="Pre-workout with 30 packets per box, 300 mg caffeine per packet.",
       title="Scitron Volcano Pre-Workout 30 Packets Price in Nepal",
-      desc="Buy Scitron Volcano Pre-Workout (30 packets, 300 mg caffeine each) in Nepal for Rs. 5,000. Free delivery all over Nepal, order on WhatsApp from Apex Fitness Centre, Urlabari.",
+      desc="Buy Scitron Volcano Pre-Workout (30 packets, 300 mg caffeine each) in Nepal for Rs. 5,000. Free delivery across Nepal. Order on WhatsApp.",
       about=["A pre-workout supplement taken before training to help you start a session with focus and energy. Each box has 30 packets, so it is a month of single-serve packets for daily training.",
              "Each packet contains 300 mg of caffeine, which is a strong dose. Read the label, avoid taking it late in the evening, and do not combine it with other caffeine.",
              "Stocked and sold by Apex Fitness Centre, the gym in Urlabari-9, Morang. Delivery is free all over Nepal."],
@@ -84,8 +84,8 @@ CATS = [
            ("Do I take creatine on rest days?","Yes. Take it every day so the level in your muscles stays up."),
            ("Which creatine is better value?","Per gram, MuscleBlaze 320 g is Rs. 6.25, Wellcore 307 g is Rs. 6.51 and BPI Sports 300 g is Rs. 16.67. Pick the BPI tub if you prefer the brand.")]),
  dict(slug="protein", name="Protein", h1="Buy Whey Protein in Nepal",
-      title="Buy Whey Protein in Nepal | MuscleBlaze, BigMan, BPI | Apex Fitness",
-      desc="Buy whey protein in Nepal: MuscleBlaze Biozyme Whey (Rs. 15,000), BigMan Forza (Rs. 17,500) and BPI Hydro HD (Rs. 23,000), 2 kg each. Free delivery all over Nepal, order on WhatsApp from Apex Fitness Centre.",
+      title="Buy Whey Protein in Nepal | MuscleBlaze, BigMan, BPI",
+      desc="Buy whey protein in Nepal: MuscleBlaze Biozyme (Rs. 15,000), BigMan Forza (Rs. 17,500), BPI Hydro HD (Rs. 23,000), 2 kg each. Free delivery, order on WhatsApp.",
       intro="Whey protein makes it easier to reach your daily protein target. We stock MuscleBlaze Biozyme Performance Whey (Rs. 15,000), BigMan Forza Protein (Rs. 17,500) and BPI Sports Hydro HD Hydrolyzed Whey (Rs. 23,000), all in 2 kg tubs.",
       body=["Whey is a quick-mixing protein that many lifters use after training or between meals. It does not replace food, it adds to it.",
             "The 2 kg size is built for regular training and lasts longer than a small tub, so it suits members who train most days.",
@@ -98,7 +98,7 @@ CATS = [
            ("Can I take whey and creatine together?","Yes. They are commonly taken together, for example in the same post-workout shake.")]),
  dict(slug="pre-workout", name="Pre-workout", h1="Buy Pre-Workout in Nepal",
       title="Buy Pre-Workout in Nepal | Scitron Volcano | Apex Fitness",
-      desc="Buy Scitron Volcano Pre-Workout (30 packets, 300 mg caffeine each) in Nepal for Rs. 5,000. Free delivery all over Nepal, order on WhatsApp from Apex Fitness Centre, Urlabari.",
+      desc="Buy pre-workout in Nepal: Scitron Volcano, 30 single-serve packets with 300 mg caffeine, Rs. 5,000. How to use it safely. Free delivery, order on WhatsApp.",
       intro="A pre-workout is for the days you need extra focus and energy to start training. We stock Scitron Volcano Pre-Workout, 30 packets per box, at Rs. 5,000.",
       body=["Scitron Volcano has 300 mg of caffeine in each of its 30 packets, a strong dose. Read the label and avoid taking it late in the evening.",
             "Pre-workout is not meant for under 18s, pregnant or breastfeeding women, or anyone with heart conditions or high blood pressure."],
@@ -315,7 +315,7 @@ def build_home():
     d = 0
     p0 = PRODUCTS[2]
     title = "Buy Authentic Supplements Online in Nepal | Apex Fitness"
-    desc = "Buy authentic creatine, whey protein, pre-workout, BCAA and more online in Nepal. MuscleBlaze, BPI Sports, Wellcore and more with free delivery all over Nepal. Order on WhatsApp from Apex Fitness Centre, Urlabari."
+    desc = "Buy authentic creatine, whey protein, pre-workout and BCAA online in Nepal: MuscleBlaze, BPI Sports, Wellcore. Free delivery across Nepal, order on WhatsApp."
     j = ld({"@context": "https://schema.org", "@graph": [ORG, STORE,
         {"@type": "WebSite", "@id": BASE + "/#site", "url": BASE + "/", "name": SITE, "publisher": {"@id": BASE + "/#org"}},
         faq_ld(HOME_FAQ)]})
@@ -409,7 +409,7 @@ def build_home():
 def build_shop():
     d = 1
     title = "Shop Supplements Online in Nepal | Apex Fitness Centre"
-    desc = "All supplements at Apex Fitness Centre: creatine, protein, pre-workout, BCAA, L-carnitine, omega-3 and more from Rs. 1,300. Free delivery all over Nepal, order on WhatsApp."
+    desc = "All supplements at Apex Fitness Centre: creatine, protein, pre-workout, BCAA, L-carnitine, omega-3 and more from Rs. 1,300. Free delivery, order on WhatsApp."
     items = [{"@type": "ListItem", "position": i + 1, "url": BASE + "/" + p["url"], "name": p["full"]} for i, p in enumerate(PRODUCTS)]
     cr = [("Home", ""), ("Shop", "shop/")]
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "CollectionPage", "name": "Shop supplements", "url": BASE + "/shop/", "mainEntity": {"@type": "ItemList", "itemListElement": items}}]})
@@ -557,7 +557,7 @@ def build_product(p):
     prod = {"@type": "Product", "@id": BASE + "/" + p["url"] + "#product", "name": p["full"], "image": [BASE + "/assets/" + p["img"]],
             "description": p["desc"], "sku": p["slug"], "brand": {"@type": "Brand", "name": p["brand"]}, "category": c["name"],
             "offers": {"@type": "Offer", "url": BASE + "/" + p["url"], "priceCurrency": "NPR", "price": str(p["price"]),
-                       "availability": "https://schema.org/" + ("OutOfStock" if STOCK.get(p["slug"]) == "out" else "InStock"), "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "NPR"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "NP"}, "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 1, "unitCode": "DAY"}}}, "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "NP", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/ReturnShippingFees", "description": "Sealed, unopened items only. Opened supplements cannot be returned."}, "itemCondition": "https://schema.org/NewCondition",
+                       "availability": "https://schema.org/" + ("OutOfStock" if STOCK.get(p["slug"]) == "out" else "InStock"), "priceValidUntil": f"{__import__('datetime').date.today().year + 1}-12-31", "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "NPR"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "NP"}, "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 1, "unitCode": "DAY"}}}, "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "NP", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/ReturnShippingFees", "description": "Sealed, unopened items only. Opened supplements cannot be returned."}, "itemCondition": "https://schema.org/NewCondition",
                        "seller": {"@type": "Organization", "name": SITE}}}
     rvs = [x for x in REVIEWS if x["product"] == p["slug"]]
     if rvs:
@@ -649,8 +649,8 @@ def build_gym():
          '<div class="meta">30 years of experience</div>')
     for anchor in ('id="plans"', 'id="connect"', 'id="team"'):
         assert anchor in s, anchor
-    title = "Gym in Urlabari, Morang | Memberships and Trainers | Apex Fitness Centre"
-    desc = "Apex Fitness Centre, gym in Urlabari-9, Durgapuri, Morang. Open 4:30 AM to 8:30 PM, Sunday to Friday. Memberships from Rs. 1,500 a month, trainers on both shifts."
+    title = "Gym in Urlabari, Morang | Apex Fitness Centre"
+    desc = "Gym in Urlabari-9, Durgapuri, Morang. Open Sunday to Friday, 4:30 AM to 8:30 PM. Memberships from Rs. 1,500 a month, trainers on morning and evening shifts."
     cr = [("Home", ""), ("The gym", "gym/")]
     gj = dict(STORE); gj["@context"] = "https://schema.org"; gj["@type"] = ["HealthClub", "SportsActivityLocation"]
     gj["@id"] = BASE + "/gym/#gym"; gj["url"] = BASE + "/gym/"
@@ -710,7 +710,7 @@ SW_FEATURES = [
 def build_software():
     d = 1; path = "software/"
     title = "Gym Management Software in Nepal | Rs. 25,000 One-Time | Apex"
-    desc = "Gym management software in Nepal for Rs. 25,000, one-time, no monthly fee. Members, renewals, freeze, dues, WhatsApp reminders, sales, attendance, staff and daily backup. Built and used at Apex Fitness Centre, Urlabari. Free demo."
+    desc = "Gym management software in Nepal: Rs. 25,000 one-time, no monthly fee. Members, dues, freeze, WhatsApp reminders, attendance, staff and backup. Free demo."
     cr = [("Home", ""), ("Gym software", path)]
     app = {"@type": "SoftwareApplication", "name": "Apex Gym Management", "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS",
            "description": desc, "url": BASE + "/" + path, "image": BASE + "/assets/software-dashboard.jpg", "publisher": {"@id": BASE + "/#org"}, "inLanguage": "en-NP", "featureList": [a for a, _ in SW_FEATURES],
@@ -900,8 +900,8 @@ def _calc_res(p):
 
 def build_calculators():
     d = 1; path = "calculators/"
-    title = "Fitness Calculators: BMI, BMR, TDEE and Macro Calculator | Apex Fitness Centre"
-    desc = "Free fitness calculators from Apex Fitness Centre, Urlabari: BMI, BMR (Mifflin-St Jeor), daily maintenance calories (TDEE) and macronutrients. Metric and imperial units. Estimates only, not medical advice."
+    title = "Fitness Calculators: BMI, BMR, TDEE and Macros | Apex Fitness"
+    desc = "Free BMI, BMR, TDEE (maintenance calories) and macro calculators from Apex Fitness Centre. Metric and imperial units. Estimates only, not medical advice."
     cr = [("Home", ""), ("Fitness Calculators", path)]
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr),
             {"@type": "WebPage", "name": "Fitness Calculators", "url": BASE + "/" + path, "description": desc, "isPartOf": {"@id": BASE + "/#org"}, "inLanguage": "en-NP"},
@@ -1213,7 +1213,18 @@ for _f in ("calc-core.js", "calc.js", "calc.css"): shutil.copy(HERE + "/" + _f, 
 open(OUT + "/assets/store-data.js", "w").write("window.APEX_PRODUCTS=" + json.dumps([dict({k: p[k] for k in ("slug","name","full","price","url","brand")}, img=WEBP.get(p["img"], (p["img"],))[0]) for p in PRODUCTS], ensure_ascii=False) + ";window.APEX_RULES=" + json.dumps([{"name": x["name"], "slugs": x["slugs"], "off": x["off"]} for x in RULES]) + ";window.APEX_PAIRS=" + json.dumps({p["slug"]: p["pair"] for p in PRODUCTS}) + ";window.APEX_WA=" + json.dumps(WA) + ";")
 open(OUT + "/assets/favicon.svg", "w").write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#d3132b"/><path d="M14 48 32 14l18 34h-8l-10-20-10 20z" fill="#ffffff"/></svg>')
 today = __import__("datetime").date.today().isoformat()
-open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{BASE}/{u}</loc><lastmod>{today}</lastmod><priority>{pr}</priority></url>\n" for u, pr in sitemap) + "</urlset>\n")
+# lastmod = the date a page's content last changed. Compare each freshly built page with the
+# copy already published at the repo root; if it is identical, keep the date from the live sitemap.
+_ROOT = os.path.join(HERE, "..")
+try: _old_lm = dict(re.findall(r"<loc>" + re.escape(BASE) + r"/([^<]*)</loc><lastmod>([^<]+)</lastmod>", open(os.path.join(_ROOT, "sitemap.xml")).read()))
+except Exception: _old_lm = {}
+def _lastmod(u):
+    try:
+        if os.path.abspath(OUT) != os.path.abspath(_ROOT) and u in _old_lm and open(os.path.join(_ROOT, u, "index.html"), encoding="utf-8").read() == pages[u]:
+            return _old_lm[u]
+    except Exception: pass
+    return today
+open(OUT + "/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{BASE}/{u}</loc><lastmod>{_lastmod(u)}</lastmod><priority>{pr}</priority></url>\n" for u, pr in sitemap) + "</urlset>\n")
 def _x(t): return html.escape(str(t), quote=False)
 os.makedirs(OUT + "/feeds", exist_ok=True)
 _items = ""

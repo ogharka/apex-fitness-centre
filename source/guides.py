@@ -172,9 +172,9 @@ dict(slug="gym-management-software-price-in-nepal", cat="software", table=None, 
  rel=["how-to-choose-gym-software-in-nepal", "gym-membership-management-excel-vs-software", "buy-supplements-online-in-nepal"]),
 
 dict(slug="how-to-choose-gym-software-in-nepal", cat="software", table=None, sw=True,
- title="How to Choose Gym Management Software in Nepal | Owner's Checklist",
+ title="How to Choose Gym Software in Nepal: Owner's Checklist",
  h1="How to choose gym management software in Nepal",
- desc="A simple checklist for Nepal gym owners: member tracking, dues, freeze, WhatsApp reminders, backup, staff permissions and price, so you pick the right gym software.",
+ desc="A checklist for Nepal gym owners: member tracking, dues, freeze, WhatsApp reminders, backup, staff permissions and price. Pick the right gym software.",
  intro="The best gym software is the one your front desk will actually use every day. Here is a plain checklist for gym owners in Nepal.",
  body=[
   ("1. It must be simple at the front desk", ["Your staff are busy in the morning rush. Adding a member, renewing and checking in should take seconds. If staff need a long training, they will go back to the notebook."]),
