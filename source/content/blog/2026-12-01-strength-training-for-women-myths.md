@@ -22,6 +22,8 @@ Strength training is one of the best things a woman can do for her body at **any
 
 ## Myth 3: "I should only use light pink dumbbells for high reps"
 
+![A woman doing a standing cable biceps curl with upright posture at Apex Fitness Centre, Urlabari](images/apex-woman-cable-biceps-curl.jpg)
+
 **Fact:** To get stronger and see change, the weight must **challenge you**. That might be 2 kg for a shoulder raise but 20 kg or more for a leg press. Choose a weight where the last 2 reps of a set feel hard but your form stays good.
 
 ## Myth 4: "I'm too old to start"

@@ -42,6 +42,8 @@ Before your first heavy exercise, build up gradually:
 
 You don't need warm-up sets for every exercise, mainly the first big lift of the session.
 
+![A woman doing light cable work on a step platform as part of her warm-up at Apex Fitness Centre](images/apex-woman-light-cable-warm-up.jpg)
+
 ## Static stretching: before or after?
 
 Long static stretches (holding for 30 to 60 seconds) **right before heavy lifting** may slightly reduce strength for that session. Save longer stretches for **after training** or a separate mobility session. Short, gentle stretches as part of a warm-up are fine.

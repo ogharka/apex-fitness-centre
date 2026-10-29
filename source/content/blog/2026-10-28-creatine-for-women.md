@@ -51,6 +51,8 @@ Vegetarians usually have lower creatine stores, because creatine comes mainly fr
 
 For a full step-by-step, see [how to take creatine](../../guides/how-to-take-creatine/).
 
+![A woman pressing dumbbells on a flat bench while other members train in the background at Apex Fitness Centre](images/apex-woman-dumbbell-bench-press.jpg)
+
 ## Myths about creatine for women
 
 ### "Creatine will make me bulky"

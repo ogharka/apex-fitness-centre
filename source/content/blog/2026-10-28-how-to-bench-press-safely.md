@@ -41,6 +41,8 @@ Lift the bar out with straight arms and hold it over your shoulders. **Take a br
 
 ## The lift
 
+![A member doing a barbell bench press with a firm grip and feet planted at Apex Fitness Centre, Urlabari](images/apex-barbell-bench-press-member.jpg)
+
 1. **Lower the bar under control** to your **lower chest**, roughly in line with your nipples or slightly below.
 2. Keep your **elbows about 45 to 70 degrees** from your body, not flared straight out to the sides.
 3. **Touch your chest lightly.** No bouncing.
@@ -59,6 +61,8 @@ Lift the bar out with straight arms and hold it over your shoulders. **Take a br
 | Ego lifting | Bad reps, injuries | Leave 1–2 reps in reserve |
 
 ## Dumbbell bench press: great for beginners
+
+![A woman doing an incline dumbbell press on an adjustable bench by the dumbbell rack at Apex Fitness Centre](images/apex-woman-incline-dumbbell-press.jpg)
 
 ![Member lowering a heavy dumbbell to the chest on a bench at Apex Fitness Centre](images/apex-dumbbell-press-bench.jpg)
 *Dumbbell work on the bench at Apex. Bring the weights to your chest under control before you press.*
