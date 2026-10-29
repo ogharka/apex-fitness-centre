@@ -4,6 +4,7 @@ seo_title: 10-Minute Stretches for Desk Workers
 description: Sitting all day? A 10-minute stretching and mobility routine for stiff necks, tight hips and lower back, plus desk habits that prevent pain.
 date: 2027-01-21
 category: Training
+author: suman-limbu
 cover_art: clock
 ---
 

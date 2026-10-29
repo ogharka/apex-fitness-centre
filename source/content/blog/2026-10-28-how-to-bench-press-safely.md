@@ -4,6 +4,7 @@ seo_title: How to Bench Press Safely: Beginner Form Guide
 description: Learn the bench press step by step: setup, grip, bar path, breathing, protecting your shoulders, and when to use a spotter.
 date: 2026-10-28
 category: Training
+author: suman-limbu
 cover_photo: apex-free-weights.jpg
 image_alt: Barbells and dumbbells at Apex Fitness Centre
 ---

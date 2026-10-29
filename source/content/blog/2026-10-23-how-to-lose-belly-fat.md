@@ -4,6 +4,7 @@ seo_title: How to Lose Belly Fat: What Actually Works
 description: Sit-ups will not burn belly fat. Here is what really reduces belly fat, how to measure your waist, safe targets for South Asians and a simple weekly plan.
 date: 2026-10-23
 category: Weight loss
+author: suman-limbu
 cover_art: tape
 ---
 

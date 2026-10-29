@@ -4,6 +4,7 @@ seo_title: Home Workout Without Equipment (30-Minute Plan)
 description: No gym, no weights? A 30-minute bodyweight workout you can do at home in a small room, with beginner and harder versions and a 4-week progression.
 date: 2026-10-24
 category: Training
+author: suman-limbu
 cover_art: rope
 ---
 

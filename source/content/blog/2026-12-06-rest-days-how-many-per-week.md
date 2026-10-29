@@ -4,6 +4,7 @@ seo_title: Rest Days: How Many Do You Need Per Week?
 description: How many rest days you need each week, what to do on rest days, signs you're overtraining, and how to plan training and recovery for steady progress.
 date: 2026-12-06
 category: Training
+author: suman-limbu
 cover_photo: apex-member-resting-floor.jpg
 image_alt: Member resting on the gym floor with a towel after training at Apex Fitness Centre
 ---

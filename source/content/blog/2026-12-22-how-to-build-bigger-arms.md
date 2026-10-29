@@ -4,6 +4,7 @@ seo_title: How to Build Bigger Arms: Biceps & Triceps Plan
 description: Want bigger arms? Why triceps matter more than you think, the best biceps and triceps exercises, a weekly arm plan, and the mistakes that stop arm growth.
 date: 2026-12-22
 category: Training
+author: suman-limbu
 cover_photo: apex-dumbbell-rack.jpg
 image_alt: Dumbbell rack with barbells at Apex Fitness Centre
 ---

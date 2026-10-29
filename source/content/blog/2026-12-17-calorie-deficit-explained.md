@@ -4,6 +4,7 @@ seo_title: Calorie Deficit Explained Simply (Fat Loss Guide)
 description: What a calorie deficit is, how big it should be, how to create one with Nepali food without counting forever, and why crash diets backfire.
 date: 2026-12-17
 category: Weight loss
+author: suman-limbu
 cover_art: scale
 ---
 

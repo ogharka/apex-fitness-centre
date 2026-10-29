@@ -4,6 +4,7 @@ seo_title: Exercise During Periods: Safe? What to Do
 description: Is it okay to work out during your period? How exercise can ease cramps and mood, what to train on heavy days, and adjusting training across your cycle.
 date: 2027-01-10
 category: Training
+author: suman-limbu
 cover_photo: apex-woman-elliptical.jpg
 image_alt: Woman exercising on a cross-trainer at Apex Fitness Centre
 ---

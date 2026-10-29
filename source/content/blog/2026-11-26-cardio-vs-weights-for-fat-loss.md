@@ -4,6 +4,7 @@ seo_title: Cardio vs Weights for Fat Loss: Which Is Better?
 description: Should you do cardio or lift weights to lose fat? How each one helps, why the best answer is both, and a simple weekly plan that fits real life.
 date: 2026-11-26
 category: Weight loss
+author: suman-limbu
 cover_photo: apex-cardio-area.jpg
 image_alt: Treadmill, elliptical and exercise bike in the cardio area at Apex Fitness Centre
 ---

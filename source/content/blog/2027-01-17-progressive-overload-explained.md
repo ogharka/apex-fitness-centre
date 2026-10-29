@@ -4,6 +4,7 @@ seo_title: Progressive Overload Explained (Simple Guide)
 description: Progressive overload is why muscles grow and strength increases. What it means, 6 ways to apply it, how to track progress, and what to do when you stall.
 date: 2027-01-17
 category: Training
+author: suman-limbu
 cover_photo: apex-chest-press-machine.jpg
 image_alt: Member training on a chest press machine at Apex Fitness Centre
 ---

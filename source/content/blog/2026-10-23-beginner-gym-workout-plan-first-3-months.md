@@ -4,6 +4,7 @@ seo_title: Beginner Gym Workout Plan: First 3 Months
 description: New to the gym? A simple 3-day beginner workout plan for men and women, with exercises, sets and reps, how to progress, rest days and common mistakes.
 date: 2026-10-23
 category: Training
+author: suman-limbu
 cover_photo: apex-free-weights.jpg
 image_alt: Dumbbell rack and barbells at Apex Fitness Centre, Urlabari
 ---

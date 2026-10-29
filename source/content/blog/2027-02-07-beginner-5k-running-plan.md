@@ -4,6 +4,7 @@ seo_title: Beginner 5K Running Plan (8 Weeks)
 description: Never run before? An 8-week walk-run plan to finish 5 km, with technique tips, shoes, where to run in Nepal, and how to avoid shin pain.
 date: 2027-02-07
 category: Training
+author: suman-limbu
 cover_art: shoe
 ---
 

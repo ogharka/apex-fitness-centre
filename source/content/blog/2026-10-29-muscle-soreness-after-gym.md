@@ -4,6 +4,7 @@ seo_title: Muscle Soreness After Gym: Normal vs Injury
 description: Sore after the gym? Why DOMS happens, how long it lasts, how to recover faster, and the warning signs of a real injury.
 date: 2026-10-29
 category: Training
+author: suman-limbu
 cover_art: dumbbell
 ---
 

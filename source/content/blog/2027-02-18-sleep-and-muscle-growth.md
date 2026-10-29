@@ -4,6 +4,7 @@ seo_title: Sleep and Muscle Growth: How Much Do You Need?
 description: Sleep is when your body recovers and builds muscle. How much sleep lifters need, what poor sleep does to strength, fat loss and hunger, and sleep tips.
 date: 2027-02-18
 category: Training
+author: suman-limbu
 cover_art: clock
 ---
 

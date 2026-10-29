@@ -4,6 +4,7 @@ seo_title: Body Recomposition: Lose Fat & Build Muscle Together
 description: Body recomposition (recomp) means losing fat and building muscle at once. Who it works for, calories, protein, a 3-day training plan and how to track it.
 date: 2026-10-29
 category: Training
+author: suman-limbu
 image: body-recomposition-cover.jpg
 image_alt: Rows of dumbbells on the rack at Apex Fitness Centre, Urlabari, in low dramatic light
 products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, muscleblaze-creatine-monohydrate-320g-citrus-blast

@@ -4,6 +4,7 @@ seo_title: Walking for Weight Loss: How Many Steps a Day?
 description: Is 10,000 steps a day necessary? What research says about daily steps, walking for weight loss, and easy ways to walk more in Nepal.
 date: 2026-11-05
 category: Weight loss
+author: suman-limbu
 cover_art: shoe
 ---
 

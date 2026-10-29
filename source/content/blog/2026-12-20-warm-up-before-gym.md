@@ -4,6 +4,7 @@ seo_title: 10-Minute Warm-Up Before the Gym
 description: A simple 10-minute warm-up before weights or cardio: light cardio, mobility drills and warm-up sets, and when to stretch.
 date: 2026-12-20
 category: Training
+author: suman-limbu
 cover_art: rope
 ---
 

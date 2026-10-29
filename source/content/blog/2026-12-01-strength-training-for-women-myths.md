@@ -4,6 +4,7 @@ seo_title: Strength Training for Women: 7 Myths Busted
 description: Will lifting make women bulky? Is it safe after 40 or during periods? Seven common myths about women and weight training, with the facts and how to start.
 date: 2026-12-01
 category: Training
+author: suman-limbu
 cover_art: dumbbell
 ---
 

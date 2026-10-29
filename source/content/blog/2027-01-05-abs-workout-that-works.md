@@ -4,6 +4,7 @@ seo_title: Abs Workout That Actually Works (Core Plan)
 description: The best core exercises for strong abs, a twice-a-week abs routine, and the honest truth about why visible abs depend more on body fat than on crunches.
 date: 2027-01-05
 category: Training
+author: suman-limbu
 cover_art: tape
 ---
 

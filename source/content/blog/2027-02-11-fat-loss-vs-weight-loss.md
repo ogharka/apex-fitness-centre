@@ -4,6 +4,7 @@ seo_title: Fat Loss vs Weight Loss: What's the Difference?
 description: Weight loss and fat loss are not the same. Why keeping muscle matters, how to measure real progress beyond the scale, and how to lose fat, not muscle.
 date: 2027-02-11
 category: Weight loss
+author: suman-limbu
 cover_art: tape
 ---
 

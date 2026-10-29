@@ -4,6 +4,7 @@ seo_title: Weight Loss Plateau: Why It Happens & How to Break It
 description: Stuck after losing weight at first? Why plateaus happen, how to tell a real plateau from water weight, and 8 practical ways to start losing again.
 date: 2027-01-12
 category: Weight loss
+author: suman-limbu
 cover_art: scale
 ---
 

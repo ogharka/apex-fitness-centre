@@ -4,6 +4,7 @@ seo_title: Shoulder Pain at the Gym: Causes & Prevention
 description: Why lifters get shoulder pain, which exercises and mistakes are common culprits, warm-up and strengthening moves that help, and when to see a doctor.
 date: 2027-02-04
 category: Training
+author: suman-limbu
 cover_photo: apex-seated-shoulder-press.jpg
 image_alt: Member doing a seated barbell shoulder press wearing a lifting belt at Apex Fitness Centre
 ---

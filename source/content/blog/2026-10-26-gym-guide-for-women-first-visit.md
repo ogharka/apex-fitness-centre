@@ -4,6 +4,7 @@ seo_title: Gym Guide for Women: First Visit & What to Train
 description: Nervous about joining a gym as a woman? What to wear, your first day, a simple workout plan, and honest answers to common fears.
 date: 2026-10-26
 category: Training
+author: suman-limbu
 cover_photo: apex-gym-floor.jpg
 image_alt: Training floor at Apex Fitness Centre in Urlabari
 ---

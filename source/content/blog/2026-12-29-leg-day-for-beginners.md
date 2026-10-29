@@ -4,6 +4,7 @@ seo_title: Leg Day for Beginners: Simple Workout Plan
 description: A beginner leg day workout with squats, Romanian deadlifts, lunges, leg press and calf raises, plus sets, reps, progression and how to handle soreness.
 date: 2026-12-29
 category: Training
+author: suman-limbu
 cover_photo: apex-gym-floor-low-angle.jpg
 image_alt: Leg machines and training equipment at Apex Fitness Centre
 ---

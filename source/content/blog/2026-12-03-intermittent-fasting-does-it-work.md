@@ -4,6 +4,7 @@ seo_title: Intermittent Fasting: Does It Work for Weight Loss?
 description: Does intermittent fasting beat normal dieting? What research shows, methods like 16:8, who should avoid it, and Nepali meal timing.
 date: 2026-12-03
 category: Weight loss
+author: suman-limbu
 cover_art: clock
 ---
 

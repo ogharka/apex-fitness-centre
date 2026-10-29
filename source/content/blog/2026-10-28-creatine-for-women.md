@@ -4,6 +4,7 @@ seo_title: Creatine for Women: Benefits, Dose & Is It Safe?
 description: Creatine for women: what it does for strength, menopause and mood, the right dose (3–5 g a day), the bloating and hair-loss myths, and who should avoid it.
 date: 2026-10-28
 category: Supplements
+author: suman-limbu
 image: creatine-for-women-cover.jpg
 image_alt: A woman smiling while training with a weight plate at Apex Fitness Centre, Urlabari
 products: wellcore-micronised-creatine-monohydrate-307g-fruit-fusion, muscleblaze-creatine-monohydrate-320g-citrus-blast, bpi-sports-micronized-creatine-300g-unflavored

@@ -4,6 +4,7 @@ seo_title: Weight Loss Diet Plan Nepali Food: Simple Guide
 description: Lose weight eating dal bhat. A simple Nepali weight loss plan: the plate method, sample meals, safe speed of loss and mistakes that stop progress.
 date: 2026-10-23
 category: Weight loss
+author: suman-limbu
 cover_art: scale
 ---
 

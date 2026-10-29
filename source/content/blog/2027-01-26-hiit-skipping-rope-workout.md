@@ -4,6 +4,7 @@ seo_title: Skipping Rope HIIT for Fat Loss (15 Minutes)
 description: A 15-minute skipping rope and bodyweight HIIT workout for fat loss at home, with beginner and advanced versions, technique tips and how often to do it.
 date: 2027-01-26
 category: Weight loss
+author: suman-limbu
 cover_art: rope
 ---
 

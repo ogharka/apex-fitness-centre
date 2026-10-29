@@ -4,6 +4,7 @@ seo_title: How to Do Your First Pull-Up (Beginner Plan)
 description: Can't do a pull-up yet? A step-by-step progression with dead hangs, rows, negatives and band-assisted pull-ups to get your first rep, plus correct form.
 date: 2026-12-10
 category: Training
+author: suman-limbu
 cover_photo: assets/gym-hero.jpg
 image_alt: Training floor at Apex Fitness Centre
 ---

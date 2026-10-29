@@ -4,6 +4,7 @@ seo_title: Strength Training After 50: Safe Beginner Plan
 description: Never too late to get stronger: why strength training matters after 50, how much you need, the best exercises, a safe first week and mistakes to avoid.
 date: 2026-10-28
 category: Training
+author: suman-limbu
 image: strength-training-after-50-cover.jpg
 image_alt: Weight machines on the gym floor at Apex Fitness Centre, lit by morning sun
 ---

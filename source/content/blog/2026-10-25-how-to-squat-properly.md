@@ -4,6 +4,7 @@ seo_title: How to Squat Properly: Beginner Form Guide
 description: Learn to squat with good form: foot position, depth, knees, back, breathing, common mistakes and fixes, plus easier and harder squat variations.
 date: 2026-10-25
 category: Training
+author: suman-limbu
 cover_photo: assets/gym-plate-loaded.jpg
 image_alt: Leg training machine at Apex Fitness Centre
 ---

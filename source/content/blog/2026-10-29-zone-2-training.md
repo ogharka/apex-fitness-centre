@@ -4,6 +4,7 @@ seo_title: Zone 2 Training: Heart Rate, Benefits & How to Do It
 description: Zone 2 training explained: how to find your Zone 2 heart rate, the talk test, how many minutes a week, what the science says, and a simple 6-week plan.
 date: 2026-10-29
 category: Training
+author: suman-limbu
 image: zone-2-training-cover.jpg
 image_alt: A member training on the elliptical by the window at Apex Fitness Centre, Urlabari, in soft morning light
 ---

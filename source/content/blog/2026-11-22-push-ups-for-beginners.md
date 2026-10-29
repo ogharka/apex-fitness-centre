@@ -4,6 +4,7 @@ seo_title: Push-Ups for Beginners: Zero to 20 in 6 Weeks
 description: Can't do a single push-up? A step-by-step progression from wall push-ups to 20 full reps, with correct form, common mistakes and a 6-week plan.
 date: 2026-11-22
 category: Training
+author: suman-limbu
 cover_art: dumbbell
 ---
 

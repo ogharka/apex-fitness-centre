@@ -4,6 +4,7 @@ seo_title: HYROX Training for Beginners: Stations & 12-Week Plan
 description: What is HYROX? The 8 stations, Open weights for men and women, finish times, and a 12-week beginner plan you can train for in any normal gym.
 date: 2026-10-29
 category: Training
+author: suman-limbu
 image: hyrox-training-cover.jpg
 image_alt: Eight red running segments and eight white workout stations arranged in a glowing ring on a dark arena floor
 ---

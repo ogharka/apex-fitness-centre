@@ -131,6 +131,9 @@ def _postcard(p, r):
 # Named authors. Fill in real details (only facts the person has confirmed), then put
 # `author: suman-limbu` (the key) in a post's front matter, and optionally `reviewed_by: <key>`.
 AUTHORS = {
+    "suman-limbu": {"name": "Suman Limbu", "job": "Owner and trainer, Apex Fitness Centre",
+                    "bio": "Suman runs Apex Fitness Centre in Urlabari, Morang. With more than 2 years of studying and coaching fitness, he has helped over 100 members, especially beginners, people losing weight and women starting strength training. His motto: \u201cFitness is a journey.\u201d",
+                    "same": ["https://www.facebook.com/Phyaak/"]},
     # "suman-limbu": {"name": "Suman Limbu", "job": "Morning trainer, Apex Fitness Centre",
     #                 "bio": "…years training members, certifications…", "photo": "team-suman-limbu.jpg"},
 }
@@ -139,6 +142,7 @@ def _author_ld(key):
     if not a: return {"@type": "Organization", "name": SITE, "url": BASE + "/about/"}
     o = {"@type": "Person", "name": a["name"], "jobTitle": a["job"], "url": BASE + "/about/#" + key, "worksFor": {"@id": BASE + "/#org"}}
     if a.get("photo"): o["image"] = BASE + "/assets/" + a["photo"]
+    if a.get("same"): o["sameAs"] = a["same"]
     return o
 def _author_name(key): return AUTHORS[key]["name"] if key in AUTHORS else "the Apex Fitness Centre team"
 
@@ -264,6 +268,8 @@ def build_info_pages():
 <p>The <a href="../blog/">blog</a> and <a href="../guides/">guides</a> are written by our team from what members ask us every day: how to start training, how much protein you need, which supplements are worth the money and how to avoid fakes. We keep advice simple and honest, and we do not make medical claims.</p>
 <h2>Visit or contact us</h2>
 <p>Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal<br>WhatsApp and phone: <a href="https://wa.me/{WA}" target="_blank" rel="noopener">9708819605</a><br>Facebook: <a href="https://www.facebook.com/apexfitcentre" target="_blank" rel="noopener">apexfitcentre</a></p>
+<h2 id="suman-limbu">Who writes our training guides</h2>
+<p><b>Suman Limbu</b>, owner and trainer at Apex Fitness Centre. Suman has spent more than 2 years studying and coaching fitness and has helped over 100 members, especially beginners, people losing weight and women starting strength training. His motto: &ldquo;Fitness is a journey.&rdquo; <a href="https://www.facebook.com/Phyaak/" target="_blank" rel="noopener">Suman on Facebook</a>.</p>
 <p>See <a href="../gym/">the gym, plans and team</a>.</p>""")
     _simple("contact/", "Contact Apex Fitness Centre | WhatsApp 9708819605", "Contact Apex Fitness Centre in Urlabari, Morang: WhatsApp or call 9708819605. Open 4:30 AM to 8:30 PM, Sunday to Friday.", "Contact us", f"""
 <p>The fastest way to reach us is WhatsApp. We reply from the gym during opening hours.</p>

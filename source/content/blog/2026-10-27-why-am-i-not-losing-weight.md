@@ -4,6 +4,7 @@ seo_title: Why Am I Not Losing Weight? 10 Reasons & Fixes
 description: Eating less but the scale won't move? 10 common reasons weight loss stalls, from sugary tea to water weight, and how to fix each.
 date: 2026-10-27
 category: Weight loss
+author: suman-limbu
 cover_art: scale
 ---
 

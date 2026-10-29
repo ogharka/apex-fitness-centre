@@ -4,6 +4,7 @@ seo_title: Japanese Walking: How to Do It, Benefits & 30-Min Plan
 description: Japanese walking is 3 minutes fast, 3 minutes easy, for 30 minutes. What the Shinshu University research found, how to do it right, and a 4-week plan.
 date: 2026-10-28
 category: Training
+author: suman-limbu
 image: japanese-walking-cover.jpg
 image_alt: A road at dusk with alternating red and grey lane markings, like fast and easy walking intervals
 ---
