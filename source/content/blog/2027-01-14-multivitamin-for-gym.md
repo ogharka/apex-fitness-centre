@@ -56,7 +56,7 @@ A simple Nepali "multivitamin plate":
 ## Better investments for gym results
 
 1. Enough protein: [how much protein you need](../how-much-protein-do-you-need/)
-2. Consistent training and [progressive overload](../progressive-overload-explained/)
+2. Consistent training and progressive overload
 3. Sleep
 4. Creatine monohydrate, if you want a performance supplement
 

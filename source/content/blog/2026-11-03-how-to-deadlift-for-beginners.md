@@ -1,7 +1,7 @@
 ---
 title: How to Deadlift for Beginners Without Hurting Your Back
 seo_title: How to Deadlift for Beginners (Safe Form Guide)
-description: The deadlift is safe when done right. Learn setup, hip hinge, back position, breathing and the best beginner variations, plus mistakes that cause back pain.
+description: The deadlift is safe when done right. Learn the setup, hip hinge, back position, breathing, best beginner variations and the most common mistakes.
 date: 2026-11-03
 category: Training
 author: suman-limbu
