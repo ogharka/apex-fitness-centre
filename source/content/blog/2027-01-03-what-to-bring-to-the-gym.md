@@ -19,6 +19,8 @@ A well-packed gym bag saves time, keeps you comfortable and means you never have
 6. **Padlock or small pouch** for valuables, if lockers are available.
 7. **Membership card** or ID, if your gym uses them.
 
+![Gym bag essentials: water bottle, towel, indoor shoes, workout clothes, phone and earphones, padlock, membership card, workout log, shaker and snack](images/gym-bag-essentials.jpg)
+
 ## Useful extras
 
 - **Notebook or workout app:** write down weights and reps. It's the simplest way to make sure you progress.

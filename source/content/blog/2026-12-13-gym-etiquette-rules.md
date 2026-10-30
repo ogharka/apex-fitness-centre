@@ -78,6 +78,8 @@ Fresh gym clothes and clean shoes keep the floor and equipment clean, especially
 
 Strong body odour and strong perfume can both make training uncomfortable for others.
 
+![Fifteen gym etiquette rules, from re-racking weights and wiping benches to keeping music to yourself and wearing clean indoor shoes](images/gym-etiquette-15-rules.jpg)
+
 ## For beginners: you belong here
 
 Every regular at your gym was a beginner once. If you're unsure how something works, ask a trainer. Most people are happy to help when asked politely. Read our [gym guide for women](../gym-guide-for-women-first-visit/) and [how to choose a good gym](../how-to-choose-a-gym-in-nepal/).

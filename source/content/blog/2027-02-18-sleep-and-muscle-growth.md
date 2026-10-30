@@ -39,6 +39,8 @@ If you train hard but sleep 5 hours a night, you're leaving results on the table
 9. **Wind-down routine:** shower, reading, light stretching.
 10. **Short naps** (20 minutes) can help, but long late naps can disrupt night sleep.
 
+![Ten practical sleep tips for better muscle growth, from fixed sleep times and no late caffeine to a wind-down routine and short naps](images/sleep-tips-muscle-growth.jpg)
+
 ## Early-morning trainers: plan backwards
 
 If you train at **5 AM**, you need to be asleep by around **9:30 to 10 PM** to get 7 hours. Gyms like Apex open at 4:30 AM for early risers, but the habit only works if bedtime moves earlier too. See [best time to go to the gym](../best-time-to-go-to-the-gym/).

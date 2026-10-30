@@ -43,6 +43,8 @@ HIIT is tiring, so **1 to 3 sessions a week** is plenty, alongside strength trai
 
 **Cool-down (2 minutes):** slow walking and gentle stretches.
 
+![A 15-minute skipping HIIT workout alternating skipping with squats, push-ups, lunges, mountain climbers and plank](images/skipping-hiit-15-minute.jpg)
+
 ## Beginner vs advanced
 
 | Level | Work / rest | Rounds |

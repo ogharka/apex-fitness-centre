@@ -33,6 +33,8 @@ Hold each stretch for **20 to 30 seconds** and breathe slowly. Move gently; stre
 9. **Child's pose:** knees apart, sit back towards heels, arms forward.
 10. **Glute bridges:** 15 slow reps to wake up hips that sit all day.
 
+![A 10-minute stretching routine for desk workers covering neck and shoulders, upper back, and hips and lower back](images/desk-worker-10-minute-stretch.jpg)
+
 ## Desk habits that help
 
 - **Move every 30 to 45 minutes.** Stand, walk to fill your water bottle, take calls standing.

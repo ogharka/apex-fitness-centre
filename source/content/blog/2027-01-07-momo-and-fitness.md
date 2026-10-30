@@ -32,6 +32,8 @@ A typical plate of 10 steamed momo can be a full meal's worth of calories. Two p
 | **Kothey (pan-fried)** | Occasional |
 | **Fried momo and C-momo** | Treat food |
 
+![Momo ranked for fat loss from best to worst: steamed chicken, buff, paneer and veg momo, then jhol momo, kothey, and fried momo and C-momo](images/momo-ranked-fat-loss.jpg)
+
 ## How to eat momo on a diet
 
 1. **Choose steamed.**

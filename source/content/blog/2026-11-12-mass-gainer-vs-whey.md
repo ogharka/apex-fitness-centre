@@ -21,6 +21,8 @@ products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, pintola
 | **Best for** | Reaching your protein target, lean muscle gain, fat loss | Hard gainers who can't eat enough food |
 | **Main downside** | Not enough calories alone for weight gain | Often high in sugar, expensive per serving |
 
+![Whey protein compared with a mass gainer: protein and calories per serving, who each is for and the main downside](images/mass-gainer-vs-whey-comparison.jpg)
+
 ## Who should choose whey
 
 - You want to **build muscle without gaining much fat**.

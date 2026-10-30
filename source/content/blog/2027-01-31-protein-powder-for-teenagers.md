@@ -53,6 +53,8 @@ Whey protein is essentially a milk protein, so it's **not dangerous** for most h
 
 Creatine is sometimes used by older teen athletes under guidance, but the decision should involve a doctor, and food, sleep and training come first.
 
+![Supplements teenagers should avoid and why: pre-workouts, fat burners, testosterone boosters, unlabelled mass powders and anabolic steroids](images/supplements-teenagers-avoid.jpg)
+
 ## What actually builds muscle in teens
 
 1. **Consistent training** 2 to 4 times a week

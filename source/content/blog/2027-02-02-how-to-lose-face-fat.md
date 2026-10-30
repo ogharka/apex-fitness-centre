@@ -43,6 +43,8 @@ Poor sleep often shows on your face first, and it increases hunger.
 
 Large, salty meals late at night often mean a puffier face in the morning.
 
+![What actually reduces face fat: lose overall body fat, cut salt, limit alcohol, drink water, sleep 7–9 hours and watch late-night eating](images/lose-face-fat-what-works.jpg)
+
 ## Myths
 
 | Myth | Truth |

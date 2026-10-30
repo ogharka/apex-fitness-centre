@@ -10,6 +10,8 @@ image_alt: Smiling member in a jacket on the training floor at Apex Fitness Cent
 
 Winter is when gym attendance drops. Mornings are cold, the warm blanket wins, days are short, and the festival season (Dashain, Tihar, then weddings and picnics) brings plenty of heavy food. The people who **keep training through winter** usually start the new year noticeably ahead. Here's how to be one of them.
 
+![Nine ways to keep going to the gym in winter, from laying out warm clothes the night before to training 2–3 times a week in festival season](images/winter-gym-consistency-tips.jpg)
+
 ## 1. Lower the barrier to getting out of bed
 
 - **Lay out gym clothes the night before**, ideally warm layers.

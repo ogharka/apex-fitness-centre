@@ -29,6 +29,8 @@ In Nepal, some families still have strong traditions around menstruation. Physic
 | **Heavy flow, strong cramps** | Gentle walk, stretching, yoga, or rest |
 | **Very heavy bleeding, dizziness, severe pain** | Rest, and see a doctor if it's unusual for you |
 
+![How to exercise during your period depending on how you feel: normal workout, lighter training, gentle walk or rest, and when to see a doctor](images/exercise-during-periods-guide.jpg)
+
 ## Practical tips
 
 1. **Use the protection you're most comfortable with** for movement: pads, tampons, menstrual cups or period underwear.

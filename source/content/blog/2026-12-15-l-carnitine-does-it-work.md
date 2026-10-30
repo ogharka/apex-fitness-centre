@@ -35,6 +35,8 @@ The people most likely to benefit are those with **low carnitine levels**, for e
 | "Small extra help alongside diet and training" | Possibly |
 | "Replaces exercise or diet" | No |
 
+![What to expect from L-carnitine: it does not melt belly fat, cause big weight loss or replace diet and exercise, but may give a small extra help](images/l-carnitine-expectations.jpg)
+
 ## Who might consider it
 
 - You already have a good diet, train regularly, and want to try an extra.

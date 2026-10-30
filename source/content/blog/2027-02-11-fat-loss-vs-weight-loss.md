@@ -32,6 +32,8 @@ Same number on the scale, very different outcomes.
 
 That's why daily weighing can be confusing.
 
+![What makes the scale go up and down: body fat and muscle change slowly, while water, salt, carbs, food in your gut and the menstrual cycle change it daily](images/scale-weight-what-changes-it.jpg)
+
 ## Better ways to measure progress
 
 1. **Weekly average weight:** weigh 3 to 7 mornings a week and average them.

@@ -18,6 +18,8 @@ A large egg contains roughly:
 - **About 5 g of fat**, mostly in the yolk
 - Vitamins and minerals including **B12, vitamin D, selenium and choline**, mostly in the yolk
 
+![One egg gives about 6 g protein, 70–80 calories and 5 g fat; healthy adults can start with 1–3 whole eggs a day](images/eggs-nutrition-how-many.jpg)
+
 ## Are eggs bad for cholesterol?
 
 Egg yolks contain cholesterol, and for years people were told to strictly limit them. Research since then shows that, for most people, **cholesterol in food has a smaller effect on blood cholesterol** than once thought. Saturated fat, refined carbs, weight, activity and genetics matter a lot.

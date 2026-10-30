@@ -19,6 +19,8 @@ Not every trek in Nepal needs months of preparation. Popular shorter treks like 
 
 Exact heights, routes and durations vary with the itinerary you choose.
 
+![Ghorepani Poon Hill, Langtang Valley and Mardi Himal treks compared by highest point, number of days and what is tough](images/short-treks-nepal-compared.jpg)
+
 ## A 6-week training plan
 
 | Weeks | Plan |

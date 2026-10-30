@@ -22,6 +22,8 @@ If you want to work as a personal trainer in Nepal or abroad, an internationally
 
 *Programmes, prices and requirements change. Always check the official website before you pay.*
 
+![NASM, ACE, ISSA and NSCA personal trainer certifications compared by what each is known for and who it suits best](images/personal-trainer-certifications-compared.jpg)
+
 ## What "NCCA-accredited" means and why it matters
 
 The **NCCA (National Commission for Certifying Agencies)** is an independent US body that accredits certification exams. Many gyms, especially in the **Gulf, US and Europe**, prefer or require trainers with NCCA-accredited certifications. If you're planning to work abroad, this matters. See [gym trainer jobs in the Gulf for Nepalis](../gym-trainer-jobs-in-gulf-for-nepalis/).

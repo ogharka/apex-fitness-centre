@@ -31,6 +31,8 @@ That's why the best core training includes **anti-movement** exercises, not just
 | **Farmer's carry** | Whole core under load |
 | **Ab wheel rollout** (advanced) | Strong anti-extension |
 
+![The best core exercises and what each trains: plank, side plank, dead bug, hanging knee raise, cable crunch, Pallof press, farmer's carry and ab wheel rollout](images/core-exercises-what-they-train.jpg)
+
 ## A twice-a-week abs routine (15 minutes)
 
 Add this at the end of two of your gym sessions.

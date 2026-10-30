@@ -39,6 +39,8 @@ The trail itself is not technical. The challenge is **altitude and consecutive d
 - Calf raises
 - Plank and side plank
 
+![Annapurna Circuit 10-week training plan: brisk walks and hilly walks, then weekend hikes with a 6–8 kg pack, back-to-back hikes, and a rest week before the trek](images/annapurna-circuit-training-plan.jpg)
+
 ## Train for the downhill
 
 Most trekkers prepare for climbing and are surprised by how much the **descents** hurt, especially from Thorong La to Muktinath. Prepare by:

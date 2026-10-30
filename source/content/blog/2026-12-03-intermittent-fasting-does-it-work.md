@@ -42,6 +42,8 @@ The takeaway: **the eating window itself is not magic. Eating less overall is wh
 - **Less protein** if you squeeze meals into a short window.
 - **Hard to keep up** with family meals, festivals and social life.
 
+![A 16:8 intermittent fasting day with Nepali meals, eating between 10 AM and 6 PM](images/intermittent-fasting-16-8-nepali-day.jpg)
+
 ## Who should avoid intermittent fasting
 
 - People with **diabetes**, especially on insulin or sugar-lowering medicines, unless supervised by a doctor

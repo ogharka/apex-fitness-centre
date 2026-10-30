@@ -28,6 +28,8 @@ Different organisations run events with slightly different rules, so always chec
 5. **Three referees** judge each lift; you need at least two white lights.
 6. Your **best successful squat + bench + deadlift = total**.
 
+![How a powerlifting meet works: weigh-in, three squat, bench press and deadlift attempts, and judging by three referees](images/powerlifting-meet-how-it-works.jpg)
+
 ## Weight classes and divisions
 
 Meets group lifters by **body weight** and often by **age** (sub-junior, junior, open, masters). Some meets are **raw** (no supportive suits; belts, wrist wraps and knee sleeves usually allowed) and some include **equipped** divisions. Check the specific event's categories before you register.

@@ -61,6 +61,8 @@ BCAA stands for **branched-chain amino acids**: three of the nine essential amin
 3. **Creatine**, the best-researched performance supplement. See [creatine vs whey: which first?](../creatine-vs-whey-which-first/).
 4. **BCAAs** only after the basics are covered, if you want them.
 
+![Supplement priorities in order: protein from food first, then whey, then creatine, and BCAAs last](images/supplement-priorities-bcaa.jpg)
+
 ## How to use BCAAs if you buy them
 
 - Follow the label's serving size.

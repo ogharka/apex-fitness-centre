@@ -36,6 +36,8 @@ There are three main types:
 | Mustard oil | ALA |
 | Soybean | ALA |
 
+![Omega-3 food sources in Nepal: fish for EPA and DHA, eggs for some DHA, and flaxseed, walnuts, mustard oil and soybean for ALA](images/omega-3-food-sources-nepal.jpg)
+
 ## Who might benefit from a supplement
 
 - People who **rarely or never eat fish**

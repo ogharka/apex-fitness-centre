@@ -53,6 +53,8 @@ Training creates small amounts of muscle damage and fatigue. During rest, your b
 
 If you notice several of these, take a lighter week: same exercises, about half the sets and lighter weights. This is often called a "deload."
 
+![A sample beginner week: full-body weights on Sunday, Tuesday and Thursday, active rest on Monday, Wednesday and Friday, and full rest on Saturday](images/rest-days-beginner-week.jpg)
+
 ## What to do on rest days
 
 1. **Eat enough protein.** Recovery needs building blocks. See [how much protein you need](../how-much-protein-do-you-need/).

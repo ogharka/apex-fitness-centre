@@ -37,6 +37,8 @@ Start at the level where you can do **3 sets of 8 to 12 clean reps**. When you c
 
 **Negatives** also help: start at the top of a full push-up and lower yourself as slowly as you can (3 to 5 seconds), then reset on your knees. Do 3 sets of 5.
 
+![Push-up progression ladder in six levels: wall, table, step, knee, full and feet-raised push-ups](images/push-up-progression-ladder.jpg)
+
 ## A 6-week plan
 
 Train **3 days a week** (for example Sunday, Tuesday, Thursday).

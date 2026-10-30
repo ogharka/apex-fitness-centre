@@ -48,6 +48,8 @@ Jump or step up so your chin is over the bar, then **lower yourself as slowly as
 
 Use a **resistance band** looped over the bar under your knee or foot, or an **assisted pull-up machine**. Reduce the help over time.
 
+![Pull-up progression in five steps: dead hang, rows, scapular pulls, negatives and assisted pull-ups](images/pull-up-5-step-progression.jpg)
+
 ## An 8-week plan (2 sessions a week)
 
 | Weeks | Main work |

@@ -37,6 +37,8 @@ Categories vary by event and federation, but common ones include:
 
 Always read the **rules of the specific competition**, including height/weight classes and posing requirements.
 
+![Common bodybuilding competition categories and what judges look for: bodybuilding, classic physique, men's physique, women's model physique, bikini fitness, masters and juniors](images/bodybuilding-categories-nepal.jpg)
+
 ## How to prepare for your first show
 
 ### 1. Build a base first

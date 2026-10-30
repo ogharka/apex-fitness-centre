@@ -34,6 +34,8 @@ Run **3 times a week**, with a rest or walking day in between. Every session sta
 
 **Repeat a week** if it felt too hard. There's no rush.
 
+![An 8-week walk-run plan from 1-minute runs to a continuous 25–35 minute run or your first 5 km](images/beginner-5k-walk-run-plan.jpg)
+
 ## Running technique tips
 
 - **Short, quick steps** rather than long strides.

@@ -47,6 +47,8 @@ You can count calories with an app if you like it, but these habits create a def
 
 Full details in our [weight loss diet plan with Nepali food](../weight-loss-diet-plan-nepali-food/).
 
+![Six ways to create a calorie deficit with Nepali food: plate method, less rice, no sugary drinks, swap fried snacks, less oil and ghee, and 7,000 to 10,000 steps](images/calorie-deficit-nepali-food.jpg)
+
 ## Why crash diets backfire
 
 - **Muscle loss:** your body breaks down muscle for energy, especially if protein is low.

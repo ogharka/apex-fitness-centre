@@ -43,6 +43,8 @@ Few foods are rich in vitamin D:
 
 Food alone often isn't enough, which is why sun and, when needed, supplements matter.
 
+![Why vitamin D matters for bones and muscle, and where to get it: sunlight and foods such as egg yolks, oily fish and fortified milk](images/vitamin-d-nepal-sources.jpg)
+
 ## Should you take a vitamin D supplement?
 
 - **If a blood test shows you're low,** your doctor will advise the dose and duration.

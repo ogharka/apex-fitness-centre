@@ -29,6 +29,8 @@ Many Nepali mornings start with **sweet milk tea and biscuits**, which is lots o
 11. **Soybean sadeko with chiura:** 50 g dry soy ≈ 25 g.
 12. **Oats cooked in milk with peanut butter:** about 15 to 18 g.
 
+![Protein in Nepali breakfasts: soybean sadeko with chiura about 25 g, whey shake 20–25 g, oats in milk about 20 g, egg or paneer bhurji about 18 g, down to curd with chiura 10–12 g](images/high-protein-breakfast-nepal-chart.jpg)
+
 ## Breakfasts by goal
 
 | Goal | Best picks |

@@ -49,6 +49,8 @@ Add steps gradually from your current average:
 | Week 3 | + 3,000 |
 | Week 4 | Hold, and add one brisk 30-minute walk |
 
+![A 4-week walking plan: add 1,000, then 2,000, then 3,000 steps to your daily average, then hold and add a brisk 30-minute walk](images/walking-steps-4-week-plan.jpg)
+
 ## 12 easy ways to walk more in Nepal
 
 1. **Walk after dal bhat** for 10 to 15 minutes, morning and evening.

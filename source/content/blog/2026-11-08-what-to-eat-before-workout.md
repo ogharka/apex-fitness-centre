@@ -20,6 +20,8 @@ You do not need special products. Ordinary Nepali food works perfectly.
 | 30 minutes | Something small and easy: a banana, a few dates, half a glass of milk |
 | Right before | Usually nothing, or just water |
 
+![What to eat before a workout by timing: a normal meal 2–3 hours before, a light snack 1 hour before, something small 30 minutes before, and water right before](images/pre-workout-meal-timing.jpg)
+
 ## 12 pre-workout options
 
 ### For morning workouts (4:30 to 8 AM)

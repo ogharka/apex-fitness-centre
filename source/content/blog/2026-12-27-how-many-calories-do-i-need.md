@@ -63,6 +63,8 @@ You don't need to weigh everything. Rough guide:
 
 These are estimates. Cooking style, oil and portion size change them a lot.
 
+![Calories in common Nepali foods: chowmein 500+ kcal, a plate of rice 250–300, a bowl of dal 120–200, a glass of full-cream milk 150–160, a spoon of ghee 120, a roti 70–100 and an egg 75](images/nepali-food-calories-chart.jpg)
+
 ## Calories aren't the whole story
 
 - **Protein** keeps you full and protects muscle. See [how much protein you need](../how-much-protein-do-you-need/).

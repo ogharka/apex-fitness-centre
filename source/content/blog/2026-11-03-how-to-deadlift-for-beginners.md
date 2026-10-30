@@ -24,6 +24,8 @@ The deadlift is a **hinge**: you bend at the hips, not the waist, while your bac
 3. **Trap bar (hex bar) deadlift:** if your gym has one, it is the most back-friendly barbell option.
 4. **Conventional barbell deadlift:** learn it once you are confident with the hinge.
 
+![Four deadlift variations for beginners from easiest to hardest: kettlebell deadlift, dumbbell Romanian deadlift, trap bar deadlift and conventional barbell deadlift](images/deadlift-variations-beginners.jpg)
+
 ## Step-by-step: conventional barbell deadlift
 
 ### 1. Feet

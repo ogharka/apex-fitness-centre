@@ -29,6 +29,8 @@ If your waist is shrinking while the scale is stuck, you're still losing fat. Ke
 4. **Weekends got bigger.**
 5. **Water retention** from new training, stress, poor sleep or salty food.
 
+![Eight ways to break a weight loss plateau: track honestly, reduce a little, walk more, keep protein high, lift heavier, sleep better, plan weekends and take a short diet break](images/weight-loss-plateau-8-fixes.jpg)
+
 ## 8 ways to break a plateau
 
 ### 1. Track honestly for 7 days

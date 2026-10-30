@@ -33,6 +33,8 @@ cover_art: check
 
 Women with heavy periods, vegetarians and people who rarely go out in the sun should be especially aware of iron, B12 and vitamin D.
 
+![Nutrients gym-goers in Nepal may miss and food sources: vitamin D, iron, vitamin B12, calcium and fibre](images/nutrients-gym-goers-nepal.jpg)
+
 ## Food first
 
 A simple Nepali "multivitamin plate":

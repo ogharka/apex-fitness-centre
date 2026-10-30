@@ -24,6 +24,8 @@ Snacks are where many diets quietly fail: biscuits with tea, samosa from the cor
 9. **Hung curd dip** with cucumber sticks: about 8 to 10 g.
 10. **Whey shake** if you use protein powder: about 20 to 25 g per scoop.
 
+![Protein in healthy Nepali gym snacks per serving: soybean sadeko and a whey shake 20–25 g, egg bhurji wrap 15 g, two boiled eggs 12 g, chana chatpate 10–12 g, kwati and paneer 10 g, milk 8 g, curd and peanuts 7 g](images/nepali-snacks-protein-chart.jpg)
+
 ## Healthy carbs and fruit
 
 11. **Banana**: quick energy before training.
