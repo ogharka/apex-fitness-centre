@@ -146,6 +146,12 @@ def _author_ld(key):
     return o
 def _author_name(key): return AUTHORS[key]["name"] if key in AUTHORS else "the Apex Fitness Centre team"
 
+_STOP = set("a an and are can do does for from how i in is it my of on or should the to what when which why with you your vs best guide beginners beginner nepal nepali".split())
+def _words(p): return {w for w in re.findall(r"[a-z0-9]+", (p["slug"] + " " + p["title"]).lower()) if w not in _STOP and len(w) > 2}
+def _rel_score(p, x):
+    # shared topic words matter most, then same category, then recency as a tie-break
+    return len(_words(p) & _words(x)) * 3 + (2 if x["category"] == p["category"] else 0) + x["d"].toordinal() / 1e7
+
 def build_blog():
     posts = load_posts()
     for i, p in enumerate(posts):
@@ -169,7 +175,7 @@ def build_blog():
         shop = ""
         if p["prods"]:
             shop = f'<section><h2 class="h2s">Products in this post</h2><div class="pgrid">{"".join(card(x, d) for x in p["prods"])}</div></section>'
-        more = ([x for x in posts if x is not p and x["category"] == p["category"]] + [x for x in posts if x is not p and x["category"] != p["category"]])[:3]
+        more = sorted((x for x in posts if x is not p), key=lambda x: -_rel_score(p, x))[:3]
         more_html = f'<section class="gl"><h2 class="h2s">More from the blog</h2><div class="bgrid">{"".join(_postcard(x, "../") for x in more)}</div></section>' if more else ""
         upd = f' &middot; Updated {_date(p["updated"])}' if p["updated"] != p["d"] else ""
         ask = wa(f"Hi Apex Fitness Centre, I read your post \"{p['title']}\" and I have a question: ")
