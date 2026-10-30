@@ -39,6 +39,8 @@ To compare, according to the same source: a cup of tea is about **50 mg**, a cup
 
 **Many pre-workouts contain 200 to 300 mg per serving.** One serving plus two cups of milk tea and a cold drink can easily push you over 400 mg in a day.
 
+![Caffeine compared: tea 50 mg, energy drink 80 mg, filter coffee 90 mg and a pre-workout serving 200 to 300 mg, against the 400 mg daily limit for healthy adults](images/caffeine-pre-workout-chart.jpg)
+
 ## Common side effects
 
 - **Tingling or itching** (from beta-alanine): harmless and fades within an hour.

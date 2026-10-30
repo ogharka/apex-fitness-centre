@@ -70,6 +70,8 @@ Some conditions, such as an underactive thyroid or PCOS, and some medicines can 
 
 **Fix:** If you have done everything above for 2 to 3 months without progress, or you have other symptoms like unusual tiredness, hair loss or irregular periods, see a doctor.
 
+![Checklist for a weight loss stall: track food for 7 days, cut sugar in tea and cold drinks, protein at every meal, weigh weekly, measure waist, 7,000 steps and 7 hours sleep](images/weight-loss-stall-checklist.jpg)
+
 ## A quick checklist
 
 - [ ] Wrote down my food for 7 days

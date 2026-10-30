@@ -90,6 +90,8 @@ A quick breakfast option, especially for people training in the morning.
 
 For more ideas, see our [high-protein Nepali diet plan for muscle gain](../high-protein-nepali-diet-plan-for-muscle-gain/).
 
+![A vegetarian Nepali day with about 120 g protein: oats with milk, dal bhat with paneer and curd, soybean sadeko, milk and peanuts, roti with rajma](images/vegetarian-protein-day-nepal.jpg)
+
 ## Combining proteins
 
 Plant proteins differ in their amino acids. The good news: you do **not** need to combine them at every meal. Eating a variety of pulses, grains and dairy across the day covers your needs. Dal bhat itself is a classic combination of a pulse and a grain.

@@ -76,6 +76,25 @@ For fat loss, the total amount of exercise and your diet matter far more than th
 3. **Finish hard training 2 to 3 hours before bed** if it affects your sleep.
 4. **Skip caffeine after 2 to 3 PM.**
 
+## If your schedule is messy
+
+Many Nepalis don't have a fixed 9-to-5 day: students, shopkeepers, shift workers, farmers and people who travel for work.
+
+- **Students:** train straight after college, before you sit down to study. Once you're home and relaxed, it's much harder to go out again.
+- **Shop owners and business people:** pick the quietest hour in your business day and protect it like a meeting.
+- **Shift workers:** train at the same point in *your* day, for example 1–2 hours after you wake up, even if the clock time changes.
+- **Busy parents:** 30 minutes, three times a week, beats an "ideal" plan you never do. Try a short [full-body routine](../beginner-gym-workout-plan-first-3-months/).
+
+## Consistency beats the "perfect" time
+
+The best training time is the one you can repeat for months. A few habits that matter far more than morning versus evening:
+
+1. **Same days every week.** For example, Sunday, Tuesday and Thursday. Your body and family get used to it.
+2. **Pack your bag the night before.** One less excuse.
+3. **Eat something small first** if you train early. A banana or a glass of milk is enough.
+4. **Sleep 7–9 hours.** Late nights followed by 5 AM training don't last.
+5. **Track your sessions.** A simple tick on a calendar keeps you honest.
+
 ## Frequently asked questions
 
 ### Is it better to work out on an empty stomach in the morning?
@@ -93,6 +112,10 @@ Yes, but a regular time makes it easier to build a habit and your body adapts be
 ### What time is Apex Fitness Centre open?
 
 Apex is open from 4:30 AM to 8:30 PM, Sunday to Friday. See [plans and timings](../../gym/).
+
+### Is it bad to train late at night?
+
+Not for most people, but hard training very close to bedtime can make it harder to fall asleep. Try to finish 1–2 hours before you go to bed.
 
 ## Sources
 

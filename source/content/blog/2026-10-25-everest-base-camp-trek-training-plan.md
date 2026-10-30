@@ -35,6 +35,8 @@ Train **4 to 5 days a week**. Build up gradually.
 
 **Living in Nepal?** You have a big advantage. Hikes around the Kathmandu valley rim, like **Shivapuri, Nagarkot or Champadevi**, or local hills wherever you live, are perfect training.
 
+![Everest Base Camp 12-week training plan in four phases: base, build, peak and test and taper, with walking, stairs and pack weights](images/ebc-12-week-plan.jpg)
+
 ## Strength exercises that matter most
 
 Do these twice a week, **3 sets of 10 to 15**:

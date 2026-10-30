@@ -13,7 +13,7 @@ The simplest check is your urine: **pale yellow means you are drinking enough.**
 
 ## Where the numbers come from
 
-EFSA advises a total water intake of **2.5 litres a day for men and 2.0 litres for women**, with roughly **70 to 80% coming from drinks** and the rest from food such as rice, dal, fruit and vegetables ([summary](https://www.caw.ac.uk/eandd/health-and-fitness-tip-of-the-week-water/)).
+EFSA advises a total water intake of **2.5 litres a day for men and 2.0 litres for women**, with roughly **70 to 80% coming from drinks** and the rest from food such as rice, dal, fruit and vegetables ([EFSA, 2010](https://doi.org/10.2903/j.efsa.2010.1459)).
 
 These are averages. You need more if you are larger, very active, sweating a lot, or in hot weather.
 
@@ -63,6 +63,29 @@ It is possible but rare. Drinking huge amounts very quickly (many litres in a fe
 
 Water does not burn fat, but **replacing cold drinks and sweet tea with water** cuts a lot of calories. Some people also feel fuller if they drink a glass before meals. See our [weight loss diet plan with Nepali food](../weight-loss-diet-plan-nepali-food/).
 
+## A simple water plan for a gym day
+
+| When | How much | Tip |
+|---|---|---|
+| After you wake up | 1–2 glasses | Before tea |
+| 1–2 hours before training | 1–2 glasses | Not a whole bottle right before |
+| During training | Sips every 10–15 minutes, about 0.5–1 litre an hour | More in hot weather |
+| After training | 1–2 glasses, more if you sweated a lot | Check your urine colour later |
+| With each meal | 1 glass | |
+
+Adjust for your size, the weather and how much you sweat. Pale yellow urine is a good sign you're drinking enough.
+
+## Electrolytes: when water isn't enough
+
+For most gym sessions under an hour, **plain water is all you need**. You may need electrolytes (salt and minerals) as well when:
+
+- You train or work for **more than an hour in hot, humid weather**, as in a Terai summer.
+- You **sweat heavily** and see white salt marks on your clothes.
+- You're **trekking** for several hours a day.
+- You've had **diarrhoea or vomiting**. Use oral rehydration salts (ORS) and see a doctor if it doesn't settle.
+
+A simple option is **ORS (Jeevan Jal)** from any pharmacy, or a pinch of salt with lemon and a little sugar in water.
+
 ## Frequently asked questions
 
 ### Is 3 litres of water a day too much?
@@ -80,5 +103,14 @@ Being well hydrated helps you train and recover well. It will not build muscle b
 ### Is it bad to drink water right after eating?
 
 No. Drinking water with or after meals is fine for healthy people.
+
+### What colour should my urine be?
+
+Pale yellow, like light lemon juice, usually means you're drinking enough. Dark yellow means drink more. Clear all day can mean you're drinking more than you need.
+
+## Sources
+
+- [Scientific opinion on dietary reference values for water](https://doi.org/10.2903/j.efsa.2010.1459) (European Food Safety Authority, 2010)
+- [High-altitude travel and altitude illness](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html) (US CDC Yellow Book)
 
 *General information, not medical advice. People with kidney or heart conditions may need different amounts. Follow your doctor's advice.*

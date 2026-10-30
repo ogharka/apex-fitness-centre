@@ -66,6 +66,8 @@ Nepal's foreign employment process is run by the **Department of Foreign Employm
 7. **Labour permit (shram swikriti):** must be issued before you fly. Without it, you are not protected.
 8. **Visa stamping and departure.**
 
+![The eight legal steps for a Nepali gym trainer to work in the Gulf, from choosing a DoFE-licensed agency to labour permit and visa](images/gulf-trainer-legal-steps.jpg)
+
 ### What should it cost?
 
 For many Gulf jobs, employers are meant to cover the visa and air ticket. The same guide lists the agency service charge cap for the Gulf at **NPR 10,000**, and estimates the worker's total cost under **NPR 25,000** when visa and ticket are free. **If an agent asks for lakhs of rupees, treat it as a serious warning sign** and check with DoFE.

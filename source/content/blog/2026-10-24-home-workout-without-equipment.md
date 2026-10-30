@@ -41,6 +41,8 @@ Do each exercise for **40 seconds**, rest **20 seconds**, then move to the next.
 
 Slow walking around the room, then gentle stretches for thighs, hips, chest and shoulders. Hold each stretch for 20 to 30 seconds.
 
+![Six-exercise home workout circuit: squat, push-up, reverse lunge, glute bridge, plank and mountain climbers, 40 seconds on and 20 seconds rest for 3 rounds, with easier and harder versions](images/home-workout-circuit.jpg)
+
 ## How to make it harder every week
 
 Your body adapts quickly, so the workout must change slowly over time:

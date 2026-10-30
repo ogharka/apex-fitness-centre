@@ -218,11 +218,11 @@ def nav(depth, active=""):
         return f'<a href="{r}{href}"' + (' class="on"' if active == key else "") + f">{label}</a>"
     return f"""<div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Stack and save up to Rs. 1,000</div>
 <header class="top"><div class="wrap">
-<a class="brand" href="/" aria-label="Apex Fitness Centre home"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>
+<a class="brand" href="/"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>
 <nav aria-label="Main"><ul>
 <li>{a("shop/","Shop","shop")}</li><li>{a("creatine/","Creatine","creatine")}</li><li>{a("protein/","Protein","protein")}</li><li>{a("pre-workout/","Pre-workout","pre-workout")}</li><li>{a("blog/","Blog","blog")}</li><li>{a("gym/","The gym","gym")}</li><li>{a("software/","For gyms","software")}</li><li>{a("calculators/","Calculators","calculators")}</li>
 </ul></nav>
-<button class="cartbtn" id="cartOpen" type="button" aria-label="Open cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg><span>Cart</span><b id="cartCount">0</b></button>
+<button class="cartbtn" id="cartOpen" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg><span>Cart</span><b id="cartCount">0</b></button>
 </div></header>
 """
 
@@ -239,7 +239,7 @@ def footer(depth, pdp=None):
     r = "../" * depth
     if pdp:
         pm = f"Hi Apex Fitness Centre, I want to order: {pdp['full']} for {money(pdp['price'])}. Please confirm stock and send payment details."
-        mbar = f'<div class="mbar pdpbar" data-product="{e(pdp["full"])}" data-value="{pdp["price"]}"><a class="btn wa" href="{wa(pm)}" target="_blank" rel="noopener">Order on WhatsApp</a><button class="btn line" type="button" data-add="{pdp["slug"]}">Add &middot; {money(pdp["price"])}</button><button class="btn" type="button" id="cartOpen2" aria-label="Cart">Cart <b id="cartCount2">0</b></button></div>'
+        mbar = f'<div class="mbar pdpbar" data-product="{e(pdp["full"])}" data-value="{pdp["price"]}"><a class="btn wa" href="{wa(pm)}" target="_blank" rel="noopener">Order on WhatsApp</a><button class="btn line" type="button" data-add="{pdp["slug"]}">Add &middot; {money(pdp["price"])}</button><button class="btn" type="button" id="cartOpen2">Cart <b id="cartCount2">0</b></button></div>'
     else:
         mbar = f'<div class="mbar"><a class="btn wa" href="https://wa.me/{WA}?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20have%20a%20question%20about%20supplements." target="_blank" rel="noopener">WhatsApp</a><button class="btn" type="button" id="cartOpen2">Cart <b id="cartCount2">0</b></button></div>'
     cat_links = "".join(f'<a href="{r}{c["url"]}">{c["name"]}</a>' for c in CATS)
@@ -420,6 +420,7 @@ def build_shop():
 {crumb_html(cr, d)}
 <div class="shead left"><h1>Shop supplements</h1><p>Creatine, protein, pre-workout, BCAA, L-carnitine, omega-3, oats and gym gear. Free delivery all over Nepal, order on WhatsApp.</p></div>
 <div class="chips">{chips}</div>
+<h2 class="sr-only">All products</h2>
 <div class="pgrid">{''.join(card(p, d) for p in PRODUCTS)}</div>
 <div class="note"><b>Not sure what to pick?</b> Message us on WhatsApp and we will help you choose.<a class="btn wa" href="https://wa.me/{WA}" target="_blank" rel="noopener">Ask on WhatsApp</a></div>
 </div></main>
@@ -473,6 +474,7 @@ def build_cat(c):
 <main><div class="wrap">
 {crumb_html(cr, d)}
 <div class="shead left"><h1>{e(c['h1'])}</h1><p>{e(c['intro'])}</p></div>
+<h2 class="sr-only">Products</h2>
 <div class="pgrid">{''.join(card(p, d) for p in c['products'])}</div>
 <section class="prose"><h2>Choosing {c['name'].lower()}</h2>{''.join(f'<p>{e(t)}</p>' for t in c['body'])}</section>
 {extra}
@@ -629,7 +631,7 @@ def build_gym():
     s = s.replace('--red:#e2b023', '--red:#e11f37').replace('--red2:#f1c658', '--red2:#ff4d5e').replace('--red-d:#b88408', '--red-d:#b5122a')
     s = s.replace('#f6d36a', '#ff6b7a').replace('#c99512', '#c8102e').replace('#15130c', '#ffffff').replace('#221a08', '#2a0a0f')
     s = s.replace('rgba(226,176,35', 'rgba(225,31,55').replace('226,176,35', '225,31,55')
-    s = s.replace('<a class="logo" href="#top">Apex Fitness Centre</a>', '<a class="logo" href="/" aria-label="Apex Fitness Centre home"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>')
+    s = s.replace('<a class="logo" href="#top">Apex Fitness Centre</a>', '<a class="logo" href="/"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>')
     s = s.replace('<a class="logo" href="#top">', '<a class="logo" href="/">')
     # --- Oct 2026 fixes ---
     def must(a, b):

@@ -33,6 +33,8 @@ Your knees should travel **in the same direction as your toes**. They can move f
 
 Go as low as you can **while keeping your back flat and heels down**. For many people that is thighs parallel to the floor or slightly lower. Then push the floor away and stand up tall, breathing out near the top.
 
+![The five checkpoints of a good squat: feet, brace, sit down and back, knees follow toes, depth and drive](images/squat-5-checkpoints.jpg)
+
 ## Common mistakes and quick fixes
 
 | Mistake | Fix |

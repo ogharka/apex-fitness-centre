@@ -27,6 +27,8 @@ The main source for this article is a 2021 review by a group of creatine researc
 | Big doses can upset your stomach | **True.** Split the dose or take it with food |
 | You must do a loading phase | **Myth.** Optional, not required |
 
+![Creatine myths and facts: hair loss, kidney damage, dehydration, steroid and fat claims are myths; some water weight and stomach upset at big doses are true; loading is optional](images/creatine-myths-vs-facts.jpg)
+
 ## Myth 1: "Creatine causes hair loss"
 
 This fear comes from **one study in 2009** on a small group of college rugby players. Their levels of DHT (a hormone linked to hair loss in some men) went up during creatine use. The study **did not measure any hair loss**, and according to the 2021 review, **its results have never been replicated**. Other studies found no rise in DHT.

@@ -21,6 +21,8 @@ products: muscleblaze-creatine-monohydrate-320g-citrus-blast, muscleblaze-biozym
 | **When it works** | Every day, as part of your protein total | Every day; it builds up in muscle over 3–4 weeks |
 | **Replaceable by food?** | Yes: eggs, dal, paneer, chicken, milk | Partly, but you'd need a lot of meat or fish |
 
+![Creatine and whey protein compared side by side: what each does, daily dose, how fast it works and who should buy it first](images/creatine-vs-whey-comparison.jpg)
+
 ## Who should buy whey first
 
 - You eat **mostly rice, dal and vegetables** and rarely have eggs, meat or paneer.
@@ -58,6 +60,26 @@ For healthy adults at 3 to 5 g a day, creatine is one of the most researched sup
 
 Both whey and creatine are faked in South Asia. Check the seal, batch number, expiry and importer label. Read [how to spot fake supplements in Nepal](../fake-supplements-in-nepal-how-to-spot-them/).
 
+## A simple first 3 months
+
+If you're just starting out, here's an order that works well for most people:
+
+| Month | Focus | Supplements |
+|---|---|---|
+| 1 | Learn the exercises, train 3 days a week, eat protein at every meal | None needed yet |
+| 2 | Add a little weight each week; check if you're reaching your protein target | **Whey** if you can't get enough protein from food |
+| 3 | Training is now a habit and you want faster strength gains | **Add creatine**, 3–5 g a day |
+
+If your diet is already high in protein (lots of eggs, meat, dal, paneer, milk), you can skip whey and go straight to creatine.
+
+## Mistakes when buying your first supplement
+
+- **Buying both before you train consistently.** Supplements only help if you're training.
+- **Choosing by the tub's photo or "mass" claims.** Look at protein per serving and price per serving.
+- **Buying "creatine blends".** Plain creatine monohydrate is the most researched and cheapest.
+- **Buying from unknown sellers.** Fakes are common. Check the importer's sticker and batch number.
+- **Taking more than the label says.** Extra creatine or protein doesn't give extra results.
+
 ## Frequently asked questions
 
 ### Which is better for beginners, creatine or whey?
@@ -75,6 +97,10 @@ Timing matters little. Many people take both after training. Consistency every d
 ### Can women take creatine and whey?
 
 Yes. Both are suitable for women and do not cause "bulkiness" on their own.
+
+### How long does it take for creatine and whey to work?
+
+Whey works from the first day you use it to reach your protein target. Creatine builds up over 3–4 weeks of daily use, and most people notice slightly better strength after that.
 
 ## Sources
 

@@ -1,5 +1,5 @@
 /* Gym page: same premium system as the store (white, ink, Apex red, Archivo + Instrument Sans). */
-:root{--bg:#ffffff;--bg2:#f5f5f3;--panel:#ffffff;--panel2:#f5f5f3;--line:#e6e5e1;--line2:#d4d3cf;--fg:#141416;--muted:#5b5e66;--dim:#878a91;
+:root{--bg:#ffffff;--bg2:#f5f5f3;--panel:#ffffff;--panel2:#f5f5f3;--line:#e6e5e1;--line2:#d4d3cf;--fg:#141416;--muted:#5b5e66;--dim:#6b6e75;
   --red:#d3132b;--red2:#c8102e;--red-d:#a80f22;
   --display:'Archivo','Helvetica Neue',Arial,sans-serif;--serif:'Archivo','Helvetica Neue',Arial,sans-serif;
   --body:'Instrument Sans',system-ui,-apple-system,sans-serif;--label:'Instrument Sans',system-ui,sans-serif}
@@ -43,7 +43,8 @@ footer .wm2{color:#fff}
 .person.shift .big{background:var(--bg2)!important}
 .marquee span,.track span{letter-spacing:.02em;text-transform:none}
 .f-name{letter-spacing:.02em;text-transform:none}
-footer .f-links a{letter-spacing:0;text-transform:none}
+footer .f-links a{letter-spacing:0;text-transform:none;color:#a3a6ad}
+footer .f-sub,footer .f-copy,footer .f-copy span{color:#a3a6ad}
 .seg b{text-transform:none}
 .dur small{letter-spacing:0;text-transform:none}
 .status{letter-spacing:0;text-transform:none}
