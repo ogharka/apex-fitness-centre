@@ -60,6 +60,29 @@ Hold each stretch for **20 to 30 seconds** and breathe slowly. Move gently; stre
 - Pain that **wakes you at night**
 - Pain after a fall or injury
 
+## A workday movement schedule
+
+If you sit for 8 hours, break it up like this:
+
+| Time | What to do |
+|---|---|
+| Every 30–45 minutes | Stand up, roll your shoulders, take a short walk to refill water |
+| Mid-morning | Neck and shoulder stretches (3 minutes) |
+| Lunch break | Walk for 10–15 minutes after eating |
+| Mid-afternoon | Hip flexor stretch and upper-back opener (5 minutes) |
+| After work | The full 10-minute routine, or a gym session |
+
+Setting a phone reminder makes this much easier to stick to.
+
+## Check your desk setup
+
+- **Screen:** top of the screen at roughly eye level, about an arm's length away
+- **Chair:** feet flat on the floor, knees about level with hips, lower back supported
+- **Keyboard and mouse:** close enough that your elbows stay near your sides
+- **Laptop users:** raise the laptop on a stand or books and use a separate keyboard
+
+Small changes to your setup reduce the strain that stretching then has to undo.
+
 ## Frequently asked questions
 
 ### Is stretching enough to fix back pain from sitting?
@@ -77,5 +100,10 @@ Dynamic movements before, longer static stretches after. See [the 10-minute warm
 ### Is a standing desk better?
 
 Alternating between sitting and standing is better than doing either all day.
+
+## Sources
+
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [Effects of warming-up on physical performance: a systematic review](https://pubmed.ncbi.nlm.nih.gov/19996770/) (Fradkin et al., 2010)
 
 *General information, not medical advice.*

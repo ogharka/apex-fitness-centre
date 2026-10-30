@@ -96,4 +96,9 @@ Light walking and stretching every day is fine. Do the full circuit 3 to 4 times
 
 Use the easier versions, keep squats shallow and pain-free, and skip jumping. If pain continues, see a doctor or physiotherapist before training harder.
 
+## Sources
+
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+
 *General information, not medical advice. If you have heart problems, high blood pressure or an injury, check with a doctor before starting a new exercise routine.*

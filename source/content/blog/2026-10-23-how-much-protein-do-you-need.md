@@ -10,7 +10,7 @@ cover_art: protein
 
 If you lift weights, a common target is **about 1.6 to 2.2 grams of protein per kilogram of body weight per day**. For a 65 kg member that is roughly 105 to 140 grams a day. If you are not training, much less is enough.
 
-Most people who join Apex eat far less than that. Not because they eat badly, but because a normal day of dal bhat, tea and snacks is mostly rice. Here is how to work out your number and reach it with food you already eat.
+Many people in Nepal eat far less than that. Not because they eat badly, but because a normal day of dal bhat, tea and snacks is mostly rice. Here is how to work out your number and reach it with food you already eat.
 
 ## Step 1: Find your number
 

@@ -61,6 +61,28 @@ Stalls are normal. Try in this order:
 
 Adding weight with **worse form** isn't progress; it's risk. A rep only counts if it looks like your other reps. Progress slowly enough that technique stays solid.
 
+## A 4-week example
+
+Here's how double progression might look for a beginner on the dumbbell bench press, aiming for 3 sets of 8–12 reps:
+
+| Week | Weight | Reps achieved |
+|---|---|---|
+| 1 | 12 kg | 10, 9, 8 |
+| 2 | 12 kg | 12, 11, 10 |
+| 3 | 12 kg | 12, 12, 12, so increase the weight next time |
+| 4 | 14 kg | 9, 8, 8 |
+
+The reps drop when the weight goes up, then climb again. That's normal, and it's exactly how progress should look.
+
+## How much to add
+
+- **Big lower-body lifts** (squat, deadlift, leg press): about 2.5–5 kg at a time
+- **Upper-body barbell lifts** (bench, overhead press, rows): about 1–2.5 kg
+- **Dumbbells:** the next pair up (usually 1–2 kg per hand)
+- **Machines:** one plate on the stack
+
+If the jump between dumbbells is too big, add reps first, or add a set, before moving up.
+
 ## Frequently asked questions
 
 ### How fast should I increase weight?
@@ -78,5 +100,10 @@ Yes: more reps, harder variations, slower tempo, or added weight in a backpack. 
 ### Should I increase weight every session?
 
 Not necessarily. Increase reps first, then weight when you hit the top of your range.
+
+## Sources
+
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+- [Dose-response relationship between weekly resistance training volume and muscle growth](https://pubmed.ncbi.nlm.nih.gov/27433992/) (Schoenfeld et al., 2017)
 
 *Photo: member training at Apex Fitness Centre, Urlabari. More: [how many sets and reps to build muscle](../how-many-sets-and-reps-to-build-muscle/).*

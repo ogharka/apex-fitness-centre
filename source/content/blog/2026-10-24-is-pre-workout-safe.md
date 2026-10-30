@@ -91,4 +91,9 @@ You can, but your body gets used to caffeine. Using it only on harder sessions k
 
 No. High caffeine doses are not recommended for young people.
 
+## Sources
+
+- [EFSA opinion on the safety of caffeine](https://eufic.org/en/whats-in-food/article/efsa-opinion-on-the-safety-of-caffeine) (EUFIC)
+- [ISSN position stand: safety and efficacy of creatine supplementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/) (Kreider et al., 2017)
+
 *General information, not medical advice. Read the label of your product and follow its serving size.*

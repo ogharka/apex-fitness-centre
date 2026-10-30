@@ -51,6 +51,25 @@ Many Nepali mornings start with **sweet milk tea and biscuits**, which is lots o
 
 Keep your tea. Just **reduce the sugar** gradually: from 2 spoons to 1, then half. Your taste adapts within a couple of weeks.
 
+## Protein in common breakfast foods
+
+| Food | Approximate protein |
+|---|---|
+| 1 large egg | about 6 g |
+| 1 cup (250 ml) milk | about 8 g |
+| 1 cup (200 g) curd or yoghurt | about 7–10 g |
+| 100 g paneer | about 18 g |
+| 1 cup cooked chana or rajma | about 12–15 g |
+| 50 g oats (dry) | about 6 g |
+| 30 g peanut butter (2 tbsp) | about 7 g |
+| 1 scoop whey protein | about 20–25 g |
+
+Combining two or three of these easily gets you to **20–30 g of protein** at breakfast. For example: 2 eggs, a glass of milk and a roti is about 22 g.
+
+## Breakfast for early-morning trainers
+
+If you train at 4:30 or 5 AM, you may not want a big meal first. Try a banana and a glass of milk, or a small bowl of curd, 30–60 minutes before, then a proper high-protein breakfast after the session. See [what to eat before a workout](../what-to-eat-before-workout/).
+
 ## Frequently asked questions
 
 ### How much protein should breakfast have?
@@ -68,5 +87,11 @@ For most healthy people, yes. See [how many eggs can you eat a day](../how-many-
 ### What's a good vegetarian high-protein breakfast?
 
 Paneer bhurji, curd with chiura and peanuts, soybean sadeko, or oats with milk. See [15 protein-rich vegetarian foods in Nepal](../protein-rich-vegetarian-foods-nepal/).
+
+## Sources
+
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [Protein supplementation and resistance training: systematic review and meta-analysis](https://bjsm.bmj.com/content/52/6/376) (Morton et al., British Journal of Sports Medicine, 2018)
+- [Dietary cholesterol and cardiovascular risk: a science advisory](https://pubmed.ncbi.nlm.nih.gov/31838890/) (American Heart Association, 2020)
 
 *General information, not medical advice.*

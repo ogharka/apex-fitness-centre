@@ -75,6 +75,29 @@ Desk workers especially benefit from upper-back mobility and chest stretches. Se
 - Pain after a **fall or sudden injury**
 - **Numbness or tingling** in the arm
 
+## A 5-minute shoulder warm-up
+
+Do this before any upper-body session:
+
+1. **Arm circles:** 10 forwards, 10 backwards
+2. **Band pull-aparts:** 2 × 15
+3. **Band external rotations:** 2 × 12 each arm, elbow at your side
+4. **Wall slides:** 2 × 10, keeping your lower back against the wall
+5. **Light warm-up sets:** 1–2 sets of your first pressing exercise with an empty bar or light dumbbells
+
+## A simple push-to-pull balance
+
+For every pressing exercise, include at least one pulling exercise. For example:
+
+| Push | Pull |
+|---|---|
+| Bench press | Seated cable row |
+| Overhead press | Lat pulldown or pull-ups |
+| Push-ups | Dumbbell rows |
+| Dips | Face pulls |
+
+Many lifters do extra pulling (rows and face pulls) to balance years of sitting and pressing.
+
 ## Frequently asked questions
 
 ### Should I train through shoulder pain?
@@ -92,5 +115,11 @@ Face pulls, rows and band pull-aparts are excellent for balance and upper-back s
 ### Can a lifting belt protect my shoulders?
 
 No. A belt helps your core brace on heavy lifts; it doesn't protect the shoulders.
+
+## Sources
+
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+- [Effects of warming-up on physical performance: a systematic review](https://pubmed.ncbi.nlm.nih.gov/19996770/) (Fradkin et al., 2010)
+- [Delayed onset muscle soreness: treatment strategies and performance factors](https://pubmed.ncbi.nlm.nih.gov/12617692/) (Cheung et al., Sports Medicine, 2003)
 
 *Photo: seated barbell press at Apex Fitness Centre, Urlabari. General information, not medical advice.*

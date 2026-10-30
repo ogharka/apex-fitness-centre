@@ -102,4 +102,11 @@ A little is fine for health. Keep it short and focus on strength training so the
 
 Avoid pills or powders that promise fast weight gain without a clear ingredient list. Health regulators have repeatedly warned about products sold online for weight gain and bodybuilding that contain hidden drugs, including steroids.
 
+## Sources
+
+- [Healthy ways to gain weight](https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/) (NHS)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [Protein supplementation and resistance training: systematic review and meta-analysis](https://bjsm.bmj.com/content/52/6/376) (Morton et al., British Journal of Sports Medicine, 2018)
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+
 *General information, not medical advice. If you are underweight because of illness, an eating problem or medicines, please speak to a doctor.*

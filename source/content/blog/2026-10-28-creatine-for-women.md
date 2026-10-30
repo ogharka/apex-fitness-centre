@@ -123,4 +123,9 @@ Creatine doesn't burn fat. It can help you keep strength and muscle while dietin
 
 Any time. Taking it daily matters much more than timing. Many people take it after training or with breakfast.
 
+## Sources
+
+- [Creatine supplementation in women's health: a lifespan perspective](https://pmc.ncbi.nlm.nih.gov/articles/PMC7998865/) (Smith-Ryan et al., Nutrients, 2021)
+- [ISSN position stand: safety and efficacy of creatine supplementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/) (Kreider et al., 2017)
+
 *General information, not medical advice. Talk to a doctor if you are pregnant, breastfeeding or have a medical condition. Have questions about which creatine to buy? WhatsApp Apex Fitness Centre on 9708819605.*

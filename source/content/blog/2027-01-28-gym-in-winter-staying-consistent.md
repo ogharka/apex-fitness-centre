@@ -61,6 +61,27 @@ Seeing numbers improve in your notebook or app is powerful motivation on dark mo
 - **Strength gains** made in winter carry into spring and summer.
 - **Less sweaty sessions** mean many people can train a little harder.
 
+## A sample winter week
+
+| Day | Session |
+|---|---|
+| Sunday | Full-body strength (45–60 min) |
+| Monday | 20–30 min brisk walk at lunchtime, in the sun |
+| Tuesday | Full-body strength |
+| Wednesday | Rest or light mobility at home |
+| Thursday | Full-body strength |
+| Friday | Skipping or cardio intervals (15–20 min) |
+| Saturday | Rest |
+
+Three strength sessions are enough to keep progressing through winter. On very cold or busy weeks, two is far better than none.
+
+## Winter food that supports training
+
+- **Warm, high-protein meals:** dal, eggs, chicken or soybean curry, gundruk soup with soybeans
+- **Seasonal vegetables:** cauliflower, cabbage, radish, peas, saag
+- **Hot drinks:** ginger or lemon tea, with less sugar
+- **Watch the festival snacks:** sel roti and sweets are fine in moderation, but they add up quickly
+
 ## Frequently asked questions
 
 ### Is it harder to build muscle in winter?
@@ -78,5 +99,11 @@ For healthy people, no, as long as you warm up properly and dress in layers. Peo
 ### What if I miss a week during the festivals?
 
 Just come back. A week off won't undo months of progress.
+
+## Sources
+
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [Effects of warming-up on physical performance: a systematic review](https://pubmed.ncbi.nlm.nih.gov/19996770/) (Fradkin et al., 2010)
+- [Vitamin D fact sheet for consumers](https://ods.od.nih.gov/factsheets/vitamind-consumer/) (NIH Office of Dietary Supplements)
 
 *Photo: a member at Apex Fitness Centre, Urlabari. We're open from 4:30 AM, so early risers can train before work.*

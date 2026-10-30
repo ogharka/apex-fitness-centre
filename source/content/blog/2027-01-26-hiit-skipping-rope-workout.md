@@ -64,6 +64,28 @@ HIIT burns a lot of energy in a short time and improves fitness quickly. But lik
 - **Build up gradually.** Shin pain is a sign to cut back.
 - **Don't do HIIT every day.** Recovery matters.
 
+## A 4-week skipping progression
+
+| Week | Work and rest | Rounds | Sessions a week |
+|---|---|---|---|
+| 1 | 20 sec skipping, 40 sec rest | 8 | 2 |
+| 2 | 30 sec skipping, 30 sec rest | 8 | 2 |
+| 3 | 30 sec skipping, 30 sec rest | 10–12 | 2–3 |
+| 4 | 40 sec skipping, 20 sec rest | 10 | 2–3 |
+
+If you trip often, that's normal at first. Keep going and count total skips rather than perfect rounds.
+
+## Choosing a skipping rope
+
+- **Length:** stand on the middle of the rope; the handles should reach roughly your armpits.
+- **Type:** a simple PVC or beaded rope is best for beginners; very thin speed ropes are harder to time.
+- **Surface:** wooden floors, rubber gym floors or flat ground. Avoid rough concrete for long sessions.
+- **Shoes:** cushioned trainers, not slippers or bare feet.
+
+## Combining skipping with strength
+
+Skipping works well as a 10-minute finisher after weight training, or on its own on cardio days. Keep at least 2 strength sessions a week for muscle and bone health.
+
 ## Frequently asked questions
 
 ### Is skipping good for weight loss?
@@ -81,5 +103,10 @@ It strengthens your calves. Big size changes depend on genetics and other traini
 ### Can I do this workout every day?
 
 Do HIIT 1 to 3 times a week. On other days, walk or do strength training.
+
+## Sources
+
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [Effects of warming-up on physical performance: a systematic review](https://pubmed.ncbi.nlm.nih.gov/19996770/) (Fradkin et al., 2010)
 
 *Want a full no-equipment routine? Try our [home workout without equipment](../home-workout-without-equipment/).*

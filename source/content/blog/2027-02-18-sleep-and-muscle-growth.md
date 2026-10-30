@@ -55,6 +55,25 @@ Rest days and good sleep are a team. Read [rest days: how many do you need?](../
 - **Long-term insomnia** despite good habits
 - **Extreme daytime sleepiness**
 
+## A sleep plan for the 4:30 AM trainer
+
+If you train at Apex as soon as we open at 4:30 AM, work backwards to protect your sleep:
+
+| Time | What to do |
+|---|---|
+| 8:00 PM | Finish dinner |
+| 8:30 PM | Lay out gym clothes, fill water bottle |
+| 9:00 PM | Phone away, lights dim |
+| 9:15 PM | Lights out |
+| 4:00 AM | Wake up, light snack if you need one |
+| 4:30 AM | Training |
+
+That gives roughly 7 hours. If that's not realistic for you, an evening session (4:30 to 8:30 PM) might suit you better.
+
+## Naps
+
+A short nap of 20–30 minutes in the early afternoon can help if you slept badly. Avoid long naps late in the day, which can make it harder to sleep at night.
+
 ## Frequently asked questions
 
 ### How much sleep do you need to build muscle?
@@ -72,5 +91,10 @@ Light training is fine. Very heavy lifting when exhausted increases injury risk.
 ### Do sleep supplements help?
 
 Some people use them, but fixing sleep habits usually helps more. Ask a doctor before using sleep aids regularly.
+
+## Sources
+
+- [How many hours of sleep are enough?](https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/sleep/faq-20057898) (Mayo Clinic)
+- [Protein supplementation and resistance training: systematic review and meta-analysis](https://bjsm.bmj.com/content/52/6/376) (Morton et al., British Journal of Sports Medicine, 2018)
 
 *General information, not medical advice.*

@@ -62,6 +62,28 @@ Run **3 times a week**, with a rest or walking day in between. Every session sta
 
 Running burns a lot of energy, but it also makes many people hungrier. Combine it with a sensible diet for fat loss. See [walking for weight loss](../walking-for-weight-loss-steps/) and [cardio vs weights for fat loss](../cardio-vs-weights-for-fat-loss/).
 
+## How to pace your runs
+
+Most beginners run too fast. Use the **talk test**: during the running parts, you should be able to speak in short sentences. If you can't, slow down, even if it feels like a slow jog.
+
+- **Easy runs:** most of your running, at a conversational pace
+- **Walk breaks:** they aren't cheating; they help you run further with fewer injuries
+- **Race day:** start slower than you think and speed up in the last kilometre if you feel good
+
+## Strength training for runners
+
+Two short strength sessions a week can make running feel easier and may help prevent injuries:
+
+| Exercise | Sets × reps |
+|---|---|
+| Goblet squat | 3 × 10 |
+| Romanian deadlift | 3 × 10 |
+| Step-ups | 2 × 10 each leg |
+| Calf raises | 3 × 15 |
+| Plank | 3 × 30 sec |
+
+Do them on non-running days, or after an easy run. See [hybrid training for beginners](../hybrid-training-for-beginners/).
+
 ## Frequently asked questions
 
 ### How long does it take to run 5 km as a beginner?
@@ -79,5 +101,11 @@ For most healthy people, sensible running with gradual progression is not harmfu
 ### Can I use a treadmill for this plan?
 
 Yes. Set a slight incline of about 1% to feel more like outdoor running.
+
+## Sources
+
+- [Couch to 5K running plan](https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/) (NHS)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [Effects of warming-up on physical performance: a systematic review](https://pubmed.ncbi.nlm.nih.gov/19996770/) (Fradkin et al., 2010)
 
 *Running and trekking go well together. See our [Everest Base Camp training plan](../everest-base-camp-trek-training-plan/).*

@@ -123,4 +123,9 @@ They work differently. Steps measure how much you move. Japanese walking adds in
 
 Yes. Most of the original research was on middle-aged and older adults, and those who started least fit improved the most. Start with fewer rounds and check with a doctor if you have heart or joint problems.
 
+## Sources
+
+- [Physical fitness and indices of lifestyle-related diseases before and after interval walking training](https://bjsm.bmj.com/content/45/3/216) (Morikawa et al., British Journal of Sports Medicine, 2011)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+
 *General information, not medical advice. Train at Apex Fitness Centre, Urlabari: our treadmills and trainers can help you set your paces. WhatsApp 9708819605.*

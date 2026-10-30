@@ -57,6 +57,26 @@ These patterns vary a lot between women. Tracking how you feel in a notes app fo
 
 Missing periods because of very low body weight or extreme training is a sign your body isn't getting enough energy. That needs medical attention.
 
+## A simple period-week workout
+
+If you feel well enough to train but want something lighter, try this 30–40 minute session:
+
+1. **Warm-up (5–8 min):** brisk walk or easy cycling, then hip circles and cat-cow.
+2. **Strength circuit (2–3 rounds):**
+   - Goblet squat or leg press × 10
+   - Seated cable row × 12
+   - Glute bridge × 12
+   - Incline push-ups or chest press machine × 10
+   - Bird dog × 8 each side
+3. **Easy cardio (10 min):** walking or cycling at a pace where you can talk.
+4. **Cool-down (5 min):** child's pose, knees-to-chest and gentle twists.
+
+Lower the weights if you feel tired, and skip anything that makes cramps worse. On days you feel strong, there's no need to go easy: train as normal.
+
+## Iron and food during your period
+
+Heavy periods can lower iron levels, which may leave you tired and out of breath in the gym. Include iron-rich foods such as saag, beans, lentils, eggs, meat and fish, and eat them with vitamin C (lemon, oranges, tomatoes, guava) to help absorption. If you feel very tired, dizzy or short of breath, ask your doctor about a blood test.
+
 ## Frequently asked questions
 
 ### Is it bad to lift weights during your period?
@@ -74,5 +94,10 @@ Only if you feel unwell. Many women train as normal.
 ### Can exercise change my cycle?
 
 Moderate exercise usually doesn't. Very high training loads with low food intake can disrupt periods; if that happens, see a doctor.
+
+## Sources
+
+- [Exercise for dysmenorrhoea (Cochrane review)](https://www.cochrane.org/CD004142) (Cochrane)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
 
 *Read more: [strength training for women: 7 myths](../strength-training-for-women-myths/). General information, not medical advice.*

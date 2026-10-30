@@ -59,6 +59,22 @@ That's often good news. It usually means you're losing fat while gaining a littl
 
 BMI uses only height and weight. It doesn't tell fat from muscle. A muscular person can have a "high" BMI while being lean. Waist size and how you look and feel tell you more. You can still check yours with our free [BMI calculator](../../calculators/).
 
+## A simple progress-tracking routine
+
+| What | How often | How |
+|---|---|---|
+| Body weight | 3–7 mornings a week | After the toilet, before eating; use the weekly average |
+| Waist | Once a week | At belly-button level, relaxed, same time of day |
+| Photos | Every 4 weeks | Front, side and back, same light and clothes |
+| Strength | Every session | Write down weights and reps for main lifts |
+| Clothes fit | Ongoing | One pair of jeans or a fitted shirt works well |
+
+If **waist goes down and strength stays the same or goes up**, you're losing fat, not muscle, even if the scale moves slowly.
+
+## Example: two people, same weight
+
+Two people both weigh 70 kg. One trains with weights 3 times a week and eats enough protein; the other doesn't exercise. The first person will usually look leaner and have a smaller waist, because more of their weight is muscle. That's why the scale alone can't tell you how healthy or fit you are.
+
 ## Frequently asked questions
 
 ### Can I lose fat without losing weight?
@@ -76,5 +92,12 @@ A kilo is a kilo, but muscle is denser than fat, so it takes up less space. That
 ### Why do I gain weight after a heavy meal?
 
 Mostly food and water, not fat. It usually goes back down in a day or two.
+
+## Sources
+
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults](https://pubmed.ncbi.nlm.nih.gov/23019316/) (Willis et al., Journal of Applied Physiology, 2012)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [Protein supplementation and resistance training: systematic review and meta-analysis](https://bjsm.bmj.com/content/52/6/376) (Morton et al., British Journal of Sports Medicine, 2018)
 
 *General information, not medical advice.*

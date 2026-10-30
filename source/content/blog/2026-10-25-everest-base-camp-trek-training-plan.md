@@ -87,4 +87,9 @@ Yes, especially leg strength, step-ups and stair or incline walking. But real hi
 
 No. Fitness helps you enjoy the trek, but altitude sickness depends mainly on how fast you go up and on individual factors.
 
+## Sources
+
+- [CDC Yellow Book: high-altitude travel and altitude illness](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html) (Centers for Disease Control and Prevention)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+
 *General information, not medical advice. Check with a doctor before high-altitude trekking, especially if you have heart, lung or blood pressure problems.*

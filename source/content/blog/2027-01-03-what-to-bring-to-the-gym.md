@@ -51,6 +51,22 @@ A well-packed gym bag saves time, keeps you comfortable and means you never have
 
 Don't overthink it. Comfortable clothes, clean shoes, water and a towel are all you need on day one. Then read our [gym guide for women](../gym-guide-for-women-first-visit/) or the [beginner gym workout plan](../beginner-gym-workout-plan-first-3-months/) to know what to do once you're there.
 
+## A simple gym bag checklist
+
+Pack the night before, especially if you train at 4:30 or 5 AM. Use this list:
+
+| Item | Why |
+|---|---|
+| Water bottle (500 ml to 1 L) | Sip between sets; refill at the gym |
+| Small towel | Wipe benches and your face |
+| Clean indoor shoes | Keeps mud and dust off the floor, especially in monsoon |
+| Notebook or phone notes app | Write down your weights and reps |
+| Padlock | For lockers, if your gym has them |
+| Spare T-shirt | Useful if you go straight to work or college |
+| A snack (banana, boiled eggs, chana) | For after the session if your next meal is late |
+
+**The one thing most beginners forget is the training log.** Writing down what you lift is the easiest way to make sure you're getting stronger week by week. See [how many sets and reps to build muscle](../how-many-sets-and-reps-to-build-muscle/).
+
 ## Frequently asked questions
 
 ### Can I wear running shoes for weightlifting?
@@ -68,5 +84,10 @@ A light snack 30 to 60 minutes before, or a meal 2 to 3 hours before. See [what 
 ### Is it okay to train barefoot?
 
 Some lifters deadlift in socks or barefoot, but most gyms require shoes for safety and hygiene. Follow your gym's rules.
+
+## Sources
+
+- [EFSA scientific opinion on dietary reference values for water](https://doi.org/10.2903/j.efsa.2010.1459) (European Food Safety Authority, 2010)
+- [ISSN position stand: safety and efficacy of creatine supplementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/) (Kreider et al., 2017)
 
 *Packing for Apex? We're open 4:30 AM to 8:30 PM, Sunday to Friday. See [timings and plans](../../gym/).*

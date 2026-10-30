@@ -108,4 +108,9 @@ Yes. The 2021 review concluded creatine provides a range of benefits for women a
 
 Plain creatine monohydrate from a genuine source. Price per gram is a fair way to compare. See our [creatine price in Nepal guide](../../guides/creatine-price-in-nepal/).
 
+## Sources
+
+- [Common questions and misconceptions about creatine supplementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC7871530/) (Antonio et al., JISSN, 2021)
+- [ISSN position stand: safety and efficacy of creatine supplementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/) (Kreider et al., 2017)
+
 *General information, not medical advice. Checked on 23 October 2026.*

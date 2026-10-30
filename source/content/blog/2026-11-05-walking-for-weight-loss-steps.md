@@ -90,4 +90,10 @@ Brisk enough that you breathe faster but can still talk in short sentences.
 
 It is a great start and covers a large part of the WHO's weekly activity recommendation. More is better for weight loss.
 
+## Sources
+
+- [Mortality benefit from higher daily steps plateaus](https://hospitalhealthcare.com/specialisms/cardiovascular/mortality-benefit-from-higher-daily-steps-plateaus/) (Hospital Healthcare Europe)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+
 *General information, not medical advice.*

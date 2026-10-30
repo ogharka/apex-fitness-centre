@@ -116,4 +116,11 @@ Weights first, then cardio if you want it. That way you have the most energy for
 
 No. Some soreness is normal at the start, but progress is measured by getting stronger, not by how sore you feel.
 
+## Sources
+
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+- [Dose-response relationship between weekly resistance training volume and muscle growth](https://pubmed.ncbi.nlm.nih.gov/27433992/) (Schoenfeld et al., 2017)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+
 *Want a coach to check your form? Visit [Apex Fitness Centre in Urlabari](../../gym/). Our trainers are on the floor every morning and evening.*

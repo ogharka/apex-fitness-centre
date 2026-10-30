@@ -88,4 +88,12 @@ For most people it's too aggressive and hard to sustain without losing muscle. A
 
 Your body adapts a little when you eat less for a long time, mostly by moving less. Keeping protein high, lifting weights and staying active helps.
 
+## Sources
+
+- [Lose weight](https://www.nhs.uk/better-health/lose-weight/) (NHS Better Health)
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [A new predictive equation for resting energy expenditure in healthy individuals](https://pubmed.ncbi.nlm.nih.gov/2305711/) (Mifflin et al., 1990)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults](https://pubmed.ncbi.nlm.nih.gov/23019316/) (Willis et al., Journal of Applied Physiology, 2012)
+
 *General information, not medical advice. People with medical conditions should plan weight loss with their doctor.*

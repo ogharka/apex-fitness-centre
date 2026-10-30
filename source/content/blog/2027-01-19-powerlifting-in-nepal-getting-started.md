@@ -59,6 +59,21 @@ Follow a simple strength programme with squats, bench presses and deadlifts 2 to
 - Belt, wrist wraps, knee sleeves (if allowed)
 - Chalk, food, water and a calm friend to help with warm-ups
 
+## A sample beginner powerlifting week
+
+| Day | Main lift | Accessories |
+|---|---|---|
+| Sunday | Squat 4 × 5 | Romanian deadlift 3 × 8, plank 3 × 30 sec |
+| Tuesday | Bench press 4 × 5 | Dumbbell row 3 × 10, overhead press 3 × 8 |
+| Thursday | Deadlift 3 × 5 | Leg press 3 × 10, lat pulldown 3 × 10 |
+| Friday (optional) | Bench press 3 × 8 (lighter) | Face pulls 3 × 15, triceps 3 × 12 |
+
+Start with weights you can lift with good form and **add a small amount each week**. When progress stalls, a coach can help you move to a more advanced plan.
+
+## Learn the competition rules early
+
+Powerlifting meets have strict rules: squat depth (hip crease below the top of the knee), a pause on the chest in the bench press, and waiting for referee commands. Practise these rules in training so there are no surprises on the day.
+
 ## Frequently asked questions
 
 ### Do I need to be very strong to compete?
@@ -76,5 +91,9 @@ Yes. Women compete in their own weight classes, and the sport is growing fast am
 ### How do I find powerlifting meets in Nepal?
 
 Follow local gyms, strength coaches and organisations on social media, where meets are announced with registration details.
+
+## Sources
+
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
 
 *Information checked on 23 October 2026 from the sources linked above.*

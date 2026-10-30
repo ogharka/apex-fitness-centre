@@ -72,6 +72,21 @@ If you've been dieting for months and feel exhausted, eating at **maintenance fo
 - **Fat burners and detox teas:** they don't fix plateaus.
 - **Giving up:** plateaus are part of every long-term weight loss journey.
 
+## A 2-week plateau-breaking plan
+
+If you've been stuck for 3–4 weeks, try this before making bigger changes:
+
+| Week | What to do |
+|---|---|
+| **Week 1** | Weigh yourself every morning and use the weekly average. Track everything you eat and drink for 7 days, including tea, oil and snacks. Add 2,000 steps to your daily average. |
+| **Week 2** | Remove about 200–300 kcal a day from the easiest place (sugar in tea, fried snacks, second helpings of rice). Keep protein high at every meal. Keep lifting with the same or heavier weights. |
+
+Then compare the weekly averages. Most people see the scale move again within 2–3 weeks. If you've been dieting for many months and feel exhausted, a 1–2 week diet break at maintenance may help you restart with more energy.
+
+## Check your waist, not just the scale
+
+Measure your waist at the level of your belly button once a week. If the scale is stuck but your waist is shrinking and your lifts are going up, you're likely losing fat and holding or building muscle. See [calorie deficit explained](../calorie-deficit-explained/).
+
 ## Frequently asked questions
 
 ### How long does a weight loss plateau last?
@@ -89,5 +104,11 @@ You're likely losing fat while gaining a little muscle or holding water. That's 
 ### Is a plateau a sign my metabolism is damaged?
 
 No. Your energy needs drop as you get lighter, which is normal and adjustable.
+
+## Sources
+
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [A new predictive equation for resting energy expenditure in healthy individuals](https://pubmed.ncbi.nlm.nih.gov/2305711/) (Mifflin et al., 1990)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
 
 *See also [why am I not losing weight?](../why-am-i-not-losing-weight/). General information, not medical advice.*

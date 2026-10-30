@@ -109,4 +109,9 @@ Yes. The labour permit (shram swikriti) is required by Nepali law for foreign em
 
 Usually a few weeks to a few months, depending on medicals, orientation, permit processing and visa stamping.
 
+## Sources
+
+- [Department of Foreign Employment process](https://www.workforcenepal.com/resources/dofe-process) (Workforce Nepal)
+- [Dubai personal trainer certification requirements](https://fit4it.ae/dubai-personal-trainer-certification-requirements/) (Fit4it)
+
 *Rules, fees and salaries change. Checked on 23 October 2026. Always confirm with dofe.gov.np, REPs UAE and your employer before you pay or travel.*

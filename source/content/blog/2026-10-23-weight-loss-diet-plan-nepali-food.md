@@ -103,4 +103,11 @@ Their effect, if any, is small compared with your diet and activity. They are no
 
 Not necessary. A lighter, earlier dinner with protein and vegetables works better than skipping meals and overeating later.
 
+## Sources
+
+- [Lose weight](https://www.nhs.uk/better-health/lose-weight/) (NHS Better Health)
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+
 *General information, not medical advice. If you have diabetes, thyroid problems, high blood pressure or are pregnant, speak to your doctor before changing your diet.*

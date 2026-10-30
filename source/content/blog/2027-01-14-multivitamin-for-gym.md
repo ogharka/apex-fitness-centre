@@ -60,6 +60,23 @@ A simple Nepali "multivitamin plate":
 3. Sleep
 4. Creatine monohydrate, if you want a performance supplement
 
+## A quick food checklist
+
+Before buying a multivitamin, check whether your normal week includes these:
+
+- **Green leafy vegetables** (saag, spinach, mustard greens) most days
+- **Colourful vegetables and fruit**, at least 4–5 portions a day
+- **Dairy or another calcium source** (milk, curd, paneer, small fish with bones)
+- **Iron sources** (lentils, beans, meat, eggs, saag) with vitamin C
+- **Some sunlight** on your skin, or a doctor-advised vitamin D plan
+- **Iodised salt** for cooking
+
+If you tick most of these, a multivitamin will add little. If you can't, start by improving one meal a day, and use a basic multivitamin as a backup, not a replacement.
+
+## Watch out for "gym" multivitamins
+
+Products sold as "sports" or "mass" multivitamins often cost more and may contain very high doses, added stimulants or herbal blends. Higher doses aren't better; some vitamins and minerals (such as vitamin A and iron) can be harmful in excess. Choose a simple product with doses close to 100% of daily needs, and buy from a trusted seller. See [how to spot fake supplements in Nepal](../fake-supplements-in-nepal-how-to-spot-them/).
+
 ## Frequently asked questions
 
 ### Do multivitamins give you energy?
@@ -77,5 +94,10 @@ Standard doses are generally safe for healthy adults. Mega-doses of some vitamin
 ### Should I get a blood test?
 
 If you have symptoms like constant tiredness, hair loss or weakness, ask a doctor about blood tests rather than guessing with supplements.
+
+## Sources
+
+- [Multivitamin/mineral supplements fact sheet](https://ods.od.nih.gov/factsheets/mvms-healthprofessional/) (NIH Office of Dietary Supplements)
+- [Vitamin D fact sheet for consumers](https://ods.od.nih.gov/factsheets/vitamind-consumer/) (NIH Office of Dietary Supplements)
 
 *General information, not medical advice.*

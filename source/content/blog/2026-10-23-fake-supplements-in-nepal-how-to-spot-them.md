@@ -130,4 +130,9 @@ Yes, though less often than whey. Use the same checks: seal, print quality, batc
 
 Fakes win when buyers only look at the price. Ask where the product came from, check the seal and codes, keep your bill, and buy from a seller you can contact again.
 
+## Sources
+
+- [Food supplement registration in Nepal](https://lawaxion.com/food-supplement-registration-in-nepal/) (Lawaxion)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+
 *Checked on 23 October 2026. Rules and brand verification systems change, so check the latest from DFTQC and the brand's official website.*

@@ -149,4 +149,10 @@ Yes. Use the rowing machine, heavy leg press, cable rows, lunges and carries as 
 
 The nearest races are in India, with events in Delhi, Mumbai and Bengaluru. Check hyrox.com for current dates and locations. You can still train for HYROX in any gym in Nepal.
 
+## Sources
+
+- [Official HYROX website](https://hyrox.com) (HYROX)
+- [Concurrent training: a meta-analysis](https://pubmed.ncbi.nlm.nih.gov/22002517/) (Wilson et al., 2012)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+
 *General information, not medical advice. Thinking about your first HYROX race? Train for it at Apex Fitness Centre, Urlabari. Our trainers can help you plan your strength and running sessions. Sunday to Friday, 4:30 AM – 8:30 PM. WhatsApp 9708819605.*

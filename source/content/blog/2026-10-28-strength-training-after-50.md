@@ -139,4 +139,11 @@ Walking is excellent for your heart, but on its own it doesn't build enough musc
 
 Sit-to-stand, leg press, rows, chest press, step-ups, carries, planks and simple balance drills. They match the movements you use every day.
 
+## Sources
+
+- [How Nepal's gym culture is growing beyond the young generation](https://kathmandupost.com/art-culture/2026/08/04/how-nepal-s-gym-culture-is-growing-beyond-the-young-generation) (The Kathmandu Post, 2026)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
+- [The LIFTMOR trial](https://pubmed.ncbi.nlm.nih.gov/28975661/) (Watson et al., Journal of Bone and Mineral Research, 2018)
+
 *General information, not medical advice. At Apex Fitness Centre, Urlabari, our trainers help older members start safely on machines, morning and evening. Sunday to Friday, 4:30 AM – 8:30 PM. WhatsApp 9708819605.*

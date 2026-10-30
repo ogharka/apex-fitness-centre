@@ -114,4 +114,10 @@ No. They can replace sugary drinks, which helps, but they do not melt fat on the
 
 Fat storage is mostly decided by genes and hormones. For many men, the belly is the first place to gain fat and the last to lose it. Keep going and it will follow.
 
+## Sources
+
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults](https://pubmed.ncbi.nlm.nih.gov/23019316/) (Willis et al., Journal of Applied Physiology, 2012)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+
 *General information, not medical advice. If your waist is above the limits in the table, or you have diabetes or heart problems in the family, ask your doctor for a check-up.*

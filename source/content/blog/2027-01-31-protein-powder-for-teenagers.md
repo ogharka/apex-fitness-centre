@@ -68,6 +68,27 @@ Creatine is sometimes used by older teen athletes under guidance, but the decisi
 - **Watch for warning signs:** extreme dieting, obsessive training, secret supplement use, or sudden big changes in body shape.
 - **Choose a gym with trainers** who work with young people responsibly.
 
+## How much protein do teenagers need?
+
+Active teenagers usually need more protein than inactive ones, but most can meet their needs from normal meals. A good habit is to include a protein food at **every meal**:
+
+| Meal | Example protein foods |
+|---|---|
+| Breakfast | Eggs, milk, curd, peanut butter |
+| School tiffin | Boiled eggs, chana, paneer roll, roasted soybeans |
+| Lunch or dinner | Dal, chicken, fish, meat, paneer, tofu, rajma |
+| After training | A glass of milk with a banana, or curd with fruit |
+
+Growing teenagers also need **enough total food**. Many skinny teens who want to build muscle simply eat too little overall.
+
+## A safe beginner gym plan for teens
+
+- **2–3 full-body sessions a week**, 45–60 minutes
+- Start with **bodyweight and light weights**, learning squats, push-ups, rows and hip hinges with good form
+- **Supervision from a qualified trainer** at first
+- Add weight gradually, keeping 2–3 reps in reserve on each set
+- Keep playing sports and staying active outside the gym
+
 ## Frequently asked questions
 
 ### At what age can you start going to the gym?
@@ -85,5 +106,10 @@ No. That's a myth. Supervised, sensible strength training does not stunt growth.
 ### Can teens take creatine?
 
 Discuss it with a doctor first. Food, sleep and training should come first.
+
+## Sources
+
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
 
 *General information, not medical advice. Parents should consult a doctor about their child's nutrition and supplements.*

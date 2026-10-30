@@ -53,6 +53,27 @@ You love the science of training and want to move towards athletes or strength a
 - **Combine with real experience:** certification gets you hired; floor experience keeps you employed.
 - **Local academies** can help with classroom teaching and practical coaching while you study.
 
+## Costs and study time to plan for
+
+Exact prices change and often depend on the package and promotions, so always check the official website before paying. When budgeting, consider:
+
+- **The course and exam fee**, often sold in basic and premium bundles
+- **CPR/AED certification**, which most US certifications require before you sit the exam
+- **Exam retake fees**, if needed
+- **Recertification**: most certifications need continuing education credits every 2–3 years
+- **Study time**: many people take about 3–6 months studying part-time
+
+## Experience matters as much as the certificate
+
+Employers in Nepal and abroad look for trainers who can coach real people. While you study:
+
+- **Train consistently yourself** and keep a training log
+- **Shadow experienced trainers** at a local gym
+- **Practise coaching** friends or family on basic lifts
+- **Learn first aid** and how to adapt exercises for beginners, older adults and people with injuries
+
+See [how to become a gym trainer in Nepal](../how-to-become-a-gym-trainer-in-nepal/) and [gym trainer jobs in the Gulf](../gym-trainer-jobs-in-gulf-for-nepalis/).
+
 ## Frequently asked questions
 
 ### Which certification is most recognised in Dubai and the Gulf?
@@ -70,5 +91,9 @@ Difficulty varies by person. ISSA's online format suits many self-learners; NSCA
 ### Do I need a degree to become a personal trainer?
 
 Not for most CPT certifications. You usually need to be 18+ with a high school-level education. Some advanced credentials need a degree.
+
+## Sources
+
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
 
 *Information checked on 23 October 2026. Confirm current details on each organisation's official website.*

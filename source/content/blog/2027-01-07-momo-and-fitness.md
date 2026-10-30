@@ -61,6 +61,26 @@ Homemade momo let you control oil and portion size, and the whole family can enj
 
 If you follow a sensible diet most of the time, **one or two momo meals a week** fit easily into fat loss or muscle gain. Problems start when momo, chowmein and fried snacks become daily habits. See our [weight loss diet plan with Nepali food](../weight-loss-diet-plan-nepali-food/).
 
+## A sample day that includes momo
+
+You don't have to give up momo to lose fat. Here's how a day might look when momo is your lunch:
+
+| Meal | Example |
+|---|---|
+| Breakfast | 2–3 boiled eggs, a roti or a bowl of oats, tea with less sugar |
+| Lunch | 1 plate (8–10 pieces) of steamed chicken momo with achar, plus a cucumber or radish salad |
+| Snack | Fruit and a bowl of curd, or roasted chana |
+| Dinner | Smaller portion of rice, a big serving of dal, saag and a palm-sized piece of chicken, fish, paneer or tofu |
+
+The key is that **the rest of the day is lighter and higher in protein.** If you have fried momo or a large jhol momo, keep dinner lighter still.
+
+## Eating out with friends
+
+- **Order steamed** for the group and share one fried or chilli plate.
+- **Eat slowly** and stop when you're satisfied, not stuffed.
+- **Skip the sugary drink**: choose water, soda water or plain tea.
+- **Don't "save" calories** by starving all day; you'll overeat in the evening.
+
 ## Frequently asked questions
 
 ### Is momo healthy?
@@ -78,5 +98,10 @@ Not necessarily. Chicken momo usually provide more protein; veg momo can contain
 ### Is jhol momo fattening?
 
 It depends on the soup. Light tomato-based jhol is fine; oily, sesame-heavy jhol adds a lot of calories.
+
+## Sources
+
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
 
 *General information, not medical advice.*

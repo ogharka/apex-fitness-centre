@@ -147,4 +147,8 @@ It helps by burning extra calories without hurting your recovery, but diet decid
 
 Yes, most healthy people can, because it's low stress. Just make sure you still have energy for your strength workouts.
 
+## Sources
+
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
+
 *General information, not medical advice. Check with a doctor before starting if you have heart disease, high blood pressure or take heart medicines. At Apex Fitness Centre, Urlabari, our treadmills, bikes and ellipticals are perfect for Zone 2, and our trainers can help you find your pace. Sunday to Friday, 4:30 AM – 8:30 PM. WhatsApp 9708819605.*

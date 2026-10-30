@@ -70,6 +70,22 @@ To get there:
 - **"Train abs every day."** Abs are muscles; they also need recovery.
 - **"Ab belts and machines will get you a six-pack."** They don't burn fat.
 
+## How to progress your core training
+
+Doing more and more crunches isn't progress. Make the exercises harder instead:
+
+- **Planks:** once you can hold 45–60 seconds with good form, move to longer levers (arms further forward), side planks or plank shoulder taps.
+- **Dead bugs:** slow the movement down, then hold a light weight in your hands.
+- **Hanging knee raises:** progress to raising your knees higher, then to straight-leg raises.
+- **Cable crunches and Pallof presses:** add weight in small steps, as you would for any other exercise.
+- **Carries:** farmer's and suitcase carries get harder simply by holding heavier dumbbells.
+
+Aim for 8–15 controlled reps or 20–60 second holds, and stop sets when your form slips (for example, when your lower back arches during a plank).
+
+## Breathing and bracing
+
+A strong core is also about **bracing**: tightening your stomach muscles as if you're about to be poked in the belly, then breathing behind that brace. Practise it during planks, then use it on squats, deadlifts and overhead presses. It protects your back and helps you lift more.
+
 ## Frequently asked questions
 
 ### How long does it take to get abs?
@@ -87,5 +103,11 @@ Yes, they train your core hard as a stabiliser, but direct ab exercises still he
 ### Should women train abs differently?
 
 No. The same exercises work for everyone. Postpartum women should get advice from a doctor or physiotherapist first.
+
+## Sources
+
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults](https://pubmed.ncbi.nlm.nih.gov/23019316/) (Willis et al., Journal of Applied Physiology, 2012)
+- [ACSM position stand: progression models in resistance training for healthy adults](https://pubmed.ncbi.nlm.nih.gov/19204579/) (American College of Sports Medicine, 2009)
 
 *General information, not medical advice. If you have back pain or are recovering from pregnancy, get personal advice before intense core training.*

@@ -33,7 +33,7 @@ You do not need special products. Ordinary Nepali food works perfectly.
 5. **Oats cooked in milk:** if you have 60 to 90 minutes.
 6. **Black coffee + banana:** a simple "pre-workout" many lifters swear by.
 
-### For evening workouts (4 to 8 PM)
+### For evening workouts (4:30 to 8:30 PM)
 
 7. **Normal lunch at noon** followed by a small snack around 3 to 4 PM.
 8. **Boiled chana chatpate:** carbs and protein together.

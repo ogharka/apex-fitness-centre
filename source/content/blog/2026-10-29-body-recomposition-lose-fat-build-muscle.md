@@ -166,4 +166,9 @@ For beginners, returning lifters and people with extra fat, recomp is usually th
 
 You'll usually feel stronger in 4–6 weeks, see changes in photos in 8–12 weeks, and look clearly different in 6–12 months.
 
+## Sources
+
+- [New advances in body composition assessment and body recomposition](https://www.frontiersin.org/articles/10.3389/fnut.2024.1467406/full) (Frontiers in Nutrition, 2024)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+
 *General information, not medical advice. Want a recomp plan that fits your body and schedule? Our trainers at Apex Fitness Centre, Urlabari can set up your program and check your form. Sunday to Friday, 4:30 AM – 8:30 PM. WhatsApp 9708819605.*

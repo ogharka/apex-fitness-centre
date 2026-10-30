@@ -143,4 +143,8 @@ It can be, especially in cities and for trainers who specialise or coach online.
 3. Start training consistently and learning the main lifts now.
 4. Ask a local gym about internships while you study.
 
+## Sources
+
+- [Programmes](https://naesnepal.com/programs/) (NAES Nepal)
+
 *Fees and salaries were checked on 23 October 2026 from the sources linked above. They change, so always confirm with the academy directly.*

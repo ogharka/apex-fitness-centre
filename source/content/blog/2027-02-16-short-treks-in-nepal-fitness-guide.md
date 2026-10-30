@@ -65,6 +65,22 @@ For bigger treks, see our [Everest Base Camp training plan](../everest-base-camp
 
 Check the current **permit requirements**, trail conditions and whether a licensed guide is required for your route and season. Rules have changed in recent years, so confirm with official sources or a registered trekking agency.
 
+## Stairs: the best trek training
+
+Many short treks in Nepal, like Poon Hill, involve thousands of stone steps. Train for them directly:
+
+- **Stair climbing:** start with 10–15 minutes and build up to 45–60 minutes
+- **Add a backpack:** once stairs feel easy, carry 3–5 kg, then a little more
+- **Practise going down slowly:** descents are often harder on knees than climbs
+- **Step-ups at the gym:** 3 × 10 each leg, adding dumbbells over time
+
+## Food and water on the trail
+
+- **Drink regularly:** small sips through the day, more in warm weather or at altitude
+- **Eat proper meals:** dal bhat is great trekking food, with carbs for energy and dal for protein
+- **Carry snacks:** nuts, dried fruit, biscuits, chocolate or energy bars
+- **Purify water:** use purification tablets, a filter, or buy from refill stations where available
+
 ## Frequently asked questions
 
 ### Is Poon Hill trek easy?
@@ -82,5 +98,10 @@ It helps, especially leg strength and stair work, but real hikes with a backpack
 ### Can I get altitude sickness on short treks?
 
 It's possible above about 2,500 to 3,000 m. Going slowly and staying hydrated helps; descend if symptoms worsen.
+
+## Sources
+
+- [CDC Yellow Book: high-altitude travel and altitude illness](https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html) (Centers for Disease Control and Prevention)
+- [WHO fact sheet: physical activity](https://www.who.int/news-room/fact-sheets/detail/physical-activity) (World Health Organization)
 
 *General information, not medical advice. Check with a doctor before trekking at altitude if you have health conditions.*
