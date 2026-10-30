@@ -142,3 +142,8 @@ body[data-units="metric"] [data-imperial]{display:none}
 .calcs main *{text-transform:none!important}
 .calcs .rlabel,.calcs .cx-card summary,.calcs .inwrap .u,.calcs .big small,.calcs .p3 .cbtn,.calcs table.t th,.calcs .mcell span,.calcs .badge2{letter-spacing:0!important;font-family:'Instrument Sans',sans-serif!important}
 .calcs .rlabel{font-size:14px!important;font-weight:600!important}
+.calcs .res table.tt{width:100%;border-collapse:collapse;font-size:15px}
+.calcs .res table.tt th,.calcs .res table.tt td{border-bottom:1px solid var(--ln);padding:8px 6px;text-align:left}
+.calcs .res table.tt th{font:600 12px/1.2 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.calcs .abody .faq details{border-bottom:1px solid var(--ln);padding:12px 0}
+.calcs .abody .faq summary{font-weight:700;cursor:pointer}
