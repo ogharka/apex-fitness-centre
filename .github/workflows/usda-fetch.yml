@@ -2,25 +2,53 @@ name: usda-fetch
 on:
   push:
     branches: [data-fetch]
+    paths: [".github/workflows/usda-fetch.yml"]
+permissions:
+  contents: write
 jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
-          set -x
-          mkdir out && cd out
+          mkdir -p /tmp/u && cd /tmp/u
           curl -sL https://fdc.nal.usda.gov/download-datasets/ -o page.html || true
-          grep -o 'https://fdc.nal.usda.gov/fdc-datasets/[^"]*csv[^"]*\.zip' page.html | sort -u > links.txt || true
+          grep -oE 'https?://[^"]*fdc-datasets/[^"]*\.zip' page.html | sort -u > links.txt || true
+          grep -oE '/fdc-datasets/[^"]*\.zip' page.html | sed 's#^#https://fdc.nal.usda.gov#' | sort -u >> links.txt || true
           cat links.txt
-          SR=$(grep -i sr_legacy links.txt | head -1); [ -z "$SR" ] && SR=https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip
-          SV=$(grep -i survey links.txt | head -1)
-          curl -sL "$SR" -o sr.zip && unzip -q -o sr.zip -d sr || true
-          [ -n "$SV" ] && curl -sL "$SV" -o sv.zip && unzip -q -o sv.zip -d sv || true
-          find . -name '*.csv' -size +1k | head -50
-          mkdir keep
-          for d in sr sv; do for f in food.csv food_nutrient.csv nutrient.csv food_portion.csv measure_unit.csv; do p=$(find $d -name $f | head -1); [ -n "$p" ] && cp "$p" keep/${d}_$f; done; done
-          ls -la keep
-      - uses: actions/upload-artifact@v4
-        with:
-          name: usda
-          path: out/keep
+          SR=$(grep -i 'sr_legacy_food_csv' links.txt | head -1); [ -z "$SR" ] && SR=https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip
+          SV=$(grep -i 'survey_food_csv' links.txt | head -1)
+          echo "SR=$SR SV=$SV"
+          curl -sL "$SR" -o sr.zip; unzip -q -o sr.zip -d sr || true
+          if [ -n "$SV" ]; then curl -sL "$SV" -o sv.zip; unzip -q -o sv.zip -d sv || true; fi
+          find . -name 'food.csv' -o -name 'food_nutrient.csv' -o -name 'food_portion.csv' | xargs ls -la
+          python3 - <<'PY'
+          import csv,glob,os,sys
+          csv.field_size_limit(10**9)
+          want={'1008':'kcal','1003':'protein','1004':'fat','1005':'carb','1079':'fiber','2047':'kcal2','2048':'kcal3'}
+          out=open(os.environ['GITHUB_WORKSPACE']+'/usda_compact.csv','w',newline='');w=csv.writer(out)
+          w.writerow(['src','fdc_id','description','kcal','protein','fat','carb','fiber','portions'])
+          for d in ('sr','sv'):
+              fp=glob.glob(f'{d}/**/food.csv',recursive=True)
+              if not fp: print('no',d); continue
+              base=os.path.dirname(fp[0])
+              foods={r['fdc_id']:r['description'] for r in csv.DictReader(open(fp[0],encoding='utf-8'))}
+              nut={}
+              for r in csv.DictReader(open(base+'/food_nutrient.csv',encoding='utf-8')):
+                  k=want.get(r['nutrient_id'])
+                  if k and r['fdc_id'] in foods: nut.setdefault(r['fdc_id'],{})[k]=r['amount']
+              por={}
+              pp=base+'/food_portion.csv'
+              if os.path.exists(pp):
+                  for r in csv.DictReader(open(pp,encoding='utf-8')):
+                      desc=(r.get('amount','')+' '+(r.get('modifier') or '')+' '+(r.get('portion_description') or '')).strip()
+                      por.setdefault(r['fdc_id'],[]).append(desc+'='+r['gram_weight'])
+              for i,dsc in foods.items():
+                  n=nut.get(i,{})
+                  kc=n.get('kcal') or n.get('kcal2') or n.get('kcal3') or ''
+                  w.writerow([d,i,dsc,kc,n.get('protein',''),n.get('fat',''),n.get('carb',''),n.get('fiber',''),' | '.join(por.get(i,[])[:8])])
+              print(d,len(foods))
+          PY
+          cd $GITHUB_WORKSPACE && cp /tmp/u/links.txt usda_links.txt
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add usda_compact.csv usda_links.txt && git commit -m "usda data" && git push
