@@ -5,8 +5,8 @@ description: The deadlift is safe when done right. Learn the setup, hip hinge, b
 date: 2026-11-03
 category: Training
 author: suman-limbu
-cover_photo: assets/gym-plate-loaded.jpg
-image_alt: Strength training equipment at Apex Fitness Centre
+cover_photo: apex-woman-lifting-loaded-bar.jpg
+image_alt: A member at the top of a barbell deadlift at Apex Fitness Centre, Urlabari
 ---
 
 The deadlift has a scary reputation, but done with good form it is one of the **best exercises for a strong back, glutes, hamstrings and grip**, and for real-life strength, every time you pick something up from the floor. Back injuries usually come from **rounding the lower back, jerking the weight, or lifting too heavy too soon**. All three are avoidable.
