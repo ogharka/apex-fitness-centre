@@ -263,3 +263,7 @@ section.auth{border:1px solid #e6e5e1;background:#f7f7f5;padding:20px 22px;margi
 section.auth ul{list-style:disc;padding-left:22px;margin:10px 0 12px}
 section.auth li{margin:4px 0}
 section.auth a{text-decoration:underline}
+.sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:14px 0 22px}
+.pinbtn{display:inline-flex;align-items:center;gap:8px;background:#e60023;color:#fff!important;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;text-decoration:none}
+.pinbtn:hover{background:#ad081b}
+.pinfollow{font-size:14px;color:#5b5e66;text-decoration:underline}

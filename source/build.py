@@ -164,12 +164,12 @@ def wa(msg): return f"https://wa.me/{WA}?text=" + __import__("urllib.parse").par
 def ld(o): return '<script type="application/ld+json">' + json.dumps(o, ensure_ascii=False, separators=(",", ":")) + "</script>"
 
 ORG = {"@type": "Organization", "@id": BASE + "/#org", "name": SITE, "url": BASE + "/", "publishingPrinciples": BASE + "/editorial-policy/", "logo": BASE + "/assets/apex-icon-512.png",
-       "telephone": "+977-9708819605", "sameAs": ["https://www.facebook.com/apexfitcentre"]}
+       "telephone": "+977-9708819605", "sameAs": ["https://www.facebook.com/apexfitcentre", "https://www.pinterest.com/apexfitcentre/"]}
 STORE = {"@type": ["SportsActivityLocation", "Store"], "@id": BASE + "/#store", "name": SITE, "url": BASE + "/",
          "image": BASE + "/assets/og-image.jpg", "telephone": "+977-9708819605", "priceRange": "Rs. 1,500 - Rs. 15,000",
          "address": {"@type": "PostalAddress", "streetAddress": "Urlabari-9, Durgapuri", "addressLocality": "Urlabari", "addressRegion": "Morang", "addressCountry": "NP"},
          "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "04:30", "closes": "20:30"}],
-         "areaServed": {"@type": "Country", "name": "Nepal"}, "sameAs": ["https://www.facebook.com/apexfitcentre"]}
+         "areaServed": {"@type": "Country", "name": "Nepal"}, "sameAs": ["https://www.facebook.com/apexfitcentre", "https://www.pinterest.com/apexfitcentre/"]}
 
 def head(title, desc, path, depth, image=None, extra="", ptype="website"):
     root = "../" * depth
@@ -265,7 +265,7 @@ def footer(depth, pdp=None):
 <div><div class="fname brand"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></div><p>Authentic supplements with free delivery all over Nepal. Gym in Urlabari-9, Durgapuri, Morang, open 4:30 AM to 8:30 PM, Sunday to Friday.</p></div>
 <div><h3>Shop</h3><a href="{r}shop/">All products</a>{cat_links}</div>
 <div><h3>Apex</h3><a href="{r}blog/">Blog</a><a href="{r}guides/">Supplement guides</a><a href="{r}gym/">The gym and membership</a><a href="{r}gym/#team">Team</a><a href="{r}gym/#plans">Plans</a><a href="{r}calculators/">Fitness calculators</a><a href="{r}food/">Food calorie chart</a><a href="{r}software/">Gym management software Nepal</a><a href="{r}software/#pricing">Gym software price</a></div>
-<div><h3>Contact</h3><a href="https://wa.me/{WA}" rel="noopener" target="_blank">WhatsApp 9708819605</a><a href="tel:+9779708819605">Call 9708819605</a><a href="https://www.facebook.com/apexfitcentre" rel="noopener" target="_blank">Facebook</a><a href="{r}about/">About us</a><a href="{r}contact/">Contact</a><a href="{r}privacy/">Privacy policy</a><a href="{r}editorial-policy/">Editorial policy</a></div>
+<div><h3>Contact</h3><a href="https://wa.me/{WA}" rel="noopener" target="_blank">WhatsApp 9708819605</a><a href="tel:+9779708819605">Call 9708819605</a><a href="https://www.facebook.com/apexfitcentre" rel="noopener" target="_blank">Facebook</a><a href="https://www.pinterest.com/apexfitcentre/" rel="noopener" target="_blank">Pinterest</a><a href="{r}about/">About us</a><a href="{r}contact/">Contact</a><a href="{r}privacy/">Privacy policy</a><a href="{r}editorial-policy/">Editorial policy</a></div>
 </div>
 <div class="fcopy"><span>© <span id="yr">2026</span> Apex Fitness Centre. All rights reserved.</span><span>Free delivery all over Nepal</span></div>
 </div></footer>
@@ -657,6 +657,12 @@ def build_gym():
         assert a in s, ("gym source changed, fix not applied:", a[:70]); s = s.replace(a, b)
     # H1: the two lines are separate spans, so text readers saw "Earn yourpeak". Add a real space.
     must('<span class="l"><span>Earn your</span></span><span class="l">', '<span class="l"><span>Earn your</span></span> <span class="l">')
+    # Pinterest button next to Facebook in the gym page's social links
+    _fb = '<span class="ar">→</span></a>'
+    _i = s.find('href="https://www.facebook.com/apexfitcentre"')
+    if _i > -1:
+        _j = s.find(_fb, _i) + len(_fb)
+        s = s[:_j] + ('\n        <a class="sbtn f" href="https://www.pinterest.com/apexfitcentre/" target="_blank" rel="noopener"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.64 19.31c-.09-.78-.17-2 .03-2.86l1.17-4.97s-.3-.6-.3-1.48c0-1.39.8-2.42 1.81-2.42.85 0 1.27.64 1.27 1.41 0 .86-.55 2.14-.83 3.33-.24 1 .5 1.81 1.48 1.81 1.78 0 3.14-1.88 3.14-4.58 0-2.39-1.72-4.07-4.17-4.07-2.84 0-4.51 2.13-4.51 4.34 0 .86.33 1.78.75 2.28.08.1.09.19.07.29l-.28 1.14c-.04.18-.15.22-.33.13-1.25-.58-2.03-2.4-2.03-3.87 0-3.15 2.29-6.05 6.6-6.05 3.47 0 6.16 2.47 6.16 5.77 0 3.44-2.17 6.22-5.18 6.22-1.01 0-1.97-.53-2.29-1.15l-.62 2.38c-.23.87-.84 1.96-1.25 2.62A10 10 0 1 0 12 2Z"/></svg></span><div><small>Pinterest</small><strong>apexfitcentre</strong></div><span class="ar">→</span></a>') + s[_j:]
     # 12-month first-time price Rs. 12,500 confirmed by the owner (23 Oct 2026): the 12-month plan has a lower joining cost.
     must("For example, 1 month is Rs. 2,500: Rs. 1,500 membership and Rs. 1,000 one-time.</p>",
          "For example, 1 month is Rs. 2,500: Rs. 1,500 membership and Rs. 1,000 one-time. The 12-month plan has a lower joining cost: Rs. 12,500 in total for new members.</p>")

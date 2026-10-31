@@ -179,6 +179,12 @@ def build_blog():
             shop = f'<section><h2 class="h2s">Products in this post</h2><div class="pgrid">{"".join(card(x, d) for x in p["prods"])}</div></section>'
         more = sorted((x for x in posts if x is not p), key=lambda x: -_rel_score(p, x))[:3]
         more_html = f'<section class="gl"><h2 class="h2s">More from the blog</h2><div class="bgrid">{"".join(_postcard(x, "../") for x in more)}</div></section>' if more else ""
+        _pinimg = f"{BASE}/blog/pins/{p['slug']}.jpg" if os.path.exists(os.path.join(BLOG_DIR, "pins", p["slug"] + ".jpg")) else (BASE + "/blog/images/" + BLOG_IMG[p["image"]][0] + ".jpg" if p.get("image") else BASE + "/assets/og-image.jpg")
+        _q = __import__("urllib.parse").parse.quote
+        pinbtn = (f'<div class="sharebar"><a class="pinbtn" href="https://www.pinterest.com/pin/create/button/?url={_q(BASE + "/" + path, safe="")}&media={_q(_pinimg, safe="")}&description={_q(p["title"], safe="")}" target="_blank" rel="noopener" aria-label="Save this article to Pinterest">'
+                  '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.4-5.96s-.36-.72-.36-1.78c0-1.66.97-2.9 2.17-2.9 1.02 0 1.52.77 1.52 1.7 0 1.03-.66 2.57-1 4-.28 1.2.6 2.17 1.78 2.17 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.06-4.88-5.01-4.88-3.41 0-5.42 2.56-5.42 5.21 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34l-.33 1.37c-.05.22-.18.27-.4.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.4 2.97 7.4 6.93 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg>'
+                  '<span>Save to Pinterest</span></a>'
+                  '<a class="pinfollow" href="https://www.pinterest.com/apexfitcentre/" target="_blank" rel="noopener">Follow us on Pinterest</a></div>')
         upd = f' &middot; Updated {_date(p["updated"])}' if p["updated"] != p["d"] else ""
         ask = wa(f"Hi Apex Fitness Centre, I read your post \"{p['title']}\" and I have a question: ")
         body = f"""<body data-root="../../">
@@ -189,6 +195,7 @@ def build_blog():
 <header class="phead"><a class="label" href="../{p['cat_slug']}/">{e(p['category'])}</a><h1>{e(p['title'])}</h1><p class="lead">{e(p['description'])}</p>
 <p class="byline">By {e(_author_name(p.get('author')))}{(' &middot; Reviewed by ' + e(_author_name(p['reviewed_by']))) if p.get('reviewed_by') in AUTHORS else ''} &middot; {_date(p['d'])}{upd} &middot; {p['mins']} min read</p></header>
 {hero}
+{pinbtn}
 {tocb}
 <div class="abody">{p['html']}</div>
 <aside class="author"><b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>.</p></aside>
