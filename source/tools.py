@@ -270,6 +270,7 @@ def build_tools():
 {_src(t['sources'])}
 <p class="fine" style="text-align:left">Estimates only, not medical advice. Talk to a doctor or registered dietitian if you are pregnant, under 18, or have a medical condition.</p>
 </div></div></section>
+{('<div class="wrap narrow">' + newsletter_box("tool") + '</div>') if newsletter_box("tool") else ""}
 {reads}
 <section class="csec"><div class="wrap"><h2 class="h2c">More free calculators</h2><div class="links">{others}</div></div></section>
 </main>

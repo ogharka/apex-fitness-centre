@@ -15,7 +15,20 @@ GA_ID = "G-F70PH8VMHW"
 # Leave it empty until then. When set, every page gets the AdSense Auto ads code and /ads.txt is created.
 ADSENSE_CLIENT = ""
 # Ads only on content pages, so they never distract buyers on shop and product pages.
-ADS_ON = ("blog/", "guides/", "calculators/")
+ADS_ON = ("blog/", "guides/", "calculators/", "food/")
+# EMAIL NEWSLETTER: create a free form at Kit (kit.com) or Mailchimp, then paste the form's "action" URL here,
+# e.g. "https://app.kit.com/forms/1234567/subscriptions". Leave empty to hide the sign-up box everywhere.
+NEWSLETTER_ACTION = ""
+NEWSLETTER_FIELD = "email_address"  # Kit uses "email_address"; Mailchimp uses "EMAIL"
+def newsletter_box(where="post"):
+    if not NEWSLETTER_ACTION: return ""
+    return (f'<aside class="nl" aria-labelledby="nl-h-{where}"><p class="nl-k">Free weekly email</p>'
+            f'<h2 id="nl-h-{where}">One useful fitness tip a week</h2>'
+            f'<p>Simple training and food tips from the trainers at Apex Fitness Centre. No spam, unsubscribe any time.</p>'
+            f'<form action="{NEWSLETTER_ACTION}" method="post" target="_blank" rel="noopener">'
+            f'<label class="sr-only" for="nl-e-{where}">Email address</label>'
+            f'<input id="nl-e-{where}" type="email" name="{NEWSLETTER_FIELD}" required autocomplete="email" placeholder="Your email address">'
+            f'<button class="btn" type="submit">Subscribe</button></form></aside>')
 # GOOGLE SEARCH CONSOLE: when Search Console asks you to verify with an "HTML tag", paste only the
 # content="..." value here, e.g. "abc123XYZ". Leave empty if you verify another way.
 GSC_VERIFY = ""
@@ -247,7 +260,7 @@ def footer(depth, pdp=None):
 <div class="fgrid">
 <div><div class="fname brand"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></div><p>Authentic supplements with free delivery all over Nepal. Gym in Urlabari-9, Durgapuri, Morang, open 4:30 AM to 8:30 PM, Sunday to Friday.</p></div>
 <div><h3>Shop</h3><a href="{r}shop/">All products</a>{cat_links}</div>
-<div><h3>Apex</h3><a href="{r}blog/">Blog</a><a href="{r}guides/">Supplement guides</a><a href="{r}gym/">The gym and membership</a><a href="{r}gym/#team">Team</a><a href="{r}gym/#plans">Plans</a><a href="{r}calculators/">Fitness calculators</a><a href="{r}software/">Gym management software Nepal</a><a href="{r}software/#pricing">Gym software price</a></div>
+<div><h3>Apex</h3><a href="{r}blog/">Blog</a><a href="{r}guides/">Supplement guides</a><a href="{r}gym/">The gym and membership</a><a href="{r}gym/#team">Team</a><a href="{r}gym/#plans">Plans</a><a href="{r}calculators/">Fitness calculators</a><a href="{r}food/">Food calorie chart</a><a href="{r}software/">Gym management software Nepal</a><a href="{r}software/#pricing">Gym software price</a></div>
 <div><h3>Contact</h3><a href="https://wa.me/{WA}" rel="noopener" target="_blank">WhatsApp 9708819605</a><a href="tel:+9779708819605">Call 9708819605</a><a href="https://www.facebook.com/apexfitcentre" rel="noopener" target="_blank">Facebook</a><a href="{r}about/">About us</a><a href="{r}contact/">Contact</a><a href="{r}privacy/">Privacy policy</a><a href="{r}editorial-policy/">Editorial policy</a></div>
 </div>
 <div class="fcopy"><span>© <span id="yr">2026</span> Apex Fitness Centre. All rights reserved.</span><span>Free delivery all over Nepal</span></div>
@@ -1143,6 +1156,7 @@ build_guides()
 exec(open(os.path.join(HERE, "blog_engine.py"), encoding="utf-8").read())
 POSTS = build_blog()
 exec(open(os.path.join(HERE, "tools.py"), encoding="utf-8").read())
+exec(open(os.path.join(HERE, "foods.py"), encoding="utf-8").read())
 build_info_pages()
 
 shutil.rmtree(OUT, ignore_errors=True)
@@ -1213,6 +1227,11 @@ shutil.copy(HERE + "/gym-premium.css", OUT + "/assets/gym-premium.css")
 shutil.copy(SRC + "/apex-icon-512.png", OUT + "/assets/apex-icon-512.png")
 shutil.copy(SRC + "/apex-icon-180.png", OUT + "/assets/apex-icon-180.png")
 for _f in ("calc-core.js", "calc.js", "calc.css", "tools.js"): shutil.copy(HERE + "/" + _f, OUT + "/assets/" + _f)
+# Pinterest pins (1000x1500): only for published posts, so scheduled titles stay private
+os.makedirs(OUT + "/blog/pins", exist_ok=True)
+for _p in POSTS:
+    _pin = os.path.join(HERE, "content", "blog", "pins", _p["slug"] + ".jpg")
+    if os.path.exists(_pin): shutil.copy(_pin, OUT + "/blog/pins/" + _p["slug"] + ".jpg")
 open(OUT + "/assets/store-data.js", "w").write("window.APEX_PRODUCTS=" + json.dumps([dict({k: p[k] for k in ("slug","name","full","price","url","brand")}, img=WEBP.get(p["img"], (p["img"],))[0]) for p in PRODUCTS], ensure_ascii=False) + ";window.APEX_RULES=" + json.dumps([{"name": x["name"], "slugs": x["slugs"], "off": x["off"]} for x in RULES]) + ";window.APEX_PAIRS=" + json.dumps({p["slug"]: p["pair"] for p in PRODUCTS}) + ";window.APEX_WA=" + json.dumps(WA) + ";")
 open(OUT + "/assets/favicon.svg", "w").write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#d3132b"/><path d="M14 48 32 14l18 34h-8l-10-20-10 20z" fill="#ffffff"/></svg>')
 today = __import__("datetime").date.today().isoformat()

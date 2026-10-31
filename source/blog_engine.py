@@ -171,7 +171,9 @@ def build_blog():
         hero = ""
         if p.get("image"):
             base, w, h = BLOG_IMG[p["image"]]
-            hero = f'<figure class="phero"><img src="../images/{base}.webp" alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}" fetchpriority="high"></figure>'
+            _pin = os.path.exists(os.path.join(BLOG_DIR, "pins", p["slug"] + ".jpg"))
+            _pm = f' data-pin-media="{BASE}/blog/pins/{p["slug"]}.jpg" data-pin-description="{e(p["title"])}"' if _pin else ""
+            hero = f'<figure class="phero"><img src="../images/{base}.webp" alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}" fetchpriority="high"{_pm}></figure>'
         shop = ""
         if p["prods"]:
             shop = f'<section><h2 class="h2s">Products in this post</h2><div class="pgrid">{"".join(card(x, d) for x in p["prods"])}</div></section>'
@@ -190,6 +192,7 @@ def build_blog():
 {tocb}
 <div class="abody">{p['html']}</div>
 <aside class="author"><b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>.</p></aside>
+{newsletter_box()}
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
 <p class="fine" style="text-align:left">General information, not medical advice. Ask a doctor if you have a health condition. Results vary from person to person.</p>
 </article>
