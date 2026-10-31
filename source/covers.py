@@ -196,7 +196,19 @@ def art_rope(im, d):
         d.rounded_rectangle(_sc((x, 380, x + 60, 560)), radius=26 * S, fill=RED)
         d.rounded_rectangle(_sc((x + 18, 360, x + 42, 392)), radius=8 * S, fill=INK)
 
-ARTS = {"thali": art_thali, "protein": art_protein, "tub": art_tub, "check": art_check,
+def art_barbell(im, d):
+    """Loaded barbell resting on the floor: a deadlift setup, side-on."""
+    _shadow(im, (150, 560, 1050, 640))
+    d.rounded_rectangle(_sc((130, 383, 1070, 407)), radius=12 * S, fill=(150, 152, 158))      # bar
+    for cx in (300, 900):                                                                    # big plates, touching the floor
+        d.ellipse(_sc((cx - 34, 180, cx + 34, 610)), fill=(40, 42, 48))
+        d.ellipse(_sc((cx - 12, 375, cx + 12, 415)), fill=(110, 112, 118))
+    for cx, col in ((362, RED), (838, RED)):                                                 # smaller red plates
+        d.ellipse(_sc((cx - 22, 260, cx + 22, 530)), fill=col)
+    for x in (200, 990):                                                                     # collars
+        d.rounded_rectangle(_sc((x, 370, x + 26, 420)), radius=6 * S, fill=(80, 82, 88))
+
+ARTS = {"barbell": art_barbell, "thali": art_thali, "protein": art_protein, "tub": art_tub, "check": art_check,
         "dumbbell": art_dumbbell, "medal": art_medal, "scale": art_scale,
         "tape": art_tape, "gain": art_gain, "tubs": art_tubs,
         "mountain": art_mountain, "shoe": art_shoe, "bottle": art_bottle, "clock": art_clock, "rope": art_rope}
