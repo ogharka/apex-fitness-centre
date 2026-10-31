@@ -259,3 +259,7 @@ footer h3{font:600 14px/1 var(--body);letter-spacing:0;text-transform:none;color
 .fchart tr.fg th{background:#141416;color:#fff;text-align:left}
 .food .pask .btn.ghost{background:transparent;color:#141416;border:1px solid #141416}
 @media(max-width:560px){.ftiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+section.auth{border:1px solid #e6e5e1;background:#f7f7f5;padding:20px 22px;margin:24px 0}
+section.auth ul{list-style:disc;padding-left:22px;margin:10px 0 12px}
+section.auth li{margin:4px 0}
+section.auth a{text-decoration:underline}
