@@ -1,0 +1,26 @@
+name: usda-fetch
+on:
+  push:
+    branches: [data-fetch]
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          set -x
+          mkdir out && cd out
+          curl -sL https://fdc.nal.usda.gov/download-datasets/ -o page.html || true
+          grep -o 'https://fdc.nal.usda.gov/fdc-datasets/[^"]*csv[^"]*\.zip' page.html | sort -u > links.txt || true
+          cat links.txt
+          SR=$(grep -i sr_legacy links.txt | head -1); [ -z "$SR" ] && SR=https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip
+          SV=$(grep -i survey links.txt | head -1)
+          curl -sL "$SR" -o sr.zip && unzip -q -o sr.zip -d sr || true
+          [ -n "$SV" ] && curl -sL "$SV" -o sv.zip && unzip -q -o sv.zip -d sv || true
+          find . -name '*.csv' -size +1k | head -50
+          mkdir keep
+          for d in sr sv; do for f in food.csv food_nutrient.csv nutrient.csv food_portion.csv measure_unit.csv; do p=$(find $d -name $f | head -1); [ -n "$p" ] && cp "$p" keep/${d}_$f; done; done
+          ls -la keep
+      - uses: actions/upload-artifact@v4
+        with:
+          name: usda
+          path: out/keep
