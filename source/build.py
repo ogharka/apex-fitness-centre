@@ -197,7 +197,9 @@ def head(title, desc, path, depth, image=None, extra="", ptype="website"):
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
 <meta name="twitter:image" content="{BASE}/{img}">
-<link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{root}assets/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="{root}assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="shortcut icon" href="{root}favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1244,6 +1246,8 @@ shutil.copy(HERE + "/premium.css", OUT + "/assets/premium.css")
 shutil.copy(HERE + "/gym-premium.css", OUT + "/assets/gym-premium.css")
 shutil.copy(SRC + "/apex-icon-512.png", OUT + "/assets/apex-icon-512.png")
 shutil.copy(SRC + "/apex-icon-180.png", OUT + "/assets/apex-icon-180.png")
+for _fi in ("favicon-32.png", "favicon-48.png"): shutil.copy(SRC + "/" + _fi, OUT + "/assets/" + _fi)
+shutil.copy(SRC + "/favicon.ico", OUT + "/favicon.ico")
 for _f in ("calc-core.js", "calc.js", "calc.css", "tools.js"): shutil.copy(HERE + "/" + _f, OUT + "/assets/" + _f)
 # Pinterest pins (1000x1500): only for published posts, so scheduled titles stay private
 os.makedirs(OUT + "/blog/pins", exist_ok=True)
