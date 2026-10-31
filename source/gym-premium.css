@@ -51,3 +51,9 @@ footer .f-sub,footer .f-copy,footer .f-copy span{color:#a3a6ad}
 .logo{display:inline-flex!important;flex-direction:row!important;align-items:center!important;gap:12px!important}
 .price{font-stretch:100%;font-variation-settings:"wdth" 100;font-size:clamp(38px,3.6vw,50px)!important;letter-spacing:-.02em}
 .switch button{text-transform:none;letter-spacing:0;font:600 14.5px var(--body)}
+footer .fsocial{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+footer .fsocial a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;color:#fff!important;font-weight:700;font-size:14px;text-decoration:none;line-height:1}
+footer .fsocial a.fs-fb{background:#1877f2}
+footer .fsocial a.fs-pi{background:#e60023}
+footer .fsocial a.fs-wa{background:#15803d}
+footer .fsocial a:hover{filter:brightness(.9)}
