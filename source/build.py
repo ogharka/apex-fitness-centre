@@ -32,6 +32,8 @@ def newsletter_box(where="post"):
 # GOOGLE SEARCH CONSOLE: when Search Console asks you to verify with an "HTML tag", paste only the
 # content="..." value here, e.g. "abc123XYZ". Leave empty if you verify another way.
 GSC_VERIFY = ""
+# PINTEREST: website claim code (Pinterest > Settings > Claimed accounts > Websites)
+PINTEREST_VERIFY = "67c45828ef91f9681356e1974e5102bc"
 # STOCK per product. Default is in stock. To mark one product out of stock, add its slug here:
 #   STOCK = {"scitron-volcano-pre-workout": "out"}
 STOCK = {}
@@ -206,7 +208,9 @@ def head(title, desc, path, depth, image=None, extra="", ptype="website"):
 """
 
 def gsc_tag():
-    return f'<meta name="google-site-verification" content="{GSC_VERIFY}">\n' if GSC_VERIFY else ""
+    t = f'<meta name="google-site-verification" content="{GSC_VERIFY}">\n' if GSC_VERIFY else ""
+    if PINTEREST_VERIFY: t += f'<meta name="p:domain_verify" content="{PINTEREST_VERIFY}"/>\n'
+    return t
 
 def adsense_tag(path=""):
     if not ADSENSE_CLIENT or not path.startswith(ADS_ON): return ""
