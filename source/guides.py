@@ -120,9 +120,9 @@ dict(slug="buy-supplements-online-in-nepal", cat="shop", table=None,
  rel=["how-to-spot-fake-supplements-in-nepal", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
 
 dict(slug="how-to-choose-a-pre-workout-in-nepal", cat="pre-workout", table="pre-workout",
- title="How to Choose a Pre-Workout in Nepal (Caffeine Guide)",
- h1="How to choose a pre-workout in Nepal",
- desc="How to pick a pre-workout in Nepal: caffeine per serving, who should avoid it, safe use, and the pre-workout we stock.",
+ title="Pre-Workout Price in Nepal (2026) and How to Choose One",
+ h1="Pre-workout price in Nepal and how to choose one",
+ desc="Pre-workout price in Nepal, cost per serving, how much caffeine is safe, who should avoid it, and how to spot a genuine tub.",
  intro="A pre-workout is meant to help your energy and focus before training. It is optional, and the most important thing to check is the caffeine.",
  body=[
   ("Check the caffeine first", ["Look for caffeine per serving on the label. Many people feel fine around 150 to 300 mg. If you are new or sensitive, start with half a serving. Do not combine it with coffee, energy drinks or other caffeine products."]),

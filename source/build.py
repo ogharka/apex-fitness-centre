@@ -233,7 +233,7 @@ def nav(depth, active=""):
     r = "../" * depth
     def a(href, label, key):
         return f'<a href="{r}{href}"' + (' class="on"' if active == key else "") + f">{label}</a>"
-    return f"""<div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Stack and save up to Rs. 1,000</div>
+    return f"""<div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save up to Rs. 1,000</div>
 <header class="top"><div class="wrap">
 <a class="brand" href="/"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>
 <nav aria-label="Main"><ul>
@@ -610,6 +610,7 @@ def build_product(p):
 <section><h2>About this product</h2>{''.join(f'<p>{e(t)}</p>' for t in p['about'])}</section>
 <section><h2>Product details</h2><table class="facts">{facts}</table></section>
 <section><h2>How to use</h2><p>{e(p['use'])}</p></section>
+<section class="auth"><h2>How to check it is genuine</h2><p>We buy from authorised sellers, not unknown resellers. When your order arrives, check these:</p><ul><li><b>Seal:</b> the inner seal under the lid is intact.</li><li><b>Batch number and dates:</b> printed clearly, and the expiry date is in the future.</li><li><b>Scratch code or QR code:</b> if the brand uses one, check it on the brand's official website or app.</li><li><b>Importer label:</b> the importer's name and address are on the pack.</li></ul><p>Want to see it first? Message us on WhatsApp and we will send a photo of the seal and batch number before you pay. Read our full guide: <a href="{"../" * d}guides/how-to-spot-fake-supplements-in-nepal/">how to spot fake supplements in Nepal</a>.</p></section>
 </div>
 <section class="who"><h2 class="h2s">Who it is for</h2><ul class="who-l">{''.join(f'<li>{e(t)}</li>' for t in p['who'])}</ul></section>
 {together(p)}
@@ -656,7 +657,9 @@ def build_gym():
         assert a in s, ("gym source changed, fix not applied:", a[:70]); s = s.replace(a, b)
     # H1: the two lines are separate spans, so text readers saw "Earn yourpeak". Add a real space.
     must('<span class="l"><span>Earn your</span></span><span class="l">', '<span class="l"><span>Earn your</span></span> <span class="l">')
-    # 12-month first-time price Rs. 12,500 confirmed by the owner (23 Oct 2026).
+    # 12-month first-time price Rs. 12,500 confirmed by the owner (23 Oct 2026): the 12-month plan has a lower joining cost.
+    must("For example, 1 month is Rs. 2,500: Rs. 1,500 membership and Rs. 1,000 one-time.</p>",
+         "For example, 1 month is Rs. 2,500: Rs. 1,500 membership and Rs. 1,000 one-time. The 12-month plan has a lower joining cost: Rs. 12,500 in total for new members.</p>")
     # Trainer cards: same layout for both (name, shift and time, experience)
     must('<div class="cap"><span class="sub">Trainer</span><div class="role">Morning shift</div><div class="time">4:30 AM – 12:30 PM</div><p>2+ years of deep study in the fitness field.</p></div>',
          '<div class="cap"><span class="sub">Trainer</span>'
