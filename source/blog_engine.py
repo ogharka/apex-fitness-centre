@@ -181,10 +181,17 @@ def build_blog():
         more_html = f'<section class="gl"><h2 class="h2s">More from the blog</h2><div class="bgrid">{"".join(_postcard(x, "../") for x in more)}</div></section>' if more else ""
         _pinimg = f"{BASE}/blog/pins/{p['slug']}.jpg" if os.path.exists(os.path.join(BLOG_DIR, "pins", p["slug"] + ".jpg")) else (BASE + "/blog/images/" + BLOG_IMG[p["image"]][0] + ".jpg" if p.get("image") else BASE + "/assets/og-image.jpg")
         _q = __import__("urllib.parse").parse.quote
-        pinbtn = (f'<div class="sharebar"><a class="pinbtn" href="https://www.pinterest.com/pin/create/button/?url={_q(BASE + "/" + path, safe="")}&media={_q(_pinimg, safe="")}&description={_q(p["title"], safe="")}" target="_blank" rel="noopener" aria-label="Save this article to Pinterest">'
-                  '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.4-5.96s-.36-.72-.36-1.78c0-1.66.97-2.9 2.17-2.9 1.02 0 1.52.77 1.52 1.7 0 1.03-.66 2.57-1 4-.28 1.2.6 2.17 1.78 2.17 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.06-4.88-5.01-4.88-3.41 0-5.42 2.56-5.42 5.21 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34l-.33 1.37c-.05.22-.18.27-.4.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.4 2.97 7.4 6.93 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg>'
-                  '<span>Save to Pinterest</span></a>'
-                  '<a class="pinfollow" href="https://www.pinterest.com/apexfitcentre/" target="_blank" rel="noopener">Follow us on Pinterest</a></div>')
+        _u = _q(BASE + "/" + path, safe="")
+        _FB = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.95.3-1.6 1.6-1.6h1.8V3.9c-.3 0-1.4-.15-2.6-.15-2.6 0-4.3 1.55-4.3 4.4v2.35H7.1v3.3H10V22h3.5Z"/></svg>'
+        _WA = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>'
+        _PI = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.4-5.96s-.36-.72-.36-1.78c0-1.66.97-2.9 2.17-2.9 1.02 0 1.52.77 1.52 1.7 0 1.03-.66 2.57-1 4-.28 1.2.6 2.17 1.78 2.17 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.06-4.88-5.01-4.88-3.41 0-5.42 2.56-5.42 5.21 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34l-.33 1.37c-.05.22-.18.27-.4.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.4 2.97 7.4 6.93 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg>'
+        def _share(label):
+            return (f'<div class="sharebar"><span class="sh-l">{label}</span>'
+                    f'<a class="shb sh-fb" href="https://www.facebook.com/sharer/sharer.php?u={_u}" target="_blank" rel="noopener" aria-label="Share on Facebook">{_FB}<span>Facebook</span></a>'
+                    f'<a class="shb sh-wa" href="https://wa.me/?text={_q(p["title"] + " " + BASE + "/" + path, safe="")}" target="_blank" rel="noopener" aria-label="Share on WhatsApp">{_WA}<span>WhatsApp</span></a>'
+                    f'<a class="shb sh-pi" href="https://www.pinterest.com/pin/create/button/?url={_u}&media={_q(_pinimg, safe="")}&description={_q(p["title"], safe="")}" target="_blank" rel="noopener" aria-label="Save to Pinterest">{_PI}<span>Pinterest</span></a></div>')
+        pinbtn = _share("Share")
+        sharebottom = _share("Found this useful? Share it")
         upd = f' &middot; Updated {_date(p["updated"])}' if p["updated"] != p["d"] else ""
         ask = wa(f"Hi Apex Fitness Centre, I read your post \"{p['title']}\" and I have a question: ")
         body = f"""<body data-root="../../">
@@ -199,6 +206,7 @@ def build_blog():
 {tocb}
 <div class="abody">{p['html']}</div>
 <aside class="author"><b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>.</p></aside>
+{sharebottom}
 {newsletter_box()}
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
 <p class="fine" style="text-align:left">General information, not medical advice. Ask a doctor if you have a health condition. Results vary from person to person.</p>

@@ -264,12 +264,13 @@ section.auth ul{list-style:disc;padding-left:22px;margin:10px 0 12px}
 section.auth li{margin:4px 0}
 section.auth a{text-decoration:underline}
 .sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:14px 0 22px}
-.pinbtn{display:inline-flex;align-items:center;gap:8px;background:#e60023;color:#fff!important;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;text-decoration:none}
-.pinbtn:hover{background:#ad081b}
-.pinfollow{font-size:14px;color:#5b5e66;text-decoration:underline}
 footer .fsocial{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 footer .fsocial a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;color:#fff!important;font-weight:700;font-size:14px;text-decoration:none;line-height:1}
 footer .fsocial a.fs-fb{background:#1877f2}
 footer .fsocial a.fs-pi{background:#e60023}
 footer .fsocial a.fs-wa{background:#15803d}
 footer .fsocial a:hover{filter:brightness(.9)}
+.sharebar .sh-l{font-size:14px;font-weight:700;color:#141416;margin-right:4px}
+.sharebar .shb{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;border-radius:999px;color:#fff!important;font-weight:700;font-size:14px;text-decoration:none;line-height:1}
+.sharebar .sh-fb{background:#1877f2}.sharebar .sh-wa{background:#15803d}.sharebar .sh-pi{background:#e60023}
+.sharebar .shb:hover{filter:brightness(.9)}
