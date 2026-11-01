@@ -5,7 +5,8 @@ description: The best core exercises for strong abs, a twice-a-week abs routine,
 date: 2027-01-05
 category: Training
 author: suman-limbu
-cover_art: tape
+cover_photo: apex-member-decline-sit-up-bench.jpg
+image_alt: A member doing decline sit-ups on a bench beside the treadmills at Apex Fitness Centre, Urlabari
 ---
 
 Everyone has abdominal muscles. Whether you can **see** them depends mainly on your **body fat level**, not on how many crunches you do. A good core routine makes your abs **stronger and slightly thicker**, improves posture and protects your back. A calorie deficit is what reveals them.

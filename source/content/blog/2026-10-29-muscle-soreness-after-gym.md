@@ -5,7 +5,8 @@ description: Sore after the gym? Why DOMS happens, how long it lasts, how to rec
 date: 2026-10-29
 category: Training
 author: suman-limbu
-cover_art: dumbbell
+cover_photo: apex-member-resting-bench-between-sets.jpg
+image_alt: A member resting on a bench between sets at Apex Fitness Centre, Urlabari
 ---
 
 Feeling sore one or two days after a workout is **normal**, especially when you are new or try a new exercise. It is called **DOMS (delayed onset muscle soreness)**. It usually peaks **24 to 72 hours** after training and fades within a few days.
