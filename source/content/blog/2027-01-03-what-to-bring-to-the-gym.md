@@ -32,6 +32,8 @@ A well-packed gym bag saves time, keeps you comfortable and means you never have
 - **Hair ties** and a cap.
 - **Light jacket** for winter mornings so you warm up properly.
 
+![A member training on the bench with his gym bag and shaker bottle kept beside him at Apex Fitness Centre](images/apex-member-bench-gym-bag-shaker.jpg)
+
 ## What to wear by season in Nepal
 
 | Season | Tips |

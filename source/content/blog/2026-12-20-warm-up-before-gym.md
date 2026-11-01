@@ -16,6 +16,8 @@ A good warm-up takes **about 10 minutes** and does three jobs: it **raises your 
 
 Easy pace on a bike, treadmill, cross-trainer or skipping rope. You should feel warmer and breathe a little faster, but still be able to talk.
 
+![A member warming up on the cross-trainer by the window at Apex Fitness Centre, Urlabari](images/apex-member-elliptical-warm-up.jpg)
+
 ### Part 2: Mobility drills (4 minutes)
 
 Do each for about 30 to 40 seconds:
