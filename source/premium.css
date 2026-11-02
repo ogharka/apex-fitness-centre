@@ -180,6 +180,7 @@ footer h3{font:600 14px/1 var(--body);letter-spacing:0;text-transform:none;color
 .stock{display:flex;align-items:flex-start;gap:8px;margin:10px 0 0;font-size:14px;color:var(--muted)}
 .stock::before{content:"";width:9px;height:9px;border-radius:50%;background:#1fbe5c;flex:none;margin-top:6px}
 .stock.out::before{background:var(--gold)}
+.carthint{margin:8px 0 0;font-size:13px;color:var(--muted)}
 .stock b{color:var(--fg);font-weight:600}
 .revask{border:1px dashed var(--line2);border-radius:var(--r-card);padding:18px 20px;margin-top:40px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
 .revask p{margin:0;font-weight:600}

@@ -88,7 +88,7 @@ Three sessions of 45–60 minutes a week is enough to change your body. We open 
 - **Where:** Urlabari-9, Durgapuri, Morang
 - **When:** Sunday to Friday, 4:30 AM to 8:30 PM (closed on Saturday)
 - **Trainers:** Suman Limbu in the morning (4:30 AM to 12:30 PM) and Sanju Phombo Limbu in the evening (4:30 PM to 8:30 PM)
-- **Membership:** from Rs. 1,500 a month, with longer plans costing less per month. See [plans and prices](../../gym/#plans).
+- **Membership:** first month Rs. 2,500 all in (admission, T-shirt and card included), then renewals from Rs. 1,500 a month, with longer plans costing less per month. See [plans and prices](../../gym/#plans).
 
 ## Frequently asked questions
 

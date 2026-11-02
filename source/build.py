@@ -93,7 +93,7 @@ CATS = [
       body=["Creatine is stored in your muscles and helps supply quick energy for short, hard efforts like heavy sets and sprints. It is one of the most studied sports supplements.",
             "Which one should you pick? Choose a flavoured tub (MuscleBlaze Citrus Blast or Wellcore Fruit Fusion) if you like a taste in your drink. Choose the unflavoured BPI Sports tub if you want to mix it into anything without changing the flavour."],
       faq=[("Which creatine is cheapest?","MuscleBlaze 320 g and Wellcore 307 g are each Rs. 2,000. BPI Sports Micronised Creatine 300 g is Rs. 5,000. Message us on WhatsApp to check what is in stock."),
-           ("Can I get creatine delivered outside Urlabari?","Yes. Delivery is free all over Nepal. Order on WhatsApp and we confirm the delivery details with you."),
+           ("Do you deliver creatine all over Nepal?","Yes. Delivery is free all over Nepal. Order on WhatsApp and we confirm the delivery details with you."),
            ("How do I take creatine?","Follow the serving size on the label of the product you buy and drink enough water. If you have a medical condition, ask your doctor first."),
            ("Does creatine need a loading phase?","No. A small daily serving works. Loading is optional and just gets you there faster."),
            ("Do I take creatine on rest days?","Yes. Take it every day so the level in your muscles stays up."),
@@ -129,7 +129,7 @@ for c in CATS:
     c["url"] = c["slug"] + "/"
 
 HOME_FAQ = [
- ("Do you deliver supplements all over Nepal?","Yes, and delivery is free all over Nepal. Delivery is free. Order on WhatsApp and we confirm your address and delivery time before dispatch."),
+ ("Do you deliver supplements all over Nepal?","Yes, and delivery is free all over Nepal. Order on WhatsApp and we confirm your address and delivery time before dispatch."),
  ("How do I order?","Add products to your cart and tap Order on WhatsApp. Your cart arrives in our WhatsApp chat as a ready message. We confirm stock and delivery with you."),
  ("How do I pay?","We accept Khalti and bank transfer. We send you the payment details on WhatsApp when you order."),
  ("What brands do you sell?","MuscleBlaze, Wellcore, BPI Sports, BigMan, Scitron, Pole Nutrition, Pintola and Valeo: creatine, protein, pre-workout, BCAA, L-carnitine, omega-3, protein oats and lifting belts. All products are authentic, bought from authorised sellers."),
@@ -152,7 +152,7 @@ RULES = [  # applied in order, best first
  dict(name="Lifting belt + BigMan Forza", slugs=["valeo-weightlifting-belt","bigman-forza-protein-2kg"], off=500),
  dict(name="Hydro HD whey + creatine", slugs=["bpi-sports-hydro-hd-hydrolyzed-whey-2kg-chocolate-lava-cake","muscleblaze-creatine-monohydrate-320g-citrus-blast"], off=500),
 ]
-# Every bundle discount must stay within the site banner "Stack and save up to Rs. 1,000"
+# Every bundle discount must stay within the site banner "Bundles save Rs. 300 to Rs. 1,000"
 assert max(r["off"] for r in RULES) == 1000
 def save_for(slugs):
     s = set(slugs)
@@ -235,7 +235,7 @@ def nav(depth, active=""):
     r = "../" * depth
     def a(href, label, key):
         return f'<a href="{r}{href}"' + (' class="on"' if active == key else "") + f">{label}</a>"
-    return f"""<div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save up to Rs. 1,000</div>
+    return f"""<div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save Rs. 300 to Rs. 1,000</div>
 <header class="top"><div class="wrap">
 <a class="brand" href="/"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>
 <nav aria-label="Main"><ul>
@@ -566,7 +566,7 @@ def stock_line(p):
     if STOCK.get(p["slug"]) == "out":
         m = wa(f"Hi Apex Fitness Centre, is {p['full']} back in stock?")
         return f'<p class="stock out"><span><b>Out of stock</b> &ndash; <a class="tl" href="{m}" target="_blank" rel="noopener">message us</a></span></p>'
-    return '<p class="stock"><span><b>In stock</b> &ndash; ships same day, delivery in 1&ndash;2 days (confirm on WhatsApp)</span></p>'
+    return '<p class="stock"><span><b>In stock</b> &ndash; ships same day, most orders arrive in 1&ndash;2 days</span></p>'
 
 def build_product(p):
     d = 2
@@ -605,7 +605,8 @@ def build_product(p):
 <div class="qty" role="group" aria-label="Quantity"><button type="button" id="qm" aria-label="Decrease">-</button><input id="qv" value="1" inputmode="numeric" aria-label="Quantity"><button type="button" id="qp" aria-label="Increase">+</button></div>
 <button class="btn line" type="button" id="addBtn" data-add="{p['slug']}">Add to cart</button>
 </div>
-<ul class="ticks"><li>Pay by Khalti or bank transfer</li><li>Free delivery all over Nepal, usually in 1-2 days</li><li>Returns: sealed, unopened items only. Opened supplements cannot be returned.</li><li>Sold by Apex Fitness Centre, Urlabari</li></ul>
+<p class="carthint">Buying more than one item? Add them to your cart, then send the whole order on WhatsApp in one message.</p>
+<ul class="ticks"><li>Pay by Khalti or bank transfer</li><li>Free delivery all over Nepal</li><li>Returns: sealed, unopened items only. Opened supplements cannot be returned.</li><li>Sold by Apex Fitness Centre, Urlabari</li></ul>
 </div>
 </div>
 <div class="pdetail">
@@ -617,7 +618,7 @@ def build_product(p):
 <section class="who"><h2 class="h2s">Who it is for</h2><ul class="who-l">{''.join(f'<li>{e(t)}</li>' for t in p['who'])}</ul></section>
 {together(p)}
 {reviews_block(p)}
-<section class="how2"><h2 class="h2s">How your order works</h2><ol class="how"><li><b>Order on WhatsApp.</b> Tap the green button. We confirm stock and your address.</li><li><b>Pay your way.</b> Khalti or bank transfer. Details come on WhatsApp.</li><li><b>We ship the same day.</b> Nepal Can sends it with a tracking number, free of charge.</li><li><b>Delivered in 1 to 2 days.</b> Check the seals, then message us if anything looks wrong.</li></ol></section>
+<section class="how2"><h2 class="h2s">How your order works</h2><ol class="how"><li><b>Order on WhatsApp.</b> Tap the green button. We confirm stock and your address.</li><li><b>Pay your way.</b> Khalti or bank transfer. Details come on WhatsApp.</li><li><b>We ship the same day.</b> Nepal Can sends it with a tracking number, free of charge.</li><li><b>Most orders arrive in 1 to 2 days.</b> Check the seals, then message us if anything looks wrong.</li></ol></section>
 <section class="why"><h2 class="h2s">Why order from Apex</h2><div class="whyg">
 <div><b>Authentic products</b><p>Bought from authorised sellers, not unknown resellers.</p></div>
 <div><b>Free delivery all over Nepal</b><p>No delivery charge, wherever you live.</p></div>
@@ -685,7 +686,7 @@ def build_gym():
     for anchor in ('id="plans"', 'id="connect"', 'id="team"'):
         assert anchor in s, anchor
     title = "Gym in Urlabari, Morang | Apex Fitness Centre"
-    desc = "Gym in Urlabari-9, Durgapuri, Morang. Open Sunday to Friday, 4:30 AM to 8:30 PM. Memberships from Rs. 1,500 a month, trainers on morning and evening shifts."
+    desc = "Gym in Urlabari-9, Durgapuri, Morang. Open Sunday to Friday, 4:30 AM to 8:30 PM. First month Rs. 2,500 all in, then from Rs. 1,500 a month."
     cr = [("Home", ""), ("The gym", "gym/")]
     gj = dict(STORE); gj["@context"] = "https://schema.org"; gj["@type"] = ["HealthClub", "SportsActivityLocation"]
     gj["@id"] = BASE + "/gym/#gym"; gj["url"] = BASE + "/gym/"
