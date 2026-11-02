@@ -152,6 +152,24 @@ def _rel_score(p, x):
     # shared topic words matter most, then same category, then recency as a tie-break
     return len(_words(p) & _words(x)) * 3 + (2 if x["category"] == p["category"] else 0) + x["d"].toordinal() / 1e7
 
+
+# ---- Comments (own service on Cloudflare; see source/comments/). Off until source/comments-endpoint.txt exists. ----
+_CEP = os.path.join(HERE, "comments-endpoint.txt")
+COMMENTS_API = open(_CEP, encoding="utf-8").read().strip().rstrip("/") if os.path.exists(_CEP) else ""
+COMMENTS_SCRIPT = '<script src="../../assets/comments.js" defer></script>\n' if COMMENTS_API else ""
+def comments_section(slug):
+    if not COMMENTS_API: return ""
+    return (f'<section class="cmts" id="comments" data-api="{e(COMMENTS_API)}" data-post="{e(slug)}" aria-labelledby="cm-h">'
+            '<h2 id="cm-h">Comments <span class="cm-count"></span></h2>'
+            '<form class="cm-form" novalidate>'
+            '<label for="cm-name">Your name</label><input id="cm-name" name="name" maxlength="60" autocomplete="name" required>'
+            '<label for="cm-body">Your comment or question</label><textarea id="cm-body" name="body" maxlength="1500" rows="4" required></textarea>'
+            '<div class="cm-hp" aria-hidden="true"><label for="cm-web">Leave this empty</label><input id="cm-web" name="website" tabindex="-1" autocomplete="off"></div>'
+            '<div class="cm-row"><button class="btn" type="submit">Post comment</button><span class="cm-note">Comments are checked by the Apex team before they appear. Please don\'t share private health details.</span></div>'
+            '<p class="cm-msg" role="status" aria-live="polite"></p></form>'
+            '<div class="cm-list"><p class="cm-empty">Loading comments…</p></div>'
+            '<noscript><p class="cm-empty">Turn on JavaScript to read and post comments.</p></noscript></section>')
+
 def build_blog():
     posts = load_posts()
     for i, p in enumerate(posts):
@@ -220,11 +238,12 @@ def build_blog():
 {newsletter_box()}
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
 <p class="fine" style="text-align:left">General information, not medical advice. Ask a doctor if you have a health condition. Results vary from person to person.</p>
+{comments_section(p["slug"])}
 </article>
 {shop}
 {more_html}
 </div></main>
-{footer(d)}{drawer()}{tail(d)}"""
+{footer(d)}{drawer()}{tail(d).replace("</body>", COMMENTS_SCRIPT + "</body>", 1)}"""
         ttl = p.get("seo_title") or (p["title"] + " | Apex Fitness" if len(p["title"]) <= 50 else p["title"])
         pages[path] = head(ttl, p["description"], path, d, image=("blog/images/" + BLOG_IMG[p["image"]][0] + ".jpg") if p.get("image") else None,
                            extra=j, ptype="article") + body

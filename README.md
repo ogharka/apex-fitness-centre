@@ -32,6 +32,7 @@ About 2 minutes later it is live at `apexfitnesscentre.shop/blog/your-post-name/
 | Google Search Console verification | `GSC_VERIFY` in `source/build.py` (paste only the content="..." value) |
 | Customer reviews | `REVIEWS` in `source/build.py`, photos in `source/assets/reviews/` |
 | Colours and design | `source/premium.css` |
+| Blog comments | Approve and reply at your comments admin page (`…workers.dev/admin`). Code in `source/comments/`, set up by **Actions → Deploy blog comments** |
 
 ## Rebuild by hand
 

@@ -1,0 +1,11 @@
+# Apex Fitness Centre blog comments. Deployed by .github/workflows/deploy-comments.yml.
+# database_id is filled in by the workflow (it creates the D1 database the first time).
+name = "apex-comments"
+main = "worker.js"
+compatibility_date = "2025-10-01"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "apex-comments"
+database_id = "REPLACED_BY_WORKFLOW"

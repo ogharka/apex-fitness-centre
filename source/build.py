@@ -1259,7 +1259,7 @@ shutil.copy(SRC + "/apex-icon-512.png", OUT + "/assets/apex-icon-512.png")
 shutil.copy(SRC + "/apex-icon-180.png", OUT + "/assets/apex-icon-180.png")
 for _fi in ("favicon-32.png", "favicon-48.png"): shutil.copy(SRC + "/" + _fi, OUT + "/assets/" + _fi)
 shutil.copy(SRC + "/favicon.ico", OUT + "/favicon.ico")
-for _f in ("calc-core.js", "calc.js", "calc.css", "tools.js"): shutil.copy(HERE + "/" + _f, OUT + "/assets/" + _f)
+for _f in ("calc-core.js", "calc.js", "calc.css", "tools.js", "comments.js"): shutil.copy(HERE + "/" + _f, OUT + "/assets/" + _f)
 # Pinterest pins (1000x1500): only for published posts, so scheduled titles stay private
 os.makedirs(OUT + "/blog/pins", exist_ok=True)
 for _p in POSTS:
