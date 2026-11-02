@@ -43,3 +43,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&drawer&&dra
 var y=$('#yr');if(y)y.textContent=new Date().getFullYear();
 render();
 })();
+/* Share bar: copy link button */
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.sh-copy');if(!b)return;var u=b.getAttribute('data-copy'),ok=b.querySelector('.sh-ok');
+function done(t){if(!ok)return;ok.textContent=t;ok.classList.add('on');setTimeout(function(){ok.classList.remove('on')},1600)}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(function(){done('Link copied')},function(){done('Copy failed')})}
+else{try{var ta=document.createElement('textarea');ta.value=u;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);done('Link copied')}catch(err){done('Copy failed')}}});
