@@ -283,3 +283,29 @@ footer .fsocial a:hover{filter:brightness(.9)}
 .sharebar .sh-ok{position:absolute;top:-30px;left:50%;transform:translateX(-50%);background:#141416;color:#fff;font-size:12px;font-weight:600;padding:4px 8px;border-radius:6px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s}
 .sharebar .sh-ok.on{opacity:1}
 @media(max-width:560px){.sharebar .sh-l{flex-basis:100%}}
+/* Blog comments */
+.cmts{margin:36px 0 8px;padding-top:28px;border-top:1px solid #e6e5e1}
+.cmts h2{font-size:24px;margin:0 0 16px}.cmts .cm-count{color:#5b5e66;font-weight:600}
+.cm-form{display:grid;gap:6px;background:#f7f7f5;border:1px solid #e6e5e1;border-radius:14px;padding:18px;margin-bottom:22px}
+.cm-form label{font-size:14px;font-weight:600;margin-top:6px}
+.cm-form input,.cm-form textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid #c9c8c4;border-radius:10px;background:#fff;color:#141416}
+.cm-form input:focus,.cm-form textarea:focus{outline:2px solid #141416;outline-offset:1px}
+.cm-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.cm-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:8px}
+.cm-row .btn{border-radius:999px}.cm-row .btn[disabled]{opacity:.6}
+.cm-note{font-size:13px;color:#5b5e66;flex:1 1 220px}
+.cm-msg{margin:4px 0 0;font-size:14px;min-height:0}.cm-msg.ok{color:#15803d;font-weight:600}.cm-msg.err{color:#c8102e;font-weight:600}
+.cm-list{display:grid;gap:14px}.cm-empty{color:#5b5e66}
+.cm-thread{display:grid;gap:10px}
+.cm{display:flex;gap:12px;align-items:flex-start}
+.cm-av{flex:none;width:40px;height:40px;border-radius:50%;background:#141416;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.cm-own .cm-av{background:#d3132b}
+.cm-main{flex:1;min-width:0;background:#fff;border:1px solid #e6e5e1;border-radius:12px;padding:12px 14px}
+.cm-own .cm-main{background:#fff5f6;border-color:#f5c2c9}
+.cm-head{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px}
+.cm-badge{background:#d3132b;color:#fff;font-size:11px;font-weight:700;letter-spacing:.04em;padding:2px 8px;border-radius:999px;text-transform:uppercase}
+.cm-date{color:#5b5e66;font-size:13px}
+.cm-body{margin:6px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.cm-reply{margin-left:52px}
+@media(max-width:560px){.cm-reply{margin-left:28px}}
+.cm-row .btn{background:#d3132b;color:#fff;border:1px solid #d3132b}.cm-row .btn:hover{background:#a80f22}
