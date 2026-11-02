@@ -55,7 +55,8 @@
       .then(function () {
         try { localStorage.setItem('apexCommentName', name); } catch (e2) {}
         form.elements.body.value = '';
-        msg.className = 'cm-msg ok'; msg.textContent = 'Thank you! Your comment will appear here after the Apex team approves it.';
+        msg.className = 'cm-msg ok'; msg.textContent = 'Thank you! Your comment is posted.';
+        load();
       })
       .catch(function (err) { msg.className = 'cm-msg err'; msg.textContent = err.message; })
       .then(function () { btn.disabled = false; btn.textContent = 'Post comment'; });
