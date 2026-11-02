@@ -303,7 +303,52 @@ def md_to_html(s):
     return ("<div style='font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#141416;max-width:640px'>"
             + "\n".join(out) + "</div>")
 
+# ---------- 11. Traffic numbers + PDF ----------
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import analytics, pdf_report
+ga = analytics.sample(TODAY) if os.environ.get("REPORT_SAMPLE") else safe(lambda: analytics.fetch(TODAY), None)
+k = (ga or {}).get("kpi") or {}
+if k:
+    kp = ga.get("kpi_prev") or {}
+    top_c = ", ".join(f"{r['country']} {int(r['screenPageViews'])}" for r in (ga.get("countries") or [])[:5])
+    traffic = [f"**Traffic ({ga['range'][0]:%d %b} – {ga['range'][1]:%d %b}):** {int(k.get('screenPageViews', 0)):,} page views "
+               f"(last week {int(kp.get('screenPageViews', 0)):,}), {int(k.get('sessions', 0)):,} visits, {int(k.get('totalUsers', 0)):,} visitors.",
+               f"**Top countries:** {top_c}."]
+    if ga.get("gsc"):
+        traffic.append(f"**Google search:** {int(ga['gsc']['clicks']):,} clicks from {int(ga['gsc']['impressions']):,} times shown, average position {ga['gsc']['position']:.1f}.")
+else:
+    traffic = ["**Traffic:** not connected yet. Add the GOOGLE_SA_JSON and GA_PROPERTY_ID secrets to see views, visits and countries."]
+md = md.replace("\n## This week", "\n" + "\n\n".join(traffic) + "\n\nThe full report with charts and this week's strategy is in the attached PDF.\n\n## This week", 1)
+
+hl = []
+if site.get("ok"):
+    hl.append(f"Site builds: {site['pages']} pages, {site['broken_n']} broken links")
+else:
+    hl.append("Build check failed")
+if livec:
+    bad = [k2 for k2, v in livec.items() if k2.startswith("/") and v != 200]
+    hl.append("Live pages: all OK" if not bad else "Live pages with problems: " + ", ".join(bad))
+if health is not None:
+    bn = [k2 for k2, v in health.items() if v["latest"] != "success"]
+    hl.append("Automations: all working" if not bn else "Failing: " + ", ".join(bn))
+hl.append("Comments: not reachable" if cm is None else f"Comments: {cm['new']} new, {cm['unanswered']} need a reply")
+hl.append("Email sign-up: " + ("on" if NEWSLETTER else "off (Kit form needed)"))
+ctx = dict(src=SRC, subject=f"Apex weekly report – {rng}", rng=rng, adsense_live=bool(ADSENSE_CLIENT), this_week=this_week, next_week=next_week,
+           live_n=len(live), sched_n=len(scheduled), last_sched=last_sched or "n/a", runway_weeks=runway_weeks, health_lines=hl,
+           checks=checks, ideas=idea_pick, trends=trend_list)
+try:
+    pdf_report.write_pdf(ctx, ga, os.path.abspath("report.pdf"))
+    print("PDF written: report.pdf")
+except Exception as ex:
+    print("warn: PDF failed:", ex, file=sys.stderr)
+
 open("report.md", "w", encoding="utf-8").write(md)
+# Public fallback (GitHub issue): no traffic numbers, because the repo is public.
+pub = md
+for t in traffic:
+    pub = pub.replace(t + "\n\n", "")
+pub = pub.replace("The full report with charts and this week's strategy is in the attached PDF.", "The full PDF report with traffic numbers is sent by email only.")
+open("report_public.md", "w", encoding="utf-8").write(pub)
 open("report.html", "w", encoding="utf-8").write(md_to_html(md))
 open("report_subject.txt", "w", encoding="utf-8").write(f"Apex weekly report – {rng}")
 print(md)

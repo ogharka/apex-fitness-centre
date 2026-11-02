@@ -22,35 +22,29 @@ jobs:
           python-version: "3.12"
 
       - name: Install build tools
-        run: pip install "pillow>=10,<12" "markdown>=3.5,<4" "fonttools>=4.40,<5"
+        run: |
+          pip install "pillow>=10,<12" "markdown>=3.5,<4" "fonttools>=4.40,<5" "google-auth>=2.30,<3" "requests>=2.31,<3" "playwright==1.47.0"
+          python -m playwright install --with-deps chromium
 
       - name: Write the report
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
         working-directory: /tmp
         run: python3 "$GITHUB_WORKSPACE/.github/scripts/weekly_report.py"
 
-      - name: Post the report as an issue (GitHub emails it to you)
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh label create weekly-report --color 0E8A16 --description "Automatic weekly site report" 2>/dev/null || true
-          # Close last week's report so only the newest stays open
-          for n in $(gh issue list --label weekly-report --state open --json number -q '.[].number'); do
-            gh issue close "$n" --reason completed >/dev/null || true
-          done
-          gh issue create --title "$(cat /tmp/report_subject.txt)" --body-file /tmp/report.md --label weekly-report --assignee "${{ github.repository_owner }}"
-
-      - name: Also send it to Gmail (only if the Gmail secrets are added)
+      - name: Email the PDF report
+        id: email
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           REPORT_TO: ${{ secrets.REPORT_TO }}
         run: |
           if [ -z "$GMAIL_USER" ] || [ -z "$GMAIL_APP_PASSWORD" ]; then
-            echo "Gmail secrets not set: the report was posted as a GitHub issue only."
-            exit 0
+            echo "::warning::Gmail secrets not set, so the report goes to a GitHub issue instead."
+            echo "sent=no" >> "$GITHUB_OUTPUT"; exit 0
           fi
           python3 - <<'EOF'
           import os, smtplib
@@ -63,8 +57,24 @@ jobs:
           m["To"] = to
           m.set_content(open("/tmp/report.md").read())
           m.add_alternative(open("/tmp/report.html").read(), subtype="html")
+          if os.path.exists("/tmp/report.pdf"):
+              name = m["Subject"].replace("–", "-").replace(" ", "_") + ".pdf"
+              m.add_attachment(open("/tmp/report.pdf", "rb").read(), maintype="application", subtype="pdf", filename=name)
           with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
               s.login(user, os.environ["GMAIL_APP_PASSWORD"].replace(" ", ""))
               s.send_message(m)
           print("Emailed to", to)
+          print("::notice::Report emailed with PDF attached" if os.path.exists("/tmp/report.pdf") else "::warning::Report emailed but the PDF was not created")
           EOF
+          echo "sent=yes" >> "$GITHUB_OUTPUT"
+
+      - name: Post a short report as an issue (only if email is not set up)
+        if: always() && steps.email.outputs.sent != 'yes'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create weekly-report --color 0E8A16 --description "Automatic weekly site report" 2>/dev/null || true
+          for n in $(gh issue list --label weekly-report --state open --json number -q '.[].number'); do
+            gh issue close "$n" --reason completed >/dev/null || true
+          done
+          gh issue create --title "$(cat /tmp/report_subject.txt)" --body-file /tmp/report_public.md --label weekly-report --assignee "${{ github.repository_owner }}"
