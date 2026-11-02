@@ -86,8 +86,9 @@ def fetch(today):
             print("warn GA", name, e, file=sys.stderr)
 
     if pid:
-        ga_part("kpi", lambda: (_ga(token, pid, start, end, (), KPI, limit=1) or [{}])[0])
-        ga_part("kpi_prev", lambda: (_ga(token, pid, pstart, pend, (), KPI, limit=1) or [{}])[0])
+        zero = {m: 0.0 for m in KPI}
+        ga_part("kpi", lambda: (_ga(token, pid, start, end, (), KPI, limit=1) or [zero])[0])
+        ga_part("kpi_prev", lambda: (_ga(token, pid, pstart, pend, (), KPI, limit=1) or [zero])[0])
         ga_part("daily", lambda: _ga(token, pid, pstart, end, ("date",), ("screenPageViews", "sessions"), order="date", limit=20))
         ga_part("countries", lambda: _ga(token, pid, start, end, ("country",), ("screenPageViews", "sessions", "totalUsers"), order="screenPageViews", limit=12))
         ga_part("channels", lambda: _ga(token, pid, start, end, ("sessionDefaultChannelGroup",), ("sessions", "screenPageViews"), order="sessions", limit=8))

@@ -309,7 +309,7 @@ import analytics, pdf_report
 ga = analytics.sample(TODAY) if os.environ.get("REPORT_SAMPLE") else safe(lambda: analytics.fetch(TODAY), None)
 k = (ga or {}).get("kpi") or {}
 # Status only (no numbers): the repo is public, so run logs are public too.
-print("::notice::Google Analytics " + ("connected" if k else "NOT connected") + ", Search Console " + ("connected" if (ga or {}).get("gsc") else "NOT connected"))
+print("::notice::Google Analytics " + (("connected" + (" but it returned 0 views for the last 7 days" if not k.get("screenPageViews") else "")) if k else "NOT connected") + ", Search Console " + ("connected" if (ga or {}).get("gsc") else "NOT connected"))
 for err in (ga or {}).get("errors", []):
     print("::warning::" + err.replace("\n", " ")[:300])
 if k:
