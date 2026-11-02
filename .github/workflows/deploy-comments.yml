@@ -71,9 +71,8 @@ jobs:
           SUB=$(curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const j=JSON.parse(s);process.stdout.write((j.result&&j.result.subdomain)||"")})')
           if [ -z "$SUB" ]; then echo "::error::No workers.dev subdomain. Open Workers & Pages in the Cloudflare dashboard once to choose one, then run this again."; exit 1; fi
           URL="https://apex-comments.$SUB.workers.dev"
-          echo "Comments service: $URL  (moderation page: $URL/admin)"
           code=$(curl -s -o /dev/null -w "%{http_code}" "$URL/" || true)
-          echo "Health check HTTP $code"
+          echo "::notice::Comments service $URL (admin page $URL/admin) answered HTTP $code"
           echo "$URL" > source/comments-endpoint.txt
           git checkout -- source/comments/wrangler.toml
           if ! git diff --quiet -- source/comments-endpoint.txt || [ -n "$(git ls-files --others --exclude-standard source/comments-endpoint.txt)" ]; then
@@ -81,8 +80,8 @@ jobs:
             git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
             git add source/comments-endpoint.txt
             git commit -m "Turn on blog comments ($URL)"
-            git pull --rebase
-            git push
+            echo "::notice::Changed files before push: $(git status --porcelain | tr '\n' ' ')"
+            for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done || { echo "::error::Could not push the comments address"; exit 1; }
           else
             echo "Comments address unchanged."
           fi
