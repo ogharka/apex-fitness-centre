@@ -1,0 +1,70 @@
+name: Weekly site report
+
+# Runs every Sunday at 8:37 AM Nepal time (02:52 UTC). No Claude needed.
+on:
+  schedule:
+    - cron: "52 2 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build tools
+        run: pip install "pillow>=10,<12" "markdown>=3.5,<4" "fonttools>=4.40,<5"
+
+      - name: Write the report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        working-directory: /tmp
+        run: python3 "$GITHUB_WORKSPACE/.github/scripts/weekly_report.py"
+
+      - name: Post the report as an issue (GitHub emails it to you)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create weekly-report --color 0E8A16 --description "Automatic weekly site report" 2>/dev/null || true
+          # Close last week's report so only the newest stays open
+          for n in $(gh issue list --label weekly-report --state open --json number -q '.[].number'); do
+            gh issue close "$n" --reason completed >/dev/null || true
+          done
+          gh issue create --title "$(cat /tmp/report_subject.txt)" --body-file /tmp/report.md --label weekly-report --assignee "${{ github.repository_owner }}"
+
+      - name: Also send it to Gmail (only if the Gmail secrets are added)
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REPORT_TO: ${{ secrets.REPORT_TO }}
+        run: |
+          if [ -z "$GMAIL_USER" ] || [ -z "$GMAIL_APP_PASSWORD" ]; then
+            echo "Gmail secrets not set: the report was posted as a GitHub issue only."
+            exit 0
+          fi
+          python3 - <<'EOF'
+          import os, smtplib
+          from email.message import EmailMessage
+          user = os.environ["GMAIL_USER"]
+          to = os.environ.get("REPORT_TO") or user
+          m = EmailMessage()
+          m["Subject"] = open("/tmp/report_subject.txt").read().strip()
+          m["From"] = f"Apex weekly report <{user}>"
+          m["To"] = to
+          m.set_content(open("/tmp/report.md").read())
+          m.add_alternative(open("/tmp/report.html").read(), subtype="html")
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
+              s.login(user, os.environ["GMAIL_APP_PASSWORD"].replace(" ", ""))
+              s.send_message(m)
+          print("Emailed to", to)
+          EOF
