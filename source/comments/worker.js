@@ -57,9 +57,9 @@ async function submit(req, env) {
   const since = new Date(Date.now() - 10 * 60 * 1000).toISOString();
   const recent = await env.DB.prepare("SELECT COUNT(*) AS n FROM comments WHERE ip_hash = ? AND created_at > ?").bind(ipHash, since).first();
   if (recent && recent.n >= 3) return json({ error: "Too many comments in a short time. Please try again later." }, 429, cors(req));
-  await env.DB.prepare("INSERT INTO comments (post, name, body, created_at, approved, owner, ip_hash) VALUES (?, ?, ?, ?, 0, 0, ?)")
+  await env.DB.prepare("INSERT INTO comments (post, name, body, created_at, approved, owner, ip_hash) VALUES (?, ?, ?, ?, 1, 0, ?)")
     .bind(post, name, body, new Date().toISOString(), ipHash).run();
-  return json({ ok: true, pending: true }, 200, cors(req));
+  return json({ ok: true, pending: false }, 200, cors(req));
 }
 
 function authed(req, env) {
@@ -112,19 +112,19 @@ textarea,input{width:100%;font:inherit;padding:10px;border:1px solid #c9c8c4;bor
 #login{max-width:380px;margin:60px auto;background:#fff;border:1px solid var(--ln);border-radius:12px;padding:24px}.empty{color:var(--mut)}
 </style></head><body><header><div><b>APEX</b> · Blog comments</div><div id="count"></div></header><main>
 <form id="login" hidden><h2>Comments admin</h2><p class="empty">Enter the admin password you saved in GitHub (COMMENTS_ADMIN_KEY).</p><input id="key" type="password" autocomplete="current-password" placeholder="Admin password"><p><button class="btn ap" type="submit">Open</button></p><p id="err" class="del"></p></form>
-<div id="app" hidden><div class="tabs"><button data-s="pending" class="on">Waiting for approval</button><button data-s="approved">Published</button><button id="out" type="button">Log out</button></div><div id="list"></div></div>
+<div id="app" hidden><div class="tabs"><button data-s="approved" class="on">Published</button><button data-s="pending">Waiting for approval</button><button id="out" type="button">Log out</button></div><div id="list"></div></div>
 </main><script>
-var K=localStorage.getItem('apexCommentsKey')||'',S='pending',site='${SITE}';
+var K=localStorage.getItem('apexCommentsKey')||'',S='approved',site='${SITE}';
 function api(p,o){o=o||{};o.headers=Object.assign({'authorization':'Bearer '+K,'content-type':'application/json'},o.headers||{});return fetch(p,o).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.error||'Error');return j})})}
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
 function load(){api('/api/admin/comments?status='+S).then(function(j){document.getElementById('login').hidden=true;document.getElementById('app').hidden=false;
-document.getElementById('count').textContent=j.pending+' waiting';var L=document.getElementById('list');L.innerHTML='';
+document.getElementById('count').textContent=j.pending?j.pending+' waiting':'';var L=document.getElementById('list');L.innerHTML='';
 if(!j.comments.length){L.appendChild(el('p','empty',S==='pending'?'No comments waiting. Nice.':'No published comments yet.'));return}
 j.comments.forEach(function(c){var d=el('div','c'+(c.owner?' own':''));var m=el('div','meta');m.appendChild(el('span','who',c.name));
 m.appendChild(document.createTextNode(' · '+new Date(c.created_at).toLocaleString()+' · '));var a=el('a',null,c.post);a.href=site+'/blog/'+c.post+'/#comments';a.target='_blank';m.appendChild(a);
 d.appendChild(m);d.appendChild(el('p','body',c.body));var r=el('div','row');
 if(S==='pending'){var b1=el('button','btn ap','Approve');b1.onclick=function(){api('/api/admin/approve',{method:'POST',body:JSON.stringify({id:c.id})}).then(load)};r.appendChild(b1)}
-if(!c.owner){var b2=el('button','btn','Reply as Apex');b2.onclick=function(){var t=el('textarea');t.placeholder='Your reply (it is published straight away, and the comment is approved too)';var s=el('button','btn ap','Send reply');
+if(!c.owner){var b2=el('button','btn','Reply as Apex');b2.onclick=function(){var t=el('textarea');t.placeholder='Your reply (published straight away)';var s=el('button','btn ap','Send reply');
 s.onclick=function(){if(!t.value.trim())return;api('/api/admin/reply',{method:'POST',body:JSON.stringify({parent_id:c.id,body:t.value})}).then(load).catch(function(e){alert(e.message)})};d.appendChild(t);d.appendChild(s);b2.remove()};r.appendChild(b2)}
 var b3=el('button','btn del','Delete');b3.onclick=function(){if(confirm('Delete this comment for good?'))api('/api/admin/delete',{method:'POST',body:JSON.stringify({id:c.id})}).then(load)};r.appendChild(b3);
 d.appendChild(r);L.appendChild(d)})}).catch(function(e){document.getElementById('app').hidden=true;document.getElementById('login').hidden=false;if(K)document.getElementById('err').textContent=e.message})}

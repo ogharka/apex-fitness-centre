@@ -165,7 +165,7 @@ def comments_section(slug):
             '<label for="cm-name">Your name</label><input id="cm-name" name="name" maxlength="60" autocomplete="name" required>'
             '<label for="cm-body">Your comment or question</label><textarea id="cm-body" name="body" maxlength="1500" rows="4" required></textarea>'
             '<div class="cm-hp" aria-hidden="true"><label for="cm-web">Leave this empty</label><input id="cm-web" name="website" tabindex="-1" autocomplete="off"></div>'
-            '<div class="cm-row"><button class="btn" type="submit">Post comment</button><span class="cm-note">Comments are checked by the Apex team before they appear. Please don\'t share private health details.</span></div>'
+            '<div class="cm-row"><button class="btn" type="submit">Post comment</button><span class="cm-note">Please be kind. The Apex team removes spam and abusive comments. Don\'t share private health details.</span></div>'
             '<p class="cm-msg" role="status" aria-live="polite"></p></form>'
             '<div class="cm-list"><p class="cm-empty">Loading comments…</p></div>'
             '<noscript><p class="cm-empty">Turn on JavaScript to read and post comments.</p></noscript></section>')
