@@ -154,6 +154,7 @@ RULES = [  # applied in order, best first
 ]
 # Every bundle discount must stay within the site banner "Bundles save Rs. 300 to Rs. 1,000"
 assert max(r["off"] for r in RULES) == 1000
+assert min(r["off"] for r in RULES) == 300
 def save_for(slugs):
     s = set(slugs)
     for rl in RULES:
@@ -660,6 +661,15 @@ def build_gym():
         assert a in s, ("gym source changed, fix not applied:", a[:70]); s = s.replace(a, b)
     # H1: the two lines are separate spans, so text readers saw "Earn yourpeak". Add a real space.
     must('<span class="l"><span>Earn your</span></span><span class="l">', '<span class="l"><span>Earn your</span></span> <span class="l">')
+    # One H1 with the location keyword, shown as a small eyebrow line. The big "Earn your peak." tagline
+    # keeps its spans, look and animation but is no longer a heading (its CSS moves from .hero h1 to .hero .tagline).
+    must('<h1><span class="l"><span>Earn your</span></span> <span class="l">',
+         '<h1 class="loc">Gym in Urlabari, Morang</h1>\n      <div class="tagline"><span class="l"><span>Earn your</span></span> <span class="l">')
+    must('<span class="r">peak.</span></span></span></h1>', '<span class="r">peak.</span></span></span></div>')
+    assert s.count('.hero h1') == 11, ("gym hero CSS changed", s.count('.hero h1'))
+    s = s.replace('.hero h1', '.hero .tagline')
+    must('h1,h2,h3{font-family:var(--display);text-transform:uppercase;margin:0;text-wrap:balance;line-height:.92}',
+         'h1,h2,h3,.tagline{font-family:var(--display);text-transform:uppercase;margin:0;text-wrap:balance;line-height:.92}')
     # Pinterest button next to Facebook in the gym page's social links
     _fb = '<span class="ar">→</span></a>'
     _i = s.find('href="https://www.facebook.com/apexfitcentre"')
@@ -1098,8 +1108,8 @@ from guides import GUIDES
 # Guides whose topic now lives in a fuller blog post (see MERGED near the end); hidden from guide lists.
 MERGED_GUIDE_SLUGS = {"how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"}
 _GBY = {g["slug"]: g for g in GUIDES}
-GUIDE_FOR_CAT = {"creatine": ["creatine-price-in-nepal", "how-to-take-creatine", "how-to-spot-fake-supplements-in-nepal"],
-                 "protein": ["whey-protein-price-in-nepal", "how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"],
+GUIDE_FOR_CAT = {"creatine": ["creatine-price-in-nepal", "creatine-or-whey-first", "how-to-take-creatine", "how-to-spot-fake-supplements-in-nepal"],
+                 "protein": ["whey-protein-price-in-nepal", "creatine-or-whey-first", "how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"],
                  "pre-workout": ["how-to-choose-a-pre-workout-in-nepal", "supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal"]}
 _GDEF = ["how-to-spot-fake-supplements-in-nepal", "supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal"]
 
@@ -1136,7 +1146,7 @@ def build_guides():
             rows = "".join(f'<tr><td><a href="../../{p["url"]}">{e(p["full"])}</a></td><td>{e(p["size"])}</td><td>{money(p["price"])}</td><td>{_unit(p)}</td></tr>' for p in ps)
             tbl = f'<section class="prose"><h2>Our current prices</h2><div class="tw"><table class="cmp"><thead><tr><th>Product</th><th>Pack</th><th>Price</th><th>Unit price</th></tr></thead><tbody>{rows}</tbody></table></div><p class="fine">Prices checked {today_}. Free delivery all over Nepal. <a class="tl" href="../../{g["table"]}/">See all {e(g["table"].replace("-", " "))} products</a>.</p></section>'
         rel = "".join(f'<a class="gcard" href="../{x}/"><b>{e(_GBY[x]["h1"])}</b><span>Read the guide</span></a>' for x in g["rel"])
-        art = {"@type": "Article", "headline": g["h1"], "description": g["desc"], "datePublished": "2026-10-14", "dateModified": today_,
+        art = {"@type": "Article", "headline": g["h1"], "description": g["desc"], "datePublished": g.get("published", "2026-10-14"), "dateModified": today_,
                "author": {"@id": BASE + "/#org"}, "publisher": {"@id": BASE + "/#org"}, "mainEntityOfPage": BASE + "/" + path, "image": BASE + "/assets/og-image.jpg"}
         j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), art, faq_ld(g["faq"])]})
         body = f"""<body data-root="../../">
