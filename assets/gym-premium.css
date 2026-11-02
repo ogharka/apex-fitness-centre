@@ -4,7 +4,7 @@
   --display:'Archivo','Helvetica Neue',Arial,sans-serif;--serif:'Archivo','Helvetica Neue',Arial,sans-serif;
   --body:'Instrument Sans',system-ui,-apple-system,sans-serif;--label:'Instrument Sans',system-ui,sans-serif}
 body{background:#fff;color:var(--fg);font-family:var(--body)}
-h1,h2,h3{font-family:var(--display);font-weight:800;font-stretch:112%;font-variation-settings:"wdth" 112;letter-spacing:-.015em;text-transform:none}
+h1,h2,h3,.tagline{font-family:var(--display);font-weight:800;font-stretch:112%;font-variation-settings:"wdth" 112;letter-spacing:-.015em;text-transform:none}
 .label{text-transform:none;letter-spacing:.01em;font:600 13.5px/1.2 var(--body);color:var(--red2)}
 .label::before{display:none}
 .btn{border-radius:10px;text-transform:none;letter-spacing:0;font:600 15.5px/1.1 var(--body)}
@@ -14,8 +14,8 @@ h1,h2,h3{font-family:var(--display);font-weight:800;font-stretch:112%;font-varia
 .logo{display:inline-flex;align-items:center;gap:12px}
 /* the photo hero stays dark and cinematic, so text on it stays white */
 .hero{background:#141416;color:#fff}
-.hero h1{color:#fff;font-weight:850;font-stretch:118%;font-variation-settings:"wdth" 118;letter-spacing:-.03em;text-transform:none}
-.hero h1 .r,.hero h1 .o{-webkit-text-fill-color:currentColor;background:none;color:#fff}
+.hero .tagline{color:#fff;font-weight:850;font-stretch:118%;font-variation-settings:"wdth" 118;letter-spacing:-.03em;text-transform:none}
+.hero .tagline .r,.hero .tagline .o{-webkit-text-fill-color:currentColor;background:none;color:#fff}
 .hero .lead,.hero-meta,.hero-meta small,.hero p{color:rgba(255,255,255,.82)}
 .hero .btn.line{color:#fff;border-color:rgba(255,255,255,.5)}
 nav:not(.solid) ul a,nav:not(.solid) .logo{color:#fff}
@@ -57,3 +57,6 @@ footer .fsocial a.fs-fb{background:#1877f2}
 footer .fsocial a.fs-pi{background:#e60023}
 footer .fsocial a.fs-wa{background:#15803d}
 footer .fsocial a:hover{filter:brightness(.9)}
+/* Location H1 on the gym hero: a small eyebrow line above the big tagline */
+.hero h1.loc{display:block;margin:22px 0 0;font:700 14px/1.2 var(--body);font-stretch:100%;font-variation-settings:normal;letter-spacing:.16em;text-transform:uppercase;color:#ff4d5e;text-wrap:nowrap}
+.hero h1.loc + .tagline{margin-top:14px}
