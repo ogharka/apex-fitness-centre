@@ -308,6 +308,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import analytics, pdf_report
 ga = analytics.sample(TODAY) if os.environ.get("REPORT_SAMPLE") else safe(lambda: analytics.fetch(TODAY), None)
 k = (ga or {}).get("kpi") or {}
+# Status only (no numbers): the repo is public, so run logs are public too.
+print("::notice::Google Analytics " + ("connected" if k else "NOT connected") + ", Search Console " + ("connected" if (ga or {}).get("gsc") else "NOT connected"))
+for err in (ga or {}).get("errors", []):
+    print("::warning::" + err.replace("\n", " ")[:300])
 if k:
     kp = ga.get("kpi_prev") or {}
     top_c = ", ".join(f"{r['country']} {int(r['screenPageViews'])}" for r in (ga.get("countries") or [])[:5])
