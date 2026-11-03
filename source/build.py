@@ -13,7 +13,7 @@ SITE = "Apex Fitness Centre"
 GA_ID = "G-F70PH8VMHW"
 # GOOGLE ADSENSE: paste your publisher ID when AdSense gives it to you, e.g. "ca-pub-1234567890123456".
 # Leave it empty until then. When set, every page gets the AdSense Auto ads code and /ads.txt is created.
-ADSENSE_CLIENT = ""
+ADSENSE_CLIENT = "ca-pub-2527858242342871"
 # Ads only on content pages, so they never distract buyers on shop and product pages.
 ADS_ON = ("blog/", "guides/", "calculators/", "food/")
 # EMAIL NEWSLETTER: create a free form at Kit (kit.com) or Mailchimp, then paste the form's "action" URL here,
@@ -216,8 +216,13 @@ def gsc_tag():
     return t
 
 def adsense_tag(path=""):
-    if not ADSENSE_CLIENT or not path.startswith(ADS_ON): return ""
-    return f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>\n<meta name="google-adsense-account" content="{ADSENSE_CLIENT}">\n'
+    """The account meta tag goes on every page (AdSense checks the homepage to verify the site).
+    The ad script itself only loads on content pages, so shop and product pages stay ad-free."""
+    if not ADSENSE_CLIENT: return ""
+    t = f'<meta name="google-adsense-account" content="{ADSENSE_CLIENT}">\n'
+    if path.startswith(ADS_ON):
+        t = f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>\n' + t
+    return t
 
 def ga_tag():
     """GA4 tag plus a 'whatsapp_order' event on every click of a wa.me link.
