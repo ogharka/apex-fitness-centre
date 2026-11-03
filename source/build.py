@@ -63,7 +63,7 @@ PRODUCTS = [
  dict(slug="scitron-volcano-pre-workout", brand="Scitron", name="Scitron Volcano Pre-Workout", size="30 packets", flavour="",
       cat="pre-workout", price=5000, img="scitron-volcano-pre-workout.jpg",
       short="Pre-workout with 30 packets per box, 300 mg caffeine per packet.",
-      title="Scitron Volcano Pre-Workout 30 Packets Price in Nepal",
+      title="Scitron Volcano Pre-Workout Price in Nepal: {price} (30 Packets)",
       desc="Buy Scitron Volcano Pre-Workout (30 packets, 300 mg caffeine each) in Nepal for Rs. 5,000. Free delivery across Nepal. Order on WhatsApp.",
       about=["A pre-workout supplement taken before training to help you start a session with focus and energy. Each box has 30 packets, so it is a month of single-serve packets for daily training.",
              "Each packet contains 300 mg of caffeine, which is a strong dose. Read the label, avoid taking it late in the evening, and do not combine it with other caffeine.",
