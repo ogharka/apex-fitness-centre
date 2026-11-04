@@ -6,9 +6,9 @@
 <!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F70PH8VMHW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F70PH8VMHW');
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
-var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.currency='NPR'}
-gtag('event','whatsapp_order',p)},true);</script>
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.price=v;p.currency='NPR'}
+gtag('event','whatsapp_order_click',p)},true);</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2527858242342871" crossorigin="anonymous"></script>
 <meta name="google-adsense-account" content="ca-pub-2527858242342871">
 <meta name="p:domain_verify" content="67c45828ef91f9681356e1974e5102bc"/>
@@ -34,7 +34,9 @@ gtag('event','whatsapp_order',p)},true);</script>
 <link rel="shortcut icon" href="../../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="../../assets/store.css">
 <link rel="stylesheet" href="../../assets/premium.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apexfitnesscentre.shop/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://apexfitnesscentre.shop/blog/"},{"@type":"ListItem","position":3,"name":"Training","item":"https://apexfitnesscentre.shop/blog/training/"},{"@type":"ListItem","position":4,"name":"Strength Training on Ozempic, Wegovy or Mounjaro: How to Keep Your Muscle","item":"https://apexfitnesscentre.shop/blog/strength-training-on-glp-1/"}]},{"@type":"BlogPosting","headline":"Strength Training on Ozempic, Wegovy or Mounjaro: How to Keep Your Muscle","description":"On a GLP-1 like Ozempic, Wegovy or Mounjaro? Up to half the weight lost can be muscle. A simple strength plan, protein tips and safety advice.","datePublished":"2026-11-02","dateModified":"2026-11-02","author":{"@type":"Person","name":"Suman Limbu","jobTitle":"Owner and trainer, Apex Fitness Centre","url":"https://apexfitnesscentre.shop/about/#suman-limbu","worksFor":{"@id":"https://apexfitnesscentre.shop/#org"},"sameAs":["https://www.facebook.com/Phyaak/"]},"publisher":{"@id":"https://apexfitnesscentre.shop/#org"},"mainEntityOfPage":"https://apexfitnesscentre.shop/blog/strength-training-on-glp-1/","image":"https://apexfitnesscentre.shop/blog/images/cover-strength-training-on-glp-1.jpg","wordCount":1142,"articleSection":"Training"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I really lose muscle on Ozempic or Wegovy?","acceptedAnswer":{"@type":"Answer","text":"You can. Any big calorie deficit can cause muscle loss, and estimates for GLP-1 users suggest 20–50% of the weight lost may be lean mass. Strength training and enough protein help reduce that."}},{"@type":"Question","name":"How often should I strength train on a GLP-1?","acceptedAnswer":{"@type":"Answer","text":"Two to three times a week, working the major muscle groups, with gradual increases in weight over time."}},{"@type":"Question","name":"Is cardio enough on a GLP-1?","acceptedAnswer":{"@type":"Answer","text":"Cardio is great for your heart, but it doesn&rsquo;t protect muscle as well as lifting weights. Do both: daily walking plus 2–3 strength sessions a week."}},{"@type":"Question","name":"Can I build muscle while on a GLP-1?","acceptedAnswer":{"@type":"Answer","text":"Beginners can often gain strength and sometimes muscle even while losing weight, especially with enough protein. The main goal for most people is to keep the muscle they have."}},{"@type":"Question","name":"What if I feel too sick to train?","acceptedAnswer":{"@type":"Answer","text":"Rest on bad days and go lighter during dose changes. Short, easy sessions still count. If side effects stop you from eating or training for long periods, talk to your prescriber."}}]}]}</script>
@@ -202,7 +204,7 @@ gtag('event','whatsapp_order',p)},true);</script>
 <div class="db" id="cartBody"></div>
 <div class="df" id="cartFoot"></div>
 </aside>
-<script src="../../assets/store-data.js"></script>
-<script src="../../assets/store.js"></script>
+<script src="../../assets/store-data.js" defer></script>
+<script src="../../assets/store.js" defer></script>
 <script src="../../assets/comments.js" defer></script>
 </body></html>

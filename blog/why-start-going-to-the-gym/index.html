@@ -6,9 +6,9 @@
 <!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F70PH8VMHW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F70PH8VMHW');
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
-var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.currency='NPR'}
-gtag('event','whatsapp_order',p)},true);</script>
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.price=v;p.currency='NPR'}
+gtag('event','whatsapp_order_click',p)},true);</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2527858242342871" crossorigin="anonymous"></script>
 <meta name="google-adsense-account" content="ca-pub-2527858242342871">
 <meta name="p:domain_verify" content="67c45828ef91f9681356e1974e5102bc"/>
@@ -34,7 +34,9 @@ gtag('event','whatsapp_order',p)},true);</script>
 <link rel="shortcut icon" href="../../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="../../assets/store.css">
 <link rel="stylesheet" href="../../assets/premium.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apexfitnesscentre.shop/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://apexfitnesscentre.shop/blog/"},{"@type":"ListItem","position":3,"name":"Training","item":"https://apexfitnesscentre.shop/blog/training/"},{"@type":"ListItem","position":4,"name":"Why You Should Start Going to the Gym (and How to Take the First Step)","item":"https://apexfitnesscentre.shop/blog/why-start-going-to-the-gym/"}]},{"@type":"BlogPosting","headline":"Why You Should Start Going to the Gym (and How to Take the First Step)","description":"Thinking about joining a gym? The real benefits, what changes in your first 6 months, the fears that stop most people, and how to start this week.","datePublished":"2026-10-30","dateModified":"2026-10-30","author":{"@type":"Person","name":"Suman Limbu","jobTitle":"Owner and trainer, Apex Fitness Centre","url":"https://apexfitnesscentre.shop/about/#suman-limbu","worksFor":{"@id":"https://apexfitnesscentre.shop/#org"},"sameAs":["https://www.facebook.com/Phyaak/"]},"publisher":{"@id":"https://apexfitnesscentre.shop/#org"},"mainEntityOfPage":"https://apexfitnesscentre.shop/blog/why-start-going-to-the-gym/","image":"https://apexfitnesscentre.shop/blog/images/apex-overhead-press-cover.jpg","wordCount":997,"articleSection":"Training"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How often should a beginner go to the gym?","acceptedAnswer":{"@type":"Answer","text":"Three days a week is a great start, with a rest day between sessions. Walk on the other days if you can."}},{"@type":"Question","name":"How long before I see results?","acceptedAnswer":{"@type":"Answer","text":"Most people feel stronger within 2–4 weeks and see visible changes in 8–12 weeks of consistent training and better eating."}},{"@type":"Question","name":"Do I need supplements to start?","acceptedAnswer":{"@type":"Answer","text":"No. Food, training and sleep come first. Supplements are optional extras later."}},{"@type":"Question","name":"Can I join the gym if I have a health condition?","acceptedAnswer":{"@type":"Answer","text":"Usually yes, and exercise often helps. Check with your doctor first if you have heart problems, uncontrolled blood pressure, diabetes on medication or a recent injury, and tell your trainer."}},{"@type":"Question","name":"Is it too late to start at 40 or 50?","acceptedAnswer":{"@type":"Answer","text":"No. People gain strength at every age. Start light and progress steadily."}}]}]}</script>
@@ -148,7 +150,7 @@ gtag('event','whatsapp_order',p)},true);</script>
 <div class="db" id="cartBody"></div>
 <div class="df" id="cartFoot"></div>
 </aside>
-<script src="../../assets/store-data.js"></script>
-<script src="../../assets/store.js"></script>
+<script src="../../assets/store-data.js" defer></script>
+<script src="../../assets/store.js" defer></script>
 <script src="../../assets/comments.js" defer></script>
 </body></html>

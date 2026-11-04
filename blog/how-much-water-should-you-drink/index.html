@@ -6,9 +6,9 @@
 <!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F70PH8VMHW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F70PH8VMHW');
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
-var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.currency='NPR'}
-gtag('event','whatsapp_order',p)},true);</script>
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.price=v;p.currency='NPR'}
+gtag('event','whatsapp_order_click',p)},true);</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2527858242342871" crossorigin="anonymous"></script>
 <meta name="google-adsense-account" content="ca-pub-2527858242342871">
 <meta name="p:domain_verify" content="67c45828ef91f9681356e1974e5102bc"/>
@@ -34,7 +34,9 @@ gtag('event','whatsapp_order',p)},true);</script>
 <link rel="shortcut icon" href="../../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="../../assets/store.css">
 <link rel="stylesheet" href="../../assets/premium.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apexfitnesscentre.shop/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://apexfitnesscentre.shop/blog/"},{"@type":"ListItem","position":3,"name":"Diet","item":"https://apexfitnesscentre.shop/blog/diet/"},{"@type":"ListItem","position":4,"name":"How Much Water Should You Drink a Day (and When You Train)?","item":"https://apexfitnesscentre.shop/blog/how-much-water-should-you-drink/"}]},{"@type":"BlogPosting","headline":"How Much Water Should You Drink a Day (and When You Train)?","description":"How much water you need each day, extra for exercise, signs of dehydration, and tips for Nepal's hot summers and dry winters.","datePublished":"2026-10-29","dateModified":"2026-10-29","author":{"@type":"Organization","name":"Apex Fitness Centre","url":"https://apexfitnesscentre.shop/about/"},"publisher":{"@id":"https://apexfitnesscentre.shop/#org"},"mainEntityOfPage":"https://apexfitnesscentre.shop/blog/how-much-water-should-you-drink/","image":"https://apexfitnesscentre.shop/blog/images/cover-how-much-water-should-you-drink.jpg","wordCount":883,"articleSection":"Diet"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is 3 litres of water a day too much?","acceptedAnswer":{"@type":"Answer","text":"For an active adult, especially in summer, 3 litres of drinks a day is usually fine. Spread it through the day."}},{"@type":"Question","name":"Should I drink water during a workout?","acceptedAnswer":{"@type":"Answer","text":"Yes, sip regularly. You do not need to force huge amounts."}},{"@type":"Question","name":"Does drinking water help muscle growth?","acceptedAnswer":{"@type":"Answer","text":"Being well hydrated helps you train and recover well. It will not build muscle by itself."}},{"@type":"Question","name":"Is it bad to drink water right after eating?","acceptedAnswer":{"@type":"Answer","text":"No. Drinking water with or after meals is fine for healthy people."}},{"@type":"Question","name":"What colour should my urine be?","acceptedAnswer":{"@type":"Answer","text":"Pale yellow, like light lemon juice, usually means you&rsquo;re drinking enough. Dark yellow means drink more. Clear all day can mean you&rsquo;re drinking more than you need."}}]}]}</script>
@@ -186,7 +188,7 @@ gtag('event','whatsapp_order',p)},true);</script>
 <div class="db" id="cartBody"></div>
 <div class="df" id="cartFoot"></div>
 </aside>
-<script src="../../assets/store-data.js"></script>
-<script src="../../assets/store.js"></script>
+<script src="../../assets/store-data.js" defer></script>
+<script src="../../assets/store.js" defer></script>
 <script src="../../assets/comments.js" defer></script>
 </body></html>
