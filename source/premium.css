@@ -309,3 +309,11 @@ footer .fsocial a:hover{filter:brightness(.9)}
 .cm-reply{margin-left:52px}
 @media(max-width:560px){.cm-reply{margin-left:28px}}
 .cm-row .btn{background:#d3132b;color:#fff;border:1px solid #d3132b}.cm-row .btn:hover{background:#a80f22}
+/* <picture> wrappers (WebP with JPG fallback) must not change any layout */
+picture{display:contents}
+/* "How we guarantee it's genuine" box beside the order button */
+.pinfo .auth-buy{margin:18px 0 0}
+.auth-buy ul{margin:8px 0 10px;padding-left:20px}
+.auth-buy li{margin:4px 0}
+.auth-buy .authimg{display:block;width:100%;max-width:360px;height:auto;border-radius:10px;margin:8px 0}
+.auth-buy h2{font-size:20px;line-height:1.25;margin:0 0 6px}

@@ -165,7 +165,8 @@ def wa(msg): return f"https://wa.me/{WA}?text=" + __import__("urllib.parse").par
 def ld(o): return '<script type="application/ld+json">' + json.dumps(o, ensure_ascii=False, separators=(",", ":")) + "</script>"
 
 ORG = {"@type": "Organization", "@id": BASE + "/#org", "name": SITE, "url": BASE + "/", "publishingPrinciples": BASE + "/editorial-policy/", "logo": BASE + "/assets/apex-icon-512.png",
-       "telephone": "+977-9708819605", "sameAs": ["https://www.facebook.com/apexfitcentre", "https://www.pinterest.com/apexfitcentre/"]}
+       "telephone": "+977-9708819605", "sameAs": ["https://www.facebook.com/apexfitcentre", "https://www.pinterest.com/apexfitcentre/"],
+       "address": {"@type": "PostalAddress", "streetAddress": "Urlabari-9, Durgapuri", "addressLocality": "Urlabari", "addressRegion": "Morang", "addressCountry": "NP"}}
 STORE = {"@type": ["SportsActivityLocation", "Store"], "@id": BASE + "/#store", "name": SITE, "url": BASE + "/",
          "image": BASE + "/assets/og-image.jpg", "telephone": "+977-9708819605", "priceRange": "Rs. 1,500 - Rs. 15,000",
          "address": {"@type": "PostalAddress", "streetAddress": "Urlabari-9, Durgapuri", "addressLocality": "Urlabari", "addressRegion": "Morang", "addressCountry": "NP"},
@@ -203,7 +204,9 @@ def head(title, desc, path, depth, image=None, extra="", ptype="website"):
 <link rel="shortcut icon" href="{root}favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="{root}assets/store.css">
 <link rel="stylesheet" href="{root}assets/premium.css">
 {extra}
@@ -225,16 +228,16 @@ def adsense_tag(path=""):
     return t
 
 def ga_tag():
-    """GA4 tag plus a 'whatsapp_order' event on every click of a wa.me link.
+    """GA4 tag plus a 'whatsapp_order_click' event (product name + price) on every click of a wa.me link.
     The product name comes from data-product on the link (or its nearest parent), else the page H1.
     Nothing is added until a real ID is set, so no wasted requests with the placeholder."""
     if not re.fullmatch(r"G-[A-Z0-9]{6,12}", GA_ID) or GA_ID == "G-XXXXXXXXXX": return ""
     return f"""<!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','{GA_ID}');
-document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href*="wa.me/"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
-var v=s&&parseFloat(s.getAttribute('data-value'));var p={{product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'}};if(v){{p.value=v;p.currency='NPR'}}
-gtag('event','whatsapp_order',p)}},true);</script>
+document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+var v=s&&parseFloat(s.getAttribute('data-value'));var p={{product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'}};if(v){{p.value=v;p.price=v;p.currency='NPR'}}
+gtag('event','whatsapp_order_click',p)}},true);</script>
 """
 
 def nav(depth, active=""):
@@ -280,7 +283,7 @@ def footer(depth, pdp=None):
 {mbar}"""
 
 def tail(depth):
-    return f'<script src="{"../"*depth}assets/store-data.js"></script>\n<script src="{"../"*depth}assets/store.js"></script>\n</body></html>\n'
+    return f'<script src="{"../"*depth}assets/store-data.js" defer></script>\n<script src="{"../"*depth}assets/store.js" defer></script>\n</body></html>\n'
 
 def card(p, depth):
     r = "../" * depth
@@ -323,6 +326,28 @@ def stack(name, text, slugs):
     lis = "".join(f'<li><a href="{x["url"]}">{e(x["name"])}</a><span>{money(x["price"])}</span></li>' for x in ps)
     return f'''<div class="stack"><div class="simgs">{imgs}</div><h3>{name}</h3><p>{text}</p><ul>{lis}</ul><div class="stot"><span>Stack price <s>{money(full)}</s></span><b class="price">{money(tot)}</b></div><p class="save">You save {money(off)}</p><button class="btn gold full" type="button" data-bundle="{",".join(slugs)}">Add the stack to cart</button></div>'''
 
+AUTH_DIR = os.path.join(HERE, "images", "authenticity")
+
+def auth_block(p, d):
+    """'How we guarantee it's genuine' box beside the order button. The label photo only appears
+    once source/images/authenticity/<slug>-label.webp exists, so there is never a broken image."""
+    slug = p["slug"]; fn = f"{slug}-label.webp"; fp = os.path.join(AUTH_DIR, fn)
+    note = (f'<!-- PHOTO NEEDED: upload a real photo of the importer label / batch code / QR code for this product as '
+            f'source/images/authenticity/{fn} (WebP, about 800 px wide). It appears here automatically on the next build. -->')
+    img = ""
+    if os.path.exists(fp):
+        from PIL import Image as _I
+        with _I.open(fp) as _im: w, h = _im.size
+        img = (f'<img class="authimg" src="{"../" * d}images/authenticity/{fn}" alt="Importer label and batch code on {e(p["full"])}" '
+               f'width="{w}" height="{h}" loading="lazy" decoding="async">')
+    return (f'<section class="auth auth-buy"><h2>How we guarantee it&rsquo;s genuine</h2><ul>'
+            f'<li>Bought only from authorised importers and distributors, never from unknown resellers.</li>'
+            f'<li>Every pack is sealed, with the batch number and expiry date printed on it.</li>'
+            f'<li>On delivery, check the importer sticker and scan the QR code on the label (if the brand uses one).</li></ul>'
+            f'{note}{img}'
+            f'<p>Want to see it before you pay? Ask on WhatsApp and we will send a photo of the seal and batch number. '
+            f'<a href="{"../" * d}blog/fake-supplements-in-nepal-how-to-spot-them/">How to spot fake supplements in Nepal</a></p></section>')
+
 def marquee():
     # Prices come from PRODUCTS, the same list that builds /shop/, so they cannot drift apart.
     def item(p, dup):
@@ -331,10 +356,10 @@ def marquee():
         return (f'<a href="{p["url"]}"{tab}><img src="assets/{p["img"]}" alt="{alt}" width="160" height="160" loading="lazy">'
                 f'<span>{e(p["brand"])}</span><b class="mqp">{money(p["price"])}</b></a>')
     one = "".join(item(p, False) for p in PRODUCTS)
-    two = "".join(item(p, True) for p in PRODUCTS)
-    # The second copy only exists to make the scroll loop seamless, so screen readers skip it.
+    # Only one copy in the HTML. store.js clones it (hidden from screen readers) for the seamless loop,
+    # so the page carries 13 images instead of 26.
     return (f'<div class="mq" role="region" aria-label="Products we sell"><div class="mqt">'
-            f'<div class="mqg">{one}</div><div class="mqg" aria-hidden="true">{two}</div></div></div>')
+            f'<div class="mqg">{one}</div></div></div>')
 
 def build_home():
     d = 0
@@ -584,7 +609,7 @@ def build_product(p):
     prod = {"@type": "Product", "@id": BASE + "/" + p["url"] + "#product", "name": p["full"], "image": [BASE + "/assets/" + p["img"]],
             "description": p["desc"], "sku": p["slug"], "brand": {"@type": "Brand", "name": p["brand"]}, "category": c["name"],
             "offers": {"@type": "Offer", "url": BASE + "/" + p["url"], "priceCurrency": "NPR", "price": str(p["price"]),
-                       "availability": "https://schema.org/" + ("OutOfStock" if STOCK.get(p["slug"]) == "out" else "InStock"), "priceValidUntil": f"{__import__('datetime').date.today().year + 1}-12-31", "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "NPR"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "NP"}, "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 1, "unitCode": "DAY"}}}, "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "NP", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/ReturnShippingFees", "description": "Sealed, unopened items only. Opened supplements cannot be returned."}, "itemCondition": "https://schema.org/NewCondition",
+                       "availability": "https://schema.org/" + ("OutOfStock" if STOCK.get(p["slug"]) == "out" else "InStock"), "priceValidUntil": f"{__import__('datetime').date.today().year + 1}-12-31", "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "NPR"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "NP"}, "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY"}}}, "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "NP", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/ReturnShippingFees", "description": "Sealed, unopened items only. Opened supplements cannot be returned."}, "itemCondition": "https://schema.org/NewCondition",
                        "seller": {"@type": "Organization", "name": SITE}}}
     rvs = [x for x in REVIEWS if x["product"] == p["slug"]]
     if rvs:
@@ -603,7 +628,7 @@ def build_product(p):
 <div class="pinfo">
 <span class="pbrand">{e(p['brand'])}</span>
 <h1>{e(p['full'])}</h1>
-<div class="pprice"><span class="price big">{money(p['price'])}</span><span class="tag">Free delivery all over Nepal</span></div>
+<div class="pprice"><span class="price big">{money(p['price'])}</span> <span class="tag">Free delivery all over Nepal</span></div>
 {stock_line(p)}
 <p class="lead">{e(p['short'])}</p>
 <a class="btn wa full order-main" href="{wa(msg)}" target="_blank" rel="noopener" data-product="{e(p['full'])}" data-value="{p['price']}">Order on WhatsApp &ndash; {money(p['price'])}</a>
@@ -612,6 +637,7 @@ def build_product(p):
 <button class="btn line" type="button" id="addBtn" data-add="{p['slug']}">Add to cart</button>
 </div>
 <p class="carthint">Buying more than one item? Add them to your cart, then send the whole order on WhatsApp in one message.</p>
+{auth_block(p, d)}
 <ul class="ticks"><li>Pay by Khalti or bank transfer</li><li>Free delivery all over Nepal</li><li>Returns: sealed, unopened items only. Opened supplements cannot be returned.</li><li>Sold by Apex Fitness Centre, Urlabari</li></ul>
 </div>
 </div>
@@ -619,7 +645,7 @@ def build_product(p):
 <section><h2>About this product</h2>{''.join(f'<p>{e(t)}</p>' for t in p['about'])}</section>
 <section><h2>Product details</h2><table class="facts">{facts}</table></section>
 <section><h2>How to use</h2><p>{e(p['use'])}</p></section>
-<section class="auth"><h2>How to check it is genuine</h2><p>We buy from authorised sellers, not unknown resellers. When your order arrives, check these:</p><ul><li><b>Seal:</b> the inner seal under the lid is intact.</li><li><b>Batch number and dates:</b> printed clearly, and the expiry date is in the future.</li><li><b>Scratch code or QR code:</b> if the brand uses one, check it on the brand's official website or app.</li><li><b>Importer label:</b> the importer's name and address are on the pack.</li></ul><p>Want to see it first? Message us on WhatsApp and we will send a photo of the seal and batch number before you pay. Read our full guide: <a href="{"../" * d}guides/how-to-spot-fake-supplements-in-nepal/">how to spot fake supplements in Nepal</a>.</p></section>
+
 </div>
 <section class="who"><h2 class="h2s">Who it is for</h2><ul class="who-l">{''.join(f'<li>{e(t)}</li>' for t in p['who'])}</ul></section>
 {together(p)}
@@ -1201,6 +1227,8 @@ os.makedirs(OUT + "/assets")
 # ---- SPEED: WebP copies (max 800 px wide) of every JPG, and clean <img> tags ----
 from PIL import Image as _Im
 WEBP = {}  # "name.jpg" (relative to assets) -> (webp name, w, h)
+THUMB = {}  # product "name.jpg" -> 320 px wide WebP
+_PROD_IMGS = {p["img"] for p in PRODUCTS}
 for _root, _dirs, _files in os.walk(SRC):
     for _f in _files:
         if not _f.lower().endswith((".jpg", ".jpeg", ".png")) or _f.startswith("apex-"): continue
@@ -1211,21 +1239,41 @@ for _root, _dirs, _files in os.walk(SRC):
         os.makedirs(os.path.dirname(os.path.join(OUT, "assets", _wn)), exist_ok=True)
         _im.save(os.path.join(OUT, "assets", _wn), "WEBP", quality=80, method=6)
         WEBP[_rel.replace(os.sep, "/")] = (_wn.replace(os.sep, "/"), _im.width, _im.height)
+        if _rel in _PROD_IMGS and _im.width > 320:  # small copy for thumbnails (marquee, cards on small screens)
+            _t = _im.resize((320, round(_im.height * 320 / _im.width)), _Im.LANCZOS)
+            _tn = os.path.splitext(_rel)[0] + "-320.webp"
+            _t.save(os.path.join(OUT, "assets", _tn), "WEBP", quality=80, method=6)
+            THUMB[_rel] = _tn
 
 def _fix_imgs(html_):
     def one(m):
         tag = m.group(0)
         src = re.search(r'src="([^"]*?)assets/([^"]+)"', tag)
+        orig = None
         if src and src.group(2) in WEBP:
-            wn, w, h = WEBP[src.group(2)]
-            tag = tag.replace(src.group(0), f'src="{src.group(1)}assets/{wn}"')
+            key = src.group(2); wn, w, h = WEBP[key]; pre = src.group(1)
+            dw = re.search(r'\swidth="(\d+)"', tag)
+            if key in THUMB and dw and int(dw.group(1)) <= 200:
+                tag = tag.replace(src.group(0), f'src="{pre}assets/{THUMB[key]}"')
+            else:
+                tag = tag.replace(src.group(0), f'src="{pre}assets/{wn}"')
+                if key in THUMB and "srcset=" not in tag:
+                    sizes = "(max-width: 900px) 92vw, 560px" if 'fetchpriority="high"' in tag else "(max-width: 600px) 45vw, 260px"
+                    tag = tag.replace("<img ", f'<img srcset="{pre}assets/{THUMB[key]} 320w, {pre}assets/{wn} {w}w" sizes="{sizes}" ', 1)
             if " width=" not in tag: tag = tag.replace("<img ", f'<img width="{w}" height="{h}" ', 1)
+            if ("/" not in key and key.lower().endswith(".jpg")) or key.startswith("reviews/"):
+                orig = pre + "assets/" + key
         if 'fetchpriority="high"' in tag:
             tag = re.sub(r'\sloading="lazy"', "", tag)
             if "loading=" not in tag: tag = tag.replace("<img ", '<img loading="eager" ', 1)
         elif "loading=" not in tag:
             tag = tag.replace("<img ", '<img loading="lazy" ', 1)
         if "decoding=" not in tag: tag = tag.replace("<img ", '<img decoding="async" ', 1)
+        if orig:  # WebP first, original JPG for the few browsers without WebP
+            ws = re.search(r'\ssrcset="([^"]+)"', tag); sz = re.search(r'\ssizes="([^"]+)"', tag)
+            webp_set = ws.group(1) if ws else re.search(r'src="([^"]+)"', tag).group(1)
+            tag = (f'<picture><source type="image/webp" srcset="{webp_set}"' + (f' sizes="{sz.group(1)}"' if sz else "") + '>'
+                   + re.sub(r'\s(srcset|sizes)="[^"]*"', "", re.sub(r'src="[^"]+"', f'src="{orig}"', tag, 1)) + '</picture>')
         return tag
     html_ = re.sub(r"<img\s[^>]*>", one, html_)
     # CSS backgrounds (gym hero)
@@ -1245,6 +1293,8 @@ for old, new in MERGED.items():
 sitemap[:] = [x for x in sitemap if x[0] not in MERGED]
 for k in list(pages):
     pages[k] = _fix_imgs(pages[k])
+if "#org" not in pages["gym/"]:
+    pages["gym/"] = pages["gym/"].replace("</head>", ld({"@context": "https://schema.org", **ORG}) + "\n</head>", 1)
 # gym hero is a CSS background above the fold: preload it with high priority
 pages["gym/"] = pages["gym/"].replace("</head>", '<link rel="preload" as="image" href="../assets/gym-hero.webp" fetchpriority="high">\n</head>', 1)
 
@@ -1256,15 +1306,41 @@ for f in os.listdir(SRC):
     if f.startswith("team-") or f.startswith("gym-") or f.endswith(".jpg"):
         shutil.copy(os.path.join(SRC, f), OUT + "/assets/" + f)
 shutil.copytree(os.path.join(SRC, "reviews"), OUT + "/assets/reviews", dirs_exist_ok=True)
-shutil.copy(HERE + "/store.css", OUT + "/assets/store.css")
-shutil.copy(HERE + "/store.js", OUT + "/assets/store.js")
-shutil.copy(HERE + "/premium.css", OUT + "/assets/premium.css")
-shutil.copy(HERE + "/gym-premium.css", OUT + "/assets/gym-premium.css")
+if os.path.isdir(AUTH_DIR): shutil.copytree(AUTH_DIR, OUT + "/images/authenticity", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.txt"))
+def _min_css(t):
+    """Safe CSS minify: drop comments and extra whitespace, leave strings untouched."""
+    out, i, n = [], 0, len(t)
+    while i < n:
+        c = t[i]
+        if c in "\"'":
+            j = i + 1
+            while j < n and t[j] != c:
+                j += 2 if t[j] == "\\" else 1
+            out.append(t[i:j + 1]); i = j + 1
+        elif t.startswith("/*", i):
+            j = t.find("*/", i + 2); i = n if j < 0 else j + 2
+        elif c.isspace():
+            while i < n and t[i].isspace(): i += 1
+            prev = out[-1][-1:] if out else ""
+            if prev and prev not in "{};,>:(" and i < n and t[i] not in "{};,>)": out.append(" ")
+        else:
+            out.append(c); i += 1
+    return "".join(out).replace(";}", "}")
+def _min_js(t):
+    """Conservative JS minify: strip indentation and blank lines only (no renaming, no reflow)."""
+    return "\n".join(l.strip() for l in t.splitlines() if l.strip()) + "\n"
+def _copy_min(src, dst):
+    t = open(src, encoding="utf-8").read()
+    open(dst, "w", encoding="utf-8").write(_min_css(t) if src.endswith(".css") else _min_js(t))
+_copy_min(HERE + "/store.css", OUT + "/assets/store.css")
+_copy_min(HERE + "/store.js", OUT + "/assets/store.js")
+_copy_min(HERE + "/premium.css", OUT + "/assets/premium.css")
+_copy_min(HERE + "/gym-premium.css", OUT + "/assets/gym-premium.css")
 shutil.copy(SRC + "/apex-icon-512.png", OUT + "/assets/apex-icon-512.png")
 shutil.copy(SRC + "/apex-icon-180.png", OUT + "/assets/apex-icon-180.png")
 for _fi in ("favicon-32.png", "favicon-48.png"): shutil.copy(SRC + "/" + _fi, OUT + "/assets/" + _fi)
 shutil.copy(SRC + "/favicon.ico", OUT + "/favicon.ico")
-for _f in ("calc-core.js", "calc.js", "calc.css", "tools.js", "comments.js"): shutil.copy(HERE + "/" + _f, OUT + "/assets/" + _f)
+for _f in ("calc-core.js", "calc.js", "calc.css", "tools.js", "comments.js"): _copy_min(HERE + "/" + _f, OUT + "/assets/" + _f)
 # Pinterest pins (1000x1500): only for published posts, so scheduled titles stay private
 os.makedirs(OUT + "/blog/pins", exist_ok=True)
 for _p in POSTS:
