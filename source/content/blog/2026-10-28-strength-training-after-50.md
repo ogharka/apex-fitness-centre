@@ -25,6 +25,8 @@ From around your 30s, you slowly lose muscle every decade if you don't use it. T
 
 The good news: muscle responds to training **at any age**. People in their 60s, 70s and even 80s get stronger when they train regularly.
 
+![An older woman training on the cable machine at Apex Fitness Centre, Urlabari](images/apex-woman-cable-machine-training.jpg)
+
 ## How much exercise do you need after 50?
 
 The [World Health Organization](https://who.int/initiatives/behealthy/physical-activity) recommends, for adults and older adults:
@@ -52,6 +54,8 @@ Focus on movements you use in daily life. Machines are a great place to start be
 | Calf raises | Balance and walking | Hold a wall |
 
 To learn the squat pattern properly, see [how to squat properly](../how-to-squat-properly/).
+
+![An older member doing dumbbell curls next to the cable station at Apex Fitness Centre, Urlabari](images/apex-member-dumbbell-curl-50s.jpg)
 
 ## A safe first week
 

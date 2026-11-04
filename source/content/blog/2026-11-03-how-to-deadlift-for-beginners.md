@@ -17,6 +17,8 @@ The deadlift is a **hinge**: you bend at the hips, not the waist, while your bac
 
 **Practice drill:** Stand about 15 cm in front of a wall. Push your hips back to touch the wall while keeping your back flat and knees slightly bent. When you can do this smoothly 10 times, you understand the movement.
 
+![A member doing a cable pull-through at Apex Fitness Centre, Urlabari: hips pushed back and back flat, the same hip hinge you use in the deadlift](images/apex-member-cable-pull-through.jpg)
+
 ## Best deadlift variations for beginners
 
 1. **Kettlebell or dumbbell deadlift:** weight between your feet. Easiest to learn.

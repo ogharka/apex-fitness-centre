@@ -48,6 +48,8 @@ Train on three non-consecutive days, for example **Sunday, Tuesday, Thursday**. 
 | Dumbbell curl + triceps pushdown | 2 x 12 each |
 | Dead bug or leg raises | 3 x 10 |
 
+![A member doing a dumbbell bench press on a flat bench in front of the dumbbell rack at Apex Fitness Centre, Urlabari](images/apex-member-dumbbell-bench-press-flat.jpg)
+
 **Week example:** Sun A, Tue B, Thu A. Next week: Sun B, Tue A, Thu B.
 
 Rest **60 to 90 seconds** between sets. Each session takes about **45 to 60 minutes**.

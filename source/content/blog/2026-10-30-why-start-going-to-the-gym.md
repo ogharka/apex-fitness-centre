@@ -39,6 +39,8 @@ Lifting weights while eating well helps you lose fat and keep, or build, muscle.
 
 Showing up three times a week, even on cold mornings, teaches you that you can keep a promise to yourself. That confidence follows you to work, study and family life.
 
+![A member in a headband getting ready to train at Apex Fitness Centre, Urlabari](images/apex-member-headband-before-workout.jpg)
+
 ## What changes in your first 6 months
 
 ![What changes when you start the gym: week 1 sore but proud, month 1 stronger every week, month 3 people notice, month 6 a new normal](images/first-3-months-gym-timeline.jpg)
@@ -50,6 +52,8 @@ One of our members, **Sewak Bhujel, went from 136 kg to 85 kg** after joining Ap
 ### "Everyone will look at me."
 
 Most people in a gym are busy with their own workout, headphones on, counting their reps. And everyone you see lifting heavy was once a beginner too.
+
+![A smiling member in a blue t-shirt at Apex Fitness Centre, Urlabari](images/apex-member-smiling-blue-tee.jpg)
 
 ### "I don't know what to do."
 

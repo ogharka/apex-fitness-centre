@@ -36,6 +36,8 @@ Below are **two full-day meal plans**, one non-veg and one vegetarian, each with
 
 **Swaps:** fish or buff instead of chicken; egg bhurji instead of boiled eggs; a whey shake (about 20 to 25 g protein per scoop, check your label) instead of milk after the gym.
 
+![A smiling member lifting a heavy dumbbell at Apex Fitness Centre, Urlabari](images/apex-member-heavy-dumbbell-smiling.jpg)
+
 ## Plan 2: Vegetarian (about 125 g protein)
 
 | Time | Meal | Protein (approx.) |

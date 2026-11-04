@@ -84,6 +84,8 @@ Cardio alone won't recomp you. **Resistance training is what tells your body to 
 - Do **about 10–20 hard sets per muscle group per week**, mostly in the 6–15 rep range, finishing each set with 1–3 reps left in the tank.
 - **Progressive overload is the engine.** Add a little weight or a rep or two over time. Get your form right first with [how to squat properly](../how-to-squat-properly/) and [how to bench press safely](../how-to-bench-press-safely/).
 
+![A member lifting a heavy barbell bench press at Apex Fitness Centre, Urlabari: lifting challenging weights is what keeps and builds muscle while you lose fat](images/apex-member-barbell-bench-press-heavy.jpg)
+
 ### 4. Cardio: helpful, not the main event
 
 Walking is the best "extra" for recomp. Aim for **7,000–10,000 steps a day**, or add 2–3 sessions of [Zone 2 cardio](../zone-2-training/). Too much hard cardio can eat into your recovery for lifting.
