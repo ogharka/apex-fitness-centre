@@ -133,7 +133,7 @@ def _postcard(p, r):
 # `author: suman-limbu` (the key) in a post's front matter, and optionally `reviewed_by: <key>`.
 AUTHORS = {
     "suman-limbu": {"name": "Suman Limbu", "job": "Owner and trainer, Apex Fitness Centre",
-                    "bio": "Suman runs Apex Fitness Centre in Urlabari, Morang. With more than 2 years of studying and coaching fitness, he has helped over 100 members, especially beginners, people losing weight and women starting strength training. His motto: \u201cFitness is a journey.\u201d",
+                    "bio": "Suman runs Apex Fitness Centre in Urlabari, Morang. Before opening the gym he played football, and he kept training through his years working abroad. Training has been part of his life ever since, and he keeps studying fitness and nutrition research. In more than 2 years of coaching at the gym he has helped over 100 members, especially beginners, people losing weight and women starting strength training. His motto: \u201cFitness is a journey.\u201d",
                     "same": ["https://www.facebook.com/Phyaak/"], "photo": "team-suman-limbu.jpg"},
     # "suman-limbu": {"name": "Suman Limbu", "job": "Morning trainer, Apex Fitness Centre",
     #                 "bio": "…years training members, certifications…", "photo": "team-suman-limbu.jpg"},
@@ -356,7 +356,7 @@ def build_info_pages():
 <h2>Visit or contact us</h2>
 <p>Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal<br>WhatsApp and phone: <a href="https://wa.me/{WA}" target="_blank" rel="noopener">9708819605</a><br>Facebook: <a href="https://www.facebook.com/apexfitcentre" target="_blank" rel="noopener">apexfitcentre</a></p>
 <h2 id="suman-limbu">Who writes our training guides</h2>
-<p><b>Suman Limbu</b>, owner and trainer at Apex Fitness Centre. Suman has spent more than 2 years studying and coaching fitness and has helped over 100 members, especially beginners, people losing weight and women starting strength training. His motto: &ldquo;Fitness is a journey.&rdquo; <a href="https://www.facebook.com/Phyaak/" target="_blank" rel="noopener">Suman on Facebook</a>.</p>
+<p><b>Suman Limbu</b>, owner and trainer at Apex Fitness Centre. Before opening the gym he played football and kept training through his years working abroad. In more than 2 years of coaching at the gym he has helped over 100 members, especially beginners, people losing weight and women starting strength training. His motto: &ldquo;Fitness is a journey.&rdquo; <a href="https://www.facebook.com/Phyaak/" target="_blank" rel="noopener">Suman on Facebook</a>.</p>
 <p>See <a href="../gym/">the gym, plans and team</a>.</p>""")
     _simple("contact/", "Contact Apex Fitness Centre | WhatsApp 9708819605", "Contact Apex Fitness Centre in Urlabari, Morang: WhatsApp or call 9708819605. Open 4:30 AM to 8:30 PM, Sunday to Friday.", "Contact us", f"""
 <p>The fastest way to reach us is WhatsApp. We reply from the gym during opening hours.</p>
