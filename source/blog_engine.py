@@ -54,6 +54,8 @@ TOPIC_HUB = {
 </section>""",
  "Trekking": """<section class="abody" style="max-width:760px;margin:8px 0 40px">
 <h2>How fit do you need to be for a trek in Nepal?</h2>
+<figure style="margin:0 0 24px"><img src="../../assets/suman-limbu-trek.webp" alt="Suman Limbu with a trekking pole at the gate on the trail to Pathibhara temple, Taplejung" width="720" height="960" loading="lazy" style="width:100%;max-width:420px;height:auto;border-radius:16px"><figcaption class="fine">Suman Limbu on the trek to Pathibhara Devi temple, Taplejung.</figcaption></figure>
+
 <p>Most popular treks in Nepal do not need climbing skills, but they do need legs and lungs that can handle 5 to 7 hours of walking a day, many days in a row, with long climbs and longer descents. The people who struggle are rarely the ones who lack strength. They are the ones who never trained for hours on their feet, or who go up too fast.</p>
 <h2>Pick your trek, then your plan</h2>
 <ul>
@@ -373,6 +375,7 @@ def build_author_pages(posts):
 <div class="abody">{pic}<p>{e(a["bio"])}</p>
 <p>Suman writes or checks every article on this blog against the sources linked in it, and updates articles when the facts change. How we work: <a href="../../editorial-policy/">editorial policy</a>. Where he trains members: <a href="../../gym/">Apex Fitness Centre, Urlabari</a>.</p>
 {('<p>' + links + '</p>') if links else ''}
+<figure style="margin:8px 0 24px"><img src="../../assets/suman-limbu-trek.webp" alt="Suman Limbu on the trek to Pathibhara, Taplejung" width="720" height="960" loading="lazy" style="width:100%;max-width:360px;height:auto;border-radius:16px"><figcaption class="fine">Suman on the winter trek to Pathibhara Devi temple in Taplejung, eastern Nepal.</figcaption></figure>
 <h2>Articles by {e(a["name"])} ({len(mine)})</h2></div></article>
 <div class="bgrid">{"".join(_postcard(x, "../../blog/") for x in mine)}</div>
 </div></main>
