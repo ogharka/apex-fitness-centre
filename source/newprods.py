@@ -103,7 +103,7 @@ NEW = [
       about=["A weightlifting belt gives your core something to brace against on heavy squats, deadlifts and overhead presses.",
              "This Valeo belt has a padded mesh body and a wide hook-and-loop strap that you tighten to fit.",
              "Stocked and sold by Apex Fitness Centre, the gym in Urlabari-9, Morang. Message us on WhatsApp to check the sizes in stock. Delivery is free all over Nepal."],
-      facts=[("Brand","Valeo"),("Product","Weightlifting belt"),("Body","Padded mesh"),("Closure","Hook-and-loop strap"),("Price","Rs. 1,500")],
+      facts=[("Brand","Valeo"),("Product","Weightlifting belt"),("Body","Padded mesh"),("Closure","Hook-and-loop strap"),("Sizes","[SIZES: S/M/L/XL? confirm]"),("Price","Rs. 1,500")],
       use="Wear it snug around your waist, over the navel, for heavy sets only, and take it off between lifts so your core still gets trained. A belt does not replace good technique. Check with a doctor if you have back problems.",
       who=["Lifters doing heavy squats and deadlifts","Members who want back and core support under load","Anyone who wants a light, breathable mesh belt"],
       pair="bigman-forza-protein-2kg"),
