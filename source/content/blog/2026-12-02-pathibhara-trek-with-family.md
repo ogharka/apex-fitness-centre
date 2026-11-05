@@ -97,9 +97,23 @@ Training for a longer trek after this? See our [trek training plan for flat coun
 - Torch or headlamp
 - Basic first aid and any regular medicines
 
-## Food for the day
+## Food for the day: our biggest lesson
 
-The walk is short but steep and cold, so everyone burns more energy than usual. Eat a proper breakfast before you start and snack at every stop. For ideas, see [what to eat on a Nepal trek](../what-to-eat-on-nepal-trek/), and use the [trekking calorie calculator](../../calculators/trekking-calorie-calculator/) if you want a number.
+**We carried too little food.** It is easy to think a short walk does not need much, but the climb is steep and cold, and everyone burns more energy than usual. On top of that, appetite can drop on the way up, so people do not want a full meal even when they need the energy. Next time we will carry much more, and mostly quick-energy food that is easy to eat in a few bites.
+
+**Quick-energy foods worth packing:**
+
+| Food | Why it works on the walk |
+|---|---|
+| Glucose biscuits and crackers | Light, cheap, easy to eat when you are not hungry |
+| Chocolate and energy bars | Fast energy in a small packet |
+| Dried fruit, dates and raisins | Natural sugar, easy for children and elders |
+| Bananas | Quick energy and soft to chew |
+| Nuts and peanuts | Slower energy for the long climb; about 164 kcal in a handful ([peanut calories](../../food/peanuts-calories/)) |
+| Glucose powder or an electrolyte drink | Easy to sip when no one wants to eat |
+| Sweet tea in a flask | Warmth and energy together |
+
+Eat a proper breakfast before you start, and offer everyone a few bites at every stop, even if they say they are not hungry. Children and older parents especially may not notice they are running low until they are very tired. For ideas, see [what to eat on a Nepal trek](../what-to-eat-on-nepal-trek/), and use the [trekking calorie calculator](../../calculators/trekking-calorie-calculator/) if you want a number.
 
 ## Frequently asked questions
 
@@ -114,6 +128,9 @@ Many families walk up with children. Go slowly, keep them warm, watch for signs 
 
 ### Is Pathibhara safe for elderly people?
 It can be, with a slow pace and good preparation, but the height and steep steps are demanding. Older people should check with their doctor first, especially with heart, lung or knee problems.
+
+### What food should I carry to Pathibhara?
+More than you think. Carry quick-energy foods that are easy to eat in a few bites, such as glucose biscuits, chocolate, dried fruit, bananas, nuts and an electrolyte drink, because appetite can drop on the steep, cold climb.
 
 ### When is the best time to visit Pathibhara?
 Mid-February to mid-November, according to the Film Development Board. Winter brings snow and much colder weather.
