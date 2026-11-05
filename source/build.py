@@ -1365,9 +1365,12 @@ today = __import__("datetime").date.today().isoformat()
 _ROOT = os.path.join(HERE, "..")
 try: _old_lm = dict(re.findall(r"<loc>" + re.escape(BASE) + r"/([^<]*)</loc><lastmod>([^<]+)</lastmod>", open(os.path.join(_ROOT, "sitemap.xml")).read()))
 except Exception: _old_lm = {}
+def _main(h):
+    # compare only the page's own content, so a banner or menu change does not mark every page as updated
+    m = re.search(r"<main.*?</main>", h, re.S); return m.group(0) if m else h
 def _lastmod(u):
     try:
-        if os.path.abspath(OUT) != os.path.abspath(_ROOT) and u in _old_lm and open(os.path.join(_ROOT, u, "index.html"), encoding="utf-8").read() == pages[u]:
+        if os.path.abspath(OUT) != os.path.abspath(_ROOT) and u in _old_lm and _main(open(os.path.join(_ROOT, u, "index.html"), encoding="utf-8").read()) == _main(pages[u]):
             return _old_lm[u]
     except Exception: pass
     return today
