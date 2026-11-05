@@ -134,7 +134,7 @@ def _postcard(p, r):
 AUTHORS = {
     "suman-limbu": {"name": "Suman Limbu", "job": "Owner and trainer, Apex Fitness Centre",
                     "bio": "Suman runs Apex Fitness Centre in Urlabari, Morang. With more than 2 years of studying and coaching fitness, he has helped over 100 members, especially beginners, people losing weight and women starting strength training. His motto: \u201cFitness is a journey.\u201d",
-                    "same": ["https://www.facebook.com/Phyaak/"]},
+                    "same": ["https://www.facebook.com/Phyaak/"], "photo": "team-suman-limbu.jpg"},
     # "suman-limbu": {"name": "Suman Limbu", "job": "Morning trainer, Apex Fitness Centre",
     #                 "bio": "…years training members, certifications…", "photo": "team-suman-limbu.jpg"},
 }
@@ -234,7 +234,7 @@ def build_blog():
 {pinbtn}
 {tocb}
 <div class="abody">{p['html']}</div>
-<aside class="author"><b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>{(' or <a href="../../author/' + p['author'] + '/">more about ' + e(AUTHORS[p['author']]['name']) + '</a>') if p.get('author') in AUTHORS else ''}.</p></aside>
+<aside class="author">{('<img class="aphoto" src="../../assets/' + AUTHORS[p["author"]]["photo"] + '" alt="' + e(AUTHORS[p["author"]]["name"]) + '" width="64" height="64" loading="lazy" style="width:64px;height:64px">') if AUTHORS.get(p.get("author"), {}).get("photo") else ""}<b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>{(' or <a href="../../author/' + p['author'] + '/">more about ' + e(AUTHORS[p['author']]['name']) + '</a>') if p.get('author') in AUTHORS else ''}.</p></aside>
 {sharebottom}
 {newsletter_box()}
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
@@ -311,7 +311,7 @@ def build_author_pages(posts):
         path = f"author/{key}/"; d = 2; cr = [("Home", ""), ("Blog", "blog/"), (a["name"], path)]
         person = dict(_author_ld(key), description=a["bio"])
         j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "ProfilePage", "mainEntity": person, "url": BASE + "/" + path}]})
-        pic = f'<img class="aphoto" src="../../assets/{a["photo"]}" alt="{e(a["name"])}" width="160" height="160">' if a.get("photo") else ""
+        pic = f'<img class="aphoto" src="../../assets/{a["photo"]}" alt="{e(a["name"])}" width="140" height="140" style="width:140px;height:140px;border-radius:50%;object-fit:cover">' if a.get("photo") else ""
         links = "".join(f'<a href="{u}" target="_blank" rel="noopener me">{"Facebook" if "facebook" in u else u}</a> ' for u in a.get("same", []))
         body = f"""<body data-root="../../">
 {nav(d, "blog")}
