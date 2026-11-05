@@ -1136,10 +1136,10 @@ build_home(); build_shop()
 
 from guides import GUIDES
 # Guides whose topic now lives in a fuller blog post (see MERGED near the end); hidden from guide lists.
-MERGED_GUIDE_SLUGS = {"how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"}
+MERGED_GUIDE_SLUGS = {"how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal", "creatine-or-whey-first"}
 _GBY = {g["slug"]: g for g in GUIDES}
-GUIDE_FOR_CAT = {"creatine": ["creatine-price-in-nepal", "creatine-or-whey-first", "how-to-take-creatine", "how-to-spot-fake-supplements-in-nepal"],
-                 "protein": ["whey-protein-price-in-nepal", "creatine-or-whey-first", "how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"],
+GUIDE_FOR_CAT = {"creatine": ["creatine-price-in-nepal", "creatine-whey-price-nepal", "how-to-take-creatine", "how-to-spot-fake-supplements-in-nepal"],
+                 "protein": ["whey-protein-price-in-nepal", "creatine-whey-price-nepal", "how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"],
                  "pre-workout": ["how-to-choose-a-pre-workout-in-nepal", "supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal"]}
 _GDEF = ["how-to-spot-fake-supplements-in-nepal", "supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal"]
 
@@ -1293,7 +1293,8 @@ def _fix_imgs(html_):
 
 # Guides replaced by fuller blog posts on the same topic: one page per topic, so they don't compete in Google.
 MERGED = {"guides/how-much-protein-do-you-need/": "blog/how-much-protein-do-you-need/",
-          "guides/how-to-spot-fake-supplements-in-nepal/": "blog/fake-supplements-in-nepal-how-to-spot-them/"}
+          "guides/how-to-spot-fake-supplements-in-nepal/": "blog/fake-supplements-in-nepal-how-to-spot-them/",
+          "guides/creatine-or-whey-first/": "blog/creatine-vs-whey-which-first/"}
 for old, new in MERGED.items():
     for k in list(pages):
         pages[k] = pages[k].replace(old, new)

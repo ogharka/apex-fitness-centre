@@ -3,6 +3,7 @@ title: Why Am I Not Losing Weight? 10 Common Reasons (and Fixes)
 seo_title: Why Am I Not Losing Weight? 10 Reasons & Fixes
 description: Eating less but the scale won't move? 10 common reasons weight loss stalls, from sugary tea to water weight, and how to fix each.
 date: 2026-10-27
+updated: 2026-11-05
 category: Weight loss
 author: suman-limbu
 cover_art: scale
@@ -72,6 +73,28 @@ Some conditions, such as an underactive thyroid or PCOS, and some medicines can 
 
 ![Checklist for a weight loss stall: track food for 7 days, cut sugar in tea and cold drinks, protein at every meal, weigh weekly, measure waist, 7,000 steps and 7 hours sleep](images/weight-loss-stall-checklist.jpg)
 
+## Is it a real plateau?
+
+Not every flat week is a plateau. Water, salt, hormones and digestion can hide fat loss for 1 to 2 weeks.
+
+It's probably a **real plateau** if:
+
+- Your **weekly average weight** hasn't changed for 3 weeks or more, and
+- Your **waist measurement** hasn't changed either.
+
+If your waist is shrinking while the scale is stuck, you're still losing fat. Keep going.
+
+## A 2-week plateau-breaking plan
+
+If you've been stuck for 3–4 weeks, try this before making bigger changes:
+
+| Week | What to do |
+|---|---|
+| **Week 1** | Weigh yourself every morning and use the weekly average. Track everything you eat and drink for 7 days, including tea, oil and snacks. Add 2,000 steps to your daily average. |
+| **Week 2** | Remove about 200–300 kcal a day from the easiest place (sugar in tea, fried snacks, second helpings of rice). Keep protein high at every meal. Keep lifting with the same or heavier weights. |
+
+Then compare the weekly averages over the next 2 to 3 weeks. If they still have not moved, look again at the checklist below. If you've been dieting for many months and feel exhausted, a 1–2 week diet break at maintenance may help you restart with more energy.
+
 ## A quick checklist
 
 - [ ] Wrote down my food for 7 days
@@ -98,10 +121,19 @@ With a steady calorie deficit, most people see the scale trend down within 2 to 
 
 First check the basics above. If you are truly consistent for 3 weeks with no change, reduce your portions slightly, for example a little less rice, rather than cutting drastically.
 
+### How long does a weight loss plateau last?
+
+It lasts until you adjust something. With small changes, most people start losing again within 2 to 4 weeks.
+
+### Is a plateau a sign my metabolism is damaged?
+
+No. Your energy needs drop as you get lighter, which is normal and adjustable.
+
 ## Sources
 
 - [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
 - [A new predictive equation for resting energy expenditure in healthy individuals](https://pubmed.ncbi.nlm.nih.gov/2305711/) (Mifflin et al., *American Journal of Clinical Nutrition*, 1990)
 - [Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults](https://pubmed.ncbi.nlm.nih.gov/23019316/) (Willis et al., *Journal of Applied Physiology*, 2012)
+- [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
 
 *General information, not medical advice.*

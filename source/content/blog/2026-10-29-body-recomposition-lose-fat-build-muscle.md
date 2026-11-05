@@ -3,6 +3,7 @@ title: Body Recomposition: How to Lose Fat and Build Muscle at the Same Time
 seo_title: Body Recomposition: Lose Fat & Build Muscle Together
 description: Body recomposition (recomp) means losing fat and building muscle at once. Who it works for, calories, protein, a 3-day training plan and how to track it.
 date: 2026-10-29
+updated: 2026-11-05
 category: Training
 author: suman-limbu
 image: body-recomposition-cover.jpg
@@ -116,6 +117,14 @@ Because fat goes down while muscle goes up, **the scale is a poor judge of recom
 
 Body-fat scales and handheld devices can swing by several percent with water and food, so use them only for rough trends.
 
+## Example: two people, same weight
+
+Two people both weigh 70 kg. One trains with weights 3 times a week and eats enough protein; the other doesn't exercise. The first person will usually look leaner and have a smaller waist, because more of their weight is muscle. That's why the scale alone can't tell you how healthy or fit you are.
+
+## BMI is a rough guide
+
+BMI uses only height and weight. It doesn't tell fat from muscle. A muscular person can have a "high" BMI while being lean. Waist size and how you look and feel tell you more. You can still check yours with our free [BMI calculator](../../calculators/).
+
 ## How long does recomp take?
 
 Recomp is slower than a pure cut or bulk, but the results last. As a rough guide:
@@ -168,9 +177,15 @@ For beginners, returning lifters and people with extra fat, recomp is usually th
 
 You'll usually feel stronger in 4–6 weeks, see changes in photos in 8–12 weeks, and look clearly different in 6–12 months.
 
+### Does muscle weigh more than fat?
+
+A kilo is a kilo, but muscle is denser than fat, so it takes up less space. That's why you can look leaner at the same weight.
+
 ## Sources
 
 - [New advances in body composition assessment and body recomposition](https://www.frontiersin.org/articles/10.3389/fnut.2024.1467406/full) (Frontiers in Nutrition, 2024)
 - [ISSN position stand: protein and exercise](https://pubmed.ncbi.nlm.nih.gov/28642676/) (Jäger et al., 2017)
+- [WHO fact sheet: obesity and overweight](https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight) (World Health Organization)
+- [Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults](https://pubmed.ncbi.nlm.nih.gov/23019316/) (Willis et al., Journal of Applied Physiology, 2012)
 
 *General information, not medical advice. Want a recomp plan that fits your body and schedule? Our trainers at Apex Fitness Centre, Urlabari can set up your program and check your form. Sunday to Friday, 4:30 AM – 8:30 PM. WhatsApp 9708819605.*

@@ -3,6 +3,7 @@ title: Annapurna Circuit Trek: How Fit Do You Need to Be? (Training Guide)
 seo_title: Annapurna Circuit Fitness: How to Train
 description: Planning the Annapurna Circuit? How hard it really is, what Thorong La Pass demands, an 8-10 week training plan, and practical tips for the long descent.
 date: 2026-11-01
+updated: 2026-11-05
 category: Trekking
 cover_art: mountain
 ---
@@ -20,6 +21,20 @@ Train your legs and lungs for **8 to 10 weeks**, plan your acclimatisation sensi
 - **Daily walking:** typically 5 to 7 hours.
 
 The trail itself is not technical. The challenge is **altitude and consecutive days of walking**.
+
+## Are you fit enough? A 5-point self-test
+
+Try these before you start training, and again 2 weeks before you fly. If you can do all five comfortably, you are in good shape for the trek.
+
+| Test | Ready if you can... |
+|---|---|
+| **Long walk** | Walk 5 hours with breaks, then walk again the next day |
+| **Stairs** | Walk up and down 20 floors at a steady pace without stopping for long |
+| **Step-ups** | Do 20 step-ups on each leg onto a knee-height step |
+| **Pack walk** | Walk 2 hours with the backpack you will carry on the trek |
+| **Downhill** | Walk down 10 floors of stairs without knee pain |
+
+Failed one or two? That shows you what to train most. Struggling with all five? Give yourself the full plan below, or more time.
 
 ## An 8 to 10 week training plan
 
@@ -59,6 +74,8 @@ Fitness makes the trek more enjoyable, but it does not protect you from altitude
 - **Watch for symptoms:** headache, nausea, dizziness, poor sleep. Severe symptoms such as confusion, loss of balance or breathlessness at rest mean **descend immediately**.
 
 Talk to a doctor before the trip about altitude and any health conditions.
+
+How much energy will each day take? Try the free [trekking calorie calculator](../../calculators/trekking-calorie-calculator/) with your weight and walking hours.
 
 ## Practical tips
 

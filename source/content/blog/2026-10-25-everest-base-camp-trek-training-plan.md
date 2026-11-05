@@ -3,6 +3,7 @@ title: Everest Base Camp Trek Training Plan: How to Get Fit in 12 Weeks
 seo_title: Everest Base Camp Training Plan (12 Weeks)
 description: How fit do you need to be for Everest Base Camp? A 12-week plan with hill walks, stairs, strength work and altitude advice.
 date: 2026-10-25
+updated: 2026-11-05
 category: Trekking
 cover_art: mountain
 ---
@@ -20,6 +21,20 @@ What fitness **cannot** protect you from is altitude sickness. That depends on *
 - **Load:** a daypack of 5 to 8 kg if porters carry your main bag, around 12 to 15 kg if you carry everything.
 
 [Responsible Travel](https://www.responsibletravel.com/holidays/everest-base-camp/travel-guide/am-i-fit-enough) describes the benchmark simply: if you are comfortable walking 5+ hours a day in hilly countryside, you are ready.
+
+## Are you fit enough? A 5-point self-test
+
+Try these before you start training, and again 2 weeks before you fly. If you can do all five comfortably, you are in good shape for the trek.
+
+| Test | Ready if you can... |
+|---|---|
+| **Long walk** | Walk 5 hours with breaks, then walk again the next day |
+| **Stairs** | Walk up and down 20 floors at a steady pace without stopping for long |
+| **Step-ups** | Do 20 step-ups on each leg onto a knee-height step |
+| **Pack walk** | Walk 2 hours with the backpack you will carry on the trek |
+| **Downhill** | Walk down 10 floors of stairs without knee pain |
+
+Failed one or two? That shows you what to train most. Struggling with all five? Give yourself the full plan below, or more time.
 
 ## The 12-week plan
 
@@ -61,6 +76,8 @@ Altitude sickness can affect anyone, including very fit people. The basics:
 - **Serious signs** such as confusion, loss of balance or breathlessness at rest mean you must **go down immediately** and get medical help.
 
 Speak to a doctor before the trek, especially about altitude medicine and any health conditions.
+
+How much energy will each day take? Try the free [trekking calorie calculator](../../calculators/trekking-calorie-calculator/) with your weight and walking hours.
 
 ## Gear and practice
 

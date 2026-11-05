@@ -25,6 +25,33 @@ TOPIC_INTRO = {
 }
 # Longer hub text shown under a category's post list (only link to live pages).
 TOPIC_HUB = {
+ "Training": """<section class="abody" style="max-width:760px;margin:8px 0 40px">
+<h2>Start here if you are new to the gym</h2>
+<p>Most beginners get the best results from a simple plan done consistently: three full-body sessions a week, good technique on a few big lifts, and a little more weight over time. Read these in order.</p>
+<ol><li><a href="../why-start-going-to-the-gym/">Why start going to the gym</a></li><li><a href="../beginner-gym-workout-plan-first-3-months/">Beginner gym workout plan for your first 3 months</a></li><li><a href="../how-to-squat-properly/">How to squat properly</a></li><li><a href="../how-to-bench-press-safely/">How to bench press safely</a></li><li><a href="../how-to-deadlift-for-beginners/">How to deadlift for beginners</a></li><li><a href="../muscle-soreness-after-gym/">Muscle soreness after the gym: what is normal</a></li><li><a href="../zone-2-training/">Zone 2 training: easy cardio that works</a></li></ol>
+<p>Training at home? Start with the <a href="../home-workout-without-equipment/">home workout without equipment</a>. For your numbers, use the <a href="../../calculators/one-rep-max-calculator/">one-rep max calculator</a>.</p>
+<p class="fine">Written by <a href="../../author/suman-limbu/">Suman Limbu</a>, owner and trainer at Apex Fitness Centre in Morang, Nepal.</p>
+</section>""",
+ "Diet": """<section class="abody" style="max-width:760px;margin:8px 0 40px">
+<h2>Eat well with Nepali and South Asian food</h2>
+<p>You do not need special foods to eat well. Dal, rice, eggs, chicken, curd and vegetables can cover everything a training body needs, if the portions are right and protein is high enough. Start with these.</p>
+<ol><li><a href="../how-much-protein-do-you-need/">How much protein do you need?</a></li><li><a href="../dal-bhat-protein/">How much protein is in dal bhat</a></li><li><a href="../protein-rich-vegetarian-foods-nepal/">Protein-rich vegetarian foods in Nepal</a></li><li><a href="../high-protein-nepali-diet-plan-for-muscle-gain/">High-protein Nepali diet plan for muscle gain</a></li><li><a href="../roti-vs-naan-vs-puri-calories/">Roti vs naan vs puri calories</a></li><li><a href="../how-much-water-should-you-drink/">How much water should you drink?</a></li></ol>
+<p>Look up any dish on our <a href="../../food/">food calorie chart</a>, and find your daily target with the <a href="../../calculators/protein-calculator/">protein calculator</a>.</p>
+<p class="fine">Written by <a href="../../author/suman-limbu/">Suman Limbu</a>, owner and trainer at Apex Fitness Centre in Morang, Nepal.</p>
+</section>""",
+ "Weight loss": """<section class="abody" style="max-width:760px;margin:8px 0 40px">
+<h2>Lose fat without giving up Nepali food</h2>
+<p>Fat loss comes from eating a little less energy than you use, every day, for weeks, while keeping protein high and staying active. Crash diets rarely last. These guides show the steady way.</p>
+<ol><li><a href="../weight-loss-diet-plan-nepali-food/">Nepali diet plan for weight loss (7-day meal plan)</a></li><li><a href="../walking-for-weight-loss-steps/">Walking for weight loss: how many steps a day</a></li><li><a href="../how-to-lose-belly-fat/">How to lose belly fat</a></li><li><a href="../body-recomposition-lose-fat-build-muscle/">Body recomposition: lose fat and build muscle</a></li><li><a href="../why-am-i-not-losing-weight/">Why am I not losing weight?</a></li></ol>
+<p>Find your calorie target with the <a href="../../calculators/calorie-deficit-calculator/">calorie deficit calculator</a>.</p>
+<p class="fine">Written by <a href="../../author/suman-limbu/">Suman Limbu</a>, owner and trainer at Apex Fitness Centre in Morang, Nepal.</p>
+</section>""",
+ "Fitness careers": """<section class="abody" style="max-width:760px;margin:8px 0 40px">
+<h2>Become a gym trainer from Nepal</h2>
+<p>Good trainers combine knowledge, people skills and real experience on the gym floor. These guides cover how to start in Nepal, work abroad, and handle your first clients.</p>
+<ol><li><a href="../how-to-become-a-gym-trainer-in-nepal/">How to become a gym trainer in Nepal</a></li><li><a href="../gym-trainer-jobs-in-gulf-for-nepalis/">Gym trainer jobs in the Gulf for Nepalis</a></li><li><a href="../how-to-assess-your-first-gym-client/">How to assess your first gym client</a></li></ol>
+<p class="fine">Written by <a href="../../author/suman-limbu/">Suman Limbu</a>, owner and trainer at Apex Fitness Centre in Morang, Nepal.</p>
+</section>""",
  "Trekking": """<section class="abody" style="max-width:760px;margin:8px 0 40px">
 <h2>How fit do you need to be for a trek in Nepal?</h2>
 <p>Most popular treks in Nepal do not need climbing skills, but they do need legs and lungs that can handle 5 to 7 hours of walking a day, many days in a row, with long climbs and longer descents. The people who struggle are rarely the ones who lack strength. They are the ones who never trained for hours on their feet, or who go up too fast.</p>
@@ -42,7 +69,7 @@ TOPIC_HUB = {
 <li><b>Go up slowly.</b> Fitness does not protect you from altitude sickness. Follow your guide's acclimatisation days, and descend if symptoms get worse.</li>
 </ol>
 <h2>Food and water on the trail</h2>
-<p>Trek days burn a lot of energy, and appetite often drops at altitude. Dal bhat is the trekker's staple for good reason: it is filling, easy to digest, and teahouses often give a second helping. See <a href="../dal-bhat-protein/">how much protein is in dal bhat</a>, and use the <a href="../../calculators/water-intake-calculator/">water intake calculator</a> as a starting point for your daily water.</p>
+<p>Trek days burn a lot of energy, and appetite often drops at altitude. Dal bhat is the trekker's staple for good reason: it is filling, easy to digest, and teahouses often give a second helping. See <a href="../dal-bhat-protein/">how much protein is in dal bhat</a>, and use the <a href="../../calculators/water-intake-calculator/">water intake calculator</a> as a starting point for your daily water. To see how much energy a trek day takes, try the <a href="../../calculators/trekking-calorie-calculator/">trekking calorie calculator</a>.</p>
 <p class="fine">Written by <a href="../../author/suman-limbu/">Suman Limbu</a>, owner and trainer at Apex Fitness Centre in Morang, Nepal. General information, not medical advice: talk to a doctor before a high-altitude trek if you have a heart, lung or blood pressure condition.</p>
 </section>""",
 }
