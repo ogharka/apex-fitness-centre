@@ -197,6 +197,40 @@ dict(slug="water-intake-calculator", short="Water intake", card="How much water 
           ("Heat exhaustion and heatstroke","https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/","NHS")],
  posts=["how-much-water-should-you-drink","exercising-in-hot-weather","best-time-to-go-to-the-gym","muscle-soreness-after-gym"]),
 
+dict(slug="trekking-calorie-calculator", short="Trekking calories", card="Calories you burn on a trek day",
+ title="Trekking Calorie Calculator: Calories Burned Hiking in Nepal",
+ desc="Free trekking calorie calculator. Estimate calories burned on a trek or hiking day from your weight, hours walking and how steep and loaded the day is.",
+ h1="Trekking Calorie <em>Calculator</em>",
+ lead="Estimate how many calories you burn on a trek day in Nepal, from your weight, the hours you walk and the kind of trail and pack.",
+ form=lambda: f"""{_calc_weight("trek")}
+{_calc_num("trek-hours", "Hours of walking that day", "hours", "h", None, "e.g. 6", "decimal", hint="Count walking time only, not long breaks or lunch.")}
+{_tsel("trek", "terrain", "Type of trek day", [("gentle","Gentle trail, day pack"),("hilly","Hilly trail with a day pack (a porter carries the rest)"),("loaded","Hills carrying your own full pack (about 10 to 18 kg)"),("steep","Steep climbing with a heavy pack")])}""",
+ about="""<h2>How the calculator works</h2>
+<p>We use MET values from the <b>2024 Adult Compendium of Physical Activities</b>, the standard list of how much energy different activities use. One MET is roughly 1 kcal per kg of body weight per hour, so:</p>
+<p><b>Calories burned = MET &times; your weight in kg &times; hours walking</b></p>
+<table><thead><tr><th>Type of day</th><th>Compendium activity</th><th>MET</th></tr></thead><tbody>
+<tr><td>Gentle trail, day pack</td><td>Hiking, cross country</td><td>6.0</td></tr>
+<tr><td>Hilly trail with a day pack</td><td>Backpacking, hiking with a daypack</td><td>7.8</td></tr>
+<tr><td>Hills carrying your own full pack</td><td>Climbing hills, 21 to 40 lb load, 3 to 10% grade</td><td>7.5</td></tr>
+<tr><td>Steep climbing with a heavy pack</td><td>Climbing hills, 20+ lb load, 5 to 20% grade</td><td>10.0</td></tr>
+</tbody></table>
+<p>The result is a rough estimate. Real trek days mix steep climbs, flat sections and long descents, and cold weather and altitude change how much energy you use.</p>
+<h2>What to do with the number</h2>
+<ul><li><b>Eat more than you think.</b> Long trek days can use far more energy than a normal day, and appetite often drops at altitude. Eat at every meal even if you are not hungry.</li>
+<li><b>Snack every 1 to 1.5 hours</b> while walking: nuts, dried fruit, biscuits, chocolate or boiled eggs from the teahouse.</li>
+<li><b>Dal bhat is a good trek fuel:</b> rice for energy, dal for protein, and it is easy to digest. See <a href="../../blog/dal-bhat-protein/">how much protein is in dal bhat</a>.</li>
+<li><b>Drink regularly.</b> Use the <a href="../water-intake-calculator/">water intake calculator</a> as a starting point and add more on long, hot or high days.</li></ul>
+<h2>Training for the trek</h2>
+<p>Being fit makes long days easier, but it does not protect you from altitude sickness: a slow ascent does. For training plans, start with our <a href="../../blog/trekking/">trekking fitness guides</a>.</p>""",
+ faq=[("How many calories do you burn trekking in Nepal?", "It depends on your weight, the hours you walk, the steepness and your pack. For example, a 70 kg person walking 6 hours on a hilly trail with a day pack burns roughly 3,300 kcal on that walking alone (7.8 MET x 70 kg x 6 hours), on top of the energy used the rest of the day."),
+      ("Do you burn more calories at high altitude?", "Your body can use more energy at altitude, and cold adds to it, while appetite often drops. That is why many trekkers lose weight on long treks. This calculator does not add an altitude factor, so treat high-altitude days as at least this much."),
+      ("Does carrying a backpack burn more calories?", "Yes. A heavier load on steep ground uses noticeably more energy, which is why the full-pack options use higher MET values."),
+      ("Is walking downhill easier on calories?", "Downhill walking uses less energy than climbing, but it is hard on the legs and knees. The day types here are averages that include both."),
+      ("Should I try to lose weight on a trek?", "No. Eat enough to keep your energy up and stay safe. Running low on food makes you tired, cold and more likely to slip or make poor decisions.")],
+ sources=[("2024 Adult Compendium of Physical Activities: walking and hiking codes","https://pacompendium.com/walking/","Herrmann et al., 2024"),
+          ("Altitude illness factsheet","https://travelhealthpro.org.uk/factsheets/altitude-illness","TravelHealthPro (NaTHNaC)")],
+ posts=["everest-base-camp-trek-training-plan","annapurna-circuit-trek-fitness","train-for-nepal-trek-without-hills","short-treks-in-nepal-fitness-guide","altitude-sickness-nepal-trek","dal-bhat-protein"]),
+
 dict(slug="ideal-weight-calculator", short="Ideal weight", card="Healthy weight range for your height",
  title="Ideal Weight Calculator: Healthy Weight for Your Height",
  desc="Free ideal weight calculator. See the healthy weight range for your height, including South Asian BMI cut-offs, plus the Robinson, Miller and Devine formulas.",
@@ -225,7 +259,7 @@ dict(slug="ideal-weight-calculator", short="Ideal weight", card="Healthy weight 
 ]
 
 _TBY = {t["slug"]: t for t in TOOLS}
-_K = {'protein-calculator':'protein','one-rep-max-calculator':'orm','calorie-deficit-calculator':'deficit','body-fat-calculator':'bodyfat','water-intake-calculator':'water','ideal-weight-calculator':'ideal'}
+_K = {'protein-calculator':'protein','one-rep-max-calculator':'orm','calorie-deficit-calculator':'deficit','body-fat-calculator':'bodyfat','water-intake-calculator':'water','ideal-weight-calculator':'ideal','trekking-calorie-calculator':'trek'}
 _POSTBY = {p["slug"]: p for p in POSTS}
 
 def build_tools():
@@ -282,7 +316,8 @@ def build_tools():
     hub = f'<section class="csec"><div class="wrap"><h2 class="h2c">More free calculators</h2><div class="links">{cards}</div></div></section>'
     pages["calculators/"] = pages["calculators/"].replace('<section class="csec"><div class="wrap">\n<h2 class="h2c">Keep going with Apex</h2>', hub + '\n<section class="csec"><div class="wrap">\n<h2 class="h2c">Keep going with Apex</h2>', 1)
     # blog posts: a short "try the calculator" box before the author box
-    RULES = [("protein-calculator", ("protein", "whey", "egg", "breakfast", "vegetarian", "muscle-gain", "glp-1", "build-muscle")),
+    RULES = [("trekking-calorie-calculator", ("trek", "annapurna", "everest", "altitude")),
+             ("protein-calculator", ("protein", "whey", "egg", "breakfast", "vegetarian", "muscle-gain", "glp-1", "build-muscle")),
              ("calorie-deficit-calculator", ("calorie", "weight-loss", "losing-weight", "belly-fat", "lose-face", "plateau", "fat-loss", "intermittent", "walking")),
              ("one-rep-max-calculator", ("bench", "squat", "deadlift", "powerlifting", "sets-and-reps", "progressive-overload", "leg-day", "strength-training")),
              ("body-fat-calculator", ("recomposition", "body-fat")),

@@ -166,6 +166,24 @@
       para(r, 'About ' + fmt(tot * 4) + ' glasses of 250 ml. The rest of your water comes from food like dal, rice, fruit and vegetables.');
       para(r, 'Pale yellow urine is a simple sign you are drinking enough. People with heart or kidney conditions may need to limit fluids: follow your doctor.', 'muted');
     },
+    trek: function (f) {
+      var kg = weightKg(f);
+      var hrs = range(f, 'hours', 0.5, 14, 'walking hours from 0.5 to 14');
+      var t = pick(f, 'terrain'); if (!t) setErr(f, 'terrain', 'Please choose the type of trek day.');
+      if (isNaN(kg) || isNaN(hrs) || !t) return;
+      var M = { gentle: [6.0, 'Gentle trail, day pack'], hilly: [7.8, 'Hilly trail with a day pack'], loaded: [7.5, 'Hills carrying your own full pack'], steep: [10.0, 'Steep climbing with a heavy pack'] }[t];
+      var kcal = M[0] * kg * hrs;
+      var r = out(f);
+      big(r, fmt(Math.round(kcal / 10) * 10), 'kcal', 'Calories burned while walking (approx.)');
+      table(r, ['Type of day (MET)', '4 hours', '6 hours', '8 hours'], [
+        ['Gentle trail (6.0)', fmt(Math.round(6.0 * kg * 4 / 10) * 10), fmt(Math.round(6.0 * kg * 6 / 10) * 10), fmt(Math.round(6.0 * kg * 8 / 10) * 10)],
+        ['Hilly, day pack (7.8)', fmt(Math.round(7.8 * kg * 4 / 10) * 10), fmt(Math.round(7.8 * kg * 6 / 10) * 10), fmt(Math.round(7.8 * kg * 8 / 10) * 10)],
+        ['Hills, full pack (7.5)', fmt(Math.round(7.5 * kg * 4 / 10) * 10), fmt(Math.round(7.5 * kg * 6 / 10) * 10), fmt(Math.round(7.5 * kg * 8 / 10) * 10)],
+        ['Steep, heavy pack (10.0)', fmt(Math.round(10 * kg * 4 / 10) * 10), fmt(Math.round(10 * kg * 6 / 10) * 10), fmt(Math.round(10 * kg * 8 / 10) * 10)]
+      ]);
+      para(r, M[1] + ': ' + M[0] + ' MET x ' + fmt(kg, 1) + ' kg x ' + fmt(hrs, 1) + ' h. This is the walking only; your body also uses energy for the rest of the day.');
+      para(r, 'Rough estimate from the 2024 Compendium of Physical Activities. Cold and altitude can raise your needs, and appetite often drops up high, so eat at every meal and snack while walking.', 'muted');
+    },
     ideal: function (f) {
       var sex = pick(f, 'sex'); if (!sex) setErr(f, 'sex', 'Please choose male or female.');
       var cm = heightCm(f);

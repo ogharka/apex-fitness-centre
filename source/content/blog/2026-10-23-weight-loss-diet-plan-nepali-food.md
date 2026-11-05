@@ -3,6 +3,7 @@ title: Nepali Diet Plan for Weight Loss: 7-Day Meal Plan with Dal Bhat
 seo_title: Nepali Diet Plan for Weight Loss (7-Day Meal Plan)
 description: Lose weight eating dal bhat: a 7-day Nepali meal plan, the plate method, easy food swaps, a safe speed of loss and the mistakes that stop progress.
 date: 2026-10-23
+updated: 2026-11-05
 category: Weight loss
 author: suman-limbu
 cover_art: scale
@@ -64,6 +65,21 @@ Use this as a ready-made week. Every day follows the plate method, so you never 
 **Vegetarian?** Swap eggs for curd or paneer, and chicken or fish for soybean chunks, chana, rajma or an extra katori of dal. See [how much protein is in dal bhat](../dal-bhat-protein/) for easy ways to keep protein high.
 
 **Not sure how big your portions are?** Check the numbers on our food pages: [dal bhat](../../food/dal-bhat-calories/), [white rice](../../food/rice-white-calories/), [roti](../../food/roti-calories/), [momo](../../food/momo-calories/) and [milk tea](../../food/chai-calories/). Swapping bread? Compare [roti, naan, puri and paratha calories](../roti-vs-naan-vs-puri-calories/). Want a number for your own body? Use the free [calorie deficit calculator](../../calculators/calorie-deficit-calculator/).
+
+## Living abroad? Easy swaps for supermarket food
+
+Living in Australia, the UK, the Gulf, Japan or the US? You can follow the same plate method with supermarket food:
+
+| At home in Nepal | In a supermarket abroad |
+|---|---|
+| Masoor or mung dal | Red lentils or split peas, sold dry or in tins |
+| Saag (rayo, palungo) | Frozen spinach, kale or any leafy greens |
+| Local chicken or fish | Chicken breast or thigh, tinned tuna, frozen fish |
+| Paneer and curd | Paneer or halloumi, plain Greek yoghurt |
+| Chana and bhatmas | Tinned chickpeas, edamame or soybeans |
+| Rice from the bazaar | Basmati or any long-grain rice, same small portion |
+
+Cook dal and a vegetable tarkari in a big batch on your day off, keep them in the fridge, and add rice and a protein each day.
 
 ## 7 swaps that make the biggest difference
 
