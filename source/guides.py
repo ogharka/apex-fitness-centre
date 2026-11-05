@@ -35,7 +35,7 @@ dict(slug="creatine-or-whey-first", cat="creatine", table="creatine", published=
  rel=["how-to-take-creatine", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
 dict(slug="creatine-whey-price-nepal", cat="creatine", table=["creatine", "protein"], published="2026-11-05",
  cta="Hi Apex Fitness Centre, I want to order creatine / whey protein. Please confirm what is in stock and send payment details.",
- title="Creatine & Whey Protein Price in Nepal (2026): How to Spot Fake Supplements",
+ title="Creatine and Whey Price in Nepal (2026) + Fake Check",
  h1="Creatine and whey protein price in Nepal (2026), and how to spot fakes",
  desc="Real creatine and whey protein prices in Nepal from Rs. 2,000, price per gram and per kg, and a simple checklist to spot fake supplements before you pay.",
  intro="Creatine and whey protein are the two supplements most gym members in Nepal buy first. Prices vary a lot between sellers, and fake or repacked tubs are a real problem. This page lists exactly what we sell today and what it costs, then shows you how to check that a tub is genuine.",

@@ -95,6 +95,7 @@ def load_posts():
         words = len(re.sub(r"<[^>]+>", " ", html_).split())
         prods = [p for s in (m.get("products") or "").split(",") for p in PRODUCTS if p["slug"] == s.strip()]
         upd = m.get("updated")
+        m["author"] = m.get("author") or "suman-limbu"  # Suman writes or approves every post
         posts.append(dict(m, slug=slug, d=d, updated=_dt.date.fromisoformat(upd) if upd else d, html=html_, words=words,
                           mins=max(1, round(words / 200)), category=m.get("category") or "Training", prods=prods, file=name, toc=toc, faq=faq))
         posts[-1]["cat_slug"] = slugify(posts[-1]["category"])
@@ -140,7 +141,7 @@ AUTHORS = {
 def _author_ld(key):
     a = AUTHORS.get(key)
     if not a: return {"@type": "Organization", "name": SITE, "url": BASE + "/about/"}
-    o = {"@type": "Person", "name": a["name"], "jobTitle": a["job"], "url": BASE + "/about/#" + key, "worksFor": {"@id": BASE + "/#org"}}
+    o = {"@type": "Person", "name": a["name"], "jobTitle": a["job"], "url": BASE + "/author/" + key + "/", "worksFor": {"@id": BASE + "/#org"}}
     if a.get("photo"): o["image"] = BASE + "/assets/" + a["photo"]
     if a.get("same"): o["sameAs"] = a["same"]
     return o
@@ -228,12 +229,12 @@ def build_blog():
 {crumb_html(cr, d)}
 <article class="post">
 <header class="phead"><a class="label" href="../{p['cat_slug']}/">{e(p['category'])}</a><h1>{e(p['title'])}</h1><p class="lead">{e(p['description'])}</p>
-<p class="byline">By {e(_author_name(p.get('author')))}{(' &middot; Reviewed by ' + e(_author_name(p['reviewed_by']))) if p.get('reviewed_by') in AUTHORS else ''} &middot; {_date(p['d'])}{upd} &middot; {p['mins']} min read</p></header>
+<p class="byline">By {('<a href="../../author/' + p['author'] + '/">' + e(_author_name(p['author'])) + '</a>') if p.get('author') in AUTHORS else e(_author_name(p.get('author')))}{(' &middot; Reviewed by ' + e(_author_name(p['reviewed_by']))) if p.get('reviewed_by') in AUTHORS else ''} &middot; {_date(p['d'])}{upd} &middot; {p['mins']} min read</p></header>
 {hero}
 {pinbtn}
 {tocb}
 <div class="abody">{p['html']}</div>
-<aside class="author"><b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>.</p></aside>
+<aside class="author"><b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>{(' or <a href="../../author/' + p['author'] + '/">more about ' + e(AUTHORS[p['author']]['name']) + '</a>') if p.get('author') in AUTHORS else ''}.</p></aside>
 {sharebottom}
 {newsletter_box()}
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
@@ -299,8 +300,41 @@ def build_blog():
                     f"<pubDate>{_dt.datetime.combine(p['d'], _dt.time(6, 0), NPT).strftime('%a, %d %b %Y %H:%M:%S %z')}</pubDate><description>{e(p['description'])}</description></item>" for p in posts[:30])
     BLOG_RSS[0] = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Apex Fitness Blog</title><link>{BASE}/blog/</link>'
                    f'<description>Training, diet and supplement advice for Nepal</description><language>en</language>{items}</channel></rss>\n')
+    build_author_pages(posts)
+    home_latest(posts)
     return posts
 BLOG_RSS = [""]
+
+def build_author_pages(posts):
+    for key, a in AUTHORS.items():
+        mine = [p for p in posts if p.get("author") == key]
+        path = f"author/{key}/"; d = 2; cr = [("Home", ""), ("Blog", "blog/"), (a["name"], path)]
+        person = dict(_author_ld(key), description=a["bio"])
+        j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "ProfilePage", "mainEntity": person, "url": BASE + "/" + path}]})
+        pic = f'<img class="aphoto" src="../../assets/{a["photo"]}" alt="{e(a["name"])}" width="160" height="160">' if a.get("photo") else ""
+        links = "".join(f'<a href="{u}" target="_blank" rel="noopener me">{"Facebook" if "facebook" in u else u}</a> ' for u in a.get("same", []))
+        body = f"""<body data-root="../../">
+{nav(d, "blog")}
+<main><div class="wrap">
+{crumb_html(cr, d)}
+<article class="post"><header class="phead"><span class="label">Author</span><h1>{e(a["name"])}</h1><p class="lead">{e(a["job"])}</p></header>
+<div class="abody">{pic}<p>{e(a["bio"])}</p>
+<p>Suman writes or checks every article on this blog against the sources linked in it, and updates articles when the facts change. How we work: <a href="../../editorial-policy/">editorial policy</a>. Where he trains members: <a href="../../gym/">Apex Fitness Centre, Urlabari</a>.</p>
+{('<p>' + links + '</p>') if links else ''}
+<h2>Articles by {e(a["name"])} ({len(mine)})</h2></div></article>
+<div class="bgrid">{"".join(_postcard(x, "../../blog/") for x in mine)}</div>
+</div></main>
+{footer(d)}{drawer()}{tail(d)}"""
+        pages[path] = head(f"{a['name']}: {a['job']} | Apex Fitness Blog", f"{a['name']}, {a['job']}. Articles on training, diet and fitness in Nepal.", path, d, extra=j) + body
+        sitemap.append((path, "0.5"))
+
+def home_latest(posts):
+    marker = '<section class="sec alt"><div class="wrap two">\n<div><span class="label">About Apex</span>'
+    if marker not in pages.get("", ""): print("[blog] note: homepage marker not found, latest articles not added"); return
+    sec = ('<section class="sec"><div class="wrap"><div class="shead"><span class="label">From the blog</span><h2>Latest articles</h2></div>'
+           f'<div class="bgrid">{"".join(_postcard(x, "blog/") for x in posts[:6])}</div>'
+           '<p style="margin-top:20px"><a class="btn line" href="blog/">All articles</a> <a class="btn line" href="food/">Food calorie chart</a> <a class="btn line" href="calculators/">Fitness calculators</a></p></div></section>\n\n')
+    pages[""] = pages[""].replace(marker, sec + marker, 1)
 
 def _simple(path, title, desc, h1, inner, prio="0.3"):
     d = path.count("/"); cr = [("Home", ""), (h1, path)]
