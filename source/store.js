@@ -48,5 +48,3 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
 function done(t){if(!ok)return;ok.textContent=t;ok.classList.add('on');setTimeout(function(){ok.classList.remove('on')},1600)}
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(function(){done('Link copied')},function(){done('Copy failed')})}
 else{try{var ta=document.createElement('textarea');ta.value=u;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);done('Link copied')}catch(err){done('Copy failed')}}});
-/* Brand marquee: the HTML holds one copy of the products; clone it (hidden from screen readers) so the loop is seamless. */
-(function(){document.querySelectorAll('.mqt').forEach(function(t){var g=t.querySelector('.mqg');if(!g||t.querySelectorAll('.mqg').length>1)return;var c=g.cloneNode(true);c.setAttribute('aria-hidden','true');c.querySelectorAll('img').forEach(function(i){i.alt=''});c.querySelectorAll('a').forEach(function(a){a.tabIndex=-1});t.appendChild(c)})})();

@@ -317,3 +317,9 @@ picture{display:contents}
 .auth-buy li{margin:4px 0}
 .auth-buy .authimg{display:block;width:100%;max-width:360px;height:auto;border-radius:10px;margin:8px 0}
 .auth-buy h2{font-size:20px;line-height:1.25;margin:0 0 6px}
+/* Nov 2026: product strip is one swipeable row (no auto-scroll, no duplicate copy) */
+.mq{overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;scrollbar-width:thin;-webkit-mask-image:none;mask-image:none}
+.mqt{animation:none;padding:0 16px}
+.mqt a{scroll-snap-align:start}
+/* product page: reviews empty state */
+.rev-empty .rvnone{color:var(--muted);margin:6px 0 14px}

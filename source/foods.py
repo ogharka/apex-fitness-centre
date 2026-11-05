@@ -1,3 +1,4 @@
+import re
 # South Asian food calorie database: /food/ (hub) and /food/<slug>-calories/ (one page per food).
 # exec()'d by build.py after the blog and tools, so it can link only to published posts (POSTS).
 import importlib.util as _ilu
@@ -51,8 +52,16 @@ def build_foods():
         name = f["name"]
         short = name.split(" (")[0]
         cr = [("Home", ""), ("Food calorie chart", "food/"), (name, path)]
-        title = f"{name} Calories, Protein and Nutrition"
-        if len(title) > 60: title = f"{short} Calories, Protein and Nutrition"
+        # Put the answer in the title: searchers see the number and a reason to click (the full chart).
+        unit = re.sub(r"\s*\(.*?\)", "", lab0).strip()
+        k0, p0 = _n(v0["k"]), _n(v0["p"], 1)
+        prot = v0["p"] >= 1  # "0 g protein" in a title helps nobody
+        title = next(t for t in ([f"{name} Calories: {unit} = {k0} kcal, {p0} g Protein (Chart)"] * prot +
+                                 [f"{name} Calories: {unit} = {k0} kcal (Full Chart)"] +
+                                 [f"{short} Calories: {unit} = {k0} kcal, {p0} g Protein (Chart)"] * prot +
+                                 [f"{short} Calories: {unit} = {k0} kcal (Full Chart)",
+                                 f"{short} Calories: {k0} kcal per serving",
+                                 f"{short} Calories, Protein and Nutrition"]) if len(t) <= 60)
         low = short.lower()
         if low.startswith("boiled"): low = "a " + low
         desc = f"How many calories in {low}? {lab0[0].upper()+lab0[1:]}: {_n(v0['k'])} kcal and {_n(v0['p'],1)} g protein. Full nutrition from USDA data, plus diet tips."

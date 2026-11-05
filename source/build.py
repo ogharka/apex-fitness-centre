@@ -152,9 +152,8 @@ RULES = [  # applied in order, best first
  dict(name="Lifting belt + BigMan Forza", slugs=["valeo-weightlifting-belt","bigman-forza-protein-2kg"], off=500),
  dict(name="Hydro HD whey + creatine", slugs=["bpi-sports-hydro-hd-hydrolyzed-whey-2kg-chocolate-lava-cake","muscleblaze-creatine-monohydrate-320g-citrus-blast"], off=500),
 ]
-# Every bundle discount must stay within the site banner "Bundles save Rs. 300 to Rs. 1,000"
+# The site banner says "Bundles save up to Rs. 1,000": no bundle may save more than that
 assert max(r["off"] for r in RULES) == 1000
-assert min(r["off"] for r in RULES) == 300
 def save_for(slugs):
     s = set(slugs)
     for rl in RULES:
@@ -244,7 +243,7 @@ def nav(depth, active=""):
     r = "../" * depth
     def a(href, label, key):
         return f'<a href="{r}{href}"' + (' class="on"' if active == key else "") + f">{label}</a>"
-    return f"""<div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save Rs. 300 to Rs. 1,000</div>
+    return f"""<div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save up to Rs. 1,000</div>
 <header class="top"><div class="wrap">
 <a class="brand" href="/"><span class="wm">APEX</span><span class="wm2">Fitness<br>Centre</span></a>
 <nav aria-label="Main"><ul>
@@ -356,8 +355,7 @@ def marquee():
         return (f'<a href="{p["url"]}"{tab}><img src="assets/{p["img"]}" alt="{alt}" width="160" height="160" loading="lazy">'
                 f'<span>{e(p["brand"])}</span><b class="mqp">{money(p["price"])}</b></a>')
     one = "".join(item(p, False) for p in PRODUCTS)
-    # Only one copy in the HTML. store.js clones it (hidden from screen readers) for the seamless loop,
-    # so the page carries 13 images instead of 26.
+    # One row of the 13 products. It swipes sideways instead of auto-scrolling, so nothing is duplicated.
     return (f'<div class="mq" role="region" aria-label="Products we sell"><div class="mqt">'
             f'<div class="mqg">{one}</div></div></div>')
 
@@ -568,9 +566,10 @@ def rev_card(x, d, link=True):
 def reviews_block(p):
     rv = [x for x in REVIEWS if x["product"] == p["slug"]]
     msg = f"Hi Apex Fitness Centre, I bought {p['full']} and here is my review: "
-    ask = f'<p class="fine">Bought this from us? <a class="tl" href="{wa(msg)}" target="_blank" rel="noopener">Send us your review on WhatsApp</a> and we will show it here.</p>'
+    ask = f'<p class="fine">Bought this from us? <a class="tl" href="{wa(msg)}" target="_blank" rel="noopener">Leave a review on WhatsApp</a> and we will show it here.</p>'
     if not rv:
-        return f'<div class="revask"><p>Bought this? Send us a review on WhatsApp.</p><a class="btn line" href="{wa(msg)}" target="_blank" rel="noopener">Send a review</a></div>'
+        return (f'<section class="rev rev-empty"><h2 class="h2s">Customer reviews</h2><p class="rvnone">Be the first to review this product.</p>'
+                f'<a class="btn line" href="{wa(msg)}" target="_blank" rel="noopener">Leave a review on WhatsApp</a></section>')
     items = "".join(rev_card(x, 2, link=False) for x in rv)
     return f'<section class="rev"><h2 class="h2s">Customer reviews</h2><div class="rvg one">{items}</div>{ask}</section>'
 
@@ -1173,9 +1172,12 @@ def build_guides():
         if g.get('sw'): secs += "<section class='prose swg'><h2>See the software</h2><p>Apex Gym Management is Rs. 25,000, one-time, with no monthly fee. It runs without internet and includes setup and staff training.</p><p><a class='btn wa' href='../../software/'>See features and price</a></p></section>"
         tbl = ""
         if g.get("table"):
-            ps = [p for p in PRODUCTS if p["cat"] == g["table"]]
+            _cats = g["table"] if isinstance(g["table"], list) else [g["table"]]
+            ps = [p for c in _cats for p in PRODUCTS if p["cat"] == c]
+            _more = (f'<a class="tl" href="../../{_cats[0]}/">See all {e(_cats[0].replace("-", " "))} products</a>' if len(_cats) == 1
+                     else " ".join(f'<a class="tl" href="../../{c}/">See all {e(c.replace("-", " "))}</a>' for c in _cats))
             rows = "".join(f'<tr><td><a href="../../{p["url"]}">{e(p["full"])}</a></td><td>{e(p["size"])}</td><td>{money(p["price"])}</td><td>{_unit(p)}</td></tr>' for p in ps)
-            tbl = f'<section class="prose"><h2>Our current prices</h2><div class="tw"><table class="cmp"><thead><tr><th>Product</th><th>Pack</th><th>Price</th><th>Unit price</th></tr></thead><tbody>{rows}</tbody></table></div><p class="fine">Prices checked {today_}. Free delivery all over Nepal. <a class="tl" href="../../{g["table"]}/">See all {e(g["table"].replace("-", " "))} products</a>.</p></section>'
+            tbl = f'<section class="prose"><h2>Our current prices</h2><div class="tw"><table class="cmp"><thead><tr><th>Product</th><th>Pack</th><th>Price</th><th>Unit price</th></tr></thead><tbody>{rows}</tbody></table></div><p class="fine">Prices checked {today_}. Free delivery all over Nepal. {_more}.</p></section>'
         rel = "".join(f'<a class="gcard" href="../{x}/"><b>{e(_GBY[x]["h1"])}</b><span>Read the guide</span></a>' for x in g["rel"])
         art = {"@type": "Article", "headline": g["h1"], "description": g["desc"], "datePublished": g.get("published", "2026-10-14"), "dateModified": today_,
                "author": {"@id": BASE + "/#org"}, "publisher": {"@id": BASE + "/#org"}, "mainEntityOfPage": BASE + "/" + path, "image": BASE + "/assets/og-image.jpg"}
@@ -1188,6 +1190,7 @@ def build_guides():
 <div class="shead left"><h1>{e(g['h1'])}</h1><p>{e(g['intro'])}</p></div>
 {tbl}{secs}
 </article>
+{f'<section class="prose gcta"><a class="btn wa" href="{wa(g["cta"])}" target="_blank" rel="noopener" data-product="Creatine / whey order">Order on WhatsApp</a></section>' if g.get("cta") else ""}
 <section class="narrow"><h2 class="h2s">Questions</h2>{faq_html(g['faq'])}</section>
 <section class="gl"><h2 class="h2s">More guides</h2><div class="ggrid">{rel}</div></section>
 {"" if g.get("sw") else '<p class="fine">General information, not medical advice. Ask a doctor if you have a health condition. Results vary from person to person.</p>'}
@@ -1227,7 +1230,7 @@ os.makedirs(OUT + "/assets")
 # ---- SPEED: WebP copies (max 800 px wide) of every JPG, and clean <img> tags ----
 from PIL import Image as _Im
 WEBP = {}  # "name.jpg" (relative to assets) -> (webp name, w, h)
-THUMB = {}  # product "name.jpg" -> 320 px wide WebP
+THUMB = {}  # product "name.jpg" -> 400 px wide WebP
 _PROD_IMGS = {p["img"] for p in PRODUCTS}
 for _root, _dirs, _files in os.walk(SRC):
     for _f in _files:
@@ -1239,15 +1242,23 @@ for _root, _dirs, _files in os.walk(SRC):
         os.makedirs(os.path.dirname(os.path.join(OUT, "assets", _wn)), exist_ok=True)
         _im.save(os.path.join(OUT, "assets", _wn), "WEBP", quality=80, method=6)
         WEBP[_rel.replace(os.sep, "/")] = (_wn.replace(os.sep, "/"), _im.width, _im.height)
-        if _rel in _PROD_IMGS and _im.width > 320:  # small copy for thumbnails (marquee, cards on small screens)
-            _t = _im.resize((320, round(_im.height * 320 / _im.width)), _Im.LANCZOS)
-            _tn = os.path.splitext(_rel)[0] + "-320.webp"
+        if _rel in _PROD_IMGS and _im.width > 400:  # one smaller copy shared by the strip and the product cards
+            _t = _im.resize((400, round(_im.height * 400 / _im.width)), _Im.LANCZOS)
+            _tn = os.path.splitext(_rel)[0] + "-400.webp"
             _t.save(os.path.join(OUT, "assets", _tn), "WEBP", quality=80, method=6)
             THUMB[_rel] = _tn
 
+_PROD_ALT = {p["img"]: p["full"] for p in PRODUCTS}
+def _prod_alt(tag):
+    """Product photos get alt="<Brand> <Product> <size> price in Nepal". Decorative copies (alt="") stay empty."""
+    src = re.search(r'src="[^"]*?assets/([^"]+)"', tag)
+    if not src or src.group(1) not in _PROD_ALT or 'alt=""' in tag: return tag
+    alt = e(_PROD_ALT[src.group(1)]) + " price in Nepal"
+    return re.sub(r'alt="[^"]*"', f'alt="{alt}"', tag, 1) if ' alt="' in tag else tag.replace("<img ", f'<img alt="{alt}" ', 1)
+
 def _fix_imgs(html_):
     def one(m):
-        tag = m.group(0)
+        tag = _prod_alt(m.group(0))
         src = re.search(r'src="([^"]*?)assets/([^"]+)"', tag)
         orig = None
         if src and src.group(2) in WEBP:
@@ -1258,8 +1269,8 @@ def _fix_imgs(html_):
             else:
                 tag = tag.replace(src.group(0), f'src="{pre}assets/{wn}"')
                 if key in THUMB and "srcset=" not in tag:
-                    sizes = "(max-width: 900px) 92vw, 560px" if 'fetchpriority="high"' in tag else "(max-width: 600px) 45vw, 260px"
-                    tag = tag.replace("<img ", f'<img srcset="{pre}assets/{THUMB[key]} 320w, {pre}assets/{wn} {w}w" sizes="{sizes}" ', 1)
+                    sizes = "(max-width: 900px) 92vw, 560px" if 'fetchpriority="high"' in tag else "(max-width: 600px) 46vw, 200px"
+                    tag = tag.replace("<img ", f'<img srcset="{pre}assets/{THUMB[key]} 400w, {pre}assets/{wn} {w}w" sizes="{sizes}" ', 1)
             if " width=" not in tag: tag = tag.replace("<img ", f'<img width="{w}" height="{h}" ', 1)
             if ("/" not in key and key.lower().endswith(".jpg")) or key.startswith("reviews/"):
                 orig = pre + "assets/" + key
@@ -1377,5 +1388,7 @@ open(OUT + "/blog/feed.xml", "w", encoding="utf-8").write(BLOG_RSS[0])
 copy_blog_images()
 if ADSENSE_CLIENT:
     open(OUT + "/ads.txt", "w").write(f"google.com, {ADSENSE_CLIENT.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n")
+for _k, _v in pages.items():
+    if "[SIZES:" in _v: print(f"[todo] placeholder still on {_k}: replace [SIZES: ...] in newprods.py")
 print("blog posts:", len(POSTS))
 print("pages:", len(pages), "base:", BASE)
