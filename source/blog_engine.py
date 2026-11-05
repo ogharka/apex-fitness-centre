@@ -21,8 +21,32 @@ TOPIC_INTRO = {
  "Fitness careers": "How to become a trainer in Nepal: courses, certifications, academies and salaries.",
  "Influencers and athletes": "Nepali fitness creators, bodybuilders and powerlifters worth following.",
  "Competitions": "Bodybuilding and powerlifting championships, results and how to compete from Nepal.",
- "Trekking": "Fitness for treks in Nepal: training plans for Everest Base Camp, Annapurna and other Himalayan routes.",
+ "Trekking": "How to get fit for a trek in Nepal: training plans for Everest Base Camp, the Annapurna Circuit and other Himalayan routes, from a trainer who lives here.",
 }
+# Longer hub text shown under a category's post list (only link to live pages).
+TOPIC_HUB = {
+ "Trekking": """<section class="abody" style="max-width:760px;margin:8px 0 40px">
+<h2>How fit do you need to be for a trek in Nepal?</h2>
+<p>Most popular treks in Nepal do not need climbing skills, but they do need legs and lungs that can handle 5 to 7 hours of walking a day, many days in a row, with long climbs and longer descents. The people who struggle are rarely the ones who lack strength. They are the ones who never trained for hours on their feet, or who go up too fast.</p>
+<h2>Pick your trek, then your plan</h2>
+<ul>
+<li><a href="../everest-base-camp-trek-training-plan/">Everest Base Camp training plan</a>: Base Camp sits at about 5,364 m, reached by a slow climb over many days from Lukla at about 2,860 m.</li>
+<li><a href="../annapurna-circuit-trek-fitness/">Annapurna Circuit fitness guide</a>: the hardest day is the crossing of Thorong La pass, about 5,416 m, with a long descent after it.</li>
+</ul>
+<h2>What every trek plan has in common</h2>
+<ol>
+<li><b>Long, easy walks.</b> Build up to 4 to 6 hours on your feet, mostly at a pace where you can still talk. Our <a href="../zone-2-training/">zone 2 training guide</a> explains how easy is easy enough.</li>
+<li><b>Hills and stairs.</b> Climbing and especially descending are what make trekkers sore. Train on stairs or hills at least once a week, with a pack.</li>
+<li><b>Leg strength.</b> Squats, lunges and step-ups twice a week protect your knees on the way down. Start with <a href="../how-to-squat-properly/">how to squat properly</a>.</li>
+<li><b>Carry your real pack.</b> Train with the weight you will carry, and break in your boots before you fly.</li>
+<li><b>Go up slowly.</b> Fitness does not protect you from altitude sickness. Follow your guide's acclimatisation days, and descend if symptoms get worse.</li>
+</ol>
+<h2>Food and water on the trail</h2>
+<p>Trek days burn a lot of energy, and appetite often drops at altitude. Dal bhat is the trekker's staple for good reason: it is filling, easy to digest, and teahouses often give a second helping. See <a href="../dal-bhat-protein/">how much protein is in dal bhat</a>, and use the <a href="../../calculators/water-intake-calculator/">water intake calculator</a> as a starting point for your daily water.</p>
+<p class="fine">Written by <a href="../../author/suman-limbu/">Suman Limbu</a>, owner and trainer at Apex Fitness Centre in Morang, Nepal. General information, not medical advice: talk to a doctor before a high-altitude trek if you have a heart, lung or blood pressure condition.</p>
+</section>""",
+}
+
 def slugify(t): return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
 
 def _front(path):
@@ -269,6 +293,7 @@ def build_blog():
 <div class="shead left"><h1>{e(c)}</h1><p>{e(intro)}</p></div>
 {chips("../", c)}
 <div class="bgrid">{"".join(_postcard(x, "../") for x in ps)}</div>
+{TOPIC_HUB.get(c, "")}
 </div></main>
 {footer(d)}{drawer()}{tail(d)}"""
         pages[path] = head(f"{c} in Nepal | Apex Fitness Blog", intro, path, d, extra=j) + body
