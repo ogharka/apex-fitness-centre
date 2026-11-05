@@ -1,6 +1,6 @@
 ---
-title: Weight Loss Diet Plan with Nepali Food (Simple 7-Day Guide)
-seo_title: Weight Loss Diet Plan Nepali Food: Simple Guide
+title: Nepali Diet Plan for Weight Loss: 7-Day Meal Plan with Dal Bhat
+seo_title: Nepali Diet Plan for Weight Loss (7-Day Meal Plan)
 description: Lose weight eating dal bhat: a 7-day Nepali meal plan, the plate method, easy food swaps, a safe speed of loss and the mistakes that stop progress.
 date: 2026-10-23
 category: Weight loss
@@ -77,6 +77,40 @@ Use this as a ready-made week. Every day follows the plate method, so you never 
 | Biscuits and namkeen | A handful of peanuts (not the whole packet) |
 | Eating late at night in front of the TV | Dinner at the table, then stop eating |
 
+## Healthy snacks for weight loss in Nepal
+
+Snacks are where most weight comes back. These are filling, cheap and easy to find in any Nepali town:
+
+| Snack | Why it works |
+|---|---|
+| **Roasted chana** (a small handful) | Protein and fibre, keeps you full for hours |
+| **Boiled eggs** (1 or 2) | About 6 g of protein each, no cooking oil |
+| **Curd (dahi)** or **mohi** | Protein and calcium; choose plain, not sweetened |
+| **Fruit:** guava, apple, orange, papaya, banana | Sweet, filling, full of fibre and vitamins |
+| **Cucumber, carrot or radish** with timur and salt | Almost no calories, very crunchy |
+| **Makai-bhatmas** (roasted corn and soybeans), small bowl | Protein from the soybeans; just watch the portion |
+| **Peanuts** (one small handful, not the packet) | Healthy fats and protein, but high in calories |
+| **Black tea or green tea** | Helps with evening cravings, with little or no sugar |
+
+Skip or save for special days: samosa, pakoda, chowmein, sel roti, biscuits, namkeen and sweet milk tea. One plate of pakora or one samosa can have more calories than a full fruit snack for the whole day. Check the numbers on our [food calorie chart](../../food/).
+
+## नेपालीमा: तौल घटाउने सजिलो डाइट प्लान
+
+**दाल भात छोड्नु पर्दैन।** भात अलि कम, तरकारी र प्रोटिन बढी खानुहोस्।
+
+- **थालको आधा भाग:** साग, तरकारी, सलाद।
+- **चौथाइ भाग:** प्रोटिन: बाक्लो दाल, अण्डा, कुखुराको मासु, माछा, पनिर, भटमास वा चना।
+- **चौथाइ भाग:** भात वा रोटी: एउटा सानो थाल भात मात्र, दोस्रो थाल होइन।
+
+**दिनभरिको उदाहरण:**
+
+- **बिहान:** कालो चिया वा कम चिनीको चिया, २ उसिनेको अण्डा वा एक कचौरा दही।
+- **खाना (९ देखि १० बजे):** सानो थाल भात, बाक्लो दाल, साग, तरकारी र सलाद।
+- **दिउँसो:** एउटा फलफूल वा भुटेको चना।
+- **बेलुका:** २ रोटी वा आधा थाल भात, मासु वा पनिरको तरकारी, धेरै तरकारी।
+
+**बेलुका चिनी हालेको चिया, बिस्कुट, समोसा र चाउचाउ कम गर्नुहोस्।** हप्तामा ०.५ देखि १ केजी घट्नु सुरक्षित र राम्रो हो। हरेक दिन कम्तीमा ३० मिनेट हिँड्नुहोस्।
+
 ## Exercise: what actually helps
 
 - **Walk every day.** 30 to 45 minutes of brisk walking burns energy and is easy to keep up.
@@ -100,6 +134,12 @@ Weight goes up and down by a kilo from day to day because of water and salt. Loo
 - **Waiting for motivation.** Plan meals and walks like appointments.
 
 ## Frequently asked questions
+
+### What is the best Nepali diet plan for weight loss?
+One you can follow every day without hunger: normal dal bhat with half the plate vegetables, a quarter protein and a quarter rice, plus healthy snacks and less sugary tea. The 7-day meal plan above follows exactly that.
+
+### What are healthy snacks for weight loss in Nepal?
+Roasted chana, boiled eggs, plain curd or mohi, fruit, cucumber or carrot with timur salt, and a small handful of peanuts. Avoid fried snacks like samosa, pakoda and chowmein most days.
 
 ### Can I lose weight eating rice every day?
 
