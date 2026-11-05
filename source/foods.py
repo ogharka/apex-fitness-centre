@@ -44,6 +44,37 @@ _FOOD_POSTS = {
     "Vegetables, fruit and fats": ["weight-loss-diet-plan-nepali-food", "how-to-lose-belly-fat", "how-to-gain-weight-fast-for-skinny-people"],
 }
 
+# Searchers ask for exact amounts ("4 puri calories", "150 g goat meat protein"): answer them on the page.
+PIECES = {"roti": ("roti", "roti", 40), "naan": ("naan", "naan", 90), "paratha": ("paratha", "parathas", 79),
+          "puri": ("puri", "puris", 36), "dosa": ("dosa", "dosas", 80), "egg": ("egg", "eggs", 50),
+          "momo": ("momo", "momo", 29), "fried-momo": ("fried momo", "fried momo", 30), "banana": ("banana", "bananas", 118),
+          "pakora": ("pakora", "pakoras", 12)}
+CUPS = {"milk": ("glass", "glasses", 244), "buffalo-milk": ("glass", "glasses", 244), "chai": ("cup", "cups", 240),
+        "curd": ("katori", "katoris", 150), "dal": ("katori", "katoris", 150), "rice-white": ("cup", "cups", 158),
+        "rajma": ("katori", "katoris", 150), "chana": ("katori", "katoris", 150)}
+def _amounts(f, per, low):
+    """Extra tables + FAQ for counts (1 to 10 pieces) and gram amounts."""
+    html, faq = "", []
+    def row(lab, g): return f"<tr><td>{lab}</td><td>{_n(per['k']*g/100)}</td><td>{_n(per['p']*g/100,1)} g</td><td>{_n(per['c']*g/100,1)} g</td><td>{_n(per['f']*g/100,1)} g</td></tr>"
+    head_ = "<thead><tr><th>Amount</th><th>Calories (kcal)</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr></thead>"
+    unit = PIECES.get(f["slug"]) or CUPS.get(f["slug"])
+    if unit:
+        one, many, g = unit
+        ns = (1, 2, 3, 4, 5, 6, 8, 10) if f["slug"] in PIECES else (1, 2, 3, 4)
+        rows = "".join(row(f"{n} {one if n == 1 else many} ({_n(g*n)} g)", g * n) for n in ns)
+        html += f"<h2>Calories in 1 to {ns[-1]} {e(many)}</h2><p>Based on {_n(g)} g for one {e(one)}. Bigger or smaller {e(many)} change the numbers.</p><table>{head_}<tbody>{rows}</tbody></table>"
+        for n in ((2, 4, 6) if f["slug"] in PIECES else (2,)):
+            faq.append((f"How many calories are in {n} {many}?", f"About {_n(per['k']*g*n/100)} calories and {_n(per['p']*g*n/100,1)} g of protein in {n} {many} ({_n(g*n)} g), based on USDA data."))
+    liquid = f["slug"] in ("milk", "buffalo-milk", "chai")
+    u = "ml" if liquid else "g"
+    grams = (50, 100, 150, 200, 250, 300) if not liquid else (100, 150, 250, 500)
+    rows = "".join(row(f"{gg} {u}", gg) for gg in grams)
+    html += f"<h2>Calories and protein by weight</h2><table>{head_}<tbody>{rows}</tbody></table>"
+    if liquid: html += "<p>Millilitres are treated as grams, which is close enough for milk and tea.</p>"
+    gq = 150 if not liquid else 500
+    faq.append((f"How much protein is in {gq} {u} of {low}?", f"About {_n(per['p']*gq/100,1)} g of protein and {_n(per['k']*gq/100)} calories in {gq} {u}, based on USDA data."))
+    return html, faq
+
 def build_foods():
     for f in FOODS:
         d = 2; path = food_path(f["slug"])
@@ -56,7 +87,9 @@ def build_foods():
         unit = re.sub(r"\s*\(.*?\)", "", lab0).strip()
         k0, p0 = _n(v0["k"]), _n(v0["p"], 1)
         prot = v0["p"] >= 1  # "0 g protein" in a title helps nobody
-        title = next(t for t in ([f"{name} Calories: {unit} = {k0} kcal, {p0} g Protein (Chart)"] * prot +
+        pc = PIECES.get(f["slug"])
+        title = next(t for t in (([f"{short} Calories: 1 {pc[0]} = {_n(per['k']*pc[2]/100)} kcal, {_n(per['p']*pc[2]/100,1)} g Protein (1-10 Chart)",
+                                  f"{short} Calories: 1 {pc[0]} = {_n(per['k']*pc[2]/100)} kcal (1 to 10 Chart)"] if pc else []) + [f"{name} Calories: {unit} = {k0} kcal, {p0} g Protein (Chart)"] * prot +
                                  [f"{name} Calories: {unit} = {k0} kcal (Full Chart)"] +
                                  [f"{short} Calories: {unit} = {k0} kcal, {p0} g Protein (Chart)"] * prot +
                                  [f"{short} Calories: {unit} = {k0} kcal (Full Chart)",
@@ -89,6 +122,7 @@ def build_foods():
         cmp_rows = "".join(f"<tr><td><a href=\"../{x}-calories/\">{e(_FBY[x]['name'])}</a></td><td>{_n(_per100(_FBY[x])[0]['k'])}</td><td>{_n(_per100(_FBY[x])[0]['p'],1)} g</td></tr>" for x in f["compare"])
         cmp = (f"<h2>How it compares</h2><p>Per 100 g:</p><table><thead><tr><th>Food</th><th>Calories</th><th>Protein</th></tr></thead><tbody>"
                f"<tr><td><b>{e(name)}</b></td><td><b>{_n(per['k'])}</b></td><td><b>{_n(per['p'],1)} g</b></td></tr>{cmp_rows}</tbody></table>")
+        amt_html, amt_faq = _amounts(f, per, low) if "composite" not in f else ("", [])
         to25 = ""
         if per["p"] >= 5 and "composite" not in f:
             g25 = 25 / per["p"] * 100
@@ -107,6 +141,7 @@ def build_foods():
                (f"How much protein is in {low}?", f"About {_n(per['p'],1)} g per 100 g, or {_n(v0['p'],1)} g in {lab0}."),
                (f"Is {low} good for weight loss?", f["wl"]),
                (f"Is {low} good for building muscle?", f["mg"])]
+        faq = faq[:2] + amt_faq + faq[2:]
         posts = [_LIVE_POSTS[s] for s in _FOOD_POSTS.get(f["group"], []) if s in _LIVE_POSTS][:3]
         reads = (f'<section class="gl"><h2 class="h2s">Read next</h2><div class="bgrid">{"".join(_postcard(x, "../../blog/") for x in posts)}</div></section>') if posts else ""
         same = [x for x in FOODS if x["group"] == f["group"] and x is not f][:8]
@@ -128,6 +163,7 @@ def build_foods():
 <h2>{e(short)} nutrition per serving</h2>
 {table}
 <p>Calories come from: {split}.</p>
+{amt_html}
 {to25}
 {comp}
 {alt}
