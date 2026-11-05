@@ -1,7 +1,7 @@
 ---
 title: Weight Loss Diet Plan with Nepali Food (Simple 7-Day Guide)
 seo_title: Weight Loss Diet Plan Nepali Food: Simple Guide
-description: Lose weight eating dal bhat. A simple Nepali weight loss plan: the plate method, sample meals, safe speed of loss and mistakes that stop progress.
+description: Lose weight eating dal bhat: a 7-day Nepali meal plan, the plate method, easy food swaps, a safe speed of loss and the mistakes that stop progress.
 date: 2026-10-23
 category: Weight loss
 author: suman-limbu
@@ -46,6 +46,24 @@ Add one spoon of achar if you like, and keep ghee and oil to a small amount.
 | Dinner | 2 roti or half plate rice, chicken, egg or paneer curry, big tarkari |
 
 *Exact needs depend on your body size, age and activity. If your weight does not move for 3 weeks, reduce rice a little more or walk more.*
+
+## 7-day Nepali weight loss meal plan
+
+Use this as a ready-made week. Every day follows the plate method, so you never have to count. Drink water through the day, and keep tea to 2 cups with little or no sugar.
+
+| Day | Morning | Khana (9 to 10 AM) | Afternoon | Dinner |
+|---|---|---|---|---|
+| **Sunday** | 2 boiled eggs, black tea | Small plate rice, thick masoor dal, saag, cucumber salad | 1 guava or apple | 2 roti, chicken curry, cauliflower tarkari |
+| **Monday** | Bowl of curd with a banana | Small plate rice, mung dal, mixed tarkari, radish achar | Roasted chana (a small handful) | Half plate rice, egg curry, saag |
+| **Tuesday** | Oats cooked in milk, no sugar | Small plate rice, rajma, cabbage tarkari, salad | Cucumber and carrot sticks | 2 roti, paneer and peas, salad |
+| **Wednesday** | 2 boiled eggs, tea with little sugar | Small plate rice, mixed dal, gundruk soup, saag | 1 orange | Half plate rice, fish curry, green beans |
+| **Thursday** | Curd with a few peanuts | Small plate rice, chana tarkari, saag, salad | Buttermilk (mohi) | 2 roti, soybean chunk curry, tarkari |
+| **Friday** | Egg omelette with onion and tomato | Small plate rice, thick dal, pumpkin tarkari, achar | 1 apple | Half plate rice, chicken or mushroom curry, saag |
+| **Saturday** | Bowl of curd, black tea | Dal bhat with extra tarkari (your normal plate, just less rice) | Fruit | 6 to 8 steamed momo with soup and a big salad |
+
+**Vegetarian?** Swap eggs for curd or paneer, and chicken or fish for soybean chunks, chana, rajma or an extra katori of dal. See [how much protein is in dal bhat](../dal-bhat-protein/) for easy ways to keep protein high.
+
+**Not sure how big your portions are?** Check the numbers on our food pages: [dal bhat](../../food/dal-bhat-calories/), [white rice](../../food/rice-white-calories/), [roti](../../food/roti-calories/), [momo](../../food/momo-calories/) and [milk tea](../../food/chai-calories/). Swapping bread? Compare [roti, naan, puri and paratha calories](../roti-vs-naan-vs-puri-calories/). Want a number for your own body? Use the free [calorie deficit calculator](../../calculators/calorie-deficit-calculator/).
 
 ## 7 swaps that make the biggest difference
 
