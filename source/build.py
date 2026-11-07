@@ -88,7 +88,7 @@ for p in PRODUCTS:
 CATS = [
  dict(slug="creatine", name="Creatine", h1="Buy Creatine in Nepal",
       title="Buy Creatine Monohydrate in Nepal | Apex Fitness Centre",
-      desc="Buy creatine monohydrate in Nepal from Rs. 2,000: MuscleBlaze, Wellcore and BPI Sports. Free delivery all over Nepal. Order on WhatsApp.",
+      desc="Buy creatine monohydrate in Nepal from Rs. 2,000: MuscleBlaze, Wellcore and BPI Sports. Free delivery + Cash on Delivery. Order on WhatsApp.",
       intro="Creatine monohydrate is a staple for lifters who want strength and power from their training. We stock MuscleBlaze, Wellcore and BPI Sports creatine, from Rs. 2,000.",
       body=["Creatine is stored in your muscles and helps supply quick energy for short, hard efforts like heavy sets and sprints. It is one of the most studied sports supplements.",
             "Which one should you pick? Choose a flavoured tub (MuscleBlaze Citrus Blast or Wellcore Fruit Fusion) if you like a taste in your drink. Choose the unflavoured BPI Sports tub if you want to mix it into anything without changing the flavour."],
@@ -100,7 +100,7 @@ CATS = [
            ("Which creatine is better value?","Per gram, MuscleBlaze 320 g is Rs. 6.25, Wellcore 307 g is Rs. 6.51 and BPI Sports 300 g is Rs. 16.67. Pick the BPI tub if you prefer the brand.")]),
  dict(slug="protein", name="Protein", h1="Buy Whey Protein in Nepal",
       title="Buy Whey Protein in Nepal | MuscleBlaze, BigMan, BPI",
-      desc="Buy whey protein in Nepal: MuscleBlaze Biozyme (Rs. 15,000), BigMan Forza (Rs. 17,500), BPI Hydro HD (Rs. 23,000), 2 kg each. Free delivery, order on WhatsApp.",
+      desc="Whey protein in Nepal: MuscleBlaze Biozyme (Rs. 15,000), BigMan Forza (Rs. 17,500), BPI Hydro HD (Rs. 23,000). Free delivery + Cash on Delivery.",
       intro="Whey protein makes it easier to reach your daily protein target. We stock MuscleBlaze Biozyme Performance Whey (Rs. 15,000), BigMan Forza Protein (Rs. 17,500) and BPI Sports Hydro HD Hydrolyzed Whey (Rs. 23,000), all in 2 kg tubs.",
       body=["Whey is a quick-mixing protein that many lifters use after training or between meals. It does not replace food, it adds to it.",
             "The 2 kg size is built for regular training and lasts longer than a small tub, so it suits members who train most days.",
@@ -113,7 +113,7 @@ CATS = [
            ("Can I take whey and creatine together?","Yes. They are commonly taken together, for example in the same post-workout shake.")]),
  dict(slug="pre-workout", name="Pre-workout", h1="Buy Pre-Workout in Nepal",
       title="Buy Pre-Workout in Nepal | Scitron Volcano | Apex Fitness",
-      desc="Buy pre-workout in Nepal: Scitron Volcano, 30 single-serve packets with 300 mg caffeine, Rs. 5,000. How to use it safely. Free delivery, order on WhatsApp.",
+      desc="Buy pre-workout in Nepal: Scitron Volcano, 30 packets with 300 mg caffeine, Rs. 5,000. How to use it safely. Free delivery + Cash on Delivery.",
       intro="A pre-workout is for the days you need extra focus and energy to start training. We stock Scitron Volcano Pre-Workout, 30 packets per box, at Rs. 5,000.",
       body=["Scitron Volcano has 300 mg of caffeine in each of its 30 packets, a strong dose. Read the label and avoid taking it late in the evening.",
             "Pre-workout is not meant for under 18s, pregnant or breastfeeding women, or anyone with heart conditions or high blood pressure."],
@@ -131,7 +131,8 @@ for c in CATS:
 HOME_FAQ = [
  ("Do you deliver supplements all over Nepal?","Yes, and delivery is free all over Nepal. Order on WhatsApp and we confirm your address and delivery time before dispatch."),
  ("How do I order?","Add products to your cart and tap Order on WhatsApp. Your cart arrives in our WhatsApp chat as a ready message. We confirm stock and delivery with you."),
- ("How do I pay?","We accept Khalti and bank transfer. We send you the payment details on WhatsApp when you order."),
+ ("How do I pay?","Cash on Delivery (Nepal Can), Khalti, or bank transfer. For Khalti or bank, we send you the payment details on WhatsApp when you order."),
+ ("Can I pay cash on delivery?","Yes. Every product can be paid in cash when it arrives. We deliver through Nepal Can all over Nepal, usually in 1–2 days."),
  ("What brands do you sell?","MuscleBlaze, Wellcore, BPI Sports, BigMan, Scitron, Pole Nutrition, Pintola and Valeo: creatine, protein, pre-workout, BCAA, L-carnitine, omega-3, protein oats and lifting belts. All products are authentic, bought from authorised sellers."),
  ("Where are you based?","Apex Fitness Centre, Urlabari-9, Durgapuri, Morang. We are a gym first, open 4:30 AM to 8:30 PM Sunday to Friday, and you can also pick up supplements in person."),
  ("Can I check stock before ordering?","Yes. Message us on WhatsApp at 9708819605 and we will tell you what is in stock today."),
@@ -167,7 +168,7 @@ ORG = {"@type": "Organization", "@id": BASE + "/#org", "name": SITE, "url": BASE
        "telephone": "+977-9708819605", "sameAs": ["https://www.facebook.com/apexfitcentre", "https://www.pinterest.com/apexfitcentre/"],
        "address": {"@type": "PostalAddress", "streetAddress": "Urlabari-9, Durgapuri", "addressLocality": "Urlabari", "addressRegion": "Morang", "addressCountry": "NP"}}
 STORE = {"@type": ["SportsActivityLocation", "Store"], "@id": BASE + "/#store", "name": SITE, "url": BASE + "/",
-         "image": BASE + "/assets/og-image.jpg", "telephone": "+977-9708819605", "priceRange": "Rs. 1,500 - Rs. 15,000",
+         "image": BASE + "/assets/og-image.jpg", "telephone": "+977-9708819605", "paymentAccepted": "Cash on Delivery, Khalti, Bank transfer", "priceRange": "Rs. 1,500 - Rs. 15,000",
          "address": {"@type": "PostalAddress", "streetAddress": "Urlabari-9, Durgapuri", "addressLocality": "Urlabari", "addressRegion": "Morang", "addressCountry": "NP"},
          "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "04:30", "closes": "20:30"}],
          "areaServed": {"@type": "Country", "name": "Nepal"}, "sameAs": ["https://www.facebook.com/apexfitcentre", "https://www.pinterest.com/apexfitcentre/"]}
@@ -265,8 +266,8 @@ def drawer():
 def footer(depth, pdp=None):
     r = "../" * depth
     if pdp:
-        pm = f"Hi Apex Fitness Centre, I want to order: {pdp['full']} for {money(pdp['price'])}. Please confirm stock and send payment details."
-        mbar = f'<div class="mbar pdpbar" data-product="{e(pdp["full"])}" data-value="{pdp["price"]}"><a class="btn wa" href="{wa(pm)}" target="_blank" rel="noopener">Order on WhatsApp</a><button class="btn line" type="button" data-add="{pdp["slug"]}">Add &middot; {money(pdp["price"])}</button><button class="btn" type="button" id="cartOpen2">Cart <b id="cartCount2">0</b></button></div>'
+        pm = f"Hi Apex Fitness Centre, I want to order: {pdp['full']} for {money(pdp['price'])}. Please confirm stock. Payment: COD / Khalti / Bank"
+        mbar = f'<div class="mbar pdpbar" data-product="{e(pdp["full"])}" data-value="{pdp["price"]}"><a class="btn wa" href="{wa(pm)}" target="_blank" rel="noopener">Order on WhatsApp</a><button class="btn line" type="button" data-add="{pdp["slug"]}">Add &middot; {money(pdp["price"])}</button><button class="btn" type="button" id="cartOpen2">Cart <b id="cartCount2">0</b></button><p class="mcod">&#10003; Cash on Delivery &middot; &#10003; Free delivery</p></div>'
     else:
         mbar = f'<div class="mbar"><a class="btn wa" href="https://wa.me/{WA}?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20have%20a%20question%20about%20supplements." target="_blank" rel="noopener">WhatsApp</a><button class="btn" type="button" id="cartOpen2">Cart <b id="cartCount2">0</b></button></div>'
     cat_links = "".join(f'<a href="{r}{c["url"]}">{c["name"]}</a>' for c in CATS)
@@ -363,7 +364,7 @@ def build_home():
     d = 0
     p0 = PRODUCTS[2]
     title = "Buy Authentic Supplements Online in Nepal | Apex Fitness"
-    desc = "Buy authentic creatine, whey protein, pre-workout and BCAA online in Nepal: MuscleBlaze, BPI Sports, Wellcore. Free delivery across Nepal, order on WhatsApp."
+    desc = "Buy authentic creatine, whey protein and pre-workout in Nepal. Free delivery + Cash on Delivery via Nepal Can. Order on WhatsApp."
     j = ld({"@context": "https://schema.org", "@graph": [ORG, STORE,
         {"@type": "WebSite", "@id": BASE + "/#site", "url": BASE + "/", "name": SITE, "publisher": {"@id": BASE + "/#org"}},
         faq_ld(HOME_FAQ)]})
@@ -378,10 +379,10 @@ def build_home():
 <section class="hero"><div class="wrap hgrid">
 <div class="htext">
 <span class="label">Supplements store, Nepal</span>
-<h1>Genuine supplements.<br><em>Free delivery all over Nepal.</em></h1>
+<h1>Genuine supplements.<br><em>Free delivery + Cash on Delivery all over Nepal.</em></h1>
 <p class="lead">Creatine, protein, pre-workout, BCAA and more from MuscleBlaze, BPI Sports, Wellcore and other brands. Pick your products, send the order on WhatsApp, and we confirm delivery with you.</p>
-<div class="cta"><a class="btn gold" href="shop/">Shop all products</a><a class="btn wa" href="https://wa.me/{WA}?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%20supplements." target="_blank" rel="noopener">Order on WhatsApp</a></div>
-<ul class="ticks"><li>Free delivery all over Nepal</li><li>Authentic products</li><li>Pay by Khalti or bank</li></ul>
+<div class="cta"><a class="btn gold" href="shop/">Shop all products</a><a class="btn wa" href="https://wa.me/{WA}?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%20supplements.%20Payment%3A%20COD%20%2F%20Khalti%20%2F%20Bank" target="_blank" rel="noopener">Order on WhatsApp</a></div>
+<ul class="ticks"><li>Free delivery all over Nepal</li><li>Cash on Delivery</li><li>Authentic products</li></ul>
 </div>
 <div class="hfeat"><span class="hbadge">Customer reviewed</span><a class="hshow" href="{PRODUCTS[2]['url']}"><img src="assets/{PRODUCTS[2]['img']}" alt="{e(PRODUCTS[2]['full'])}" width="640" height="640" fetchpriority="high"></a>
 <div class="hcap"><span class="pbrand">Featured</span><b>{e(PRODUCTS[2]['name'])}</b><span class="price">{money(PRODUCTS[2]['price'])}</span></div></div>
@@ -391,7 +392,7 @@ def build_home():
 <section class="trust"><div class="wrap"><ul>
 <li><b>100% authentic</b><span>Bought from authorised sellers</span></li>
 <li><b>Free delivery</b><span>All over Nepal, no minimum</span></li>
-<li><b>Khalti and bank</b><span>Easy, safe payment</span></li>
+<li><b>Cash on Delivery</b><span>Or Khalti and bank transfer</span></li>
 <li><b>A real gym</b><span>Urlabari-9, Morang, open Sun to Fri</span></li>
 </ul></div></section>
 <section class="sec"><div class="wrap">
@@ -427,7 +428,7 @@ def build_home():
 <ol class="steps">
 <li><b>1</b><div><h3>Add to cart</h3><p>Choose your products and quantity. No sign up needed.</p></div></li>
 <li><b>2</b><div><h3>Send on WhatsApp</h3><p>Tap Order on WhatsApp. Your cart arrives as a ready message.</p></div></li>
-<li><b>3</b><div><h3>We confirm and deliver</h3><p>We confirm stock, payment and your address, then ship anywhere in Nepal.</p></div></li>
+<li><b>3</b><div><h3>We confirm and deliver</h3><p>We confirm stock and your address, then ship anywhere in Nepal. Pay by Cash on Delivery (Nepal Can), Khalti, or bank transfer.</p></div></li>
 </ol>
 </div></section>
 
@@ -457,7 +458,7 @@ def build_home():
 def build_shop():
     d = 1
     title = "Shop Supplements Online in Nepal | Apex Fitness Centre"
-    desc = "All supplements at Apex Fitness Centre: creatine, protein, pre-workout, BCAA, L-carnitine, omega-3 and more from Rs. 1,300. Free delivery, order on WhatsApp."
+    desc = "All supplements at Apex Fitness Centre: creatine, protein, pre-workout, BCAA, omega-3 and more from Rs. 1,300. Free delivery + Cash on Delivery."
     items = [{"@type": "ListItem", "position": i + 1, "url": BASE + "/" + p["url"], "name": p["full"]} for i, p in enumerate(PRODUCTS)]
     cr = [("Home", ""), ("Shop", "shop/")]
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), {"@type": "CollectionPage", "name": "Shop supplements", "url": BASE + "/shop/", "mainEntity": {"@type": "ItemList", "itemListElement": items}}]})
@@ -604,18 +605,19 @@ def build_product(p):
     cr = [("Home", ""), ("Shop", "shop/"), (c["name"], c["url"]), (p["name"], p["url"])]
     pfaq = [(f"Do you deliver {p['name']} all over Nepal?", "Yes. Delivery is free all over Nepal. Order on WhatsApp and we confirm your address and delivery details."),
             (f"What is the price of {p['name']}{' ' + p['size'] if p['size'] else ''} in Nepal?", f"At Apex Fitness Centre the price is {money(p['price'])}."),
-            ("How do I order?", "Tap Order on WhatsApp or add it to your cart. Your order arrives in our WhatsApp chat and we confirm stock and delivery with you.")]
+            ("How do I order?", "Tap Order on WhatsApp or add it to your cart. Your order arrives in our WhatsApp chat and we confirm stock and delivery with you."),
+            ("Can I pay cash on delivery?", "Yes. Every product can be paid in cash when it arrives. We deliver through Nepal Can all over Nepal, usually in 1–2 days.")]
     prod = {"@type": "Product", "@id": BASE + "/" + p["url"] + "#product", "name": p["full"], "image": [BASE + "/assets/" + p["img"]],
             "description": p["desc"], "sku": p["slug"], "brand": {"@type": "Brand", "name": p["brand"]}, "category": c["name"],
             "offers": {"@type": "Offer", "url": BASE + "/" + p["url"], "priceCurrency": "NPR", "price": str(p["price"]),
-                       "availability": "https://schema.org/" + ("OutOfStock" if STOCK.get(p["slug"]) == "out" else "InStock"), "priceValidUntil": f"{__import__('datetime').date.today().year + 1}-12-31", "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "NPR"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "NP"}, "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY"}}}, "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "NP", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/ReturnShippingFees", "description": "Sealed, unopened items only. Opened supplements cannot be returned."}, "itemCondition": "https://schema.org/NewCondition",
+                       "availability": "https://schema.org/" + ("OutOfStock" if STOCK.get(p["slug"]) == "out" else "InStock"), "priceValidUntil": f"{__import__('datetime').date.today().year + 1}-12-31", "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "NPR"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "NP"}, "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY"}}}, "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "NP", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/ReturnShippingFees", "description": "Sealed, unopened items only. Opened supplements cannot be returned."}, "itemCondition": "https://schema.org/NewCondition", "acceptedPaymentMethod": [{"@type": "PaymentMethod", "@id": "http://purl.org/goodrelations/v1#COD", "name": "Cash on Delivery"}, {"@type": "PaymentMethod", "name": "Khalti"}, {"@type": "PaymentMethod", "@id": "http://purl.org/goodrelations/v1#ByBankTransferInAdvance", "name": "Bank transfer"}],
                        "seller": {"@type": "Organization", "name": SITE}}}
     rvs = [x for x in REVIEWS if x["product"] == p["slug"]]
     if rvs:
         prod["review"] = [{"@type": "Review", "author": {"@type": "Person", "name": x["name"]}, "reviewRating": {"@type": "Rating", "ratingValue": str(x["rating"]), "bestRating": "5", "worstRating": "1"}, "reviewBody": x.get("en") or x["text"]} for x in rvs]
         prod["aggregateRating"] = {"@type": "AggregateRating", "ratingValue": str(round(sum(x["rating"] for x in rvs) / len(rvs), 1)), "reviewCount": str(len(rvs)), "bestRating": "5", "worstRating": "1"}
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), prod, faq_ld(pfaq)]})
-    msg = f"Hi Apex Fitness Centre, I want to order: {p['full']} for {money(p['price'])}. Please confirm stock and delivery to my address."
+    msg = f"Hi Apex Fitness Centre, I want to order: {p['full']} for {money(p['price'])}. Please confirm stock and delivery to my address. Payment: COD / Khalti / Bank"
     facts = "".join(f"<tr><th>{e(a)}</th><td>{e(b)}</td></tr>" for a, b in p["facts"])
     rel = ([x for x in PRODUCTS if x is not p and x['cat'] == p['cat']] + [x for x in PRODUCTS if x['cat'] != p['cat']])[:4]
     body = f"""<body data-root="../../">
@@ -631,13 +633,14 @@ def build_product(p):
 {stock_line(p)}
 <p class="lead">{e(p['short'])}</p>
 <a class="btn wa full order-main" href="{wa(msg)}" target="_blank" rel="noopener" data-product="{e(p['full'])}" data-value="{p['price']}">Order on WhatsApp &ndash; {money(p['price'])}</a>
+<p class="codline">&#10003; Cash on Delivery available &middot; &#10003; Free delivery all over Nepal via Nepal Can</p>
 <div class="buy">
 <div class="qty" role="group" aria-label="Quantity"><button type="button" id="qm" aria-label="Decrease">-</button><input id="qv" value="1" inputmode="numeric" aria-label="Quantity"><button type="button" id="qp" aria-label="Increase">+</button></div>
 <button class="btn line" type="button" id="addBtn" data-add="{p['slug']}">Add to cart</button>
 </div>
 <p class="carthint">Buying more than one item? Add them to your cart, then send the whole order on WhatsApp in one message.</p>
 {auth_block(p, d)}
-<ul class="ticks"><li>Pay by Khalti or bank transfer</li><li>Free delivery all over Nepal</li><li>Returns: sealed, unopened items only. Opened supplements cannot be returned.</li><li>Sold by Apex Fitness Centre, Urlabari</li></ul>
+<ul class="ticks"><li>Cash on Delivery, Khalti or bank transfer</li><li>Free delivery all over Nepal</li><li>Returns: sealed, unopened items only. Opened supplements cannot be returned.</li><li>Sold by Apex Fitness Centre, Urlabari</li></ul>
 </div>
 </div>
 <div class="pdetail">
@@ -649,11 +652,11 @@ def build_product(p):
 <section class="who"><h2 class="h2s">Who it is for</h2><ul class="who-l">{''.join(f'<li>{e(t)}</li>' for t in p['who'])}</ul></section>
 {together(p)}
 {reviews_block(p)}
-<section class="how2"><h2 class="h2s">How your order works</h2><ol class="how"><li><b>Order on WhatsApp.</b> Tap the green button. We confirm stock and your address.</li><li><b>Pay your way.</b> Khalti or bank transfer. Details come on WhatsApp.</li><li><b>We ship the same day.</b> Nepal Can sends it with a tracking number, free of charge.</li><li><b>Most orders arrive in 1 to 2 days.</b> Check the seals, then message us if anything looks wrong.</li></ol></section>
+<section class="how2"><h2 class="h2s">How your order works</h2><ol class="how"><li><b>Order on WhatsApp.</b> Tap the green button. We confirm stock and your address.</li><li><b>Pay your way.</b> Cash on Delivery (Nepal Can), Khalti, or bank transfer. Khalti and bank details come on WhatsApp.</li><li><b>We ship the same day.</b> Nepal Can sends it with a tracking number, free of charge.</li><li><b>Most orders arrive in 1 to 2 days.</b> Check the seals, then message us if anything looks wrong.</li></ol></section>
 <section class="why"><h2 class="h2s">Why order from Apex</h2><div class="whyg">
 <div><b>Authentic products</b><p>Bought from authorised sellers, not unknown resellers.</p></div>
 <div><b>Free delivery all over Nepal</b><p>No delivery charge, wherever you live.</p></div>
-<div><b>Khalti or bank transfer</b><p>Pay the way you prefer. Details come on WhatsApp.</p></div>
+<div><b>Cash on Delivery</b><p>Pay in cash when it arrives, or by Khalti or bank transfer.</p></div>
 <div><b>Real people on WhatsApp</b><p>Ask anything before you buy. We reply from the gym.</p></div>
 </div></section>
 {guide_links(d, p['cat'])}
