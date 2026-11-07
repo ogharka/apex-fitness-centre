@@ -34,7 +34,7 @@ dict(slug="creatine-or-whey-first", cat="creatine", table="creatine", published=
       ("Is creatine safe?", "Creatine monohydrate is widely studied and is considered safe for healthy adults at normal doses. People with kidney problems or other conditions should ask a doctor first. This is general information, not medical advice.")],
  rel=["how-to-take-creatine", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
 dict(slug="creatine-whey-price-nepal", cat="creatine", table=["creatine", "protein"], published="2026-11-05",
- cta="Hi Apex Fitness Centre, I want to order creatine / whey protein. Please confirm what is in stock and send payment details.",
+ cta="Hi Apex Fitness Centre, I want to order creatine / whey protein. Please confirm what is in stock. Payment: COD / Khalti / Bank",
  title="Creatine and Whey Price in Nepal (2026) + Fake Check",
  h1="Creatine and whey protein price in Nepal (2026), and how to spot fakes",
  desc="Real creatine and whey protein prices in Nepal from Rs. 2,000, price per gram and per kg, and a simple checklist to spot fake supplements before you pay.",
