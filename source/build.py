@@ -149,6 +149,8 @@ RULES = [  # applied in order, best first
  dict(name="BCAA + creatine", slugs=["bpi-sports-best-bcaa-30-servings-grape","muscleblaze-creatine-monohydrate-320g-citrus-blast"], off=400),
  dict(name="L-carnitine + CLA", slugs=["muscleblaze-l-carnitine-pro-liquid-450ml-key-lime","bpi-sports-cla-carnitine-370g-fruit-punch"], off=400),
  dict(name="Omega-3 + whey", slugs=["pole-nutrition-omega-3-fish-oil-1000mg","muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme"], off=500),
+ dict(name="Creatine + Pintola Oats starter combo", slugs=["muscleblaze-creatine-monohydrate-320g-citrus-blast","pintola-high-protein-oats-chocolate-1kg"], off=200),
+ dict(name="Wellcore creatine + Pintola Oats starter combo", slugs=["wellcore-micronised-creatine-monohydrate-307g-fruit-fusion","pintola-high-protein-oats-chocolate-1kg"], off=200),
  dict(name="Protein oats + whey", slugs=["pintola-high-protein-oats-chocolate-1kg","muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme"], off=300),
  dict(name="Lifting belt + BigMan Forza", slugs=["valeo-weightlifting-belt","bigman-forza-protein-2kg"], off=500),
  dict(name="Hydro HD whey + creatine", slugs=["bpi-sports-hydro-hd-hydrolyzed-whey-2kg-chocolate-lava-cake","muscleblaze-creatine-monohydrate-320g-citrus-blast"], off=500),
@@ -1169,7 +1171,8 @@ def build_guides():
         for h2, parts in g["body"]:
             inner = ""
             for t in parts:
-                if isinstance(t, dict): inner += "<ul>" + "".join(f"<li>{e(x)}</li>" for x in t["list"]) + "</ul>"
+                if isinstance(t, dict) and "html" in t: inner += t["html"]  # trusted, hand-written markup
+                elif isinstance(t, dict): inner += "<ul>" + "".join(f"<li>{e(x)}</li>" for x in t["list"]) + "</ul>"
                 else: inner += f"<p>{e(t)}</p>"
             secs += f"<section class='prose'><h2>{e(h2)}</h2>{inner}</section>"
         if g.get('sw'): secs += "<section class='prose swg'><h2>See the software</h2><p>Apex Gym Management is Rs. 25,000, one-time, with no monthly fee. It runs without internet and includes setup and staff training.</p><p><a class='btn wa' href='../../software/'>See features and price</a></p></section>"
