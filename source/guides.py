@@ -1,20 +1,57 @@
 # Buyer guides. Plain, honest and useful. "table" shows live product prices from PRODUCTS.
 GUIDES = [
-dict(slug="creatine-price-in-nepal", cat="creatine", table="creatine",
- title="Creatine Price in Nepal (2026): Genuine Brands and Prices",
- h1="Creatine price in Nepal",
- desc="Current creatine prices in Nepal for genuine brands, price per gram, how to choose, and how to order with free delivery all over Nepal.",
- intro="Creatine monohydrate is one of the most researched supplements. In Nepal the price depends on the brand, the tub size and where you buy it. This page lists what we sell today, with the price per gram so you can compare fairly.",
+dict(slug="creatine-price-in-nepal", cat="creatine",
+ title="Creatine Price in Nepal 2026: MuscleBlaze, Wellcore, BPI",
+ h1="Creatine Price in Nepal 2026: MuscleBlaze vs Wellcore vs BPI – Which to Buy?",
+ desc="Creatine price in Nepal 2026: MuscleBlaze and Wellcore Rs. 2,000, BPI Rs. 5,000. Compare servings, how to take it and how to spot fakes.",
+ intro="The creatine price in Nepal in 2026 starts at Rs. 2,000 for a MuscleBlaze or Wellcore tub and goes up to Rs. 5,000 for BPI Sports Micronised Creatine. All three are creatine monohydrate, the most studied form of creatine. The real differences are price per serving, flavour and how well the powder mixes. This guide compares them side by side and helps you pick the right one.",
  body=[
-  ("What changes the price of creatine", ["Three things: the brand, the pack size and the seller. A bigger tub almost always costs less per gram. A very low price for a well-known brand is a warning sign, because it can mean an old, repacked or fake product.", "Compare price per gram, not just the tub price. A 320 g tub at Rs. 2,000 is about Rs. 6.25 per gram. Divide the price by the grams in the pack and you can compare any two tubs."]),
-  ("Which type should you buy", ["Plain creatine monohydrate is the form with the most research behind it, and it is usually the cheapest. Flavoured tubs taste better but are not stronger. Unflavoured tubs mix into water or a shake without changing the taste.", "You do not need a special form to get results. Choose a brand you trust, with a sealed tub and a printed batch number."]),
-  ("How much do you need", ["Most people take about 3 to 5 g a day, every day, including rest days. It builds up in your muscles over a few weeks, so taking it regularly matters more than the time of day. Follow the label on your tub, and check with a doctor first if you have a kidney or other health condition."]),
-  ("How to order from Apex", ["Tap Order on WhatsApp on any product page. We confirm stock and your address, you pay by Khalti or bank transfer, and Nepal Can delivers anywhere in Nepal, usually in 1 to 2 days. Delivery is free. Every product is authentic and comes with a bill."]),
+  ("Creatine price in Nepal: quick comparison", [{"html": """<div class="tw"><table class="cmp"><thead><tr><th>Product</th><th>Price</th><th>Pack</th><th>Flavour</th><th>Servings (3 g creatine)</th><th>Price per serving</th></tr></thead><tbody>
+<tr><td><a href="../../products/muscleblaze-creatine-monohydrate-320g-citrus-blast/">MuscleBlaze Creatine Monohydrate</a></td><td>Rs. 2,000</td><td>320 g</td><td>Citrus Blast</td><td>See the label (flavoured tub)</td><td>See the label</td></tr>
+<tr><td><a href="../../products/wellcore-micronised-creatine-monohydrate-307g-fruit-fusion/">Wellcore Micronised Creatine Monohydrate</a></td><td>Rs. 2,000</td><td>307 g</td><td>Fruit Fusion</td><td>83 (label)</td><td>about Rs. 24</td></tr>
+<tr><td><a href="../../products/bpi-sports-micronized-creatine-300g-unflavored/">BPI Sports Micronised Creatine</a></td><td>Rs. 5,000</td><td>300 g</td><td>Unflavoured</td><td>100 (label: 60 servings of 5 g)</td><td>Rs. 50</td></tr>
+</tbody></table></div>"""}, "Flavoured tubs contain flavouring as well as creatine, so you cannot divide the tub weight by 3 to get servings. Always check \"servings per container\" on the label."]),
+  ("Why creatine prices differ in Nepal", ["Three things change the price: the brand, the pack size and the seller. Imported brands like BPI Sports cost more after shipping and import duty, while Indian brands like MuscleBlaze and Wellcore cost less to bring into Nepal.", "Flavour does not make creatine stronger. Flavoured tubs taste better in plain water, while unflavoured tubs mix into a shake without changing the taste. Micronised powder is ground finer, so it dissolves more easily, but the creatine itself is the same.", "Be careful with prices that look too good. A well-known brand selling far below the usual creatine price in Nepal can mean an old, repacked or fake tub."]),
+  ("What creatine does", ["Your muscles use a fuel called phosphocreatine for short, hard efforts like a heavy set of squats or a sprint. Taking creatine every day tops up those stores. Research summarised by the International Society of Sports Nutrition shows creatine monohydrate can help you do a little more work in training, which over weeks supports strength and muscle gains. It is not a steroid and it is not a magic powder: it works only alongside regular training and enough protein."]),
+  ("The three creatines, one by one", [{"html": """<h3>MuscleBlaze Creatine Monohydrate 320 g – Rs. 2,000</h3>
+<p><img src="../../assets/muscleblaze-creatine-320g.jpg" alt="MuscleBlaze Creatine Monohydrate 320 g Citrus Blast price in Nepal" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
+<p>One of India's best-known sports nutrition brands, and the easiest creatine to find in Nepal. The Citrus Blast flavour means you can mix it with plain water. A good, low-cost choice for most people starting out.</p>
+<p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%3A%20MuscleBlaze%20Creatine%20Monohydrate%20320%20g%20%28Citrus%20Blast%29%20for%20Rs.%202%2C000.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="MuscleBlaze Creatine Monohydrate 320 g (Citrus Blast)" data-value="2000">Order on WhatsApp – Rs. 2,000</a> <a class="tl" href="../../products/muscleblaze-creatine-monohydrate-320g-citrus-blast/">See the product page</a></p>
+<h3>Wellcore Micronised Creatine Monohydrate 307 g – Rs. 2,000</h3>
+<p><img src="../../assets/wellcore-micronised-creatine-307g.jpg" alt="Wellcore Micronised Creatine Monohydrate 307 g Fruit Fusion price in Nepal" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
+<p>Micronised means the powder is ground finer, so it mixes more easily. The label gives 83 servings of 3 g creatine, about Rs. 24 per serving, in a Fruit Fusion flavour. Read our full <a href="../../blog/wellcore-creatine-review/">Wellcore creatine review</a>.</p>
+<p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%3A%20Wellcore%20Micronised%20Creatine%20Monohydrate%20307%20g%20%28Fruit%20Fusion%29%20for%20Rs.%202%2C000.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="Wellcore Micronised Creatine Monohydrate 307 g (Fruit Fusion)" data-value="2000">Order on WhatsApp – Rs. 2,000</a> <a class="tl" href="../../products/wellcore-micronised-creatine-monohydrate-307g-fruit-fusion/">See the product page</a></p>
+<h3>BPI Sports Micronised Creatine 300 g – Rs. 5,000</h3>
+<p><img src="../../assets/bpi-micronized-creatine-300g.jpg" alt="BPI Sports Micronised Creatine 300 g Unflavoured price in Nepal" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
+<p>An American brand, unflavoured and micronised. Because it has no flavour, you can add it to your whey shake, juice or water without changing the taste. It costs more per serving, so it suits people who already use whey and prefer an imported brand.</p>
+<p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%3A%20BPI%20Sports%20Micronised%20Creatine%20300%20g%20%28Unflavoured%29%20for%20Rs.%205%2C000.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="BPI Sports Micronised Creatine 300 g (Unflavoured)" data-value="5000">Order on WhatsApp – Rs. 5,000</a> <a class="tl" href="../../products/bpi-sports-micronized-creatine-300g-unflavored/">See the product page</a></p>"""}]),
+  ("How to take creatine", [{"html": """<p><b>Daily dose:</b> 3 to 5 g a day, every day, including rest days. This is the maintenance dose recommended in the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/" target="_blank" rel="noopener">International Society of Sports Nutrition position stand</a>.</p>
+<p><b>Loading or no loading?</b> Both work.</p>
+<ul><li><b>With loading:</b> about 0.3 g per kg of body weight per day for 5 to 7 days, split into 3 or 4 doses (about 18 g a day for a 60 kg person), then 3 to 5 g a day. Your muscles fill up in about a week.</li>
+<li><b>Without loading:</b> just take 3 to 5 g a day from day one. Your muscles fill up in about 3 to 4 weeks. This is simpler and easier on the stomach, so many beginners skip loading.</li></ul>
+<p><b>Timing:</b> taking it every day matters far more than the exact time. Many people take it after training or with a meal because it is easy to remember.</p>
+<p><b>Water:</b> mix each scoop with a full glass of water, and drink normally through the day.</p>
+<p>More detail: <a href="../how-to-take-creatine/">how to take creatine</a> and <a href="../../blog/creatine-side-effects-myths-and-facts/">creatine side effects: myths and facts</a>.</p>"""}]),
+  ("Best creatine in Nepal for beginners vs advanced lifters", [{"html": """<div class="tw"><table class="cmp"><thead><tr><th>You are...</th><th>Our pick</th><th>Why</th></tr></thead><tbody>
+<tr><td>New to the gym, on a budget</td><td>MuscleBlaze or Wellcore, Rs. 2,000</td><td>Lowest cost, flavoured, mixes with water</td></tr>
+<tr><td>You want the finest powder for water</td><td>Wellcore</td><td>Micronised and flavoured</td></tr>
+<tr><td>Advanced, already taking whey</td><td>BPI Sports, Rs. 5,000</td><td>Unflavoured, blends into any shake</td></tr>
+</tbody></table></div>"""}, "The honest answer: the best creatine in Nepal is the genuine one you will take every day. All three are creatine monohydrate."]),
+  ("How to spot fake creatine in Nepal", ["Fake and refilled tubs are a real risk. Before you use any tub, check:",
+     {"list": ["Seal: the inner foil seal must be unbroken when you open it.", "Batch number and expiry date: printed clearly on the tub, not on a loose sticker.", "Importer sticker: genuine imported tubs carry the importer's details.", "QR or authenticity code: if the label has one, scan it and check it on the brand's official website.", "Price: a tub far cheaper than the usual price in Nepal is a warning sign."]},
+     {"html": """<p>At Apex, ask on WhatsApp and we send a photo of the seal and batch number before you pay. Full guide: <a href="../../blog/fake-supplements-in-nepal-how-to-spot-them/">how to spot fake supplements in Nepal</a>.</p>"""}]),
+  ("Buy creatine online in Nepal: Urlabari, Jhapa, Kathmandu and everywhere", ["We are a gym in Urlabari-9, Morang, and we deliver creatine all over Nepal, including Jhapa, Itahari, Biratnagar, Kathmandu and Pokhara. Delivery is free and usually takes 1 to 2 days by Nepal Can. Tap Order on WhatsApp, we confirm stock and your address, and you pay by Cash on Delivery, Khalti or bank transfer. In Urlabari you can also pick it up at the gym."]),
+  ("Starter combo: creatine + Pintola Oats – Rs. 3,100", [{"html": """<p>Get MuscleBlaze or Wellcore creatine plus <a href="../../products/pintola-high-protein-oats-chocolate-1kg/">Pintola High Protein Oats (1 kg)</a> for <b>Rs. 3,100</b> instead of Rs. 3,300, with free delivery all over Nepal. A simple start: oats for breakfast, creatine every day.</p>
+<p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20the%20Creatine%20%2B%20Pintola%20Oats%20starter%20combo%20for%20Rs.%203%2C100.%20Creatine%3A%20MuscleBlaze%20/%20Wellcore.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="Creatine + Pintola Oats starter combo" data-value="3100">Order the starter combo on WhatsApp – Rs. 3,100</a></p>"""}]),
+  ("Sources", [{"html": """<ul><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/" target="_blank" rel="noopener">ISSN position stand: safety and efficacy of creatine supplementation</a> (Kreider et al., 2017)</li><li><a href="https://exerciseandsportnutritionlab.com/new-issn-position-stand-on-creatine-supplementation/" target="_blank" rel="noopener">New ISSN position stand on creatine supplementation</a> (Exercise and Sport Nutrition Lab, Texas A&amp;M)</li></ul>
+<p class="fine">General information, not medical advice. If you have kidney problems, are pregnant, or take regular medicine, talk to your doctor before taking creatine.</p>"""}]),
  ],
- faq=[("Is creatine safe?", "Creatine monohydrate is widely studied and is considered safe for healthy adults at normal doses. People with kidney problems or other conditions should ask a doctor first. This is general information, not medical advice."),
-      ("Do I need to load creatine?", "No. A daily dose of about 3 to 5 g reaches the same level in your muscles after a few weeks. Loading only gets you there faster."),
-      ("Do you deliver creatine all over Nepal?", "Yes. Delivery is free all over Nepal, usually in 1 to 2 days.")],
- rel=["how-to-take-creatine", "how-to-spot-fake-supplements-in-nepal", "supplements-for-beginners-in-nepal"]),
+ faq=[("What is the creatine price in Nepal in 2026?", "At Apex Fitness Centre, MuscleBlaze Creatine (320 g) and Wellcore Creatine (307 g) are Rs. 2,000 each, and BPI Sports Micronised Creatine (300 g) is Rs. 5,000, with free delivery all over Nepal."),
+      ("Which is the best creatine in Nepal for beginners?", "MuscleBlaze or Wellcore. Both cost Rs. 2,000, are flavoured and mix with water. All three brands are creatine monohydrate, so choose the one you will take every day."),
+      ("Do I need a creatine loading phase?", "No. Loading fills your muscles in about a week; taking 3 to 5 g a day without loading fills them in about 3 to 4 weeks. Both work."),
+      ("When should I take creatine?", "Any time of day. Taking it every day matters more than timing. After training or with a meal is easy to remember."),
+      ("Can I buy creatine online in Nepal with free delivery?", "Yes. Order on WhatsApp and we deliver free all over Nepal by Nepal Can, usually in 1 to 2 days. Pay by Cash on Delivery, Khalti or bank transfer.")],
+ rel=["how-to-take-creatine", "creatine-whey-price-nepal", "supplements-for-beginners-in-nepal"]),
 
 dict(slug="creatine-or-whey-first", cat="creatine", table="creatine", published="2026-11-02",
  title="Creatine or Whey First? Budget Guide for Nepal (2026)",
@@ -34,7 +71,7 @@ dict(slug="creatine-or-whey-first", cat="creatine", table="creatine", published=
       ("Is creatine safe?", "Creatine monohydrate is widely studied and is considered safe for healthy adults at normal doses. People with kidney problems or other conditions should ask a doctor first. This is general information, not medical advice.")],
  rel=["how-to-take-creatine", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
 dict(slug="creatine-whey-price-nepal", cat="creatine", table=["creatine", "protein"], published="2026-11-05",
- cta="Hi Apex Fitness Centre, I want to order creatine / whey protein. Please confirm what is in stock and send payment details.",
+ cta="Hi Apex Fitness Centre, I want to order creatine / whey protein. Please confirm what is in stock. Payment: COD / Khalti / Bank",
  title="Creatine and Whey Price in Nepal (2026) + Fake Check",
  h1="Creatine and whey protein price in Nepal (2026), and how to spot fakes",
  desc="Real creatine and whey protein prices in Nepal from Rs. 2,000, price per gram and per kg, and a simple checklist to spot fake supplements before you pay.",
@@ -52,7 +89,7 @@ dict(slug="creatine-whey-price-nepal", cat="creatine", table=["creatine", "prote
              "Importer sticker: products sold legally in Nepal carry an importer label with the importer's name and address.",
              "QR or scratch code: if the brand uses one, scan it or check it on the brand's official website or app. A code that fails, or was already used, is a red flag."]},
    "Also be careful with prices far below normal. A Rs. 15,000 whey tub selling for Rs. 9,000 is usually old, repacked or fake. If anything looks wrong, don't open it, and message the seller straight away."]),
-  ("How to order from Apex", ["Tap the button below or the Order on WhatsApp button on any product page. We confirm stock and your address, you pay by Khalti or bank transfer, and delivery is free all over Nepal. Want to see it first? Ask on WhatsApp and we will send a photo of the seal and batch number before you pay."]),
+  ("How to order from Apex", ["Tap the button below or the Order on WhatsApp button on any product page. We confirm stock and your address, you pay by Cash on Delivery, Khalti or bank transfer, and delivery is free all over Nepal. Want to see it first? Ask on WhatsApp and we will send a photo of the seal and batch number before you pay."]),
  ],
  faq=[("What is the price of creatine in Nepal?", "At Apex Fitness Centre, creatine starts at Rs. 2,000 for MuscleBlaze Creatine Monohydrate 320 g or Wellcore Micronised Creatine 307 g. BPI Sports Micronised Creatine 300 g is Rs. 5,000."),
       ("What is the price of whey protein in Nepal?", "Our 2 kg protein tubs are Rs. 15,000 (MuscleBlaze Biozyme Performance Whey), Rs. 17,500 (BigMan Forza Protein) and Rs. 23,000 (BPI Sports Hydro HD Hydrolyzed Whey)."),
@@ -69,7 +106,7 @@ dict(slug="whey-protein-price-in-nepal", cat="protein", table="protein",
   ("How to compare protein prices", ["Do not look only at the tub price. Divide the price by the kilograms in the pack to get the price per kg. Then check the label for protein per serving, because a cheaper tub can give less protein per scoop.", "Also check the serving count. A 2 kg tub that gives many servings costs less per shake than a small one."]),
   ("Whey, blends and hydrolysed whey", ["Whey is the common choice for most people. Blends can cost less. Hydrolysed whey is processed to digest faster and usually costs more. The best one is the one that fits your budget, tastes good enough to take every day, and comes from a seller you trust."]),
   ("How much protein do you need", ["Many active adults aim for about 1.4 to 2.0 g of protein per kg of body weight a day, from food and shakes together. A shake adds to your meals and does not replace them. If you eat enough protein from dal, eggs, paneer, soya and meat, you may need less powder."]),
-  ("Ordering from Apex", ["Order on WhatsApp from any product page. We confirm stock, you pay by Khalti or bank transfer, and Nepal Can delivers all over Nepal, usually in 1 to 2 days, with free delivery. Every tub is authentic and comes with a bill."]),
+  ("Ordering from Apex", ["Order on WhatsApp from any product page. We confirm stock, you pay by Cash on Delivery, Khalti or bank transfer, and Nepal Can delivers all over Nepal, usually in 1 to 2 days, with free delivery. Every tub is authentic and comes with a bill."]),
  ],
  faq=[("What is a good price for 2 kg whey in Nepal?", "It depends on the brand and type. Compare the price per kg and the protein per serving, and be careful with a price far below other sellers, which can mean a fake or old product."),
       ("Is whey protein safe?", "For most healthy adults, yes. If you have a kidney condition, a milk allergy or another health issue, ask a doctor first. This is general information, not medical advice."),
@@ -154,13 +191,13 @@ dict(slug="buy-supplements-online-in-nepal", cat="shop", table=None,
  intro="Buying online is convenient, but you cannot touch the tub first. These checks protect you.",
  body=[
   ("Before you pay", [{"list": ["Check that the seller has a real address, phone number and reviews.", "Ask for photos or a short video of the exact product.", "Ask if you will get a bill.", "Ask how long delivery takes and how it is sent.", "Check the price against other sellers. Be careful if it is far lower."]}]),
-  ("How ordering works at Apex", ["Pick a product and tap Order on WhatsApp, or add items to your cart. We confirm stock and your address, you pay by Khalti or bank transfer, and we send it by Nepal Can with a tracking number. Delivery is free all over Nepal and usually takes 1 to 2 days."]),
+  ("How ordering works at Apex", ["Pick a product and tap Order on WhatsApp, or add items to your cart. We confirm stock and your address, you pay by Cash on Delivery, Khalti or bank transfer, and we send it by Nepal Can with a tracking number. Delivery is free all over Nepal and usually takes 1 to 2 days."]),
   ("When your parcel arrives", ["Check that the outer seal and the inner seal are unbroken and the batch number is printed. If anything looks wrong, take photos and message us the same day."]),
   ("Returns", ["Sealed, unopened items can be returned. Opened supplements cannot be returned, so check everything before you open the tub."]),
  ],
  faq=[("Is it safe to pay in advance?", "Pay only a seller you can verify. Check reviews, ask for photos, and keep the payment screenshot and bill."),
       ("How long does delivery take in Nepal?", "From Apex, delivery is usually 1 to 2 days all over Nepal."),
-      ("Can I pay by Khalti?", "Yes, by Khalti or bank transfer. We send details on WhatsApp.")],
+      ("Can I pay by Khalti?", "Yes. You can pay by Cash on Delivery, Khalti or bank transfer. We send Khalti and bank details on WhatsApp.")],
  rel=["how-to-spot-fake-supplements-in-nepal", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
 
 dict(slug="how-to-choose-a-pre-workout-in-nepal", cat="pre-workout", table="pre-workout",
