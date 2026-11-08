@@ -2,7 +2,7 @@
 title: What to Eat Before a Workout: 12 Easy Nepali Pre-Workout Meals
 seo_title: What to Eat Before a Workout (Nepali Options)
 description: What to eat before the gym for energy, without feeling heavy: timing, simple Nepali food options for morning and evening workouts, and what to avoid.
-date: 2026-11-26
+date: 2026-11-08
 category: Diet
 cover_art: gain
 ---
