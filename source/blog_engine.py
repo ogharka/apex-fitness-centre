@@ -288,6 +288,7 @@ def build_blog():
 {tocb}
 <div class="abody">{p['html']}</div>
 <aside class="author">{('<img class="aphoto" src="../../assets/' + AUTHORS[p["author"]]["photo"] + '" alt="' + e(AUTHORS[p["author"]]["name"]) + '" width="64" height="64" loading="lazy" style="width:64px;height:64px">') if AUTHORS.get(p.get("author"), {}).get("photo") else ""}<b>About this article</b><p>{(e(AUTHORS[p['author']]['name']) + ', ' + e(AUTHORS[p['author']]['job']) + '. ' + e(AUTHORS[p['author']]['bio']) + ' ') if p.get('author') in AUTHORS else ''}Written by the team at <a href="../../about/">Apex Fitness Centre</a>, a gym and supplement store in Urlabari, Morang, Nepal. We research every article from the sources linked in the text and update it when facts change. Read our <a href="../../editorial-policy/">editorial policy</a>{(' or <a href="../../author/' + p['author'] + '/">more about ' + e(AUTHORS[p['author']]['name']) + '</a>') if p.get('author') in AUTHORS else ''}.</p></aside>
+<aside class="follow"><b>Get our next guide</b><p>We publish new training, diet and trekking guides every week. Follow Apex Fitness Centre on Facebook to see each one first.</p><a class="btn line" href="https://www.facebook.com/apexfitcentre" target="_blank" rel="noopener">Follow us on Facebook</a></aside>
 {sharebottom}
 {newsletter_box()}
 <aside class="pask" data-product="Blog: {e(p['title'])}"><p><b>Have a question about this?</b> Message us. We reply from the gym in Urlabari.</p><a class="btn wa" href="{ask}" target="_blank" rel="noopener">Ask on WhatsApp</a></aside>
