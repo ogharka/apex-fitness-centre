@@ -8,7 +8,7 @@
 import datetime as _dt, glob as _glob, markdown as _md
 
 NPT = _dt.timezone(_dt.timedelta(hours=5, minutes=45))
-TODAY = _dt.date.fromisoformat(os.environ["BLOG_TODAY"]) if os.environ.get("BLOG_TODAY") else _dt.datetime.now(NPT).date()  # BLOG_TODAY only for testing schedules
+TODAY = _dt.date.fromisoformat(os.environ["BLOG_TODAY"]) if os.environ.get("BLOG_TODAY") else (_dt.datetime.now(NPT) + _dt.timedelta(hours=9)).date()  # from 3 PM Nepal time, tomorrow's post goes live, so it is always up by morning (GitHub often starts scheduled runs hours late). BLOG_TODAY only for testing
 REQUIRED = ("title", "description", "date")
 # Topics shown as chips on the blog. A post's "category:" should be one of these (any other name still works and gets its own page).
 TOPICS = ["Training", "Diet", "Weight loss", "Supplements", "Trekking", "Gyms in Nepal", "Fitness careers", "Competitions", "Influencers and athletes"]
@@ -434,7 +434,7 @@ def build_info_pages():
            "You can turn off personalised ads at <a href=\"https://adssettings.google.com\" target=\"_blank\" rel=\"noopener\">Google Ad Settings</a>, and read how Google uses data at "
            "<a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\" rel=\"noopener\">policies.google.com/technologies/partner-sites</a>.</p>")
     _simple("privacy/", "Privacy Policy | Apex Fitness Centre", "How apexfitnesscentre.shop uses cookies, analytics, ads and the details you send us on WhatsApp.", "Privacy policy", f"""
-<p>Last updated: {TODAY.isoformat()}. This policy covers apexfitnesscentre.shop, run by Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal.</p>
+<p>Last updated: {_dt.datetime.now(NPT).date().isoformat()}. This policy covers apexfitnesscentre.shop, run by Apex Fitness Centre, Urlabari-9, Durgapuri, Morang, Nepal.</p>
 <h2>What we collect</h2>
 <p>We do not have accounts or sign-ups on this website. When you order or ask a question, you send us a message on WhatsApp. That message, with your name, phone number and delivery address if you give them, is used only to answer you, deliver your order and keep simple sales records. We do not sell it to anyone.</p>
 <h2>Your cart</h2><p>Your cart is saved in your own browser (local storage) so it is still there when you come back. It is not sent to us until you send the WhatsApp message yourself.</p>
