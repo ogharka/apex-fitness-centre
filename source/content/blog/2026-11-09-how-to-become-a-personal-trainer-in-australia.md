@@ -2,7 +2,7 @@
 title: How to Become a Personal Trainer in Australia (2026 Guide for Locals and International Students)
 seo_title: How to Become a Personal Trainer in Australia (2026)
 description: The qualifications (Cert III and IV in Fitness), first aid, registration, insurance, pay and how international students can start a PT career in Australia.
-date: 2026-11-10
+date: 2026-11-09
 category: Fitness careers
 cover_photo: apex-member-chest-press-machine.jpg
 image_alt: A member training on the chest press machine at Apex Fitness Centre, the kind of client work personal trainers do every day
