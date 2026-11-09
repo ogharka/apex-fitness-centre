@@ -236,7 +236,7 @@ def ga_tag():
     if not re.fullmatch(r"G-[A-Z0-9]{6,12}", GA_ID) or GA_ID == "G-XXXXXXXXXX": return ""
     return f"""<!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','{GA_ID}');
+<script>if(!/(^|\.)apexfitnesscentre\.shop$/.test(location.hostname))window['ga-disable-{GA_ID}']=true;window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','{GA_ID}');
 document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
 var v=s&&parseFloat(s.getAttribute('data-value'));var p={{product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'}};if(v){{p.value=v;p.price=v;p.currency='NPR'}}
 gtag('event','whatsapp_order_click',p)}},true);</script>
