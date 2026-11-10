@@ -39,9 +39,9 @@ If you have never trekked above 4,000 m, Gokyo or [Everest Base Camp](../everest
 ## What makes the passes hard
 
 - **Long pass days:** early starts, steep climbs, then long descents.
-- **Rough ground:** loose rocks and moraine, sometimes snow or ice near the top of Cho La.
-- **Days above 5,000 m** in a row, where everything feels harder and sleep is often poor.
-- **Cold:** early starts in the dark mean freezing temperatures for the first hours.
+- Rough ground: loose rocks and moraine, sometimes snow or ice near the top of Cho La.
+- Days above 5,000 m in a row, where everything feels harder and sleep is often poor.
+- Cold: early starts in the dark mean freezing temperatures for the first hours.
 
 ## The 12-week plan
 
@@ -58,7 +58,7 @@ Five sessions a week: two climbs, two strength, one long walk (plus a second wal
 
 **Climbing intervals** (from week 5): after a warm-up, climb hard for 3 to 4 minutes, then walk easy for 2 minutes. Repeat 5 to 6 times. This builds the strength to keep moving on steep pass climbs.
 
-**Strength, twice a week:** step-ups and step-downs, goblet squats, Romanian deadlifts, lunges, calf raises, side planks. Strong legs and a stable core help on loose, uneven ground. For downhill strength, follow the exercises in [7 ways to stop knee pain when hiking downhill](../knee-pain-hiking-downhill/).
+Strength, twice a week: step-ups and step-downs, goblet squats, Romanian deadlifts, lunges, calf raises, side planks. Strong legs and a stable core help on loose, uneven ground. For downhill strength, follow the exercises in [7 ways to stop knee pain when hiking downhill](../knee-pain-hiking-downhill/).
 
 ## Balance and footwork
 

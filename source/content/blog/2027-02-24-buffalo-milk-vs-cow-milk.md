@@ -44,7 +44,7 @@ Other easy ways to cut milk calories:
 Both are good protein sources. Per glass, buffalo milk gives a little more protein (9.2 g vs 7.7 g), but also much more fat.
 
 - **Bulking or a hard gainer:** buffalo milk helps you reach your calories.
-- **Building muscle while staying lean:** cow milk gives protein with fewer calories.
+- Building muscle while staying lean: cow milk gives protein with fewer calories.
 
 Either way, milk adds to your daily protein. Most people who exercise do well on about 1.4 to 2.0 g of protein per kg of body weight a day ([ISSN position stand](https://pubmed.ncbi.nlm.nih.gov/28642676/)). Check your target with the [protein calculator](../../calculators/protein-calculator/).
 

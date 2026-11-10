@@ -31,8 +31,8 @@ Permit prices and rules change, so confirm them with your agency before you book
 Many trekkers compare it with the [Annapurna Circuit](../annapurna-circuit-trek-fitness/), and the two have a lot in common: both climb slowly through river valleys and both cross a pass above 5,000 m. Three things make Manaslu feel tougher for many people:
 
 1. **More days in a row with no easy exit.** Villages are smaller and further apart, and there are fewer roads to escape on if you get tired or sick.
-2. **Larkya La day.** You start before dawn from about 4,460 m, climb over 600 m to the pass, then walk a long way down the other side. Expect a very long day.
-3. **Basic teahouses.** Food and beds are simpler, which makes recovery between days harder.
+2. Larkya La day. You start before dawn from about 4,460 m, climb over 600 m to the pass, then walk a long way down the other side. Expect a very long day.
+3. Basic teahouses. Food and beds are simpler, which makes recovery between days harder.
 
 None of this needs special strength. It needs endurance, strong legs for the descents, and a pace you can keep for days.
 

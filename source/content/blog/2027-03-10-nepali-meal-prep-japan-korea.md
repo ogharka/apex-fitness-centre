@@ -30,10 +30,10 @@ Add rice, frozen vegetables, onions, garlic, ginger, tomatoes, and your spices f
 Do this on your day off:
 
 1. **Rice:** cook a big pot and freeze portions in boxes.
-2. **Dal:** one big pot of masoor or mung dal; keep 3 days in the fridge, freeze the rest.
-3. **Protein curry:** a chicken, egg or soybean curry in a large pan.
-4. **Vegetables:** a quick tarkari or stir-fry with frozen vegetables.
-5. **Eggs:** boil 8 to 10 and keep them in the fridge for snacks and breakfasts.
+2. Dal: one big pot of masoor or mung dal; keep 3 days in the fridge, freeze the rest.
+3. Protein curry: a chicken, egg or soybean curry in a large pan.
+4. Vegetables: a quick tarkari or stir-fry with frozen vegetables.
+5. Eggs: boil 8 to 10 and keep them in the fridge for snacks and breakfasts.
 
 Pack lunch boxes for the next 2 to 3 days straight away.
 
@@ -52,9 +52,9 @@ Pack lunch boxes for the next 2 to 3 days straight away.
 ## Eating on long shifts
 
 - **Pack protein snacks:** boiled eggs, tofu, yoghurt, a handful of nuts.
-- **Eat before a long shift,** not only after. Low energy makes heavy work and training harder.
-- **Convenience stores (konbini in Japan, pyeonuijeom in Korea)** sell boiled eggs, yoghurt and chicken products. Check labels for protein and watch fried foods and sweet drinks.
-- **Drink water through the shift,** especially in summer or hot workplaces.
+- Eat before a long shift, not only after. Low energy makes heavy work and training harder.
+- Convenience stores (konbini in Japan, pyeonuijeom in Korea) sell boiled eggs, yoghurt and chicken products. Check labels for protein and watch fried foods and sweet drinks.
+- Drink water through the shift, especially in summer or hot workplaces.
 
 ## Training after work
 

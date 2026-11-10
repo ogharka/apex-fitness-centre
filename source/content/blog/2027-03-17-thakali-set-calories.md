@@ -37,11 +37,11 @@ Many Thakali restaurants offer refills of rice, dal and vegetables.
 | [Saag](../../food/saag-calories/) | 1 cup (140 g) | 36 kcal | 3.6 g |
 | [Ghee](../../food/ghee-calories/) | 1 teaspoon (5 g) | 45 kcal | 0 g |
 | Achar and gundruk | Small servings | small | small |
-| **Total, chicken set** | | **about 910 kcal** | **about 39 g** |
+| **Total, chicken set** | | about 910 kcal | about 39 g |
 
-**Mutton set:** swap the chicken curry for [mutton curry](../../food/mutton-curry-calories/) (about 222 kcal per cup), for about 940 kcal.
+Mutton set: swap the chicken curry for [mutton curry](../../food/mutton-curry-calories/) (about 222 kcal per cup), for about 940 kcal.
 
-**Veg set:** without meat, with a vegetable curry instead, the plate is closer to 700 to 750 kcal and about 25 g of protein.
+Veg set: without meat, with a vegetable curry instead, the plate is closer to 700 to 750 kcal and about 25 g of protein.
 
 Each refill of rice adds about 130 kcal per 100 g, and each extra katori of dal about 248 kcal.
 
@@ -50,9 +50,9 @@ Each refill of rice adds about 130 kcal per 100 g, and each extra katori of dal 
 Yes, as meals go, it is one of the better restaurant choices in Nepal:
 
 - **Freshly cooked** dal, vegetables and meat
-- **Protein** from dal and meat
-- **Vegetables and fibre** from saag, gundruk and dal
-- **Less deep-fried food** than many restaurant meals
+- Protein from dal and meat
+- Vegetables and fibre from saag, gundruk and dal
+- Less deep-fried food than many restaurant meals
 
 The catch is portion size. The rice and refills, plus ghee, add up fast.
 
@@ -61,10 +61,10 @@ The catch is portion size. The rice and refills, plus ghee, add up fast.
 You do not need to avoid it. Try this:
 
 1. **Ask for half rice,** or leave a third of the plate.
-2. **Take refills of dal and vegetables,** not rice.
-3. **Skip the extra ghee,** or have just one spoon.
-4. **Choose the chicken set** if you want more protein for the calories.
-5. **Eat slowly,** finishing the vegetables and protein first.
+2. Take refills of dal and vegetables, not rice.
+3. Skip the extra ghee, or have just one spoon.
+4. Choose the chicken set if you want more protein for the calories.
+5. Eat slowly, finishing the vegetables and protein first.
 
 Our [Nepali diet plan for weight loss](../weight-loss-diet-plan-nepali-food/) uses the same plate method, and [is dal bhat healthy?](../is-dal-bhat-healthy/) explains how to balance it.
 

@@ -18,9 +18,9 @@ The cable machine looks complicated, but it is one of the most beginner-friendly
 ## How the cable machine works
 
 - **Weight stack:** move the pin to choose the weight. Start light.
-- **Pulley height:** slide it up or down. High for pushdowns and face pulls, middle for rows and chest flies, low for curls and pull-throughs.
-- **Attachments:** single handle, straight bar, rope. Clip them on with the carabiner.
-- **Single or double:** one stack for one-arm work, both sides (a crossover) for chest flies.
+- Pulley height: slide it up or down. High for pushdowns and face pulls, middle for rows and chest flies, low for curls and pull-throughs.
+- Attachments: single handle, straight bar, rope. Clip them on with the carabiner.
+- Single or double: one stack for one-arm work, both sides (a crossover) for chest flies.
 
 ## The 8 exercises
 
@@ -66,9 +66,9 @@ Do exercises 1, 3, 5, 6 and 8 on one day, and 2, 4, 7 and 8 on another, alongsid
 ## Tips for beginners
 
 1. **Start light** and add one plate when you can do all reps with good form. See [progressive overload explained](../progressive-overload-explained/).
-2. **Control the return.** Let the weight come back slowly; do not let the stack slam.
-3. **Stand stable,** with a split stance or feet shoulder-width apart.
-4. **Ask a trainer** to show you the pulley and pin settings on your first day. If the gym makes you nervous, read [gym anxiety: how to feel confident](../gym-anxiety/).
+2. Control the return. Let the weight come back slowly; do not let the stack slam.
+3. Stand stable, with a split stance or feet shoulder-width apart.
+4. Ask a trainer to show you the pulley and pin settings on your first day. If the gym makes you nervous, read [gym anxiety: how to feel confident](../gym-anxiety/).
 
 ## Cables vs free weights
 

@@ -28,18 +28,18 @@ The same guide says people new to climbing can succeed with good fitness and pre
 ## Fitness first: what your body must handle
 
 - **Many long trekking days** to reach base camp through the Everest region, ideally with time at Everest Base Camp or nearby high points to acclimatise.
-- **A very long summit day,** often 10 hours or more on the move, starting in the cold and dark.
-- **Steep climbing at over 6,000 m,** where every step feels hard.
-- **The descent,** when you are already tired: many accidents happen on the way down.
+- A very long summit day, often 10 hours or more on the move, starting in the cold and dark.
+- Steep climbing at over 6,000 m, where every step feels hard.
+- The descent, when you are already tired: many accidents happen on the way down.
 
 ## Skills to learn before you go
 
 You do not need years of rock climbing, but practise these:
 
 1. **Walking in crampons** on snow or ice, uphill and downhill.
-2. **Using a jumar (ascender)** on a fixed rope, and clipping in and out safely.
-3. **Abseiling (rappelling)** with a descender.
-4. **Moving roped together** on a glacier.
+2. Using a jumar (ascender) on a fixed rope, and clipping in and out safely.
+3. Abseiling (rappelling) with a descender.
+4. Moving roped together on a glacier.
 
 Most good operators include a training day at base camp. If you can, take a short mountaineering course beforehand.
 
@@ -55,7 +55,7 @@ Most good operators include a training day at base camp. If you can, take a shor
 
 **Strength, twice a week:** step-ups and step-downs, squats, Romanian deadlifts, lunges, pull-ups or lat pulldowns (for the jumar work), push-ups, and planks. Arm and back strength helps on the fixed rope.
 
-**Climbing intervals:** 4 minutes hard uphill on stairs or a steep incline, 2 minutes easy, repeated 5 to 6 times.
+Climbing intervals: 4 minutes hard uphill on stairs or a steep incline, 2 minutes easy, repeated 5 to 6 times.
 
 For the trekking base, our [Everest Base Camp training plan](../everest-base-camp-trek-training-plan/) and [Three Passes fitness guide](../gokyo-three-passes-trek-fitness/) cover the same region.
 

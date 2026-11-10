@@ -17,10 +17,10 @@ This guide is for common, non-serious back pain. If you have any of the warning 
 Most gym-related back pain is a strain: muscles and tissues around the spine that have been asked to do more than they were ready for. Common causes:
 
 - **Doing too much too soon:** a big jump in weight or volume.
-- **Rounding under heavy load,** especially in deadlifts and rows when tired.
-- **Ego reps:** grinding out extra reps with poor form at the end of a set.
-- **Little sleep and lots of stress,** which make pain feel worse.
-- **Long hours of sitting,** then lifting without a warm-up.
+- Rounding under heavy load, especially in deadlifts and rows when tired.
+- Ego reps: grinding out extra reps with poor form at the end of a set.
+- Little sleep and lots of stress, which make pain feel worse.
+- Long hours of sitting, then lifting without a warm-up.
 
 Pain does not always mean damage. Backs are strong and most strains settle within days to weeks.
 
@@ -56,10 +56,10 @@ A useful rule: **mild discomfort that settles within a day is fine; pain that ge
 ## Prevent the next flare-up
 
 1. **Warm up** before heavy sets. See [warm-up before the gym](../warm-up-before-gym/).
-2. **Learn to brace:** take a big breath into your stomach and tighten your core before each heavy rep. A belt helps on heavy sets but does not prevent injury on its own; see [do you need a lifting belt?](../do-you-need-a-lifting-belt/).
-3. **Add weight slowly:** small jumps every week. See [progressive overload explained](../progressive-overload-explained/).
-4. **Practise technique** with lighter weights: [how to deadlift for beginners](../how-to-deadlift-for-beginners/) and [how to squat properly](../how-to-squat-properly/).
-5. **Move during long sitting days:** stand and walk a few minutes every hour. Our [stretches for desk workers](../stretching-for-desk-workers/) help too.
+2. Learn to brace: take a big breath into your stomach and tighten your core before each heavy rep. A belt helps on heavy sets but does not prevent injury on its own; see [do you need a lifting belt?](../do-you-need-a-lifting-belt/).
+3. Add weight slowly: small jumps every week. See [progressive overload explained](../progressive-overload-explained/).
+4. Practise technique with lighter weights: [how to deadlift for beginners](../how-to-deadlift-for-beginners/) and [how to squat properly](../how-to-squat-properly/).
+5. Move during long sitting days: stand and walk a few minutes every hour. Our [stretches for desk workers](../stretching-for-desk-workers/) help too.
 
 ## When to see a doctor or physiotherapist
 

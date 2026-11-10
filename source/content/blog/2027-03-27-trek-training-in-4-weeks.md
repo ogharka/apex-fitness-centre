@@ -63,10 +63,10 @@ The slow step down matters most: it trains the muscles that brake on long descen
 ## Make the trek itself easier
 
 - **Hire a porter** and carry only a day pack. See [how heavy should your trekking backpack be](../how-heavy-should-trekking-backpack-be/).
-- **Use two trekking poles,** especially going down.
-- **Walk slowly** from the first day. Fast starts cause most bad days.
-- **Choose an itinerary with rest days,** and do not skip them.
-- **Eat and drink well:** [what to eat on a Nepal trek](../what-to-eat-on-nepal-trek/).
+- Use two trekking poles, especially going down.
+- Walk slowly from the first day. Fast starts cause most bad days.
+- Choose an itinerary with rest days, and do not skip them.
+- Eat and drink well: [what to eat on a Nepal trek](../what-to-eat-on-nepal-trek/).
 
 ## Altitude: the part training cannot fix
 

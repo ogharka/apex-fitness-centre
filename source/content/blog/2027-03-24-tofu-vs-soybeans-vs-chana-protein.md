@@ -28,8 +28,8 @@ For comparison, two boiled eggs give about 12.5 g of protein for 142 kcal, or 8.
 ## What the numbers mean
 
 - **Soybeans win per bite.** Half a cup of cooked soybeans (90 g) gives about 16 g of protein. Bhatmas and soybean chunks are cheap and easy to find in Nepal.
-- **Tofu wins per calorie.** It is light, so it fits well when you are losing weight. A 120 g piece gives about 8.6 g of protein for only 73 kcal.
-- **Chana, rajma and dal are carb-rich protein foods.** They are excellent for fibre and energy, and their protein adds up across a day, but a bowl of chana is mostly carbohydrate.
+- Tofu wins per calorie. It is light, so it fits well when you are losing weight. A 120 g piece gives about 8.6 g of protein for only 73 kcal.
+- Chana, rajma and dal are carb-rich protein foods. They are excellent for fibre and energy, and their protein adds up across a day, but a bowl of chana is mostly carbohydrate.
 
 ## Per serving, the way you actually eat it
 
@@ -44,10 +44,10 @@ For comparison, two boiled eggs give about 12.5 g of protein for 142 kcal, or 8.
 ## Easy ways to eat more of the best ones
 
 - **Bhatmas sadeko:** roasted soybeans with onion, chilli and lemon, a classic Nepali snack.
-- **Soybean chunk curry:** cook like a meat curry; soak the chunks first.
-- **Tofu tarkari:** cube it and add to any vegetable curry for the last 5 minutes.
-- **Thick dal:** cook your dal thicker and eat a full katori, not a few spoons.
-- **Chana chaat:** chana with cucumber, onion, tomato and lemon for a filling snack.
+- Soybean chunk curry: cook like a meat curry; soak the chunks first.
+- Tofu tarkari: cube it and add to any vegetable curry for the last 5 minutes.
+- Thick dal: cook your dal thicker and eat a full katori, not a few spoons.
+- Chana chaat: chana with cucumber, onion, tomato and lemon for a filling snack.
 
 More ideas: [protein-rich vegetarian foods in Nepal](../protein-rich-vegetarian-foods-nepal/) and [how much protein is in dal bhat](../dal-bhat-protein/).
 

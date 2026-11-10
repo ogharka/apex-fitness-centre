@@ -28,9 +28,9 @@ Many trekkers combine the two, crossing high passes such as Selele La and Sinion
 ## Why Kanchenjunga is hard
 
 - **Length.** It is a long trek, and the combined north and south route is longer still.
-- **Remoteness.** Villages and teahouses are small and far apart, and there are few roads.
-- **Big ups and downs.** The trail climbs and drops through deep valleys before reaching high ground, so your legs work hard both ways.
-- **Altitude.** The north base camp is above 5,000 m, high enough for altitude sickness.
+- Remoteness. Villages and teahouses are small and far apart, and there are few roads.
+- Big ups and downs. The trail climbs and drops through deep valleys before reaching high ground, so your legs work hard both ways.
+- Altitude. The north base camp is above 5,000 m, high enough for altitude sickness.
 
 ## Self-test: are you ready?
 

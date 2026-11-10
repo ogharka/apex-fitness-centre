@@ -17,8 +17,8 @@ You can build real strength at home with a pair of dumbbells. **Do one full-body
 ## What you need
 
 - **A pair of dumbbells.** Adjustable dumbbells are best because you can add weight as you get stronger. If you buy fixed ones, start with a light pair and a heavier pair.
-- **A sturdy chair or bench** for step-ups and rows.
-- **A mat or a carpet** for floor exercises.
+- A sturdy chair or bench for step-ups and rows.
+- A mat or a carpet for floor exercises.
 
 Not sure what to buy first? See [how to build a home gym on a budget](../home-gym-on-a-budget/).
 
@@ -47,15 +47,18 @@ Finish with a 30 to 45 second plank, twice.
 
 **Goblet squat.** Hold one dumbbell upright against your chest. Feet shoulder-width apart, sit back and down until your thighs are about parallel to the floor, then stand up. Keep your chest up and heels on the floor. More tips: [how to squat properly](../how-to-squat-properly/).
 
-**One-arm row.** Put one hand and knee on a chair, back flat. Pull the dumbbell up towards your hip, then lower it slowly.
+One-arm row. Put one hand and knee on a chair, back flat. Pull the dumbbell up towards your hip, then lower it slowly.
 
-**Floor press.** Lie on your back with knees bent, a dumbbell in each hand. Press the weights up over your chest, then lower until your upper arms touch the floor.
+Floor press. Lie on your back with knees bent, a dumbbell in each hand. Press the weights up over your chest, then lower until your upper arms touch the floor.
 
-**Romanian deadlift.** Stand tall with the dumbbells in front of your thighs. Push your hips back and slide the weights down your legs, keeping your back flat, until you feel a stretch in the back of your thighs. Stand up by pushing your hips forward. Our [deadlift guide](../how-to-deadlift-for-beginners/) explains the hip hinge in detail.
+Romanian deadlift. Stand tall with the dumbbells in front of your thighs. Push your hips back and slide the weights down your legs, keeping your back flat, until you feel a stretch in the back of your thighs. Stand up by pushing your hips forward. Our [deadlift guide](../how-to-deadlift-for-beginners/) explains the hip hinge in detail.
 
-**Step-up.** Hold the dumbbells at your sides and step onto a sturdy chair, then step down slowly.
+Step-up. Hold the dumbbells at your sides and step onto a sturdy chair, then step down slowly.
 
-**Shoulder press.** Sit tall with the dumbbells at shoulder height and press them overhead without arching your lower back.
+Shoulder press. Sit tall with the dumbbells at shoulder height and press them overhead without arching your lower back.
+
+![An Apex Fitness Centre member doing a one-arm dumbbell lateral raise in front of the dumbbell rack](images/apex-member-dumbbell-lateral-raise.jpg)
+*A member doing lateral raises, a good shoulder exercise to add once the basics feel easy.*
 
 ## How to progress over 8 weeks
 

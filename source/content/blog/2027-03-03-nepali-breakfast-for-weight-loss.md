@@ -54,9 +54,9 @@ Two eggs with onion, tomato, spinach and green chilli. Use one teaspoon of oil a
 ## Breakfasts that slow weight loss
 
 - **Sweet milk tea with biscuits:** easy to have 2 or 3 cups and a packet of biscuits without feeling full. Three cups of milk tea alone is over 350 kcal ([chai calories](../../food/chai-calories/)).
-- **Fried snacks:** samosa, puri, pakora and sel roti are high in oil.
-- **Instant noodles:** low in protein and easy to overeat.
-- **Big bowls of sweetened cereal or muesli:** check the sugar.
+- Fried snacks: samosa, puri, pakora and sel roti are high in oil.
+- Instant noodles: low in protein and easy to overeat.
+- Big bowls of sweetened cereal or muesli: check the sugar.
 
 Enjoy them sometimes; just do not make them the daily habit.
 

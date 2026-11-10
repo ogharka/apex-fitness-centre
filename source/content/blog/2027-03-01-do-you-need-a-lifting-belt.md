@@ -55,8 +55,8 @@ Practise this on every heavy set from day one. A belt only makes good bracing be
 ## How to wear a belt
 
 - **Position:** around your waist, over your stomach and lower back, usually just above the hip bones.
-- **Tightness:** snug enough that you can push your stomach out against it, but loose enough to take a deep breath.
-- **When:** put it on for your last warm-up set and your heaviest working sets, then loosen it between sets.
+- Tightness: snug enough that you can push your stomach out against it, but loose enough to take a deep breath.
+- When: put it on for your last warm-up set and your heaviest working sets, then loosen it between sets.
 
 Squats and deadlifts need different setups; see [how to squat properly](../how-to-squat-properly/) and [how to deadlift for beginners](../how-to-deadlift-for-beginners/).
 

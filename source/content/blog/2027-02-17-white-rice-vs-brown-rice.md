@@ -29,24 +29,24 @@ A Nepali plate of rice is often around 300 g cooked. That is about 390 kcal of w
 ## Where brown rice really helps
 
 - **More fibre.** Brown rice keeps the outer layer of the grain, so it has more fibre. Fibre slows eating and helps many people feel full for longer.
-- **More chewing.** Brown rice is firmer, so people tend to eat it more slowly.
-- **A little more of some minerals,** because the outer layer is kept.
+- More chewing. Brown rice is firmer, so people tend to eat it more slowly.
+- A little more of some minerals, because the outer layer is kept.
 
 None of these makes brown rice a fat-burning food. They simply make it a bit easier to eat less.
 
 ## Where white rice is fine
 
 - **It is what you will actually eat.** A diet you enjoy is a diet you can keep.
-- **Easy on the stomach.** Many people find white rice easier to digest, especially after hard training or when unwell.
-- **Same protein.** Neither rice is a protein food; that comes from dal, eggs, meat or paneer.
+- Easy on the stomach. Many people find white rice easier to digest, especially after hard training or when unwell.
+- Same protein. Neither rice is a protein food; that comes from dal, eggs, meat or paneer.
 
 ## How to eat rice and still lose weight
 
 The plate matters more than the grain:
 
 1. **Half the plate vegetables:** saag, tarkari, salad.
-2. **A quarter protein:** thick dal, eggs, chicken, fish, paneer, soybean.
-3. **A quarter rice:** one small plate, not two or three.
+2. A quarter protein: thick dal, eggs, chicken, fish, paneer, soybean.
+3. A quarter rice: one small plate, not two or three.
 
 Swapping a second plate of rice for a second bowl of dal or tarkari does more for weight loss than switching to brown rice. Our [Nepali diet plan for weight loss](../weight-loss-diet-plan-nepali-food/) shows a full week built this way, and [is dal bhat healthy?](../is-dal-bhat-healthy/) explains how to balance the plate.
 
@@ -63,8 +63,8 @@ Roti is not automatically better than rice. A medium roti (40 g) is about 119 kc
 It depends on your size, how active you are and your goal. As a starting point:
 
 - **Losing weight:** one small plate (about 150 to 200 g cooked) per meal, with plenty of vegetables and protein.
-- **Maintaining:** a normal plate, adjusted to how your weight changes.
-- **Building muscle or training hard:** larger portions are fine, especially after training.
+- Maintaining: a normal plate, adjusted to how your weight changes.
+- Building muscle or training hard: larger portions are fine, especially after training.
 
 Find your daily target with the [calorie deficit calculator](../../calculators/calorie-deficit-calculator/).
 
@@ -73,8 +73,8 @@ Find your daily target with the [calorie deficit calculator](../../calculators/c
 Rice is one of the best foods for training, not something to fear. It gives quick, easy energy and digests well, which is why many lifters eat it before and after workouts.
 
 - **Before training (1 to 3 hours):** a normal plate of rice with dal or a little chicken gives energy without feeling heavy. White rice is easier on the stomach before a session.
-- **After training:** rice with a protein food, such as dal, eggs, chicken or paneer, refuels your muscles. See [what to eat after a workout](../what-to-eat-after-workout/).
-- **Building muscle:** you may need more rice, not less. Larger portions help you eat enough calories to grow.
+- After training: rice with a protein food, such as dal, eggs, chicken or paneer, refuels your muscles. See [what to eat after a workout](../what-to-eat-after-workout/).
+- Building muscle: you may need more rice, not less. Larger portions help you eat enough calories to grow.
 
 On rest days, many people simply eat a little less rice and keep the protein the same.
 

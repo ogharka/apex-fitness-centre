@@ -26,7 +26,7 @@ These are upper limits, not targets. Lighter is easier on your legs, back and kn
 Most trekkers in Nepal choose one of two set-ups:
 
 - **With a porter:** you carry a day pack (water, snacks, layers, rain jacket, phone, documents) and the porter carries your main bag. Your pack is usually around 5 to 7 kg. Agencies often set a weight limit for the porter's bag; ask yours.
-- **Without a porter:** you carry everything. On a teahouse trek you do not need a tent, stove or food for many days, so a well-packed bag can stay well under 20% of body weight.
+- Without a porter: you carry everything. On a teahouse trek you do not need a tent, stove or food for many days, so a well-packed bag can stay well under 20% of body weight.
 
 Using a porter also supports local jobs and lets you enjoy the trek more, especially on long or high routes.
 
@@ -41,7 +41,7 @@ Using a porter also supports local jobs and lets you enjoy the trek more, especi
 - Basic first aid and your medicines
 - Phone, money, permits and ID
 
-**In the main bag:**
+In the main bag:
 - 2 or 3 sets of trekking clothes
 - Thermal layers and a down jacket for evenings
 - Sleeping bag (teahouse blankets may not be enough higher up)
@@ -59,16 +59,16 @@ Using a porter also supports local jobs and lets you enjoy the trek more, especi
 ## Pack it right
 
 - **Heavy items close to your back** and in the middle of the bag.
-- **Tighten the hip belt** so most of the weight sits on your hips, not your shoulders.
-- **Adjust the shoulder straps** so they are snug but not doing all the work.
-- **Use small bags inside** to keep things organised and dry.
+- Tighten the hip belt so most of the weight sits on your hips, not your shoulders.
+- Adjust the shoulder straps so they are snug but not doing all the work.
+- Use small bags inside to keep things organised and dry.
 
 ## Weigh your pack before you go
 
 Guessing is easy to get wrong. Two simple ways to weigh your bag at home:
 
 1. **Bathroom scale:** weigh yourself, then weigh yourself holding the packed bag. The difference is the bag.
-2. **Luggage scale:** hang the bag from a cheap hand-held luggage scale.
+2. Luggage scale: hang the bag from a cheap hand-held luggage scale.
 
 Do this with water bottles full and snacks packed, because that is how you will carry it. If the number is above your limit, take everything out, make two piles, "need" and "nice to have", and leave the second pile at your hotel in Kathmandu or Pokhara.
 
@@ -77,8 +77,8 @@ Do this with water bottles full and snacks packed, because that is how you will 
 Your pack is not the same weight every day:
 
 - **Water** is the heaviest thing you carry. Carry what you need to the next refill point, not more.
-- **Layers** move from your body to your bag as the day warms up, so leave space for them.
-- **Higher up,** you may carry more warm clothing, while every step feels harder. Plan your pack for the hardest days, not the first one.
+- Layers move from your body to your bag as the day warms up, so leave space for them.
+- Higher up, you may carry more warm clothing, while every step feels harder. Plan your pack for the hardest days, not the first one.
 
 ## Train with your pack
 

@@ -39,6 +39,9 @@ Sit on the floor with your upper back against a bench, a weight over your hips (
 ### Goblet squat
 Hold a dumbbell at your chest and sit back and down between your heels, chest up. Go as deep as you can with a flat back. See [how to squat properly](../how-to-squat-properly/).
 
+![A woman member squatting with a barbell in the Smith machine at Apex Fitness Centre](images/apex-member-woman-smith-machine-squat.jpg)
+*A member squatting in the Smith machine at Apex Fitness Centre. Once goblet squats feel easy, a barbell squat is the next step.*
+
 ### Romanian deadlift
 Hold dumbbells or a bar in front of your thighs, push your hips back with a flat back until you feel a stretch in your hamstrings, then drive your hips forward to stand. More detail in [how to deadlift for beginners](../how-to-deadlift-for-beginners/).
 
@@ -54,8 +57,8 @@ For the side of the hip. With a small band around your thighs, take side steps k
 ## How often and how hard
 
 - **Two or three sessions a week,** with at least one day between them.
-- **Close to effort:** finish each set feeling you could do only 2 or 3 more reps.
-- **Progress every week:** one more rep or a little more weight. Write it down. See [progressive overload explained](../progressive-overload-explained/).
+- Close to effort: finish each set feeling you could do only 2 or 3 more reps.
+- Progress every week: one more rep or a little more weight. Write it down. See [progressive overload explained](../progressive-overload-explained/).
 
 You can do this as a separate workout or add three of the exercises to a full-body plan like our [beginner gym workout plan](../beginner-gym-workout-plan-first-3-months/).
 
