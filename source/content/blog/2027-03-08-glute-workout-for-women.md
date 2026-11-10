@@ -5,6 +5,8 @@ description: A simple glute workout for women at the gym or at home: 6 exercises
 date: 2027-03-08
 category: Training
 author: suman-limbu
+image: apex-member-woman-entering-gym.jpg
+image_alt: A woman member walking into Apex Fitness Centre in a black Apex T-shirt
 cover_art: barbell
 ---
 

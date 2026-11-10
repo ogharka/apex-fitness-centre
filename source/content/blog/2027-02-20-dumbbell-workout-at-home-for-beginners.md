@@ -5,6 +5,8 @@ description: A simple full-body dumbbell workout for beginners at home: 6 exerci
 date: 2027-02-20
 category: Training
 author: suman-limbu
+image: apex-member-dumbbell-bench-press-flat.jpg
+image_alt: An Apex Fitness Centre member pressing two heavy dumbbells on a flat bench
 cover_art: dumbbell
 ---
 

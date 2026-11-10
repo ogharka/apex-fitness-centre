@@ -5,6 +5,8 @@ description: A simple 10-minute warm-up before running: easy jog, dynamic drills
 date: 2027-04-10
 category: Training
 author: suman-limbu
+image: apex-member-headband-before-workout.jpg
+image_alt: An Apex Fitness Centre member with a headband warming up near the cardio machines
 cover_art: shoe
 ---
 
