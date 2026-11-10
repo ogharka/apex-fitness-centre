@@ -8,7 +8,7 @@ cover_art: bottle
 products: muscleblaze-l-carnitine-pro-liquid-450ml-key-lime, bpi-sports-cla-carnitine-370g-fruit-punch
 ---
 
-L-carnitine is often sold as a "fat burner," but **its effect on fat loss is small at best**. Reviews of the research suggest that, in some groups, it may add **a little extra weight loss over several months**, but nothing close to what a calorie deficit, protein and regular exercise achieve. If you buy it, think of it as an optional extra, not the plan.
+L-carnitine is often sold as a "fat burner," but **its effect on fat loss is small at best**. Reviews of the research suggest that, in some groups, it may add a little extra weight loss over several months, but nothing close to what a calorie deficit, protein and regular exercise achieve. If you buy it, think of it as an optional extra, not the plan.
 
 *Disclosure: Apex Fitness Centre sells L-carnitine products. We'd rather you buy with realistic expectations.*
 
@@ -45,7 +45,7 @@ The people most likely to benefit are those with **low carnitine levels**, for e
 
 ## Safety
 
-At typical label doses, L-carnitine is generally well tolerated by healthy adults. Possible side effects include **stomach upset, nausea** or a **"fishy" body odour** at high doses. People with **thyroid conditions, kidney disease or a history of seizures**, and pregnant or breastfeeding women, should ask a doctor first.
+At typical label doses, L-carnitine is generally well tolerated by healthy adults. Possible side effects include **stomach upset, nausea** or a "fishy" body odour at high doses. People with thyroid conditions, kidney disease or a history of seizures, and pregnant or breastfeeding women, should ask a doctor first.
 
 ## Better priorities for fat loss
 
@@ -59,7 +59,7 @@ Only after these are in place does a supplement like L-carnitine make sense to t
 
 ## How to use it if you buy it
 
-- Follow the **label's serving size**.
+- Follow the label's serving size.
 - Many people take it before training, but timing evidence is weak.
 - Give it a fair trial of 8 to 12 weeks alongside a consistent diet and exercise plan.
 - Buy genuine products. See [how to spot fake supplements in Nepal](../fake-supplements-in-nepal-how-to-spot-them/).

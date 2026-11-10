@@ -9,7 +9,7 @@ cover_photo: apex-dumbbell-rack.jpg
 image_alt: Dumbbell rack with barbells at Apex Fitness Centre
 ---
 
-Want bigger arms? Train **triceps as much as biceps**, because triceps make up roughly **two-thirds of your upper arm**. Combine heavy compound lifts (presses and rows) with direct arm work **2 times a week**, use full range of motion, and eat enough to grow.
+Want bigger arms? Train **triceps as much as biceps**, because triceps make up roughly two-thirds of your upper arm. Combine heavy compound lifts (presses and rows) with direct arm work 2 times a week, use full range of motion, and eat enough to grow.
 
 ## Arm anatomy in 30 seconds
 
@@ -50,14 +50,14 @@ Add this to the end of your upper body sessions:
 - Hammer curl: 2 x 10–12
 - Rope pushdown: 2 x 12–15
 
-**Day B**
+Day B
 
 - Close-grip bench press: 3 x 6–8
 - Incline dumbbell curl: 3 x 10
 - Dips or bench dips: 2 x as many good reps as possible
 - Cable curl: 2 x 12–15
 
-That's roughly **10 sets per week for each of biceps and triceps**, plus indirect work from presses and rows. See [how many sets and reps to build muscle](../how-many-sets-and-reps-to-build-muscle/).
+That's roughly 10 sets per week for each of biceps and triceps, plus indirect work from presses and rows. See [how many sets and reps to build muscle](../how-many-sets-and-reps-to-build-muscle/).
 
 ## Technique tips
 

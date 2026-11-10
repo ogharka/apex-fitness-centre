@@ -7,7 +7,7 @@ category: Supplements
 cover_art: clock
 ---
 
-You might think low vitamin D is rare in a sunny country like Nepal, but deficiency is **common across South Asia**, and it has been studied in Nepal too, for example in [this study from Lalitpur](https://www.nepjol.info/index.php/jgpemn/article/view/89717). Indoor jobs, covered clothing, darker skin, air pollution and winter months all reduce how much vitamin D your skin makes. Vitamin D matters for **bones, muscles and immunity**, so it's worth paying attention to, but **test before you supplement heavily**.
+You might think low vitamin D is rare in a sunny country like Nepal, but deficiency is **common across South Asia**, and it has been studied in Nepal too, for example in [this study from Lalitpur](https://www.nepjol.info/index.php/jgpemn/article/view/89717). Indoor jobs, covered clothing, darker skin, air pollution and winter months all reduce how much vitamin D your skin makes. Vitamin D matters for bones, muscles and immunity, so it's worth paying attention to, but test before you supplement heavily.
 
 ## Why vitamin D matters
 

@@ -7,15 +7,15 @@ category: Competitions
 cover_art: medal
 ---
 
-Powerlifting is a strength sport with just **three lifts: the squat, bench press and deadlift**. Each lifter gets **three attempts** at each lift, and the heaviest successful attempts are added together for your **total**. You compete against lifters in your **weight class** and age group.
+Powerlifting is a strength sport with just **three lifts: the squat, bench press and deadlift**. Each lifter gets three attempts at each lift, and the heaviest successful attempts are added together for your total. You compete against lifters in your weight class and age group.
 
 It's one of the most beginner-friendly sports to compete in: if you already train these lifts in the gym, you're halfway there.
 
 ## Powerlifting in Nepal
 
-Nepal has a small but growing powerlifting scene, with gyms and organisations holding open and national-level meets. For example, **Nepal Youth Fitness and Calisthenics (NYFC)** organised a **Nationwide Powerlifting Championship in 2023** at the National Sports Council's indoor hall in Kathmandu, with men's and women's open classes plus junior and masters categories ([The Kathmandu Post](https://kathmandupost.com/sports/2023/09/20/powerlifting-from-sept-25)).
+Nepal has a small but growing powerlifting scene, with gyms and organisations holding open and national-level meets. For example, **Nepal Youth Fitness and Calisthenics (NYFC)** organised a Nationwide Powerlifting Championship in 2023 at the National Sports Council's indoor hall in Kathmandu, with men's and women's open classes plus junior and masters categories ([The Kathmandu Post](https://kathmandupost.com/sports/2023/09/20/powerlifting-from-sept-25)).
 
-Nepali lifters have also won medals abroad. At the World Power Lifting Championship held in India in December 2020, Nepal won **three golds and one silver** ([The Himalayan Times](https://thehimalayantimes.com/kathmandu/nepal-bags-three-gold-one-silver-in-world-power-lifting-championship/)).
+Nepali lifters have also won medals abroad. At the World Power Lifting Championship held in India in December 2020, Nepal won three golds and one silver ([The Himalayan Times](https://thehimalayantimes.com/kathmandu/nepal-bags-three-gold-one-silver-in-world-power-lifting-championship/)).
 
 Different organisations run events with slightly different rules, so always check the rulebook of the meet you enter.
 
@@ -26,13 +26,13 @@ Different organisations run events with slightly different rules, so always chec
 3. **Bench press:** three attempts. Pause the bar on your chest until the "press" command.
 4. **Deadlift:** three attempts. Lift the bar to a locked-out standing position and wait for the "down" command.
 5. **Three referees** judge each lift; you need at least two white lights.
-6. Your **best successful squat + bench + deadlift = total**.
+6. Your best successful squat + bench + deadlift = total.
 
 ![How a powerlifting meet works: weigh-in, three squat, bench press and deadlift attempts, and judging by three referees](images/powerlifting-meet-how-it-works.jpg)
 
 ## Weight classes and divisions
 
-Meets group lifters by **body weight** and often by **age** (sub-junior, junior, open, masters). Some meets are **raw** (no supportive suits; belts, wrist wraps and knee sleeves usually allowed) and some include **equipped** divisions. Check the specific event's categories before you register.
+Meets group lifters by **body weight** and often by age (sub-junior, junior, open, masters). Some meets are raw (no supportive suits; belts, wrist wraps and knee sleeves usually allowed) and some include equipped divisions. Check the specific event's categories before you register.
 
 ## A beginner's path to your first meet
 
@@ -42,14 +42,14 @@ Follow a simple strength programme with squats, bench presses and deadlifts 2 to
 
 ### Months 4–6: Train like a powerlifter
 
-- Practise **competition standards**: depth on squats, a pause on bench.
+- Practise competition standards: depth on squats, a pause on bench.
 - Work in lower rep ranges (3 to 6) on main lifts.
 - Use [progressive overload](../progressive-overload-explained/) and track every session.
 
 ### Meet preparation (last 6–8 weeks)
 
-- Choose **opening attempts** you can lift even on a bad day (often around 90% of your best).
-- Practise **commands** with a training partner.
+- Choose opening attempts you can lift even on a bad day (often around 90% of your best).
+- Practise commands with a training partner.
 - **Reduce training volume** in the final week so you're fresh.
 
 ## What you need on the day

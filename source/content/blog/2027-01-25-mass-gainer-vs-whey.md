@@ -8,7 +8,7 @@ cover_art: tubs
 products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, pintola-high-protein-oats-chocolate-1kg
 ---
 
-**Whey protein is mostly protein. A mass gainer is mostly carbohydrate (often sugar) with some protein.** Whey suits almost everyone who needs more protein. A mass gainer only makes sense for people who **genuinely cannot eat enough calories** to gain weight, and even then, a homemade shake is usually cheaper and better.
+**Whey protein is mostly protein. A mass gainer is mostly carbohydrate (often sugar) with some protein.** Whey suits almost everyone who needs more protein. A mass gainer only makes sense for people who genuinely cannot eat enough calories to gain weight, and even then, a homemade shake is usually cheaper and better.
 
 ## The difference in one table
 
@@ -25,15 +25,15 @@ products: muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme, pintola
 
 ## Who should choose whey
 
-- You want to **build muscle without gaining much fat**.
-- You are **losing weight** and need a filling, high-protein snack.
-- You eat enough food but **not enough protein**.
+- You want to build muscle without gaining much fat.
+- You are losing weight and need a filling, high-protein snack.
+- You eat enough food but not enough protein.
 - You are a beginner who wants one simple supplement.
 
 ## Who might consider a mass gainer
 
-- You are **very skinny**, eat 5 to 6 times a day, and **still** cannot gain weight.
-- You have a **small appetite** and find it hard to eat more solid food.
+- You are very skinny, eat 5 to 6 times a day, and still cannot gain weight.
+- You have a small appetite and find it hard to eat more solid food.
 - You train hard (sports, heavy lifting) and burn a lot of energy.
 
 Even then, read the label. Some gainers get most of their calories from sugar, which is not what you want every day.
@@ -42,11 +42,11 @@ Even then, read the label. Some gainers get most of their calories from sugar, w
 
 Blend these together:
 
-- 2 glasses (500 ml) **full-cream milk**
-- 1 to 2 **bananas**
-- 4 tablespoons **oats** (or high-protein oats)
-- 1 tablespoon **peanut butter** or a handful of peanuts
-- 1 scoop **whey protein** (optional)
+- 2 glasses (500 ml) full-cream milk
+- 1 to 2 bananas
+- 4 tablespoons oats (or high-protein oats)
+- 1 tablespoon peanut butter or a handful of peanuts
+- 1 scoop whey protein (optional)
 - A spoon of honey or a few dates if you like it sweeter
 
 This gives a large amount of energy and protein from real food, often for less than a serving of a branded gainer. Drink it between meals or after training.

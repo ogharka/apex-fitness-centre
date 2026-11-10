@@ -8,7 +8,7 @@ cover_photo: apex-setup-machines-wrapped.jpg
 image_alt: Gym machines still wrapped in plastic during the setup of Apex Fitness Centre
 ---
 
-Opening a gym in Nepal comes down to six things: **the right location, legal registration, sensible equipment choices, good trainers, clear pricing, and systems to keep members coming back.** The equipment is the most visible cost, but most gyms that struggle do so because of **location, low member retention or poor cash management**, not because of the machines.
+Opening a gym in Nepal comes down to six things: **the right location, legal registration, sensible equipment choices, good trainers, clear pricing, and systems to keep members coming back.** The equipment is the most visible cost, but most gyms that struggle do so because of location, low member retention or poor cash management, not because of the machines.
 
 We have been through this process ourselves at Apex Fitness Centre in Urlabari. The photos in this guide are from our own setup, from an empty floor to a working gym.
 
@@ -27,8 +27,8 @@ We have been through this process ourselves at Apex Fitness Centre in Urlabari. 
 
 Gyms in Nepal generally need to be registered like any other business. The usual steps are:
 
-1. **Register the business:** as a sole proprietorship or partnership (usually with the relevant government office in your area) or as a private limited company through the **Office of Company Registrar (OCR)**.
-2. **Get a PAN** (Permanent Account Number) from the **Inland Revenue Department** for tax.
+1. **Register the business:** as a sole proprietorship or partnership (usually with the relevant government office in your area) or as a private limited company through the Office of Company Registrar (OCR).
+2. **Get a PAN** (Permanent Account Number) from the Inland Revenue Department for tax.
 3. **Register with your local ward or municipality** and get any local business permit they require.
 4. **VAT registration** may be required depending on your annual turnover. Check the current threshold with the Inland Revenue Office.
 5. **Rent agreement** in writing, ideally registered, with a lock-in period that protects your investment.
@@ -54,11 +54,11 @@ Buy for what members actually use, not for photos.
 ![Gym treadmill unboxed and partly unwrapped among packed equipment during setup](images/apex-setup-treadmill-arrival.jpg)
 *New equipment arriving at Apex. Commercial machines are heavy; plan delivery, assembly and floor protection.*
 
-**Tips:**
+Tips:
 
 - Commercial-grade equipment costs more but lasts much longer than home-grade.
-- Ask suppliers about **warranty, spare parts and service** in Nepal.
-- Plan **floor layout** before delivery: free weights, machines and cardio in separate zones.
+- Ask suppliers about warranty, spare parts and service in Nepal.
+- Plan floor layout before delivery: free weights, machines and cardio in separate zones.
 
 ![Gym equipment and weight plates wrapped in plastic piled on a new floor during assembly](images/apex-setup-unpacking-equipment.jpg)
 *Unpacking and assembling equipment at Apex Fitness Centre. Budget time and labour for this step.*
@@ -73,7 +73,7 @@ Buy for what members actually use, not for photos.
 
 - Monthly, 3-month, 6-month and 12-month plans, with longer plans cheaper per month.
 - A one-time admission fee if you charge one.
-- A **written freeze policy** for illness and travel.
+- A written freeze policy for illness and travel.
 - Personal training as an optional extra.
 
 Research local gyms so your prices are competitive for the facilities you offer.
@@ -97,7 +97,7 @@ We built our own software, [Apex Gym Management](../../software/), for exactly t
 - Equipment maintenance and repairs
 - Marketing (social media, signboards, offers)
 - Taxes, fees and renewals
-- A **cash reserve** for slow months, such as festival seasons
+- A cash reserve for slow months, such as festival seasons
 
 ## Common mistakes new gym owners make
 

@@ -34,7 +34,7 @@ Do this **3 days a week** on your lighter days. Each round takes about 8 minutes
 | Glute bridge | 15 | Both feet down | One leg |
 | Plank | 30–45 sec | On knees | Lift one foot |
 
-**Warm up** for 3–5 minutes first: marching on the spot, arm circles and slow squats. **Rest** about 1 minute between rounds and do **3 rounds**.
+Warm up for 3–5 minutes first: marching on the spot, arm circles and slow squats. Rest about 1 minute between rounds and do 3 rounds.
 
 If your camp or building has a small gym, use it. The same plan works with dumbbells. Our [home workout without equipment](../home-workout-without-equipment/) has more ideas.
 

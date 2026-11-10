@@ -7,7 +7,7 @@ category: Diet
 cover_art: protein
 ---
 
-For most healthy adults, **1 to 3 whole eggs a day** fits well into a balanced diet, and many lifters eat more without problems. Eggs are one of the cheapest, easiest and highest-quality protein foods in Nepal. The cholesterol worry has softened a lot in recent years, but if you have **high cholesterol, diabetes or heart disease**, ask your doctor what amount suits you.
+For most healthy adults, **1 to 3 whole eggs a day** fits well into a balanced diet, and many lifters eat more without problems. Eggs are one of the cheapest, easiest and highest-quality protein foods in Nepal. The cholesterol worry has softened a lot in recent years, but if you have high cholesterol, diabetes or heart disease, ask your doctor what amount suits you.
 
 ## What is in one egg?
 
@@ -16,7 +16,7 @@ A large egg contains roughly:
 - **About 6 g of protein**, high quality, with all essential amino acids
 - **About 70 to 80 calories**
 - **About 5 g of fat**, mostly in the yolk
-- Vitamins and minerals including **B12, vitamin D, selenium and choline**, mostly in the yolk
+- Vitamins and minerals including B12, vitamin D, selenium and choline, mostly in the yolk
 
 ![One egg gives about 6 g protein, 70–80 calories and 5 g fat; healthy adults can start with 1–3 whole eggs a day](images/eggs-nutrition-how-many.jpg)
 
@@ -26,7 +26,7 @@ Egg yolks contain cholesterol, and for years people were told to strictly limit 
 
 That is why many health authorities removed strict daily cholesterol limits for the general population, while still advising a balanced diet. Some people, however, are more sensitive to dietary cholesterol. If your blood cholesterol is high, follow your doctor's advice.
 
-What you eat **with** eggs often matters more: eggs fried in lots of oil or ghee with sausages, white bread and sweet tea are a very different meal from boiled eggs with roti and vegetables.
+What you eat with eggs often matters more: eggs fried in lots of oil or ghee with sausages, white bread and sweet tea are a very different meal from boiled eggs with roti and vegetables.
 
 ## How many eggs for gym-goers?
 

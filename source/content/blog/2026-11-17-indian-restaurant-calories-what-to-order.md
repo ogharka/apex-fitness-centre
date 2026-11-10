@@ -57,9 +57,9 @@ Notice that one large naan has about the same calories as two curries. Bread and
 
 **For weight loss:** chicken or fish curry, one roti, a side of dal or vegetables, water.
 
-**For building muscle:** chicken biryani or a curry with rice, plus a dal or paneer side for extra protein.
+For building muscle: chicken biryani or a curry with rice, plus a dal or paneer side for extra protein.
 
-**Sharing with family:** order one fewer bread than people at the table, add a vegetable dish and a dal, and let everyone serve themselves.
+Sharing with family: order one fewer bread than people at the table, add a vegetable dish and a dal, and let everyone serve themselves.
 
 ## Does one restaurant meal ruin a diet?
 

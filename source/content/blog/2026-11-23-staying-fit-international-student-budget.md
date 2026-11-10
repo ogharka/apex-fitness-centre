@@ -25,9 +25,9 @@ Moving abroad to study is exciting, and exhausting. Between classes, part-time w
 
 **Tips before you sign up:**
 
-- Ask about **student discounts** and **no-contract** memberships
-- Check **cancellation rules**, especially before going home for holidays
-- Try a **free trial pass** first
+- Ask about student discounts and no-contract memberships
+- Check cancellation rules, especially before going home for holidays
+- Try a free trial pass first
 
 ## Step 2: A simple plan that fits student life
 
@@ -71,8 +71,8 @@ Studying in Australia? See our [high-protein Nepali meals with Australian superm
 
 Late-night assignments and shift work make sleep hard, but it affects your grades, mood, hunger and gym progress.
 
-- Aim for **7–9 hours** most nights
-- Keep **regular wake times** where possible
+- Aim for 7–9 hours most nights
+- Keep regular wake times where possible
 - Stop caffeine by mid-afternoon
 - Put your phone away 30–60 minutes before bed
 
@@ -85,7 +85,7 @@ Your first months abroad can be lonely. Regular exercise can help with stress, a
 - **Train before a late shift** or on your days off
 - **Keep sessions short** (45 minutes) in busy weeks
 - **Never skip meals** before physical shifts in cafés, warehouses or hospitality
-- Check your **visa work-hour limits**: in Australia, student visa holders can generally work up to 48 hours a fortnight during study periods ([One Planet Migration Law](https://oneplanetmigrationlaw.com.au/immigration-blog/student-visa-work-hours-australia-2026/))
+- Check your visa work-hour limits: in Australia, student visa holders can generally work up to 48 hours a fortnight during study periods ([One Planet Migration Law](https://oneplanetmigrationlaw.com.au/immigration-blog/student-visa-work-hours-australia-2026/))
 
 ## Frequently asked questions
 

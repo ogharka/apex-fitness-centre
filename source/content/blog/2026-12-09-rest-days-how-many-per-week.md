@@ -9,7 +9,7 @@ cover_photo: apex-member-resting-floor.jpg
 image_alt: Member resting on the gym floor with a towel after training at Apex Fitness Centre
 ---
 
-Most people get the best results with **2 to 3 rest days a week** from hard training. Beginners usually do well with **3 strength sessions and 4 lighter days**, while experienced lifters may train 4 to 6 days by rotating muscle groups. Muscles don't grow while you lift; they grow **while you recover**.
+Most people get the best results with **2 to 3 rest days a week** from hard training. Beginners usually do well with 3 strength sessions and 4 lighter days, while experienced lifters may train 4 to 6 days by rotating muscle groups. Muscles don't grow while you lift; they grow while you recover.
 
 ## Why rest days matter
 
@@ -29,7 +29,7 @@ Training creates small amounts of muscle damage and fatigue. During rest, your b
 | Body part split | 5 sessions, 2 rest days, each muscle trained 1–2x a week |
 | Daily training | Possible if intensity and muscle groups rotate, plus 1 full rest day |
 
-**A good rule:** give each muscle group about **48 to 72 hours** before training it hard again.
+**A good rule:** give each muscle group about 48 to 72 hours before training it hard again.
 
 ## Active rest vs full rest
 
@@ -40,12 +40,12 @@ Training creates small amounts of muscle damage and fatigue. During rest, your b
 - Stretching or yoga
 - Light hike with family
 
-**Full rest** means no planned exercise. Take at least one full rest day a week, especially if you feel tired.
+Full rest means no planned exercise. Take at least one full rest day a week, especially if you feel tired.
 
 ## Signs you need more rest
 
-- Your lifts are going **down** for 2 weeks or more
-- You feel **exhausted** before training
+- Your lifts are going down for 2 weeks or more
+- You feel exhausted before training
 - **Poor sleep** despite being tired
 - **Constant soreness** that doesn't fade
 - **Low mood**, irritability, or loss of motivation

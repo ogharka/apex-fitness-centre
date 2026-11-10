@@ -7,7 +7,7 @@ category: Supplements
 cover_art: tubs
 ---
 
-**Supervised strength training is generally considered safe and beneficial for teenagers.** Most teens, however, **can get all the protein they need from food**, so protein powder is usually unnecessary. Pre-workouts, fat burners, testosterone boosters and anything promising fast muscle are **not suitable for teenagers**.
+**Supervised strength training is generally considered safe and beneficial for teenagers.** Most teens, however, can get all the protein they need from food, so protein powder is usually unnecessary. Pre-workouts, fat burners, testosterone boosters and anything promising fast muscle are not suitable for teenagers.
 
 This guide is for parents and teens trying to make sensible choices.
 
@@ -20,7 +20,7 @@ Yes. Many health and sports organisations support **properly supervised strength
 - Lower injury risk in sports
 - Confidence and healthy habits
 
-**Key safety rules:**
+Key safety rules:
 
 - **Learn technique first** with light weights, ideally with a qualified trainer.
 - **No maximal lifting** until technique and experience are solid.
@@ -37,9 +37,9 @@ Usually **no**. Growing teens do need enough protein, but most can get it from:
 - Dal, chana, rajma, soybean
 - Chicken, fish, meat
 
-A teen who eats **three meals with a protein food each, plus milk or curd**, is usually covered. See [how much protein you need](../how-much-protein-do-you-need/) and [15 protein-rich vegetarian foods in Nepal](../protein-rich-vegetarian-foods-nepal/).
+A teen who eats three meals with a protein food each, plus milk or curd, is usually covered. See [how much protein you need](../how-much-protein-do-you-need/) and [15 protein-rich vegetarian foods in Nepal](../protein-rich-vegetarian-foods-nepal/).
 
-Whey protein is essentially a milk protein, so it's **not dangerous** for most healthy teens in normal amounts. But it costs money that's better spent on good food, and it can replace real meals. If a teen genuinely struggles to eat enough, speak to a doctor or dietitian first.
+Whey protein is essentially a milk protein, so it's not dangerous for most healthy teens in normal amounts. But it costs money that's better spent on good food, and it can replace real meals. If a teen genuinely struggles to eat enough, speak to a doctor or dietitian first.
 
 ## Supplements teenagers should avoid
 
@@ -79,12 +79,12 @@ Active teenagers usually need more protein than inactive ones, but most can meet
 | Lunch or dinner | Dal, chicken, fish, meat, paneer, tofu, rajma |
 | After training | A glass of milk with a banana, or curd with fruit |
 
-Growing teenagers also need **enough total food**. Many skinny teens who want to build muscle simply eat too little overall.
+Growing teenagers also need enough total food. Many skinny teens who want to build muscle simply eat too little overall.
 
 ## A safe beginner gym plan for teens
 
 - **2–3 full-body sessions a week**, 45–60 minutes
-- Start with **bodyweight and light weights**, learning squats, push-ups, rows and hip hinges with good form
+- Start with bodyweight and light weights, learning squats, push-ups, rows and hip hinges with good form
 - **Supervision from a qualified trainer** at first
 - Add weight gradually, keeping 2–3 reps in reserve on each set
 - Keep playing sports and staying active outside the gym

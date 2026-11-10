@@ -34,11 +34,11 @@ Walking pads have exploded in popularity thanks to remote work and "10,000 steps
 
 A walking pad is a great choice if you:
 
-- Want to **increase your daily steps** without going outside
-- Work from home and want to **walk slowly at a standing desk**
-- Live in a **small flat or shared house**
+- Want to increase your daily steps without going outside
+- Work from home and want to walk slowly at a standing desk
+- Live in a small flat or shared house
 - Don't plan to run, and walk at a comfortable to brisk pace
-- Want a **quieter** machine for apartments
+- Want a quieter machine for apartments
 
 ### The walking-pad sweet spot
 
@@ -50,11 +50,11 @@ Walking at 2–4 km/h while working is a gentle way to add thousands of steps a 
 
 Choose a treadmill if you:
 
-- Want to **jog or run**, including [interval training](../japanese-walking-interval-walking/)
-- Want **incline walking**, one of the most effective low-impact workouts for fitness and fat loss
-- Are **heavier** and need a stronger motor, deck and frame
-- Want **handrails** for balance and confidence
-- Plan to do **Zone 2 cardio** or structured workouts. See our guide to [Zone 2 training](../zone-2-training/)
+- Want to jog or run, including [interval training](../japanese-walking-interval-walking/)
+- Want incline walking, one of the most effective low-impact workouts for fitness and fat loss
+- Are heavier and need a stronger motor, deck and frame
+- Want handrails for balance and confidence
+- Plan to do Zone 2 cardio or structured workouts. See our guide to [Zone 2 training](../zone-2-training/)
 
 ## The incline factor
 

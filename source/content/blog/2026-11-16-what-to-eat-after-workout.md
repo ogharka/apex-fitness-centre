@@ -7,9 +7,9 @@ category: Diet
 cover_art: thali
 ---
 
-After training, your body needs **protein to repair muscle** and **carbohydrates to refill energy**. A normal Nepali meal like **dal bhat with eggs, chicken or paneer** is one of the best post-workout meals you can eat. You do not need anything special.
+After training, your body needs **protein to repair muscle** and carbohydrates to refill energy. A normal Nepali meal like dal bhat with eggs, chicken or paneer is one of the best post-workout meals you can eat. You do not need anything special.
 
-Eat a meal or snack **within a couple of hours** after training. The old idea of a 30-minute "anabolic window" is much less strict than people think. **Your total protein across the day matters most.**
+Eat a meal or snack within a couple of hours after training. The old idea of a 30-minute "anabolic window" is much less strict than people think. Your total protein across the day matters most.
 
 ## What a good post-workout meal includes
 
@@ -52,8 +52,8 @@ For full day plans, see our [Nepali diet plan for muscle gain](../high-protein-n
 
 ## How soon should you eat?
 
-- If you **ate within a few hours before** training, there is no rush. Eat your next normal meal.
-- If you **trained on an empty stomach** in the early morning, eat something with protein **soon after**, such as milk, eggs or a shake.
+- If you ate within a few hours before training, there is no rush. Eat your next normal meal.
+- If you trained on an empty stomach in the early morning, eat something with protein soon after, such as milk, eggs or a shake.
 
 ## Common mistakes
 

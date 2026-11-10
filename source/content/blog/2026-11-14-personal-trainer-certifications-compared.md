@@ -8,7 +8,7 @@ cover_photo: apex-machines.jpg
 image_alt: Weight machines on the training floor at Apex Fitness Centre
 ---
 
-If you want to work as a personal trainer in Nepal or abroad, an internationally recognised certification makes a big difference. The four names you'll hear most are **NASM, ACE, ISSA and NSCA**. All four are respected; the "best" one depends on **where you want to work and what kind of clients you want to train**.
+If you want to work as a personal trainer in Nepal or abroad, an internationally recognised certification makes a big difference. The four names you'll hear most are **NASM, ACE, ISSA and NSCA**. All four are respected; the "best" one depends on where you want to work and what kind of clients you want to train.
 
 ## Quick comparison
 
@@ -26,7 +26,7 @@ If you want to work as a personal trainer in Nepal or abroad, an internationally
 
 ## What "NCCA-accredited" means and why it matters
 
-The **NCCA (National Commission for Certifying Agencies)** is an independent US body that accredits certification exams. Many gyms, especially in the **Gulf, US and Europe**, prefer or require trainers with NCCA-accredited certifications. If you're planning to work abroad, this matters. See [gym trainer jobs in the Gulf for Nepalis](../gym-trainer-jobs-in-gulf-for-nepalis/).
+The **NCCA (National Commission for Certifying Agencies)** is an independent US body that accredits certification exams. Many gyms, especially in the Gulf, US and Europe, prefer or require trainers with NCCA-accredited certifications. If you're planning to work abroad, this matters. See [gym trainer jobs in the Gulf for Nepalis](../gym-trainer-jobs-in-gulf-for-nepalis/).
 
 ## How to choose
 

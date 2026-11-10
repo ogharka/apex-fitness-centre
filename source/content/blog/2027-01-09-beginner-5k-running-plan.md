@@ -8,7 +8,7 @@ author: suman-limbu
 cover_art: shoe
 ---
 
-If you can walk briskly for 30 minutes, you can learn to run **5 km in about 8 weeks**. The trick is to start with **walk-run intervals** and build up slowly, so your heart, lungs, muscles and joints all adapt together.
+If you can walk briskly for 30 minutes, you can learn to run **5 km in about 8 weeks**. The trick is to start with walk-run intervals and build up slowly, so your heart, lungs, muscles and joints all adapt together.
 
 ## Before you start
 
@@ -19,7 +19,7 @@ If you can walk briskly for 30 minutes, you can learn to run **5 km in about 8 w
 
 ## The 8-week walk-run plan
 
-Run **3 times a week**, with a rest or walking day in between. Every session starts with a **5-minute brisk walk** warm-up and ends with a **5-minute walk** cool-down.
+Run **3 times a week**, with a rest or walking day in between. Every session starts with a 5-minute brisk walk warm-up and ends with a 5-minute walk cool-down.
 
 | Week | Main session |
 |---|---|
@@ -32,7 +32,7 @@ Run **3 times a week**, with a rest or walking day in between. Every session sta
 | 7 | 20–25 min continuous easy run |
 | 8 | 25–35 min continuous run, or your first 5 km |
 
-**Repeat a week** if it felt too hard. There's no rush.
+Repeat a week if it felt too hard. There's no rush.
 
 ![An 8-week walk-run plan from 1-minute runs to a continuous 25–35 minute run or your first 5 km](images/beginner-5k-walk-run-plan.jpg)
 

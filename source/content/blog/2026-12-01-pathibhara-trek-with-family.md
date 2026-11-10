@@ -9,7 +9,7 @@ image: pathibhara-snow-forest.jpg
 image_alt: Misty forest with patches of snow on the trail to Pathibhara temple, Taplejung
 ---
 
-Pathibhara Devi temple sits at **3,794 m** above Taplejung in eastern Nepal, and many families walk up together, from young children to grandparents. **The walk is short compared with a long Himalayan trek, but it is steep, cold and high. With children and older parents, the keys are a slow pace, many breaks, warm layers and turning back if anyone feels unwell.**
+Pathibhara Devi temple sits at **3,794 m** above Taplejung in eastern Nepal, and many families walk up together, from young children to grandparents. The walk is short compared with a long Himalayan trek, but it is steep, cold and high. With children and older parents, the keys are a slow pace, many breaks, warm layers and turning back if anyone feels unwell.
 
 I made this walk in winter with my mother and my young son. This guide shares what we saw on the way and what any family should plan for.
 
@@ -101,7 +101,7 @@ Training for a longer trek after this? See our [trek training plan for flat coun
 
 **We carried too little food.** It is easy to think a short walk does not need much, but the climb is steep and cold, and everyone burns more energy than usual. On top of that, appetite can drop on the way up, so people do not want a full meal even when they need the energy. Next time we will carry much more, and mostly quick-energy food that is easy to eat in a few bites.
 
-**Quick-energy foods worth packing:**
+Quick-energy foods worth packing:
 
 | Food | Why it works on the walk |
 |---|---|

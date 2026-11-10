@@ -24,7 +24,7 @@ Do this **once or twice a week**, or as part of full-body sessions.
 | Leg curl machine | 2 x 12 | Hamstrings |
 | Standing calf raises | 3 x 15 | Calves |
 
-Rest **90 seconds to 2 minutes** between sets of the big lifts and about a minute for the smaller ones.
+Rest 90 seconds to 2 minutes between sets of the big lifts and about a minute for the smaller ones.
 
 ![A member on the leg extension and leg curl machine at Apex Fitness Centre, Urlabari](images/apex-leg-extension-machine.jpg)
 
@@ -52,7 +52,7 @@ Full range: stretch at the bottom, pause at the top. Calves respond well to slow
 
 ## How to progress
 
-- When you reach the top of the rep range with good form on all sets, **add a small amount of weight** next session.
+- When you reach the top of the rep range with good form on all sets, add a small amount of weight next session.
 - Write down your weights. Leg strength often improves quickly in the first months.
 - Read [how many sets and reps to build muscle](../how-many-sets-and-reps-to-build-muscle/) to understand why this matters.
 

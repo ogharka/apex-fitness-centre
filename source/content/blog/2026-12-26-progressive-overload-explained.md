@@ -9,7 +9,7 @@ cover_photo: apex-chest-press-machine.jpg
 image_alt: Member training on a chest press machine at Apex Fitness Centre
 ---
 
-**Progressive overload means gradually asking your muscles to do a little more over time.** That's it. If you lift the same weight for the same reps every week, your body has no reason to change. Add a little weight, a rep, or a set over weeks and months, and your body adapts by getting **stronger and more muscular**.
+**Progressive overload means gradually asking your muscles to do a little more over time.** That's it. If you lift the same weight for the same reps every week, your body has no reason to change. Add a little weight, a rep, or a set over weeks and months, and your body adapts by getting stronger and more muscular.
 
 It's the single most important principle in strength training, and the reason people who write down their workouts usually progress faster than those who don't.
 
@@ -32,7 +32,7 @@ Pick a rep range, for example **8 to 12 reps**.
 
 1. Start with a weight you can lift for 8 good reps on all sets.
 2. Each session, try to add reps.
-3. When you reach **12 reps on all sets**, increase the weight.
+3. When you reach 12 reps on all sets, increase the weight.
 4. Drop back to 8 reps with the new weight and repeat.
 
 | Week | Weight | Sets x reps |

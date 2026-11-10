@@ -11,7 +11,7 @@ image_alt: A member training on the elliptical by the window at Apex Fitness Cen
 
 **Heart rate zones divide your effort into five levels, based on a percentage of your maximum heart rate. Zone 1–2 is easy, Zone 3 moderate, and Zones 4–5 hard. To use them well, set your maximum heart rate properly in your watch app (the default "220 minus age" can be off by 10+ beats), check readings with the talk test, and plan most of your cardio in Zone 2 with some harder sessions in Zones 4–5.**
 
-Wearable technology is the **number one fitness trend of 2026** according to the American College of Sports Medicine ([ACSM](https://acsm.org/top-fitness-trends-2026)). Most people wear a watch that shows heart rate zones, but few use them correctly.
+Wearable technology is the number one fitness trend of 2026 according to the American College of Sports Medicine ([ACSM](https://acsm.org/top-fitness-trends-2026)). Most people wear a watch that shows heart rate zones, but few use them correctly.
 
 ## The five heart rate zones
 
@@ -48,12 +48,12 @@ Taking medicines like beta-blockers? They lower your heart rate, so zones won't 
 
 Wrist sensors use light to measure blood flow, which can be thrown off by movement, a loose strap, cold skin, tattoos and sweat. A study presented by the American College of Cardiology found that **wrist-worn monitors were less accurate than chest straps**, especially during more intense exercise ([ACC](https://www.acc.org/about-acc/press-releases/2017/03/08/14/02/wrist-worn-heart-rate-monitors-less-accurate-than-standard-chest-strap)).
 
-**To improve accuracy:**
+To improve accuracy:
 
-- Wear the watch **snug, a finger's width above the wrist bone**
+- Wear the watch snug, a finger's width above the wrist bone
 - Tighten it a notch during workouts
 - **Use a chest strap** for intervals, weights or rowing, where arm movement confuses wrist sensors
-- Cross-check with the **talk test**: if your watch says Zone 2 but you can't speak, trust your breathing
+- Cross-check with the talk test: if your watch says Zone 2 but you can't speak, trust your breathing
 
 ![A member training on the exercise bike at Apex Fitness Centre](images/apex-member-exercise-bike.jpg)
 
