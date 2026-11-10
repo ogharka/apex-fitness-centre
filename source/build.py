@@ -235,7 +235,7 @@ def ga_tag():
     Nothing is added until a real ID is set, so no wasted requests with the placeholder."""
     if not re.fullmatch(r"G-[A-Z0-9]{6,12}", GA_ID) or GA_ID == "G-XXXXXXXXXX": return ""
     return f"""<!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+<script>addEventListener('load',function(){{var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id={GA_ID}';document.head.appendChild(s)}});</script>
 <script>if(!/(^|\.)apexfitnesscentre\.shop$/.test(location.hostname))window['ga-disable-{GA_ID}']=true;window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','{GA_ID}');
 document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
 var v=s&&parseFloat(s.getAttribute('data-value'));var p={{product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'}};if(v){{p.value=v;p.price=v;p.currency='NPR'}}
@@ -537,8 +537,12 @@ def build_cat(c):
     pages[c["url"]] = head(c["title"], c["desc"], c["url"], d, image="assets/" + c["products"][0]["img"], extra=j) + body
     sitemap.append((c["url"], "0.8"))
 
-# Real customer reviews only. Add entries like:
-# dict(product="slug", name="Rohan", town="Biratnagar", text="...", date="2026-10-20", image="reviews/rohan.jpg")
+# REAL customer reviews only (from WhatsApp, in person or Facebook). Never write reviews yourself.
+# Copy this block, fill it in, and add it to the list below:
+# dict(product="product-slug-from-the-url", name="First Last", town="Biratnagar", rating=5,
+#      text="Their words, exactly as sent (Nepali is fine)", en="English translation, or leave empty",
+#      image="reviews/first-last.jpg", alt="First Last with the product"),   # image and alt are optional
+# Put the photo (with the person's OK) in source/assets/reviews/. Reviews also appear in Google's product data.
 REVIEWS = [
  dict(product="scitron-volcano-pre-workout", name="Rupak Shrestha", rating=5, image="reviews/rupak-shrestha.jpg", alt="Rupak Shrestha with Scitron Volcano pre-workout",
       text="Aila market ma vayeko aru preworkout vanda yo linu thalexi mero energy level nai beglai xa. Malai lagxa Nepal ma paune sabse best preworkout nai yoi ho.",
@@ -560,7 +564,7 @@ def rev_card(x, d, link=True):
     pn = _PNAME[x["product"]]
     prod = next(p for p in PRODUCTS if p["slug"] == x["product"])
     who = e(x["name"]) + (f", {e(x['town'])}" if x.get("town") else "")
-    img = f'<img src="{"../"*d}assets/{x["image"]}" alt="{e(x["alt"])}" width="450" height="450" loading="lazy">'
+    img = f'<img src="{"../"*d}assets/{x["image"]}" alt="{e(x.get("alt") or x["name"])}" width="450" height="450" loading="lazy">' if x.get("image") else ""
     en = f'<p class="en"><span>English:</span> {e(x["en"])}</p>' if x.get("en") else ""
     note = f'<p class="fine" style="text-align:left">{e(x["note"])}</p>' if x.get("note") else ""
     pl = f'<a class="tl" href="{"../"*d}{prod["url"]}">{e(pn)}</a>' if link else e(pn)
@@ -569,7 +573,7 @@ def rev_card(x, d, link=True):
 def reviews_block(p):
     rv = [x for x in REVIEWS if x["product"] == p["slug"]]
     msg = f"Hi Apex Fitness Centre, I bought {p['full']} and here is my review: "
-    ask = f'<p class="fine">Bought this from us? <a class="tl" href="{wa(msg)}" target="_blank" rel="noopener">Leave a review on WhatsApp</a> and we will show it here.</p>'
+    ask = f'<p class="rvask">Bought this from us? Send us your review and we will add it here.</p><a class="btn line" href="{wa(msg)}" target="_blank" rel="noopener">Leave a review on WhatsApp</a>'
     if not rv:
         return (f'<section class="rev rev-empty"><h2 class="h2s">Customer reviews</h2><p class="rvnone">Be the first to review this product.</p>'
                 f'<a class="btn line" href="{wa(msg)}" target="_blank" rel="noopener">Leave a review on WhatsApp</a></section>')
@@ -1143,10 +1147,10 @@ from guides import GUIDES
 # Guides whose topic now lives in a fuller blog post (see MERGED near the end); hidden from guide lists.
 MERGED_GUIDE_SLUGS = {"how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal", "creatine-or-whey-first"}
 _GBY = {g["slug"]: g for g in GUIDES}
-GUIDE_FOR_CAT = {"creatine": ["creatine-price-in-nepal", "creatine-whey-price-nepal", "how-to-take-creatine", "how-to-spot-fake-supplements-in-nepal"],
-                 "protein": ["whey-protein-price-in-nepal", "creatine-whey-price-nepal", "how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"],
+GUIDE_FOR_CAT = {"creatine": ["creatine-price-in-nepal", "creatine-whey-price-nepal", "how-to-take-creatine", "buy-supplements-online-in-nepal"],
+                 "protein": ["best-protein-for-beginners-in-nepal", "whey-protein-price-in-nepal", "creatine-whey-price-nepal", "buy-supplements-online-in-nepal"],
                  "pre-workout": ["how-to-choose-a-pre-workout-in-nepal", "supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal"]}
-_GDEF = ["how-to-spot-fake-supplements-in-nepal", "supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal"]
+_GDEF = ["supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal", "best-protein-for-beginners-in-nepal"]
 
 def guide_links(depth, cat=None):
     r = "../" * depth
@@ -1254,12 +1258,19 @@ for _root, _dirs, _files in os.walk(SRC):
             _t.save(os.path.join(OUT, "assets", _tn), "WEBP", quality=80, method=6)
             THUMB[_rel] = _tn
 
-_PROD_ALT = {p["img"]: p["full"] for p in PRODUCTS}
+def _describe(p):
+    """Describe what the photo shows: the pack, the product, the size and flavour."""
+    n = (p["name"] + " " + p.get("size", "")).lower()
+    noun = ("Box of" if "packet" in n else "Bottle of" if any(k in n for k in ("liquid", "omega", "fish oil", "capsule", "tablet", "softgel")) else
+            "Pack of" if "oats" in n else "" if any(k in n for k in ("belt", "strap", "glove", "shaker")) else "Tub of")
+    s = f"{noun} {p['name']}".strip() + (f", {p['size']}" if p.get("size") else "") + ((", unflavoured" if p["flavour"].lower().startswith("unflavo") else f", {p['flavour']} flavour") if p.get("flavour") else "")
+    return s
+_PROD_ALT = {p["img"]: _describe(p) for p in PRODUCTS}
 def _prod_alt(tag):
-    """Product photos get alt="<Brand> <Product> <size> price in Nepal". Decorative copies (alt="") stay empty."""
+    """Product photos get an alt that describes the photo, e.g. "Tub of MuscleBlaze Creatine Monohydrate, 320 g, Citrus Blast flavour". Decorative copies (alt="") stay empty."""
     src = re.search(r'src="[^"]*?assets/([^"]+)"', tag)
     if not src or src.group(1) not in _PROD_ALT or 'alt=""' in tag: return tag
-    alt = e(_PROD_ALT[src.group(1)]) + " price in Nepal"
+    alt = e(_PROD_ALT[src.group(1)])
     return re.sub(r'alt="[^"]*"', f'alt="{alt}"', tag, 1) if ' alt="' in tag else tag.replace("<img ", f'<img alt="{alt}" ', 1)
 
 def _fix_imgs(html_):

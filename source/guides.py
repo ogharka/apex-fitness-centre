@@ -14,15 +14,15 @@ dict(slug="creatine-price-in-nepal", cat="creatine",
   ("Why creatine prices differ in Nepal", ["Three things change the price: the brand, the pack size and the seller. Imported brands like BPI Sports cost more after shipping and import duty, while Indian brands like MuscleBlaze and Wellcore cost less to bring into Nepal.", "Flavour does not make creatine stronger. Flavoured tubs taste better in plain water, while unflavoured tubs mix into a shake without changing the taste. Micronised powder is ground finer, so it dissolves more easily, but the creatine itself is the same.", "Be careful with prices that look too good. A well-known brand selling far below the usual creatine price in Nepal can mean an old, repacked or fake tub."]),
   ("What creatine does", ["Your muscles use a fuel called phosphocreatine for short, hard efforts like a heavy set of squats or a sprint. Taking creatine every day tops up those stores. Research summarised by the International Society of Sports Nutrition shows creatine monohydrate can help you do a little more work in training, which over weeks supports strength and muscle gains. It is not a steroid and it is not a magic powder: it works only alongside regular training and enough protein."]),
   ("The three creatines, one by one", [{"html": """<h3>MuscleBlaze Creatine Monohydrate 320 g – Rs. 2,000</h3>
-<p><img src="../../assets/muscleblaze-creatine-320g.jpg" alt="MuscleBlaze Creatine Monohydrate 320 g Citrus Blast price in Nepal" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
+<p><img src="../../assets/muscleblaze-creatine-320g.jpg" alt="MuscleBlaze Creatine Monohydrate 320 g Citrus Blast" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
 <p>One of India's best-known sports nutrition brands, and the easiest creatine to find in Nepal. The Citrus Blast flavour means you can mix it with plain water. A good, low-cost choice for most people starting out.</p>
 <p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%3A%20MuscleBlaze%20Creatine%20Monohydrate%20320%20g%20%28Citrus%20Blast%29%20for%20Rs.%202%2C000.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="MuscleBlaze Creatine Monohydrate 320 g (Citrus Blast)" data-value="2000">Order on WhatsApp – Rs. 2,000</a> <a class="tl" href="../../products/muscleblaze-creatine-monohydrate-320g-citrus-blast/">See the product page</a></p>
 <h3>Wellcore Micronised Creatine Monohydrate 307 g – Rs. 2,000</h3>
-<p><img src="../../assets/wellcore-micronised-creatine-307g.jpg" alt="Wellcore Micronised Creatine Monohydrate 307 g Fruit Fusion price in Nepal" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
+<p><img src="../../assets/wellcore-micronised-creatine-307g.jpg" alt="Wellcore Micronised Creatine Monohydrate 307 g Fruit Fusion" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
 <p>Micronised means the powder is ground finer, so it mixes more easily. The label gives 83 servings of 3 g creatine, about Rs. 24 per serving, in a Fruit Fusion flavour. Read our full <a href="../../blog/wellcore-creatine-review/">Wellcore creatine review</a>.</p>
 <p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%3A%20Wellcore%20Micronised%20Creatine%20Monohydrate%20307%20g%20%28Fruit%20Fusion%29%20for%20Rs.%202%2C000.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="Wellcore Micronised Creatine Monohydrate 307 g (Fruit Fusion)" data-value="2000">Order on WhatsApp – Rs. 2,000</a> <a class="tl" href="../../products/wellcore-micronised-creatine-monohydrate-307g-fruit-fusion/">See the product page</a></p>
 <h3>BPI Sports Micronised Creatine 300 g – Rs. 5,000</h3>
-<p><img src="../../assets/bpi-micronized-creatine-300g.jpg" alt="BPI Sports Micronised Creatine 300 g Unflavoured price in Nepal" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
+<p><img src="../../assets/bpi-micronized-creatine-300g.jpg" alt="BPI Sports Micronised Creatine 300 g Unflavoured" width="640" height="640" loading="lazy" style="max-width:220px;height:auto"></p>
 <p>An American brand, unflavoured and micronised. Because it has no flavour, you can add it to your whey shake, juice or water without changing the taste. It costs more per serving, so it suits people who already use whey and prefer an imported brand.</p>
 <p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%3A%20BPI%20Sports%20Micronised%20Creatine%20300%20g%20%28Unflavoured%29%20for%20Rs.%205%2C000.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="BPI Sports Micronised Creatine 300 g (Unflavoured)" data-value="5000">Order on WhatsApp – Rs. 5,000</a> <a class="tl" href="../../products/bpi-sports-micronized-creatine-300g-unflavored/">See the product page</a></p>"""}]),
   ("How to take creatine", [{"html": """<p><b>Daily dose:</b> 3 to 5 g a day, every day, including rest days. This is the maintenance dose recommended in the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/" target="_blank" rel="noopener">International Society of Sports Nutrition position stand</a>.</p>
@@ -96,6 +96,52 @@ dict(slug="creatine-whey-price-nepal", cat="creatine", table=["creatine", "prote
       ("How can I tell if my whey protein is fake?", "Check the inner seal, the printed batch number and expiry date, the importer sticker, and the QR or scratch code if the brand uses one. A price far below normal is also a warning sign."),
       ("Do you deliver all over Nepal?", "Yes. Delivery is free all over Nepal. Most orders arrive in 1 to 2 days.")],
  rel=["creatine-price-in-nepal", "whey-protein-price-in-nepal", "how-to-spot-fake-supplements-in-nepal"]),
+
+dict(slug="best-protein-for-beginners-in-nepal", cat="protein", table=None, published="2026-11-10",
+ title="Best Protein for Beginners in Nepal: Biozyme vs Forza",
+ h1="Best protein for beginners in Nepal: MuscleBlaze Biozyme vs BigMan Forza",
+ desc="Best protein for beginners in Nepal: MuscleBlaze Biozyme (Rs. 15,000) vs BigMan Forza (Rs. 17,500), how much protein you need and how to take it.",
+ intro="If you are new to the gym and want your first protein powder, the two tubs most beginners ask us about are MuscleBlaze Biozyme Performance Whey at Rs. 15,000 and BigMan Forza Protein at Rs. 17,500. Both are 2 kg tubs. This guide compares them using only what is on our product pages and the labels, explains how much protein a beginner needs, and shows how to take it.",
+ body=[
+  ("The two tubs side by side", [{"html": """<div class="tw"><table class="cmp"><thead><tr><th></th><th><a href="../../products/muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme/">MuscleBlaze Biozyme Performance Whey</a></th><th><a href="../../products/bigman-forza-protein-2kg/">BigMan Forza Protein</a></th></tr></thead><tbody>
+<tr><td>Price</td><td>Rs. 15,000</td><td>Rs. 17,500</td></tr>
+<tr><td>Pack size</td><td>2 kg</td><td>2 kg (4.4 lb)</td></tr>
+<tr><td>Type</td><td>Whey protein</td><td>Protein blend with creatine and MCT (per label)</td></tr>
+<tr><td>Servings</td><td>See the serving size on the label</td><td>66 per tub</td></tr>
+<tr><td>Flavour</td><td>French Vanilla Crème</td><td>See the label</td></tr>
+<tr><td>Sugar</td><td>See the label</td><td>No added sugar (per label)</td></tr>
+</tbody></table></div>"""}]),
+  ("MuscleBlaze Biozyme Performance Whey (Rs. 15,000)", [
+     "A whey protein in a 2 kg tub, in French Vanilla Crème flavour, which mixes well with water or milk. It is the lower-priced of the two and a simple first protein: one product that does one job.",
+     "Choose it if you want a plain whey protein at the lower price, or if you plan to add creatine separately later.",
+     {"html": """<p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%3A%20MuscleBlaze%20Biozyme%20Performance%20Whey%202%20kg%20%28French%20Vanilla%20Cr%C3%A8me%29%20for%20Rs.%2015%2C000.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="MuscleBlaze Biozyme Performance Whey 2 kg (French Vanilla Crème)" data-value="15000">Order on WhatsApp – Rs. 15,000</a> <a class="tl" href="../../products/muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme/">See the product page</a></p>"""}]),
+  ("BigMan Forza Protein (Rs. 17,500)", [
+     "A protein blend that, according to its label, also contains creatine and MCT, with no added sugar. The 2 kg tub gives 66 servings, so it lasts a long time if you train most days.",
+     "Choose it if you want protein and creatine in one scoop. Because it already contains creatine, check the label before adding a separate creatine product.",
+     {"html": """<p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20to%20order%3A%20BigMan%20Forza%20Protein%202%20kg%20for%20Rs.%2017%2C500.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="BigMan Forza Protein 2 kg" data-value="17500">Order on WhatsApp – Rs. 17,500</a> <a class="tl" href="../../products/bigman-forza-protein-2kg/">See the product page</a></p>"""}]),
+  ("Which one should a beginner buy?", [
+     {"list": ["On a budget, or want a simple whey: MuscleBlaze Biozyme, Rs. 15,000.", "Want protein with creatine already in it and train most days: BigMan Forza, Rs. 17,500.", "Not sure yet: start with food. A beginner who eats enough dal, eggs, paneer, soya, chicken or fish may not need powder at all in the first months."]},
+     "Protein powder is a convenience, not a shortcut. The tub that helps most is the one you can afford to keep using and that fits your diet."]),
+  ("How much protein does a beginner need?", [
+     {"html": """<p>The International Society of Sports Nutrition suggests that most people who exercise do well on about <b>1.4 to 2.0 g of protein per kg of body weight per day</b>, from food and shakes together (<a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener">Jäger et al., 2017</a>).</p>
+<ul><li>A 60 kg beginner: about 84 to 120 g a day.</li><li>A 70 kg beginner: about 98 to 140 g a day.</li><li>An 80 kg beginner: about 112 to 160 g a day.</li></ul>
+<p>Spread it over 3 or 4 meals. Use our free <a href="../../calculators/protein-calculator/">protein calculator</a> for your own number, and see <a href="../../blog/dal-bhat-protein/">how much protein is in dal bhat</a> and <a href="../../blog/protein-rich-vegetarian-foods-nepal/">protein-rich vegetarian foods in Nepal</a> to get more from food first.</p>"""}]),
+  ("How to take protein powder", [
+     {"list": ["Use the scoop in the tub and follow the serving size printed on the label.", "Mix with water or milk. Milk adds more protein and calories; water keeps it lighter.", "Most beginners only need one shake a day, after training or with a meal that is low in protein.", "Count the shake as part of your daily protein, not on top of a diet that already has plenty.", "On rest days, a shake is fine if your meals are short on protein."]},
+     "If you have a kidney condition, a milk allergy or another health issue, ask your doctor before taking protein powder."]),
+  ("Want both? The whey + creatine stack (Rs. 16,500)", [
+     {"html": """<p>Our Muscle Gain Stack combines <a href="../../products/muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme/">MuscleBlaze Biozyme Performance Whey (2 kg)</a> with <a href="../../products/muscleblaze-creatine-monohydrate-320g-citrus-blast/">MuscleBlaze Creatine (320 g)</a> for <b>Rs. 16,500</b> instead of Rs. 17,000, a saving of Rs. 500, with free delivery all over Nepal. Whey helps you reach your daily protein; creatine supports strength in training. New to creatine? Read <a href="../how-to-take-creatine/">how to take creatine</a>.</p>
+<p>If you choose BigMan Forza, you do not need this stack: Forza already contains creatine, according to its label.</p>
+<p><a class="btn wa" href="https://wa.me/9779708819605?text=Hi%20Apex%20Fitness%20Centre%2C%20I%20want%20the%20Muscle%20Gain%20Stack%3A%20MuscleBlaze%20Biozyme%20Whey%202%20kg%20%2B%20MuscleBlaze%20Creatine%20320%20g%20for%20Rs.%2016%2C500.%20Please%20confirm%20stock.%20Payment%3A%20COD%20/%20Khalti%20/%20Bank" target="_blank" rel="noopener" data-product="Muscle Gain Stack: Biozyme Whey + MuscleBlaze Creatine" data-value="16500">Order the stack on WhatsApp – Rs. 16,500</a></p>"""}]),
+  ("Ordering from Apex", ["Order on WhatsApp from this page or any product page. We confirm stock, you pay by Cash on Delivery, Khalti or bank transfer, and Nepal Can delivers all over Nepal, usually in 1 to 2 days, with free delivery. Every tub is authentic and comes with a bill."]),
+  ("Sources", [{"html": """<ul><li><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener">ISSN position stand: protein and exercise</a> (Jäger et al., 2017)</li></ul><p class="fine">General information, not medical advice. If you have kidney problems, a milk allergy, are pregnant or take regular medicine, talk to your doctor before taking protein powder.</p>"""}]),
+ ],
+ faq=[("What is the best protein for beginners in Nepal?", "For most beginners, a simple whey such as MuscleBlaze Biozyme Performance Whey (Rs. 15,000, 2 kg). If you want protein with creatine already included, BigMan Forza (Rs. 17,500, 2 kg, 66 servings) is the other option."),
+      ("How much protein does a beginner need per day?", "Most people who exercise do well on about 1.4 to 2.0 g of protein per kg of body weight a day from food and shakes together, according to the International Society of Sports Nutrition."),
+      ("How many protein shakes should a beginner drink a day?", "Usually one. Follow the serving size on the label and count the shake as part of your daily protein from food."),
+      ("Can I take creatine with BigMan Forza?", "Forza already contains creatine according to its label, so check the label before adding a separate creatine product."),
+      ("Do you deliver protein all over Nepal?", "Yes. Delivery is free all over Nepal by Nepal Can, usually in 1 to 2 days, and you can pay by Cash on Delivery, Khalti or bank transfer.")],
+ rel=["whey-protein-price-in-nepal", "creatine-whey-price-nepal", "supplements-for-beginners-in-nepal"]),
 
 dict(slug="whey-protein-price-in-nepal", cat="protein", table="protein",
  title="Whey Protein Price in Nepal (2026): Genuine Brands and Prices",
@@ -219,19 +265,19 @@ dict(slug="how-to-choose-a-pre-workout-in-nepal", cat="pre-workout", table="pre-
 dict(slug="send-supplements-to-family-in-nepal", cat="shop", table=None,
  title="Send Supplements to Family in Nepal from Abroad | Apex",
  h1="Send supplements to family in Nepal from abroad",
- desc="Living abroad? Order genuine protein, creatine and other supplements for family in Nepal. Pay directly by bank or Khalti, free delivery all over Nepal.",
+ desc="Living abroad? Order genuine protein, creatine and other supplements for family in Nepal. Pay by bank or Khalti from abroad, or your family pays Cash on Delivery. Free delivery all over Nepal.",
  intro="Many Nepalis abroad want to send protein or creatine home, but shipping from overseas is slow and costly, and fakes are common. You can order from Apex Fitness Centre in Nepal and we deliver to your family locally.",
  body=[
   ("How it works", [{"list": ["Message us on WhatsApp at 9708819605 and tell us which products you want.",
                               "Send your family member's name, phone number and address in Nepal.",
-                              "Pay directly to our bank account or by Khalti. We send the payment details on WhatsApp.",
+                              "Pay directly to our bank account or by Khalti, or your family can pay Cash on Delivery when it arrives. We send the payment details on WhatsApp.",
                               "We confirm your payment and send the parcel by Nepal Can, free of charge.",
                               "Your family receives it, usually in 1 to 2 days, and we share the tracking number with you."]}]),
   ("Why order from inside Nepal", ["The parcel does not cross a border, so there are no overseas shipping fees or customs delays. You get a local seller you can message, a bill, and delivery in days instead of weeks."]),
   ("Before you order", ["Ask us for photos of the exact products, and ask your family to check that the seals are unbroken when the parcel arrives. Tell them to message us the same day if anything looks wrong."]),
   ("What people send most", ["Protein powder, creatine monohydrate and pre-workout are the most common choices. See our price guides for current prices before you decide."]),
  ],
- faq=[("Can I pay from outside Nepal?", "Yes. You can pay directly to our bank account or by Khalti. Message us on WhatsApp and we will send the details."),
+ faq=[("Can I pay from outside Nepal?", "Yes. You can pay directly to our bank account or by Khalti, or your family can pay Cash on Delivery when it arrives. Message us on WhatsApp and we will send the details."),
       ("Do you deliver to any part of Nepal?", "Yes. Delivery is free all over Nepal by Nepal Can, usually in 1 to 2 days."),
       ("How do I know the order reached my family?", "We send you the tracking number, and your family can confirm on WhatsApp when it arrives.")],
  rel=["buy-supplements-online-in-nepal", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
