@@ -8,7 +8,7 @@ author: suman-limbu
 cover_art: clock
 ---
 
-**Intermittent fasting can help you lose weight, but mainly because it helps you eat less, not because of a special fat-burning effect.** Studies comparing intermittent fasting with ordinary calorie reduction generally find **similar weight loss** when total calories are similar. If fasting makes it easier for you to eat less, it can be a useful tool. If it makes you overeat later, it is not for you.
+**Intermittent fasting can help you lose weight, but mainly because it helps you eat less, not because of a special fat-burning effect.** Studies comparing intermittent fasting with ordinary calorie reduction generally find similar weight loss when total calories are similar. If fasting makes it easier for you to eat less, it can be a useful tool. If it makes you overeat later, it is not for you.
 
 ## What is intermittent fasting?
 
@@ -25,9 +25,9 @@ Many Nepalis already follow a pattern close to 14:10 naturally: morning tea, a l
 
 ## What does the research say?
 
-A well-known trial published in the *New England Journal of Medicine* in 2022 compared **calorie restriction alone** with **calorie restriction plus time-restricted eating** (an 8-hour window) over 12 months in adults with obesity. Both groups lost weight, and the difference between them was **not statistically significant**. Other head-to-head studies have found similar results.
+A well-known trial published in the *New England Journal of Medicine* in 2022 compared **calorie restriction alone** with calorie restriction plus time-restricted eating (an 8-hour window) over 12 months in adults with obesity. Both groups lost weight, and the difference between them was not statistically significant. Other head-to-head studies have found similar results.
 
-The takeaway: **the eating window itself is not magic. Eating less overall is what drives weight loss.**
+The takeaway: the eating window itself is not magic. Eating less overall is what drives weight loss.
 
 ## Possible benefits
 
@@ -46,9 +46,9 @@ The takeaway: **the eating window itself is not magic. Eating less overall is wh
 
 ## Who should avoid intermittent fasting
 
-- People with **diabetes**, especially on insulin or sugar-lowering medicines, unless supervised by a doctor
+- People with diabetes, especially on insulin or sugar-lowering medicines, unless supervised by a doctor
 - **Pregnant or breastfeeding** women
-- Anyone with a **history of eating disorders**
+- Anyone with a history of eating disorders
 - **Under 18s**
 - People with certain medical conditions or on medicines that need food
 
@@ -66,8 +66,8 @@ The takeaway: **the eating window itself is not magic. Eating less overall is wh
 
 ## Intermittent fasting and the gym
 
-- If you train **early morning**, a small snack before or a meal soon after may help performance and recovery.
-- If you train **in the evening**, place your last meal after training within your window.
+- If you train early morning, a small snack before or a meal soon after may help performance and recovery.
+- If you train in the evening, place your last meal after training within your window.
 - **Total protein** across the day still matters for muscle. See [how much protein you need](../how-much-protein-do-you-need/).
 
 ## Frequently asked questions

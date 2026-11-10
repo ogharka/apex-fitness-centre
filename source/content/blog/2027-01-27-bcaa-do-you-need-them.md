@@ -18,7 +18,7 @@ BCAA stands for **branched-chain amino acids**: three of the nine essential amin
 - **Isoleucine**
 - **Valine**
 
-"Essential" means your body cannot make them, so they must come from food. They are found in **all protein foods**: eggs, milk, curd, paneer, chicken, fish, dal and whey.
+"Essential" means your body cannot make them, so they must come from food. They are found in all protein foods: eggs, milk, curd, paneer, chicken, fish, dal and whey.
 
 ## What BCAA products claim
 
@@ -35,15 +35,15 @@ BCAA stands for **branched-chain amino acids**: three of the nine essential amin
 
 ## When BCAAs might make sense
 
-- You train **early in the morning on an empty stomach** and cannot eat before.
-- You are in a **long training session** (over 90 minutes) and want something to sip.
-- You are on a strict diet and like a **low-calorie flavoured drink** during workouts.
-- You simply **enjoy them** and they help you drink more water.
+- You train early in the morning on an empty stomach and cannot eat before.
+- You are in a long training session (over 90 minutes) and want something to sip.
+- You are on a strict diet and like a low-calorie flavoured drink during workouts.
+- You simply enjoy them and they help you drink more water.
 
 ## When they are probably a waste of money
 
 - You eat enough protein from food or whey every day.
-- You are a beginner on a tight budget. Spend it on **food, whey or creatine** first.
+- You are a beginner on a tight budget. Spend it on food, whey or creatine first.
 
 ## BCAA vs whey vs food
 
@@ -66,7 +66,7 @@ BCAA stands for **branched-chain amino acids**: three of the nine essential amin
 ## How to use BCAAs if you buy them
 
 - Follow the label's serving size.
-- Mix with water and sip **during or after training**.
+- Mix with water and sip during or after training.
 - Choose a genuine product. See [how to spot fake supplements in Nepal](../fake-supplements-in-nepal-how-to-spot-them/).
 
 ## The cost comparison
@@ -83,9 +83,9 @@ For most people, **whey or real food gives far more value** per rupee than BCAAs
 
 ## How to read a BCAA label
 
-- Look for the **grams of BCAA per serving** (often 5–7 g).
-- Check the **ratio**, usually 2:1:1 (leucine : isoleucine : valine). Higher-leucine ratios aren't proven to be better.
-- Watch for **added sugar, colours and caffeine**. Some BCAA drinks contain stimulants.
+- Look for the grams of BCAA per serving (often 5–7 g).
+- Check the ratio, usually 2:1:1 (leucine : isoleucine : valine). Higher-leucine ratios aren't proven to be better.
+- Watch for added sugar, colours and caffeine. Some BCAA drinks contain stimulants.
 - Make sure the importer's sticker and batch number are on the tub. See [how to spot fake supplements](../fake-supplements-in-nepal-how-to-spot-them/).
 
 ## Frequently asked questions

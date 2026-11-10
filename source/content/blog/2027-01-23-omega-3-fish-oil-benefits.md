@@ -8,7 +8,7 @@ cover_art: check
 products: pole-nutrition-omega-3-fish-oil-1000mg
 ---
 
-Omega-3 fats are important for your **heart, brain and overall health**. The best way to get them is from **oily fish about twice a week**. If you rarely eat fish, a fish oil supplement is a reasonable option, but it's a **health supplement, not a muscle builder**. Don't expect bigger lifts from it.
+Omega-3 fats are important for your **heart, brain and overall health**. The best way to get them is from oily fish about twice a week. If you rarely eat fish, a fish oil supplement is a reasonable option, but it's a health supplement, not a muscle builder. Don't expect bigger lifts from it.
 
 ## What are omega-3s?
 
@@ -40,8 +40,8 @@ There are three main types:
 
 ## Who might benefit from a supplement
 
-- People who **rarely or never eat fish**
-- Some people with **high triglycerides** (with medical advice)
+- People who rarely or never eat fish
+- Some people with high triglycerides (with medical advice)
 - People who want a simple daily habit for general health
 
 ## How to choose a fish oil supplement
@@ -66,7 +66,7 @@ Fish oil is fine to add, but bigger wins come first:
 
 ## How to read a fish oil label
 
-The big number on the front (usually "1000 mg") is the total **fish oil**, not the omega-3s. What matters is **EPA + DHA**, listed on the back.
+The big number on the front (usually "1000 mg") is the total **fish oil**, not the omega-3s. What matters is EPA + DHA, listed on the back.
 
 | Label says | What it usually means |
 |---|---|
@@ -74,7 +74,7 @@ The big number on the front (usually "1000 mg") is the total **fish oil**, not t
 | EPA 180 mg + DHA 120 mg | The actual omega-3s: **300 mg** per capsule |
 | "Triple strength" | Often 600–900 mg EPA + DHA per capsule |
 
-**Example:** if your capsule has 300 mg of EPA + DHA and you're aiming for about 500 mg a day (a common general target), you'd need about 2 capsules a day. Higher doses for medical reasons should come from your doctor.
+Example: if your capsule has 300 mg of EPA + DHA and you're aiming for about 500 mg a day (a common general target), you'd need about 2 capsules a day. Higher doses for medical reasons should come from your doctor.
 
 ## Common mistakes
 

@@ -8,7 +8,7 @@ author: suman-limbu
 cover_art: tape
 ---
 
-You can't target fat loss to your face. **Face fat goes down when your overall body fat goes down**, and puffiness often improves when you cut back on **salt, alcohol and late-night eating** and sleep better. Face yoga, chewing gum and jawline gadgets don't burn face fat.
+You can't target fat loss to your face. **Face fat goes down when your overall body fat goes down**, and puffiness often improves when you cut back on salt, alcohol and late-night eating and sleep better. Face yoga, chewing gum and jawline gadgets don't burn face fat.
 
 ## Why your face looks fuller
 
@@ -56,7 +56,7 @@ Large, salty meals late at night often mean a puffier face in the morning.
 
 ## How long does it take?
 
-It depends on how much body fat you have to lose. Many people notice their face looking slimmer after **losing a few kilos**. Water-related puffiness can improve within **days** of cutting salt and alcohol.
+It depends on how much body fat you have to lose. Many people notice their face looking slimmer after **losing a few kilos**. Water-related puffiness can improve within days of cutting salt and alcohol.
 
 ## Take photos
 

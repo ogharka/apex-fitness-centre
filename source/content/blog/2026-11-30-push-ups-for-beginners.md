@@ -10,13 +10,13 @@ cover_art: dumbbell
 
 If you cannot do a single push-up today, you can almost certainly do **10 to 20 good ones within 6 to 8 weeks**. The secret is to start with an easier version you *can* do for clean reps, and step up only when it becomes easy.
 
-Push-ups train your **chest, shoulders, triceps and core** at the same time, need no equipment, and you can do them anywhere.
+Push-ups train your chest, shoulders, triceps and core at the same time, need no equipment, and you can do them anywhere.
 
 ## Perfect push-up form
 
 1. **Hands** slightly wider than your shoulders, fingers pointing forward.
 2. **Body in a straight line** from head to heels. Squeeze your glutes and tighten your stomach.
-3. **Lower your chest** towards the floor, elbows about **45 degrees** from your body, not flared straight out.
+3. **Lower your chest** towards the floor, elbows about 45 degrees from your body, not flared straight out.
 4. **Go down until your chest is a fist's height from the floor.**
 5. **Push the floor away** and straighten your arms fully at the top.
 
@@ -24,7 +24,7 @@ Breathe in on the way down, out on the way up.
 
 ## The progression ladder
 
-Start at the level where you can do **3 sets of 8 to 12 clean reps**. When you can do **3 sets of 15**, move up a level.
+Start at the level where you can do **3 sets of 8 to 12 clean reps**. When you can do 3 sets of 15, move up a level.
 
 | Level | Exercise | Why it works |
 |---|---|---|
@@ -35,7 +35,7 @@ Start at the level where you can do **3 sets of 8 to 12 clean reps**. When you c
 | 5 | **Full push-up** | The goal |
 | 6 | **Feet-raised push-up** or **slow 3-second lowering** | Harder versions |
 
-**Negatives** also help: start at the top of a full push-up and lower yourself as slowly as you can (3 to 5 seconds), then reset on your knees. Do 3 sets of 5.
+Negatives also help: start at the top of a full push-up and lower yourself as slowly as you can (3 to 5 seconds), then reset on your knees. Do 3 sets of 5.
 
 ![Push-up progression ladder in six levels: wall, table, step, knee, full and feet-raised push-ups](images/push-up-progression-ladder.jpg)
 
@@ -70,7 +70,7 @@ Women often start with fewer push-ups because of less upper-body muscle, not bec
 
 ## Make push-ups part of a full routine
 
-Push-ups are a great upper-body exercise, but balance them with **pulling exercises** (rows, band pull-aparts, or pull-up progressions) and **leg work**. See our [home workout without equipment](../home-workout-without-equipment/) for a full plan.
+Push-ups are a great upper-body exercise, but balance them with **pulling exercises** (rows, band pull-aparts, or pull-up progressions) and leg work. See our [home workout without equipment](../home-workout-without-equipment/) for a full plan.
 
 ## Frequently asked questions
 

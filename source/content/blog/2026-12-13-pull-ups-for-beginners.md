@@ -11,7 +11,7 @@ image_alt: Training floor at Apex Fitness Centre
 
 The pull-up is one of the hardest bodyweight exercises, and one of the most satisfying to achieve. Most beginners can get their **first full pull-up in 6 to 12 weeks** with the right progression, even if they cannot hang from the bar for 10 seconds today.
 
-Pull-ups build your **back (lats), biceps, forearms and grip**, and give you that wide, V-shaped upper body.
+Pull-ups build your back (lats), biceps, forearms and grip, and give you that wide, V-shaped upper body.
 
 ## Correct pull-up form
 
@@ -38,15 +38,15 @@ Aim for **3 sets of 10 to 12**, twice a week.
 
 ### Step 3: Scapular pulls
 
-Hang from the bar and, without bending your arms, pull your shoulder blades **down and together** so your body rises a few centimetres. **3 sets of 8.** This teaches you to start the pull with your back.
+Hang from the bar and, without bending your arms, pull your shoulder blades **down and together** so your body rises a few centimetres. 3 sets of 8. This teaches you to start the pull with your back.
 
 ### Step 4: Negatives
 
-Jump or step up so your chin is over the bar, then **lower yourself as slowly as possible**, aiming for 3 to 5 seconds. **3 sets of 3 to 5.** This is one of the most effective steps.
+Jump or step up so your chin is over the bar, then **lower yourself as slowly as possible**, aiming for 3 to 5 seconds. 3 sets of 3 to 5. This is one of the most effective steps.
 
 ### Step 5: Assisted pull-ups
 
-Use a **resistance band** looped over the bar under your knee or foot, or an **assisted pull-up machine**. Reduce the help over time.
+Use a **resistance band** looped over the bar under your knee or foot, or an assisted pull-up machine. Reduce the help over time.
 
 ![Pull-up progression in five steps: dead hang, rows, scapular pulls, negatives and assisted pull-ups](images/pull-up-5-step-progression.jpg)
 

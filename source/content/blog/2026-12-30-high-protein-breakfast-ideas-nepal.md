@@ -7,7 +7,7 @@ category: Diet
 cover_art: protein
 ---
 
-Many Nepali mornings start with **sweet milk tea and biscuits**, which is lots of sugar and almost no protein. Swapping that for a **high-protein breakfast** keeps you full longer, helps control cravings and supports muscle if you train. Aim for roughly **20 to 30 g of protein** at breakfast.
+Many Nepali mornings start with **sweet milk tea and biscuits**, which is lots of sugar and almost no protein. Swapping that for a high-protein breakfast keeps you full longer, helps control cravings and supports muscle if you train. Aim for roughly 20 to 30 g of protein at breakfast.
 
 *Protein amounts are rough estimates and depend on portions.*
 

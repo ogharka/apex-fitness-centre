@@ -8,7 +8,7 @@ author: suman-limbu
 cover_art: rope
 ---
 
-A good warm-up takes **about 10 minutes** and does three jobs: it **raises your body temperature**, **loosens your joints**, and **rehearses the movements** you're about to do. It is especially important on cold winter mornings and before heavy lifting.
+A good warm-up takes **about 10 minutes** and does three jobs: it raises your body temperature, loosens your joints, and rehearses the movements you're about to do. It is especially important on cold winter mornings and before heavy lifting.
 
 ## The 10-minute routine
 
@@ -48,7 +48,7 @@ You don't need warm-up sets for every exercise, mainly the first big lift of the
 
 ## Static stretching: before or after?
 
-Long static stretches (holding for 30 to 60 seconds) **right before heavy lifting** may slightly reduce strength for that session. Save longer stretches for **after training** or a separate mobility session. Short, gentle stretches as part of a warm-up are fine.
+Long static stretches (holding for 30 to 60 seconds) **right before heavy lifting** may slightly reduce strength for that session. Save longer stretches for after training or a separate mobility session. Short, gentle stretches as part of a warm-up are fine.
 
 ## Warm-ups for specific days
 
@@ -60,7 +60,7 @@ Long static stretches (holding for 30 to 60 seconds) **right before heavy liftin
 
 Cold mornings, especially in Kathmandu and hill areas, make muscles and joints stiff. In winter:
 
-- Make the cardio part **5 to 7 minutes** instead of 3.
+- Make the cardio part 5 to 7 minutes instead of 3.
 - **Keep a light jacket on** until you're warm.
 - Add a few extra warm-up sets for heavy lifts.
 
@@ -72,9 +72,9 @@ After training, slow walking for 2 to 3 minutes, then gentle stretches for the m
 
 You don't need a heart-rate monitor to know if you're ready. After a good warm-up:
 
-- You feel **slightly warm**, maybe a light sweat, but not tired.
-- Your **joints move freely**: squatting to depth or reaching overhead feels smoother than when you walked in.
-- Your **first working set feels like the right weight**, not surprisingly heavy.
+- You feel slightly warm, maybe a light sweat, but not tired.
+- Your joints move freely: squatting to depth or reaching overhead feels smoother than when you walked in.
+- Your first working set feels like the right weight, not surprisingly heavy.
 - Your breathing is a little faster, but you could hold a conversation.
 
 If you're out of breath or your legs feel heavy before your first real set, you overdid it. Cut the cardio back to 3 minutes.

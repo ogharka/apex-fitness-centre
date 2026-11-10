@@ -7,18 +7,18 @@ category: Competitions
 cover_art: medal
 ---
 
-Bodybuilding in Nepal has grown from a few dedicated lifters into a scene with **city and district championships, national events, and athletes winning medals at South Asian and Asian level**. If you're thinking of competing, the path usually starts with a **local or city show**, then national championships, and possibly selection for international events.
+Bodybuilding in Nepal has grown from a few dedicated lifters into a scene with **city and district championships, national events, and athletes winning medals at South Asian and Asian level**. If you're thinking of competing, the path usually starts with a local or city show, then national championships, and possibly selection for international events.
 
 ## Who runs bodybuilding in Nepal?
 
-The national body is the **Nepal Bodybuilding and Fitness Federation (NBBFF)**. According to [The Himalayan Times](https://thehimalayantimes.com/sports/nbbff-to-host-asian-championship-next-month), the NBBFF hosted the **55th Asian Bodybuilding and Physique Sports Championship** in Kathmandu in 2023, the first time Nepal hosted that event, with 45 events across men's and women's categories.
+The national body is the **Nepal Bodybuilding and Fitness Federation (NBBFF)**. According to [The Himalayan Times](https://thehimalayantimes.com/sports/nbbff-to-host-asian-championship-next-month), the NBBFF hosted the 55th Asian Bodybuilding and Physique Sports Championship in Kathmandu in 2023, the first time Nepal hosted that event, with 45 events across men's and women's categories.
 
-Many cities and districts also hold their own championships, often with titles like **"Mr. Kathmandu"** or **"Mr. Dharan"**, organised by local associations and clubs.
+Many cities and districts also hold their own championships, often with titles like "Mr. Kathmandu" or "Mr. Dharan", organised by local associations and clubs.
 
 ## Recent international results
 
-- At the **16th South Asian Bodybuilding and Physique Sports Championship** in Thimphu, Bhutan, in July 2026, Nepal's **Binu Gharti** won gold in women's swimwear and silver in model physique ([Hamro Patro](https://www.hamropatro.com/en/news/detail/774803045513786)).
-- In 2016, **Nanita Maharjan** won bronze at the WBPF World Bodybuilding and Physique Sports Championships, reported as Nepal's first medal at that event.
+- At the 16th South Asian Bodybuilding and Physique Sports Championship in Thimphu, Bhutan, in July 2026, Nepal's Binu Gharti won gold in women's swimwear and silver in model physique ([Hamro Patro](https://www.hamropatro.com/en/news/detail/774803045513786)).
+- In 2016, Nanita Maharjan won bronze at the WBPF World Bodybuilding and Physique Sports Championships, reported as Nepal's first medal at that event.
 
 Read more in our list of [Nepali fitness influencers and athletes to follow](../nepali-fitness-influencers-and-athletes-to-follow/).
 

@@ -8,9 +8,9 @@ author: suman-limbu
 cover_art: rope
 ---
 
-A skipping rope costs a few hundred rupees and gives you one of the most efficient cardio workouts available. Combined with simple bodyweight moves in a **HIIT format** (short hard efforts with rest), you can get a serious workout in **15 minutes** in a small room or on a rooftop.
+A skipping rope costs a few hundred rupees and gives you one of the most efficient cardio workouts available. Combined with simple bodyweight moves in a **HIIT format** (short hard efforts with rest), you can get a serious workout in 15 minutes in a small room or on a rooftop.
 
-HIIT is tiring, so **1 to 3 sessions a week** is plenty, alongside strength training and walking.
+HIIT is tiring, so 1 to 3 sessions a week is plenty, alongside strength training and walking.
 
 ## Skipping technique basics
 
@@ -26,7 +26,7 @@ HIIT is tiring, so **1 to 3 sessions a week** is plenty, alongside strength trai
 
 **Warm-up (3 minutes):** marching on the spot, arm circles, easy skipping or jumping jacks.
 
-**Main workout (10 minutes):** 30 seconds work, 30 seconds rest. Repeat the circuit twice.
+Main workout (10 minutes): 30 seconds work, 30 seconds rest. Repeat the circuit twice.
 
 | Round | Exercise |
 |---|---|
@@ -41,7 +41,7 @@ HIIT is tiring, so **1 to 3 sessions a week** is plenty, alongside strength trai
 | 9 | Skipping |
 | 10 | Plank |
 
-**Cool-down (2 minutes):** slow walking and gentle stretches.
+Cool-down (2 minutes): slow walking and gentle stretches.
 
 ![A 15-minute skipping HIIT workout alternating skipping with squats, push-ups, lunges, mountain climbers and plank](images/skipping-hiit-15-minute.jpg)
 

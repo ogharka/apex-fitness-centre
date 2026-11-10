@@ -36,10 +36,10 @@ Before upper-body training: arm circles, band pull-aparts, light face pulls and 
 
 ### 3. Press with good technique
 
-- Shoulder blades **back and down** on bench press
-- Elbows about **45 to 70 degrees** from the body
+- Shoulder blades back and down on bench press
+- Elbows about 45 to 70 degrees from the body
 - **Controlled lowering**
-- On overhead press, press the bar **in front of your face**, not behind the neck
+- On overhead press, press the bar in front of your face, not behind the neck
 
 ### 4. Strengthen the upper back and rotator cuff
 
@@ -69,10 +69,10 @@ Desk workers especially benefit from upper-back mobility and chest stretches. Se
 
 ## When to see a professional
 
-- Pain that is **sharp, lasts more than 1 to 2 weeks**, or gets worse
+- Pain that is sharp, lasts more than 1 to 2 weeks, or gets worse
 - **Night pain** or pain at rest
 - **Weakness**, clicking with pain, or loss of movement
-- Pain after a **fall or sudden injury**
+- Pain after a fall or sudden injury
 - **Numbness or tingling** in the arm
 
 ## A 5-minute shoulder warm-up

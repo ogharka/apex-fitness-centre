@@ -11,7 +11,7 @@ image_alt: A woman doing an incline dumbbell press at Apex Fitness Centre, Urlab
 
 **For women over 40, strength training is one of the most powerful things you can do for your health. During perimenopause and menopause, falling oestrogen speeds up the loss of muscle and bone. Lifting weights 2–3 times a week, building up to challenging loads, helps protect muscle, strength and bone density, supports a healthy weight and mood, and keeps you strong and independent for decades.**
 
-Many women in their 40s and 50s were told to stick to walking or light aerobics. The research now says something different: women in midlife benefit enormously from **real strength training**, and it's safe when you build up sensibly.
+Many women in their 40s and 50s were told to stick to walking or light aerobics. The research now says something different: women in midlife benefit enormously from real strength training, and it's safe when you build up sensibly.
 
 ## What changes after 40
 
@@ -26,9 +26,9 @@ Strength training doesn't stop the clock, but it changes how these years feel an
 
 ## What the research says about heavy lifting and bones
 
-For years, women with low bone density were told to avoid heavy weights. The **LIFTMOR trial** tested this. In 101 postmenopausal women with low bone mass (average age 65), 8 months of **supervised, high-intensity resistance and impact training** twice a week, 30 minutes a session, improved spine and hip bone density and physical function, compared with a low-intensity home programme. Only one minor adverse event, a back spasm, was reported ([Watson et al., *Journal of Bone and Mineral Research*](https://pubmed.ncbi.nlm.nih.gov/28975661/)).
+For years, women with low bone density were told to avoid heavy weights. The **LIFTMOR trial** tested this. In 101 postmenopausal women with low bone mass (average age 65), 8 months of supervised, high-intensity resistance and impact training twice a week, 30 minutes a session, improved spine and hip bone density and physical function, compared with a low-intensity home programme. Only one minor adverse event, a back spasm, was reported ([Watson et al., *Journal of Bone and Mineral Research*](https://pubmed.ncbi.nlm.nih.gov/28975661/)).
 
-The key word is **supervised**: the women built up gradually under expert guidance. But it shows that women can and should train with challenging weights, not just light ones.
+The key word is supervised: the women built up gradually under expert guidance. But it shows that women can and should train with challenging weights, not just light ones.
 
 ![An older woman lifting a loaded bar at Apex Fitness Centre, Urlabari](images/apex-woman-lifting-loaded-bar.jpg)
 
@@ -53,7 +53,7 @@ Do these on 3 non-consecutive days (for example Sunday, Tuesday, Thursday). Star
 
 **How heavy?** By week 4–6, the last 2 reps of each set should feel challenging but still controlled. Increase the weight when all sets feel comfortable. See [strength training myths for women](../strength-training-for-women-myths/) if you're worried about getting bulky. You won't.
 
-**Add some impact** if your joints allow: small jumps, skipping or hopping can help bone health. Start very gently.
+Add some impact if your joints allow: small jumps, skipping or hopping can help bone health. Start very gently.
 
 ## Don't forget these
 

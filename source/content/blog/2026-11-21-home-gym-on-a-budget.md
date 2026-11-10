@@ -49,7 +49,7 @@ Ask yourself three questions:
 | **Barbell and plates** | Heavy squats, deadlifts and presses |
 | **Rubber flooring** | Protects the floor and reduces noise |
 
-**Only buy stage 3 if** you've been training consistently for a few months and want to lift heavier than dumbbells allow. Always use **safety arms** when lifting heavy alone.
+**Only buy stage 3 if** you've been training consistently for a few months and want to lift heavier than dumbbells allow. Always use safety arms when lifting heavy alone.
 
 ## Things you can skip
 

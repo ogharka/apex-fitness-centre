@@ -9,7 +9,7 @@ cover_photo: apex-woman-elliptical.jpg
 image_alt: Woman exercising on a cross-trainer at Apex Fitness Centre
 ---
 
-**Yes, for most women it's safe to exercise during your period**, and many find that light to moderate exercise **eases cramps, lifts mood and reduces bloating**. There's no medical reason to stop training just because you're menstruating. The key is to **listen to your body**: train normally on good days and go lighter on difficult ones.
+**Yes, for most women it's safe to exercise during your period**, and many find that light to moderate exercise eases cramps, lifts mood and reduces bloating. There's no medical reason to stop training just because you're menstruating. The key is to listen to your body: train normally on good days and go lighter on difficult ones.
 
 In Nepal, some families still have strong traditions around menstruation. Physically, exercising during your period is a normal, healthy choice.
 
@@ -51,7 +51,7 @@ These patterns vary a lot between women. Tracking how you feel in a notes app fo
 
 ## When to see a doctor
 
-- Periods that are **very heavy**, very painful, or stop you from normal activities
+- Periods that are very heavy, very painful, or stop you from normal activities
 - **Missing periods** for several months, especially with intense training or dieting
 - **Dizziness, fainting** or signs of anaemia (unusual tiredness, breathlessness)
 

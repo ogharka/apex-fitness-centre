@@ -8,7 +8,7 @@ cover_photo: apex-members-gym-floor.jpg
 image_alt: Members and a trainer on the gym floor at Apex Fitness Centre, Urlabari
 ---
 
-A good gym is one you will **actually keep going to**: close enough, open when you are free, with trainers who help and equipment that works. Shiny photos on Facebook do not tell you that. A **free trial visit** and the checklist below will.
+A good gym is one you will **actually keep going to**: close enough, open when you are free, with trainers who help and equipment that works. Shiny photos on Facebook do not tell you that. A free trial visit and the checklist below will.
 
 ## The 12-point checklist
 
@@ -78,7 +78,7 @@ A confident gym will let you try one session. Use it to check everything above.
 
 ## Red flags
 
-- Pressure to pay for a full year **today** with a "special offer".
+- Pressure to pay for a full year today with a "special offer".
 - No price list, or prices that change when you ask twice.
 - Trainers selling supplements aggressively, or pushing "fat burner" products.
 - Broken equipment that has been "out of order" for months.

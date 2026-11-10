@@ -8,7 +8,7 @@ author: suman-limbu
 cover_art: clock
 ---
 
-If you sit for most of the day, at a bank, office, shop counter or on a laptop at home, your **neck, upper back, hips and lower back** probably feel stiff. A **10-minute routine once or twice a day**, plus a few small habits, makes a big difference. Combine it with strength training and you'll feel better than stretching alone.
+If you sit for most of the day, at a bank, office, shop counter or on a laptop at home, your **neck, upper back, hips and lower back** probably feel stiff. A 10-minute routine once or twice a day, plus a few small habits, makes a big difference. Combine it with strength training and you'll feel better than stretching alone.
 
 ## The 10-minute routine
 
@@ -55,9 +55,9 @@ Hold each stretch for **20 to 30 seconds** and breathe slowly. Move gently; stre
 
 ## When to see a doctor or physiotherapist
 
-- Pain that **spreads down your arm or leg**, or comes with numbness or tingling
-- Pain that is **getting worse** after 2 to 3 weeks
-- Pain that **wakes you at night**
+- Pain that spreads down your arm or leg, or comes with numbness or tingling
+- Pain that is getting worse after 2 to 3 weeks
+- Pain that wakes you at night
 - Pain after a fall or injury
 
 ## A workday movement schedule

@@ -8,9 +8,9 @@ author: suman-limbu
 cover_art: scale
 ---
 
-A **calorie deficit** simply means **eating a little less energy than your body uses**. Your body then takes the missing energy from stored fat. Every successful fat-loss diet, whether keto, intermittent fasting or "no rice after 6," works because it creates a deficit.
+A **calorie deficit** simply means eating a little less energy than your body uses. Your body then takes the missing energy from stored fat. Every successful fat-loss diet, whether keto, intermittent fasting or "no rice after 6," works because it creates a deficit.
 
-A small, steady deficit beats a big one. For most people, aiming to lose **about 0.5 to 1 kg per week** is sustainable, which is the rate the [NHS](https://www.nhs.uk/better-health/lose-weight/) describes as healthy.
+A small, steady deficit beats a big one. For most people, aiming to lose about 0.5 to 1 kg per week is sustainable, which is the rate the [NHS](https://www.nhs.uk/better-health/lose-weight/) describes as healthy.
 
 ## How your body uses energy
 
@@ -64,8 +64,8 @@ Full details in our [weight loss diet plan with Nepali food](../weight-loss-diet
 
 ## How to know it's working
 
-- Your **weekly average weight** trends down.
-- Your **waist measurement** shrinks.
+- Your weekly average weight trends down.
+- Your waist measurement shrinks.
 - Clothes feel looser.
 
 If nothing changes for 3 weeks while you're consistent, reduce portions slightly or add more walking. See [why am I not losing weight?](../why-am-i-not-losing-weight/).

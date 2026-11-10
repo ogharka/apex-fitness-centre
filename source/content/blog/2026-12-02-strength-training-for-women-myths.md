@@ -12,19 +12,19 @@ Strength training is one of the best things a woman can do for her body at **any
 
 ## Myth 1: "Lifting weights will make me bulky"
 
-**Fact:** Women have much lower testosterone than men and build muscle slowly. Lifting regularly gives most women a **toned, athletic shape**, not a bodybuilder's physique. The very muscular women you see in competitions train and diet specifically for that for many years.
+**Fact:** Women have much lower testosterone than men and build muscle slowly. Lifting regularly gives most women a toned, athletic shape, not a bodybuilder's physique. The very muscular women you see in competitions train and diet specifically for that for many years.
 
 ![A woman training on the cable machine while other women work out in the background at Apex Fitness Centre](images/apex-woman-cable-training.jpg)
 
 ## Myth 2: "Cardio is for women, weights are for men"
 
-**Fact:** Both are for everyone. Cardio is good for your heart; strength training is what changes your **shape** and protects **muscle and bone**. The best results come from combining them. See [cardio vs weights for fat loss](../cardio-vs-weights-for-fat-loss/).
+**Fact:** Both are for everyone. Cardio is good for your heart; strength training is what changes your shape and protects muscle and bone. The best results come from combining them. See [cardio vs weights for fat loss](../cardio-vs-weights-for-fat-loss/).
 
 ## Myth 3: "I should only use light pink dumbbells for high reps"
 
 ![A woman doing a standing cable biceps curl with upright posture at Apex Fitness Centre, Urlabari](images/apex-woman-cable-biceps-curl.jpg)
 
-**Fact:** To get stronger and see change, the weight must **challenge you**. That might be 2 kg for a shoulder raise but 20 kg or more for a leg press. Choose a weight where the last 2 reps of a set feel hard but your form stays good.
+**Fact:** To get stronger and see change, the weight must challenge you. That might be 2 kg for a shoulder raise but 20 kg or more for a leg press. Choose a weight where the last 2 reps of a set feel hard but your form stays good.
 
 ## Myth 4: "I'm too old to start"
 
@@ -35,11 +35,11 @@ Strength training is one of the best things a woman can do for her body at **any
 
 ## Myth 5: "I can't exercise during my period"
 
-**Fact:** If you feel well, exercise is safe during your period, and many women find light to moderate exercise **eases cramps and improves mood**. On difficult days, train lighter, do more walking or stretching, or rest. Listen to your body.
+**Fact:** If you feel well, exercise is safe during your period, and many women find light to moderate exercise eases cramps and improves mood. On difficult days, train lighter, do more walking or stretching, or rest. Listen to your body.
 
 ## Myth 6: "Weights will turn fat into muscle"
 
-**Fact:** Fat and muscle are different tissues; one cannot turn into the other. Strength training **builds muscle**, and a sensible diet **reduces fat**. Together they change how you look.
+**Fact:** Fat and muscle are different tissues; one cannot turn into the other. Strength training builds muscle, and a sensible diet reduces fat. Together they change how you look.
 
 ## Myth 7: "Toning exercises target problem areas"
 

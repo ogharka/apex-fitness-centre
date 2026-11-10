@@ -7,7 +7,7 @@ category: Diet
 cover_art: thali
 ---
 
-Yes, you can eat momo and still lose weight. **No single food makes you fat; your total intake over days and weeks does.** The problem is usually **how many** momo, **how they're cooked**, and **what comes with them**. Here's how to keep momo in your life while reaching your fitness goals.
+Yes, you can eat momo and still lose weight. **No single food makes you fat; your total intake over days and weeks does.** The problem is usually how many momo, how they're cooked, and what comes with them. Here's how to keep momo in your life while reaching your fitness goals.
 
 ## What's in a plate of momo?
 

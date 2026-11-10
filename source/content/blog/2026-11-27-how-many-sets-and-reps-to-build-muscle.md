@@ -9,9 +9,9 @@ cover_photo: apex-dumbbell-press-bench.jpg
 image_alt: Member training with a heavy dumbbell on a bench at Apex Fitness Centre
 ---
 
-For building muscle, a good starting point is **10 or more hard sets per muscle group per week**, using **roughly 6 to 15 reps per set**, with each set taken **close to failure** (1 to 3 reps left in the tank). For pure strength, use **heavier weights for 3 to 6 reps** with longer rests.
+For building muscle, a good starting point is **10 or more hard sets per muscle group per week**, using roughly 6 to 15 reps per set, with each set taken close to failure (1 to 3 reps left in the tank). For pure strength, use heavier weights for 3 to 6 reps with longer rests.
 
-The exact numbers matter less than two things: **training hard enough** and **doing a little more over time**.
+The exact numbers matter less than two things: training hard enough and doing a little more over time.
 
 ## Sets: think per week, not per workout
 
@@ -23,7 +23,7 @@ Research on training volume suggests that more weekly sets generally lead to mor
 | Intermediate | 10–15 |
 | Advanced | 15–20+ (only if you recover well) |
 
-**Example:** 3 sets of squats, done 3 times a week, is 9 sets for your thighs per week.
+Example: 3 sets of squats, done 3 times a week, is 9 sets for your thighs per week.
 
 Beginners grow well on less, because everything is new. More is not always better: if you are always sore, tired or your strength is going down, cut back.
 
@@ -39,7 +39,7 @@ Studies show muscle grows across a wide range of reps, **as long as sets are har
 | Muscle growth | 6–15 | Close to failure |
 | Muscular endurance | 15–25+ | Lighter, shorter rest |
 
-Most people do well with **compound lifts in the 5–10 range** (squats, presses, rows, deadlifts) and **isolation exercises in the 10–15 range** (curls, lateral raises, leg extensions).
+Most people do well with compound lifts in the 5–10 range (squats, presses, rows, deadlifts) and isolation exercises in the 10–15 range (curls, lateral raises, leg extensions).
 
 ## Effort: the part most beginners miss
 
@@ -76,8 +76,8 @@ This is the structure behind our [beginner gym workout plan](../beginner-gym-wor
 
 Write down your weights and reps. Each week, try to:
 
-1. Add **1 rep** to your sets, or
-2. Add a **small amount of weight** once you hit the top of your rep range.
+1. Add 1 rep to your sets, or
+2. Add a small amount of weight once you hit the top of your rep range.
 
 This is called **progressive overload**. Without it, even perfect sets and reps stop working.
 

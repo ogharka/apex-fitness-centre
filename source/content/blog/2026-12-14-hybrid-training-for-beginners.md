@@ -11,11 +11,11 @@ image_alt: A member pressing heavy dumbbells overhead at Apex Fitness Centre
 
 **Hybrid training means training for strength and endurance in the same programme, for example lifting weights 2–3 times a week and running or doing cardio 2–3 times a week. Done well, you get stronger and fitter at the same time. To avoid one cancelling out the other, keep most cardio easy, separate hard runs from heavy leg days, eat enough and progress gradually.**
 
-Hybrid training is one of the fastest-rising fitness searches. In the UK, searches for "hybrid training" rose by **68% in a quarter** and "Hyrox training" by 37% ([Crave Magazine, from Google Trends](https://cravemag.co.uk/?p=618775)). People no longer want to choose between looking strong and being fit.
+Hybrid training is one of the fastest-rising fitness searches. In the UK, searches for "hybrid training" rose by 68% in a quarter and "Hyrox training" by 37% ([Crave Magazine, from Google Trends](https://cravemag.co.uk/?p=618775)). People no longer want to choose between looking strong and being fit.
 
 ## Does running kill your gains?
 
-This worry is called the **interference effect**. A large meta-analysis of concurrent training found that combining endurance and strength training can reduce gains in muscle size, strength and power compared with strength training alone, with the effects depending on the **type, frequency and duration** of the cardio ([Wilson et al., *Journal of Strength and Conditioning Research*](https://pubmed.ncbi.nlm.nih.gov/22002517/)). Running showed more interference than cycling in that analysis.
+This worry is called the **interference effect**. A large meta-analysis of concurrent training found that combining endurance and strength training can reduce gains in muscle size, strength and power compared with strength training alone, with the effects depending on the type, frequency and duration of the cardio ([Wilson et al., *Journal of Strength and Conditioning Research*](https://pubmed.ncbi.nlm.nih.gov/22002517/)). Running showed more interference than cycling in that analysis.
 
 In real life, for most beginners and recreational lifters:
 

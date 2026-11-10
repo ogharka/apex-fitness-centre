@@ -8,7 +8,7 @@ author: suman-limbu
 cover_art: clock
 ---
 
-If you train hard but sleep 5 hours a night, you're leaving results on the table. Adults are generally advised to get **at least 7 hours of sleep a night**, and many active people feel best with **7 to 9 hours**. Sleep is when your body recovers, repairs muscle and resets hunger hormones, and **no supplement can replace it**.
+If you train hard but sleep 5 hours a night, you're leaving results on the table. Adults are generally advised to get **at least 7 hours of sleep a night**, and many active people feel best with 7 to 9 hours. Sleep is when your body recovers, repairs muscle and resets hunger hormones, and no supplement can replace it.
 
 ## What sleep does for gym results
 
@@ -43,7 +43,7 @@ If you train hard but sleep 5 hours a night, you're leaving results on the table
 
 ## Early-morning trainers: plan backwards
 
-If you train at **5 AM**, you need to be asleep by around **9:30 to 10 PM** to get 7 hours. Gyms like Apex open at 4:30 AM for early risers, but the habit only works if bedtime moves earlier too. See [best time to go to the gym](../best-time-to-go-to-the-gym/).
+If you train at **5 AM**, you need to be asleep by around 9:30 to 10 PM to get 7 hours. Gyms like Apex open at 4:30 AM for early risers, but the habit only works if bedtime moves earlier too. See [best time to go to the gym](../best-time-to-go-to-the-gym/).
 
 ## Rest days and sleep together
 

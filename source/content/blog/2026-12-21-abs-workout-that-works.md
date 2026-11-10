@@ -9,15 +9,15 @@ cover_photo: apex-member-decline-sit-up-bench.jpg
 image_alt: A member doing decline sit-ups on a bench beside the treadmills at Apex Fitness Centre, Urlabari
 ---
 
-Everyone has abdominal muscles. Whether you can **see** them depends mainly on your **body fat level**, not on how many crunches you do. A good core routine makes your abs **stronger and slightly thicker**, improves posture and protects your back. A calorie deficit is what reveals them.
+Everyone has abdominal muscles. Whether you can **see** them depends mainly on your body fat level, not on how many crunches you do. A good core routine makes your abs stronger and slightly thicker, improves posture and protects your back. A calorie deficit is what reveals them.
 
-So the honest plan is: **train your core 2 to 3 times a week, and lose fat with diet and overall training.**
+So the honest plan is: train your core 2 to 3 times a week, and lose fat with diet and overall training.
 
 ## What your core actually does
 
-Your core is more than the six-pack muscle (rectus abdominis). It includes the **obliques** (sides), the **transverse abdominis** (deep "corset" muscle) and the muscles of your **lower back and hips**. Its main jobs are to **brace and resist movement**: keeping your spine stable when you squat, carry, twist or get bumped.
+Your core is more than the six-pack muscle (rectus abdominis). It includes the **obliques** (sides), the transverse abdominis (deep "corset" muscle) and the muscles of your lower back and hips. Its main jobs are to brace and resist movement: keeping your spine stable when you squat, carry, twist or get bumped.
 
-That's why the best core training includes **anti-movement** exercises, not just crunches.
+That's why the best core training includes anti-movement exercises, not just crunches.
 
 ## The best core exercises
 
@@ -44,7 +44,7 @@ Add this at the end of two of your gym sessions.
 - Dead bug: 3 x 8 each side
 - Cable crunch: 3 x 12–15
 
-**Workout B**
+Workout B
 
 - Side plank: 3 x 20–30 seconds each side
 - Hanging knee raise: 3 x 10

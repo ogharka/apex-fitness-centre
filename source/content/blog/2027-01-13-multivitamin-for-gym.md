@@ -7,19 +7,19 @@ category: Supplements
 cover_art: check
 ---
 
-**If you eat a varied diet, most gym-goers don't need a multivitamin to build muscle or lose fat.** A multivitamin can act as a "safety net" if your diet is very limited, but it **does not boost strength, energy or muscle growth** in people who aren't deficient. If you suspect a specific deficiency (like vitamin D, iron or B12), a blood test and targeted advice from a doctor is better than guessing.
+**If you eat a varied diet, most gym-goers don't need a multivitamin to build muscle or lose fat.** A multivitamin can act as a "safety net" if your diet is very limited, but it does not boost strength, energy or muscle growth in people who aren't deficient. If you suspect a specific deficiency (like vitamin D, iron or B12), a blood test and targeted advice from a doctor is better than guessing.
 
 ## When a multivitamin might help
 
-- Your diet is **very limited** (few vegetables, fruits, dairy or protein foods)
-- You're **eating very little** on a strict diet for a long time
-- You're **vegetarian or vegan** and eat little dairy (B12 risk)
+- Your diet is very limited (few vegetables, fruits, dairy or protein foods)
+- You're eating very little on a strict diet for a long time
+- You're vegetarian or vegan and eat little dairy (B12 risk)
 - Your doctor has advised it, for example in pregnancy (prenatal supplements)
 
 ## When it's probably a waste
 
 - You eat dal, vegetables, fruit, dairy and some eggs, meat or fish regularly
-- You hope it will give you **energy or muscle**. It won't if you're not deficient.
+- You hope it will give you energy or muscle. It won't if you're not deficient.
 
 ## Nutrients gym-goers in Nepal may miss
 
@@ -48,7 +48,7 @@ A simple Nepali "multivitamin plate":
 
 ## If you choose a multivitamin
 
-- Pick a **standard daily multivitamin**, not "mega-dose" products.
+- Pick a standard daily multivitamin, not "mega-dose" products.
 - **Don't double up** with other supplements containing the same vitamins.
 - **Check the label** for iron content if you're a man or postmenopausal woman; extra iron isn't always needed.
 - Buy genuine products. See [how to spot fake supplements in Nepal](../fake-supplements-in-nepal-how-to-spot-them/).
