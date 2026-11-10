@@ -1,7 +1,7 @@
 ---
 title: Dal Bhat Protein: How Much Protein Is in One Plate (and How to Get 40 g)
-seo_title: Protein in Dal Bhat: How Much in One Plate (and How to Get 40 g)
-description: One plate of dal bhat gives about 28 g of protein. See the numbers for each part of the plate and simple add-ons to reach 40 g a day.
+seo_title: Dal Bhat Protein: How Much Is in One Plate?
+description: A typical plate of dal bhat has about 28 g of protein in 790 calories. See where it comes from, how much you need, and easy ways to reach 40 g at one meal.
 date: 2026-11-03
 category: Diet
 author: suman-limbu
@@ -115,10 +115,6 @@ It can be. Dal and saag are filling and nutritious. The main thing to watch is t
 
 **Does rice have protein?**
 A little: about 2.7 g per 100 g of cooked white rice, or about 4 g per cup. Because people eat a lot of it, rice can add 8 g or more to a plate.
-
-### How much protein is in one plate of dal bhat with chicken?
-
-A plate of dal bhat with a portion of chicken curry gives clearly more protein than dal bhat alone, because the chicken adds most of it. The article lists the numbers for each add-on so you can plan your plate.
 
 ## Sources
 
