@@ -10,6 +10,10 @@ cover_art: dumbbell
 
 You can build real strength at home with a pair of dumbbells. **Do one full-body workout three times a week, with six basic exercises, and add a little weight or a few reps every week.** That is enough to get stronger, build some muscle and meet the World Health Organization's advice to do muscle-strengthening activity on at least two days a week ([WHO](https://www.who.int/news-room/fact-sheets/detail/physical-activity)).
 
+
+![An Apex Fitness Centre member pressing two heavy dumbbells on a flat bench](images/apex-member-dumbbell-bench-press-flat.jpg)
+*A member at Apex Fitness Centre doing a dumbbell press. At home, the floor press works the same muscles without a bench.*
+
 ## What you need
 
 - **A pair of dumbbells.** Adjustable dumbbells are best because you can add weight as you get stronger. If you buy fixed ones, start with a light pair and a heavier pair.

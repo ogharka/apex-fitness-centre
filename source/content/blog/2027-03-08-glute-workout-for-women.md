@@ -12,6 +12,10 @@ Stronger glutes come from a few exercises done well and made harder over time. *
 
 Strong glutes are not only about looks. They help you climb stairs, carry shopping, stand tall and protect your knees and back.
 
+
+![A woman member walking into Apex Fitness Centre in a black Apex T-shirt](images/apex-member-woman-entering-gym.jpg)
+*Walking in for her session at Apex Fitness Centre, Urlabari. Strength training is for every age.*
+
 ## Your glutes in one minute
 
 Your glutes are three muscles: the large gluteus maximus that shapes your bottom and drives you up from a squat, and two smaller muscles on the side of the hip that keep your pelvis level when you walk. A good glute workout trains both: hip extension (driving the hips forward) and hip abduction (moving the leg out to the side).
