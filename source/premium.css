@@ -329,3 +329,4 @@ picture{display:contents}
 @media(max-width:560px){main>.wrap{padding-bottom:96px}}
 .follow{margin:20px 0;padding:18px 20px;border:1px solid rgba(0,0,0,.1);border-left:4px solid #ee243a;border-radius:12px;background:#fafafa}
 .follow b{display:block;font-size:17px;margin-bottom:4px}.follow p{margin:0 0 12px}
+.rvask{margin:16px 0 10px;font-weight:600}
