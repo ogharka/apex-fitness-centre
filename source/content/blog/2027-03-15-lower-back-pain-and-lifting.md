@@ -1,7 +1,7 @@
 ---
 title: Lower Back Pain and Lifting: Can You Still Train?
 seo_title: Lower Back Pain and Lifting: Can You Still Train?
-description: Can you lift weights with lower back pain? What usually causes it in the gym, how to keep training safely, which exercises to change, and when to see a doctor.
+description: Can you lift weights with lower back pain? Common gym causes, how to keep training safely, which exercises to change, and when to see a doctor.
 date: 2027-03-15
 category: Training
 author: suman-limbu

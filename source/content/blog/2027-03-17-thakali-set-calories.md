@@ -1,7 +1,7 @@
 ---
 title: How Many Calories in a Thakali Set? (Veg, Chicken and Mutton)
 seo_title: Thakali Set Calories: Veg, Chicken and Mutton
-description: Estimated calories and protein in a Thakali set, built from each part of the plate: rice, dal, curry, saag, ghee and refills. How to enjoy it while losing weight.
+description: Estimated calories and protein in a Thakali set, built from each part of the plate, and how to enjoy it while losing weight.
 date: 2027-03-17
 category: Diet
 author: suman-limbu
@@ -71,6 +71,17 @@ Our [Nepali diet plan for weight loss](../weight-loss-diet-plan-nepali-food/) us
 ## For gym-goers and trekkers
 
 If you are building muscle or trekking, a full Thakali set is excellent fuel: plenty of carbs, protein and vegetables. Thakali food is common along the Annapurna trails; see [what to eat on a Nepal trek](../what-to-eat-on-nepal-trek/).
+
+## How a Thakali set compares
+
+| Meal | Calories (approx.) |
+|---|---|
+| Thakali chicken set (one serving of each item) | about 910 kcal |
+| Typical dal bhat plate (rice, dal, saag) | about 794 kcal |
+| Plate of 10 steamed momo | about 394 kcal |
+| Chicken biryani, 350 g plate | about 361 kcal |
+
+The Thakali set is the biggest of these, but it also has the most protein and vegetables. Numbers for the other dishes come from our [dal bhat](../../food/dal-bhat-calories/), [momo](../../food/momo-calories/) and [chicken biryani](../../food/chicken-biryani-calories/) pages.
 
 ## Frequently asked questions
 

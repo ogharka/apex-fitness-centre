@@ -1,7 +1,7 @@
 ---
 title: Only 4 Weeks Until Your Trek? A Realistic Training Plan
 seo_title: Trek Training in 4 Weeks: A Realistic Plan
-description: Booked a Nepal trek with only four weeks to train? A realistic week-by-week plan, what you can and cannot improve in a month, and how to trek safely anyway.
+description: Booked a Nepal trek with only four weeks to train? A realistic week-by-week plan, what a month can and cannot change, and how to trek safely.
 date: 2027-03-27
 category: Trekking
 author: suman-limbu

@@ -55,6 +55,19 @@ More ideas: [protein-rich vegetarian foods in Nepal](../protein-rich-vegetarian-
 
 The same as everyone else who trains: about 1.4 to 2.0 g per kg of body weight a day ([ISSN](https://pubmed.ncbi.nlm.nih.gov/28642676/)). Mixing different plant proteins through the day, such as dal with rice, or soybeans with roti, gives your body all the building blocks it needs. Check your number with the [protein calculator](../../calculators/protein-calculator/).
 
+## A high-protein vegetarian day
+
+Here is how the foods above can add up across one day:
+
+| Meal | Food | Protein (approx.) |
+|---|---|---|
+| Breakfast | 2 boiled eggs, or 1 katori curd with fruit | 5 to 12.5 g |
+| Khana | Rice, 1 katori thick dal, tofu tarkari (120 g tofu), saag | about 25 g |
+| Snack | Bhatmas sadeko (half cup soybeans) | about 16 g |
+| Dinner | 2 roti, 1 katori rajma or chana, salad | about 21 g |
+
+That is roughly 70 to 75 g of protein without meat, and more if you add milk, curd or paneer. A 60 kg person who trains needs about 84 to 120 g, so add one or two more protein foods on training days.
+
 ## Frequently asked questions
 
 ### Which vegetarian food has the most protein?
