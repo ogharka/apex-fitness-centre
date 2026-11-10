@@ -53,6 +53,9 @@ A useful rule: **mild discomfort that settles within a day is fine; pain that ge
 | Sit-ups | Swap for dead bugs and planks |
 | Heavy overhead press | Seated press with lighter dumbbells |
 
+![Infographic: Back sore? Swap these exercises. Deadlift Swap for: lighter, or Romanian deadlift with a small range; Barbell squat Swap for: goblet squat to a box; Bent-over row Swap for: chest-supported or seated cable row; Sit-ups Swap for: dead bugs and planks; Heavy overhead press Swap for: seated press with lighter dumbbells](images/back-pain-lifting-swaps.jpg)
+*Back sore? Swap these exercises.*
+
 ## Prevent the next flare-up
 
 1. **Warm up** before heavy sets. See [warm-up before the gym](../warm-up-before-gym/).

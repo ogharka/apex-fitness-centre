@@ -21,6 +21,9 @@ All numbers are USDA values, as shown on our [food calorie chart](../../food/).
 | [Dal](../../food/dal-calories/), 1 katori (150 g) | 12.6 g | 248 kcal | 5.1 g |
 | [Chicken curry](../../food/chicken-curry-calories/), 1 cup with gravy | 14.9 g | 194 kcal | 7.7 g |
 
+![Infographic: Chicken vs eggs vs dal. Chicken breast 18.8 g; Eggs 8.8 g; Chicken curry 7.7 g; Dal 5.1 g](images/chicken-eggs-dal-protein-per-100-kcal.jpg)
+*Chicken vs eggs vs dal. Source: USDA FoodData Central.*
+
 Note the difference between plain chicken breast and chicken curry: the gravy, oil and bone change the numbers a lot.
 
 ## Chicken: the most protein per calorie

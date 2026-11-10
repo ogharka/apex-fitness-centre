@@ -19,6 +19,9 @@ A good rule is that **a loaded backpack for a multi-day trek should weigh no mor
 | 70 kg | 7 kg | 14 kg |
 | 80 kg | 8 kg | 16 kg |
 
+![Infographic: How heavy should your pack be?. Body weight 50 kg: Full trek pack (20%) 10 kg, Day pack (10%) 5 kg; Body weight 60 kg: Full trek pack (20%) 12 kg, Day pack (10%) 6 kg; Body weight 70 kg: Full trek pack (20%) 14 kg, Day pack (10%) 7 kg; Body weight 80 kg: Full trek pack (20%) 16 kg, Day pack (10%) 8 kg](images/trekking-backpack-weight-chart.jpg)
+*How heavy should your pack be?. Source: REI.*
+
 These are upper limits, not targets. Lighter is easier on your legs, back and knees.
 
 ## With a porter or without?

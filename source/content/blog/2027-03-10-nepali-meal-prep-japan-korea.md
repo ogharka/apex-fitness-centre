@@ -23,6 +23,9 @@ This guide uses foods you can find in most Japanese and Korean supermarkets and 
 | Soybeans or edamame | Frozen packs are easy to find | about 16 g per half cup cooked |
 | Plain yoghurt | Like curd, good after shifts | about 5 g per katori |
 
+![Infographic: Easy protein for workers in Japan and Korea. Chicken breast 31 g; Soybeans or edamame 16 g; Dal 12.6 g; Tofu 8.6 g; Egg 6.2 g; Plain yoghurt 5 g](images/protein-foods-japan-korea.jpg)
+*Easy protein for workers in Japan and Korea. Source: USDA FoodData Central.*
+
 Add rice, frozen vegetables, onions, garlic, ginger, tomatoes, and your spices from home.
 
 ## A 90-minute cooking plan

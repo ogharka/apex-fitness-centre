@@ -19,6 +19,9 @@ Four weeks is not much, but it is enough to make your trek noticeably easier. **
 | Strengthen your legs for descents a little | Make up for an itinerary that climbs too fast |
 | Learn your comfortable pace | Undo years of no exercise |
 
+![Infographic: What 4 weeks of training can do. You can: Get your legs used to hours of walking, Toughen your feet and break in boots, Strengthen your legs for descents, Learn your comfortable pace; You cannot: Become very fit from a low start, Train for altitude at home, Fix an itinerary that climbs too fast, Undo years of no exercise](images/four-week-trek-training-can-cannot.jpg)
+*What 4 weeks of training can do.*
+
 That last column is why your trek choice matters. If you are starting from little exercise, choose a shorter, lower trek; see our guide to [short treks in Nepal](../short-treks-in-nepal-fitness-guide/).
 
 ## The 4-week plan

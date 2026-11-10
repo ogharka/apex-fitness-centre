@@ -23,6 +23,9 @@ All numbers below are USDA values, as shown on our [food calorie chart](../../fo
 | [Rajma (with oil)](../../food/rajma-calories/) | 8.0 g | 180 kcal | 4.4 g |
 | [Chana (with oil)](../../food/chana-calories/) | 8.1 g | 218 kcal | 3.7 g |
 
+![Infographic: Vegetarian protein compared. Soybeans 18.1 g; Dal (lentils, with oil) 8.4 g; Chana (with oil) 8.1 g; Rajma (with oil) 8.0 g; Urad dal (boiled) 7.5 g; Tofu 7.2 g](images/vegetarian-protein-per-100g.jpg)
+*Vegetarian protein compared. Source: USDA FoodData Central.*
+
 For comparison, two boiled eggs give about 12.5 g of protein for 142 kcal, or 8.8 g per 100 kcal ([egg calories](../../food/egg-calories/)).
 
 ## What the numbers mean

@@ -28,6 +28,9 @@ You do not have to eat breakfast to lose weight. Weight loss depends on what you
 | 1 glass milk + 1 handful peanuts | about 313 kcal | about 14.5 g |
 | Egg omelette (2 eggs) + vegetables | about 160 to 200 kcal | about 12.5 g |
 
+![Infographic: Protein in 6 Nepali breakfasts. 2 boiled eggs + 1 roti 17 g; Milk + handful of peanuts 14.5 g; Oats cooked in milk 13 g; 2 boiled eggs + black tea 12.5 g; Chana + cucumber 12 g; Curd + banana 6.5 g](images/nepali-breakfast-protein-chart.jpg)
+*Protein in 6 Nepali breakfasts. Source: USDA FoodData Central.*
+
 *Omelette depends on the oil you use: each teaspoon adds about 40 kcal.*
 
 ### 1. Boiled eggs and black tea

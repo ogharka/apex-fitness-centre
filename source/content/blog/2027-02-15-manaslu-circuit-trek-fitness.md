@@ -24,6 +24,9 @@ Figures from the trek guide of [North Nepal Trek](https://northnepaltrek.com/man
 | Typical length | 11 to 14 days of walking, often more with rest days |
 | Rules | Restricted area: you must trek with a licensed guide arranged through a registered agency |
 
+![Infographic: Manaslu Circuit in numbers. Larkya La pass 5,106 m; Highest night 4,460 m; Total distance 177 km; Days of walking 11–14](images/manaslu-circuit-key-numbers.jpg)
+*Manaslu Circuit in numbers. Source: North Nepal Trek.*
+
 Permit prices and rules change, so confirm them with your agency before you book.
 
 ## What makes Manaslu harder than it looks

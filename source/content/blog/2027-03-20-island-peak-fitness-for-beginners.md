@@ -23,6 +23,9 @@ From the climbing guide by [Himalayan Recreation](https://www.himalayanrecreatio
 | Equipment | Mountaineering boots, crampons, harness, helmet, ice axe, ascender and descender |
 | Permit | A climbing permit from the Nepal Mountaineering Association |
 
+![Infographic: Island Peak: what you are signing up for. Summit height 6,189 m; Headwall ~100 m; Summit-day start Midnight; NMA climbing permit Permit](images/island-peak-key-facts.jpg)
+*Island Peak: what you are signing up for. Source: Himalayan Recreation.*
+
 The same guide says people new to climbing can succeed with good fitness and preparation, and that earlier practice with crampons, fixed ropes and high-altitude trekking is "of great benefit."
 
 ## Fitness first: what your body must handle

@@ -24,6 +24,9 @@ USDA values for plain cooked long-grain rice, as shown on our food pages ([white
 | Fat | 0.3 g | 1.0 g |
 | Fibre | 0.4 g | 1.6 g |
 
+![Infographic: White rice vs brown rice. Calories: White rice 130 kcal, Brown rice 123 kcal; Protein: White rice 2.7 g, Brown rice 2.7 g; Carbs: White rice 28.2 g, Brown rice 25.6 g; Fibre: White rice 0.4 g, Brown rice 1.6 g](images/white-vs-brown-rice-nutrition.jpg)
+*White rice vs brown rice. Source: USDA FoodData Central.*
+
 A Nepali plate of rice is often around 300 g cooked. That is about 390 kcal of white rice or about 369 kcal of brown rice: a difference of roughly 20 kcal, the same as a few bites of rice.
 
 ## Where brown rice really helps

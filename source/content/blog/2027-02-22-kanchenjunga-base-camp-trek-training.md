@@ -23,6 +23,9 @@ Figures from the comparison by [Nepal Trekking Experts](https://nepaltrekkingexp
 | Daily walking | 6 to 8 hours | 5 to 8 hours |
 | Start | Taplejung | Taplejung |
 
+![Infographic: Kanchenjunga base camps. North Base Camp 5,143 m; South Base Camp 4,730 m; Start point Taplejung](images/kanchenjunga-north-vs-south-base-camp.jpg)
+*Kanchenjunga base camps. Source: Nepal Trekking Experts.*
+
 Many trekkers combine the two, crossing high passes such as Selele La and Sinion La between them. Kanchenjunga is a restricted area, so trekking is arranged through a registered agency with a licensed guide; check the current rules and permits with your agency before you book.
 
 ## Why Kanchenjunga is hard

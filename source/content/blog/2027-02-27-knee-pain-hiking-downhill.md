@@ -36,6 +36,9 @@ The best protection is strong legs that are used to downhill work. Twice a week 
 | Reverse lunge | Step back, lower with control | 3 x 8 each leg |
 | Wall sit | Back against a wall, knees at 90 degrees | 3 x 30 to 45 sec |
 
+![Infographic: 5 exercises for stronger downhill knees. Step-down Slowly lower one heel to the floor; Step-up, slow lowering Take 3 seconds to step down; Goblet squat Slow on the way down; Reverse lunge Step back, lower with control; Wall sit Knees at 90 degrees](images/knee-exercises-for-downhill-hiking.jpg)
+*5 exercises for stronger downhill knees.*
+
 Also walk down stairs during training, not only up. Our [stair climbing workout](../stair-climbing-workout/) and [8-week trek plan](../train-for-nepal-trek-without-hills/) build this in.
 
 ## 4. Lighten your pack

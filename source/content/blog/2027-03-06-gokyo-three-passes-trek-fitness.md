@@ -23,6 +23,9 @@ Altitudes from the itinerary of [Marron Treks](https://www.marrontreks.com/evere
 | Kala Patthar | about 5,550 m |
 | Everest Base Camp | about 5,364 m |
 
+![Infographic: How high is the Three Passes trek?. Kala Patthar 5550 m; Kongma La 5535 m; Cho La 5420 m; Everest Base Camp 5364 m; Renjo La 5360 m; Gokyo Ri 5357 m](images/everest-three-passes-altitudes.jpg)
+*How high is the Three Passes trek?. Source: Marron Treks.*
+
 Their Three Passes itinerary runs 20 days in total, with about 17 days on foot, starting and ending at Lukla (about 2,840 m).
 
 ## Three Passes or Gokyo: which suits you?

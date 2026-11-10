@@ -39,6 +39,9 @@ Many Thakali restaurants offer refills of rice, dal and vegetables.
 | Achar and gundruk | Small servings | small | small |
 | **Total, chicken set** | | about 910 kcal | about 39 g |
 
+![Infographic: Thakali chicken set: about 910 kcal. White rice 390 kcal; Dal 248 kcal; Chicken curry 194 kcal; Ghee 45 kcal; Saag 36 kcal](images/thakali-set-calorie-breakdown.jpg)
+*Thakali chicken set: about 910 kcal. Source: USDA FoodData Central.*
+
 Mutton set: swap the chicken curry for [mutton curry](../../food/mutton-curry-calories/) (about 222 kcal per cup), for about 940 kcal.
 
 Veg set: without meat, with a vegetable curry instead, the plate is closer to 700 to 750 kcal and about 25 g of protein.

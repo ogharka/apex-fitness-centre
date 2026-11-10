@@ -44,6 +44,9 @@ These are usually easy to find in Malaysian, Gulf and Indian or Nepali grocery s
 | Rice (1 cup) + chana (1 katori) + boiled egg | about 600 kcal | about 23 g |
 | 3 boiled eggs + 2 roti + banana | about 560 kcal | about 29 g |
 
+![Infographic: 5 budget meals for workers abroad. 3 roti + soybean curry + yoghurt 35 g; Rice + dal + 2-egg curry 29 g; 3 boiled eggs + 2 roti + banana 29 g; Rice + chana + boiled egg 23 g; Rice + chicken curry + salad 19 g](images/budget-meals-protein-gulf-malaysia.jpg)
+*5 budget meals for workers abroad. Source: USDA FoodData Central.*
+
 *Approximate, from our food pages. Oil and portions change the numbers.*
 
 ## Eating for hard physical work

@@ -23,6 +23,9 @@ USDA values for one glass (244 g, about 1 cup), as shown on our food pages ([buf
 | Fat | 16.8 g | 7.9 g |
 | Carbs | 12.6 g | 11.7 g |
 
+![Infographic: Buffalo milk vs cow milk. Calories: Buffalo milk 237 kcal, Whole cow milk 149 kcal; Protein: Buffalo milk 9.2 g, Whole cow milk 7.7 g; Fat: Buffalo milk 16.8 g, Whole cow milk 7.9 g; Carbs: Buffalo milk 12.6 g, Whole cow milk 11.7 g](images/buffalo-vs-cow-milk-nutrition.jpg)
+*Buffalo milk vs cow milk. Source: USDA FoodData Central.*
+
 The big difference is fat: buffalo milk has roughly twice as much. Fat is why buffalo milk tastes creamier and why it makes thick curd, paneer and ghee.
 
 ## Which is better for weight loss?
