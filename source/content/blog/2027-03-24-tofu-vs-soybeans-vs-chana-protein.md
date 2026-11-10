@@ -62,11 +62,11 @@ Here is how the foods above can add up across one day:
 | Meal | Food | Protein (approx.) |
 |---|---|---|
 | Breakfast | 2 boiled eggs, or 1 katori curd with fruit | 5 to 12.5 g |
-| Khana | Rice, 1 katori thick dal, tofu tarkari (120 g tofu), saag | about 25 g |
+| Khana | Rice, 1 katori thick dal, tofu tarkari (120 g tofu), saag | about 33 g |
 | Snack | Bhatmas sadeko (half cup soybeans) | about 16 g |
 | Dinner | 2 roti, 1 katori rajma or chana, salad | about 21 g |
 
-That is roughly 70 to 75 g of protein without meat, and more if you add milk, curd or paneer. A 60 kg person who trains needs about 84 to 120 g, so add one or two more protein foods on training days.
+That is roughly 75 to 80 g of protein without meat, and more if you add milk, curd or paneer. A 60 kg person who trains needs about 84 to 120 g, so add one or two more protein foods on training days.
 
 ## Frequently asked questions
 
