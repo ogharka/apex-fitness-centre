@@ -2,7 +2,7 @@
 title: Gym Anxiety: How to Feel Confident at the Gym (Even on Day One)
 seo_title: Gym Anxiety: How to Feel Confident at the Gym
 description: Nervous about going to the gym? What gym anxiety is, why almost everyone feels it, and 12 practical ways to walk in with confidence, from a trainer.
-date: 2026-11-22
+date: 2026-11-12
 category: Training
 author: suman-limbu
 cover_photo: apex-members-smiling-gym-floor.jpg
