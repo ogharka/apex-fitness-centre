@@ -6,7 +6,7 @@
 <!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script>addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-F70PH8VMHW';document.head.appendChild(s)});</script>
 <script>if(!/(^|\.)apexfitnesscentre\.shop$/.test(location.hostname))window['ga-disable-G-F70PH8VMHW']=true;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F70PH8VMHW');
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;if(a.hasAttribute('data-review')){gtag('event','whatsapp_review_click',{product_name:a.getAttribute('data-review'),transport_type:'beacon'});return}var s=a.closest('[data-product]'),h=document.querySelector('h1');
 var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.price=v;p.currency='NPR'}
 gtag('event','whatsapp_order_click',p)},true);</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2527858242342871" crossorigin="anonymous"></script>
@@ -32,14 +32,12 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 <link rel="icon" href="../../assets/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="shortcut icon" href="../../favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/instrument-sans-latin-var.woff2" crossorigin>
+<style>@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url(../../assets/fonts/instrument-sans-latin-var.woff2) format('woff2')}@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(../../assets/fonts/archivo-latin-var.woff2) format('woff2')}</style>
 <link rel="stylesheet" href="../../assets/store.css">
 <link rel="stylesheet" href="../../assets/premium.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apexfitnesscentre.shop/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://apexfitnesscentre.shop/blog/"},{"@type":"ListItem","position":3,"name":"Weight loss","item":"https://apexfitnesscentre.shop/blog/weight-loss/"},{"@type":"ListItem","position":4,"name":"Walking for Weight Loss: How Many Steps a Day Do You Really Need?","item":"https://apexfitnesscentre.shop/blog/walking-for-weight-loss-steps/"}]},{"@type":"BlogPosting","headline":"Walking for Weight Loss: How Many Steps a Day Do You Really Need?","description":"Is 10,000 steps a day necessary? What research says about daily steps, walking for weight loss, and easy ways to walk more in Nepal.","datePublished":"2026-11-05","dateModified":"2026-11-05","author":{"@type":"Person","name":"Suman Limbu","jobTitle":"Owner and trainer, Apex Fitness Centre","url":"https://apexfitnesscentre.shop/author/suman-limbu/","worksFor":{"@id":"https://apexfitnesscentre.shop/#org"},"image":"https://apexfitnesscentre.shop/assets/team-suman-limbu.jpg","sameAs":["https://www.facebook.com/Phyaak/"]},"publisher":{"@id":"https://apexfitnesscentre.shop/#org"},"mainEntityOfPage":"https://apexfitnesscentre.shop/blog/walking-for-weight-loss-steps/","image":"https://apexfitnesscentre.shop/blog/images/cover-walking-for-weight-loss-steps.jpg","wordCount":663,"articleSection":"Weight loss"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I lose weight just by walking?","acceptedAnswer":{"@type":"Answer","text":"Yes, if walking creates a calorie deficit together with your diet. Walking alone, without changing food, often gives slow results."}},{"@type":"Question","name":"Is it better to walk in the morning or evening?","acceptedAnswer":{"@type":"Answer","text":"Whichever you can do consistently. Walking after meals has extra benefits for blood sugar."}},{"@type":"Question","name":"How fast should I walk?","acceptedAnswer":{"@type":"Answer","text":"Brisk enough that you breathe faster but can still talk in short sentences."}},{"@type":"Question","name":"Is 30 minutes of walking a day enough?","acceptedAnswer":{"@type":"Answer","text":"It is a great start and covers a large part of the WHO&rsquo;s weekly activity recommendation. More is better for weight loss."}}]}]}</script>
+<link rel="preload" as="image" href="../images/cover-walking-for-weight-loss-steps.webp" fetchpriority="high">
 </head>
 <body data-root="../../">
 <div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save up to Rs. 1,000</div>
@@ -128,7 +126,7 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 </tr>
 </tbody>
 </table>
-<p><img decoding="async" loading="lazy" alt="A 4-week walking plan: add 1,000, then 2,000, then 3,000 steps to your daily average, then hold and add a brisk 30-minute walk" src="../images/walking-steps-4-week-plan.webp" width="1200" height="603"></p>
+<p><img decoding="async" loading="lazy" alt="A 4-week walking plan: add 1,000, then 2,000, then 3,000 steps to your daily average, then hold and add a brisk 30-minute walk" src="../images/walking-steps-4-week-plan.webp" width="1200" height="603" srcset="../images/walking-steps-4-week-plan-720.webp 720w, ../images/walking-steps-4-week-plan.webp 1200w" sizes="(max-width: 760px) 92vw, 720px"></p>
 <h2 id="12-easy-ways-to-walk-more-in-nepal">12 easy ways to walk more in Nepal</h2>
 <ol>
 <li><strong>Walk after dal bhat</strong> for 10 to 15 minutes, morning and evening.</li>

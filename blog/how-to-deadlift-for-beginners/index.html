@@ -6,7 +6,7 @@
 <!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script>addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-F70PH8VMHW';document.head.appendChild(s)});</script>
 <script>if(!/(^|\.)apexfitnesscentre\.shop$/.test(location.hostname))window['ga-disable-G-F70PH8VMHW']=true;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F70PH8VMHW');
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;if(a.hasAttribute('data-review')){gtag('event','whatsapp_review_click',{product_name:a.getAttribute('data-review'),transport_type:'beacon'});return}var s=a.closest('[data-product]'),h=document.querySelector('h1');
 var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.price=v;p.currency='NPR'}
 gtag('event','whatsapp_order_click',p)},true);</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2527858242342871" crossorigin="anonymous"></script>
@@ -32,14 +32,12 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 <link rel="icon" href="../../assets/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="shortcut icon" href="../../favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/instrument-sans-latin-var.woff2" crossorigin>
+<style>@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url(../../assets/fonts/instrument-sans-latin-var.woff2) format('woff2')}@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(../../assets/fonts/archivo-latin-var.woff2) format('woff2')}</style>
 <link rel="stylesheet" href="../../assets/store.css">
 <link rel="stylesheet" href="../../assets/premium.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apexfitnesscentre.shop/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://apexfitnesscentre.shop/blog/"},{"@type":"ListItem","position":3,"name":"Training","item":"https://apexfitnesscentre.shop/blog/training/"},{"@type":"ListItem","position":4,"name":"How to Deadlift for Beginners Without Hurting Your Back","item":"https://apexfitnesscentre.shop/blog/how-to-deadlift-for-beginners/"}]},{"@type":"BlogPosting","headline":"How to Deadlift for Beginners Without Hurting Your Back","description":"The deadlift is safe when done right. Learn the setup, hip hinge, back position, breathing, best beginner variations and the most common mistakes.","datePublished":"2026-11-03","dateModified":"2026-11-03","author":{"@type":"Person","name":"Suman Limbu","jobTitle":"Owner and trainer, Apex Fitness Centre","url":"https://apexfitnesscentre.shop/author/suman-limbu/","worksFor":{"@id":"https://apexfitnesscentre.shop/#org"},"image":"https://apexfitnesscentre.shop/assets/team-suman-limbu.jpg","sameAs":["https://www.facebook.com/Phyaak/"]},"publisher":{"@id":"https://apexfitnesscentre.shop/#org"},"mainEntityOfPage":"https://apexfitnesscentre.shop/blog/how-to-deadlift-for-beginners/","image":"https://apexfitnesscentre.shop/blog/images/cover-how-to-deadlift-for-beginners.jpg","wordCount":695,"articleSection":"Training"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are deadlifts bad for your back?","acceptedAnswer":{"@type":"Answer","text":"No, when done with good form and sensible weights. They strengthen the muscles that protect your back. Rounding your lower back under heavy weight is what causes problems."}},{"@type":"Question","name":"Should I deadlift if I already have back pain?","acceptedAnswer":{"@type":"Answer","text":"Get it checked by a doctor or physiotherapist first. Many people with past back pain later deadlift safely with guidance, starting light."}},{"@type":"Question","name":"How much should a beginner deadlift?","acceptedAnswer":{"@type":"Answer","text":"Start light enough that every rep looks the same, even if that is just a pair of dumbbells or an empty bar."}},{"@type":"Question","name":"What muscles do deadlifts work?","acceptedAnswer":{"@type":"Answer","text":"Mainly glutes, hamstrings, lower and upper back, forearms and core, with some thigh muscle involvement."}}]}]}</script>
+<link rel="preload" as="image" href="../images/cover-how-to-deadlift-for-beginners.webp" fetchpriority="high">
 </head>
 <body data-root="../../">
 <div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save up to Rs. 1,000</div>
@@ -63,7 +61,7 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 <h2 id="learn-the-hip-hinge-first">Learn the hip hinge first</h2>
 <p>The deadlift is a <strong>hinge</strong>: you bend at the hips, not the waist, while your back stays straight.</p>
 <p><strong>Practice drill:</strong> Stand about 15 cm in front of a wall. Push your hips back to touch the wall while keeping your back flat and knees slightly bent. When you can do this smoothly 10 times, you understand the movement.</p>
-<p><img decoding="async" loading="lazy" alt="A member doing a cable pull-through at Apex Fitness Centre, Urlabari: hips pushed back and back flat, the same hip hinge you use in the deadlift" src="../images/apex-member-cable-pull-through.webp" width="1200" height="900"></p>
+<p><img decoding="async" loading="lazy" alt="A member doing a cable pull-through at Apex Fitness Centre, Urlabari: hips pushed back and back flat, the same hip hinge you use in the deadlift" src="../images/apex-member-cable-pull-through.webp" width="1200" height="900" srcset="../images/apex-member-cable-pull-through-720.webp 720w, ../images/apex-member-cable-pull-through.webp 1200w" sizes="(max-width: 760px) 92vw, 720px"></p>
 <h2 id="best-deadlift-variations-for-beginners">Best deadlift variations for beginners</h2>
 <ol>
 <li><strong>Kettlebell or dumbbell deadlift:</strong> weight between your feet. Easiest to learn.</li>
@@ -71,7 +69,7 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 <li><strong>Trap bar (hex bar) deadlift:</strong> if your gym has one, it is the most back-friendly barbell option.</li>
 <li><strong>Conventional barbell deadlift:</strong> learn it once you are confident with the hinge.</li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="Four deadlift variations for beginners from easiest to hardest: kettlebell deadlift, dumbbell Romanian deadlift, trap bar deadlift and conventional barbell deadlift" src="../images/deadlift-variations-beginners.webp" width="1200" height="792"></p>
+<p><img decoding="async" loading="lazy" alt="Four deadlift variations for beginners from easiest to hardest: kettlebell deadlift, dumbbell Romanian deadlift, trap bar deadlift and conventional barbell deadlift" src="../images/deadlift-variations-beginners.webp" width="1200" height="792" srcset="../images/deadlift-variations-beginners-720.webp 720w, ../images/deadlift-variations-beginners.webp 1200w" sizes="(max-width: 760px) 92vw, 720px"></p>
 <h2 id="step-by-step-conventional-barbell-deadlift">Step-by-step: conventional barbell deadlift</h2>
 <h3 id="1-feet">1. Feet</h3>
 <p>Stand with feet <strong>hip-width apart</strong>, the bar over the <strong>middle of your feet</strong> (about where your laces are).</p>

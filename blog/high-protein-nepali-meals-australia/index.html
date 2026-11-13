@@ -6,7 +6,7 @@
 <!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script>addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-F70PH8VMHW';document.head.appendChild(s)});</script>
 <script>if(!/(^|\.)apexfitnesscentre\.shop$/.test(location.hostname))window['ga-disable-G-F70PH8VMHW']=true;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F70PH8VMHW');
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;if(a.hasAttribute('data-review')){gtag('event','whatsapp_review_click',{product_name:a.getAttribute('data-review'),transport_type:'beacon'});return}var s=a.closest('[data-product]'),h=document.querySelector('h1');
 var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.price=v;p.currency='NPR'}
 gtag('event','whatsapp_order_click',p)},true);</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2527858242342871" crossorigin="anonymous"></script>
@@ -32,14 +32,12 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 <link rel="icon" href="../../assets/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="shortcut icon" href="../../favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/instrument-sans-latin-var.woff2" crossorigin>
+<style>@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url(../../assets/fonts/instrument-sans-latin-var.woff2) format('woff2')}@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(../../assets/fonts/archivo-latin-var.woff2) format('woff2')}</style>
 <link rel="stylesheet" href="../../assets/store.css">
 <link rel="stylesheet" href="../../assets/premium.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apexfitnesscentre.shop/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://apexfitnesscentre.shop/blog/"},{"@type":"ListItem","position":3,"name":"Diet","item":"https://apexfitnesscentre.shop/blog/diet/"},{"@type":"ListItem","position":4,"name":"High-Protein Nepali Meals with Australian Supermarket Food (Student and Worker Guide)","item":"https://apexfitnesscentre.shop/blog/high-protein-nepali-meals-australia/"}]},{"@type":"BlogPosting","headline":"High-Protein Nepali Meals with Australian Supermarket Food (Student and Worker Guide)","description":"Eat like home and hit your protein target in Australia: a Nepali-style shopping list from Coles, Woolworths and Aldi, 7 meals and a full day of eating.","datePublished":"2026-11-11","dateModified":"2026-11-11","author":{"@type":"Person","name":"Suman Limbu","jobTitle":"Owner and trainer, Apex Fitness Centre","url":"https://apexfitnesscentre.shop/author/suman-limbu/","worksFor":{"@id":"https://apexfitnesscentre.shop/#org"},"image":"https://apexfitnesscentre.shop/assets/team-suman-limbu.jpg","sameAs":["https://www.facebook.com/Phyaak/"]},"publisher":{"@id":"https://apexfitnesscentre.shop/#org"},"mainEntityOfPage":"https://apexfitnesscentre.shop/blog/high-protein-nepali-meals-australia/","image":"https://apexfitnesscentre.shop/blog/images/cover-high-protein-nepali-meals-australia.jpg","wordCount":964,"articleSection":"Diet"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How can I get enough protein as a vegetarian in Australia?","acceptedAnswer":{"@type":"Answer","text":"Use dal, tinned chickpeas and beans, paneer, tofu, Greek yoghurt, milk and eggs if you eat them. See protein-rich vegetarian foods for more ideas."}},{"@type":"Question","name":"Where can I buy Nepali food in Australia?","acceptedAnswer":{"@type":"Answer","text":"Indian and Nepali grocery stores in most cities stock dal, spices, achar, beaten rice (chiura) and paneer. Big supermarkets also stock lentils, chickpeas, rice and spices."}},{"@type":"Question","name":"Is chicken thigh or breast better for muscle?","acceptedAnswer":{"@type":"Answer","text":"Both are good. Breast has slightly more protein and less fat; thigh is juicier and often cheaper. Choose what fits your budget."}},{"@type":"Question","name":"How much protein is in dal?","acceptedAnswer":{"@type":"Answer","text":"About 14 g in 60 g of dry red lentils, which makes a generous bowl. Thicker dal with less water gives you more per bowl."}}]}]}</script>
+<link rel="preload" as="image" href="../images/cover-high-protein-nepali-meals-australia.webp" fetchpriority="high">
 </head>
 <body data-root="../../">
 <div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save up to Rs. 1,000</div>
@@ -92,7 +90,7 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 <p>Spread it over 3–4 meals of about 25–40 g each. More detail: <a href="../how-much-protein-do-you-need/">how much protein do you need</a>.</p>
 <h2 id="the-nepali-high-protein-shopping-list-australia">The Nepali high-protein shopping list (Australia)</h2>
 <p>Protein amounts are approximate. Always check the nutrition label, because brands vary.</p>
-<p><img decoding="async" loading="lazy" alt="High-protein foods to buy in Australia for Nepali meals, with approximate protein per serving" src="../images/australia-protein-shopping-list.webp" width="1200" height="1032"></p>
+<p><img decoding="async" loading="lazy" alt="High-protein foods to buy in Australia for Nepali meals, with approximate protein per serving" src="../images/australia-protein-shopping-list.webp" width="1200" height="1032" srcset="../images/australia-protein-shopping-list-720.webp 720w, ../images/australia-protein-shopping-list.webp 1200w" sizes="(max-width: 760px) 92vw, 720px"></p>
 <table>
 <thead>
 <tr>

@@ -6,7 +6,7 @@
 <!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script>addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-F70PH8VMHW';document.head.appendChild(s)});</script>
 <script>if(!/(^|\.)apexfitnesscentre\.shop$/.test(location.hostname))window['ga-disable-G-F70PH8VMHW']=true;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F70PH8VMHW');
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;if(a.hasAttribute('data-review')){gtag('event','whatsapp_review_click',{product_name:a.getAttribute('data-review'),transport_type:'beacon'});return}var s=a.closest('[data-product]'),h=document.querySelector('h1');
 var v=s&&parseFloat(s.getAttribute('data-value'));var p={product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'};if(v){p.value=v;p.price=v;p.currency='NPR'}
 gtag('event','whatsapp_order_click',p)},true);</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2527858242342871" crossorigin="anonymous"></script>
@@ -32,14 +32,12 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 <link rel="icon" href="../../assets/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="shortcut icon" href="../../favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/instrument-sans-latin-var.woff2" crossorigin>
+<style>@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url(../../assets/fonts/instrument-sans-latin-var.woff2) format('woff2')}@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(../../assets/fonts/archivo-latin-var.woff2) format('woff2')}</style>
 <link rel="stylesheet" href="../../assets/store.css">
 <link rel="stylesheet" href="../../assets/premium.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://apexfitnesscentre.shop/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://apexfitnesscentre.shop/blog/"},{"@type":"ListItem","position":3,"name":"Supplements","item":"https://apexfitnesscentre.shop/blog/supplements/"},{"@type":"ListItem","position":4,"name":"Mass Gainer vs Whey Protein: Which One Do You Need?","item":"https://apexfitnesscentre.shop/blog/mass-gainer-vs-whey/"}]},{"@type":"BlogPosting","headline":"Mass Gainer vs Whey Protein: Which One Do You Need?","description":"Mass gainer or whey? The real difference, who each suits, why many gainers are mostly sugar, and a cheaper homemade gainer shake with Nepali foods.","datePublished":"2026-11-12","dateModified":"2026-11-12","author":{"@type":"Person","name":"Suman Limbu","jobTitle":"Owner and trainer, Apex Fitness Centre","url":"https://apexfitnesscentre.shop/author/suman-limbu/","worksFor":{"@id":"https://apexfitnesscentre.shop/#org"},"image":"https://apexfitnesscentre.shop/assets/team-suman-limbu.jpg","sameAs":["https://www.facebook.com/Phyaak/"]},"publisher":{"@id":"https://apexfitnesscentre.shop/#org"},"mainEntityOfPage":"https://apexfitnesscentre.shop/blog/mass-gainer-vs-whey/","image":"https://apexfitnesscentre.shop/blog/images/cover-mass-gainer-vs-whey.jpg","wordCount":599,"articleSection":"Supplements"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is mass gainer good for skinny guys?","acceptedAnswer":{"@type":"Answer","text":"It can help if you truly cannot eat enough food, but many skinny people do better with more meals, calorie-dense foods and a homemade shake."}},{"@type":"Question","name":"Can I take mass gainer without working out?","acceptedAnswer":{"@type":"Answer","text":"You will gain weight, but mostly fat. Combine it with strength training if you want muscle."}},{"@type":"Question","name":"Is whey or mass gainer better for beginners?","acceptedAnswer":{"@type":"Answer","text":"For most beginners, whey (or no supplement at all) is the better choice."}},{"@type":"Question","name":"Does mass gainer cause belly fat?","acceptedAnswer":{"@type":"Answer","text":"Any extra calories without training can add belly fat. Gainers make it easy to overshoot."}}]}]}</script>
+<link rel="preload" as="image" href="../images/cover-mass-gainer-vs-whey.webp" fetchpriority="high">
 </head>
 <body data-root="../../">
 <div class="ann">Free delivery all over Nepal &middot; Authentic products &middot; Bundles save up to Rs. 1,000</div>
@@ -102,7 +100,7 @@ gtag('event','whatsapp_order_click',p)},true);</script>
 </tr>
 </tbody>
 </table>
-<p><img decoding="async" loading="lazy" alt="Whey protein compared with a mass gainer: protein and calories per serving, who each is for and the main downside" src="../images/mass-gainer-vs-whey-comparison.webp" width="1200" height="705"></p>
+<p><img decoding="async" loading="lazy" alt="Whey protein compared with a mass gainer: protein and calories per serving, who each is for and the main downside" src="../images/mass-gainer-vs-whey-comparison.webp" width="1200" height="705" srcset="../images/mass-gainer-vs-whey-comparison-720.webp 720w, ../images/mass-gainer-vs-whey-comparison.webp 1200w" sizes="(max-width: 760px) 92vw, 720px"></p>
 <h2 id="who-should-choose-whey">Who should choose whey</h2>
 <ul>
 <li>You want to build muscle without gaining much fat.</li>
