@@ -1,4 +1,37 @@
 # Buyer guides. Plain, honest and useful. "table" shows live product prices from PRODUCTS.
+# Whey comparison data: ONLY figures printed on our product pages or on the tub labels.
+# None = not on the site yet. TODO(owner): fill these from the labels; the build prints a reminder until you do.
+from urllib.parse import quote as _q
+WHEY = [
+ dict(slug="muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme", name="MuscleBlaze Biozyme Performance Whey", full="MuscleBlaze Biozyme Performance Whey 2 kg (French Vanilla Crème)", price=15000, kg=2,
+      servings=None,    # TODO(owner): servings per 2 kg tub (from the label)
+      protein_g=None),  # TODO(owner): grams of protein per serving (from the label)
+ dict(slug="bigman-forza-protein-2kg", name="BigMan Forza Protein", full="BigMan Forza Protein 2 kg", price=17500, kg=2,
+      servings=66,      # product page: "66 per tub"
+      protein_g=None),  # TODO(owner): grams of protein per serving (from the label)
+ dict(slug="bpi-sports-hydro-hd-hydrolyzed-whey-2kg-chocolate-lava-cake", name="BPI Sports Hydro HD Hydrolyzed Whey", full="BPI Sports Hydro HD Hydrolyzed Whey 2 kg (Chocolate Lava Cake)", price=23000, kg=2,
+      servings=None,    # TODO(owner): servings per 2 kg tub (from the label)
+      protein_g=None),  # TODO(owner): grams of protein per serving (from the label)
+]
+WHEY_TODO = [f"{w['name']}: {k}" for w in WHEY for k in ("servings", "protein_g") if w[k] is None]
+_rs = lambda n: f"Rs. {n:,.0f}"
+def _whey_btn(w):
+    msg = f"Hi Apex Fitness Centre, I want to order: {w['full']} for {_rs(w['price'])}. Please confirm stock. Payment: COD / Khalti / Bank"
+    return (f'<p><a class="btn wa" href="https://wa.me/9779708819605?text={_q(msg)}" target="_blank" rel="noopener" data-product="{w["full"]}" data-value="{w["price"]}">'
+            f'Order on WhatsApp – {_rs(w["price"])}</a> <a class="tl" href="../../products/{w["slug"]}/">See the product page</a></p>')
+WHEY_BTN = {w["slug"]: _whey_btn(w) for w in WHEY}
+_ask = '<span class="fine">See label</span>'
+def _cell(v): return v if v else _ask
+def _per100(w):
+    if not (w["servings"] and w["protein_g"]): return None
+    return "%.1f g" % (w["protein_g"] / (w["price"] / w["servings"]) * 100)
+WHEY_TABLE = ('<div class="tw"><table class="cmp"><thead><tr><th>Product (2 kg)</th><th>Price</th><th>Price per kg</th><th>Servings</th><th>Price per serving</th><th>Protein per serving</th><th>Protein per Rs. 100</th></tr></thead><tbody>'
+    + "".join(f'<tr><td><a href="../../products/{w["slug"]}/">{w["name"]}</a></td><td>{_rs(w["price"])}</td><td>{_rs(w["price"] / w["kg"])}</td>'
+              f'<td>{_cell(w["servings"])}</td><td>{_cell(w["servings"] and _rs(w["price"] / w["servings"]))}</td>'
+              f'<td>{_cell(w["protein_g"] and str(w["protein_g"]) + " g")}</td>'
+              f'<td>{_cell(_per100(w))}</td></tr>' for w in WHEY)
+    + '</tbody></table></div><p class="fine">Prices from our product pages. Servings and protein come from the product labels; where a figure is not on our site yet it says “See label” rather than a guess. Ask us on WhatsApp and we will send you a photo of the label.</p>')
+
 GUIDES = [
 dict(slug="creatine-price-in-nepal", cat="creatine",
  title="Creatine Price in Nepal 2026: MuscleBlaze, Wellcore, BPI",
@@ -143,21 +176,27 @@ dict(slug="best-protein-for-beginners-in-nepal", cat="protein", table=None, publ
       ("Do you deliver protein all over Nepal?", "Yes. Delivery is free all over Nepal by Nepal Can, usually in 1 to 2 days, and you can pay by Cash on Delivery, Khalti or bank transfer.")],
  rel=["whey-protein-price-in-nepal", "creatine-whey-price-nepal", "supplements-for-beginners-in-nepal"]),
 
-dict(slug="whey-protein-price-in-nepal", cat="protein", table="protein",
- title="Whey Protein Price in Nepal (2026): Genuine Brands and Prices",
- h1="Whey protein price in Nepal",
- desc="Whey and protein powder prices in Nepal from authorised brands, with size, flavour and price per kg. Free delivery all over Nepal.",
- intro="Protein powder is a convenient way to reach your daily protein, but prices in Nepal vary a lot. Here are the tubs we sell today, with the price per kilogram so you can compare.",
+dict(slug="whey-protein-price-in-nepal", cat="protein", table=None, published="2026-11-13",
+ title="Whey Protein Price in Nepal (2026): MuscleBlaze vs BigMan vs BPI",
+ h1="Whey protein price in Nepal (2026): MuscleBlaze vs BigMan vs BPI",
+ desc="Whey protein price in Nepal 2026: MuscleBlaze Biozyme Rs. 15,000, BigMan Forza Rs. 17,500, BPI Hydro HD Rs. 23,000. Price per kg and per serving compared.",
+ intro="The three 2 kg protein tubs we sell cost Rs. 15,000 (MuscleBlaze Biozyme Performance Whey), Rs. 17,500 (BigMan Forza Protein) and Rs. 23,000 (BPI Sports Hydro HD Hydrolyzed Whey). The tub price is only half the story, so below we compare the price per kg and, where the serving count is on our product page, the price per serving.",
  body=[
-  ("How to compare protein prices", ["Do not look only at the tub price. Divide the price by the kilograms in the pack to get the price per kg. Then check the label for protein per serving, because a cheaper tub can give less protein per scoop.", "Also check the serving count. A 2 kg tub that gives many servings costs less per shake than a small one."]),
-  ("Whey, blends and hydrolysed whey", ["Whey is the common choice for most people. Blends can cost less. Hydrolysed whey is processed to digest faster and usually costs more. The best one is the one that fits your budget, tastes good enough to take every day, and comes from a seller you trust."]),
+  ("MuscleBlaze vs BigMan vs BPI: price comparison", [{"html": WHEY_TABLE}]),
+  ("How to compare protein prices", ["Do not look only at the tub price. Divide the price by the kilograms in the pack to get the price per kg, then divide it by the number of servings to get the price per shake. Next, check the label for protein per serving: a cheaper tub can give less protein per scoop.", "All three tubs here are 2 kg, so the price per kg follows the tub price: about Rs. 7,500 per kg for Biozyme, Rs. 8,750 for Forza and Rs. 11,500 for Hydro HD."]),
+  ("MuscleBlaze Biozyme Performance Whey 2 kg (Rs. 15,000)", ["The lowest price of the three. A whey protein in French Vanilla Crème flavour, and a simple first protein: one product that does one job.", {"html": WHEY_BTN["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme"]}]),
+  ("BigMan Forza Protein 2 kg (Rs. 17,500)", ["A protein blend that, according to its label, also contains creatine and MCT. The 2 kg tub gives 66 servings, which works out at about Rs. 265 per serving. If you take Forza, check the label before adding a separate creatine product.", {"html": WHEY_BTN["bigman-forza-protein-2kg"]}]),
+  ("BPI Sports Hydro HD Hydrolyzed Whey 2 kg (Rs. 23,000)", ["A hydrolysed whey in Chocolate Lava Cake flavour. Hydrolysed whey is processed to digest faster and usually costs more than regular whey. It is the premium option of the three; most people do not need it to build muscle.", {"html": WHEY_BTN["bpi-sports-hydro-hd-hydrolyzed-whey-2kg-chocolate-lava-cake"]}]),
+  ("Which one should you buy?", [{"list": ["Lowest price and a plain whey: MuscleBlaze Biozyme, Rs. 15,000.", "Protein and creatine in one scoop: BigMan Forza, Rs. 17,500.", "Want a hydrolysed whey and do not mind paying more: BPI Hydro HD, Rs. 23,000."]}, {"html": '<p>New to protein powder? Read <a href="../best-protein-for-beginners-in-nepal/">best protein for beginners in Nepal</a>, see all tubs on our <a href="../../protein/">protein page</a>, or browse all <a href="../">buying guides</a>.</p>'}]),
   ("How much protein do you need", ["Many active adults aim for about 1.4 to 2.0 g of protein per kg of body weight a day, from food and shakes together. A shake adds to your meals and does not replace them. If you eat enough protein from dal, eggs, paneer, soya and meat, you may need less powder."]),
-  ("Ordering from Apex", ["Order on WhatsApp from any product page. We confirm stock, you pay by Cash on Delivery, Khalti or bank transfer, and Nepal Can delivers all over Nepal, usually in 1 to 2 days, with free delivery. Every tub is authentic and comes with a bill."]),
+  ("Ordering from Apex", ["Order on WhatsApp from this page or any product page. We confirm stock, you pay by Cash on Delivery, Khalti or bank transfer, and Nepal Can delivers all over Nepal, usually in 1 to 2 days, with free delivery. Every tub is authentic and comes with a bill."]),
  ],
- faq=[("What is a good price for 2 kg whey in Nepal?", "It depends on the brand and type. Compare the price per kg and the protein per serving, and be careful with a price far below other sellers, which can mean a fake or old product."),
-      ("Is whey protein safe?", "For most healthy adults, yes. If you have a kidney condition, a milk allergy or another health issue, ask a doctor first. This is general information, not medical advice."),
-      ("Do you deliver protein all over Nepal?", "Yes. Delivery is free all over Nepal, usually in 1 to 2 days.")],
- rel=["how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal", "supplements-for-beginners-in-nepal"]),
+ faq=[("How much is 2 kg whey protein in Nepal?", "At Apex Fitness Centre, 2 kg tubs cost Rs. 15,000 (MuscleBlaze Biozyme Performance Whey), Rs. 17,500 (BigMan Forza Protein) and Rs. 23,000 (BPI Sports Hydro HD Hydrolyzed Whey), with free delivery all over Nepal."),
+      ("Which is cheapest per kg: MuscleBlaze, BigMan or BPI?", "MuscleBlaze Biozyme, at about Rs. 7,500 per kg. BigMan Forza is about Rs. 8,750 per kg and BPI Hydro HD about Rs. 11,500 per kg."),
+      ("What is the price per serving of BigMan Forza?", "The 2 kg tub has 66 servings, so about Rs. 265 per serving at Rs. 17,500."),
+      ("Is hydrolysed whey worth the extra cost?", "It digests faster, but for most people regular whey builds muscle just as well when daily protein is enough. Choose hydrolysed whey only if you prefer it and the price fits your budget."),
+      ("Can I pay cash on delivery for protein?", "Yes. You can pay by Cash on Delivery, Khalti or bank transfer, and delivery is free all over Nepal, usually in 1 to 2 days.")],
+ rel=["best-protein-for-beginners-in-nepal", "how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"]),
 
 dict(slug="how-to-spot-fake-supplements-in-nepal", cat="shop", table=None,
  title="How to Spot Fake Supplements in Nepal: 8-Point Check",

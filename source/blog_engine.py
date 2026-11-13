@@ -105,6 +105,19 @@ def _bimg(name, post):
     BLOG_IMG[name] = (os.path.splitext(name)[0], w, h)
     return BLOG_IMG[name]
 
+BIMG_SIZES = "(max-width: 760px) 92vw, 720px"  # the article column is 720 px wide
+
+def _bsrcset(base, w, r, sizes=BIMG_SIZES):
+    """srcset with a 720 px WebP, so phones and the 720 px column do not download the 1200 px file."""
+    if w <= 720 or base.startswith("cover-"): return ""
+    return f' srcset="{r}images/{base}-720.webp 720w, {r}images/{base}.webp {w}w" sizes="{sizes}"'
+
+def _save_jpg(im, path, cap=200 * 1024):
+    """JPG copy for share cards and old browsers, kept under 200 KB."""
+    for q in (82, 76, 70, 64):
+        im.save(path, "JPEG", quality=q, optimize=True, progressive=True)
+        if os.path.getsize(path) <= cap: return
+
 def copy_blog_images():
     od = os.path.join(OUT, "blog", "images"); os.makedirs(od, exist_ok=True)
     for key, args in COVERS.items():
@@ -114,7 +127,9 @@ def copy_blog_images():
         im = _BIm.open(os.path.join(BLOG_DIR, "images", name)).convert("RGB")
         if im.width > 1200: im = im.resize((w, h), _BIm.LANCZOS)
         im.save(os.path.join(od, base + ".webp"), "WEBP", quality=80, method=6)
-        im.save(os.path.join(od, base + ".jpg"), "JPEG", quality=82, optimize=True, progressive=True)
+        if w > 720:
+            im.resize((720, round(h * 720 / w)), _BIm.LANCZOS).save(os.path.join(od, base + "-720.webp"), "WEBP", quality=80, method=6)
+        _save_jpg(im, os.path.join(od, base + ".jpg"))
 
 def load_posts():
     posts = []
@@ -142,7 +157,7 @@ def load_posts():
                 faq.append((re.sub(r"<[^>]+>", "", q).strip(), re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", a)).strip()))
         def _swap(mm):
             base, w, h = _bimg(mm.group(1), name)
-            return f'src="../images/{base}.webp" width="{w}" height="{h}"'
+            return f'src="../images/{base}.webp" width="{w}" height="{h}"' + _bsrcset(base, w, "../")
         html_ = re.sub(r'src="images/([^"]+)"', _swap, html_)
         if m.get("image"): _bimg(m["image"], name)
         words = len(re.sub(r"<[^>]+>", " ", html_).split())
@@ -178,7 +193,7 @@ def _postcard(p, r):
     img = ""
     if p.get("image"):
         base, w, h = BLOG_IMG[p["image"]]
-        img = f'<span class="bimg"><img src="{r}images/{base}.webp" alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}"></span>'
+        img = f'<span class="bimg"><img src="{r}images/{base}.webp"{_bsrcset(base, w, r, "(max-width: 600px) 92vw, 380px")} alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}"></span>'
     return (f'<a class="bcard" href="{r}{p["slug"]}/">{img}<span class="bmeta"><span>{e(p["category"])}</span><span>{p["mins"]} min read</span></span>'
             f'<b>{e(p["title"])}</b><span class="bdesc">{e(p["description"])}</span></a>')
 
@@ -245,7 +260,7 @@ def build_blog():
             base, w, h = BLOG_IMG[p["image"]]
             _pin = os.path.exists(os.path.join(BLOG_DIR, "pins", p["slug"] + ".jpg"))
             _pm = f' data-pin-media="{BASE}/blog/pins/{p["slug"]}.jpg" data-pin-description="{e(p["title"])}"' if _pin else ""
-            hero = f'<figure class="phero"><img src="../images/{base}.webp" alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}" fetchpriority="high"{_pm}></figure>'
+            hero = f'<figure class="phero"><img src="../images/{base}.webp"{_bsrcset(base, w, "../")} alt="{e(p.get("image_alt") or p["title"])}" width="{w}" height="{h}" fetchpriority="high"{_pm}></figure>'
         shop = ""
         if p["prods"]:
             shop = f'<section><h2 class="h2s">Products in this post</h2><div class="pgrid">{"".join(card(x, d) for x in p["prods"])}</div></section>'

@@ -204,11 +204,8 @@ def head(title, desc, path, depth, image=None, extra="", ptype="website"):
 <link rel="icon" href="{root}assets/favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="{root}assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="shortcut icon" href="{root}favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="font" type="font/woff2" href="{root}assets/fonts/instrument-sans-latin-var.woff2" crossorigin>
+<style>@font-face{{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url({root}assets/fonts/instrument-sans-latin-var.woff2) format('woff2')}}@font-face{{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url({root}assets/fonts/archivo-latin-var.woff2) format('woff2')}}</style>
 <link rel="stylesheet" href="{root}assets/store.css">
 <link rel="stylesheet" href="{root}assets/premium.css">
 {extra}
@@ -237,7 +234,7 @@ def ga_tag():
     return f"""<!-- Google tag (gtag.js). Real ID goes in GA_ID at the top of build.py -->
 <script>addEventListener('load',function(){{var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id={GA_ID}';document.head.appendChild(s)}});</script>
 <script>if(!/(^|\.)apexfitnesscentre\.shop$/.test(location.hostname))window['ga-disable-{GA_ID}']=true;window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','{GA_ID}');
-document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;var s=a.closest('[data-product]'),h=document.querySelector('h1');
+document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href*="wa.me/9779708819605"]');if(!a)return;if(a.hasAttribute('data-review')){{gtag('event','whatsapp_review_click',{{product_name:a.getAttribute('data-review'),transport_type:'beacon'}});return}}var s=a.closest('[data-product]'),h=document.querySelector('h1');
 var v=s&&parseFloat(s.getAttribute('data-value'));var p={{product_name:(s&&s.getAttribute('data-product'))||(h&&h.textContent.replace(/\\s+/g,' ').trim())||document.title,link_url:a.href,page_path:location.pathname,transport_type:'beacon'}};if(v){{p.value=v;p.price=v;p.currency='NPR'}}
 gtag('event','whatsapp_order_click',p)}},true);</script>
 """
@@ -543,21 +540,8 @@ def build_cat(c):
 #      text="Their words, exactly as sent (Nepali is fine)", en="English translation, or leave empty",
 #      image="reviews/first-last.jpg", alt="First Last with the product"),   # image and alt are optional
 # Put the photo (with the person's OK) in source/assets/reviews/. Reviews also appear in Google's product data.
-REVIEWS = [
- dict(product="scitron-volcano-pre-workout", name="Rupak Shrestha", rating=5, image="reviews/rupak-shrestha.jpg", alt="Rupak Shrestha with Scitron Volcano pre-workout",
-      text="Aila market ma vayeko aru preworkout vanda yo linu thalexi mero energy level nai beglai xa. Malai lagxa Nepal ma paune sabse best preworkout nai yoi ho.",
-      en="My energy level has been completely different since I started this, compared with the other pre-workouts on the market. I think this is the best pre-workout available in Nepal."),
- dict(product="muscleblaze-l-carnitine-pro-liquid-450ml-key-lime", name="Nugen Limbu", rating=4, image="reviews/nugen-limbu.jpg", alt="Nugen Limbu with MuscleBlaze L-Carnitine",
-      text="Thankyou Apex for selling genuine product in such affordable price.", en=""),
- dict(product="pintola-high-protein-oats-chocolate-1kg", name="Ranjeet Shrestha", rating=4, image="reviews/ranjeet-shrestha.jpg", alt="Ranjeet Shrestha with Pintola High Protein Oats",
-      text="Yesle weight loss progress ma malai ramro help garyo.", en="This helped me well with my weight loss progress.", note="Personal experience. Results vary from person to person."),
- dict(product="muscleblaze-creatine-monohydrate-320g-citrus-blast", name="Hemraj Ojha", rating=5, image="reviews/hemraj-ojha.jpg", alt="Hemraj Ojha with MuscleBlaze Creatine",
-      text="Ma aru supplement kai use gardina tara creatine chai linxu. Yo MB creatine ko taste chai malai man parxa.",
-      en="I don't use other supplements, but I do take creatine. I like the taste of this MB creatine."),
- dict(product="wellcore-micronised-creatine-monohydrate-307g-fruit-fusion", name="Devi Ghising", rating=5, town="Lives in Hong Kong", image="reviews/devi-ghising.jpg", alt="Devi Ghising with Wellcore Micronised Creatine",
-      text="Ma Hong Kong basxu, yearly ek chuti auxu. Jaila auda Apex bata 3-4 pc lagera janchu, malai saal bhar pugxa.",
-      en="I live in Hong Kong and come home once a year. Whenever I come, I take 3-4 pieces from Apex, and it lasts me the whole year."),
-]
+# Real customer reviews live in content/reviews.json (see "_how_to_add" there). Never invent reviews.
+REVIEWS = json.load(open(os.path.join(HERE, "content", "reviews.json"), encoding="utf-8"))["reviews"]
 _PNAME = {p["slug"]: p["name"] for p in PRODUCTS}
 
 def rev_card(x, d, link=True):
@@ -573,10 +557,11 @@ def rev_card(x, d, link=True):
 def reviews_block(p):
     rv = [x for x in REVIEWS if x["product"] == p["slug"]]
     msg = f"Hi Apex Fitness Centre, I bought {p['full']} and here is my review: "
-    ask = f'<p class="rvask">Bought this from us? Send us your review and we will add it here.</p><a class="btn line" href="{wa(msg)}" target="_blank" rel="noopener">Leave a review on WhatsApp</a>'
+    btn = f'<a class="btn wa rvbtn" href="{wa(msg)}" target="_blank" rel="noopener" data-review="{e(p["full"])}">Send your review on WhatsApp</a>'
+    ask = f'<p class="rvask">Bought this from us? Send us your review on WhatsApp and we will add it here.</p>{btn}'
     if not rv:
-        return (f'<section class="rev rev-empty"><h2 class="h2s">Customer reviews</h2><p class="rvnone">Be the first to review this product.</p>'
-                f'<a class="btn line" href="{wa(msg)}" target="_blank" rel="noopener">Leave a review on WhatsApp</a></section>')
+        return (f'<section class="rev rev-empty"><h2 class="h2s">Customer reviews</h2><p class="rvnone">No reviews yet. Bought {e(p["full"])} from us? '
+                f'Tell us how it worked for you and we will add your review here.</p>{btn}</section>')
     items = "".join(rev_card(x, 2, link=False) for x in rv)
     return f'<section class="rev"><h2 class="h2s">Customer reviews</h2><div class="rvg one">{items}</div>{ask}</section>'
 
@@ -1143,7 +1128,10 @@ def build_calculators():
 
 build_home(); build_shop()
 
-from guides import GUIDES
+from guides import GUIDES, WHEY_TODO, WHEY
+for _w in WHEY:  # the whey guide must show the same prices as the product pages
+    assert next(p for p in PRODUCTS if p['slug'] == _w['slug'])['price'] == _w['price'], ('whey guide price differs from product page', _w['slug'])
+if WHEY_TODO: print('[TODO] whey guide: add from the labels in source/guides.py (WHEY): ' + '; '.join(WHEY_TODO))
 # Guides whose topic now lives in a fuller blog post (see MERGED near the end); hidden from guide lists.
 MERGED_GUIDE_SLUGS = {"how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal", "creatine-or-whey-first"}
 _GBY = {g["slug"]: g for g in GUIDES}
@@ -1304,6 +1292,18 @@ def _fix_imgs(html_):
                    + re.sub(r'\s(srcset|sizes)="[^"]*"', "", re.sub(r'src="[^"]+"', f'src="{orig}"', tag, 1)) + '</picture>')
         return tag
     html_ = re.sub(r"<img\s[^>]*>", one, html_)
+    # Preload the main (fetchpriority="high") image so the browser starts it before the CSS is parsed
+    if 'rel="preload" as="image"' not in html_ and "</head>" in html_:
+        pm = re.search(r'<picture><source type="image/webp" srcset="([^"]+)"(?: sizes="([^"]+)")?><img [^>]*fetchpriority="high"', html_)
+        im = None if pm else re.search(r'<img [^>]*fetchpriority="high"[^>]*>', html_)
+        link = ""
+        if pm:
+            link = f'<link rel="preload" as="image" type="image/webp" imagesrcset="{pm.group(1)}"' + (f' imagesizes="{pm.group(2)}"' if pm.group(2) else "") + ' fetchpriority="high">'
+        elif im:
+            t = im.group(0); ss = re.search(r'\ssrcset="([^"]+)"', t); sz = re.search(r'\ssizes="([^"]+)"', t); sr = re.search(r'\ssrc="([^"]+)"', t)
+            link = (f'<link rel="preload" as="image" imagesrcset="{ss.group(1)}"' + (f' imagesizes="{sz.group(1)}"' if sz else "") if ss
+                    else f'<link rel="preload" as="image" href="{sr.group(1)}"') + ' fetchpriority="high">'
+        if link: html_ = html_.replace("</head>", link + "\n</head>", 1)
     # CSS backgrounds (gym hero)
     html_ = re.sub(r'url\((["\']?)([^)"\']*?)assets/([^)"\']+\.jpg)\1\)', lambda m: f'url({m.group(1)}{m.group(2)}assets/{WEBP[m.group(3)][0] if m.group(3) in WEBP else m.group(3)}{m.group(1)})', html_)
     return html_
@@ -1369,6 +1369,7 @@ shutil.copy(SRC + "/apex-icon-512.png", OUT + "/assets/apex-icon-512.png")
 shutil.copy(SRC + "/apex-icon-180.png", OUT + "/assets/apex-icon-180.png")
 for _fi in ("favicon-32.png", "favicon-48.png"): shutil.copy(SRC + "/" + _fi, OUT + "/assets/" + _fi)
 shutil.copy(SRC + "/favicon.ico", OUT + "/favicon.ico")
+shutil.copytree(os.path.join(HERE, "fonts", "web"), OUT + "/assets/fonts", dirs_exist_ok=True)  # self-hosted Archivo + Instrument Sans (SIL OFL 1.1)
 for _f in ("calc-core.js", "calc.js", "calc.css", "tools.js", "comments.js"): _copy_min(HERE + "/" + _f, OUT + "/assets/" + _f)
 # Pinterest pins (1000x1500): only for published posts, so scheduled titles stay private
 os.makedirs(OUT + "/blog/pins", exist_ok=True)

@@ -1,0 +1,58 @@
+{
+ "_how_to_add": [
+  "Add only real reviews that a customer sent you (WhatsApp, Facebook, in person). Never write one yourself.",
+  "Copy one entry below and change it. 'product' must be the product slug from the URL, e.g. bigman-forza-protein-2kg.",
+  "rating: 1 to 5. text: the customer's own words. en: English translation if they wrote in Nepali (or leave empty).",
+  "image (optional): put the photo in source/reviews/ and write 'reviews/<file>.jpg'. Only with the customer's permission.",
+  "town and note are optional. The star rating and Google review schema appear automatically once a product has a review."
+ ],
+ "reviews": [
+  {
+   "product": "scitron-volcano-pre-workout",
+   "name": "Rupak Shrestha",
+   "rating": 5,
+   "image": "reviews/rupak-shrestha.jpg",
+   "alt": "Rupak Shrestha with Scitron Volcano pre-workout",
+   "text": "Aila market ma vayeko aru preworkout vanda yo linu thalexi mero energy level nai beglai xa. Malai lagxa Nepal ma paune sabse best preworkout nai yoi ho.",
+   "en": "My energy level has been completely different since I started this, compared with the other pre-workouts on the market. I think this is the best pre-workout available in Nepal."
+  },
+  {
+   "product": "muscleblaze-l-carnitine-pro-liquid-450ml-key-lime",
+   "name": "Nugen Limbu",
+   "rating": 4,
+   "image": "reviews/nugen-limbu.jpg",
+   "alt": "Nugen Limbu with MuscleBlaze L-Carnitine",
+   "text": "Thankyou Apex for selling genuine product in such affordable price.",
+   "en": ""
+  },
+  {
+   "product": "pintola-high-protein-oats-chocolate-1kg",
+   "name": "Ranjeet Shrestha",
+   "rating": 4,
+   "image": "reviews/ranjeet-shrestha.jpg",
+   "alt": "Ranjeet Shrestha with Pintola High Protein Oats",
+   "text": "Yesle weight loss progress ma malai ramro help garyo.",
+   "en": "This helped me well with my weight loss progress.",
+   "note": "Personal experience. Results vary from person to person."
+  },
+  {
+   "product": "muscleblaze-creatine-monohydrate-320g-citrus-blast",
+   "name": "Hemraj Ojha",
+   "rating": 5,
+   "image": "reviews/hemraj-ojha.jpg",
+   "alt": "Hemraj Ojha with MuscleBlaze Creatine",
+   "text": "Ma aru supplement kai use gardina tara creatine chai linxu. Yo MB creatine ko taste chai malai man parxa.",
+   "en": "I don't use other supplements, but I do take creatine. I like the taste of this MB creatine."
+  },
+  {
+   "product": "wellcore-micronised-creatine-monohydrate-307g-fruit-fusion",
+   "name": "Devi Ghising",
+   "rating": 5,
+   "town": "Lives in Hong Kong",
+   "image": "reviews/devi-ghising.jpg",
+   "alt": "Devi Ghising with Wellcore Micronised Creatine",
+   "text": "Ma Hong Kong basxu, yearly ek chuti auxu. Jaila auda Apex bata 3-4 pc lagera janchu, malai saal bhar pugxa.",
+   "en": "I live in Hong Kong and come home once a year. Whenever I come, I take 3-4 pieces from Apex, and it lasts me the whole year."
+  }
+ ]
+}
