@@ -323,29 +323,63 @@ def stack(name, text, slugs):
     tot = full - off
     imgs = "".join(f'<img src="assets/{x["img"]}" alt="{e(x["full"])}" width="640" height="640" loading="lazy">' for x in ps)
     lis = "".join(f'<li><a href="{x["url"]}">{e(x["name"])}</a><span>{money(x["price"])}</span></li>' for x in ps)
-    return f'''<div class="stack"><div class="simgs">{imgs}</div><h3>{name}</h3><p>{text}</p><ul>{lis}</ul><div class="stot"><span>Stack price <s>{money(full)}</s></span><b class="price">{money(tot)}</b></div><p class="save">You save {money(off)}</p><button class="btn gold full" type="button" data-bundle="{",".join(slugs)}">Add the stack to cart</button></div>'''
+    return f'''<div class="stack"><div class="simgs">{imgs}</div><h3>{name}</h3><p>{text}</p><ul>{lis}</ul><div class="stot"><span>Stack price <s>{money(full)}</s></span><b class="price">{money(tot)}</b></div><p class="save">You save {money(off)}</p><div class="sbtns" data-product="{e(name)}" data-value="{tot}"><a class="btn wa full" href="{wa(f"Hi Apex Fitness Centre, I want to order the {name}: " + " + ".join(f"{x['full']} ({money(x['price'])})" for x in ps) + f". Bundle price {money(tot)} (was {money(full)}, I save {money(off)}). Please confirm stock. Payment: COD / Khalti / Bank")}" target="_blank" rel="noopener">Order on WhatsApp</a><button class="btn gold full" type="button" data-bundle="{",".join(slugs)}">Add the stack to cart</button></div></div>'''
 
 AUTH_DIR = os.path.join(HERE, "images", "authenticity")
+from guides import WHEY as _WHEY
+WHEY_SLUGS = {w['slug'] for w in _WHEY}   # their product pages link to the whey comparison guide
+
+# Categories that are training gear, not supplements: they get the equipment guarantee wording,
+# the equipment returns line and no batch/expiry photo slots. Add a new gear category here
+# (e.g. "gloves", "lifting-straps"), or set kind="gear" on a single product.
+GEAR_CATS = {"weightlifting-belt"}
+
+def is_gear(p):
+    return p.get("kind") == "gear" or p["cat"] in GEAR_CATS
 
 def auth_block(p, d):
-    """'How we guarantee it's genuine' box beside the order button. The label photo only appears
-    once source/images/authenticity/<slug>-label.webp exists, so there is never a broken image."""
-    slug = p["slug"]; fn = f"{slug}-label.webp"; fp = os.path.join(AUTH_DIR, fn)
-    note = (f'<!-- PHOTO NEEDED: upload a real photo of the importer label / batch code / QR code for this product as '
-            f'source/images/authenticity/{fn} (WebP, about 800 px wide). It appears here automatically on the next build. -->')
-    img = ""
-    if os.path.exists(fp):
-        from PIL import Image as _I
-        with _I.open(fp) as _im: w, h = _im.size
-        img = (f'<img class="authimg" src="{"../" * d}images/authenticity/{fn}" alt="Importer label and batch code on {e(p["full"])}" '
-               f'width="{w}" height="{h}" loading="lazy" decoding="async">')
+    """'How we guarantee it's genuine' box beside the order button, worded for supplements
+    (sealed, batch number, expiry) or for gear (genuine brand, checked stitching/buckle, exchange)."""
+    if is_gear(p):
+        return (f'<section class="auth auth-buy"><h2>How we guarantee it&rsquo;s genuine</h2><ul>'
+                f'<li>Genuine {e(p["brand"])} product, bought from an authorised seller.</li>'
+                f'<li>Checked for stitching and buckle quality before we send it.</li>'
+                f'<li>If it arrives damaged, we exchange it. Message us on WhatsApp with a photo.</li></ul>'
+                f'<p>Want to see it before you pay? Ask on WhatsApp and we will send you a photo of the one we will send.</p></section>')
     return (f'<section class="auth auth-buy"><h2>How we guarantee it&rsquo;s genuine</h2><ul>'
             f'<li>Bought only from authorised importers and distributors, never from unknown resellers.</li>'
             f'<li>Every pack is sealed, with the batch number and expiry date printed on it.</li>'
             f'<li>On delivery, check the importer sticker and scan the QR code on the label (if the brand uses one).</li></ul>'
-            f'{note}{img}'
             f'<p>Want to see it before you pay? Ask on WhatsApp and we will send a photo of the seal and batch number. '
             f'<a href="{"../" * d}blog/fake-supplements-in-nepal-how-to-spot-them/">How to spot fake supplements in Nepal</a></p></section>')
+
+# Authenticity proof photos (supplements only). Put real photos in source/images/authenticity/ named
+# <product-slug>-<slot>.webp; each slot appears on its own and the whole section stays hidden until
+# at least one photo exists. Never stock images.
+PROOF_SLOTS = [
+    ("invoice", "Importer or distributor invoice", "Our purchase invoice from the importer/distributor (prices blurred)"),
+    ("batch",   "Batch code and expiry date",     "Close-up of the batch code and expiry date"),
+    ("sealed",  "Sealed pack",                     "The pack, sealed as it arrives"),
+]
+
+def proof_block(p, d):
+    if is_gear(p): return ""
+    slug = p["slug"]
+    figs = []
+    for key, title, alt in PROOF_SLOTS:
+        fn = f"{slug}-{key}.webp"
+        if key == "batch" and not os.path.exists(os.path.join(AUTH_DIR, fn)) and os.path.exists(os.path.join(AUTH_DIR, f"{slug}-label.webp")):
+            fn = f"{slug}-label.webp"   # older name for the batch/label photo
+        fp = os.path.join(AUTH_DIR, fn)
+        if not os.path.exists(fp): continue
+        from PIL import Image as _I
+        with _I.open(fp) as _im: w, h = _im.size
+        figs.append(f'<figure><img src="{"../" * d}images/authenticity/{fn}" alt="{alt}: {e(p["full"])}" width="{w}" height="{h}" loading="lazy" decoding="async"><figcaption>{title}</figcaption></figure>')
+    todo = ", ".join(f"{slug}-{k}.webp" for k, _, _ in PROOF_SLOTS)
+    note = f'<!-- AUTHENTICITY PHOTOS: add real photos as source/images/authenticity/{{{todo}}} (WebP, about 800 px wide). Each appears automatically on the next build. -->'
+    if not figs: return note
+    return (f'{note}<section class="proof"><h2>Authenticity proof</h2><p>Real photos of this product from our own stock.</p>'
+            f'<div class="proof-grid">{"".join(figs)}</div></section>')
 
 def marquee():
     # Prices come from PRODUCTS, the same list that builds /shop/, so they cannot drift apart.
@@ -405,7 +439,7 @@ def build_home():
 <section class="sec alt"><div class="wrap">
 <div class="shead"><span class="label">Best value stacks</span><h2>Buy the pair that works together</h2><p>Buy together and save. The discount is applied automatically in your cart.</p></div>
 <div class="stacks">
-{stack("Muscle Gain Stack","Whey protein for recovery and creatine for strength. The classic starter pair.",["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme","muscleblaze-creatine-monohydrate-320g-citrus-blast"])}
+{stack("Creatine + Whey Starter Bundle","MuscleBlaze Biozyme whey for recovery and MuscleBlaze creatine for strength. The classic starter pair.",["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme","muscleblaze-creatine-monohydrate-320g-citrus-blast"])}
 {stack("Complete Training Stack","Protein, creatine and a pre-workout. Everything for training, in one order.",["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme","muscleblaze-creatine-monohydrate-320g-citrus-blast","scitron-volcano-pre-workout"])}
 </div></div></section>
 
@@ -516,7 +550,7 @@ def build_cat(c):
         btns = "".join(f"<td><button class='add' type='button' data-add='{x['slug']}'>Add to cart</button></td>" for x in cps)
         tbl = f'<div class="tw"><table class="cmp"><thead><tr><th></th>{head_}</tr></thead><tbody>{rows}<tr><th></th>{btns}</tr></tbody></table></div>'
         extra = extra.replace("@@CMP@@", tbl)
-    extra = extra.replace("@@MG@@", stack_rel("Muscle Gain Stack","Whey protein and creatine, the classic pair.",["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme","muscleblaze-creatine-monohydrate-320g-citrus-blast"])).replace("@@CT@@", stack_rel("Complete Training Stack","Protein, creatine and a pre-workout in one order.",["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme","muscleblaze-creatine-monohydrate-320g-citrus-blast","scitron-volcano-pre-workout"]))
+    extra = extra.replace("@@MG@@", stack_rel("Creatine + Whey Starter Bundle","MuscleBlaze Biozyme whey and MuscleBlaze creatine, the classic starter pair.",["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme","muscleblaze-creatine-monohydrate-320g-citrus-blast"])).replace("@@CT@@", stack_rel("Complete Training Stack","Protein, creatine and a pre-workout in one order.",["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme","muscleblaze-creatine-monohydrate-320g-citrus-blast","scitron-volcano-pre-workout"]))
     body = f"""<body data-root="../">
 {nav(d, c['slug'])}
 <main><div class="wrap">
@@ -544,10 +578,19 @@ def build_cat(c):
 REVIEWS = json.load(open(os.path.join(HERE, "content", "reviews.json"), encoding="utf-8"))["reviews"]
 _PNAME = {p["slug"]: p["name"] for p in PRODUCTS}
 
+def fmt_date(iso):
+    """2026-11-14 -> 14 Nov 2026"""
+    import datetime as _dt
+    try: return _dt.date.fromisoformat(iso).strftime("%-d %b %Y")
+    except Exception: return iso
+
 def rev_card(x, d, link=True):
     pn = _PNAME[x["product"]]
     prod = next(p for p in PRODUCTS if p["slug"] == x["product"])
-    who = e(x["name"]) + (f", {e(x['town'])}" if x.get("town") else "")
+    place = x.get("city") or x.get("town")
+    who = e(x["name"]) + (f", {e(place)}" if place else "")
+    if x.get("date"):
+        who += f' <span class="rvdate">· {e(fmt_date(x["date"]))}</span>'
     img = f'<img src="{"../"*d}assets/{x["image"]}" alt="{e(x.get("alt") or x["name"])}" width="450" height="450" loading="lazy">' if x.get("image") else ""
     en = f'<p class="en"><span>English:</span> {e(x["en"])}</p>' if x.get("en") else ""
     note = f'<p class="fine" style="text-align:left">{e(x["note"])}</p>' if x.get("note") else ""
@@ -556,8 +599,8 @@ def rev_card(x, d, link=True):
 
 def reviews_block(p):
     rv = [x for x in REVIEWS if x["product"] == p["slug"]]
-    msg = f"Hi Apex Fitness Centre, I bought {p['full']} and here is my review: "
-    btn = f'<a class="btn wa rvbtn" href="{wa(msg)}" target="_blank" rel="noopener" data-review="{e(p["full"])}">Send your review on WhatsApp</a>'
+    msg = f"Hi Apex, review for {p['full']}: "
+    btn = f'<a class="btn wa rvbtn" href="{wa(msg)}" target="_blank" rel="noopener" data-review="{e(p["full"])}">Bought this? Send us your review on WhatsApp</a>'
     ask = f'<p class="rvask">Bought this from us? Send us your review on WhatsApp and we will add it here.</p>{btn}'
     if not rv:
         return (f'<section class="rev rev-empty"><h2 class="h2s">Customer reviews</h2><p class="rvnone">No reviews yet. Bought {e(p["full"])} from us? '
@@ -605,7 +648,7 @@ def build_product(p):
                        "seller": {"@type": "Organization", "name": SITE}}}
     rvs = [x for x in REVIEWS if x["product"] == p["slug"]]
     if rvs:
-        prod["review"] = [{"@type": "Review", "author": {"@type": "Person", "name": x["name"]}, "reviewRating": {"@type": "Rating", "ratingValue": str(x["rating"]), "bestRating": "5", "worstRating": "1"}, "reviewBody": x.get("en") or x["text"]} for x in rvs]
+        prod["review"] = [{"@type": "Review", **({"datePublished": x["date"]} if x.get("date") else {}), "author": {"@type": "Person", "name": x["name"]}, "reviewRating": {"@type": "Rating", "ratingValue": str(x["rating"]), "bestRating": "5", "worstRating": "1"}, "reviewBody": x.get("en") or x["text"]} for x in rvs]
         prod["aggregateRating"] = {"@type": "AggregateRating", "ratingValue": str(round(sum(x["rating"] for x in rvs) / len(rvs), 1)), "reviewCount": str(len(rvs)), "bestRating": "5", "worstRating": "1"}
     j = ld({"@context": "https://schema.org", "@graph": [crumbs(cr), prod, faq_ld(pfaq)]})
     msg = f"Hi Apex Fitness Centre, I want to order: {p['full']} for {money(p['price'])}. Please confirm stock and delivery to my address. Payment: COD / Khalti / Bank"
@@ -631,13 +674,15 @@ def build_product(p):
 </div>
 <p class="carthint">Buying more than one item? Add them to your cart, then send the whole order on WhatsApp in one message.</p>
 {auth_block(p, d)}
-<ul class="ticks"><li>Cash on Delivery, Khalti or bank transfer</li><li>Free delivery all over Nepal</li><li>Returns: sealed, unopened items only. Opened supplements cannot be returned.</li><li>Sold by Apex Fitness Centre, Urlabari</li></ul>
+<ul class="ticks"><li>Cash on Delivery, Khalti or bank transfer</li><li>Free delivery all over Nepal</li><li>{'Exchange if it arrives damaged.' if is_gear(p) else 'Returns: sealed, unopened items only. Opened supplements cannot be returned.'}</li><li>Sold by Apex Fitness Centre, Urlabari</li></ul>
 </div>
 </div>
 <div class="pdetail">
 <section><h2>About this product</h2>{''.join(f'<p>{e(t)}</p>' for t in p['about'])}</section>
 <section><h2>Product details</h2><table class="facts">{facts}</table></section>
+{f'<p class="guide-link">Comparing protein? See <a href="../../guides/best-whey-protein-nepal/">Best whey protein in Nepal 2026: price comparison</a> (MuscleBlaze vs BigMan vs BPI).</p>' if p['slug'] in WHEY_SLUGS else ''}
 <section><h2>How to use</h2><p>{e(p['use'])}</p></section>
+{proof_block(p, d)}
 
 </div>
 <section class="who"><h2 class="h2s">Who it is for</h2><ul class="who-l">{''.join(f'<li>{e(t)}</li>' for t in p['who'])}</ul></section>
@@ -1136,7 +1181,7 @@ if WHEY_TODO: print('[TODO] whey guide: add from the labels in source/guides.py 
 MERGED_GUIDE_SLUGS = {"how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal", "creatine-or-whey-first"}
 _GBY = {g["slug"]: g for g in GUIDES}
 GUIDE_FOR_CAT = {"creatine": ["creatine-price-in-nepal", "creatine-whey-price-nepal", "how-to-take-creatine", "buy-supplements-online-in-nepal"],
-                 "protein": ["best-protein-for-beginners-in-nepal", "whey-protein-price-in-nepal", "creatine-whey-price-nepal", "buy-supplements-online-in-nepal"],
+                 "protein": ["best-protein-for-beginners-in-nepal", "best-whey-protein-nepal", "creatine-whey-price-nepal", "buy-supplements-online-in-nepal"],
                  "pre-workout": ["how-to-choose-a-pre-workout-in-nepal", "supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal"]}
 _GDEF = ["supplements-for-beginners-in-nepal", "buy-supplements-online-in-nepal", "best-protein-for-beginners-in-nepal"]
 
@@ -1311,7 +1356,9 @@ def _fix_imgs(html_):
 # Guides replaced by fuller blog posts on the same topic: one page per topic, so they don't compete in Google.
 MERGED = {"guides/how-much-protein-do-you-need/": "blog/how-much-protein-do-you-need/",
           "guides/how-to-spot-fake-supplements-in-nepal/": "blog/fake-supplements-in-nepal-how-to-spot-them/",
-          "guides/creatine-or-whey-first/": "blog/creatine-vs-whey-which-first/"}
+          "guides/creatine-or-whey-first/": "blog/creatine-vs-whey-which-first/",
+          # renamed 14 Nov 2026 to the title it ranks for; old links keep working
+          "guides/whey-protein-price-in-nepal/": "guides/best-whey-protein-nepal/"}
 for old, new in MERGED.items():
     for k in list(pages):
         pages[k] = pages[k].replace(old, new)
@@ -1371,6 +1418,15 @@ for _fi in ("favicon-32.png", "favicon-48.png"): shutil.copy(SRC + "/" + _fi, OU
 shutil.copy(SRC + "/favicon.ico", OUT + "/favicon.ico")
 shutil.copytree(os.path.join(HERE, "fonts", "web"), OUT + "/assets/fonts", dirs_exist_ok=True)  # self-hosted Archivo + Instrument Sans (SIL OFL 1.1)
 for _f in ("calc-core.js", "calc.js", "calc.css", "tools.js", "comments.js"): _copy_min(HERE + "/" + _f, OUT + "/assets/" + _f)
+# Homepage: put its two stylesheets inside the page, so the first screen paints without waiting for
+# two more downloads (most first-time visitors land here). Other pages keep the cached files.
+_hp = os.path.join(OUT, "index.html")
+_h = open(_hp, encoding="utf-8").read()
+for _css in ("store.css", "premium.css"):
+    _tag = f'<link rel="stylesheet" href="assets/{_css}">'
+    assert _tag in _h, ("homepage stylesheet link not found", _css)
+    _h = _h.replace(_tag, "<style>" + open(os.path.join(OUT, "assets", _css), encoding="utf-8").read() + "</style>", 1)
+open(_hp, "w", encoding="utf-8").write(_h)
 # Pinterest pins (1000x1500): only for published posts, so scheduled titles stay private
 os.makedirs(OUT + "/blog/pins", exist_ok=True)
 for _p in POSTS:

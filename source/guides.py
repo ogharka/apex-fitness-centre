@@ -25,7 +25,7 @@ def _cell(v): return v if v else _ask
 def _per100(w):
     if not (w["servings"] and w["protein_g"]): return None
     return "%.1f g" % (w["protein_g"] / (w["price"] / w["servings"]) * 100)
-WHEY_TABLE = ('<div class="tw"><table class="cmp"><thead><tr><th>Product (2 kg)</th><th>Price</th><th>Price per kg</th><th>Servings</th><th>Price per serving</th><th>Protein per serving</th><th>Protein per Rs. 100</th></tr></thead><tbody>'
+WHEY_TABLE = ('<div class="tw"><table class="cmp"><thead><tr><th>Product (2 kg)</th><th>Price</th><th>Price per kg</th><th>Servings</th><th>Price per serving</th><th>Protein per scoop</th><th>Protein per Rs. 100</th></tr></thead><tbody>'
     + "".join(f'<tr><td><a href="../../products/{w["slug"]}/">{w["name"]}</a></td><td>{_rs(w["price"])}</td><td>{_rs(w["price"] / w["kg"])}</td>'
               f'<td>{_cell(w["servings"])}</td><td>{_cell(w["servings"] and _rs(w["price"] / w["servings"]))}</td>'
               f'<td>{_cell(w["protein_g"] and str(w["protein_g"]) + " g")}</td>'
@@ -102,7 +102,7 @@ dict(slug="creatine-or-whey-first", cat="creatine", table="creatine", published=
       ("Which is better for beginners?", "It depends on your diet and budget. If you already eat enough protein from food, creatine is the cheaper first step. If you struggle to eat enough protein, whey helps more."),
       ("Do I need either one to build muscle?", "No. Regular training, enough food and protein, and good sleep build muscle without supplements. Creatine and whey can make it a little easier, but they are optional."),
       ("Is creatine safe?", "Creatine monohydrate is widely studied and is considered safe for healthy adults at normal doses. People with kidney problems or other conditions should ask a doctor first. This is general information, not medical advice.")],
- rel=["how-to-take-creatine", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
+ rel=["how-to-take-creatine", "creatine-price-in-nepal", "best-whey-protein-nepal"]),
 dict(slug="creatine-whey-price-nepal", cat="creatine", table=["creatine", "protein"], published="2026-11-05",
  cta="Hi Apex Fitness Centre, I want to order creatine / whey protein. Please confirm what is in stock. Payment: COD / Khalti / Bank",
  title="Creatine and Whey Price in Nepal (2026) + Fake Check",
@@ -128,7 +128,7 @@ dict(slug="creatine-whey-price-nepal", cat="creatine", table=["creatine", "prote
       ("What is the price of whey protein in Nepal?", "Our 2 kg protein tubs are Rs. 15,000 (MuscleBlaze Biozyme Performance Whey), Rs. 17,500 (BigMan Forza Protein) and Rs. 23,000 (BPI Sports Hydro HD Hydrolyzed Whey)."),
       ("How can I tell if my whey protein is fake?", "Check the inner seal, the printed batch number and expiry date, the importer sticker, and the QR or scratch code if the brand uses one. A price far below normal is also a warning sign."),
       ("Do you deliver all over Nepal?", "Yes. Delivery is free all over Nepal. Most orders arrive in 1 to 2 days.")],
- rel=["creatine-price-in-nepal", "whey-protein-price-in-nepal", "how-to-spot-fake-supplements-in-nepal"]),
+ rel=["creatine-price-in-nepal", "best-whey-protein-nepal", "how-to-spot-fake-supplements-in-nepal"]),
 
 dict(slug="best-protein-for-beginners-in-nepal", cat="protein", table=None, published="2026-11-10",
  title="Best Protein for Beginners in Nepal: Biozyme vs Forza",
@@ -174,11 +174,11 @@ dict(slug="best-protein-for-beginners-in-nepal", cat="protein", table=None, publ
       ("How many protein shakes should a beginner drink a day?", "Usually one. Follow the serving size on the label and count the shake as part of your daily protein from food."),
       ("Can I take creatine with BigMan Forza?", "Forza already contains creatine according to its label, so check the label before adding a separate creatine product."),
       ("Do you deliver protein all over Nepal?", "Yes. Delivery is free all over Nepal by Nepal Can, usually in 1 to 2 days, and you can pay by Cash on Delivery, Khalti or bank transfer.")],
- rel=["whey-protein-price-in-nepal", "creatine-whey-price-nepal", "supplements-for-beginners-in-nepal"]),
+ rel=["best-whey-protein-nepal", "creatine-whey-price-nepal", "supplements-for-beginners-in-nepal"]),
 
-dict(slug="whey-protein-price-in-nepal", cat="protein", table=None, published="2026-11-13",
- title="Whey Protein Price in Nepal (2026): MuscleBlaze vs BigMan vs BPI",
- h1="Whey protein price in Nepal (2026): MuscleBlaze vs BigMan vs BPI",
+dict(slug="best-whey-protein-nepal", cat="protein", table=None, published="2026-11-13",
+ title="Best Whey Protein in Nepal 2026: Price Comparison",
+ h1="Best whey protein in Nepal 2026: price comparison",
  desc="Whey protein price in Nepal 2026: MuscleBlaze Biozyme Rs. 15,000, BigMan Forza Rs. 17,500, BPI Hydro HD Rs. 23,000. Price per kg and per serving compared.",
  intro="The three 2 kg protein tubs we sell cost Rs. 15,000 (MuscleBlaze Biozyme Performance Whey), Rs. 17,500 (BigMan Forza Protein) and Rs. 23,000 (BPI Sports Hydro HD Hydrolyzed Whey). The tub price is only half the story, so below we compare the price per kg and, where the serving count is on our product page, the price per serving.",
  body=[
@@ -187,7 +187,7 @@ dict(slug="whey-protein-price-in-nepal", cat="protein", table=None, published="2
   ("MuscleBlaze Biozyme Performance Whey 2 kg (Rs. 15,000)", ["The lowest price of the three. A whey protein in French Vanilla Crème flavour, and a simple first protein: one product that does one job.", {"html": WHEY_BTN["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme"]}]),
   ("BigMan Forza Protein 2 kg (Rs. 17,500)", ["A protein blend that, according to its label, also contains creatine and MCT. The 2 kg tub gives 66 servings, which works out at about Rs. 265 per serving. If you take Forza, check the label before adding a separate creatine product.", {"html": WHEY_BTN["bigman-forza-protein-2kg"]}]),
   ("BPI Sports Hydro HD Hydrolyzed Whey 2 kg (Rs. 23,000)", ["A hydrolysed whey in Chocolate Lava Cake flavour. Hydrolysed whey is processed to digest faster and usually costs more than regular whey. It is the premium option of the three; most people do not need it to build muscle.", {"html": WHEY_BTN["bpi-sports-hydro-hd-hydrolyzed-whey-2kg-chocolate-lava-cake"]}]),
-  ("Which one should you buy?", [{"list": ["Lowest price and a plain whey: MuscleBlaze Biozyme, Rs. 15,000.", "Protein and creatine in one scoop: BigMan Forza, Rs. 17,500.", "Want a hydrolysed whey and do not mind paying more: BPI Hydro HD, Rs. 23,000."]}, {"html": '<p>New to protein powder? Read <a href="../best-protein-for-beginners-in-nepal/">best protein for beginners in Nepal</a>, see all tubs on our <a href="../../protein/">protein page</a>, or browse all <a href="../">buying guides</a>.</p>'}]),
+  ("Who each one suits", [{"list": ["Beginners and anyone on a budget who wants a plain whey: MuscleBlaze Biozyme, Rs. 15,000 (about Rs. 7,500 per kg).", "People who want protein and creatine in one scoop: BigMan Forza, Rs. 17,500 (66 servings, about Rs. 265 each). Check the label before adding a separate creatine.", "Lifters who prefer a hydrolysed whey and do not mind paying more: BPI Hydro HD, Rs. 23,000 (about Rs. 11,500 per kg)."]}, {"html": '<p>New to protein powder? Read <a href="../best-protein-for-beginners-in-nepal/">best protein for beginners in Nepal</a>, see all tubs on our <a href="../../protein/">protein page</a>, or browse all <a href="../">buying guides</a>.</p>'}]),
   ("How much protein do you need", ["Many active adults aim for about 1.4 to 2.0 g of protein per kg of body weight a day, from food and shakes together. A shake adds to your meals and does not replace them. If you eat enough protein from dal, eggs, paneer, soya and meat, you may need less powder."]),
   ("Ordering from Apex", ["Order on WhatsApp from this page or any product page. We confirm stock, you pay by Cash on Delivery, Khalti or bank transfer, and Nepal Can delivers all over Nepal, usually in 1 to 2 days, with free delivery. Every tub is authentic and comes with a bill."]),
  ],
@@ -219,7 +219,7 @@ dict(slug="how-to-spot-fake-supplements-in-nepal", cat="shop", table=None,
  faq=[("How can I check if my whey protein is original?", "Check the seal, batch number and expiry date, the label quality, and the price. Use the brand's verification method if there is one, and buy from a seller who gives a bill."),
       ("Is cheap supplement in Nepal always fake?", "Not always, but a price far below other sellers is a warning sign. Ask where the stock came from and ask for a bill."),
       ("Can I ask for a photo before I buy?", "Yes. Message us on WhatsApp and we can send photos of the product before you order.")],
- rel=["creatine-price-in-nepal", "whey-protein-price-in-nepal", "buy-supplements-online-in-nepal"]),
+ rel=["creatine-price-in-nepal", "best-whey-protein-nepal", "buy-supplements-online-in-nepal"]),
 
 dict(slug="how-to-take-creatine", cat="creatine", table=None,
  title="How to Take Creatine: Simple Guide for Beginners in Nepal",
@@ -251,7 +251,7 @@ dict(slug="how-much-protein-do-you-need", cat="protein", table=None,
  faq=[("Can I get enough protein without supplements?", "Yes, many people can with eggs, dal, paneer, soya, milk and meat. Powder only makes it easier."),
       ("Is 2 g of protein per kg too much?", "It is the upper end of what many guidelines suggest for people who lift weights. Ask a doctor if you have a health condition."),
       ("When should I have a protein shake?", "Any time that helps you reach your daily total. After training is a common and convenient time.")],
- rel=["whey-protein-price-in-nepal", "supplements-for-beginners-in-nepal", "how-to-take-creatine"]),
+ rel=["best-whey-protein-nepal", "supplements-for-beginners-in-nepal", "how-to-take-creatine"]),
 
 dict(slug="supplements-for-beginners-in-nepal", cat="shop", table=None,
  title="Supplements for Beginners in Nepal: What to Buy First",
@@ -267,7 +267,7 @@ dict(slug="supplements-for-beginners-in-nepal", cat="shop", table=None,
  faq=[("What supplement should a beginner take first?", "Often protein powder if food falls short, or creatine monohydrate. Neither is required."),
       ("Do I need a pre-workout?", "No. It is optional. If you take one, start with a small amount and check the caffeine."),
       ("Can I start supplements at 17?", "Ask a doctor or parent first. Under 18, food and training should come first.")],
- rel=["creatine-price-in-nepal", "whey-protein-price-in-nepal", "how-much-protein-do-you-need"]),
+ rel=["creatine-price-in-nepal", "best-whey-protein-nepal", "how-much-protein-do-you-need"]),
 
 dict(slug="buy-supplements-online-in-nepal", cat="shop", table=None,
  title="Buy Supplements Online in Nepal Safely (Delivery, Payment)",
@@ -283,7 +283,7 @@ dict(slug="buy-supplements-online-in-nepal", cat="shop", table=None,
  faq=[("Is it safe to pay in advance?", "Pay only a seller you can verify. Check reviews, ask for photos, and keep the payment screenshot and bill."),
       ("How long does delivery take in Nepal?", "From Apex, delivery is usually 1 to 2 days all over Nepal."),
       ("Can I pay by Khalti?", "Yes. You can pay by Cash on Delivery, Khalti or bank transfer. We send Khalti and bank details on WhatsApp.")],
- rel=["how-to-spot-fake-supplements-in-nepal", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
+ rel=["how-to-spot-fake-supplements-in-nepal", "creatine-price-in-nepal", "best-whey-protein-nepal"]),
 
 dict(slug="how-to-choose-a-pre-workout-in-nepal", cat="pre-workout", table="pre-workout",
  title="Pre-Workout Price in Nepal (2026) and How to Choose One",
@@ -319,7 +319,7 @@ dict(slug="send-supplements-to-family-in-nepal", cat="shop", table=None,
  faq=[("Can I pay from outside Nepal?", "Yes. You can pay directly to our bank account or by Khalti, or your family can pay Cash on Delivery when it arrives. Message us on WhatsApp and we will send the details."),
       ("Do you deliver to any part of Nepal?", "Yes. Delivery is free all over Nepal by Nepal Can, usually in 1 to 2 days."),
       ("How do I know the order reached my family?", "We send you the tracking number, and your family can confirm on WhatsApp when it arrives.")],
- rel=["buy-supplements-online-in-nepal", "creatine-price-in-nepal", "whey-protein-price-in-nepal"]),
+ rel=["buy-supplements-online-in-nepal", "creatine-price-in-nepal", "best-whey-protein-nepal"]),
 
 dict(slug="gym-management-software-price-in-nepal", cat="software", table=None, sw=True,
  title="Gym Management Software Price in Nepal (2026) | What It Costs",

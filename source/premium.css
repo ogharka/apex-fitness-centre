@@ -330,3 +330,11 @@ picture{display:contents}
 .follow{margin:20px 0;padding:18px 20px;border:1px solid rgba(0,0,0,.1);border-left:4px solid #ee243a;border-radius:12px;background:#fafafa}
 .follow b{display:block;font-size:17px;margin-bottom:4px}.follow p{margin:0 0 12px}
 .rvask{margin:16px 0 10px;font-weight:600}
+
+/* Authenticity proof photos (only shown once real photos are added) */
+.proof .proof-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:12px}
+.proof figure{margin:0;border:1px solid var(--line,#e6e5e1);border-radius:12px;overflow:hidden;background:#fff}
+.proof figure img{display:block;width:100%;height:auto}
+.proof figcaption{padding:8px 12px;font-size:13px;font-weight:600}
+.rvdate{color:var(--muted,#6b6d77);font-weight:400}
+.sbtns{display:flex;flex-direction:column;gap:8px;margin-top:10px}

@@ -1,11 +1,20 @@
 {
  "_how_to_add": [
   "Add only real reviews that a customer sent you (WhatsApp, Facebook, in person). Never write one yourself.",
-  "Copy one entry below and change it. 'product' must be the product slug from the URL, e.g. bigman-forza-protein-2kg.",
-  "rating: 1 to 5. text: the customer's own words. en: English translation if they wrote in Nepali (or leave empty).",
-  "image (optional): put the photo in source/reviews/ and write 'reviews/<file>.jpg'. Only with the customer's permission.",
-  "town and note are optional. The star rating and Google review schema appear automatically once a product has a review."
+  "Copy _template below into the reviews list and fill it in. 'product' is the product slug from the page URL, e.g. bigman-forza-protein-2kg.",
+  "name: the customer's name as they agree to show it. city: their town (optional). rating: 1 to 5. text: their own words. date: the day they sent it, as YYYY-MM-DD.",
+  "en (optional): English translation if they wrote in Nepali. image (optional): photo in source/reviews/, written as 'reviews/<file>.jpg', only with their permission.",
+  "The stars, the product's average rating and Google review data appear automatically once a product has a review."
  ],
+ "_template": {
+  "product": "bigman-forza-protein-2kg",
+  "name": "",
+  "city": "",
+  "rating": 5,
+  "text": "",
+  "date": "2026-11-14",
+  "en": ""
+ },
  "reviews": [
   {
    "product": "scitron-volcano-pre-workout",
