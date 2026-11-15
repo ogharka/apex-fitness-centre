@@ -137,7 +137,7 @@ Recomp is slower than a pure cut or bulk, but the results last. As a rough guide
 
 They're optional, but two have strong evidence:
 
-- **Whey protein** makes your daily protein target easier to hit. See [best whey protein in Nepal](../best-whey-protein-in-nepal/).
+- **Whey protein** makes your daily protein target easier to hit. See [best whey protein in Nepal](../../guides/best-whey-protein-nepal/).
 - **Creatine monohydrate (3–5 g a day)** helps you train harder and gain strength. The water it pulls into muscle can add 0.5–1.5 kg on the scale at first, which is another reason to watch your waist, not just your weight. See [creatine side effects: myths and facts](../creatine-side-effects-myths-and-facts/).
 
 Fat burners don't recomp anyone.

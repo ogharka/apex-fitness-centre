@@ -57,7 +57,7 @@ dict(slug="protein-calculator", short="Protein", card="Grams of protein a day fo
       ("Can I eat all my protein in one meal?", "You can, but spreading it across three or four meals is easier to digest and may be slightly better for building muscle.")],
  sources=[("Protein supplementation and resistance training: systematic review and meta-analysis","https://bjsm.bmj.com/content/52/6/376","Morton et al., British Journal of Sports Medicine, 2018"),
           ("ISSN position stand: protein and exercise","https://pubmed.ncbi.nlm.nih.gov/28642676/","Jäger et al., 2017")],
- posts=["how-much-protein-do-you-need","protein-rich-vegetarian-foods-nepal","high-protein-nepali-diet-plan-for-muscle-gain","best-whey-protein-in-nepal","creatine-vs-whey-which-first","high-protein-breakfast-ideas-nepal","protein-on-glp-1-medication","high-protein-nepali-meals-australia"]),
+ posts=["how-much-protein-do-you-need","protein-rich-vegetarian-foods-nepal","high-protein-nepali-diet-plan-for-muscle-gain","creatine-vs-whey-which-first","high-protein-breakfast-ideas-nepal","protein-on-glp-1-medication","high-protein-nepali-meals-australia"]),
 
 dict(slug="one-rep-max-calculator", short="One-rep max", card="Estimate your 1RM and training weights",
  title="One Rep Max Calculator (1RM): Bench, Squat, Deadlift",

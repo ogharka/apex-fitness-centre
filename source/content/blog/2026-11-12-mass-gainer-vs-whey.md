@@ -72,7 +72,7 @@ Usually unnecessary. If you need extra calories, a homemade shake with whey cove
 - **Genuine product:** seal, batch, expiry, importer label. See [how to spot fake supplements in Nepal](../fake-supplements-in-nepal-how-to-spot-them/).
 - **Read the nutrition table:** protein, carbs and sugar per serving.
 - **Compare price per serving,** not per tub.
-- For whey options, see our [best whey protein in Nepal guide](../best-whey-protein-in-nepal/).
+- For whey options, see our [best whey protein in Nepal guide](../../guides/best-whey-protein-nepal/).
 
 ## Frequently asked questions
 

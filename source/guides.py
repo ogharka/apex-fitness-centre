@@ -177,25 +177,44 @@ dict(slug="best-protein-for-beginners-in-nepal", cat="protein", table=None, publ
  rel=["best-whey-protein-nepal", "creatine-whey-price-nepal", "supplements-for-beginners-in-nepal"]),
 
 dict(slug="best-whey-protein-nepal", cat="protein", table=None, published="2026-11-13",
- title="Best Whey Protein in Nepal 2026: Price Comparison",
- h1="Best whey protein in Nepal 2026: price comparison",
- desc="Whey protein price in Nepal 2026: MuscleBlaze Biozyme Rs. 15,000, BigMan Forza Rs. 17,500, BPI Hydro HD Rs. 23,000. Price per kg and per serving compared.",
+ title="Whey Protein Price in Nepal 2026: Best Whey Compared",
+ h1="Best Whey Protein in Nepal 2026: Price Comparison",
+ desc="Whey protein price in Nepal 2026: MuscleBlaze Biozyme Rs. 15,000, BigMan Forza Rs. 17,500, BPI Hydro HD Rs. 23,000. Price per kg, per serving and which to buy.",
  intro="The three 2 kg protein tubs we sell cost Rs. 15,000 (MuscleBlaze Biozyme Performance Whey), Rs. 17,500 (BigMan Forza Protein) and Rs. 23,000 (BPI Sports Hydro HD Hydrolyzed Whey). The tub price is only half the story, so below we compare the price per kg and, where the serving count is on our product page, the price per serving.",
  body=[
   ("MuscleBlaze vs BigMan vs BPI: price comparison", [{"html": WHEY_TABLE}]),
+  ("Do you even need whey?", [{"html": '<p>Whey is simply milk protein in powder form. It is convenient, not magic. You need it only if you struggle to reach your daily protein target from food. Work out your number with our guide on <a href="../../blog/how-much-protein-do-you-need/">how much protein you need</a>.</p>'}]),
+  ("Concentrate, isolate or hydrolysed?", [{"html": '<div class="tw"><table class="cmp"><thead><tr><th>Type</th><th>What it is</th><th>Good for</th><th>Price</th></tr></thead><tbody>'
+      '<tr><td><b>Concentrate</b></td><td>Most common form, some lactose and fat remain</td><td>Most people, best value</td><td>Lowest</td></tr>'
+      '<tr><td><b>Isolate</b></td><td>Filtered further, more protein, less lactose and fat</td><td>People sensitive to lactose, strict diets</td><td>Higher</td></tr>'
+      '<tr><td><b>Hydrolysed</b></td><td>Protein partly broken down for faster digestion</td><td>Serious athletes, people with sensitive stomachs</td><td>Highest</td></tr>'
+      '</tbody></table></div><p>Many popular tubs are blends of concentrate and isolate, with extras like digestive enzymes, creatine or MCT. Read the label so you know what you are paying for.</p>'}]),
+  ("5 things to check before you buy", [{"html": '<ol>'
+      '<li><b>Protein per scoop.</b> A good whey gives roughly 20 to 25 g of protein per scoop and around 70% protein or more by weight. A lot of carbohydrate and sugar means it is closer to a mass gainer.</li>'
+      '<li><b>Price per kg, not per tub.</b> A cheaper 1 kg tub is often dearer per kg than a 2 kg tub (see the table above).</li>'
+      '<li><b>A genuine product.</b> Check the seal, batch number, expiry date, importer label and authenticity code. Our guide on <a href="../../blog/fake-supplements-in-nepal-how-to-spot-them/">how to spot fake supplements in Nepal</a> explains each check.</li>'
+      '<li><b>Extras you may not need.</b> If your protein already has creatine, you may not need a separate creatine tub.</li>'
+      '<li><b>Taste and mixability.</b> You will drink it every day. Chocolate and vanilla are safe choices.</li></ol>'}]),
   ("How to compare protein prices", ["Do not look only at the tub price. Divide the price by the kilograms in the pack to get the price per kg, then divide it by the number of servings to get the price per shake. Next, check the label for protein per serving: a cheaper tub can give less protein per scoop.", "All three tubs here are 2 kg, so the price per kg follows the tub price: about Rs. 7,500 per kg for Biozyme, Rs. 8,750 for Forza and Rs. 11,500 for Hydro HD."]),
   ("MuscleBlaze Biozyme Performance Whey 2 kg (Rs. 15,000)", ["The lowest price of the three. A whey protein in French Vanilla Crème flavour, and a simple first protein: one product that does one job.", {"html": WHEY_BTN["muscleblaze-biozyme-performance-whey-2kg-french-vanilla-creme"]}]),
   ("BigMan Forza Protein 2 kg (Rs. 17,500)", ["A protein blend that, according to its label, also contains creatine and MCT. The 2 kg tub gives 66 servings, which works out at about Rs. 265 per serving. If you take Forza, check the label before adding a separate creatine product.", {"html": WHEY_BTN["bigman-forza-protein-2kg"]}]),
   ("BPI Sports Hydro HD Hydrolyzed Whey 2 kg (Rs. 23,000)", ["A hydrolysed whey in Chocolate Lava Cake flavour. Hydrolysed whey is processed to digest faster and usually costs more than regular whey. It is the premium option of the three; most people do not need it to build muscle.", {"html": WHEY_BTN["bpi-sports-hydro-hd-hydrolyzed-whey-2kg-chocolate-lava-cake"]}]),
   ("Who each one suits", [{"list": ["Beginners and anyone on a budget who wants a plain whey: MuscleBlaze Biozyme, Rs. 15,000 (about Rs. 7,500 per kg).", "People who want protein and creatine in one scoop: BigMan Forza, Rs. 17,500 (66 servings, about Rs. 265 each). Check the label before adding a separate creatine.", "Lifters who prefer a hydrolysed whey and do not mind paying more: BPI Hydro HD, Rs. 23,000 (about Rs. 11,500 per kg)."]}, {"html": '<p>New to protein powder? Read <a href="../best-protein-for-beginners-in-nepal/">best protein for beginners in Nepal</a>, see all tubs on our <a href="../../protein/">protein page</a>, or browse all <a href="../">buying guides</a>.</p>'}]),
+  ("How to use whey", [{"list": ["One scoop a day is enough for most people; two if your protein from food is very low.", "Timing does not matter much. After training or between meals both work; your total protein for the day matters most.", "Mix with water (lighter) or milk (more calories, good for weight gain).", "Whey does not replace meals. Keep eating dal bhat, eggs and the rest."]}]),
   ("How much protein do you need", ["Many active adults aim for about 1.4 to 2.0 g of protein per kg of body weight a day, from food and shakes together. A shake adds to your meals and does not replace them. If you eat enough protein from dal, eggs, paneer, soya and meat, you may need less powder."]),
-  ("Ordering from Apex", ["Order on WhatsApp from this page or any product page. We confirm stock, you pay by Cash on Delivery, Khalti or bank transfer, and Nepal Can delivers all over Nepal, usually in 1 to 2 days, with free delivery. Every tub is authentic and comes with a bill."]),
+  ("Ordering from Apex", ["Order on WhatsApp from this page or any product page. We confirm stock, you pay by Cash on Delivery, Khalti or bank transfer, and Nepal Can delivers all over Nepal, usually in 1 to 2 days, with free delivery. Every tub is authentic and comes with a bill.", "Disclosure: Apex Fitness Centre sells these three products. The buying checks above apply wherever you buy."]),
+  ("Sources", [{"html": '<ul><li><a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener">International Society of Sports Nutrition position stand: protein and exercise</a> (Jäger et al., 2017)</li><li><a href="https://bjsm.bmj.com/content/52/6/376" target="_blank" rel="noopener">Protein supplementation and resistance training gains: systematic review and meta-analysis</a> (Morton et al., British Journal of Sports Medicine, 2018)</li></ul><p class="fine">General information, not medical advice.</p>'}]),
  ],
  faq=[("How much is 2 kg whey protein in Nepal?", "At Apex Fitness Centre, 2 kg tubs cost Rs. 15,000 (MuscleBlaze Biozyme Performance Whey), Rs. 17,500 (BigMan Forza Protein) and Rs. 23,000 (BPI Sports Hydro HD Hydrolyzed Whey), with free delivery all over Nepal."),
       ("Which is cheapest per kg: MuscleBlaze, BigMan or BPI?", "MuscleBlaze Biozyme, at about Rs. 7,500 per kg. BigMan Forza is about Rs. 8,750 per kg and BPI Hydro HD about Rs. 11,500 per kg."),
       ("What is the price per serving of BigMan Forza?", "The 2 kg tub has 66 servings, so about Rs. 265 per serving at Rs. 17,500."),
       ("Is hydrolysed whey worth the extra cost?", "It digests faster, but for most people regular whey builds muscle just as well when daily protein is enough. Choose hydrolysed whey only if you prefer it and the price fits your budget."),
-      ("Can I pay cash on delivery for protein?", "Yes. You can pay by Cash on Delivery, Khalti or bank transfer, and delivery is free all over Nepal, usually in 1 to 2 days.")],
+      ("Can I pay cash on delivery for protein?", "Yes. You can pay by Cash on Delivery, Khalti or bank transfer, and delivery is free all over Nepal, usually in 1 to 2 days."),
+      ("Which whey protein is best for beginners in Nepal?", "A genuine, good-value 2 kg whey concentrate or blend from a known brand. You do not need an expensive isolate to start."),
+      ("Is whey protein safe?", "For healthy adults at normal amounts, yes. It is a food made from milk. If you have kidney disease or a milk allergy, ask your doctor first."),
+      ("Can I take whey without going to the gym?", "You can, but you probably do not need it. Whey helps most when you train and struggle to eat enough protein."),
+      ("Whey or mass gainer: which is better?", "Whey is mainly protein. Mass gainers add lots of carbohydrate, often sugar, for extra calories. For weight gain, milk with banana, oats and peanuts plus a scoop of whey is often cheaper and cleaner."),
+      ("Does whey cause hair loss or acne?", "There is no good evidence that whey causes hair loss. Some people notice acne with dairy products; if that happens, try less or switch to an isolate.")],
  rel=["best-protein-for-beginners-in-nepal", "how-much-protein-do-you-need", "how-to-spot-fake-supplements-in-nepal"]),
 
 dict(slug="how-to-spot-fake-supplements-in-nepal", cat="shop", table=None,

@@ -1358,13 +1358,18 @@ MERGED = {"guides/how-much-protein-do-you-need/": "blog/how-much-protein-do-you-
           "guides/how-to-spot-fake-supplements-in-nepal/": "blog/fake-supplements-in-nepal-how-to-spot-them/",
           "guides/creatine-or-whey-first/": "blog/creatine-vs-whey-which-first/",
           # renamed 14 Nov 2026 to the title it ranks for; old links keep working
-          "guides/whey-protein-price-in-nepal/": "guides/best-whey-protein-nepal/"}
+          "guides/whey-protein-price-in-nepal/": "guides/best-whey-protein-nepal/",
+          # 15 Nov 2026: the blog buying guide covered the same three tubs and prices; merged into the guide
+          "blog/best-whey-protein-in-nepal/": "guides/best-whey-protein-nepal/"}
 for old, new in MERGED.items():
     for k in list(pages):
         pages[k] = pages[k].replace(old, new)
+    # GitHub Pages has no server redirects: a page that points Google at the new URL (canonical),
+    # keeps itself out of the index (noindex, follow) and sends visitors on straight away.
     pages[old] = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title>'
                   f'<link rel="canonical" href="{BASE}/{new}">'
-                  f'<meta http-equiv="refresh" content="0; url=/{new}"></head><body><p>This guide has moved: '
+                  f'<meta name="robots" content="noindex,follow">'
+                  f'<meta http-equiv="refresh" content="0; url=/{new}"></head><body><p>This page has moved: '
                   f'<a href="/{new}">{BASE}/{new}</a></p></body></html>')
 sitemap[:] = [x for x in sitemap if x[0] not in MERGED]
 for k in list(pages):
