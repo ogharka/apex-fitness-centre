@@ -99,6 +99,8 @@ def build_foods():
         if low.startswith("boiled"): low = "a " + low
         desc = f"How many calories in {low}? {lab0[0].upper()+lab0[1:]}: {_n(v0['k'])} kcal and {_n(v0['p'],1)} g protein. Full nutrition from USDA data, plus diet tips."
         desc = desc if len(desc) <= 155 else f"{short} calories: {_n(v0['k'])} kcal and {_n(v0['p'],1)} g protein per serving. Full nutrition from USDA data, plus weight loss and muscle tips."
+        # Optional hand-written title/description for pages where Search Console shows what people search.
+        title = f.get("seo_title", title); desc = f.get("seo_desc", desc)
         kcal_from = {"Protein": per["p"] * 4, "Carbs": per["c"] * 4, "Fat": per["f"] * 9}
         tk = sum(kcal_from.values()) or 1
         split = " · ".join(f"{k} {round(v / tk * 100)}%" for k, v in kcal_from.items())
