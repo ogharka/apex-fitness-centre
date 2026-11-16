@@ -1,6 +1,6 @@
 ---
 title: Wellcore Creatine Review: Dose, Servings and Cost per Day in Nepal
-seo_title: Wellcore Creatine Review: Dose, Servings & Cost
+seo_title: Wellcore Creatine Review: Is It Good? Scoop Size, Cost
 description: Wellcore creatine (307 g, Rs. 2,000): 3 g per scoop, 83 servings, about Rs. 24 a day. How to take it, how it compares, and how to spot a fake.
 date: 2026-11-03
 category: Supplements

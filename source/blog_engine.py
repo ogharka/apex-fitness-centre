@@ -341,8 +341,12 @@ def build_blog():
 {TOPIC_HUB.get(c, "")}
 </div></main>
 {footer(d)}{drawer()}{tail(d)}"""
-        pages[path] = head(f"{c} in Nepal | Apex Fitness Blog", intro, path, d, extra=j) + body
-        sitemap.append((path, "0.6"))
+        # Topic pages with only one or two posts are thin: keep them for visitors, but out of Google until they grow.
+        thin = len(ps) < 3
+        if thin: j = '<meta name="robots" content="noindex,follow">\n' + j
+        tt = c if "nepal" in c.lower() else f"{c} in Nepal"
+        pages[path] = head(f"{tt} | Apex Fitness Blog", intro, path, d, extra=j) + body
+        if not thin: sitemap.append((path, "0.6"))
     # index
     d = 1; cr = [("Home", ""), ("Blog", "blog/")]
     cards = "".join(_postcard(p, "") for p in posts) or '<p class="fine">First posts coming soon.</p>'

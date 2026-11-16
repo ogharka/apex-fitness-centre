@@ -323,7 +323,7 @@ dict(slug="how-to-choose-a-pre-workout-in-nepal", cat="pre-workout", table="pre-
 dict(slug="send-supplements-to-family-in-nepal", cat="shop", table=None,
  title="Send Supplements to Family in Nepal from Abroad | Apex",
  h1="Send supplements to family in Nepal from abroad",
- desc="Living abroad? Order genuine protein, creatine and other supplements for family in Nepal. Pay by bank or Khalti from abroad, or your family pays Cash on Delivery. Free delivery all over Nepal.",
+ desc="Living abroad? Order genuine protein and creatine for family in Nepal. Pay by bank or Khalti, or your family pays Cash on Delivery. Free delivery.",
  intro="Many Nepalis abroad want to send protein or creatine home, but shipping from overseas is slow and costly, and fakes are common. You can order from Apex Fitness Centre in Nepal and we deliver to your family locally.",
  body=[
   ("How it works", [{"list": ["Message us on WhatsApp at 9708819605 and tell us which products you want.",
