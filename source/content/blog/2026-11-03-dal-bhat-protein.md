@@ -95,6 +95,8 @@ Want to gain weight instead? Keep the rice and add the protein on top. See [how 
 - **Watch the oil and ghee.** One teaspoon of oil adds about 44 kcal and no protein. A tablespoon of ghee on the rice adds about 125 kcal.
 - **Add curd to the side.** It is cheap, cooling, and adds a few grams of protein.
 
+**Eating out?** Restaurant dal and curries are often made with more oil, ghee or cream than at home, and the naan and rice add up fast. See [Indian restaurant calories: what to order](../indian-restaurant-calories-what-to-order/) for the better choices and easy swaps.
+
 ## When a protein shake makes sense
 
 Most people can reach their target with food. A scoop of whey can help if you train early and have no time to eat, you are vegetarian and struggle to get enough, or your appetite is small. One scoop usually adds 20–25 g of protein (check the label). Read [creatine vs whey: which to buy first](../creatine-vs-whey-which-first/) before you spend money on supplements.

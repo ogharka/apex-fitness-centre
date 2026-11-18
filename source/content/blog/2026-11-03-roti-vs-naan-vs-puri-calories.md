@@ -92,6 +92,8 @@ Simple ways to enjoy the others without overdoing it:
 - **Skip the ghee on top.** A spoon of ghee on a roti or paratha can add 45–125 calories.
 - **Add protein.** Pair any bread with dal, chana, eggs, chicken or paneer so the meal keeps you full longer.
 
+**Eating out?** A large restaurant naan can be about 378 kcal, roughly the same as two curries. Our guide to [Indian restaurant calories: what to order](../indian-restaurant-calories-what-to-order/) shows which breads, curries and sides to pick when you want to lose weight.
+
 For a full day of eating, see our [weight loss diet plan with Nepali food](../weight-loss-diet-plan-nepali-food/), and find your daily target with the [calorie deficit calculator](../../calculators/calorie-deficit-calculator/).
 
 ## Which bread has the most protein?
