@@ -63,7 +63,7 @@ PRODUCTS = [
  dict(slug="scitron-volcano-pre-workout", brand="Scitron", name="Scitron Volcano Pre-Workout", size="30 packets", flavour="",
       cat="pre-workout", price=5000, img="scitron-volcano-pre-workout.jpg",
       short="Pre-workout with 30 packets per box, 300 mg caffeine per packet.",
-      title="Scitron Volcano Pre-Workout Price in Nepal: {price}",
+      title="Scitron Volcano Pre-Workout Price in Nepal",
       desc="Buy Scitron Volcano Pre-Workout (30 packets, 300 mg caffeine each) in Nepal for Rs. 5,000. Free delivery across Nepal. Order on WhatsApp.",
       about=["A pre-workout supplement taken before training to help you start a session with focus and energy. Each box has 30 packets, so it is a month of single-serve packets for daily training.",
              "Each packet contains 300 mg of caffeine, which is a strong dose. Read the label, avoid taking it late in the evening, and do not combine it with other caffeine.",
@@ -354,24 +354,25 @@ def auth_block(p, d):
             f'<a href="{"../" * d}blog/fake-supplements-in-nepal-how-to-spot-them/">How to spot fake supplements in Nepal</a></p></section>')
 
 # Authenticity proof photos (supplements only). Put real photos in source/images/authenticity/ named
-# <product-slug>-<slot>.webp; each slot appears on its own and the whole section stays hidden until
-# at least one photo exists. Never stock images.
+# <product-slug>-seal / -batch / -importer, as .webp, .jpg or .jpeg. Each slot appears on its own and the
+# whole section stays hidden until at least one real photo exists (no placeholders shown to customers).
+# Never stock images.
 PROOF_SLOTS = [
-    ("invoice", "Importer or distributor invoice", "Our purchase invoice from the importer/distributor (prices blurred)"),
-    ("batch",   "Batch code and expiry date",     "Close-up of the batch code and expiry date"),
-    ("sealed",  "Sealed pack",                     "The pack, sealed as it arrives"),
+    ("seal",     "Sealed pack",                    "The pack, sealed as it arrives"),
+    ("batch",    "Batch code and expiry date",     "Close-up of the batch code and expiry date"),
+    ("importer", "Importer sticker or QR code",    "The importer sticker or authenticity QR code"),
 ]
+PROOF_ALIASES = {"seal": ["sealed"], "batch": ["label"], "importer": ["invoice"]}   # older file names still work
 
 def proof_block(p, d):
     if is_gear(p): return ""
     slug = p["slug"]
     figs = []
     for key, title, alt in PROOF_SLOTS:
-        fn = f"{slug}-{key}.webp"
-        if key == "batch" and not os.path.exists(os.path.join(AUTH_DIR, fn)) and os.path.exists(os.path.join(AUTH_DIR, f"{slug}-label.webp")):
-            fn = f"{slug}-label.webp"   # older name for the batch/label photo
+        fn = next((f"{slug}-{k}.{x}" for k in [key] + PROOF_ALIASES.get(key, []) for x in ("webp", "jpg", "jpeg")
+                   if os.path.exists(os.path.join(AUTH_DIR, f"{slug}-{k}.{x}"))), None)
+        if not fn: continue
         fp = os.path.join(AUTH_DIR, fn)
-        if not os.path.exists(fp): continue
         from PIL import Image as _I
         with _I.open(fp) as _im: w, h = _im.size
         figs.append(f'<figure><img src="{"../" * d}images/authenticity/{fn}" alt="{alt}: {e(p["full"])}" width="{w}" height="{h}" loading="lazy" decoding="async"><figcaption>{title}</figcaption></figure>')
@@ -667,13 +668,14 @@ def build_product(p):
 {stock_line(p)}
 <p class="lead">{e(p['short'])}</p>
 <a class="btn wa full order-main" href="{wa(msg)}" target="_blank" rel="noopener" data-product="{e(p['full'])}" data-value="{p['price']}">Order on WhatsApp &ndash; {money(p['price'])}</a>
-<p class="codline">&#10003; Cash on Delivery available &middot; &#10003; Free delivery all over Nepal via Nepal Can</p>
+<p class="codline">Free delivery all over Nepal &middot; COD / Khalti / Bank{"" if STOCK.get(p["slug"]) == "out" else " &middot; Ships same day"}</p>
 <div class="buy">
 <div class="qty" role="group" aria-label="Quantity"><button type="button" id="qm" aria-label="Decrease">-</button><input id="qv" value="1" inputmode="numeric" aria-label="Quantity"><button type="button" id="qp" aria-label="Increase">+</button></div>
 <button class="btn line" type="button" id="addBtn" data-add="{p['slug']}">Add to cart</button>
 </div>
 <p class="carthint">Buying more than one item? Add them to your cart, then send the whole order on WhatsApp in one message.</p>
 {auth_block(p, d)}
+{proof_block(p, d)}
 <ul class="ticks"><li>Cash on Delivery, Khalti or bank transfer</li><li>Free delivery all over Nepal</li><li>{'Exchange if it arrives damaged.' if is_gear(p) else 'Returns: sealed, unopened items only. Opened supplements cannot be returned.'}</li><li>Sold by Apex Fitness Centre, Urlabari</li></ul>
 </div>
 </div>
@@ -682,7 +684,6 @@ def build_product(p):
 <section><h2>Product details</h2><table class="facts">{facts}</table></section>
 {f'<p class="guide-link">Comparing protein? See <a href="../../guides/best-whey-protein-nepal/">Best whey protein in Nepal 2026: price comparison</a> (MuscleBlaze vs BigMan vs BPI).</p>' if p['slug'] in WHEY_SLUGS else ''}
 <section><h2>How to use</h2><p>{e(p['use'])}</p></section>
-{proof_block(p, d)}
 
 </div>
 <section class="who"><h2 class="h2s">Who it is for</h2><ul class="who-l">{''.join(f'<li>{e(t)}</li>' for t in p['who'])}</ul></section>

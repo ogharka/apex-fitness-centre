@@ -20,7 +20,11 @@ def _whey_btn(w):
     return (f'<p><a class="btn wa" href="https://wa.me/9779708819605?text={_q(msg)}" target="_blank" rel="noopener" data-product="{w["full"]}" data-value="{w["price"]}">'
             f'Order on WhatsApp – {_rs(w["price"])}</a> <a class="tl" href="../../products/{w["slug"]}/">See the product page</a></p>')
 WHEY_BTN = {w["slug"]: _whey_btn(w) for w in WHEY}
-_ask = '<span class="fine">See label</span>'
+# First-order offer banner. Off until the owner confirms the offer is running: set True to show it, False to hide.
+SHAKER_OFFER_ON = False
+SHAKER_BANNER = ('<div class="offer-banner" style="background:#fff4d6;border:1px solid #e8c766;border-radius:8px;padding:12px 16px;margin:0 0 16px;font-weight:600">'
+                 'First order? Free shaker with any whey protein. Mention it when you order on WhatsApp.</div>') if SHAKER_OFFER_ON else ""
+_ask = '<span class="fine">Check label</span>'
 def _cell(v): return v if v else _ask
 def _per100(w):
     if not (w["servings"] and w["protein_g"]): return None
@@ -177,12 +181,12 @@ dict(slug="best-protein-for-beginners-in-nepal", cat="protein", table=None, publ
  rel=["best-whey-protein-nepal", "creatine-whey-price-nepal", "supplements-for-beginners-in-nepal"]),
 
 dict(slug="best-whey-protein-nepal", cat="protein", table=None, published="2026-11-13",
- title="Whey Protein Price in Nepal 2026: Best Whey Compared",
+ title="Whey Protein Price in Nepal 2026: Biozyme vs BigMan vs BPI Hydro HD",
  h1="Best Whey Protein in Nepal 2026: Price Comparison",
  desc="Whey protein price in Nepal 2026: MuscleBlaze Biozyme Rs. 15,000, BigMan Forza Rs. 17,500, BPI Hydro HD Rs. 23,000. Price per kg, per serving and which to buy.",
  intro="The three 2 kg protein tubs we sell cost Rs. 15,000 (MuscleBlaze Biozyme Performance Whey), Rs. 17,500 (BigMan Forza Protein) and Rs. 23,000 (BPI Sports Hydro HD Hydrolyzed Whey). The tub price is only half the story, so below we compare the price per kg and, where the serving count is on our product page, the price per serving.",
  body=[
-  ("MuscleBlaze vs BigMan vs BPI: price comparison", [{"html": WHEY_TABLE}]),
+  ("MuscleBlaze vs BigMan vs BPI: price comparison", [{"html": SHAKER_BANNER + WHEY_TABLE}]),
   ("Do you even need whey?", [{"html": '<p>Whey is simply milk protein in powder form. It is convenient, not magic. You need it only if you struggle to reach your daily protein target from food. Work out your number with our guide on <a href="../../blog/how-much-protein-do-you-need/">how much protein you need</a>.</p>'}]),
   ("Concentrate, isolate or hydrolysed?", [{"html": '<div class="tw"><table class="cmp"><thead><tr><th>Type</th><th>What it is</th><th>Good for</th><th>Price</th></tr></thead><tbody>'
       '<tr><td><b>Concentrate</b></td><td>Most common form, some lactose and fat remain</td><td>Most people, best value</td><td>Lowest</td></tr>'
