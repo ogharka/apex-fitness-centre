@@ -69,6 +69,11 @@ Find your daily calorie target with the [calorie deficit calculator](../../calcu
 - **Fried breads.** Puri and paratha have far more fat than plain roti. See [roti vs naan vs puri calories](../roti-vs-naan-vs-puri-calories/).
 - **Eating out.** Restaurant naan and rice portions are big. Our guide to [Indian restaurant calories](../indian-restaurant-calories-what-to-order/) shows what to order.
 
+## Save this for later
+
+![Rice or roti for weight loss: at the same 238 kcal, roti gives 9.0 g protein and 3.9 g fibre, white rice 4.9 g protein and 0.7 g fibre](images/rice-vs-roti-pin.jpg)
+*Save this on Pinterest or share it with a friend.*
+
 ## Frequently asked questions
 
 ### Is rice fattening?

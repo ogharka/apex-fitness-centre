@@ -67,6 +67,11 @@ No. Weight change depends on what you eat over weeks, not one meal. If you eat o
 
 Cooking the same dishes at home? Our [Nepali diet plan for weight loss](../weight-loss-diet-plan-nepali-food/) shows how to build the plate, and [roti vs naan vs puri calories](../roti-vs-naan-vs-puri-calories/) compares the breads in detail.
 
+## Save this for later
+
+![What to order at an Indian restaurant to lose weight: 1 large naan is 378 kcal, 1 roti 119 kcal, plus 5 ordering rules](images/indian-restaurant-calories-pin.jpg)
+*Save this on Pinterest or share it with a friend.*
+
 ## Frequently asked questions
 
 ### What is the lowest-calorie Indian restaurant meal?
